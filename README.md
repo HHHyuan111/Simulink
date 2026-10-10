@@ -15,6 +15,7 @@ Field-Oriented Control (FOC) simulation project for
 an asynchronous (induction) motor.
 
 [View Project](./1_Asynchronous_Motor_FOC)
+
 [Related Blog](https://zhuanlan.zhihu.com/p/589098477)
 
 ### 1.2 PMSM FOC
@@ -25,6 +26,7 @@ Field-Oriented Control (FOC) simulation project for
 a Permanent Magnet Synchronous Motor (PMSM).
 
 [View Project](./2_PMSM_FOC_MATLAB/PMSM_FOC_SheeperXu)
+
 [Related Blog](https://zhuanlan.zhihu.com/p/667769632)
 
 ## 2. Software Requirements
@@ -66,6 +68,7 @@ These simulation models are intended for:
 ## 6. Author
 
 GitHub: [Sheeper-Xu](https://github.com/Sheeper-Xu)
+
 Zhihu:[Sheeper-Xu](https://www.zhihu.com/people/xu-yi-yang-53-96/posts)
 
 ## 7. Notes
