@@ -1,0 +1,20 @@
+# MATLAB/Simulink generated caches (original tracked caches remain tracked)
+slprj/
+*.slxc
+*.slx.autosave
+modern/.build/
+modern/migration_trial/
+
+# Local experiments, backups and diagnostic outputs
+modern/baseline/
+modern/diagnostics/
+modern/organization/
+modern/layout/backups/
+modern/**/*.log
+modern/*.log
+modern/**/*.mat
+modern/*.mat
+review/extracted/
+review/learning/qa_*/
+review/learning/*.log
+**/__pycache__/
