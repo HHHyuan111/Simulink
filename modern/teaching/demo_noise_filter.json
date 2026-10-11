@@ -1,0 +1,429 @@
+{
+  "lesson": "noise_filter",
+  "matlab": "26.1.0.3346908 (R2026a) Update 5",
+  "saved_model_sha256": "88f7d9b63986307df6dad91373373b8fe2107cfde5414aea55637b9909006611",
+  "stop_time_s": 0.12,
+  "parameters_are_demonstration_values": true,
+  "pi_gains_unchanged": true,
+  "model_workspace_parameters": {
+    "Bm": 0,
+    "F": 0.0001,
+    "In": 9.2,
+    "J": 2.1E-5,
+    "K": 9.5492965855137211,
+    "Kt": 0.0324,
+    "Ld": 0.00012,
+    "Lq": 0.00012,
+    "Ls": 0.00012,
+    "Pn": 200,
+    "RE": 1024,
+    "Rs": 0.14,
+    "T": 1E-6,
+    "Tn": 0.29807999999999996,
+    "Ts": 5E-5,
+    "Ts_speed": 5E-5,
+    "Un": 24,
+    "Vdc": 24,
+    "downlimit_id": -13.856406460551019,
+    "downlimit_iq": -13.856406460551019,
+    "downlimit_w": -0.35769599999999996,
+    "dt": 5E-5,
+    "fN": 200,
+    "fc": 20000,
+    "fcb": 1000,
+    "fwb": 50,
+    "ki_i": 1,
+    "ki_id": 879.645943005142,
+    "ki_iq": 879.645943005142,
+    "ki_p": 0.8,
+    "ki_w": 0.04340878735241975,
+    "kp_id": 0.7539822368615503,
+    "kp_iq": 0.7539822368615503,
+    "kp_w": 0.00069087230807625508,
+    "ks_id": 1.1309733552923253,
+    "ks_iq": 1.1309733552923253,
+    "ks_w": 0.98718608264211138,
+    "n": 3000,
+    "p": 4,
+    "phis": 0.0054,
+    "rr": 0.0061359231515425647,
+    "teach_pwm_cycles": 1,
+    "teach_pwm_on": 0,
+    "teaching_Ts_speed": 5E-5,
+    "uplimit_id": 13.856406460551019,
+    "uplimit_iq": 13.856406460551019,
+    "uplimit_w": 0.35769599999999996,
+    "wN": 1256.6370614359173,
+    "w_sb": 1507.9644737231008,
+    "wc": 6283.1853071795858,
+    "wsc": 314.15926535897933
+  },
+  "cases": [
+    {
+      "label": "Reference",
+      "settings": [
+        {
+          "block": "时序设置",
+          "parameters": [
+            {
+              "name": "speed_on",
+              "value": "off"
+            },
+            {
+              "name": "speed_divider",
+              "value": "20"
+            },
+            {
+              "name": "pwm_on",
+              "value": "off"
+            },
+            {
+              "name": "pwm_cycles",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "block": "采样设置",
+          "parameters": [
+            {
+              "name": "bias_on",
+              "value": "off"
+            },
+            {
+              "name": "bias_A",
+              "value": "[0.05 -0.03 0]"
+            },
+            {
+              "name": "gain_on",
+              "value": "off"
+            },
+            {
+              "name": "phase_gain",
+              "value": "[1.01 0.99 1]"
+            },
+            {
+              "name": "noise_on",
+              "value": "off"
+            },
+            {
+              "name": "noise_rms",
+              "value": "0.02"
+            },
+            {
+              "name": "noise_seed",
+              "value": "9474"
+            },
+            {
+              "name": "adc_on",
+              "value": "off"
+            },
+            {
+              "name": "adc_bits",
+              "value": "12"
+            },
+            {
+              "name": "adc_span",
+              "value": "20"
+            },
+            {
+              "name": "filter_on",
+              "value": "off"
+            },
+            {
+              "name": "filter_hz",
+              "value": "500"
+            },
+            {
+              "name": "delay_on",
+              "value": "off"
+            },
+            {
+              "name": "delay_cycles",
+              "value": "1"
+            },
+            {
+              "name": "control_period",
+              "value": "dt"
+            }
+          ]
+        },
+        {
+          "block": "角度设置",
+          "parameters": [
+            {
+              "name": "bias_on",
+              "value": "off"
+            },
+            {
+              "name": "bias_deg",
+              "value": "2"
+            },
+            {
+              "name": "quant_on",
+              "value": "off"
+            },
+            {
+              "name": "step_deg",
+              "value": "0.1"
+            },
+            {
+              "name": "delay_on",
+              "value": "off"
+            },
+            {
+              "name": "delay_cycles",
+              "value": "1"
+            }
+          ]
+        }
+      ],
+      "speed_final_rpm": 2999.5372960442783,
+      "peak_iq_A": 11.608444980577334
+    },
+    {
+      "label": "Sampled current noise",
+      "settings": [
+        {
+          "block": "时序设置",
+          "parameters": [
+            {
+              "name": "speed_on",
+              "value": "off"
+            },
+            {
+              "name": "speed_divider",
+              "value": "20"
+            },
+            {
+              "name": "pwm_on",
+              "value": "off"
+            },
+            {
+              "name": "pwm_cycles",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "block": "采样设置",
+          "parameters": [
+            {
+              "name": "bias_on",
+              "value": "off"
+            },
+            {
+              "name": "bias_A",
+              "value": "[0.05 -0.03 0]"
+            },
+            {
+              "name": "gain_on",
+              "value": "off"
+            },
+            {
+              "name": "phase_gain",
+              "value": "[1.01 0.99 1]"
+            },
+            {
+              "name": "noise_on",
+              "value": "on"
+            },
+            {
+              "name": "noise_rms",
+              "value": "0.02"
+            },
+            {
+              "name": "noise_seed",
+              "value": "9474"
+            },
+            {
+              "name": "adc_on",
+              "value": "off"
+            },
+            {
+              "name": "adc_bits",
+              "value": "12"
+            },
+            {
+              "name": "adc_span",
+              "value": "20"
+            },
+            {
+              "name": "filter_on",
+              "value": "off"
+            },
+            {
+              "name": "filter_hz",
+              "value": "500"
+            },
+            {
+              "name": "delay_on",
+              "value": "off"
+            },
+            {
+              "name": "delay_cycles",
+              "value": "1"
+            },
+            {
+              "name": "control_period",
+              "value": "dt"
+            }
+          ]
+        },
+        {
+          "block": "角度设置",
+          "parameters": [
+            {
+              "name": "bias_on",
+              "value": "off"
+            },
+            {
+              "name": "bias_deg",
+              "value": "2"
+            },
+            {
+              "name": "quant_on",
+              "value": "off"
+            },
+            {
+              "name": "step_deg",
+              "value": "0.1"
+            },
+            {
+              "name": "delay_on",
+              "value": "off"
+            },
+            {
+              "name": "delay_cycles",
+              "value": "1"
+            }
+          ]
+        }
+      ],
+      "speed_final_rpm": 3001.2363776910042,
+      "peak_iq_A": 11.608124230568363
+    },
+    {
+      "label": "Noise + digital low-pass",
+      "settings": [
+        {
+          "block": "时序设置",
+          "parameters": [
+            {
+              "name": "speed_on",
+              "value": "off"
+            },
+            {
+              "name": "speed_divider",
+              "value": "20"
+            },
+            {
+              "name": "pwm_on",
+              "value": "off"
+            },
+            {
+              "name": "pwm_cycles",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "block": "采样设置",
+          "parameters": [
+            {
+              "name": "bias_on",
+              "value": "off"
+            },
+            {
+              "name": "bias_A",
+              "value": "[0.05 -0.03 0]"
+            },
+            {
+              "name": "gain_on",
+              "value": "off"
+            },
+            {
+              "name": "phase_gain",
+              "value": "[1.01 0.99 1]"
+            },
+            {
+              "name": "noise_on",
+              "value": "on"
+            },
+            {
+              "name": "noise_rms",
+              "value": "0.02"
+            },
+            {
+              "name": "noise_seed",
+              "value": "9474"
+            },
+            {
+              "name": "adc_on",
+              "value": "off"
+            },
+            {
+              "name": "adc_bits",
+              "value": "12"
+            },
+            {
+              "name": "adc_span",
+              "value": "20"
+            },
+            {
+              "name": "filter_on",
+              "value": "on"
+            },
+            {
+              "name": "filter_hz",
+              "value": "500"
+            },
+            {
+              "name": "delay_on",
+              "value": "off"
+            },
+            {
+              "name": "delay_cycles",
+              "value": "1"
+            },
+            {
+              "name": "control_period",
+              "value": "dt"
+            }
+          ]
+        },
+        {
+          "block": "角度设置",
+          "parameters": [
+            {
+              "name": "bias_on",
+              "value": "off"
+            },
+            {
+              "name": "bias_deg",
+              "value": "2"
+            },
+            {
+              "name": "quant_on",
+              "value": "off"
+            },
+            {
+              "name": "step_deg",
+              "value": "0.1"
+            },
+            {
+              "name": "delay_on",
+              "value": "off"
+            },
+            {
+              "name": "delay_cycles",
+              "value": "1"
+            }
+          ]
+        }
+      ],
+      "speed_final_rpm": 3000.8643236521034,
+      "peak_iq_A": 13.833065130709329
+    }
+  ]
+}
