@@ -1,4 +1,4 @@
-function validate_pmsm_r2026a
+function [summary,outputs]=validate_pmsm_r2026a
 % Closed-loop, sign, disturbance and integration-convergence checks.
 % This function works in a fresh MATLAB session, without running parameters.
 folder=fileparts(mfilename('fullpath'));cd(folder);

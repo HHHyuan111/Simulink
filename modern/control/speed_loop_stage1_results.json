@@ -1,0 +1,337 @@
+{
+  "stage": "speed_loop_units_and_sampling",
+  "matlab": "26.1.0.3346908 (R2026a) Update 5",
+  "source_git_commit": "4394283f8918b0e10636c6a68cc34e66a78981af",
+  "before_sha256": "a745187d8a8b40986515717c7ebc6594f488e745b7f73bd922bf1bdc39b46994",
+  "after_sha256": "57049d757a95e7d2674a6ad8d99165c5b1eb71985704233892192f3fc0103d5d",
+  "top_blocks": 164,
+  "total_blocks": 329,
+  "graphics_unchanged": true,
+  "connections_and_block_identity_unchanged": true,
+  "changed_block_parameters": [
+    {
+      "sid": "216",
+      "parameter": "Value",
+      "before": "Ld",
+      "after": "Ld-Lq"
+    },
+    {
+      "sid": "155",
+      "parameter": "SampleTime",
+      "before": "1/fwb",
+      "after": "Ts_speed"
+    },
+    {
+      "sid": "438",
+      "parameter": "SampleTime",
+      "before": "dt",
+      "after": "SampleTime"
+    },
+    {
+      "sid": "164",
+      "parameter": "SampleTime",
+      "before": "dt",
+      "after": "SampleTime"
+    },
+    {
+      "sid": "190",
+      "parameter": "SampleTime",
+      "before": "dt",
+      "after": "Ts_speed"
+    }
+  ],
+  "excluded_runtime_observation_metadata": [
+    "Record.SignalIDs"
+  ],
+  "before_parameters": {
+    "J": 2.1E-5,
+    "F": 0.0001,
+    "p": 4,
+    "phis": 0.0054,
+    "Ld": 0.00012,
+    "Lq": 0.00012,
+    "Tn": 0.29807999999999996,
+    "dt": 5E-5,
+    "Ts": 5E-5,
+    "fwb": 50,
+    "wsc": 314.15926535897933,
+    "K": 0.30939720937064458,
+    "kp_w": 0.0213232193850696,
+    "ki_w": 1.3397773874203625,
+    "ks_w": 0.0319848290776044,
+    "uplimit_w": 0.35769599999999996,
+    "downlimit_w": -0.35769599999999996
+  },
+  "after_parameters": {
+    "J": 2.1E-5,
+    "F": 0.0001,
+    "p": 4,
+    "phis": 0.0054,
+    "Ld": 0.00012,
+    "Lq": 0.00012,
+    "Tn": 0.29807999999999996,
+    "dt": 5E-5,
+    "Ts": 5E-5,
+    "fwb": 50,
+    "wsc": 314.15926535897933,
+    "K": 9.5492965855137211,
+    "kp_w": 0.00069087230807625508,
+    "ki_w": 0.04340878735241975,
+    "ks_w": 0.98718608264211138,
+    "uplimit_w": 0.35769599999999996,
+    "downlimit_w": -0.35769599999999996,
+    "Kt": 0.0324,
+    "Ts_speed": 5E-5
+  },
+  "component_checks": {
+    "pi_cases": [
+      {
+        "name": "zero",
+        "sample_time_s": 5E-5,
+        "samples": 81,
+        "maximum_error_Nm": 2.9587919638776775E-25,
+        "maximum_integral_error_Nm": 2.9587919638776775E-25,
+        "passed": true
+      },
+      {
+        "name": "linear_constant",
+        "sample_time_s": 5E-5,
+        "samples": 81,
+        "maximum_error_Nm": 8.6736173798840355E-18,
+        "maximum_integral_error_Nm": 8.2399365108898337E-18,
+        "passed": true
+      },
+      {
+        "name": "positive_saturation",
+        "sample_time_s": 5E-5,
+        "samples": 81,
+        "maximum_error_Nm": 0,
+        "maximum_integral_error_Nm": 6.106226635438361E-16,
+        "passed": true
+      },
+      {
+        "name": "negative_saturation",
+        "sample_time_s": 5E-5,
+        "samples": 81,
+        "maximum_error_Nm": 0,
+        "maximum_integral_error_Nm": 9.43689570931383E-16,
+        "passed": true
+      },
+      {
+        "name": "saturation_reversal",
+        "sample_time_s": 5E-5,
+        "samples": 161,
+        "maximum_error_Nm": 8.6996382320236876E-16,
+        "maximum_integral_error_Nm": 9.5756735873919752E-16,
+        "passed": true
+      },
+      {
+        "name": "zero",
+        "sample_time_s": 0.0001,
+        "samples": 81,
+        "maximum_error_Nm": 2.9587919638776775E-25,
+        "maximum_integral_error_Nm": 2.9587919638776775E-25,
+        "passed": true
+      },
+      {
+        "name": "linear_constant",
+        "sample_time_s": 0.0001,
+        "samples": 81,
+        "maximum_error_Nm": 1.7347234759768071E-17,
+        "maximum_integral_error_Nm": 1.6479873021779667E-17,
+        "passed": true
+      },
+      {
+        "name": "positive_saturation",
+        "sample_time_s": 0.0001,
+        "samples": 81,
+        "maximum_error_Nm": 0,
+        "maximum_integral_error_Nm": 8.0491169285323849E-16,
+        "passed": true
+      },
+      {
+        "name": "negative_saturation",
+        "sample_time_s": 0.0001,
+        "samples": 81,
+        "maximum_error_Nm": 0,
+        "maximum_integral_error_Nm": 6.2450045135165055E-16,
+        "passed": true
+      },
+      {
+        "name": "saturation_reversal",
+        "sample_time_s": 0.0001,
+        "samples": 161,
+        "maximum_error_Nm": 1.0547118733938987E-15,
+        "maximum_integral_error_Nm": 1.4432899320127035E-15,
+        "passed": true
+      }
+    ],
+    "compiled_rates": [
+      {
+        "period_s": 5E-5,
+        "feedback_period_s": 5E-5,
+        "proportional_period_s": 5E-5,
+        "integrator_period_s": 5E-5
+      },
+      {
+        "period_s": 0.0001,
+        "feedback_period_s": 0.0001,
+        "proportional_period_s": 0.0001,
+        "integrator_period_s": 0.0001
+      }
+    ],
+    "torque_conversion_nonzero_id_passed": true,
+    "all_passed": true
+  },
+  "comparison": {
+    "before_default": {
+      "steady_speed_rpm": 3000.002971484209,
+      "maximum_speed_rpm": 3017.1175754994224,
+      "settling_time_2percent_s": 0.02595,
+      "peak_iq_A": 11.527630474403312,
+      "maximum_iq_ref_A": 11.109722921344071,
+      "steady_torque_Nm": 0.12179452033724772
+    },
+    "after_default": {
+      "steady_speed_rpm": 2999.9675320963238,
+      "maximum_speed_rpm": 3261.6289133463129,
+      "settling_time_2percent_s": 0.05535,
+      "peak_iq_A": 11.608444980577334,
+      "maximum_iq_ref_A": 11.04,
+      "steady_torque_Nm": 0.12185072396280713
+    },
+    "before_load_step": {
+      "steady_speed_rpm": 2999.9963518658246,
+      "maximum_speed_rpm": 3017.1175754994224,
+      "settling_time_2percent_s": 0.02595,
+      "peak_iq_A": 11.527630474403312,
+      "maximum_iq_ref_A": 11.109722921344071,
+      "steady_torque_Nm": 0.21132389808658605,
+      "maximum_speed_error_after_load_step_rpm": 5.7060163900364387
+    },
+    "after_load_step": {
+      "steady_speed_rpm": 3000.0104912227584,
+      "maximum_speed_rpm": 3261.6289133463129,
+      "settling_time_2percent_s": 0.0965,
+      "peak_iq_A": 11.608444980577334,
+      "maximum_iq_ref_A": 11.04,
+      "steady_torque_Nm": 0.21134288854468691,
+      "maximum_speed_error_after_load_step_rpm": 95.06516988598014
+    }
+  },
+  "added_speed_logs": [
+    "speed_Te_ref",
+    "speed_P",
+    "speed_I"
+  ],
+  "closed_loop_checks": {
+    "matlab": "26.1.0.3346908 (R2026a) Update 5",
+    "unresolved_links": 0,
+    "scenarios": [
+      {
+        "stop_time_s": 1,
+        "speed_final": 2999.7529328895985,
+        "speed_mean_last_20ms": 2999.9675320963238,
+        "speed_min": -0.72346254546105915,
+        "speed_max": 3261.6289133463129,
+        "id_peak": 0.32204296591185488,
+        "iq_peak": 11.608444980577334,
+        "torque_mean_last_20ms": 0.12185072396280713,
+        "threshold_min": 4.8530249789145437E-6,
+        "threshold_max": 2.0146975021085459E-5,
+        "finite": true,
+        "complementary_gates": true,
+        "thresholds_valid": true,
+        "name": "default_1s",
+        "target_rpm": 3000,
+        "wall_seconds": 26.0243525,
+        "tracking_error_rpm": 0.032467903676206333,
+        "passed": true
+      },
+      {
+        "stop_time_s": 0.08,
+        "speed_final": 0,
+        "speed_mean_last_20ms": 0,
+        "speed_min": 0,
+        "speed_max": 0,
+        "id_peak": 0,
+        "iq_peak": 0,
+        "torque_mean_last_20ms": 0,
+        "threshold_min": 0,
+        "threshold_max": 0,
+        "finite": true,
+        "complementary_gates": true,
+        "thresholds_valid": true,
+        "name": "zero_command",
+        "target_rpm": 0,
+        "wall_seconds": 2.572175,
+        "tracking_error_rpm": 0,
+        "passed": true
+      },
+      {
+        "stop_time_s": 0.2,
+        "speed_final": -1499.8697214780557,
+        "speed_mean_last_20ms": -1499.9653779140974,
+        "speed_min": -1781.045330744786,
+        "speed_max": 0.72346254546105926,
+        "id_peak": 0.35286383769809476,
+        "iq_peak": 11.440408764662878,
+        "torque_mean_last_20ms": -0.10558695748366959,
+        "threshold_min": 4.99087063207034E-6,
+        "threshold_max": 2.0009129367929663E-5,
+        "finite": true,
+        "complementary_gates": true,
+        "thresholds_valid": true,
+        "name": "reverse",
+        "target_rpm": -1500,
+        "wall_seconds": 5.7020333,
+        "tracking_error_rpm": 0.034622085902583422,
+        "passed": true
+      },
+      {
+        "stop_time_s": 0.2,
+        "speed_final": 2999.4655217233881,
+        "speed_mean_last_20ms": 3000.0104912227584,
+        "speed_min": -0.72346254546105915,
+        "speed_max": 3261.6289133463129,
+        "id_peak": 0.32204296591185488,
+        "iq_peak": 11.608444980577334,
+        "torque_mean_last_20ms": 0.21134288854468691,
+        "threshold_min": 4.8530249789145437E-6,
+        "threshold_max": 2.0146975021085459E-5,
+        "finite": true,
+        "complementary_gates": true,
+        "thresholds_valid": true,
+        "name": "load_step",
+        "target_rpm": 3000,
+        "wall_seconds": 5.4211329,
+        "tracking_error_rpm": 0.010491222758446384,
+        "passed": true
+      },
+      {
+        "stop_time_s": 0.2,
+        "speed_final": 2999.4091602375088,
+        "speed_mean_last_20ms": 2999.9705674372744,
+        "speed_min": -0.75152702660631676,
+        "speed_max": 3261.4317556006081,
+        "id_peak": 0.16000888691559556,
+        "iq_peak": 11.266564318550522,
+        "torque_mean_last_20ms": 0.12127867117058933,
+        "threshold_min": 4.8880166555982047E-6,
+        "threshold_max": 2.0111983344401797E-5,
+        "finite": true,
+        "complementary_gates": true,
+        "thresholds_valid": true,
+        "name": "half_solver_step",
+        "target_rpm": 3000,
+        "wall_seconds": 10.2337141,
+        "tracking_error_rpm": 0.029432562725560274,
+        "passed": true
+      }
+    ],
+    "expected_steady_torque_Nm": 0.12083992653589794,
+    "torque_balance_error_Nm": 0.0010107974269091963,
+    "half_step_speed_difference_rpm": 0.0030353409506460594,
+    "all_passed": true
+  }
+}
