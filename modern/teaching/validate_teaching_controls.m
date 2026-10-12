@@ -146,7 +146,7 @@ else
  ph=get_param([h '/Input'],'PortHandles');dest=get_param([h '/Truth'],'PortHandles');add_line(h,ph.Outport(1),dest.Inport(1));
 end
 for k=1:size(variables,1),assignin(hmw,variables{k,1},variables{k,2});end
-set_param(h,'SolverType','Fixed-step','Solver','FixedStepDiscrete','FixedStep',num2str(dt,17), ...
+set_param(h,'SolverType','Fixed-step','Solver','ode4','FixedStep','T', ...
  'StopTime',num2str(time(end),17),'ReturnWorkspaceOutputs','on','SaveOutput','off','SaveTime','off');
 out=sim(h);
 end

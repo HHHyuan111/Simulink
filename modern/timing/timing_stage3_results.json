@@ -1,0 +1,755 @@
+{
+  "all_passed": true,
+  "source_sha256": "a61192106edbe22425ff55814ffc3d009203baddd9fe8bfc2f245179f99e7548",
+  "model_sha256": "db31d893ca9f0359e6b36e580056da9b74a46457f127da0c1bcccbab4775edec",
+  "components": {
+    "first_samples_ABC_A": [
+      28.562499999999996,
+      54.124999999999993,
+      -76.6875
+    ],
+    "first_sample_sum_A": 6,
+    "jeos_times_s": [
+      2.8874999999999997E-5,
+      7.8874999999999993E-5,
+      0.000128875,
+      0.000178875
+    ],
+    "speed_event_respects_divider": true,
+    "whole_aperture_window_checked": true,
+    "hold_uses_last_valid": true,
+    "ccr_cases": [
+      {
+        "trigger_us": 24.375,
+        "compute_us": 5,
+        "mode": 0,
+        "first_write_us": 33.875,
+        "first_latch_us": 49.999999999999993
+      },
+      {
+        "trigger_us": 10,
+        "compute_us": 5,
+        "mode": 0,
+        "first_write_us": 19.5,
+        "first_latch_us": 24.999999999999996
+      },
+      {
+        "trigger_us": 10,
+        "compute_us": 5,
+        "mode": 1,
+        "first_write_us": 19.5,
+        "first_latch_us": 49.999999999999993
+      },
+      {
+        "trigger_us": 10,
+        "compute_us": 10.5,
+        "mode": 0,
+        "first_write_us": 24.999999999999996,
+        "first_latch_us": 49.999999999999993
+      },
+      {
+        "trigger_us": 10,
+        "compute_us": 11,
+        "mode": 0,
+        "first_write_us": 25.5,
+        "first_latch_us": 49.999999999999993
+      }
+    ],
+    "write_at_boundary_waits_until_next_update": true
+  },
+  "preserved_blocks": 622,
+  "total_blocks": 667,
+  "root_blocks": 188,
+  "pi_gains": {
+    "kp_w": 0.00069087230807625508,
+    "ki_w": 0.04340878735241975,
+    "ks_w": 0.98718608264211138,
+    "kp_id": 0.7539822368615503,
+    "ki_id": 879.645943005142,
+    "ks_id": 1.1309733552923253,
+    "kp_iq": 0.7539822368615503,
+    "ki_iq": 879.645943005142,
+    "ks_iq": 1.1309733552923253
+  },
+  "off_identical_timeseries": 45,
+  "compiled": {
+    "current": [
+      5E-5,
+      2.8875E-5
+    ],
+    "speed": [
+      0.0001,
+      7.8875E-5
+    ],
+    "svm": [
+      5E-5,
+      2.8875E-5
+    ]
+  },
+  "real": {
+    "stop_time_s": 0.019978875000000004,
+    "speed_end_rpm": 783.45115852682227,
+    "iq_peak_A": 8.09211847033108,
+    "true_phase_current_peak_A": 8.352209679488217,
+    "valid_fraction_ABC": [
+      1,
+      1,
+      1
+    ],
+    "sample_sum_rms_A": 0.033202655334227817,
+    "max_sample_to_actuation_us": 21.125000000000309
+  },
+  "window": {
+    "stop_time_s": 0.019978875000000004,
+    "speed_end_rpm": 783.45115852682227,
+    "iq_peak_A": 8.09211847033108,
+    "true_phase_current_peak_A": 8.352209679488217,
+    "valid_fraction_ABC": [
+      1,
+      1,
+      1
+    ],
+    "sample_sum_rms_A": 0.033202655334227817,
+    "max_sample_to_actuation_us": 21.125000000000309
+  },
+  "window_hold": {
+    "stop_time_s": 0.019978875000000004,
+    "speed_end_rpm": 783.45115852682227,
+    "iq_peak_A": 8.09211847033108,
+    "true_phase_current_peak_A": 8.352209679488217,
+    "valid_fraction_ABC": [
+      1,
+      1,
+      1
+    ],
+    "sample_sum_rms_A": 0.033202655334227817,
+    "max_sample_to_actuation_us": 21.125000000000309
+  },
+  "grid_speed_difference_rpm": 0.11901263715209609,
+  "stress_reference": {
+    "stop_time_s": 0.00998575,
+    "speed_end_rpm": 393.88663561251332,
+    "iq_peak_A": 8.0819503357036933,
+    "true_phase_current_peak_A": 8.3335577432259687,
+    "valid_fraction_ABC": [
+      1,
+      0.99,
+      1
+    ],
+    "sample_sum_rms_A": 0.012819344514778355,
+    "max_sample_to_actuation_us": 14.250000000000373
+  },
+  "stress_window": {
+    "stop_time_s": 0.00998575,
+    "speed_end_rpm": 405.09771253660068,
+    "iq_peak_A": 11.763992445085652,
+    "true_phase_current_peak_A": 12.122276492290643,
+    "valid_fraction_ABC": [
+      1,
+      0.975,
+      1
+    ],
+    "sample_sum_rms_A": 1.0530639752669,
+    "max_sample_to_actuation_us": 14.250000000000373
+  },
+  "stress_hold": {
+    "stop_time_s": 0.00998575,
+    "speed_end_rpm": 405.13179057285231,
+    "iq_peak_A": 11.763992445085652,
+    "true_phase_current_peak_A": 12.122276492290643,
+    "valid_fraction_ABC": [
+      1,
+      0.975,
+      1
+    ],
+    "sample_sum_rms_A": 1.0528159797199239,
+    "max_sample_to_actuation_us": 14.250000000000373
+  },
+  "reject_pwm_on": true,
+  "reject_window_on": true,
+  "reloaded_preservation": true,
+  "complete_board_emulation": false,
+  "pi_retuned": false,
+  "trigger_phase_measured": false,
+  "compute_time_measured": false,
+  "nonfinite_verification": "Every logged timeseries checked; model diagnostic left at saved default after native diagnostic crash.",
+  "original_changes": [
+    {
+      "path": "PMSM_FOC_R2026a/Carrier Wave",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Chirp1/sample",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Chirp2/sample",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w/记录_obs_pi_speed",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w1",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w1/Discrete-Time\nIntegrator",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w1/Zero-Order\nHold",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w1/记录_obs_aw_d",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w1/记录_obs_pi_d",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w2",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w2/Discrete-Time\nIntegrator",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w2/Zero-Order\nHold",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w2/记录_obs_aw_q",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w2/记录_obs_pi_q",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/记录_obs_state",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Product",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Sum6",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/T_load1",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save PWM thresholds",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save SW",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save TL",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save Te",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save UDC",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save id",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save iq",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save iq_ref",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save nref",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save speed",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save v_alpha",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save v_beta",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_analog_current",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_id_ref",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_mod",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_sector",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_vd",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_vd_actual",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_vq",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_vq_actual",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Zero-Order\nHold1",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Zero-Order\nHold2",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Zero-Order\nHold3",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Zero-Order\nHold4",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Zero-Order\nHold5",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/功率设置/记录_obs_power_drop",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/时序观测/总览",
+      "parameter_changed": false,
+      "input_changed": true
+    },
+    {
+      "path": "PMSM_FOC_R2026a/时序设置",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/母线采样",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/传递延迟",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/记录_log_theta_error",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/记录_log_theta_meas",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/记录_log_theta_true",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/周期延迟",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/生效",
+      "parameter_changed": false,
+      "input_changed": true
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/记录_log_Tcm_applied",
+      "parameter_changed": true,
+      "input_changed": true
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/记录_log_Tcm_requested",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/传递延迟",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/启用",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/噪声源",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/捕获",
+      "parameter_changed": true,
+      "input_changed": true
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/数字低通",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_adc",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_filter",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_meas",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_noise",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_true",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/限压/母线采样",
+      "parameter_changed": true,
+      "input_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/限压/记录_obs_voltage",
+      "parameter_changed": true,
+      "input_changed": false
+    }
+  ],
+  "original_geometry_preserved": true,
+  "original_scripts_preserved": true,
+  "default_settings": [
+    {
+      "block": "时序设置",
+      "parameters": [
+        {
+          "name": "speed_on",
+          "value": "off"
+        },
+        {
+          "name": "speed_divider",
+          "value": "20"
+        },
+        {
+          "name": "pwm_on",
+          "value": "off"
+        },
+        {
+          "name": "pwm_cycles",
+          "value": "1"
+        },
+        {
+          "name": "real_on",
+          "value": "off"
+        },
+        {
+          "name": "window_on",
+          "value": "off"
+        },
+        {
+          "name": "invalid_hold_on",
+          "value": "off"
+        },
+        {
+          "name": "trigger_us",
+          "value": "24.375"
+        },
+        {
+          "name": "sync_us",
+          "value": "0"
+        },
+        {
+          "name": "compute_us",
+          "value": "5"
+        },
+        {
+          "name": "settle_us",
+          "value": "0.5"
+        },
+        {
+          "name": "update_mode",
+          "value": "峰谷双更新（RCR=0）"
+        },
+        {
+          "name": "grid_divider",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "block": "采样设置",
+      "parameters": [
+        {
+          "name": "bias_on",
+          "value": "off"
+        },
+        {
+          "name": "bias_A",
+          "value": "[0.05 -0.03 0]"
+        },
+        {
+          "name": "gain_on",
+          "value": "off"
+        },
+        {
+          "name": "phase_gain",
+          "value": "[1.01 0.99 1]"
+        },
+        {
+          "name": "noise_on",
+          "value": "off"
+        },
+        {
+          "name": "noise_rms",
+          "value": "0.02"
+        },
+        {
+          "name": "noise_seed",
+          "value": "9474"
+        },
+        {
+          "name": "adc_on",
+          "value": "off"
+        },
+        {
+          "name": "adc_bits",
+          "value": "12"
+        },
+        {
+          "name": "adc_span",
+          "value": "82.5"
+        },
+        {
+          "name": "filter_on",
+          "value": "off"
+        },
+        {
+          "name": "filter_hz",
+          "value": "500"
+        },
+        {
+          "name": "delay_on",
+          "value": "off"
+        },
+        {
+          "name": "delay_cycles",
+          "value": "1"
+        },
+        {
+          "name": "control_period",
+          "value": "dt"
+        },
+        {
+          "name": "analog_on",
+          "value": "off"
+        },
+        {
+          "name": "analog_hz",
+          "value": "5000"
+        },
+        {
+          "name": "numerical_step",
+          "value": "T"
+        },
+        {
+          "name": "real_mode",
+          "value": "strcmp(get_param([bdroot '/时序设置'],'real_on'),'on')"
+        }
+      ]
+    },
+    {
+      "block": "角度设置",
+      "parameters": [
+        {
+          "name": "bias_on",
+          "value": "off"
+        },
+        {
+          "name": "bias_deg",
+          "value": "2"
+        },
+        {
+          "name": "quant_on",
+          "value": "off"
+        },
+        {
+          "name": "step_deg",
+          "value": "0.18"
+        },
+        {
+          "name": "delay_on",
+          "value": "off"
+        },
+        {
+          "name": "delay_cycles",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "block": "功率设置",
+      "parameters": [
+        {
+          "name": "dead_on",
+          "value": "off"
+        },
+        {
+          "name": "dead_us",
+          "value": "0.5"
+        },
+        {
+          "name": "drop_on",
+          "value": "off"
+        },
+        {
+          "name": "ron",
+          "value": "0.01"
+        },
+        {
+          "name": "vf",
+          "value": "0.7"
+        },
+        {
+          "name": "blend_A",
+          "value": "0.1"
+        },
+        {
+          "name": "pwm_period",
+          "value": "Ts"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "45 old timeseries match in time and normalized channel values; Tcm_applied raw array orientation can differ.",
+    "Trigger phase 24.375us is an explicit unmeasured assumption. Compute5us and settling0.5us are demonstrations.",
+    "Window OFF samples ideal phase currents; ON invalid samples are zeroed as a teaching approximation. Optional hold is not firmware current reconstruction.",
+    "Original 622 blocks, all nine regions and PI gains are preserved. Short runs verify timing, not full-speed performance.",
+    "Physical deadtime/diode conduction, ADC2 bus timing, amplifier dynamics, ABZ and active protection remain future work."
+  ],
+  "reviewed_at": "2026-10-12 11:18:54",
+  "publication_status": "published",
+  "candidate_path": "D:\\simulink\\modern\\.build\\timing_stage\\PMSM_FOC_R2026a.slx",
+  "canonical_path": "D:\\simulink\\modern\\PMSM_FOC_R2026a.slx",
+  "canonical_sha256": "db31d893ca9f0359e6b36e580056da9b74a46457f127da0c1bcccbab4775edec",
+  "finite_log_audit": {
+    "off": 48,
+    "real": 48,
+    "window": 48,
+    "window_hold": 48,
+    "fine": 48,
+    "stress_reference": 48,
+    "stress_window": 48,
+    "stress_hold": 48
+  },
+  "published_at": "2026-10-12 11:29:02"
+}
