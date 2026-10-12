@@ -1,0 +1,13 @@
+{
+  "matlab": "26.1.0.3346908 (R2026a) Update 5",
+  "sha256": "88f7d9b63986307df6dad91373373b8fe2107cfde5414aea55637b9909006611",
+  "custom_workspace_parameter_preserved": true,
+  "clean_workspace_restored": true,
+  "all_lessons_passed": [
+    "timing",
+    "offset",
+    "noise_filter",
+    "angle"
+  ],
+  "passed": true
+}

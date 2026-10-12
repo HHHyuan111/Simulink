@@ -1,0 +1,440 @@
+{
+  "source_sha256": "6db333bfaf2d10822562c31a51ed8941ffd5ca421edaab858295af521885cc8b",
+  "model_sha256": "a61192106edbe22425ff55814ffc3d009203baddd9fe8bfc2f245179f99e7548",
+  "all_passed": true,
+  "components": {
+    "svpwm_vectors": 3678,
+    "svpwm_reconstruction_error_V": 7.105427357601002E-15,
+    "all_six_sectors_and_boundaries": true,
+    "vector_limit_error_V": 0,
+    "direction_preserved": true,
+    "pi_d_integral_error_V": 3.7569947153315297E-13,
+    "pi_q_integral_error_V": 1.2965184481572578E-12,
+    "distinct_axis_bindings_passed": true
+  },
+  "preserved_original_blocks": 532,
+  "pi_gains": {
+    "kp_w": 0.0006908723080762551,
+    "ki_w": 0.04340878735241975,
+    "ks_w": 0.9871860826421114,
+    "kp_id": 0.7539822368615503,
+    "ki_id": 879.645943005142,
+    "ks_id": 1.1309733552923253,
+    "kp_iq": 0.7539822368615503,
+    "ki_iq": 879.645943005142,
+    "ks_iq": 1.1309733552923253
+  },
+  "settings": [
+    {
+      "block": "时序设置",
+      "parameters": [
+        {
+          "name": "speed_on",
+          "value": "off"
+        },
+        {
+          "name": "speed_divider",
+          "value": "20"
+        },
+        {
+          "name": "pwm_on",
+          "value": "off"
+        },
+        {
+          "name": "pwm_cycles",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "block": "采样设置",
+      "parameters": [
+        {
+          "name": "bias_on",
+          "value": "off"
+        },
+        {
+          "name": "bias_A",
+          "value": "[0.05 -0.03 0]"
+        },
+        {
+          "name": "gain_on",
+          "value": "off"
+        },
+        {
+          "name": "phase_gain",
+          "value": "[1.01 0.99 1]"
+        },
+        {
+          "name": "noise_on",
+          "value": "off"
+        },
+        {
+          "name": "noise_rms",
+          "value": "0.02"
+        },
+        {
+          "name": "noise_seed",
+          "value": "9474"
+        },
+        {
+          "name": "adc_on",
+          "value": "off"
+        },
+        {
+          "name": "adc_bits",
+          "value": "12"
+        },
+        {
+          "name": "adc_span",
+          "value": "82.5"
+        },
+        {
+          "name": "filter_on",
+          "value": "off"
+        },
+        {
+          "name": "filter_hz",
+          "value": "500"
+        },
+        {
+          "name": "delay_on",
+          "value": "off"
+        },
+        {
+          "name": "delay_cycles",
+          "value": "1"
+        },
+        {
+          "name": "control_period",
+          "value": "dt"
+        },
+        {
+          "name": "analog_on",
+          "value": "off"
+        },
+        {
+          "name": "analog_hz",
+          "value": "5000"
+        },
+        {
+          "name": "numerical_step",
+          "value": "T"
+        }
+      ]
+    },
+    {
+      "block": "角度设置",
+      "parameters": [
+        {
+          "name": "bias_on",
+          "value": "off"
+        },
+        {
+          "name": "bias_deg",
+          "value": "2"
+        },
+        {
+          "name": "quant_on",
+          "value": "off"
+        },
+        {
+          "name": "step_deg",
+          "value": "0.18"
+        },
+        {
+          "name": "delay_on",
+          "value": "off"
+        },
+        {
+          "name": "delay_cycles",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "block": "功率设置",
+      "parameters": [
+        {
+          "name": "dead_on",
+          "value": "off"
+        },
+        {
+          "name": "dead_us",
+          "value": "0.5"
+        },
+        {
+          "name": "drop_on",
+          "value": "off"
+        },
+        {
+          "name": "ron",
+          "value": "0.01"
+        },
+        {
+          "name": "vf",
+          "value": "0.7"
+        },
+        {
+          "name": "blend_A",
+          "value": "0.1"
+        },
+        {
+          "name": "pwm_period",
+          "value": "Ts"
+        }
+      ]
+    }
+  ],
+  "decoupling_default": "on",
+  "before": {
+    "finite": true,
+    "final_speed_rpm": 3000.0460651021276,
+    "final_speed_error_rpm": 0.0460651021276135,
+    "peak_speed_abs_rpm": 3135.8487192768152,
+    "peak_iq_abs_A": 8.507326570390756,
+    "thresholds_valid": true
+  },
+  "default": {
+    "finite": true,
+    "final_speed_rpm": 2999.546309090857,
+    "final_speed_error_rpm": 0.45369090914300614,
+    "peak_speed_abs_rpm": 3135.0284209853476,
+    "peak_iq_abs_A": 8.52501211373802,
+    "thresholds_valid": true,
+    "max_final_utilization": 0.7670423260218454,
+    "saturation_fraction": 0,
+    "modulation_valid": true,
+    "aw_recurrence": {
+      "maximum_combined_backcalculation_error_A": 2.901793828831617E-15,
+      "maximum_backward_euler_error_V": 1.1102230246251565E-16
+    },
+    "observation_metrics": {
+      "label": "算法修复 · 沉沙200W · 默认启动",
+      "stop_time_s": 1,
+      "control_log_period_s": 4.999999999999449E-05,
+      "fast_log_period_s": 1.000000000001E-06,
+      "steady_window_s": [
+        0.9800000000000001,
+        1
+      ],
+      "speed_error_rms_rpm": 0.37053325481867955,
+      "id_tracking_error_rms_A": 0.12146406599434725,
+      "iq_tracking_error_rms_A": 0.16469326862619993,
+      "measurement_error_rms_A": [
+        0,
+        0,
+        0
+      ],
+      "peak_iq_A": 8.52501211373802,
+      "max_voltage_command_ratio": 0.7363606329809714,
+      "pi_speed_clipped_sample_fraction": 0.07689615519224038,
+      "pi_d_clipped_sample_fraction": 0,
+      "pi_q_clipped_sample_fraction": 0,
+      "thresholds_inside_carrier_range": true,
+      "notes": [
+        "Control logs are synchronous samples, not switching ripple measurements.",
+        "Cycle-mean-removed phase RMS includes within-cycle fundamental change; not a THD measurement.",
+        "Power-stage deadtime is an average equivalent; ideal gates remain complementary.",
+        "Final dq circle limit uses 0.96*max(Vbus,0)/sqrt(3), after PI plus feedforward."
+      ],
+      "max_final_voltage_utilization": 0.7670423260218454,
+      "vector_saturation_fraction": 0,
+      "mean_motor_electrical_input_W": 68.2203495528805,
+      "cycle_demeaned_phase_rms_A": [
+        0.24474302712615323,
+        0.24430777629002054,
+        0.2444375400692057
+      ]
+    }
+  },
+  "nonzero_id_feedforward_error_V": 3.8632386178960587E-10,
+  "negative_start": {
+    "finite": true,
+    "final_speed_rpm": -2000.1265036021975,
+    "final_speed_error_rpm": 0.12650360219754475,
+    "peak_speed_abs_rpm": 2565.6247894993576,
+    "peak_iq_abs_A": 8.42778960582103,
+    "thresholds_valid": true,
+    "max_final_utilization": 0.561311674339526,
+    "saturation_fraction": 0,
+    "modulation_valid": true
+  },
+  "reversal": {
+    "finite": true,
+    "final_speed_rpm": -1999.6110806509478,
+    "final_speed_error_rpm": 0.38891934905223025,
+    "peak_speed_abs_rpm": 2566.489412609796,
+    "peak_iq_abs_A": 8.535117817513633,
+    "thresholds_valid": true,
+    "max_final_utilization": 0.5587293541235843,
+    "saturation_fraction": 0,
+    "modulation_valid": true,
+    "aw_recurrence": {
+      "maximum_combined_backcalculation_error_A": 1.5261333886135172E-15,
+      "maximum_backward_euler_error_V": 1.1102230246251565E-16
+    }
+  },
+  "load_step": {
+    "finite": true,
+    "final_speed_rpm": 2999.8409469453877,
+    "final_speed_error_rpm": 0.15905305461228636,
+    "peak_speed_abs_rpm": 3135.0284209853476,
+    "peak_iq_abs_A": 8.52501211373802,
+    "thresholds_valid": true,
+    "max_final_utilization": 0.7670423260218454,
+    "saturation_fraction": 0,
+    "modulation_valid": true
+  },
+  "bus_recovery": {
+    "finite": true,
+    "final_speed_rpm": 2999.4094549624797,
+    "final_speed_error_rpm": 0.5905450375203145,
+    "peak_speed_abs_rpm": 3136.2198650423893,
+    "peak_iq_abs_A": 27.887170246194266,
+    "thresholds_valid": true,
+    "max_final_utilization": 1.0000000000000002,
+    "saturation_fraction": 0.2999850007499625,
+    "modulation_valid": true,
+    "aw_recurrence": {
+      "maximum_combined_backcalculation_error_A": 7.105427357601002E-15,
+      "maximum_backward_euler_error_V": 2.220446049250313E-16
+    },
+    "saturation_fraction_during": 1,
+    "saturation_fraction_restored": 0,
+    "observation_metrics": {
+      "label": "母线24→6→24V · 原PI增益",
+      "stop_time_s": 1,
+      "control_log_period_s": 4.999999999999449E-05,
+      "fast_log_period_s": 1.000000000001E-06,
+      "steady_window_s": [
+        0.9800000000000001,
+        1
+      ],
+      "speed_error_rms_rpm": 0.3260896575869935,
+      "id_tracking_error_rms_A": 0.1217892237395895,
+      "iq_tracking_error_rms_A": 0.16727320875780227,
+      "measurement_error_rms_A": [
+        0,
+        0,
+        0
+      ],
+      "peak_iq_A": 27.887170246194266,
+      "max_voltage_command_ratio": 0.9600000000000003,
+      "pi_speed_clipped_sample_fraction": 0.42837858107094645,
+      "pi_d_clipped_sample_fraction": 0,
+      "pi_q_clipped_sample_fraction": 0.005299735013249337,
+      "thresholds_inside_carrier_range": true,
+      "notes": [
+        "Control logs are synchronous samples, not switching ripple measurements.",
+        "Cycle-mean-removed phase RMS includes within-cycle fundamental change; not a THD measurement.",
+        "Power-stage deadtime is an average equivalent; ideal gates remain complementary.",
+        "Final dq circle limit uses 0.96*max(Vbus,0)/sqrt(3), after PI plus feedforward."
+      ],
+      "max_final_voltage_utilization": 1.0000000000000002,
+      "vector_saturation_fraction": 0.2999850007499625,
+      "mean_motor_electrical_input_W": 68.19594321010413,
+      "cycle_demeaned_phase_rms_A": [
+        0.2448482016910257,
+        0.245054876211594,
+        0.24422452722332963
+      ]
+    }
+  },
+  "reloaded_identical": true,
+  "decoupling_off_passed": true,
+  "total_blocks": 622,
+  "root_blocks": 188,
+  "original_geometry_and_regions_preserved": true,
+  "original_changes": [
+    {
+      "sid": "PMSM_FOC_R2026a:220",
+      "path": "PMSM_FOC_R2026a/Goto7",
+      "parameters": true,
+      "inputs": false
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:221",
+      "path": "PMSM_FOC_R2026a/Goto8",
+      "parameters": true,
+      "inputs": false
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:439",
+      "path": "PMSM_FOC_R2026a/PI Controller_w1",
+      "parameters": true,
+      "inputs": false
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:449",
+      "path": "PMSM_FOC_R2026a/PI Controller_w1/Sum",
+      "parameters": true,
+      "inputs": true
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:463",
+      "path": "PMSM_FOC_R2026a/PI Controller_w2/Sum",
+      "parameters": true,
+      "inputs": true
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:982",
+      "path": "PMSM_FOC_R2026a/PI观测/总览",
+      "parameters": false,
+      "inputs": true
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:213",
+      "path": "PMSM_FOC_R2026a/Product3",
+      "parameters": false,
+      "inputs": true
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:240",
+      "path": "PMSM_FOC_R2026a/SVPWM Function v1.0",
+      "parameters": false,
+      "inputs": true
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:144",
+      "path": "PMSM_FOC_R2026a/Sum2",
+      "parameters": false,
+      "inputs": true
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:152",
+      "path": "PMSM_FOC_R2026a/Sum3",
+      "parameters": false,
+      "inputs": true
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:983",
+      "path": "PMSM_FOC_R2026a/时序观测/总览",
+      "parameters": false,
+      "inputs": true
+    }
+  ],
+  "before_diagnostic_cleanup_sha256": "70be3f58114c7977b54a618ccedcd0cb32cf5e63a396cf302ffea75e56409060",
+  "diagnostic_cleanup_identical_timeseries": 45,
+  "compiled_periods_s": {
+    "sid_442": 5E-05,
+    "sid_456": 5E-05,
+    "sid_438": 0.0001,
+    "sid_240": 5E-05
+  },
+  "continuous_bus_compiled_periods_s": {
+    "SVPWMFunctionV1_0": 5E-05,
+    "x____": 5E-05,
+    "phase_A": 0
+  },
+  "complete_board_emulation": false,
+  "pi_retuned": false,
+  "notes": [
+    "PI axis clamps and integral clamps are retained. Final residual and axis residual telescope to Vfinal-FF-PIraw; there is one combined correction.",
+    "Backward Euler retains an implicit algebraic solve at each current tick; this is not a bit-exact firmware integrator.",
+    "True gate deadtime, ADC valid windows, sequential conversion, ABZ estimator, alignment and active protection remain future work."
+  ],
+  "published_model_sha256": "a61192106edbe22425ff55814ffc3d009203baddd9fe8bfc2f245179f99e7548",
+  "published_at_local": "2026-10-12T09:50:35+08:00",
+  "backup_file": "modern/.build/algorithm_stage/PMSM_FOC_before_algorithm.slx"
+}

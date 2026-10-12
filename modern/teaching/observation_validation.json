@@ -1,0 +1,231 @@
+{
+  "matlab": "26.1.0.3346908 (R2026a) Update 5",
+  "disabled_comparison": [
+    {
+      "name": "log_SW",
+      "samples": 2401,
+      "identical": true
+    },
+    {
+      "name": "log_TL",
+      "samples": 2401,
+      "identical": true
+    },
+    {
+      "name": "log_Tcm",
+      "samples": 2401,
+      "identical": true
+    },
+    {
+      "name": "log_Tcm_applied",
+      "samples": 2401,
+      "identical": true
+    },
+    {
+      "name": "log_Tcm_requested",
+      "samples": 2401,
+      "identical": true
+    },
+    {
+      "name": "log_Te",
+      "samples": 2401,
+      "identical": true
+    },
+    {
+      "name": "log_UDC",
+      "samples": 2401,
+      "identical": true
+    },
+    {
+      "name": "log_iabc_adc",
+      "samples": 2401,
+      "identical": true
+    },
+    {
+      "name": "log_iabc_filter",
+      "samples": 2401,
+      "identical": true
+    },
+    {
+      "name": "log_iabc_meas",
+      "samples": 2401,
+      "identical": true
+    },
+    {
+      "name": "log_iabc_noise",
+      "samples": 2401,
+      "identical": true
+    },
+    {
+      "name": "log_iabc_true",
+      "samples": 2401,
+      "identical": true
+    },
+    {
+      "name": "log_id",
+      "samples": 2401,
+      "identical": true
+    },
+    {
+      "name": "log_iq",
+      "samples": 2401,
+      "identical": true
+    },
+    {
+      "name": "log_iq_ref",
+      "samples": 2401,
+      "identical": true
+    },
+    {
+      "name": "log_nref",
+      "samples": 2401,
+      "identical": true
+    },
+    {
+      "name": "log_speed",
+      "samples": 2401,
+      "identical": true
+    },
+    {
+      "name": "log_theta_error",
+      "samples": 2401,
+      "identical": true
+    },
+    {
+      "name": "log_theta_meas",
+      "samples": 2401,
+      "identical": true
+    },
+    {
+      "name": "log_theta_true",
+      "samples": 2401,
+      "identical": true
+    },
+    {
+      "name": "log_v_alpha",
+      "samples": 2401,
+      "identical": true
+    },
+    {
+      "name": "log_v_beta",
+      "samples": 2401,
+      "identical": true
+    }
+  ],
+  "components": [
+    {
+      "name": "analog_lowpass_closed_form",
+      "max_abs_error": 5.4419433404007123E-9,
+      "passed": true
+    },
+    {
+      "name": "analog_then_sample_then_digital",
+      "max_abs_error": 1.0049622245489331E-9,
+      "passed": true
+    },
+    {
+      "name": "firmware_adc_scale_and_rails",
+      "max_abs_error": 0,
+      "passed": true
+    },
+    {
+      "name": "power_average_case_1",
+      "max_abs_error": 0,
+      "passed": true
+    },
+    {
+      "name": "power_average_case_2",
+      "max_abs_error": 2.7755575615628914E-17,
+      "passed": true
+    },
+    {
+      "name": "power_average_case_3",
+      "max_abs_error": 5.5511151231257827E-17,
+      "passed": true
+    },
+    {
+      "name": "power_average_case_4",
+      "max_abs_error": 1.1102230246251565E-16,
+      "passed": true
+    }
+  ],
+  "closed_loop": [
+    {
+      "name": "analog_only",
+      "speed_final_rpm": 2999.2111434291637,
+      "peak_iq_A": 11.599097575477685,
+      "feedback_error_A": 3.5527136788005009E-15,
+      "pi_identity_max_error": [
+        3.5766736794506926E-11,
+        5.5511151231257827E-17,
+        4.4408920985006262E-16
+      ],
+      "passed": true
+    },
+    {
+      "name": "deadtime_average",
+      "speed_final_rpm": 3000.2350067262478,
+      "peak_iq_A": 11.623014937096787,
+      "feedback_error_A": 3.5527136788005009E-15,
+      "pi_identity_max_error": [
+        3.5766736794506926E-11,
+        5.5511151231257827E-17,
+        4.4408920985006262E-16
+      ],
+      "passed": true
+    },
+    {
+      "name": "device_drop",
+      "speed_final_rpm": 2999.5877373579633,
+      "peak_iq_A": 11.57040183819193,
+      "feedback_error_A": 3.5527136788005009E-15,
+      "pi_identity_max_error": [
+        3.5766736794506926E-11,
+        5.5511151231257827E-17,
+        4.4408920985006262E-16
+      ],
+      "passed": true
+    },
+    {
+      "name": "firmware_io",
+      "speed_final_rpm": 3000.1234714932448,
+      "peak_iq_A": 11.617290499257056,
+      "feedback_error_A": 3.5527136788005009E-15,
+      "pi_identity_max_error": [
+        3.8867145613075138E-11,
+        8.3266726846886741E-17,
+        1.1102230246251565E-15
+      ],
+      "passed": true
+    },
+    {
+      "name": "combined_reverse",
+      "speed_final_rpm": -1500.0322207342006,
+      "peak_iq_A": 11.350532093411923,
+      "feedback_error_A": 3.5527136788005009E-15,
+      "pi_identity_max_error": [
+        3.2386052173372093E-11,
+        4.163336342344337E-17,
+        3.8857805861880479E-16
+      ],
+      "passed": true
+    }
+  ],
+  "firmware_speed_periods_s": [
+    0.0001,
+    0.0001,
+    0.0001
+  ],
+  "fast_log_period_s": 1E-6,
+  "control_log_period_s": 5E-5,
+  "firmware_commit": "48d6e86814ac6657b1313b4c92ef24c88f492e07",
+  "adc_lsb_A": 0.040283203125,
+  "scope": "Default-equivalence, component math, observation wiring and finite 120ms closed loops; average deadtime only, no tuning or hardware validation.",
+  "all_passed": true,
+  "before_sha256": "88f7d9b63986307df6dad91373373b8fe2107cfde5414aea55637b9909006611",
+  "after_sha256": "0524c3504492918af3bc346e1ea1055189b6195e88a8b179b84a30d1689520df",
+  "total_blocks": 532,
+  "root_blocks": 177,
+  "original_384_blocks_preserved": true,
+  "original_geometry_and_pi_math_unchanged": true
+}

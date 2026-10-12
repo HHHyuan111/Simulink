@@ -1,0 +1,9 @@
+{
+  "matlab": "26.1.0.3346908 (R2026a) Update 5",
+  "sha256": "88f7d9b63986307df6dad91373373b8fe2107cfde5414aea55637b9909006611",
+  "all_defaults_off": true,
+  "embedded_init_and_masks_work": true,
+  "passed": true,
+  "full_second_comparison_available": true,
+  "full_second_original_signals_identical": 12
+}

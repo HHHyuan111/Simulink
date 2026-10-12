@@ -36,10 +36,11 @@ a Permanent Magnet Synchronous Motor (PMSM).
 The current working version preserves the original FOC control blocks in a flat layout with nine aligned, equally sized regions. Legacy SPS dependencies have been replaced with ordinary Simulink blocks. It requires MATLAB R2026a and Simulink; parameters are embedded in the model workspace.
 
 - [运行方法、验证结果与待修复问题](./modern/README.md)
+- [速度环单位与采样修复记录](./modern/control/README_速度环第一步.md)
 - [当前模型全图](./modern/layout/flat_tidy.png)
 - [逐模块解读](./review/learning/PMSM模型逐模块解读.md)
 - [STM32G474 仿真开发计划](./review/learning/STM32G474仿真开发计划.md)
-- [完整解读与开发计划（Word）](./review/learning/PMSM模型解读与STM32G474开发计划.docx)
+- [完整解读与开发计划（Word，学习快照 4394283）](./review/learning/PMSM模型解读与STM32G474开发计划.docx)
 
 This version is a runnable learning and development starting point. Motor parameters are demonstration values; STM32G474RET6 board and firmware behavior have not yet been calibrated or validated.
 

@@ -1,0 +1,27 @@
+{
+  "model_sha256": "0524c3504492918af3bc346e1ea1055189b6195e88a8b179b84a30d1689520df",
+  "matlab": "26.1.0.3346908 (R2026a) Update 5",
+  "default_1s_identical_signals": [
+    "log_SW",
+    "log_TL",
+    "log_Tcm",
+    "log_Te",
+    "log_UDC",
+    "log_id",
+    "log_iq",
+    "log_iq_ref",
+    "log_nref",
+    "log_speed",
+    "log_v_alpha",
+    "log_v_beta"
+  ],
+  "unresolved_links": 0,
+  "equal_regions": 9,
+  "region_size": [
+    860,
+    580
+  ],
+  "total_blocks": 532,
+  "root_blocks": 177,
+  "all_passed": true
+}

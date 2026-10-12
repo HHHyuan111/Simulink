@@ -1,0 +1,354 @@
+{
+  "matlab": "26.1.0.3346908 (R2026a) Update 5",
+  "baseline_available": true,
+  "disabled_comparison": [
+    {
+      "name": "log_SW",
+      "samples": 2401,
+      "max_abs_error": 0,
+      "identical": true
+    },
+    {
+      "name": "log_TL",
+      "samples": 2401,
+      "max_abs_error": 0,
+      "identical": true
+    },
+    {
+      "name": "log_Tcm",
+      "samples": 2401,
+      "max_abs_error": 0,
+      "identical": true
+    },
+    {
+      "name": "log_Te",
+      "samples": 2401,
+      "max_abs_error": 0,
+      "identical": true
+    },
+    {
+      "name": "log_UDC",
+      "samples": 2401,
+      "max_abs_error": 0,
+      "identical": true
+    },
+    {
+      "name": "log_id",
+      "samples": 2401,
+      "max_abs_error": 0,
+      "identical": true
+    },
+    {
+      "name": "log_iq",
+      "samples": 2401,
+      "max_abs_error": 0,
+      "identical": true
+    },
+    {
+      "name": "log_iq_ref",
+      "samples": 2401,
+      "max_abs_error": 0,
+      "identical": true
+    },
+    {
+      "name": "log_nref",
+      "samples": 2401,
+      "max_abs_error": 0,
+      "identical": true
+    },
+    {
+      "name": "log_speed",
+      "samples": 2401,
+      "max_abs_error": 0,
+      "identical": true
+    },
+    {
+      "name": "log_v_alpha",
+      "samples": 2401,
+      "max_abs_error": 0,
+      "identical": true
+    },
+    {
+      "name": "log_v_beta",
+      "samples": 2401,
+      "max_abs_error": 0,
+      "identical": true
+    }
+  ],
+  "noise_rms_A": [
+    0.02011176942884459,
+    0.020195478883043547,
+    0.0197701833627423
+  ],
+  "components": [
+    {
+      "name": "current_bypass",
+      "samples": 800,
+      "max_abs_error": 0,
+      "passed": true
+    },
+    {
+      "name": "current_offset_A",
+      "samples": 800,
+      "max_abs_error": 0,
+      "passed": true
+    },
+    {
+      "name": "phase_gain",
+      "samples": 800,
+      "max_abs_error": 0,
+      "passed": true
+    },
+    {
+      "name": "adc_codes_and_clipping",
+      "samples": 800,
+      "max_abs_error": 0,
+      "passed": true
+    },
+    {
+      "name": "digital_filter_step_response",
+      "samples": 800,
+      "max_abs_error": 8.8817841970012523E-16,
+      "passed": true
+    },
+    {
+      "name": "adc_delivery_3_cycles",
+      "samples": 800,
+      "max_abs_error": 0,
+      "passed": true
+    },
+    {
+      "name": "noise_seed_repeatability",
+      "samples": 800,
+      "max_abs_error": 0,
+      "passed": true
+    },
+    {
+      "name": "noise_injected_into_measurement",
+      "samples": 800,
+      "max_abs_error": 2.2204460492503131E-16,
+      "passed": true
+    },
+    {
+      "name": "angle_bypass",
+      "samples": 800,
+      "max_abs_error": 0,
+      "passed": true
+    },
+    {
+      "name": "angle_bias_electrical_deg",
+      "samples": 800,
+      "max_abs_error": 0,
+      "passed": true
+    },
+    {
+      "name": "angle_quantization_and_wrap",
+      "samples": 800,
+      "max_abs_error": 0,
+      "passed": true
+    },
+    {
+      "name": "angle_delivery_2_cycles",
+      "samples": 800,
+      "max_abs_error": 0,
+      "passed": true
+    },
+    {
+      "name": "pwm_delay_bypass",
+      "samples": 800,
+      "max_abs_error": 0,
+      "passed": true
+    },
+    {
+      "name": "pwm_delivery_2_cycles",
+      "samples": 800,
+      "max_abs_error": 0,
+      "passed": true
+    }
+  ],
+  "closed_loop": [
+    {
+      "name": "speed_divider_20",
+      "speed_final_rpm": 3000.2170828850667,
+      "speed_peak_rpm": 3268.538249179473,
+      "iq_peak_A": 11.608444980577334,
+      "feedback_error_A": 3.5527136788005009E-15,
+      "passed": true
+    },
+    {
+      "name": "pwm_delay_1_cycle",
+      "speed_final_rpm": 3000.3584930314896,
+      "speed_peak_rpm": 3261.3068845518528,
+      "iq_peak_A": 11.591797899568103,
+      "feedback_error_A": 3.5527136788005009E-15,
+      "passed": true
+    },
+    {
+      "name": "measured_feedback",
+      "speed_final_rpm": 2999.790872328846,
+      "speed_peak_rpm": 3263.2650277680291,
+      "iq_peak_A": 11.534629291638211,
+      "feedback_error_A": 3.5527136788005009E-15,
+      "passed": true
+    }
+  ],
+  "speed_periods_with_divider20_s": [
+    0.001,
+    0.001,
+    0.001
+  ],
+  "unresolved_links": 0,
+  "all_passed": true,
+  "scope": "Component semantics and finite 120 ms closed-loop runs; no tuning or hardware validation.",
+  "original_scope": {
+    "original_blocks": 329,
+    "original_positions_and_regions_unchanged": true,
+    "original_scripts_and_pi_math_unchanged": true,
+    "changed_original_parameters": [
+      {
+        "sid": "199",
+        "parameter": "GotoTag"
+      },
+      {
+        "sid": "233",
+        "parameter": "GotoTag"
+      },
+      {
+        "sid": "200",
+        "parameter": "GotoTag"
+      },
+      {
+        "sid": "155",
+        "parameter": "SampleTime"
+      },
+      {
+        "sid": "190",
+        "parameter": "SampleTime"
+      }
+    ],
+    "only_original_rewired_input": "Demux2: optional output delay inserted after SVPWM"
+  },
+  "before_sha256": "57049d757a95e7d2674a6ad8d99165c5b1eb71985704233892192f3fc0103d5d",
+  "top_blocks": 168,
+  "total_blocks": 384,
+  "original_blocks_preserved": 329,
+  "defaults": [
+    {
+      "block": "时序设置",
+      "parameters": [
+        {
+          "name": "speed_on",
+          "value": "off"
+        },
+        {
+          "name": "speed_divider",
+          "value": "20"
+        },
+        {
+          "name": "pwm_on",
+          "value": "off"
+        },
+        {
+          "name": "pwm_cycles",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "block": "采样设置",
+      "parameters": [
+        {
+          "name": "bias_on",
+          "value": "off"
+        },
+        {
+          "name": "bias_A",
+          "value": "[0.05 -0.03 0]"
+        },
+        {
+          "name": "gain_on",
+          "value": "off"
+        },
+        {
+          "name": "phase_gain",
+          "value": "[1.01 0.99 1]"
+        },
+        {
+          "name": "noise_on",
+          "value": "off"
+        },
+        {
+          "name": "noise_rms",
+          "value": "0.02"
+        },
+        {
+          "name": "noise_seed",
+          "value": "9474"
+        },
+        {
+          "name": "adc_on",
+          "value": "off"
+        },
+        {
+          "name": "adc_bits",
+          "value": "12"
+        },
+        {
+          "name": "adc_span",
+          "value": "20"
+        },
+        {
+          "name": "filter_on",
+          "value": "off"
+        },
+        {
+          "name": "filter_hz",
+          "value": "500"
+        },
+        {
+          "name": "delay_on",
+          "value": "off"
+        },
+        {
+          "name": "delay_cycles",
+          "value": "1"
+        },
+        {
+          "name": "control_period",
+          "value": "dt"
+        }
+      ]
+    },
+    {
+      "block": "角度设置",
+      "parameters": [
+        {
+          "name": "bias_on",
+          "value": "off"
+        },
+        {
+          "name": "bias_deg",
+          "value": "2"
+        },
+        {
+          "name": "quant_on",
+          "value": "off"
+        },
+        {
+          "name": "step_deg",
+          "value": "0.1"
+        },
+        {
+          "name": "delay_on",
+          "value": "off"
+        },
+        {
+          "name": "delay_cycles",
+          "value": "1"
+        }
+      ]
+    }
+  ],
+  "after_sha256": "88f7d9b63986307df6dad91373373b8fe2107cfde5414aea55637b9909006611",
+  "intermediate_tested_sha256": "3b821eb155217767773debb3892634d1e6a1cb1e129621f01772e04f47cec72e"
+}

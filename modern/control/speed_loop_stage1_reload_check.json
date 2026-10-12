@@ -1,0 +1,14 @@
+{
+  "matlab": "26.1.0.3346908 (R2026a) Update 5",
+  "model_sha256": "57049d757a95e7d2674a6ad8d99165c5b1eb71985704233892192f3fc0103d5d",
+  "embedded_parameters_reloaded_correctly": true,
+  "compiled_periods_s": [
+    5E-5,
+    5E-5,
+    5E-5
+  ],
+  "top_blocks": 164,
+  "total_blocks": 329,
+  "unresolved_links": 0,
+  "passed": true
+}
