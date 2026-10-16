@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "node": "N3R1",
+  "frozen_before_implementation": "2026-10-16; following user acceptance of R0 commit 4d8011e",
+  "purpose": "Causal local adaptation and interface acceptance; not the R2 steady/dynamic accuracy gate",
+  "architecture": "Retain local N1 SMO/PLL equations and N2 removable layout. Calibrate filtered measurements, extrapolate channel aperture ages using past samples. Apply estimated analog and digital front-end filters to reconstructed voltage, then compensate their EMF phase separately using previous estimated frequency. No unstable inverse filter; no true rotor/current/terminal-voltage inputs.",
+  "uncertainty": "Integrate floating/diode sign ambiguity over native intervals. Current sign comes from a causal RL predictor anchored to past calibrated samples. Include a declared 0.25 A engineering sign-uncertainty band; this is a stress allowance, not a proven hardware bound. Report uncertainty separately; do not remove zero-crossing samples to improve statistics.",
+  "component_tests": {
+    "calibration": "Matched DC gain/bias including analog/digital startup response: max absolute error <=1e-10 A; all 3 channels",
+    "alignment": "Linear ramps after one history sample: <=1e-10 A; 5 A sinusoids at signed 83.3333/166.6667/250 Hz: max channel alignment error <=0.03 A after startup, all samples included",
+    "phase": "Signed frequency grid including zero; complex transfer oracle versus separate phase correction <=1e-12 rad",
+    "rail": "Configured +/-span and one-LSB guard on actual ADC current before digital filtering; never legacy fixed-165A diagnostic codes",
+    "publication": "New packet inaccessible before ready; available exactly at ceil(observer execution/h); live fault revokes old good packet on first native supervisor call; no zero-time recomputation at ready",
+    "recovery": "Invalid input and timing fault clear lock/history; after a fault, at least the frozen 200-sample history plus 400-sample lock test (599 consecutive good samples) before repermission",
+    "voltage": "R0 electrical/deadtime oracles retained; independently accumulated RL weighted voltage and nonnegative uncertainty intervals match integrated outputs <=1e-10 V"
+  },
+  "integration_cases": [
+    {"id":"combined","duration_s":0.02,"adc_span_A":20,"window_on":false,"interference_s":0},
+    {"id":"rail","duration_s":0.02,"adc_span_A":0.2,"window_on":false,"interference_s":0},
+    {"id":"window","duration_s":0.02,"adc_span_A":20,"window_on":true,"interference_s":0},
+    {"id":"deadline","duration_s":0.02,"adc_span_A":20,"window_on":false,"interference_s":0.000011125}
+  ],
+  "integration_checks": [
+    "Each case: fresh process formal, fresh process replay, fresh observer-absent same-configuration baseline; compare complete timeseries Time/Data exactly",
+    "All 52 original logs must equal same-configuration observer-absent baseline",
+    "Native h=62.5 ns, current period=50 us at JEOS 28.875 us, speed period=100 us at offset78.875 us",
+    "Physical nonideal configuration actually enabled; estimated parameters remain independent and deliberately mismatched",
+    "New internal Gotos scoped; truth imported only in evaluation; original blocks/algorithms and model file preserved; layer and stimulus removal restore snapshot",
+    "Actual CCR write matches JEOS+observer3us+FOC5us+interference; observer ready occurs JEOS+3us; guard2us is not execution",
+    "ADC rail/window and deadline flags immediately veto publication; disabled control values are zero; record every reason and timestamp",
+    "Independent raw-log recurrence audit for calibration, filters, RL accumulation, delay publication and exact component replay"
+  ],
+  "failure_policy": "Development failures retained separately; freeze final candidate before formal jobs. At most one retry for explicit native 0xc0000005/0xc000001d, no numerical retry into pass. Exhausted/incomplete means R1 not passed.",
+  "limitations": "20ms runs establish integration, not lock/accuracy across 1000-3000rpm. Recovery proven on component traces, later measured on long physical traces. No feedback takeover, real WCET, magnetic saturation curve or board calibration claim. R2/R3 and historical N3 missing case remain separate."
+}

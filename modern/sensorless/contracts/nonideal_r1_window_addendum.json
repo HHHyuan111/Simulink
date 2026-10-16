@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "node": "N3R1",
+  "frozen_before_revised_execution": "2026-10-16",
+  "original_plan_unchanged": true,
+  "reason": "Development window-on 20ms trace contained zero invalid ADC windows, so it cannot demonstrate fault veto. Both failed development attempts and raw traces are retained. This addendum supplies a deterministic physical fault stimulus, without relaxing any acceptance requirement.",
+  "case_id": "window",
+  "window_settle_s": 0.000025,
+  "interpretation": "Deliberately require 25us continuous low-side settling, exceeding the normal aperture's available window. Diagnostic fault injection only; not a measured analog-front-end settling claim. Normal combined/rail/deadline profile keeps 0.5us guard.",
+  "unchanged": "20ms duration, real plant chain, immediate invalid-window veto, full exact replay and original52 same-configuration regression, restoration and source preservation"
+}
