@@ -1,0 +1,5177 @@
+{
+  "schema": 1,
+  "model": "PMSM_FOC_R2026a",
+  "workspace_code": "% Embedded reference for the CHENSHA 200W nominal firmware profile.\n% Source: AxDr_L dev 48d6e86814ac6657b1313b4c92ef24c88f492e07,\n% User/config/motor_config.h. Not a measured plant identification.\n% This script is embedded into the SLX Model Workspace; no path dependency.\nT=1e-6; % Numerical step [s]; switching detail remains ideal/average equivalent\nMotorProfile='CHENSHA 200W / firmware profile revision 2';\nMotorSourceCommit='48d6e86814ac6657b1313b4c92ef24c88f492e07';\nPn=200; % Nameplate power [W], stored as specified; not forced to equal Tn*wm\nUn=24; Vdc=24;\nI_rated_rms=11.5; % Phase RMS [A], nameplate\nI_peak_rms=23; % Phase RMS [A], nameplate peak\nIn=sqrt(2)*I_rated_rms; % Phase amplitude / dq nominal current [A]\nI_peak=sqrt(2)*I_peak_rms; % Phase amplitude [A]\nn=3000; % Speed reference and nominal speed [rpm]\np=5; % Pole pairs\nRs=0.105125; % Phase resistance [ohm], firmware profile convention\nLd=103.7615e-6; Lq=103.7615e-6; Ls=Ld; % dq inductance [H]\nphis=0.06/(sqrt(2)*1.5*p); % Flux [Wb], derived from Kt_rms; Ke definition pending\nJ=32e-6; % Rotor inertia [kg*m^2], profile value; coupled inertia not identified\nF=0; % Firmware profile placeholder; does not prove physical friction is zero\nKt=1.5*p*phis; % Torque per dq amplitude [N*m/A]\nTn=0.69; T_peak=1.38; % Nameplate torque [N*m]\nIq_limit=8; % Firmware bench command limit [A], not RMS nameplate current\naccel_limit_rad_s2=1200; % Stored only; a command ramp is not implemented here\nspeed_peak_rad_s=335; % Stored only; speed protection is not implemented here\nI_protection_A=10; Vbus_protection_high_V=30; Vbus_protection_low_V=10;\n% Protection values above are references, not active trip logic in this model.\nRE=10000; rr=2*pi/RE; % Mechanical counts/revolution; ABZ estimator not implemented\nencoder_direction=-1; % Stored firmware setting; ideal plant angle stays unchanged\nfN=p*n/60; wN=2*pi*fN;\nki_p=0.8; ki_i=1; % Original unused/auxiliary constants retained\nfc=20e3; Ts=1/fc; dt=Ts;\nTs_speed=2*dt; % Base speed task 10kHz; current/PWM 20kHz\nw_sb=2*pi*fN*1.2;\nfcb=1000; fwb=50; wc=2*pi*fcb; wsc=2*pi*fwb;\n% fcb/fwb describe the previous gain design, not measured bandwidth of this motor.\nK=30/pi; % Mechanical rad/s to rpm\n% PI_GAINS_FROZEN: inserted from the validated previous workspace, bit-for-bit.\nkp_w=0.00069087230807625508;\nki_w=0.04340878735241975;\nks_w=0.98718608264211138;\nkp_id=0.7539822368615503;\nki_id=879.64594300514204;\nks_id=1.1309733552923253;\nkp_iq=0.7539822368615503;\nki_iq=879.64594300514204;\nks_iq=1.1309733552923253;\nBm=0;\nuplimit_w=Kt*Iq_limit; downlimit_w=-uplimit_w; % Speed PI output is torque [N*m]\n% Ld=Lq and id_ref=0, so Te_ref/Kt is exactly the iq demand before dynamics.\nuplimit_id=Vdc/sqrt(3); downlimit_id=-uplimit_id;\nuplimit_iq=Vdc/sqrt(3); downlimit_iq=-uplimit_iq;\nteaching_Ts_speed=Ts_speed; teach_pwm_on=0; teach_pwm_cycles=1;\n\ndecoupling_enabled=1; voltage_utilization=0.96; % Algorithm stage 2; PI gains frozen\n\ntiming_on=0; timing_h=1e-6; timing_control_sample=dt; timing_speed_sample=Ts_speed; timing_static_math=-1;\ntiming_carrier_y=[0 Ts/2 0];\ntiming_adc_cfg=[0 0 0 1e-6 Ts 24.375e-6 1.1875e-6 1.5e-6 0 .5e-6 2];\ntiming_pwm_cfg=[0 1e-6 Ts 24.375e-6 1.1875e-6 1.5e-6 0 5e-6 0 4000];\n\ndead_gate_on=0; dead_h=1e-6; dead_gate_cfg=[0 1e-6 .5e-6];\ndead_comp_cfg=[0 .5e-6 Ts .05]; dead_bridge_cfg=[p phis .01 0 .01 .7];\n",
+  "workspace_values": [
+    {
+      "name": "Bm",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 0
+    },
+    {
+      "name": "F",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 0
+    },
+    {
+      "name": "I_peak",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 32.526911934581186
+    },
+    {
+      "name": "I_peak_rms",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 23
+    },
+    {
+      "name": "I_protection_A",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 10
+    },
+    {
+      "name": "I_rated_rms",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 11.5
+    },
+    {
+      "name": "In",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 16.263455967290593
+    },
+    {
+      "name": "Iq_limit",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 8
+    },
+    {
+      "name": "J",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 3.2E-5
+    },
+    {
+      "name": "K",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 9.5492965855137211
+    },
+    {
+      "name": "Kt",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 0.042426406871192854
+    },
+    {
+      "name": "Ld",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 0.0001037615
+    },
+    {
+      "name": "Lq",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 0.0001037615
+    },
+    {
+      "name": "Ls",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 0.0001037615
+    },
+    {
+      "name": "Pn",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 200
+    },
+    {
+      "name": "RE",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 10000
+    },
+    {
+      "name": "Rs",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 0.105125
+    },
+    {
+      "name": "T",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 1E-6
+    },
+    {
+      "name": "T_peak",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 1.38
+    },
+    {
+      "name": "Tn",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 0.69
+    },
+    {
+      "name": "Ts",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 5E-5
+    },
+    {
+      "name": "Ts_speed",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 0.0001
+    },
+    {
+      "name": "Un",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 24
+    },
+    {
+      "name": "Vbus_protection_high_V",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 30
+    },
+    {
+      "name": "Vbus_protection_low_V",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 10
+    },
+    {
+      "name": "Vdc",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 24
+    },
+    {
+      "name": "accel_limit_rad_s2",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 1200
+    },
+    {
+      "name": "dead_bridge_cfg",
+      "class": "double",
+      "size": [
+        1,
+        6
+      ],
+      "value": [
+        5,
+        0.00565685424949238,
+        0.01,
+        0,
+        0.01,
+        0.7
+      ]
+    },
+    {
+      "name": "dead_comp_cfg",
+      "class": "double",
+      "size": [
+        1,
+        4
+      ],
+      "value": [
+        0,
+        5E-7,
+        5E-5,
+        0.05
+      ]
+    },
+    {
+      "name": "dead_gate_cfg",
+      "class": "double",
+      "size": [
+        1,
+        3
+      ],
+      "value": [
+        0,
+        1E-6,
+        5E-7
+      ]
+    },
+    {
+      "name": "dead_gate_on",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 0
+    },
+    {
+      "name": "dead_h",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 1E-6
+    },
+    {
+      "name": "decoupling_enabled",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 1
+    },
+    {
+      "name": "downlimit_id",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": -13.856406460551019
+    },
+    {
+      "name": "downlimit_iq",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": -13.856406460551019
+    },
+    {
+      "name": "downlimit_w",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": -0.33941125496954283
+    },
+    {
+      "name": "dt",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 5E-5
+    },
+    {
+      "name": "encoder_direction",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": -1
+    },
+    {
+      "name": "fN",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 250
+    },
+    {
+      "name": "fc",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 20000
+    },
+    {
+      "name": "fcb",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 1000
+    },
+    {
+      "name": "fwb",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 50
+    },
+    {
+      "name": "ki_i",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 1
+    },
+    {
+      "name": "ki_id",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 879.645943005142
+    },
+    {
+      "name": "ki_iq",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 879.645943005142
+    },
+    {
+      "name": "ki_p",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 0.8
+    },
+    {
+      "name": "ki_w",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 0.04340878735241975
+    },
+    {
+      "name": "kp_id",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 0.7539822368615503
+    },
+    {
+      "name": "kp_iq",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 0.7539822368615503
+    },
+    {
+      "name": "kp_w",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 0.00069087230807625508
+    },
+    {
+      "name": "ks_id",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 1.1309733552923253
+    },
+    {
+      "name": "ks_iq",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 1.1309733552923253
+    },
+    {
+      "name": "ks_w",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 0.98718608264211138
+    },
+    {
+      "name": "n",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 3000
+    },
+    {
+      "name": "p",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 5
+    },
+    {
+      "name": "phis",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 0.00565685424949238
+    },
+    {
+      "name": "rr",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 0.00062831853071795862
+    },
+    {
+      "name": "speed_peak_rad_s",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 335
+    },
+    {
+      "name": "teach_pwm_cycles",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 1
+    },
+    {
+      "name": "teach_pwm_on",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 0
+    },
+    {
+      "name": "teaching_Ts_speed",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 0.0001
+    },
+    {
+      "name": "timing_adc_cfg",
+      "class": "double",
+      "size": [
+        1,
+        11
+      ],
+      "value": [
+        0,
+        0,
+        0,
+        1E-6,
+        5E-5,
+        2.4375E-5,
+        1.1875E-6,
+        1.5E-6,
+        0,
+        5E-7,
+        2
+      ]
+    },
+    {
+      "name": "timing_carrier_y",
+      "class": "double",
+      "size": [
+        1,
+        3
+      ],
+      "value": [
+        0,
+        2.5E-5,
+        0
+      ]
+    },
+    {
+      "name": "timing_control_sample",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 5E-5
+    },
+    {
+      "name": "timing_h",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 1E-6
+    },
+    {
+      "name": "timing_on",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 0
+    },
+    {
+      "name": "timing_pwm_cfg",
+      "class": "double",
+      "size": [
+        1,
+        10
+      ],
+      "value": [
+        0,
+        1E-6,
+        5E-5,
+        2.4375E-5,
+        1.1875E-6,
+        1.5E-6,
+        0,
+        4.9999999999999996E-6,
+        0,
+        4000
+      ]
+    },
+    {
+      "name": "timing_speed_sample",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 0.0001
+    },
+    {
+      "name": "timing_static_math",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": -1
+    },
+    {
+      "name": "uplimit_id",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 13.856406460551019
+    },
+    {
+      "name": "uplimit_iq",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 13.856406460551019
+    },
+    {
+      "name": "uplimit_w",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 0.33941125496954283
+    },
+    {
+      "name": "voltage_utilization",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 0.96
+    },
+    {
+      "name": "wN",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 1570.7963267948965
+    },
+    {
+      "name": "w_sb",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 1884.9555921538756
+    },
+    {
+      "name": "wc",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 6283.1853071795858
+    },
+    {
+      "name": "wsc",
+      "class": "double",
+      "size": [
+        1,
+        1
+      ],
+      "value": 314.15926535897933
+    }
+  ],
+  "workspace_metadata": [
+    {
+      "name": "MotorProfile",
+      "class": "char",
+      "value": "CHENSHA 200W / firmware profile revision 2"
+    },
+    {
+      "name": "MotorSourceCommit",
+      "class": "char",
+      "value": "48d6e86814ac6657b1313b4c92ef24c88f492e07"
+    }
+  ],
+  "model_parameters": {
+    "StartTime": "0.0",
+    "StopTime": "1",
+    "SolverType": "Fixed-step",
+    "Solver": "ode4",
+    "FixedStep": "timing_h",
+    "RelTol": "1e-3",
+    "AbsTol": "auto",
+    "LoadInitialState": "off",
+    "InitialState": "xInitial",
+    "LoadExternalInput": "off",
+    "ExternalInput": "[t, u]",
+    "SaveFinalState": "off",
+    "SaveOperatingPoint": "off",
+    "FinalStateName": "xFinal",
+    "SaveState": "off",
+    "StateSaveName": "xout",
+    "SaveTime": "off",
+    "TimeSaveName": "tout",
+    "SaveOutput": "off",
+    "OutputSaveName": "yout",
+    "SignalLogging": "on",
+    "SignalLoggingName": "logsout",
+    "ReturnWorkspaceOutputs": "on",
+    "SimulationMode": "normal"
+  },
+  "settings": [
+    {
+      "block": "时序设置",
+      "parameters": [
+        {
+          "name": "speed_on",
+          "value": "off"
+        },
+        {
+          "name": "speed_divider",
+          "value": "20"
+        },
+        {
+          "name": "pwm_on",
+          "value": "off"
+        },
+        {
+          "name": "pwm_cycles",
+          "value": "1"
+        },
+        {
+          "name": "real_on",
+          "value": "off"
+        },
+        {
+          "name": "window_on",
+          "value": "off"
+        },
+        {
+          "name": "invalid_hold_on",
+          "value": "off"
+        },
+        {
+          "name": "trigger_us",
+          "value": "24.375"
+        },
+        {
+          "name": "sync_us",
+          "value": "0"
+        },
+        {
+          "name": "compute_us",
+          "value": "5"
+        },
+        {
+          "name": "settle_us",
+          "value": "0.5"
+        },
+        {
+          "name": "update_mode",
+          "value": "峰谷双更新（RCR=0）"
+        },
+        {
+          "name": "grid_divider",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "block": "采样设置",
+      "parameters": [
+        {
+          "name": "bias_on",
+          "value": "off"
+        },
+        {
+          "name": "bias_A",
+          "value": "[0.05 -0.03 0]"
+        },
+        {
+          "name": "gain_on",
+          "value": "off"
+        },
+        {
+          "name": "phase_gain",
+          "value": "[1.01 0.99 1]"
+        },
+        {
+          "name": "noise_on",
+          "value": "off"
+        },
+        {
+          "name": "noise_rms",
+          "value": "0.02"
+        },
+        {
+          "name": "noise_seed",
+          "value": "9474"
+        },
+        {
+          "name": "adc_on",
+          "value": "off"
+        },
+        {
+          "name": "adc_bits",
+          "value": "12"
+        },
+        {
+          "name": "adc_span",
+          "value": "82.5"
+        },
+        {
+          "name": "filter_on",
+          "value": "off"
+        },
+        {
+          "name": "filter_hz",
+          "value": "500"
+        },
+        {
+          "name": "delay_on",
+          "value": "off"
+        },
+        {
+          "name": "delay_cycles",
+          "value": "1"
+        },
+        {
+          "name": "control_period",
+          "value": "dt"
+        },
+        {
+          "name": "analog_on",
+          "value": "off"
+        },
+        {
+          "name": "analog_hz",
+          "value": "5000"
+        },
+        {
+          "name": "numerical_step",
+          "value": "T"
+        },
+        {
+          "name": "real_mode",
+          "value": "strcmp(get_param([bdroot '/时序设置'],'real_on'),'on')"
+        }
+      ]
+    },
+    {
+      "block": "角度设置",
+      "parameters": [
+        {
+          "name": "bias_on",
+          "value": "off"
+        },
+        {
+          "name": "bias_deg",
+          "value": "2"
+        },
+        {
+          "name": "quant_on",
+          "value": "off"
+        },
+        {
+          "name": "step_deg",
+          "value": "0.18"
+        },
+        {
+          "name": "delay_on",
+          "value": "off"
+        },
+        {
+          "name": "delay_cycles",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "block": "功率设置",
+      "parameters": [
+        {
+          "name": "dead_on",
+          "value": "off"
+        },
+        {
+          "name": "dead_us",
+          "value": "0.5"
+        },
+        {
+          "name": "drop_on",
+          "value": "off"
+        },
+        {
+          "name": "ron",
+          "value": "0.01"
+        },
+        {
+          "name": "vf",
+          "value": "0.7"
+        },
+        {
+          "name": "blend_A",
+          "value": "0.1"
+        },
+        {
+          "name": "pwm_period",
+          "value": "Ts"
+        },
+        {
+          "name": "gate_on",
+          "value": "off"
+        },
+        {
+          "name": "comp_on",
+          "value": "off"
+        },
+        {
+          "name": "gate_us",
+          "value": "0.5"
+        },
+        {
+          "name": "comp_us",
+          "value": "0.5"
+        },
+        {
+          "name": "hysteresis_A",
+          "value": "0.05"
+        },
+        {
+          "name": "zero_A",
+          "value": "0.01"
+        }
+      ]
+    }
+  ],
+  "configuration": {
+    "schema": 1,
+    "role": "custom",
+    "rows": [
+      {
+        "section": "时序设置",
+        "key": "speed_on",
+        "label": "速度分频",
+        "kind": "switch",
+        "unit": "开/关",
+        "value": "off",
+        "source": "教学选择",
+        "status": "未实测",
+        "measurement": "相同工况下单独开关，对照对应观测。"
+      },
+      {
+        "section": "时序设置",
+        "key": "speed_divider",
+        "label": "速度周期 / 电流周期",
+        "kind": "number",
+        "unit": "倍",
+        "value": "20",
+        "source": "教学值",
+        "status": "未实测",
+        "measurement": "示波器测速度任务与电流任务周期之比。"
+      },
+      {
+        "section": "时序设置",
+        "key": "pwm_on",
+        "label": "输出延迟",
+        "kind": "switch",
+        "unit": "开/关",
+        "value": "off",
+        "source": "教学选择",
+        "status": "未实测",
+        "measurement": "相同工况下单独开关，对照对应观测。"
+      },
+      {
+        "section": "时序设置",
+        "key": "pwm_cycles",
+        "label": "延迟周期数 [× dt]",
+        "kind": "number",
+        "unit": "周期",
+        "value": "1",
+        "source": "教学值",
+        "status": "未实测",
+        "measurement": "测指令计算到PWM生效的整周期延迟；真实时序模式不叠加此项。"
+      },
+      {
+        "section": "时序设置",
+        "key": "real_on",
+        "label": "真实时序（顺序采样与CCR生效）",
+        "kind": "switch",
+        "unit": "开/关",
+        "value": "off",
+        "source": "教学选择",
+        "status": "未实测",
+        "measurement": "相同工况下单独开关，对照对应观测。"
+      },
+      {
+        "section": "时序设置",
+        "key": "window_on",
+        "label": "低侧采样窗口（无效样本置零演示）",
+        "kind": "switch",
+        "unit": "开/关",
+        "value": "off",
+        "source": "教学选择",
+        "status": "未实测",
+        "measurement": "相同工况下单独开关，对照对应观测。"
+      },
+      {
+        "section": "时序设置",
+        "key": "invalid_hold_on",
+        "label": "无效时保持上次有效值（策略对照）",
+        "kind": "switch",
+        "unit": "开/关",
+        "value": "off",
+        "source": "教学选择",
+        "status": "未实测",
+        "measurement": "相同工况下单独开关，对照对应观测。"
+      },
+      {
+        "section": "时序设置",
+        "key": "trigger_us",
+        "label": "触发相位 [μs，24.375为待实测假设]",
+        "kind": "number",
+        "unit": "μs",
+        "value": "24.375",
+        "source": "固件时序推定，未实测",
+        "status": "未实测",
+        "measurement": "测PWM谷底到ADC触发的时间。"
+      },
+      {
+        "section": "时序设置",
+        "key": "sync_us",
+        "label": "触发附加等待 [μs，演示]",
+        "kind": "number",
+        "unit": "μs",
+        "value": "0",
+        "source": "演示值",
+        "status": "未实测",
+        "measurement": "测触发到ADC实际采样起点的额外同步延迟。"
+      },
+      {
+        "section": "时序设置",
+        "key": "compute_us",
+        "label": "JEOS至CCR写入 [μs，演示]",
+        "kind": "number",
+        "unit": "μs",
+        "value": "5",
+        "source": "演示值",
+        "status": "未实测",
+        "measurement": "用GPIO测ADC组转换完成到CCR写入的耗时。"
+      },
+      {
+        "section": "时序设置",
+        "key": "settle_us",
+        "label": "低侧导通稳定等待 [μs，演示]",
+        "kind": "number",
+        "unit": "μs",
+        "value": "0.5",
+        "source": "演示值",
+        "status": "未实测",
+        "measurement": "观测开关沿后电流前端稳定所需时间。"
+      },
+      {
+        "section": "时序设置",
+        "key": "update_mode",
+        "label": "CCR预装载生效边界",
+        "kind": "enum",
+        "unit": "枚举",
+        "value": "峰谷双更新（RCR=0）",
+        "source": "固件配置/教学对照",
+        "status": "未实测",
+        "measurement": "核对TIM1中心对齐、RCR和CCR预装载更新配置。"
+      },
+      {
+        "section": "时序设置",
+        "key": "grid_divider",
+        "label": "事件网格细分（数值设置）",
+        "kind": "number",
+        "unit": "倍",
+        "value": "1",
+        "source": "数值设置",
+        "status": "未实测",
+        "measurement": "1为62.5ns，2为31.25ns；属于求解网格，不是硬件误差。"
+      },
+      {
+        "section": "采样设置",
+        "key": "bias_on",
+        "label": "零偏",
+        "kind": "switch",
+        "unit": "开/关",
+        "value": "off",
+        "source": "教学选择",
+        "status": "未实测",
+        "measurement": "相同工况下单独开关，对照对应观测。"
+      },
+      {
+        "section": "采样设置",
+        "key": "bias_A",
+        "label": "三相零偏 [A]",
+        "kind": "number",
+        "unit": "A，ABC",
+        "value": "[0.050000000000000003 -0.029999999999999999 0]",
+        "source": "演示值",
+        "status": "未实测",
+        "measurement": "零电流时统计各通道均值，换算到电流域。"
+      },
+      {
+        "section": "采样设置",
+        "key": "gain_on",
+        "label": "增益误差",
+        "kind": "switch",
+        "unit": "开/关",
+        "value": "off",
+        "source": "教学选择",
+        "status": "未实测",
+        "measurement": "相同工况下单独开关，对照对应观测。"
+      },
+      {
+        "section": "采样设置",
+        "key": "phase_gain",
+        "label": "三相增益",
+        "kind": "number",
+        "unit": "倍，ABC",
+        "value": "[1.01 0.98999999999999999 1]",
+        "source": "演示值",
+        "status": "未实测",
+        "measurement": "用已知正负电流标定各通道斜率/理想斜率。"
+      },
+      {
+        "section": "采样设置",
+        "key": "noise_on",
+        "label": "采样噪声",
+        "kind": "switch",
+        "unit": "开/关",
+        "value": "off",
+        "source": "教学选择",
+        "status": "未实测",
+        "measurement": "相同工况下单独开关，对照对应观测。"
+      },
+      {
+        "section": "采样设置",
+        "key": "noise_rms",
+        "label": "每相噪声 RMS [A]",
+        "kind": "number",
+        "unit": "A RMS",
+        "value": "0.02",
+        "source": "演示值",
+        "status": "未实测",
+        "measurement": "固定电流采样，去掉均值后统计标准差，并记录带宽。"
+      },
+      {
+        "section": "采样设置",
+        "key": "noise_seed",
+        "label": "随机种子",
+        "kind": "number",
+        "unit": "整数",
+        "value": "9474",
+        "source": "复现设置",
+        "status": "未实测",
+        "measurement": "固定随机种子便于对照，不对应实物。"
+      },
+      {
+        "section": "采样设置",
+        "key": "adc_on",
+        "label": "ADC 量化与饱和",
+        "kind": "switch",
+        "unit": "开/关",
+        "value": "off",
+        "source": "教学选择",
+        "status": "未实测",
+        "measurement": "相同工况下单独开关，对照对应观测。"
+      },
+      {
+        "section": "采样设置",
+        "key": "adc_bits",
+        "label": "分辨率 [bit，演示]",
+        "kind": "number",
+        "unit": "bit",
+        "value": "12",
+        "source": "ADC配置",
+        "status": "未实测",
+        "measurement": "核对ADC实际分辨率设置。"
+      },
+      {
+        "section": "采样设置",
+        "key": "adc_span",
+        "label": "电流全跨度 [A]",
+        "kind": "number",
+        "unit": "A，全跨度",
+        "value": "82.5",
+        "source": "原理图折算，待标定",
+        "status": "未实测",
+        "measurement": "82.5A为3.3V/(1mΩ×20)的全跨度；非±82.5A。"
+      },
+      {
+        "section": "采样设置",
+        "key": "filter_on",
+        "label": "数字低通",
+        "kind": "switch",
+        "unit": "开/关",
+        "value": "off",
+        "source": "教学选择",
+        "status": "未实测",
+        "measurement": "相同工况下单独开关，对照对应观测。"
+      },
+      {
+        "section": "采样设置",
+        "key": "filter_hz",
+        "label": "等效低通频率 [Hz]",
+        "kind": "number",
+        "unit": "Hz",
+        "value": "500",
+        "source": "演示值",
+        "status": "未实测",
+        "measurement": "核对数字滤波公式，以幅相响应校验等效截止频率。"
+      },
+      {
+        "section": "采样设置",
+        "key": "delay_on",
+        "label": "采样传递延迟",
+        "kind": "switch",
+        "unit": "开/关",
+        "value": "off",
+        "source": "教学选择",
+        "status": "未实测",
+        "measurement": "相同工况下单独开关，对照对应观测。"
+      },
+      {
+        "section": "采样设置",
+        "key": "delay_cycles",
+        "label": "延迟周期数 [× dt]",
+        "kind": "number",
+        "unit": "控制周期",
+        "value": "1",
+        "source": "演示值",
+        "status": "未实测",
+        "measurement": "用事件时间戳测延迟；真实时序模式避免重复添加采样延迟。"
+      },
+      {
+        "section": "采样设置",
+        "key": "analog_on",
+        "label": "模拟低通（采样前）",
+        "kind": "switch",
+        "unit": "开/关",
+        "value": "off",
+        "source": "教学选择",
+        "status": "未实测",
+        "measurement": "相同工况下单独开关，对照对应观测。"
+      },
+      {
+        "section": "采样设置",
+        "key": "analog_hz",
+        "label": "模拟一阶截止频率 [Hz，演示]",
+        "kind": "number",
+        "unit": "Hz",
+        "value": "5000",
+        "source": "演示值",
+        "status": "未实测",
+        "measurement": "扫频或阶跃测前端等效带宽，不直接等同单个RC极点。"
+      },
+      {
+        "section": "角度设置",
+        "key": "bias_on",
+        "label": "角度偏置",
+        "kind": "switch",
+        "unit": "开/关",
+        "value": "off",
+        "source": "教学选择",
+        "status": "未实测",
+        "measurement": "相同工况下单独开关，对照对应观测。"
+      },
+      {
+        "section": "角度设置",
+        "key": "bias_deg",
+        "label": "偏置 [电角度 °]",
+        "kind": "number",
+        "unit": "电角度°",
+        "value": "2",
+        "source": "演示值",
+        "status": "未实测",
+        "measurement": "轴定位后核对编码器零位，机械角乘极对数。"
+      },
+      {
+        "section": "角度设置",
+        "key": "quant_on",
+        "label": "角度量化",
+        "kind": "switch",
+        "unit": "开/关",
+        "value": "off",
+        "source": "教学选择",
+        "status": "未实测",
+        "measurement": "相同工况下单独开关，对照对应观测。"
+      },
+      {
+        "section": "角度设置",
+        "key": "step_deg",
+        "label": "量化步长 [电角度 °]",
+        "kind": "number",
+        "unit": "电角度°",
+        "value": "0.17999999999999999",
+        "source": "编码器配置折算",
+        "status": "未实测",
+        "measurement": "每机械转有效计数N时，电角步长=360p/N。"
+      },
+      {
+        "section": "角度设置",
+        "key": "delay_on",
+        "label": "角度延迟",
+        "kind": "switch",
+        "unit": "开/关",
+        "value": "off",
+        "source": "教学选择",
+        "status": "未实测",
+        "measurement": "相同工况下单独开关，对照对应观测。"
+      },
+      {
+        "section": "角度设置",
+        "key": "delay_cycles",
+        "label": "延迟周期数 [× dt]",
+        "kind": "number",
+        "unit": "控制周期",
+        "value": "1",
+        "source": "演示值",
+        "status": "未实测",
+        "measurement": "测角度采集到控制使用的延迟，以当前电流任务周期计。"
+      },
+      {
+        "section": "功率设置",
+        "key": "dead_on",
+        "label": "死区平均压降",
+        "kind": "switch",
+        "unit": "开/关",
+        "value": "off",
+        "source": "教学选择",
+        "status": "未实测",
+        "measurement": "相同工况下单独开关，对照对应观测。"
+      },
+      {
+        "section": "功率设置",
+        "key": "dead_us",
+        "label": "死区 [μs，固件目标]",
+        "kind": "number",
+        "unit": "μs",
+        "value": "0.5",
+        "source": "固件0.5μs参考",
+        "status": "未实测",
+        "measurement": "旧周期平均死区；与门极死区互斥。"
+      },
+      {
+        "section": "功率设置",
+        "key": "drop_on",
+        "label": "器件导通压降",
+        "kind": "switch",
+        "unit": "开/关",
+        "value": "off",
+        "source": "教学选择",
+        "status": "未实测",
+        "measurement": "相同工况下单独开关，对照对应观测。"
+      },
+      {
+        "section": "功率设置",
+        "key": "ron",
+        "label": "等效导通电阻 [Ω，演示]",
+        "kind": "number",
+        "unit": "Ω",
+        "value": "0.01",
+        "source": "演示值",
+        "status": "未实测",
+        "measurement": "按工作电流、温度下的导通压降/电流标定。"
+      },
+      {
+        "section": "功率设置",
+        "key": "vf",
+        "label": "续流压降 [V，演示，仅随死区项计入]",
+        "kind": "number",
+        "unit": "V",
+        "value": "0.69999999999999996",
+        "source": "演示值",
+        "status": "未实测",
+        "measurement": "按工作电流和温度的续流二极管压降标定。"
+      },
+      {
+        "section": "功率设置",
+        "key": "blend_A",
+        "label": "过零平滑电流 [A，演示]",
+        "kind": "number",
+        "unit": "A",
+        "value": "0.10000000000000001",
+        "source": "演示值",
+        "status": "未实测",
+        "measurement": "仅旧平均压降模型的过零平滑带，不是门极死区。"
+      },
+      {
+        "section": "功率设置",
+        "key": "gate_on",
+        "label": "门极死区（实际空白与续流）",
+        "kind": "switch",
+        "unit": "开/关",
+        "value": "off",
+        "source": "教学选择",
+        "status": "未实测",
+        "measurement": "相同工况下单独开关，对照对应观测。"
+      },
+      {
+        "section": "功率设置",
+        "key": "comp_on",
+        "label": "死区补偿（测量电流极性）",
+        "kind": "switch",
+        "unit": "开/关",
+        "value": "off",
+        "source": "教学选择",
+        "status": "未实测",
+        "measurement": "相同工况下单独开关，对照对应观测。"
+      },
+      {
+        "section": "功率设置",
+        "key": "gate_us",
+        "label": "门极死区 [μs，固件配置]",
+        "kind": "number",
+        "unit": "μs",
+        "value": "0.5",
+        "source": "固件0.5μs参考，未测有效死区",
+        "status": "未实测",
+        "measurement": "测上下管门源信号的关断间隔，区分编程值与有效值。"
+      },
+      {
+        "section": "功率设置",
+        "key": "comp_us",
+        "label": "补偿死区 [μs，可作失配对照]",
+        "kind": "number",
+        "unit": "μs",
+        "value": "0.5",
+        "source": "补偿设定",
+        "status": "未实测",
+        "measurement": "与gate_us独立；通过同工况畸变最小值标定，不视为实测死区。"
+      },
+      {
+        "section": "功率设置",
+        "key": "hysteresis_A",
+        "label": "补偿极性滞环 ±[A，演示]",
+        "kind": "number",
+        "unit": "A，±阈值",
+        "value": "0.050000000000000003",
+        "source": "演示值",
+        "status": "未实测",
+        "measurement": "先量过零噪声与偏置，再对照滞环带宽和极性切换时刻。"
+      },
+      {
+        "section": "功率设置",
+        "key": "zero_A",
+        "label": "续流近零数值带 ±[A，演示]",
+        "kind": "number",
+        "unit": "A，±近零带",
+        "value": "0.01",
+        "source": "数值近似",
+        "status": "未实测",
+        "measurement": "续流桥近零处理参数，不作为实物可测器件参数。"
+      },
+      {
+        "section": "电机与工况",
+        "key": "Vdc",
+        "label": "Vdc",
+        "kind": "number",
+        "unit": "V",
+        "value": "24",
+        "source": "标称24V",
+        "status": "未实测",
+        "measurement": "万用表/示波器核对母线电压；当前为恒定母线。"
+      },
+      {
+        "section": "电机与工况",
+        "key": "n",
+        "label": "n",
+        "kind": "number",
+        "unit": "rpm",
+        "value": "3000",
+        "source": "工况给定",
+        "status": "未实测",
+        "measurement": "设定目标机械转速，不是编码器测量校准。"
+      },
+      {
+        "section": "电机与工况",
+        "key": "fc",
+        "label": "fc",
+        "kind": "number",
+        "unit": "Hz",
+        "value": "20000",
+        "source": "固件20kHz",
+        "status": "未实测",
+        "measurement": "实测PWM周期；当前电流任务与PWM同频，二者不独立配置。"
+      },
+      {
+        "section": "电机与工况",
+        "key": "Ts_speed",
+        "label": "Ts_speed",
+        "kind": "number",
+        "unit": "s",
+        "value": "0.0001",
+        "source": "固件10kHz",
+        "status": "未实测",
+        "measurement": "测速度任务周期；必须为电流周期整数倍，speed_on会覆盖。"
+      },
+      {
+        "section": "电机与工况",
+        "key": "Rs",
+        "label": "Rs",
+        "kind": "number",
+        "unit": "Ω，相电阻",
+        "value": "0.105125",
+        "source": "固件标称",
+        "status": "未实测",
+        "measurement": "记录温度和接法，区分线间与相电阻。"
+      },
+      {
+        "section": "电机与工况",
+        "key": "Ld",
+        "label": "Ld",
+        "kind": "number",
+        "unit": "H",
+        "value": "0.00010376150000000001",
+        "source": "固件标称",
+        "status": "未实测",
+        "measurement": "锁轴辨识d轴电感，记录电流和频率；当前详细桥要求Ld=Lq。"
+      },
+      {
+        "section": "电机与工况",
+        "key": "Lq",
+        "label": "Lq",
+        "kind": "number",
+        "unit": "H",
+        "value": "0.00010376150000000001",
+        "source": "固件标称",
+        "status": "未实测",
+        "measurement": "锁轴辨识q轴电感；当前详细桥要求Ld=Lq。"
+      },
+      {
+        "section": "电机与工况",
+        "key": "phis",
+        "label": "phis",
+        "kind": "number",
+        "unit": "Wb",
+        "value": "0.0056568542494923801",
+        "source": "固件转矩常数折算",
+        "status": "未实测",
+        "measurement": "用反电动势或转矩常数辨识，核对幅值/RMS和角速度定义。"
+      },
+      {
+        "section": "电机与工况",
+        "key": "p",
+        "label": "p",
+        "kind": "number",
+        "unit": "极对",
+        "value": "5",
+        "source": "固件配置",
+        "status": "未实测",
+        "measurement": "机械转一圈，统计电角度周期数。"
+      },
+      {
+        "section": "电机与工况",
+        "key": "J",
+        "label": "J",
+        "kind": "number",
+        "unit": "kg·m²",
+        "value": "3.1999999999999999e-05",
+        "source": "固件标称，未辨识",
+        "status": "未实测",
+        "measurement": "按已知转矩和角加速度辨识，包含连接负载惯量。"
+      },
+      {
+        "section": "电机与工况",
+        "key": "F",
+        "label": "F",
+        "kind": "number",
+        "unit": "N·m·s/rad",
+        "value": "0",
+        "source": "占位0，未辨识",
+        "status": "未实测",
+        "measurement": "空载不同速度下拟合转矩-速度关系；当前只表示粘性摩擦。"
+      },
+      {
+        "section": "电机与工况",
+        "key": "Iq_limit",
+        "label": "Iq_limit",
+        "kind": "number",
+        "unit": "A，dq幅值",
+        "value": "8",
+        "source": "固件台架限幅",
+        "status": "未实测",
+        "measurement": "8A为指令上限；主动过流保护尚未实现。"
+      },
+      {
+        "section": "负载",
+        "key": "Before",
+        "label": "Before",
+        "kind": "number",
+        "unit": "N·m",
+        "value": "0.20699999999999999",
+        "source": "演示负载",
+        "status": "未实测",
+        "measurement": "阶跃前负载；可用转矩传感器测量。"
+      },
+      {
+        "section": "负载",
+        "key": "After",
+        "label": "After",
+        "kind": "number",
+        "unit": "N·m",
+        "value": "0.20699999999999999",
+        "source": "演示负载",
+        "status": "未实测",
+        "measurement": "阶跃后负载；可用转矩传感器测量。"
+      },
+      {
+        "section": "负载",
+        "key": "Time",
+        "label": "Time",
+        "kind": "number",
+        "unit": "s",
+        "value": "0",
+        "source": "工况给定",
+        "status": "未实测",
+        "measurement": "负载变化时刻。"
+      }
+    ]
+  },
+  "block_parameters": [
+    {
+      "path": "PMSM_FOC_R2026a/Alpha-Beta-Zero\nto dq0/dq0",
+      "parameter": "InitialOutput",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Bus\nSelector/signal_1",
+      "parameter": "InitialOutput",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Bus\nSelector/signal_2",
+      "parameter": "InitialOutput",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Bus\nSelector/signal_3",
+      "parameter": "InitialOutput",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Bus\nSelector/signal_4",
+      "parameter": "InitialOutput",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Bus\nSelector/signal_5",
+      "parameter": "InitialOutput",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Bus\nSelector/signal_6",
+      "parameter": "InitialOutput",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Bus\nSelector1/signal_7",
+      "parameter": "InitialOutput",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Bus\nSelector1/signal_8",
+      "parameter": "InitialOutput",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Chirp1/chirp",
+      "parameter": "InitialOutput",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Chirp2/chirp",
+      "parameter": "InitialOutput",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant",
+      "parameter": "LockScale",
+      "value": "off"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant",
+      "parameter": "OutDataTypeStr",
+      "value": "Inherit: Inherit from 'Constant value'"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant",
+      "parameter": "OutMax",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant",
+      "parameter": "OutMin",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant",
+      "parameter": "SampleTime",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant",
+      "parameter": "Value",
+      "value": "1.5"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant",
+      "parameter": "VectorParams1D",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant1",
+      "parameter": "LockScale",
+      "value": "off"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant1",
+      "parameter": "OutDataTypeStr",
+      "value": "Inherit: Inherit from 'Constant value'"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant1",
+      "parameter": "OutMax",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant1",
+      "parameter": "OutMin",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant1",
+      "parameter": "SampleTime",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant1",
+      "parameter": "Value",
+      "value": "p"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant1",
+      "parameter": "VectorParams1D",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant11",
+      "parameter": "LockScale",
+      "value": "off"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant11",
+      "parameter": "OutDataTypeStr",
+      "value": "Inherit: Inherit from 'Constant value'"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant11",
+      "parameter": "OutMax",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant11",
+      "parameter": "OutMin",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant11",
+      "parameter": "SampleTime",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant11",
+      "parameter": "Value",
+      "value": "max(abs(0.1*n),1)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant11",
+      "parameter": "VectorParams1D",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant13",
+      "parameter": "LockScale",
+      "value": "off"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant13",
+      "parameter": "OutDataTypeStr",
+      "value": "Inherit: Inherit from 'Constant value'"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant13",
+      "parameter": "OutMax",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant13",
+      "parameter": "OutMin",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant13",
+      "parameter": "SampleTime",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant13",
+      "parameter": "Value",
+      "value": "0.1*In"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant13",
+      "parameter": "VectorParams1D",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant2",
+      "parameter": "LockScale",
+      "value": "off"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant2",
+      "parameter": "OutDataTypeStr",
+      "value": "Inherit: Inherit from 'Constant value'"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant2",
+      "parameter": "OutMax",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant2",
+      "parameter": "OutMin",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant2",
+      "parameter": "SampleTime",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant2",
+      "parameter": "Value",
+      "value": "phis"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant2",
+      "parameter": "VectorParams1D",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant3",
+      "parameter": "LockScale",
+      "value": "off"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant3",
+      "parameter": "OutDataTypeStr",
+      "value": "Inherit: Inherit from 'Constant value'"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant3",
+      "parameter": "OutMax",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant3",
+      "parameter": "OutMin",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant3",
+      "parameter": "SampleTime",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant3",
+      "parameter": "Value",
+      "value": "Ld-Lq"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant3",
+      "parameter": "VectorParams1D",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant4",
+      "parameter": "LockScale",
+      "value": "off"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant4",
+      "parameter": "OutDataTypeStr",
+      "value": "Inherit: Inherit from 'Constant value'"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant4",
+      "parameter": "OutMax",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant4",
+      "parameter": "OutMin",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant4",
+      "parameter": "SampleTime",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant4",
+      "parameter": "Value",
+      "value": "Lq"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant4",
+      "parameter": "VectorParams1D",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant5",
+      "parameter": "LockScale",
+      "value": "off"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant5",
+      "parameter": "OutDataTypeStr",
+      "value": "Inherit: Inherit from 'Constant value'"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant5",
+      "parameter": "OutMax",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant5",
+      "parameter": "OutMin",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant5",
+      "parameter": "SampleTime",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant5",
+      "parameter": "Value",
+      "value": "0"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant5",
+      "parameter": "VectorParams1D",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant6",
+      "parameter": "LockScale",
+      "value": "off"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant6",
+      "parameter": "OutDataTypeStr",
+      "value": "Inherit: Inherit from 'Constant value'"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant6",
+      "parameter": "OutMax",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant6",
+      "parameter": "OutMin",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant6",
+      "parameter": "SampleTime",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant6",
+      "parameter": "Value",
+      "value": "Ld"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant6",
+      "parameter": "VectorParams1D",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant7",
+      "parameter": "LockScale",
+      "value": "off"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant7",
+      "parameter": "OutDataTypeStr",
+      "value": "Inherit: Inherit from 'Constant value'"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant7",
+      "parameter": "OutMax",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant7",
+      "parameter": "OutMin",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant7",
+      "parameter": "SampleTime",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant7",
+      "parameter": "Value",
+      "value": "phis"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant7",
+      "parameter": "VectorParams1D",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant8",
+      "parameter": "LockScale",
+      "value": "off"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant8",
+      "parameter": "OutDataTypeStr",
+      "value": "Inherit: Inherit from 'Constant value'"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant8",
+      "parameter": "OutMax",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant8",
+      "parameter": "OutMin",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant8",
+      "parameter": "SampleTime",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant8",
+      "parameter": "Value",
+      "value": "Vdc"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant8",
+      "parameter": "VectorParams1D",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant9",
+      "parameter": "LockScale",
+      "value": "off"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant9",
+      "parameter": "OutDataTypeStr",
+      "value": "Inherit: Inherit from 'Constant value'"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant9",
+      "parameter": "OutMax",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant9",
+      "parameter": "OutMin",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant9",
+      "parameter": "SampleTime",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant9",
+      "parameter": "Value",
+      "value": "dt"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Constant9",
+      "parameter": "VectorParams1D",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/DC Voltage Source",
+      "parameter": "LockScale",
+      "value": "off"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/DC Voltage Source",
+      "parameter": "OutDataTypeStr",
+      "value": "Inherit: Inherit from 'Constant value'"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/DC Voltage Source",
+      "parameter": "OutMax",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/DC Voltage Source",
+      "parameter": "OutMin",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/DC Voltage Source",
+      "parameter": "SampleTime",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/DC Voltage Source",
+      "parameter": "Value",
+      "value": "Vdc"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/DC Voltage Source",
+      "parameter": "VectorParams1D",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w/Discrete-Time\nIntegrator",
+      "parameter": "InitialCondition",
+      "value": "0"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w/Discrete-Time\nIntegrator",
+      "parameter": "InitialConditionSetting",
+      "value": "Output"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w/Discrete-Time\nIntegrator",
+      "parameter": "InitialConditionSource",
+      "value": "internal"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w/Out",
+      "parameter": "InitialOutput",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w/记录_obs_pi_speed",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w/记录_obs_pi_speed",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w/记录_obs_pi_speed",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w/记录_obs_pi_speed",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w/记录_obs_pi_speed",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w/记录_obs_pi_speed",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w/记录_obs_pi_speed",
+      "parameter": "VariableName",
+      "value": "obs_pi_speed"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w1/Discrete-Time\nIntegrator",
+      "parameter": "InitialCondition",
+      "value": "0"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w1/Discrete-Time\nIntegrator",
+      "parameter": "InitialConditionSetting",
+      "value": "Output"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w1/Discrete-Time\nIntegrator",
+      "parameter": "InitialConditionSource",
+      "value": "internal"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w1/Out",
+      "parameter": "InitialOutput",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w1/记录_obs_aw_d",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w1/记录_obs_aw_d",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w1/记录_obs_aw_d",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w1/记录_obs_aw_d",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w1/记录_obs_aw_d",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w1/记录_obs_aw_d",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w1/记录_obs_aw_d",
+      "parameter": "VariableName",
+      "value": "obs_aw_d"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w1/记录_obs_pi_d",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w1/记录_obs_pi_d",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w1/记录_obs_pi_d",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w1/记录_obs_pi_d",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w1/记录_obs_pi_d",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w1/记录_obs_pi_d",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w1/记录_obs_pi_d",
+      "parameter": "VariableName",
+      "value": "obs_pi_d"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w2/Discrete-Time\nIntegrator",
+      "parameter": "InitialCondition",
+      "value": "0"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w2/Discrete-Time\nIntegrator",
+      "parameter": "InitialConditionSetting",
+      "value": "Output"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w2/Discrete-Time\nIntegrator",
+      "parameter": "InitialConditionSource",
+      "value": "internal"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w2/Out",
+      "parameter": "InitialOutput",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w2/记录_obs_aw_q",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w2/记录_obs_aw_q",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w2/记录_obs_aw_q",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w2/记录_obs_aw_q",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w2/记录_obs_aw_q",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w2/记录_obs_aw_q",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w2/记录_obs_aw_q",
+      "parameter": "VariableName",
+      "value": "obs_aw_q"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w2/记录_obs_pi_q",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w2/记录_obs_pi_q",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w2/记录_obs_pi_q",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w2/记录_obs_pi_q",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w2/记录_obs_pi_q",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w2/记录_obs_pi_q",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/PI Controller_w2/记录_obs_pi_q",
+      "parameter": "VariableName",
+      "value": "obs_pi_q"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/Iabc",
+      "parameter": "InitialOutput",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/id_iq_wm_theta",
+      "parameter": "InitialCondition",
+      "value": "[0;0;0;0]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/id_iq_wm_theta",
+      "parameter": "InitialConditionSource",
+      "value": "internal"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/measurement_vector",
+      "parameter": "InitialOutput",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/电流占位电压",
+      "parameter": "LockScale",
+      "value": "off"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/电流占位电压",
+      "parameter": "OutDataTypeStr",
+      "value": "Inherit: Inherit from 'Constant value'"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/电流占位电压",
+      "parameter": "OutMax",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/电流占位电压",
+      "parameter": "OutMin",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/电流占位电压",
+      "parameter": "SampleTime",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/电流占位电压",
+      "parameter": "Value",
+      "value": "[0 0 0]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/电流占位电压",
+      "parameter": "VectorParams1D",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/电流占位转矩",
+      "parameter": "LockScale",
+      "value": "off"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/电流占位转矩",
+      "parameter": "OutDataTypeStr",
+      "value": "Inherit: Inherit from 'Constant value'"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/电流占位转矩",
+      "parameter": "OutMax",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/电流占位转矩",
+      "parameter": "OutMin",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/电流占位转矩",
+      "parameter": "SampleTime",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/电流占位转矩",
+      "parameter": "Value",
+      "value": "0"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/电流占位转矩",
+      "parameter": "VectorParams1D",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/记录_obs_state",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/记录_obs_state",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/记录_obs_state",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/记录_obs_state",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/记录_obs_state",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/记录_obs_state",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/记录_obs_state",
+      "parameter": "VariableName",
+      "value": "obs_state"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/记录_obs_torque_fast",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/记录_obs_torque_fast",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/记录_obs_torque_fast",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/记录_obs_torque_fast",
+      "parameter": "SampleTime",
+      "value": "T"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/记录_obs_torque_fast",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/记录_obs_torque_fast",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/记录_obs_torque_fast",
+      "parameter": "VariableName",
+      "value": "obs_torque_fast"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/记录_obs_vdq_fast",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/记录_obs_vdq_fast",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/记录_obs_vdq_fast",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/记录_obs_vdq_fast",
+      "parameter": "SampleTime",
+      "value": "T"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/记录_obs_vdq_fast",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/记录_obs_vdq_fast",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/记录_obs_vdq_fast",
+      "parameter": "VariableName",
+      "value": "obs_vdq_fast"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Rate Transition1",
+      "parameter": "InitialCondition",
+      "value": "0"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Rate Transition2",
+      "parameter": "InitialCondition",
+      "value": "0"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Rate Transition3",
+      "parameter": "InitialCondition",
+      "value": "0"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Rate Transition4",
+      "parameter": "InitialCondition",
+      "value": "0"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/SVPWM Function v1.0/Tcm",
+      "parameter": "InitialOutput",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/SVPWM Function v1.0/diagnostic",
+      "parameter": "InitialOutput",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/SVPWM Function v1.0/sector",
+      "parameter": "InitialOutput",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Subsystem/Constant",
+      "parameter": "LockScale",
+      "value": "off"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Subsystem/Constant",
+      "parameter": "OutDataTypeStr",
+      "value": "Inherit: Inherit from 'Constant value'"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Subsystem/Constant",
+      "parameter": "OutMax",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Subsystem/Constant",
+      "parameter": "OutMin",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Subsystem/Constant",
+      "parameter": "SampleTime",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Subsystem/Constant",
+      "parameter": "Value",
+      "value": "2*pi"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Subsystem/Constant",
+      "parameter": "VectorParams1D",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Subsystem/theta_e",
+      "parameter": "InitialOutput",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/T_load1",
+      "parameter": "FinalValue",
+      "value": "0.3*Tn"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/T_load1",
+      "parameter": "InitialValue",
+      "value": "0.3*Tn"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/T_load1",
+      "parameter": "OutDataTypeStr",
+      "value": "double"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/T_load1",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/T_load1",
+      "parameter": "Time",
+      "value": "0"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/T_load1",
+      "parameter": "VectorParams1D",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/T_load1",
+      "parameter": "ZeroCross",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Three-Phase\nV-I Measurement/Iabc_measured",
+      "parameter": "InitialOutput",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Three-Phase\nV-I Measurement/Vab_Vbc_Vca",
+      "parameter": "InitialOutput",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Three-Phase\nV-I Measurement/Vabc_to_motor",
+      "parameter": "InitialOutput",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Universal Bridge/Vabc",
+      "parameter": "InitialOutput",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Universal Bridge/续流/diagnostic",
+      "parameter": "InitialOutput",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Universal Bridge/续流/phase",
+      "parameter": "InitialOutput",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Universal Bridge/续流参数",
+      "parameter": "LockScale",
+      "value": "off"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Universal Bridge/续流参数",
+      "parameter": "OutDataTypeStr",
+      "value": "Inherit: Inherit from 'Constant value'"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Universal Bridge/续流参数",
+      "parameter": "OutMax",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Universal Bridge/续流参数",
+      "parameter": "OutMin",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Universal Bridge/续流参数",
+      "parameter": "SampleTime",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Universal Bridge/续流参数",
+      "parameter": "Value",
+      "value": "dead_bridge_cfg"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Universal Bridge/续流参数",
+      "parameter": "VectorParams1D",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Universal Bridge/记录_obs_dead_bridge",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Universal Bridge/记录_obs_dead_bridge",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Universal Bridge/记录_obs_dead_bridge",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Universal Bridge/记录_obs_dead_bridge",
+      "parameter": "SampleTime",
+      "value": "T"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Universal Bridge/记录_obs_dead_bridge",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Universal Bridge/记录_obs_dead_bridge",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Universal Bridge/记录_obs_dead_bridge",
+      "parameter": "VariableName",
+      "value": "obs_dead_bridge"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Universal Bridge/记录_obs_dead_gates",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Universal Bridge/记录_obs_dead_gates",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Universal Bridge/记录_obs_dead_gates",
+      "parameter": "MaxDataPoints",
+      "value": "4000"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Universal Bridge/记录_obs_dead_gates",
+      "parameter": "SampleTime",
+      "value": "dead_h"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Universal Bridge/记录_obs_dead_gates",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Universal Bridge/记录_obs_dead_gates",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Universal Bridge/记录_obs_dead_gates",
+      "parameter": "VariableName",
+      "value": "obs_dead_gates"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Universal Bridge/记录_obs_dead_requested",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Universal Bridge/记录_obs_dead_requested",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Universal Bridge/记录_obs_dead_requested",
+      "parameter": "MaxDataPoints",
+      "value": "4000"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Universal Bridge/记录_obs_dead_requested",
+      "parameter": "SampleTime",
+      "value": "dead_h"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Universal Bridge/记录_obs_dead_requested",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Universal Bridge/记录_obs_dead_requested",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Universal Bridge/记录_obs_dead_requested",
+      "parameter": "VariableName",
+      "value": "obs_dead_requested"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Universal Bridge/门极参数",
+      "parameter": "LockScale",
+      "value": "off"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Universal Bridge/门极参数",
+      "parameter": "OutDataTypeStr",
+      "value": "Inherit: Inherit from 'Constant value'"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Universal Bridge/门极参数",
+      "parameter": "OutMax",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Universal Bridge/门极参数",
+      "parameter": "OutMin",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Universal Bridge/门极参数",
+      "parameter": "SampleTime",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Universal Bridge/门极参数",
+      "parameter": "Value",
+      "value": "dead_gate_cfg"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Universal Bridge/门极参数",
+      "parameter": "VectorParams1D",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Universal Bridge/门极死区/blank",
+      "parameter": "InitialOutput",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Universal Bridge/门极死区/gates",
+      "parameter": "InitialOutput",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save PWM thresholds",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save PWM thresholds",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save PWM thresholds",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save PWM thresholds",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save PWM thresholds",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save PWM thresholds",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save PWM thresholds",
+      "parameter": "VariableName",
+      "value": "log_Tcm"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save SW",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save SW",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save SW",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save SW",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save SW",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save SW",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save SW",
+      "parameter": "VariableName",
+      "value": "log_SW"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save TL",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save TL",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save TL",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save TL",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save TL",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save TL",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save TL",
+      "parameter": "VariableName",
+      "value": "log_TL"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save Te",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save Te",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save Te",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save Te",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save Te",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save Te",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save Te",
+      "parameter": "VariableName",
+      "value": "log_Te"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save UDC",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save UDC",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save UDC",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save UDC",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save UDC",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save UDC",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save UDC",
+      "parameter": "VariableName",
+      "value": "log_UDC"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save id",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save id",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save id",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save id",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save id",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save id",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save id",
+      "parameter": "VariableName",
+      "value": "log_id"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save iq",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save iq",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save iq",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save iq",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save iq",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save iq",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save iq",
+      "parameter": "VariableName",
+      "value": "log_iq"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save iq_ref",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save iq_ref",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save iq_ref",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save iq_ref",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save iq_ref",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save iq_ref",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save iq_ref",
+      "parameter": "VariableName",
+      "value": "log_iq_ref"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save nref",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save nref",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save nref",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save nref",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save nref",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save nref",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save nref",
+      "parameter": "VariableName",
+      "value": "log_nref"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save speed",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save speed",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save speed",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save speed",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save speed",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save speed",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save speed",
+      "parameter": "VariableName",
+      "value": "log_speed"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save v_alpha",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save v_alpha",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save v_alpha",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save v_alpha",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save v_alpha",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save v_alpha",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save v_alpha",
+      "parameter": "VariableName",
+      "value": "log_v_alpha"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save v_beta",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save v_beta",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save v_beta",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save v_beta",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save v_beta",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save v_beta",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/Save v_beta",
+      "parameter": "VariableName",
+      "value": "log_v_beta"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_analog_current",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_analog_current",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_analog_current",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_analog_current",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_analog_current",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_analog_current",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_analog_current",
+      "parameter": "VariableName",
+      "value": "obs_analog_current"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_carrier_fast",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_carrier_fast",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_carrier_fast",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_carrier_fast",
+      "parameter": "SampleTime",
+      "value": "T"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_carrier_fast",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_carrier_fast",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_carrier_fast",
+      "parameter": "VariableName",
+      "value": "obs_carrier_fast"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_current_fast",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_current_fast",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_current_fast",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_current_fast",
+      "parameter": "SampleTime",
+      "value": "T"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_current_fast",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_current_fast",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_current_fast",
+      "parameter": "VariableName",
+      "value": "obs_current_fast"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_gates_fast",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_gates_fast",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_gates_fast",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_gates_fast",
+      "parameter": "SampleTime",
+      "value": "T"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_gates_fast",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_gates_fast",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_gates_fast",
+      "parameter": "VariableName",
+      "value": "obs_gates_fast"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_id_ref",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_id_ref",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_id_ref",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_id_ref",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_id_ref",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_id_ref",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_id_ref",
+      "parameter": "VariableName",
+      "value": "obs_id_ref"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_mod",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_mod",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_mod",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_mod",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_mod",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_mod",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_mod",
+      "parameter": "VariableName",
+      "value": "obs_mod"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_sector",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_sector",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_sector",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_sector",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_sector",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_sector",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_sector",
+      "parameter": "VariableName",
+      "value": "obs_sector"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_vd",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_vd",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_vd",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_vd",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_vd",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_vd",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_vd",
+      "parameter": "VariableName",
+      "value": "obs_vd"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_vd_actual",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_vd_actual",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_vd_actual",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_vd_actual",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_vd_actual",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_vd_actual",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_vd_actual",
+      "parameter": "VariableName",
+      "value": "obs_vd_actual"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_vq",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_vq",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_vq",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_vq",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_vq",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_vq",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_vq",
+      "parameter": "VariableName",
+      "value": "obs_vq"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_vq_actual",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_vq_actual",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_vq_actual",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_vq_actual",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_vq_actual",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_vq_actual",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_vq_actual",
+      "parameter": "VariableName",
+      "value": "obs_vq_actual"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/abc to\nAlpha-Beta-Zero/alpha_beta_zero",
+      "parameter": "InitialOutput",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/dq0 to\nAlpha-Beta-Zero/alpha_beta_zero",
+      "parameter": "InitialOutput",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/id_ref",
+      "parameter": "LockScale",
+      "value": "off"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/id_ref",
+      "parameter": "OutDataTypeStr",
+      "value": "Inherit: Inherit from 'Constant value'"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/id_ref",
+      "parameter": "OutMax",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/id_ref",
+      "parameter": "OutMin",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/id_ref",
+      "parameter": "SampleTime",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/id_ref",
+      "parameter": "Value",
+      "value": "0"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/id_ref",
+      "parameter": "VectorParams1D",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/speed_ref",
+      "parameter": "LockScale",
+      "value": "off"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/speed_ref",
+      "parameter": "OutDataTypeStr",
+      "value": "Inherit: Inherit from 'Constant value'"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/speed_ref",
+      "parameter": "OutMax",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/speed_ref",
+      "parameter": "OutMin",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/speed_ref",
+      "parameter": "SampleTime",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/speed_ref",
+      "parameter": "Value",
+      "value": "n"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/speed_ref",
+      "parameter": "VectorParams1D",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/功率压降/实际",
+      "parameter": "InitialOutput",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/功率压降/记录_obs_phase_actual",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/功率压降/记录_obs_phase_actual",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/功率压降/记录_obs_phase_actual",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/功率压降/记录_obs_phase_actual",
+      "parameter": "SampleTime",
+      "value": "T"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/功率压降/记录_obs_phase_actual",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/功率压降/记录_obs_phase_actual",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/功率压降/记录_obs_phase_actual",
+      "parameter": "VariableName",
+      "value": "obs_phase_actual"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/功率压降/记录_obs_phase_ideal",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/功率压降/记录_obs_phase_ideal",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/功率压降/记录_obs_phase_ideal",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/功率压降/记录_obs_phase_ideal",
+      "parameter": "SampleTime",
+      "value": "T"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/功率压降/记录_obs_phase_ideal",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/功率压降/记录_obs_phase_ideal",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/功率压降/记录_obs_phase_ideal",
+      "parameter": "VariableName",
+      "value": "obs_phase_ideal"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/功率设置/启用",
+      "parameter": "LockScale",
+      "value": "off"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/功率设置/启用",
+      "parameter": "OutDataTypeStr",
+      "value": "Inherit: Inherit from 'Constant value'"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/功率设置/启用",
+      "parameter": "OutMax",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/功率设置/启用",
+      "parameter": "OutMin",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/功率设置/启用",
+      "parameter": "SampleTime",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/功率设置/启用",
+      "parameter": "Value",
+      "value": "(~dead_gate_on)&&(dead_on||drop_on)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/功率设置/启用",
+      "parameter": "VectorParams1D",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/功率设置/记录_obs_power_drop",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/功率设置/记录_obs_power_drop",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/功率设置/记录_obs_power_drop",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/功率设置/记录_obs_power_drop",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/功率设置/记录_obs_power_drop",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/功率设置/记录_obs_power_drop",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/功率设置/记录_obs_power_drop",
+      "parameter": "VariableName",
+      "value": "obs_power_drop"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/传递延迟",
+      "parameter": "InitialCondition",
+      "value": "0"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/传递延迟",
+      "parameter": "InitialConditionSource",
+      "value": "Dialog"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/偏置",
+      "parameter": "LockScale",
+      "value": "off"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/偏置",
+      "parameter": "OutDataTypeStr",
+      "value": "Inherit: Inherit from 'Constant value'"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/偏置",
+      "parameter": "OutMax",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/偏置",
+      "parameter": "OutMin",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/偏置",
+      "parameter": "SampleTime",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/偏置",
+      "parameter": "Value",
+      "value": "bias_on*bias_deg*pi/180"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/偏置",
+      "parameter": "VectorParams1D",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/启用",
+      "parameter": "LockScale",
+      "value": "off"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/启用",
+      "parameter": "OutDataTypeStr",
+      "value": "Inherit: Inherit from 'Constant value'"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/启用",
+      "parameter": "OutMax",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/启用",
+      "parameter": "OutMin",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/启用",
+      "parameter": "SampleTime",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/启用",
+      "parameter": "Value",
+      "value": "bias_on||quant_on||delay_on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/启用",
+      "parameter": "VectorParams1D",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/延迟开关",
+      "parameter": "LockScale",
+      "value": "off"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/延迟开关",
+      "parameter": "OutDataTypeStr",
+      "value": "Inherit: Inherit from 'Constant value'"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/延迟开关",
+      "parameter": "OutMax",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/延迟开关",
+      "parameter": "OutMin",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/延迟开关",
+      "parameter": "SampleTime",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/延迟开关",
+      "parameter": "Value",
+      "value": "delay_on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/延迟开关",
+      "parameter": "VectorParams1D",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/记录_log_theta_error",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/记录_log_theta_error",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/记录_log_theta_error",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/记录_log_theta_error",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/记录_log_theta_error",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/记录_log_theta_error",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/记录_log_theta_error",
+      "parameter": "VariableName",
+      "value": "log_theta_error"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/记录_log_theta_meas",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/记录_log_theta_meas",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/记录_log_theta_meas",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/记录_log_theta_meas",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/记录_log_theta_meas",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/记录_log_theta_meas",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/记录_log_theta_meas",
+      "parameter": "VariableName",
+      "value": "log_theta_meas"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/记录_log_theta_true",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/记录_log_theta_true",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/记录_log_theta_true",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/记录_log_theta_true",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/记录_log_theta_true",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/记录_log_theta_true",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/记录_log_theta_true",
+      "parameter": "VariableName",
+      "value": "log_theta_true"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/量化开关",
+      "parameter": "LockScale",
+      "value": "off"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/量化开关",
+      "parameter": "OutDataTypeStr",
+      "value": "Inherit: Inherit from 'Constant value'"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/量化开关",
+      "parameter": "OutMax",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/量化开关",
+      "parameter": "OutMin",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/量化开关",
+      "parameter": "SampleTime",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/量化开关",
+      "parameter": "Value",
+      "value": "quant_on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/角度设置/量化开关",
+      "parameter": "VectorParams1D",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/解耦",
+      "parameter": "enabled",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/CCR预装载/applied",
+      "parameter": "InitialOutput",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/CCR预装载/diag",
+      "parameter": "InitialOutput",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/启用",
+      "parameter": "LockScale",
+      "value": "off"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/启用",
+      "parameter": "OutDataTypeStr",
+      "value": "Inherit: Inherit from 'Constant value'"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/启用",
+      "parameter": "OutMax",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/启用",
+      "parameter": "OutMin",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/启用",
+      "parameter": "SampleTime",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/启用",
+      "parameter": "Value",
+      "value": "teach_pwm_on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/启用",
+      "parameter": "VectorParams1D",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/周期延迟",
+      "parameter": "InitialCondition",
+      "value": "0"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/周期延迟",
+      "parameter": "InitialConditionSource",
+      "value": "Dialog"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/指令缓存",
+      "parameter": "InitialCondition",
+      "value": "Ts/4"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/时序参数",
+      "parameter": "LockScale",
+      "value": "off"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/时序参数",
+      "parameter": "OutDataTypeStr",
+      "value": "Inherit: Inherit from 'Constant value'"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/时序参数",
+      "parameter": "OutMax",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/时序参数",
+      "parameter": "OutMin",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/时序参数",
+      "parameter": "SampleTime",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/时序参数",
+      "parameter": "Value",
+      "value": "timing_pwm_cfg"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/时序参数",
+      "parameter": "VectorParams1D",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/生效",
+      "parameter": "InitialOutput",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/记录_log_Tcm_applied",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/记录_log_Tcm_applied",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/记录_log_Tcm_applied",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/记录_log_Tcm_applied",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/记录_log_Tcm_applied",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/记录_log_Tcm_applied",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/记录_log_Tcm_applied",
+      "parameter": "VariableName",
+      "value": "log_Tcm_applied"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/记录_log_Tcm_requested",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/记录_log_Tcm_requested",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/记录_log_Tcm_requested",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/记录_log_Tcm_requested",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/记录_log_Tcm_requested",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/记录_log_Tcm_requested",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/记录_log_Tcm_requested",
+      "parameter": "VariableName",
+      "value": "log_Tcm_requested"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/记录_obs_pwm_timing",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/记录_obs_pwm_timing",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/记录_obs_pwm_timing",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/记录_obs_pwm_timing",
+      "parameter": "SampleTime",
+      "value": "timing_h"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/记录_obs_pwm_timing",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/记录_obs_pwm_timing",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/记录_obs_pwm_timing",
+      "parameter": "VariableName",
+      "value": "obs_pwm_timing"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/ADC开关",
+      "parameter": "LockScale",
+      "value": "off"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/ADC开关",
+      "parameter": "OutDataTypeStr",
+      "value": "Inherit: Inherit from 'Constant value'"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/ADC开关",
+      "parameter": "OutMax",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/ADC开关",
+      "parameter": "OutMin",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/ADC开关",
+      "parameter": "SampleTime",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/ADC开关",
+      "parameter": "Value",
+      "value": "adc_on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/ADC开关",
+      "parameter": "VectorParams1D",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/传递延迟",
+      "parameter": "InitialCondition",
+      "value": "0"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/传递延迟",
+      "parameter": "InitialConditionSource",
+      "value": "Dialog"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/启用",
+      "parameter": "LockScale",
+      "value": "off"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/启用",
+      "parameter": "OutDataTypeStr",
+      "value": "Inherit: Inherit from 'Constant value'"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/启用",
+      "parameter": "OutMax",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/启用",
+      "parameter": "OutMin",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/启用",
+      "parameter": "SampleTime",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/启用",
+      "parameter": "Value",
+      "value": "bias_on||gain_on||noise_on||adc_on||filter_on||delay_on||analog_on||timing_on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/启用",
+      "parameter": "VectorParams1D",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/噪声源",
+      "parameter": "Mean",
+      "value": "[0 0 0]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/噪声源",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/噪声源",
+      "parameter": "Seed",
+      "value": "noise_seed+[0 1 2]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/噪声源",
+      "parameter": "Variance",
+      "value": "noise_rms^2"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/噪声源",
+      "parameter": "VectorParams1D",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/延迟开关",
+      "parameter": "LockScale",
+      "value": "off"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/延迟开关",
+      "parameter": "OutDataTypeStr",
+      "value": "Inherit: Inherit from 'Constant value'"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/延迟开关",
+      "parameter": "OutMax",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/延迟开关",
+      "parameter": "OutMin",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/延迟开关",
+      "parameter": "SampleTime",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/延迟开关",
+      "parameter": "Value",
+      "value": "delay_on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/延迟开关",
+      "parameter": "VectorParams1D",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/数字低通",
+      "parameter": "InitialDenominatorStates",
+      "value": "0"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/数字低通",
+      "parameter": "InitialStates",
+      "value": "0"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/数字低通",
+      "parameter": "InitialStatesSource",
+      "value": "Dialog"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/时序参数",
+      "parameter": "LockScale",
+      "value": "off"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/时序参数",
+      "parameter": "OutDataTypeStr",
+      "value": "Inherit: Inherit from 'Constant value'"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/时序参数",
+      "parameter": "OutMax",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/时序参数",
+      "parameter": "OutMin",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/时序参数",
+      "parameter": "SampleTime",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/时序参数",
+      "parameter": "Value",
+      "value": "timing_adc_cfg"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/时序参数",
+      "parameter": "VectorParams1D",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/模拟低通/输出",
+      "parameter": "InitialOutput",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/模拟开关",
+      "parameter": "LockScale",
+      "value": "off"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/模拟开关",
+      "parameter": "OutDataTypeStr",
+      "value": "Inherit: Inherit from 'Constant value'"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/模拟开关",
+      "parameter": "OutMax",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/模拟开关",
+      "parameter": "OutMin",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/模拟开关",
+      "parameter": "SampleTime",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/模拟开关",
+      "parameter": "Value",
+      "value": "analog_on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/模拟开关",
+      "parameter": "VectorParams1D",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/模拟缓存",
+      "parameter": "InitialCondition",
+      "value": "[0;0;0]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/滤波开关",
+      "parameter": "LockScale",
+      "value": "off"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/滤波开关",
+      "parameter": "OutDataTypeStr",
+      "value": "Inherit: Inherit from 'Constant value'"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/滤波开关",
+      "parameter": "OutMax",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/滤波开关",
+      "parameter": "OutMin",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/滤波开关",
+      "parameter": "SampleTime",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/滤波开关",
+      "parameter": "Value",
+      "value": "filter_on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/滤波开关",
+      "parameter": "VectorParams1D",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_adc",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_adc",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_adc",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_adc",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_adc",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_adc",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_adc",
+      "parameter": "VariableName",
+      "value": "log_iabc_adc"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_filter",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_filter",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_filter",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_filter",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_filter",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_filter",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_filter",
+      "parameter": "VariableName",
+      "value": "log_iabc_filter"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_meas",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_meas",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_meas",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_meas",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_meas",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_meas",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_meas",
+      "parameter": "VariableName",
+      "value": "log_iabc_meas"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_noise",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_noise",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_noise",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_noise",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_noise",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_noise",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_noise",
+      "parameter": "VariableName",
+      "value": "log_iabc_noise"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_true",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_true",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_true",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_true",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_true",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_true",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_true",
+      "parameter": "VariableName",
+      "value": "log_iabc_true"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_obs_adc_codes",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_obs_adc_codes",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_obs_adc_codes",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_obs_adc_codes",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_obs_adc_codes",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_obs_adc_codes",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_obs_adc_codes",
+      "parameter": "VariableName",
+      "value": "obs_adc_codes"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_obs_adc_timing",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_obs_adc_timing",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_obs_adc_timing",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_obs_adc_timing",
+      "parameter": "SampleTime",
+      "value": "timing_h"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_obs_adc_timing",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_obs_adc_timing",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/记录_obs_adc_timing",
+      "parameter": "VariableName",
+      "value": "obs_adc_timing"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/门极历史",
+      "parameter": "InitialCondition",
+      "value": "[0 1 0 1 0 1]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/零偏",
+      "parameter": "LockScale",
+      "value": "off"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/零偏",
+      "parameter": "OutDataTypeStr",
+      "value": "Inherit: Inherit from 'Constant value'"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/零偏",
+      "parameter": "OutMax",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/零偏",
+      "parameter": "OutMin",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/零偏",
+      "parameter": "SampleTime",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/零偏",
+      "parameter": "Value",
+      "value": "bias_on*bias_A"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/零偏",
+      "parameter": "VectorParams1D",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/顺序采样/codes",
+      "parameter": "InitialOutput",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/顺序采样/diag",
+      "parameter": "InitialOutput",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/顺序采样/sample",
+      "parameter": "InitialOutput",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/限压/死区补偿/diagnostic",
+      "parameter": "InitialOutput",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/限压/死区补偿/dq",
+      "parameter": "InitialOutput",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/限压/补偿参数",
+      "parameter": "LockScale",
+      "value": "off"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/限压/补偿参数",
+      "parameter": "OutDataTypeStr",
+      "value": "Inherit: Inherit from 'Constant value'"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/限压/补偿参数",
+      "parameter": "OutMax",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/限压/补偿参数",
+      "parameter": "OutMin",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/限压/补偿参数",
+      "parameter": "SampleTime",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/限压/补偿参数",
+      "parameter": "Value",
+      "value": "dead_comp_cfg"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/限压/补偿参数",
+      "parameter": "VectorParams1D",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/限压/记录_obs_dead_comp",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/限压/记录_obs_dead_comp",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/限压/记录_obs_dead_comp",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/限压/记录_obs_dead_comp",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/限压/记录_obs_dead_comp",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/限压/记录_obs_dead_comp",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/限压/记录_obs_dead_comp",
+      "parameter": "VariableName",
+      "value": "obs_dead_comp"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/限压/记录_obs_voltage",
+      "parameter": "Decimation",
+      "value": "1"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/限压/记录_obs_voltage",
+      "parameter": "FixptAsFi",
+      "value": "on"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/限压/记录_obs_voltage",
+      "parameter": "MaxDataPoints",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/限压/记录_obs_voltage",
+      "parameter": "SampleTime",
+      "value": "timing_control_sample"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/限压/记录_obs_voltage",
+      "parameter": "Save2DSignal",
+      "value": "3-D array (concatenate along third dimension)"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/限压/记录_obs_voltage",
+      "parameter": "SaveFormat",
+      "value": "Timeseries"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/限压/记录_obs_voltage",
+      "parameter": "VariableName",
+      "value": "obs_voltage"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/限压/除零保护",
+      "parameter": "LockScale",
+      "value": "off"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/限压/除零保护",
+      "parameter": "OutDataTypeStr",
+      "value": "Inherit: Inherit from 'Constant value'"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/限压/除零保护",
+      "parameter": "OutMax",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/限压/除零保护",
+      "parameter": "OutMin",
+      "value": "[]"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/限压/除零保护",
+      "parameter": "SampleTime",
+      "value": "inf"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/限压/除零保护",
+      "parameter": "Value",
+      "value": "1e-12"
+    },
+    {
+      "path": "PMSM_FOC_R2026a/限压/除零保护",
+      "parameter": "VectorParams1D",
+      "value": "on"
+    }
+  ]
+}

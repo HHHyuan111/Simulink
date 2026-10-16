@@ -1,0 +1,14 @@
+{
+  "kind": "native_electrical_scope_desktop_preview",
+  "duration_s": 0.2,
+  "layout": [
+    2,
+    2
+  ],
+  "style": "blackonwhite",
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "preview_mat_sha256": "4de93cec1fdfa2a09c3df4c73dacbe4d0c2c2cd13ffd47fa97e82028c53a9d8e",
+  "image_sha256": "f734f67aa36a3c1718eab576f6f1876ac6186ccd37e6ad80af08df1e25f10f5d",
+  "validation_file": "electrical_scope_validation.json",
+  "note": "实际原生Scope截图；电压为限压前后指令，非逆变器实际输出。"
+}

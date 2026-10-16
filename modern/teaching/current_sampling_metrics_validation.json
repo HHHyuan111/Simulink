@@ -1,0 +1,114 @@
+{
+  "passed": true,
+  "synthetic_known_errors_and_intervals": true,
+  "missing_events_not_zero": true,
+  "missing_and_ambiguous_cycles_not_mispaired": true,
+  "invalid_windows_and_grids_rejected": true,
+  "repeat_exact": true,
+  "source_unchanged": true,
+  "source_sha256": "46b4889a13a49199fd205d91026c10efe89f090f88bfaeeb48dafe731f71cf91",
+  "actual_preview_metrics": {
+    "schema": 1,
+    "requested_window_s": [
+      0.019499999999999997,
+      0.019999999999999997
+    ],
+    "actual_window_s": [
+      0.0195,
+      0.019999999999999997
+    ],
+    "sample_count": 8001,
+    "grid_step_s": 6.2499999998327782E-8,
+    "phase_order": [
+      "A",
+      "B",
+      "C"
+    ],
+    "feedback_minus_truth": {
+      "rms_A": [
+        0.19959066875694459,
+        0.16572898762348515,
+        0.10820371657905783
+      ],
+      "mean_A": [
+        -0.14054751814682404,
+        0.038204257148936056,
+        0.087933746269257956
+      ],
+      "max_abs_A": [
+        0.41397318638219804,
+        0.35875290327431664,
+        0.27333189228034649
+      ]
+    },
+    "hold_minus_truth_A": {
+      "rms_A": 0.1991090546747955,
+      "mean_A": -0.14049835683522297,
+      "max_abs_A": 0.41141120003177978
+    },
+    "feedback_minus_hold_A": {
+      "rms_A": 0.011837341153057701,
+      "mean_A": -4.9161311601229376E-5,
+      "max_abs_A": 0.018635729500692477
+    },
+    "truth_window_peak_to_peak_ABC_A": [
+      1.5610850830505711,
+      0.92979829688247317,
+      1.897791381021533
+    ],
+    "adc": {
+      "trigger_count": 10,
+      "JEOS_count": 10,
+      "intervals": {
+        "trigger_to_JEOS": {
+          "available": true,
+          "paired_count": 10,
+          "missing_count": 0,
+          "ambiguous_count": 0,
+          "min_us": 4.4999999999975611,
+          "mean_us": 4.5000000000003366,
+          "max_us": 4.5000000000010312
+        },
+        "A_end_to_JEOS": {
+          "available": true,
+          "paired_count": 10,
+          "missing_count": 0,
+          "ambiguous_count": 0,
+          "min_us": 0.3124999999985778,
+          "mean_us": 0.31249999999996564,
+          "max_us": 0.31250000000204725
+        },
+        "B_end_to_JEOS": {
+          "available": true,
+          "paired_count": 10,
+          "missing_count": 0,
+          "ambiguous_count": 0,
+          "min_us": 1.8125000000000779,
+          "mean_us": 1.8125000000000777,
+          "max_us": 1.8125000000000779
+        },
+        "C_end_to_JEOS": {
+          "available": true,
+          "paired_count": 10,
+          "missing_count": 0,
+          "ambiguous_count": 0,
+          "min_us": 3.3124999999981086,
+          "mean_us": 3.3125000000001905,
+          "max_us": 3.3125000000015783
+        }
+      },
+      "window_validity": {
+        "sample_count": 10,
+        "valid_fraction_ABC": [
+          1,
+          1,
+          1
+        ]
+      },
+      "definitions": "Intervals between recorded events in the same PWM cycle. Validity flags are separate; an aperture-end pulse does not prove a new valid sample was delivered."
+    },
+    "analysis_source_sha256": "f8fb1b737ea1a2e97668e8b67a536cc6ba6bf371f0dd6647472f4d0b1348a844",
+    "definitions": "Discrete equal-weight RMS, inclusive endpoints. Current errors include all enabled factors; peak-to-peak includes window trend. Event intervals are not inferred signal delays."
+  },
+  "scope": "Read-only statistics, synthetic calibration and existing 20ms startup preview; no new control algorithm or hardware calibration."
+}

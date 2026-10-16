@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="630" viewBox="0 0 1500 630">
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#42556b" stroke-width="1.4"/></marker></defs>
+<rect width="1500" height="630" fill="#f8fafc"/>
+<g font-family="Microsoft YaHei, sans-serif" fill="#203248">
+<text x="45" y="48" font-size="30" font-weight="bold">当前模型的死区补偿连接</text>
+<text x="45" y="82" font-size="20" fill="#617286">按实际信号关系简化；原图位于：电流环区域 → 限压</text>
+<rect x="45" y="120" width="275" height="105" rx="12" fill="#e2e8f0" stroke="#94a3b8"/>
+<rect x="570" y="120" width="180" height="105" rx="12" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+<rect x="940" y="120" width="200" height="105" rx="12" fill="#e2e8f0" stroke="#94a3b8"/>
+<rect x="1250" y="120" width="210" height="105" rx="12" fill="#e2e8f0" stroke="#94a3b8"/>
+<g font-size="24" text-anchor="middle"><text x="182" y="164">PI ＋ 解耦前馈</text><text x="182" y="200" font-size="20">原 dq 电压请求</text><text x="660" y="165">加上补偿</text><text x="660" y="200" font-size="18">vd + Δvd，vq + Δvq</text><text x="1040" y="165">最终圆限幅</text><text x="1040" y="200" font-size="20">服从母线电压能力</text><text x="1355" y="164">逆 Park</text><text x="1355" y="200">→ SVPWM</text></g>
+<g fill="none" stroke="#42556b" stroke-width="2.6" marker-end="url(#arrow)"><path d="M320 172 H570"/><path d="M750 172 H940"/><path d="M1140 172 H1250"/></g>
+<text x="45" y="300" font-size="23" font-weight="bold" fill="#2563eb">补偿支路：使用控制器收到的测量值</text>
+<g stroke="#3b82f6" stroke-width="1.8" fill="#eff6ff"><rect x="45" y="335" width="245" height="105" rx="12"/><rect x="365" y="335" width="265" height="105" rx="12"/><rect x="710" y="335" width="315" height="105" rx="12"/><rect x="1120" y="335" width="340" height="105" rx="12"/></g>
+<g font-size="23" text-anchor="middle"><text x="167" y="376">测量三相电流</text><text x="167" y="412" font-size="20">Iabc_meas</text><text x="497" y="375">① 极性判断 ＋ 滞环</text><text x="497" y="412" font-size="20">超过 ±h 才切换方向</text><text x="867" y="375">② 计算 abc 修正量</text><text x="867" y="412" font-size="20">Vdc × tcomp / Tpwm，去共模</text><text x="1290" y="375">③ Clarke / Park</text><text x="1290" y="412" font-size="20">测量角度 θ → Δvd、Δvq</text></g>
+<g fill="none" stroke="#42556b" stroke-width="2.6" marker-end="url(#arrow)"><path d="M290 387 H365"/><path d="M630 387 H710"/><path d="M1025 387 H1120"/></g>
+<path d="M1290 335 V270 H660 V225" fill="none" stroke="#2563eb" stroke-width="2.6" marker-end="url(#arrow)"/>
+<text x="790" y="257" font-size="20" fill="#2563eb">补偿电压在最终限幅之前加入</text>
+<rect x="45" y="485" width="1415" height="105" rx="12" fill="#fff7ed" stroke="#fed7aa"/>
+<text x="70" y="524" font-size="23">示例：24V、20kHz、补偿时间 2μs → 去共模前，每桥臂修正幅值为 0.96V。</text>
+<text x="70" y="560" font-size="21" fill="#775234">改变的是电压请求；门极死区仍保留。关闭补偿时 Δvd = Δvq = 0。</text>
+</g></svg>
+

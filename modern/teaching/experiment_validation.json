@@ -1,0 +1,28 @@
+{
+  "all_passed": true,
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "reference_manifest_sha256": "f977cfaa62d8722221573d9a648f28d8d7bc91f0f6a462c1e09e4488a70ef353",
+  "run_folders": {
+    "current_bias": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261012_195917_558_current_bias_ef95035e",
+    "current_noise": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261012_195958_311_current_noise_7b6aee80",
+    "sample_delay": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261012_200023_418_sample_delay_c8641314",
+    "zero_bias": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261012_200047_907_current_bias_e8ec3ed2",
+    "noise_repeat": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261012_200100_267_current_noise_d12ffa7f",
+    "gui_noise": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261012_200125_951_current_noise_d855c821"
+  },
+  "checks": {
+    "invalid_inputs_rejected": 6,
+    "bias_identity_passed": true,
+    "noise_identity_passed": true,
+    "one_cycle_delay_passed": true,
+    "zero_bias_same_as_reference": true,
+    "reference_repeated_across_scenarios": true,
+    "noise_repeated_across_runs": true,
+    "nonreference_not_overwritten": true,
+    "mixed_or_tampered_result_rejected": true,
+    "gui_actual_run_callback_passed": true,
+    "gui_stale_report_cleared": true,
+    "loaded_reference_preserved": true,
+    "main_and_v1_reference_unchanged": true
+  }
+}

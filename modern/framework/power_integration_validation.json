@@ -1,0 +1,15 @@
+{
+  "kind": "power_feedback_integration_v1",
+  "passed": true,
+  "original_folder": "D:/simulink/modern/framework/runs/20261015_111510_320_power_integration_3b82f3aa",
+  "repeated_folder": "D:\\simulink\\modern\\framework\\runs\\20261015_111813_539_power_integration_01372e85",
+  "duration_s": 0.02,
+  "signal_count": 105,
+  "all_time_data_exact": true,
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "reference_sha256": "f977cfaa62d8722221573d9a648f28d8d7bc91f0f6a462c1e09e4488a70ef353",
+  "restored_reference": true,
+  "original_structure_preserved": true,
+  "validator_sha256": "ecf681d31d91c9c29f759934ec4f3f0eda67cc34f63213f2b7833446acbe18d5",
+  "boundary": "Short startup integration only; no full-run gate, platform or calibrated-hardware claim."
+}

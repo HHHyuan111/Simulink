@@ -1,0 +1,17 @@
+{
+  "Model": "D:\\simulink\\modern\\PMSM_FOC_R2026a.slx",
+  "SHA256": "b85d37897e8d6b10229ca27670b412d89fb7e4e24375e18094355407b25c253f",
+  "OriginalFilesChecked": 11,
+  "ChangedOriginalFiles": 0,
+  "ScenarioChecksPassed": true,
+  "ZeroSpeedMonitorCheckPassed": true,
+  "RequiredProducts": [
+    "MATLAB R2026a",
+    "Simulink"
+  ],
+  "PreviousModelSHA256": "4b7ea94c8e350db311b47221ad75c08f66e0e765e67306617c6a0402d8b05559",
+  "LayoutVerification": "layout/layout_verification.json",
+  "LayoutOnlyFunctionalSnapshotIdentical": true,
+  "LayoutDefaultSimulationComparedSignals": 12,
+  "LayoutDefaultSimulationSignalsBitwiseIdentical": true
+}

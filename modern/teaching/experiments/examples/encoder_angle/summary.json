@@ -1,0 +1,283 @@
+{
+  "scope": "简洁展示图与摘要；完整数值档案在source_run_folder。说明文字见notes.md。",
+  "scenario": {
+    "id": "encoder_angle",
+    "name": "编码器角度",
+    "section": "角度设置",
+    "switch": "encoder_on",
+    "parameter": "counts",
+    "default_value": [
+      10000,
+      2,
+      0
+    ],
+    "unit": "计数/机械转；延迟拍；电角零位°",
+    "size": 3,
+    "minimum": [
+      20,
+      0,
+      -180
+    ],
+    "maximum": [
+      1.0E+6,
+      20,
+      180
+    ],
+    "integer": false,
+    "question": "连续真角度变成整数计数并晚到几拍，会怎样影响FOC？",
+    "observe": "比较理想角度、计数角度、计数加延迟；先看角度阶梯，再看实际Park输入和dq电流。",
+    "boundary": "同一真实时序；10000计数与5极对来自固件快照，延迟为演示值。速度仍走原路径，尚无ABZ电气边沿、Z相或自动对齐。"
+  },
+  "factor_value": [
+    10000,
+    2,
+    0
+  ],
+  "factor_unit": "计数/机械转；延迟拍；电角零位°",
+  "duration_s": 0.05,
+  "statistics_window_s": [
+    0.030000000000000002,
+    0.05
+  ],
+  "plot_window_s": [
+    0.04,
+    0.05
+  ],
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "baseline_manifest_sha256": "f977cfaa62d8722221573d9a648f28d8d7bc91f0f6a462c1e09e4488a70ef353",
+  "source_run_id": "20261013_220403_123_encoder_angle_c22b1d6d",
+  "source_run_folder": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261013_220403_123_encoder_angle_c22b1d6d",
+  "source_record_sha256": "ce35b5528bc5853f342368f7efa6ea34d31f32a616c92947dd95f5e1c2109924",
+  "numerical": {
+    "reference_fixed_step_s": 6.25E-8,
+    "factor_fixed_step_s": 6.25E-8,
+    "note": "三组同一真实时序、62.5ns网格、JEOS角度读取；速度反馈沿用原路径。原模型临时接入可展开的编码器模块，结束恢复连接，不保存SLX。"
+  },
+  "cases": [
+    {
+      "id": "reference",
+      "label": "理想角度",
+      "metrics": {
+        "statistics_window_s": [
+          0.030000000000000002,
+          0.05
+        ],
+        "measurement_mean_error_ABC_A": [
+          0.0017098169519118561,
+          -0.0028506171142581795,
+          -0.012936040700978766
+        ],
+        "measurement_rms_error_ABC_A": [
+          0.011676385896283729,
+          0.070734611118661445,
+          0.12695861178873125
+        ],
+        "speed_tracking_rms_rpm": 1422.0123017894209,
+        "iq_feedback_tracking_rms_A": 0.010417597608599376,
+        "iq_true_tracking_rms_A": 0.10314545187046859,
+        "id_true_tracking_rms_A": 0.033303671932331226,
+        "torque_std_Nm": 0.0014655109624581021,
+        "iq_true_peak_A": 8.0708130141862426,
+        "voltage_saturation_fraction": 0,
+        "control_log_period_s": 5.0000000000001432E-5,
+        "physical_current_log_period_s": 1.000000000001E-6,
+        "true_id_mean_A": 0.0099256306387295826,
+        "feedback_id_mean_A": 0.012159553199712198,
+        "angle_error_mean_electrical_deg": 0,
+        "gate_log_period_s": 6.2500000001797229E-8
+      }
+    },
+    {
+      "id": "factor",
+      "label": "计数角度",
+      "metrics": {
+        "statistics_window_s": [
+          0.030000000000000002,
+          0.05
+        ],
+        "measurement_mean_error_ABC_A": [
+          0.0017098113778317861,
+          -0.0028466985417313095,
+          -0.0129431528999958
+        ],
+        "measurement_rms_error_ABC_A": [
+          0.011676523005203819,
+          0.070736106241048771,
+          0.12695696609327711
+        ],
+        "speed_tracking_rms_rpm": 1421.9932998497584,
+        "iq_feedback_tracking_rms_A": 0.011638418346603579,
+        "iq_true_tracking_rms_A": 0.10295502978709008,
+        "id_true_tracking_rms_A": 0.033351112486908044,
+        "torque_std_Nm": 0.0014336195055403283,
+        "iq_true_peak_A": 8.0708073790040284,
+        "voltage_saturation_fraction": 0,
+        "control_log_period_s": 5.0000000000001432E-5,
+        "physical_current_log_period_s": 1.000000000001E-6,
+        "true_id_mean_A": -0.0034510470271689807,
+        "feedback_id_mean_A": 0.01199096037241756,
+        "angle_error_mean_electrical_deg": 0.094750859227826514,
+        "gate_log_period_s": 6.2500000001797229E-8
+      }
+    },
+    {
+      "id": "delayed",
+      "label": "计数加延迟",
+      "metrics": {
+        "statistics_window_s": [
+          0.030000000000000002,
+          0.05
+        ],
+        "measurement_mean_error_ABC_A": [
+          0.0017476570382874861,
+          -0.0032826167302506789,
+          -0.012546992905067791
+        ],
+        "measurement_rms_error_ABC_A": [
+          0.011640057328859652,
+          0.070408060505369671,
+          0.12688481077754943
+        ],
+        "speed_tracking_rms_rpm": 1425.9186266403192,
+        "iq_feedback_tracking_rms_A": 0.011306846993389789,
+        "iq_true_tracking_rms_A": 0.12992490987696917,
+        "id_true_tracking_rms_A": 0.69218448545545308,
+        "torque_std_Nm": 0.0016310065219332236,
+        "iq_true_peak_A": 8.0708073790040284,
+        "voltage_saturation_fraction": 0,
+        "control_log_period_s": 5.0000000000001432E-5,
+        "physical_current_log_period_s": 1.000000000001E-6,
+        "true_id_mean_A": 0.683455123534113,
+        "feedback_id_mean_A": 0.0339013862482207,
+        "angle_error_mean_electrical_deg": -4.67980714757811,
+        "gate_log_period_s": 6.2500000001797229E-8
+      }
+    }
+  ],
+  "figure_sha256": {
+    "comparison": "36c69d443cf177f67e31d4488e283685f9082f800db836ebe09c2dce9ea636c3",
+    "response": "be751ae6f5db35eb9038ef0613fad3025aec03536c0a2e599de19a024ccaf12e",
+    "mechanism": "9f59d034a4a537f6ba2b2c5a714027f3c36c07973126504c33ac1185b93c629d"
+  },
+  "renderer_files": [
+    {
+      "path": "plot_pmsm_speed_filter.m",
+      "sha256": "03a53e2cde283ab6d1f861aaad28248e1df1a79a36c2a94e65101e8ab9e30938"
+    },
+    {
+      "path": "pmsm_speed_filter_analysis.m",
+      "sha256": "bdab01efaf331b034b244f6359e4a7e280cde1db2dc59655d886a4325cdd9877"
+    },
+    {
+      "path": "plot_pmsm_speed_feedback.m",
+      "sha256": "ec30c08819596756309f33c0743c32efb4f3356342ddf4ff2e907c659e4a6e3f"
+    },
+    {
+      "path": "pmsm_speed_feedback_analysis.m",
+      "sha256": "89e3ae84fb9a5746d4bba54707cf79e77944fa081ccf554ca1f770c985a203cd"
+    },
+    {
+      "path": "plot_pmsm_encoder_speed.m",
+      "sha256": "1882e83d11f0a057055e28a88bbef0a8f53e7f662e481652e7e6c8d055e235b7"
+    },
+    {
+      "path": "pmsm_encoder_speed_analysis.m",
+      "sha256": "6a16b6f24e0d070c03812bbc5789aff7c4d2f5f5ce85cbeaaa9f5a42a6c3b8dd"
+    },
+    {
+      "path": "plot_pmsm_encoder.m",
+      "sha256": "890806b74bc28efed0e64d4ef033dcfe69ebfe057f80fc9f77df8138227d4f35"
+    },
+    {
+      "path": "pmsm_encoder_analysis.m",
+      "sha256": "13eb1faf74e71b6ea022cf383548976d8fd1cdcb67320f0ff6e82a8bd39491ed"
+    },
+    {
+      "path": "plot_pmsm_sampling_window.m",
+      "sha256": "7a196db952b45f605182b2be32c4699cbf2c59a766ae0bdf8f8684c7450c2755"
+    },
+    {
+      "path": "pmsm_sampling_window_analysis.m",
+      "sha256": "d54c4b8186eaa4a4bc6fce9bfeaf1937ff3e969fde9d1a631293600446e0b8c6"
+    },
+    {
+      "path": "plot_pmsm_timing_deadline.m",
+      "sha256": "1e594b9974cc8dc323257d508678c062f2018ce17297a6edb9df70ef553def1a"
+    },
+    {
+      "path": "pmsm_timing_deadline_analysis.m",
+      "sha256": "67ce76116e7d3fb82ad32121034d848d96b385a2f898cfe3e89dc38d6b0653dd"
+    },
+    {
+      "path": "plot_pmsm_experiment.m",
+      "sha256": "3934519949c0177736895e2d45b956671e304dde3d08bb0cb09c81d00db03abb"
+    },
+    {
+      "path": "plot_pmsm_mechanism.m",
+      "sha256": "e8cb752637a98ced50c040f48905c970650cc45af8fdd3820c94a5db6ea323a9"
+    },
+    {
+      "path": "plot_pmsm_deadtime_pair.m",
+      "sha256": "ecb5cba0c68654c83c83ac36a88cb144871ca88c98857f77cd851c1703ec5618"
+    },
+    {
+      "path": "plot_pmsm_low_speed_comp.m",
+      "sha256": "178a58d362321b402e1c85642bda39c7cb67423fd5cddc741b4dd0fb5bc7e591"
+    },
+    {
+      "path": "plot_pmsm_noise_filter.m",
+      "sha256": "ca97f345a6e53f80ebe019b1c006107c2b84f2e5cd59905b41e1e91cfc3d3ffb"
+    },
+    {
+      "path": "pmsm_noise_filter_analysis.m",
+      "sha256": "8e559064e8e046ff91afa146fbcbdd9c58e0617cd97bbda4b0601bec454c63c9"
+    },
+    {
+      "path": "plot_pmsm_timing_events.m",
+      "sha256": "81bbf0d8464c945b270393932e0158735b00788646decae7540761548cafbdac"
+    },
+    {
+      "path": "pmsm_timing_events_analysis.m",
+      "sha256": "f5617baeef752f8cc84a9981f1975da2be429aebff34cf555a6054f328c4c701"
+    },
+    {
+      "path": "pmsm_deadtime_pair_alignment.m",
+      "sha256": "7fd141413d92268f83be6fb72a22e362762c48758872d1818873c48799f94e0a"
+    },
+    {
+      "path": "pmsm_plot_style.m",
+      "sha256": "60619d54cc27fa1b9e495816877cec3ed6a12f024bf9f35da6dba5652d58ccfc"
+    },
+    {
+      "path": "export_pmsm_experiment_examples.m",
+      "sha256": "cd5884b429fc9c5cd14e7318c7aefafdfdee31c3d2be3a4f90fbf90cd93a7967"
+    }
+  ],
+  "comparison_contract": {
+    "kind": "mechanical_count_angle_three_cases",
+    "counts_per_mechanical_turn": 10000,
+    "pole_pairs": 5,
+    "sensor_direction": -1,
+    "software_direction": -1,
+    "electrical_zero_deg": 0,
+    "delay_cycles": 2,
+    "delay_s": 0.0001,
+    "read_period_s": 5E-5,
+    "read_offset_s": 2.8875E-5,
+    "event_step_s": 6.25E-8,
+    "quantization_rule": "raw=mod(floor(sensor_dir*theta_m*N/(2*pi)),N); corrected=mod(direction*raw,N)",
+    "initial_delayed_packet": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "speed_feedback": "沿用原速度路径；尚未使用计数测速",
+    "firmware_commit": "48d6e86814ac6657b1313b4c92ef24c88f492e07",
+    "parameter_sources": "10000计数及方向−1来自固件配置；零位默认手动对齐为0；两拍延迟为教学值，非实测",
+    "scope": "机械计数与同步读取的功能模型；不含ABZ边沿、输入滤波、Z相、自动对齐及位级等价。"
+  },
+  "encoder_sha256": "0ea4818758f855bc0413c1a066e34ef718e4ef0ac05918961e5ae64a75c5d73c",
+  "encoder_samples_sha256": "2b834be2ed394dd81c52ff792697c1f350eaa8cd10f8cce39a0745ea11df5f7e",
+  "notes_sha256": "982a48bbb60caacc23f9d704291c146e2dccbbe1b7968c816a4ce2cb1a17addf"
+}

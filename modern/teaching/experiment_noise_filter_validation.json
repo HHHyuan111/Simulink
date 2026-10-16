@@ -1,0 +1,2523 @@
+{
+  "all_passed": true,
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "reference_manifest_sha256": "f977cfaa62d8722221573d9a648f28d8d7bc91f0f6a462c1e09e4488a70ef353",
+  "run_folders": {
+    "default_three": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261013_142400_056_noise_filter_639410f8",
+    "repeated_three": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261013_142553_947_noise_filter_c2b3f1c8",
+    "custom_three": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261013_142803_515_noise_filter_29a83a39",
+    "zero_noise": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261013_142943_178_noise_filter_4be06436",
+    "standalone_filter": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261013_143022_132_digital_filter_5c807f70"
+  },
+  "checks": {
+    "only_adjacent_noise_then_filter_switch_changes": true,
+    "invalid_inputs_rejected": 10,
+    "existing_filter_recurrence_and_park_path": true,
+    "same_noise_and_linear_decomposition": true,
+    "historical_noise_two_cases_21_signals_preserved": true,
+    "gui_two_fields_run_page_and_stale_clear": true,
+    "main_reference_pi_layout_unchanged": true,
+    "default_all_63_signals_repeated": true,
+    "changed_noise_amplitude_and_cutoff_take_effect": true,
+    "zero_noise_bypass_and_standalone_filter_match": true,
+    "third_case_tamper_rejected": true
+  },
+  "analysis": {
+    "schema": 1,
+    "statistics_window_s": [
+      0.18000000000000002,
+      0.2
+    ],
+    "control_period_s": 4.9999999999994493E-5,
+    "filter_hz": 1500,
+    "alpha": 0.62422843364860214,
+    "definition": "各组测量总误差=本组滤波确定性误差+本组噪声分量；滤波分解使用同一组真实电流和实际注入序列，不是另一次仿真。",
+    "cases": [
+      {
+        "id": "reference",
+        "noise_injected_rms_ABC_A": [
+          0,
+          0,
+          0
+        ],
+        "noise_component_rms_ABC_A": [
+          0,
+          0,
+          0
+        ],
+        "deterministic_error_rms_ABC_A": [
+          0,
+          0,
+          0
+        ],
+        "measurement_error_rms_ABC_A": [
+          0,
+          0,
+          0
+        ],
+        "decomposition_max_abs_error_A": 0
+      },
+      {
+        "id": "factor",
+        "noise_injected_rms_ABC_A": [
+          0.019253512825711687,
+          0.019278537620409569,
+          0.019048866988213238
+        ],
+        "noise_component_rms_ABC_A": [
+          0.019253512825711687,
+          0.019278537620409569,
+          0.019048866988213238
+        ],
+        "deterministic_error_rms_ABC_A": [
+          0,
+          0,
+          0
+        ],
+        "measurement_error_rms_ABC_A": [
+          0.01925351282571169,
+          0.019278537620409569,
+          0.019048866988213245
+        ],
+        "decomposition_max_abs_error_A": 8.8817841970012523E-16
+      },
+      {
+        "id": "filtered",
+        "noise_injected_rms_ABC_A": [
+          0.019253512825711687,
+          0.019278537620409569,
+          0.019048866988213238
+        ],
+        "noise_component_rms_ABC_A": [
+          0.010019780349402227,
+          0.00966567161743768,
+          0.0094306090111782818
+        ],
+        "deterministic_error_rms_ABC_A": [
+          0.47183503915800212,
+          0.46853782719205478,
+          0.46340803836215794
+        ],
+        "measurement_error_rms_ABC_A": [
+          0.47188136526984309,
+          0.469116495448747,
+          0.46206489516348004
+        ],
+        "decomposition_max_abs_error_A": 2.5064412351172294E-13
+      }
+    ],
+    "same_injected_sequence": true,
+    "seed_ABC": [
+      9474,
+      9475,
+      9476
+    ],
+    "nominal_electrical_frequency_Hz": 250,
+    "nominal_gain_dB": -0.11678423948072766,
+    "nominal_phase_deg": -7.3884040489522889,
+    "nominal_phase_delay_us": 82.0933783216921,
+    "white_noise_rms_ratio_theoretical": 0.48099260907686525,
+    "frequency_response_source": "由当前离散一阶系数解析计算；不是实测相位或闭环辨识。"
+  },
+  "metrics": [
+    {
+      "id": "reference",
+      "label": "参考",
+      "configuration": {
+        "schema": 1,
+        "role": "custom",
+        "rows": [
+          {
+            "section": "时序设置",
+            "key": "speed_on",
+            "label": "速度分频",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "时序设置",
+            "key": "speed_divider",
+            "label": "速度周期 / 电流周期",
+            "kind": "number",
+            "unit": "倍",
+            "value": "20",
+            "source": "教学值",
+            "status": "未实测",
+            "measurement": "示波器测速度任务与电流任务周期之比。"
+          },
+          {
+            "section": "时序设置",
+            "key": "pwm_on",
+            "label": "输出延迟",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "时序设置",
+            "key": "pwm_cycles",
+            "label": "延迟周期数 [× dt]",
+            "kind": "number",
+            "unit": "周期",
+            "value": "1",
+            "source": "教学值",
+            "status": "未实测",
+            "measurement": "测指令计算到PWM生效的整周期延迟；真实时序模式不叠加此项。"
+          },
+          {
+            "section": "时序设置",
+            "key": "real_on",
+            "label": "真实时序（顺序采样与CCR生效）",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "时序设置",
+            "key": "window_on",
+            "label": "低侧采样窗口（无效样本置零演示）",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "时序设置",
+            "key": "invalid_hold_on",
+            "label": "无效时保持上次有效值（策略对照）",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "时序设置",
+            "key": "trigger_us",
+            "label": "触发相位 [μs，24.375为待实测假设]",
+            "kind": "number",
+            "unit": "μs",
+            "value": "24.375",
+            "source": "固件时序推定，未实测",
+            "status": "未实测",
+            "measurement": "测PWM谷底到ADC触发的时间。"
+          },
+          {
+            "section": "时序设置",
+            "key": "sync_us",
+            "label": "触发附加等待 [μs，演示]",
+            "kind": "number",
+            "unit": "μs",
+            "value": "0",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "测触发到ADC实际采样起点的额外同步延迟。"
+          },
+          {
+            "section": "时序设置",
+            "key": "compute_us",
+            "label": "JEOS至CCR写入 [μs，演示]",
+            "kind": "number",
+            "unit": "μs",
+            "value": "5",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "用GPIO测ADC组转换完成到CCR写入的耗时。"
+          },
+          {
+            "section": "时序设置",
+            "key": "settle_us",
+            "label": "低侧导通稳定等待 [μs，演示]",
+            "kind": "number",
+            "unit": "μs",
+            "value": "0.5",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "观测开关沿后电流前端稳定所需时间。"
+          },
+          {
+            "section": "时序设置",
+            "key": "update_mode",
+            "label": "CCR预装载生效边界",
+            "kind": "enum",
+            "unit": "枚举",
+            "value": "峰谷双更新（RCR=0）",
+            "source": "固件配置/教学对照",
+            "status": "未实测",
+            "measurement": "核对TIM1中心对齐、RCR和CCR预装载更新配置。"
+          },
+          {
+            "section": "时序设置",
+            "key": "grid_divider",
+            "label": "事件网格细分（数值设置）",
+            "kind": "number",
+            "unit": "倍",
+            "value": "1",
+            "source": "数值设置",
+            "status": "未实测",
+            "measurement": "1为62.5ns，2为31.25ns；属于求解网格，不是硬件误差。"
+          },
+          {
+            "section": "采样设置",
+            "key": "bias_on",
+            "label": "零偏",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "采样设置",
+            "key": "bias_A",
+            "label": "三相零偏 [A]",
+            "kind": "number",
+            "unit": "A，ABC",
+            "value": "[0.050000000000000003 -0.029999999999999999 0]",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "零电流时统计各通道均值，换算到电流域。"
+          },
+          {
+            "section": "采样设置",
+            "key": "gain_on",
+            "label": "增益误差",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "采样设置",
+            "key": "phase_gain",
+            "label": "三相增益",
+            "kind": "number",
+            "unit": "倍，ABC",
+            "value": "[1.01 0.98999999999999999 1]",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "用已知正负电流标定各通道斜率/理想斜率。"
+          },
+          {
+            "section": "采样设置",
+            "key": "noise_on",
+            "label": "采样噪声",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "采样设置",
+            "key": "noise_rms",
+            "label": "每相噪声 RMS [A]",
+            "kind": "number",
+            "unit": "A RMS",
+            "value": "0.02",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "固定电流采样，去掉均值后统计标准差，并记录带宽。"
+          },
+          {
+            "section": "采样设置",
+            "key": "noise_seed",
+            "label": "随机种子",
+            "kind": "number",
+            "unit": "整数",
+            "value": "9474",
+            "source": "复现设置",
+            "status": "未实测",
+            "measurement": "固定随机种子便于对照，不对应实物。"
+          },
+          {
+            "section": "采样设置",
+            "key": "adc_on",
+            "label": "ADC 量化与饱和",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "采样设置",
+            "key": "adc_bits",
+            "label": "分辨率 [bit，演示]",
+            "kind": "number",
+            "unit": "bit",
+            "value": "12",
+            "source": "ADC配置",
+            "status": "未实测",
+            "measurement": "核对ADC实际分辨率设置。"
+          },
+          {
+            "section": "采样设置",
+            "key": "adc_span",
+            "label": "电流全跨度 [A]",
+            "kind": "number",
+            "unit": "A，全跨度",
+            "value": "82.5",
+            "source": "原理图折算，待标定",
+            "status": "未实测",
+            "measurement": "82.5A为3.3V/(1mΩ×20)的全跨度；非±82.5A。"
+          },
+          {
+            "section": "采样设置",
+            "key": "filter_on",
+            "label": "数字低通",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "采样设置",
+            "key": "filter_hz",
+            "label": "等效低通频率 [Hz]",
+            "kind": "number",
+            "unit": "Hz",
+            "value": "1500",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "核对数字滤波公式，以幅相响应校验等效截止频率。"
+          },
+          {
+            "section": "采样设置",
+            "key": "delay_on",
+            "label": "采样传递延迟",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "采样设置",
+            "key": "delay_cycles",
+            "label": "延迟周期数 [× dt]",
+            "kind": "number",
+            "unit": "控制周期",
+            "value": "1",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "用事件时间戳测延迟；真实时序模式避免重复添加采样延迟。"
+          },
+          {
+            "section": "采样设置",
+            "key": "analog_on",
+            "label": "模拟低通（采样前）",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "采样设置",
+            "key": "analog_hz",
+            "label": "模拟一阶截止频率 [Hz，演示]",
+            "kind": "number",
+            "unit": "Hz",
+            "value": "5000",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "扫频或阶跃测前端等效带宽，不直接等同单个RC极点。"
+          },
+          {
+            "section": "角度设置",
+            "key": "bias_on",
+            "label": "角度偏置",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "角度设置",
+            "key": "bias_deg",
+            "label": "偏置 [电角度 °]",
+            "kind": "number",
+            "unit": "电角度°",
+            "value": "2",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "轴定位后核对编码器零位，机械角乘极对数。"
+          },
+          {
+            "section": "角度设置",
+            "key": "quant_on",
+            "label": "角度量化",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "角度设置",
+            "key": "step_deg",
+            "label": "量化步长 [电角度 °]",
+            "kind": "number",
+            "unit": "电角度°",
+            "value": "0.17999999999999999",
+            "source": "编码器配置折算",
+            "status": "未实测",
+            "measurement": "每机械转有效计数N时，电角步长=360p/N。"
+          },
+          {
+            "section": "角度设置",
+            "key": "delay_on",
+            "label": "角度延迟",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "角度设置",
+            "key": "delay_cycles",
+            "label": "延迟周期数 [× dt]",
+            "kind": "number",
+            "unit": "控制周期",
+            "value": "1",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "测角度采集到控制使用的延迟，以当前电流任务周期计。"
+          },
+          {
+            "section": "功率设置",
+            "key": "dead_on",
+            "label": "死区平均压降",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "功率设置",
+            "key": "dead_us",
+            "label": "死区 [μs，固件目标]",
+            "kind": "number",
+            "unit": "μs",
+            "value": "0.5",
+            "source": "固件0.5μs参考",
+            "status": "未实测",
+            "measurement": "旧周期平均死区；与门极死区互斥。"
+          },
+          {
+            "section": "功率设置",
+            "key": "drop_on",
+            "label": "器件导通压降",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "功率设置",
+            "key": "ron",
+            "label": "等效导通电阻 [Ω，演示]",
+            "kind": "number",
+            "unit": "Ω",
+            "value": "0.01",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "按工作电流、温度下的导通压降/电流标定。"
+          },
+          {
+            "section": "功率设置",
+            "key": "vf",
+            "label": "续流压降 [V，演示，仅随死区项计入]",
+            "kind": "number",
+            "unit": "V",
+            "value": "0.69999999999999996",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "按工作电流和温度的续流二极管压降标定。"
+          },
+          {
+            "section": "功率设置",
+            "key": "blend_A",
+            "label": "过零平滑电流 [A，演示]",
+            "kind": "number",
+            "unit": "A",
+            "value": "0.10000000000000001",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "仅旧平均压降模型的过零平滑带，不是门极死区。"
+          },
+          {
+            "section": "功率设置",
+            "key": "gate_on",
+            "label": "门极死区（实际空白与续流）",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "功率设置",
+            "key": "comp_on",
+            "label": "死区补偿（测量电流极性）",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "功率设置",
+            "key": "gate_us",
+            "label": "门极死区 [μs，固件配置]",
+            "kind": "number",
+            "unit": "μs",
+            "value": "0.5",
+            "source": "固件0.5μs参考，未测有效死区",
+            "status": "未实测",
+            "measurement": "测上下管门源信号的关断间隔，区分编程值与有效值。"
+          },
+          {
+            "section": "功率设置",
+            "key": "comp_us",
+            "label": "补偿死区 [μs，可作失配对照]",
+            "kind": "number",
+            "unit": "μs",
+            "value": "0.5",
+            "source": "补偿设定",
+            "status": "未实测",
+            "measurement": "与gate_us独立；通过同工况畸变最小值标定，不视为实测死区。"
+          },
+          {
+            "section": "功率设置",
+            "key": "hysteresis_A",
+            "label": "补偿极性滞环 ±[A，演示]",
+            "kind": "number",
+            "unit": "A，±阈值",
+            "value": "0.050000000000000003",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "先量过零噪声与偏置，再对照滞环带宽和极性切换时刻。"
+          },
+          {
+            "section": "功率设置",
+            "key": "zero_A",
+            "label": "续流近零数值带 ±[A，演示]",
+            "kind": "number",
+            "unit": "A，±近零带",
+            "value": "0.01",
+            "source": "数值近似",
+            "status": "未实测",
+            "measurement": "续流桥近零处理参数，不作为实物可测器件参数。"
+          },
+          {
+            "section": "电机与工况",
+            "key": "Vdc",
+            "label": "Vdc",
+            "kind": "number",
+            "unit": "V",
+            "value": "24",
+            "source": "标称24V",
+            "status": "未实测",
+            "measurement": "万用表/示波器核对母线电压；当前为恒定母线。"
+          },
+          {
+            "section": "电机与工况",
+            "key": "n",
+            "label": "n",
+            "kind": "number",
+            "unit": "rpm",
+            "value": "3000",
+            "source": "工况给定",
+            "status": "未实测",
+            "measurement": "设定目标机械转速，不是编码器测量校准。"
+          },
+          {
+            "section": "电机与工况",
+            "key": "fc",
+            "label": "fc",
+            "kind": "number",
+            "unit": "Hz",
+            "value": "20000",
+            "source": "固件20kHz",
+            "status": "未实测",
+            "measurement": "实测PWM周期；当前电流任务与PWM同频，二者不独立配置。"
+          },
+          {
+            "section": "电机与工况",
+            "key": "Ts_speed",
+            "label": "Ts_speed",
+            "kind": "number",
+            "unit": "s",
+            "value": "0.0001",
+            "source": "固件10kHz",
+            "status": "未实测",
+            "measurement": "测速度任务周期；必须为电流周期整数倍，speed_on会覆盖。"
+          },
+          {
+            "section": "电机与工况",
+            "key": "Rs",
+            "label": "Rs",
+            "kind": "number",
+            "unit": "Ω，相电阻",
+            "value": "0.105125",
+            "source": "固件标称",
+            "status": "未实测",
+            "measurement": "记录温度和接法，区分线间与相电阻。"
+          },
+          {
+            "section": "电机与工况",
+            "key": "Ld",
+            "label": "Ld",
+            "kind": "number",
+            "unit": "H",
+            "value": "0.00010376150000000001",
+            "source": "固件标称",
+            "status": "未实测",
+            "measurement": "锁轴辨识d轴电感，记录电流和频率；当前详细桥要求Ld=Lq。"
+          },
+          {
+            "section": "电机与工况",
+            "key": "Lq",
+            "label": "Lq",
+            "kind": "number",
+            "unit": "H",
+            "value": "0.00010376150000000001",
+            "source": "固件标称",
+            "status": "未实测",
+            "measurement": "锁轴辨识q轴电感；当前详细桥要求Ld=Lq。"
+          },
+          {
+            "section": "电机与工况",
+            "key": "phis",
+            "label": "phis",
+            "kind": "number",
+            "unit": "Wb",
+            "value": "0.0056568542494923801",
+            "source": "固件转矩常数折算",
+            "status": "未实测",
+            "measurement": "用反电动势或转矩常数辨识，核对幅值/RMS和角速度定义。"
+          },
+          {
+            "section": "电机与工况",
+            "key": "p",
+            "label": "p",
+            "kind": "number",
+            "unit": "极对",
+            "value": "5",
+            "source": "固件配置",
+            "status": "未实测",
+            "measurement": "机械转一圈，统计电角度周期数。"
+          },
+          {
+            "section": "电机与工况",
+            "key": "J",
+            "label": "J",
+            "kind": "number",
+            "unit": "kg·m²",
+            "value": "3.1999999999999999e-05",
+            "source": "固件标称，未辨识",
+            "status": "未实测",
+            "measurement": "按已知转矩和角加速度辨识，包含连接负载惯量。"
+          },
+          {
+            "section": "电机与工况",
+            "key": "F",
+            "label": "F",
+            "kind": "number",
+            "unit": "N·m·s/rad",
+            "value": "0",
+            "source": "占位0，未辨识",
+            "status": "未实测",
+            "measurement": "空载不同速度下拟合转矩-速度关系；当前只表示粘性摩擦。"
+          },
+          {
+            "section": "电机与工况",
+            "key": "Iq_limit",
+            "label": "Iq_limit",
+            "kind": "number",
+            "unit": "A，dq幅值",
+            "value": "8",
+            "source": "固件台架限幅",
+            "status": "未实测",
+            "measurement": "8A为指令上限；主动过流保护尚未实现。"
+          },
+          {
+            "section": "负载",
+            "key": "Before",
+            "label": "Before",
+            "kind": "number",
+            "unit": "N·m",
+            "value": "0.20699999999999999",
+            "source": "演示负载",
+            "status": "未实测",
+            "measurement": "阶跃前负载；可用转矩传感器测量。"
+          },
+          {
+            "section": "负载",
+            "key": "After",
+            "label": "After",
+            "kind": "number",
+            "unit": "N·m",
+            "value": "0.20699999999999999",
+            "source": "演示负载",
+            "status": "未实测",
+            "measurement": "阶跃后负载；可用转矩传感器测量。"
+          },
+          {
+            "section": "负载",
+            "key": "Time",
+            "label": "Time",
+            "kind": "number",
+            "unit": "s",
+            "value": "0",
+            "source": "工况给定",
+            "status": "未实测",
+            "measurement": "负载变化时刻。"
+          }
+        ]
+      },
+      "changes": [
+        {
+          "section": "采样设置",
+          "parameter": "noise_rms",
+          "value": "0.02"
+        },
+        {
+          "section": "采样设置",
+          "parameter": "filter_hz",
+          "value": "1500"
+        },
+        {
+          "section": "采样设置",
+          "parameter": "noise_on",
+          "value": "off"
+        },
+        {
+          "section": "采样设置",
+          "parameter": "filter_on",
+          "value": "off"
+        }
+      ],
+      "metrics": {
+        "statistics_window_s": [
+          0.18000000000000002,
+          0.2
+        ],
+        "measurement_mean_error_ABC_A": [
+          0,
+          0,
+          0
+        ],
+        "measurement_rms_error_ABC_A": [
+          0,
+          0,
+          0
+        ],
+        "speed_tracking_rms_rpm": 0.42970138970647048,
+        "iq_feedback_tracking_rms_A": 0.17643765517921986,
+        "iq_true_tracking_rms_A": 0.17643765517922291,
+        "id_true_tracking_rms_A": 0.1178362993249385,
+        "torque_std_Nm": 0.0075223128283436851,
+        "iq_true_peak_A": 8.5250121137380184,
+        "voltage_saturation_fraction": 0,
+        "control_log_period_s": 4.9999999999994493E-5,
+        "physical_current_log_period_s": 1.000000000001E-6,
+        "true_id_mean_A": 0.0010571590919511693,
+        "feedback_id_mean_A": 0.0010571590919968505,
+        "angle_error_mean_electrical_deg": 0,
+        "gate_log_period_s": 1.000000000001E-6
+      },
+      "available_signal_count": 52,
+      "retained_signals": [
+        "log_speed",
+        "log_nref",
+        "log_id",
+        "log_iq",
+        "log_iq_ref",
+        "obs_id_ref",
+        "log_Te",
+        "log_TL",
+        "obs_state",
+        "log_iabc_true",
+        "log_iabc_meas",
+        "log_iabc_noise",
+        "log_iabc_adc",
+        "log_iabc_filter",
+        "obs_voltage",
+        "obs_current_fast",
+        "log_theta_true",
+        "log_theta_meas",
+        "log_theta_error",
+        "obs_dead_requested",
+        "obs_dead_gates"
+      ]
+    },
+    {
+      "id": "factor",
+      "label": "噪声",
+      "configuration": {
+        "schema": 1,
+        "role": "custom",
+        "rows": [
+          {
+            "section": "时序设置",
+            "key": "speed_on",
+            "label": "速度分频",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "时序设置",
+            "key": "speed_divider",
+            "label": "速度周期 / 电流周期",
+            "kind": "number",
+            "unit": "倍",
+            "value": "20",
+            "source": "教学值",
+            "status": "未实测",
+            "measurement": "示波器测速度任务与电流任务周期之比。"
+          },
+          {
+            "section": "时序设置",
+            "key": "pwm_on",
+            "label": "输出延迟",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "时序设置",
+            "key": "pwm_cycles",
+            "label": "延迟周期数 [× dt]",
+            "kind": "number",
+            "unit": "周期",
+            "value": "1",
+            "source": "教学值",
+            "status": "未实测",
+            "measurement": "测指令计算到PWM生效的整周期延迟；真实时序模式不叠加此项。"
+          },
+          {
+            "section": "时序设置",
+            "key": "real_on",
+            "label": "真实时序（顺序采样与CCR生效）",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "时序设置",
+            "key": "window_on",
+            "label": "低侧采样窗口（无效样本置零演示）",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "时序设置",
+            "key": "invalid_hold_on",
+            "label": "无效时保持上次有效值（策略对照）",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "时序设置",
+            "key": "trigger_us",
+            "label": "触发相位 [μs，24.375为待实测假设]",
+            "kind": "number",
+            "unit": "μs",
+            "value": "24.375",
+            "source": "固件时序推定，未实测",
+            "status": "未实测",
+            "measurement": "测PWM谷底到ADC触发的时间。"
+          },
+          {
+            "section": "时序设置",
+            "key": "sync_us",
+            "label": "触发附加等待 [μs，演示]",
+            "kind": "number",
+            "unit": "μs",
+            "value": "0",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "测触发到ADC实际采样起点的额外同步延迟。"
+          },
+          {
+            "section": "时序设置",
+            "key": "compute_us",
+            "label": "JEOS至CCR写入 [μs，演示]",
+            "kind": "number",
+            "unit": "μs",
+            "value": "5",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "用GPIO测ADC组转换完成到CCR写入的耗时。"
+          },
+          {
+            "section": "时序设置",
+            "key": "settle_us",
+            "label": "低侧导通稳定等待 [μs，演示]",
+            "kind": "number",
+            "unit": "μs",
+            "value": "0.5",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "观测开关沿后电流前端稳定所需时间。"
+          },
+          {
+            "section": "时序设置",
+            "key": "update_mode",
+            "label": "CCR预装载生效边界",
+            "kind": "enum",
+            "unit": "枚举",
+            "value": "峰谷双更新（RCR=0）",
+            "source": "固件配置/教学对照",
+            "status": "未实测",
+            "measurement": "核对TIM1中心对齐、RCR和CCR预装载更新配置。"
+          },
+          {
+            "section": "时序设置",
+            "key": "grid_divider",
+            "label": "事件网格细分（数值设置）",
+            "kind": "number",
+            "unit": "倍",
+            "value": "1",
+            "source": "数值设置",
+            "status": "未实测",
+            "measurement": "1为62.5ns，2为31.25ns；属于求解网格，不是硬件误差。"
+          },
+          {
+            "section": "采样设置",
+            "key": "bias_on",
+            "label": "零偏",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "采样设置",
+            "key": "bias_A",
+            "label": "三相零偏 [A]",
+            "kind": "number",
+            "unit": "A，ABC",
+            "value": "[0.050000000000000003 -0.029999999999999999 0]",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "零电流时统计各通道均值，换算到电流域。"
+          },
+          {
+            "section": "采样设置",
+            "key": "gain_on",
+            "label": "增益误差",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "采样设置",
+            "key": "phase_gain",
+            "label": "三相增益",
+            "kind": "number",
+            "unit": "倍，ABC",
+            "value": "[1.01 0.98999999999999999 1]",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "用已知正负电流标定各通道斜率/理想斜率。"
+          },
+          {
+            "section": "采样设置",
+            "key": "noise_on",
+            "label": "采样噪声",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "on",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "采样设置",
+            "key": "noise_rms",
+            "label": "每相噪声 RMS [A]",
+            "kind": "number",
+            "unit": "A RMS",
+            "value": "0.02",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "固定电流采样，去掉均值后统计标准差，并记录带宽。"
+          },
+          {
+            "section": "采样设置",
+            "key": "noise_seed",
+            "label": "随机种子",
+            "kind": "number",
+            "unit": "整数",
+            "value": "9474",
+            "source": "复现设置",
+            "status": "未实测",
+            "measurement": "固定随机种子便于对照，不对应实物。"
+          },
+          {
+            "section": "采样设置",
+            "key": "adc_on",
+            "label": "ADC 量化与饱和",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "采样设置",
+            "key": "adc_bits",
+            "label": "分辨率 [bit，演示]",
+            "kind": "number",
+            "unit": "bit",
+            "value": "12",
+            "source": "ADC配置",
+            "status": "未实测",
+            "measurement": "核对ADC实际分辨率设置。"
+          },
+          {
+            "section": "采样设置",
+            "key": "adc_span",
+            "label": "电流全跨度 [A]",
+            "kind": "number",
+            "unit": "A，全跨度",
+            "value": "82.5",
+            "source": "原理图折算，待标定",
+            "status": "未实测",
+            "measurement": "82.5A为3.3V/(1mΩ×20)的全跨度；非±82.5A。"
+          },
+          {
+            "section": "采样设置",
+            "key": "filter_on",
+            "label": "数字低通",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "采样设置",
+            "key": "filter_hz",
+            "label": "等效低通频率 [Hz]",
+            "kind": "number",
+            "unit": "Hz",
+            "value": "1500",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "核对数字滤波公式，以幅相响应校验等效截止频率。"
+          },
+          {
+            "section": "采样设置",
+            "key": "delay_on",
+            "label": "采样传递延迟",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "采样设置",
+            "key": "delay_cycles",
+            "label": "延迟周期数 [× dt]",
+            "kind": "number",
+            "unit": "控制周期",
+            "value": "1",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "用事件时间戳测延迟；真实时序模式避免重复添加采样延迟。"
+          },
+          {
+            "section": "采样设置",
+            "key": "analog_on",
+            "label": "模拟低通（采样前）",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "采样设置",
+            "key": "analog_hz",
+            "label": "模拟一阶截止频率 [Hz，演示]",
+            "kind": "number",
+            "unit": "Hz",
+            "value": "5000",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "扫频或阶跃测前端等效带宽，不直接等同单个RC极点。"
+          },
+          {
+            "section": "角度设置",
+            "key": "bias_on",
+            "label": "角度偏置",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "角度设置",
+            "key": "bias_deg",
+            "label": "偏置 [电角度 °]",
+            "kind": "number",
+            "unit": "电角度°",
+            "value": "2",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "轴定位后核对编码器零位，机械角乘极对数。"
+          },
+          {
+            "section": "角度设置",
+            "key": "quant_on",
+            "label": "角度量化",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "角度设置",
+            "key": "step_deg",
+            "label": "量化步长 [电角度 °]",
+            "kind": "number",
+            "unit": "电角度°",
+            "value": "0.17999999999999999",
+            "source": "编码器配置折算",
+            "status": "未实测",
+            "measurement": "每机械转有效计数N时，电角步长=360p/N。"
+          },
+          {
+            "section": "角度设置",
+            "key": "delay_on",
+            "label": "角度延迟",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "角度设置",
+            "key": "delay_cycles",
+            "label": "延迟周期数 [× dt]",
+            "kind": "number",
+            "unit": "控制周期",
+            "value": "1",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "测角度采集到控制使用的延迟，以当前电流任务周期计。"
+          },
+          {
+            "section": "功率设置",
+            "key": "dead_on",
+            "label": "死区平均压降",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "功率设置",
+            "key": "dead_us",
+            "label": "死区 [μs，固件目标]",
+            "kind": "number",
+            "unit": "μs",
+            "value": "0.5",
+            "source": "固件0.5μs参考",
+            "status": "未实测",
+            "measurement": "旧周期平均死区；与门极死区互斥。"
+          },
+          {
+            "section": "功率设置",
+            "key": "drop_on",
+            "label": "器件导通压降",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "功率设置",
+            "key": "ron",
+            "label": "等效导通电阻 [Ω，演示]",
+            "kind": "number",
+            "unit": "Ω",
+            "value": "0.01",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "按工作电流、温度下的导通压降/电流标定。"
+          },
+          {
+            "section": "功率设置",
+            "key": "vf",
+            "label": "续流压降 [V，演示，仅随死区项计入]",
+            "kind": "number",
+            "unit": "V",
+            "value": "0.69999999999999996",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "按工作电流和温度的续流二极管压降标定。"
+          },
+          {
+            "section": "功率设置",
+            "key": "blend_A",
+            "label": "过零平滑电流 [A，演示]",
+            "kind": "number",
+            "unit": "A",
+            "value": "0.10000000000000001",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "仅旧平均压降模型的过零平滑带，不是门极死区。"
+          },
+          {
+            "section": "功率设置",
+            "key": "gate_on",
+            "label": "门极死区（实际空白与续流）",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "功率设置",
+            "key": "comp_on",
+            "label": "死区补偿（测量电流极性）",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "功率设置",
+            "key": "gate_us",
+            "label": "门极死区 [μs，固件配置]",
+            "kind": "number",
+            "unit": "μs",
+            "value": "0.5",
+            "source": "固件0.5μs参考，未测有效死区",
+            "status": "未实测",
+            "measurement": "测上下管门源信号的关断间隔，区分编程值与有效值。"
+          },
+          {
+            "section": "功率设置",
+            "key": "comp_us",
+            "label": "补偿死区 [μs，可作失配对照]",
+            "kind": "number",
+            "unit": "μs",
+            "value": "0.5",
+            "source": "补偿设定",
+            "status": "未实测",
+            "measurement": "与gate_us独立；通过同工况畸变最小值标定，不视为实测死区。"
+          },
+          {
+            "section": "功率设置",
+            "key": "hysteresis_A",
+            "label": "补偿极性滞环 ±[A，演示]",
+            "kind": "number",
+            "unit": "A，±阈值",
+            "value": "0.050000000000000003",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "先量过零噪声与偏置，再对照滞环带宽和极性切换时刻。"
+          },
+          {
+            "section": "功率设置",
+            "key": "zero_A",
+            "label": "续流近零数值带 ±[A，演示]",
+            "kind": "number",
+            "unit": "A，±近零带",
+            "value": "0.01",
+            "source": "数值近似",
+            "status": "未实测",
+            "measurement": "续流桥近零处理参数，不作为实物可测器件参数。"
+          },
+          {
+            "section": "电机与工况",
+            "key": "Vdc",
+            "label": "Vdc",
+            "kind": "number",
+            "unit": "V",
+            "value": "24",
+            "source": "标称24V",
+            "status": "未实测",
+            "measurement": "万用表/示波器核对母线电压；当前为恒定母线。"
+          },
+          {
+            "section": "电机与工况",
+            "key": "n",
+            "label": "n",
+            "kind": "number",
+            "unit": "rpm",
+            "value": "3000",
+            "source": "工况给定",
+            "status": "未实测",
+            "measurement": "设定目标机械转速，不是编码器测量校准。"
+          },
+          {
+            "section": "电机与工况",
+            "key": "fc",
+            "label": "fc",
+            "kind": "number",
+            "unit": "Hz",
+            "value": "20000",
+            "source": "固件20kHz",
+            "status": "未实测",
+            "measurement": "实测PWM周期；当前电流任务与PWM同频，二者不独立配置。"
+          },
+          {
+            "section": "电机与工况",
+            "key": "Ts_speed",
+            "label": "Ts_speed",
+            "kind": "number",
+            "unit": "s",
+            "value": "0.0001",
+            "source": "固件10kHz",
+            "status": "未实测",
+            "measurement": "测速度任务周期；必须为电流周期整数倍，speed_on会覆盖。"
+          },
+          {
+            "section": "电机与工况",
+            "key": "Rs",
+            "label": "Rs",
+            "kind": "number",
+            "unit": "Ω，相电阻",
+            "value": "0.105125",
+            "source": "固件标称",
+            "status": "未实测",
+            "measurement": "记录温度和接法，区分线间与相电阻。"
+          },
+          {
+            "section": "电机与工况",
+            "key": "Ld",
+            "label": "Ld",
+            "kind": "number",
+            "unit": "H",
+            "value": "0.00010376150000000001",
+            "source": "固件标称",
+            "status": "未实测",
+            "measurement": "锁轴辨识d轴电感，记录电流和频率；当前详细桥要求Ld=Lq。"
+          },
+          {
+            "section": "电机与工况",
+            "key": "Lq",
+            "label": "Lq",
+            "kind": "number",
+            "unit": "H",
+            "value": "0.00010376150000000001",
+            "source": "固件标称",
+            "status": "未实测",
+            "measurement": "锁轴辨识q轴电感；当前详细桥要求Ld=Lq。"
+          },
+          {
+            "section": "电机与工况",
+            "key": "phis",
+            "label": "phis",
+            "kind": "number",
+            "unit": "Wb",
+            "value": "0.0056568542494923801",
+            "source": "固件转矩常数折算",
+            "status": "未实测",
+            "measurement": "用反电动势或转矩常数辨识，核对幅值/RMS和角速度定义。"
+          },
+          {
+            "section": "电机与工况",
+            "key": "p",
+            "label": "p",
+            "kind": "number",
+            "unit": "极对",
+            "value": "5",
+            "source": "固件配置",
+            "status": "未实测",
+            "measurement": "机械转一圈，统计电角度周期数。"
+          },
+          {
+            "section": "电机与工况",
+            "key": "J",
+            "label": "J",
+            "kind": "number",
+            "unit": "kg·m²",
+            "value": "3.1999999999999999e-05",
+            "source": "固件标称，未辨识",
+            "status": "未实测",
+            "measurement": "按已知转矩和角加速度辨识，包含连接负载惯量。"
+          },
+          {
+            "section": "电机与工况",
+            "key": "F",
+            "label": "F",
+            "kind": "number",
+            "unit": "N·m·s/rad",
+            "value": "0",
+            "source": "占位0，未辨识",
+            "status": "未实测",
+            "measurement": "空载不同速度下拟合转矩-速度关系；当前只表示粘性摩擦。"
+          },
+          {
+            "section": "电机与工况",
+            "key": "Iq_limit",
+            "label": "Iq_limit",
+            "kind": "number",
+            "unit": "A，dq幅值",
+            "value": "8",
+            "source": "固件台架限幅",
+            "status": "未实测",
+            "measurement": "8A为指令上限；主动过流保护尚未实现。"
+          },
+          {
+            "section": "负载",
+            "key": "Before",
+            "label": "Before",
+            "kind": "number",
+            "unit": "N·m",
+            "value": "0.20699999999999999",
+            "source": "演示负载",
+            "status": "未实测",
+            "measurement": "阶跃前负载；可用转矩传感器测量。"
+          },
+          {
+            "section": "负载",
+            "key": "After",
+            "label": "After",
+            "kind": "number",
+            "unit": "N·m",
+            "value": "0.20699999999999999",
+            "source": "演示负载",
+            "status": "未实测",
+            "measurement": "阶跃后负载；可用转矩传感器测量。"
+          },
+          {
+            "section": "负载",
+            "key": "Time",
+            "label": "Time",
+            "kind": "number",
+            "unit": "s",
+            "value": "0",
+            "source": "工况给定",
+            "status": "未实测",
+            "measurement": "负载变化时刻。"
+          }
+        ]
+      },
+      "changes": [
+        {
+          "section": "采样设置",
+          "parameter": "noise_rms",
+          "value": "0.02"
+        },
+        {
+          "section": "采样设置",
+          "parameter": "filter_hz",
+          "value": "1500"
+        },
+        {
+          "section": "采样设置",
+          "parameter": "noise_on",
+          "value": "on"
+        },
+        {
+          "section": "采样设置",
+          "parameter": "filter_on",
+          "value": "off"
+        }
+      ],
+      "metrics": {
+        "statistics_window_s": [
+          0.18000000000000002,
+          0.2
+        ],
+        "measurement_mean_error_ABC_A": [
+          -0.0017173950794315939,
+          0.00086175811823475566,
+          -0.0016707694214379927
+        ],
+        "measurement_rms_error_ABC_A": [
+          0.01925351282571169,
+          0.019278537620409569,
+          0.019048866988213245
+        ],
+        "speed_tracking_rms_rpm": 0.34674133775888133,
+        "iq_feedback_tracking_rms_A": 0.16915565614517916,
+        "iq_true_tracking_rms_A": 0.16983710055276616,
+        "id_true_tracking_rms_A": 0.11723827015456206,
+        "torque_std_Nm": 0.0072377187326068178,
+        "iq_true_peak_A": 8.5613619323561423,
+        "voltage_saturation_fraction": 0,
+        "control_log_period_s": 4.9999999999994493E-5,
+        "physical_current_log_period_s": 1.000000000001E-6,
+        "true_id_mean_A": 0.00014156884365390448,
+        "feedback_id_mean_A": -0.001080549741023791,
+        "angle_error_mean_electrical_deg": 0,
+        "gate_log_period_s": 1.000000000001E-6
+      },
+      "available_signal_count": 52,
+      "retained_signals": [
+        "log_speed",
+        "log_nref",
+        "log_id",
+        "log_iq",
+        "log_iq_ref",
+        "obs_id_ref",
+        "log_Te",
+        "log_TL",
+        "obs_state",
+        "log_iabc_true",
+        "log_iabc_meas",
+        "log_iabc_noise",
+        "log_iabc_adc",
+        "log_iabc_filter",
+        "obs_voltage",
+        "obs_current_fast",
+        "log_theta_true",
+        "log_theta_meas",
+        "log_theta_error",
+        "obs_dead_requested",
+        "obs_dead_gates"
+      ]
+    },
+    {
+      "id": "filtered",
+      "label": "滤波",
+      "configuration": {
+        "schema": 1,
+        "role": "custom",
+        "rows": [
+          {
+            "section": "时序设置",
+            "key": "speed_on",
+            "label": "速度分频",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "时序设置",
+            "key": "speed_divider",
+            "label": "速度周期 / 电流周期",
+            "kind": "number",
+            "unit": "倍",
+            "value": "20",
+            "source": "教学值",
+            "status": "未实测",
+            "measurement": "示波器测速度任务与电流任务周期之比。"
+          },
+          {
+            "section": "时序设置",
+            "key": "pwm_on",
+            "label": "输出延迟",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "时序设置",
+            "key": "pwm_cycles",
+            "label": "延迟周期数 [× dt]",
+            "kind": "number",
+            "unit": "周期",
+            "value": "1",
+            "source": "教学值",
+            "status": "未实测",
+            "measurement": "测指令计算到PWM生效的整周期延迟；真实时序模式不叠加此项。"
+          },
+          {
+            "section": "时序设置",
+            "key": "real_on",
+            "label": "真实时序（顺序采样与CCR生效）",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "时序设置",
+            "key": "window_on",
+            "label": "低侧采样窗口（无效样本置零演示）",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "时序设置",
+            "key": "invalid_hold_on",
+            "label": "无效时保持上次有效值（策略对照）",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "时序设置",
+            "key": "trigger_us",
+            "label": "触发相位 [μs，24.375为待实测假设]",
+            "kind": "number",
+            "unit": "μs",
+            "value": "24.375",
+            "source": "固件时序推定，未实测",
+            "status": "未实测",
+            "measurement": "测PWM谷底到ADC触发的时间。"
+          },
+          {
+            "section": "时序设置",
+            "key": "sync_us",
+            "label": "触发附加等待 [μs，演示]",
+            "kind": "number",
+            "unit": "μs",
+            "value": "0",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "测触发到ADC实际采样起点的额外同步延迟。"
+          },
+          {
+            "section": "时序设置",
+            "key": "compute_us",
+            "label": "JEOS至CCR写入 [μs，演示]",
+            "kind": "number",
+            "unit": "μs",
+            "value": "5",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "用GPIO测ADC组转换完成到CCR写入的耗时。"
+          },
+          {
+            "section": "时序设置",
+            "key": "settle_us",
+            "label": "低侧导通稳定等待 [μs，演示]",
+            "kind": "number",
+            "unit": "μs",
+            "value": "0.5",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "观测开关沿后电流前端稳定所需时间。"
+          },
+          {
+            "section": "时序设置",
+            "key": "update_mode",
+            "label": "CCR预装载生效边界",
+            "kind": "enum",
+            "unit": "枚举",
+            "value": "峰谷双更新（RCR=0）",
+            "source": "固件配置/教学对照",
+            "status": "未实测",
+            "measurement": "核对TIM1中心对齐、RCR和CCR预装载更新配置。"
+          },
+          {
+            "section": "时序设置",
+            "key": "grid_divider",
+            "label": "事件网格细分（数值设置）",
+            "kind": "number",
+            "unit": "倍",
+            "value": "1",
+            "source": "数值设置",
+            "status": "未实测",
+            "measurement": "1为62.5ns，2为31.25ns；属于求解网格，不是硬件误差。"
+          },
+          {
+            "section": "采样设置",
+            "key": "bias_on",
+            "label": "零偏",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "采样设置",
+            "key": "bias_A",
+            "label": "三相零偏 [A]",
+            "kind": "number",
+            "unit": "A，ABC",
+            "value": "[0.050000000000000003 -0.029999999999999999 0]",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "零电流时统计各通道均值，换算到电流域。"
+          },
+          {
+            "section": "采样设置",
+            "key": "gain_on",
+            "label": "增益误差",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "采样设置",
+            "key": "phase_gain",
+            "label": "三相增益",
+            "kind": "number",
+            "unit": "倍，ABC",
+            "value": "[1.01 0.98999999999999999 1]",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "用已知正负电流标定各通道斜率/理想斜率。"
+          },
+          {
+            "section": "采样设置",
+            "key": "noise_on",
+            "label": "采样噪声",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "on",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "采样设置",
+            "key": "noise_rms",
+            "label": "每相噪声 RMS [A]",
+            "kind": "number",
+            "unit": "A RMS",
+            "value": "0.02",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "固定电流采样，去掉均值后统计标准差，并记录带宽。"
+          },
+          {
+            "section": "采样设置",
+            "key": "noise_seed",
+            "label": "随机种子",
+            "kind": "number",
+            "unit": "整数",
+            "value": "9474",
+            "source": "复现设置",
+            "status": "未实测",
+            "measurement": "固定随机种子便于对照，不对应实物。"
+          },
+          {
+            "section": "采样设置",
+            "key": "adc_on",
+            "label": "ADC 量化与饱和",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "采样设置",
+            "key": "adc_bits",
+            "label": "分辨率 [bit，演示]",
+            "kind": "number",
+            "unit": "bit",
+            "value": "12",
+            "source": "ADC配置",
+            "status": "未实测",
+            "measurement": "核对ADC实际分辨率设置。"
+          },
+          {
+            "section": "采样设置",
+            "key": "adc_span",
+            "label": "电流全跨度 [A]",
+            "kind": "number",
+            "unit": "A，全跨度",
+            "value": "82.5",
+            "source": "原理图折算，待标定",
+            "status": "未实测",
+            "measurement": "82.5A为3.3V/(1mΩ×20)的全跨度；非±82.5A。"
+          },
+          {
+            "section": "采样设置",
+            "key": "filter_on",
+            "label": "数字低通",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "on",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "采样设置",
+            "key": "filter_hz",
+            "label": "等效低通频率 [Hz]",
+            "kind": "number",
+            "unit": "Hz",
+            "value": "1500",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "核对数字滤波公式，以幅相响应校验等效截止频率。"
+          },
+          {
+            "section": "采样设置",
+            "key": "delay_on",
+            "label": "采样传递延迟",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "采样设置",
+            "key": "delay_cycles",
+            "label": "延迟周期数 [× dt]",
+            "kind": "number",
+            "unit": "控制周期",
+            "value": "1",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "用事件时间戳测延迟；真实时序模式避免重复添加采样延迟。"
+          },
+          {
+            "section": "采样设置",
+            "key": "analog_on",
+            "label": "模拟低通（采样前）",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "采样设置",
+            "key": "analog_hz",
+            "label": "模拟一阶截止频率 [Hz，演示]",
+            "kind": "number",
+            "unit": "Hz",
+            "value": "5000",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "扫频或阶跃测前端等效带宽，不直接等同单个RC极点。"
+          },
+          {
+            "section": "角度设置",
+            "key": "bias_on",
+            "label": "角度偏置",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "角度设置",
+            "key": "bias_deg",
+            "label": "偏置 [电角度 °]",
+            "kind": "number",
+            "unit": "电角度°",
+            "value": "2",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "轴定位后核对编码器零位，机械角乘极对数。"
+          },
+          {
+            "section": "角度设置",
+            "key": "quant_on",
+            "label": "角度量化",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "角度设置",
+            "key": "step_deg",
+            "label": "量化步长 [电角度 °]",
+            "kind": "number",
+            "unit": "电角度°",
+            "value": "0.17999999999999999",
+            "source": "编码器配置折算",
+            "status": "未实测",
+            "measurement": "每机械转有效计数N时，电角步长=360p/N。"
+          },
+          {
+            "section": "角度设置",
+            "key": "delay_on",
+            "label": "角度延迟",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "角度设置",
+            "key": "delay_cycles",
+            "label": "延迟周期数 [× dt]",
+            "kind": "number",
+            "unit": "控制周期",
+            "value": "1",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "测角度采集到控制使用的延迟，以当前电流任务周期计。"
+          },
+          {
+            "section": "功率设置",
+            "key": "dead_on",
+            "label": "死区平均压降",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "功率设置",
+            "key": "dead_us",
+            "label": "死区 [μs，固件目标]",
+            "kind": "number",
+            "unit": "μs",
+            "value": "0.5",
+            "source": "固件0.5μs参考",
+            "status": "未实测",
+            "measurement": "旧周期平均死区；与门极死区互斥。"
+          },
+          {
+            "section": "功率设置",
+            "key": "drop_on",
+            "label": "器件导通压降",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "功率设置",
+            "key": "ron",
+            "label": "等效导通电阻 [Ω，演示]",
+            "kind": "number",
+            "unit": "Ω",
+            "value": "0.01",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "按工作电流、温度下的导通压降/电流标定。"
+          },
+          {
+            "section": "功率设置",
+            "key": "vf",
+            "label": "续流压降 [V，演示，仅随死区项计入]",
+            "kind": "number",
+            "unit": "V",
+            "value": "0.69999999999999996",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "按工作电流和温度的续流二极管压降标定。"
+          },
+          {
+            "section": "功率设置",
+            "key": "blend_A",
+            "label": "过零平滑电流 [A，演示]",
+            "kind": "number",
+            "unit": "A",
+            "value": "0.10000000000000001",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "仅旧平均压降模型的过零平滑带，不是门极死区。"
+          },
+          {
+            "section": "功率设置",
+            "key": "gate_on",
+            "label": "门极死区（实际空白与续流）",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "功率设置",
+            "key": "comp_on",
+            "label": "死区补偿（测量电流极性）",
+            "kind": "switch",
+            "unit": "开/关",
+            "value": "off",
+            "source": "教学选择",
+            "status": "未实测",
+            "measurement": "相同工况下单独开关，对照对应观测。"
+          },
+          {
+            "section": "功率设置",
+            "key": "gate_us",
+            "label": "门极死区 [μs，固件配置]",
+            "kind": "number",
+            "unit": "μs",
+            "value": "0.5",
+            "source": "固件0.5μs参考，未测有效死区",
+            "status": "未实测",
+            "measurement": "测上下管门源信号的关断间隔，区分编程值与有效值。"
+          },
+          {
+            "section": "功率设置",
+            "key": "comp_us",
+            "label": "补偿死区 [μs，可作失配对照]",
+            "kind": "number",
+            "unit": "μs",
+            "value": "0.5",
+            "source": "补偿设定",
+            "status": "未实测",
+            "measurement": "与gate_us独立；通过同工况畸变最小值标定，不视为实测死区。"
+          },
+          {
+            "section": "功率设置",
+            "key": "hysteresis_A",
+            "label": "补偿极性滞环 ±[A，演示]",
+            "kind": "number",
+            "unit": "A，±阈值",
+            "value": "0.050000000000000003",
+            "source": "演示值",
+            "status": "未实测",
+            "measurement": "先量过零噪声与偏置，再对照滞环带宽和极性切换时刻。"
+          },
+          {
+            "section": "功率设置",
+            "key": "zero_A",
+            "label": "续流近零数值带 ±[A，演示]",
+            "kind": "number",
+            "unit": "A，±近零带",
+            "value": "0.01",
+            "source": "数值近似",
+            "status": "未实测",
+            "measurement": "续流桥近零处理参数，不作为实物可测器件参数。"
+          },
+          {
+            "section": "电机与工况",
+            "key": "Vdc",
+            "label": "Vdc",
+            "kind": "number",
+            "unit": "V",
+            "value": "24",
+            "source": "标称24V",
+            "status": "未实测",
+            "measurement": "万用表/示波器核对母线电压；当前为恒定母线。"
+          },
+          {
+            "section": "电机与工况",
+            "key": "n",
+            "label": "n",
+            "kind": "number",
+            "unit": "rpm",
+            "value": "3000",
+            "source": "工况给定",
+            "status": "未实测",
+            "measurement": "设定目标机械转速，不是编码器测量校准。"
+          },
+          {
+            "section": "电机与工况",
+            "key": "fc",
+            "label": "fc",
+            "kind": "number",
+            "unit": "Hz",
+            "value": "20000",
+            "source": "固件20kHz",
+            "status": "未实测",
+            "measurement": "实测PWM周期；当前电流任务与PWM同频，二者不独立配置。"
+          },
+          {
+            "section": "电机与工况",
+            "key": "Ts_speed",
+            "label": "Ts_speed",
+            "kind": "number",
+            "unit": "s",
+            "value": "0.0001",
+            "source": "固件10kHz",
+            "status": "未实测",
+            "measurement": "测速度任务周期；必须为电流周期整数倍，speed_on会覆盖。"
+          },
+          {
+            "section": "电机与工况",
+            "key": "Rs",
+            "label": "Rs",
+            "kind": "number",
+            "unit": "Ω，相电阻",
+            "value": "0.105125",
+            "source": "固件标称",
+            "status": "未实测",
+            "measurement": "记录温度和接法，区分线间与相电阻。"
+          },
+          {
+            "section": "电机与工况",
+            "key": "Ld",
+            "label": "Ld",
+            "kind": "number",
+            "unit": "H",
+            "value": "0.00010376150000000001",
+            "source": "固件标称",
+            "status": "未实测",
+            "measurement": "锁轴辨识d轴电感，记录电流和频率；当前详细桥要求Ld=Lq。"
+          },
+          {
+            "section": "电机与工况",
+            "key": "Lq",
+            "label": "Lq",
+            "kind": "number",
+            "unit": "H",
+            "value": "0.00010376150000000001",
+            "source": "固件标称",
+            "status": "未实测",
+            "measurement": "锁轴辨识q轴电感；当前详细桥要求Ld=Lq。"
+          },
+          {
+            "section": "电机与工况",
+            "key": "phis",
+            "label": "phis",
+            "kind": "number",
+            "unit": "Wb",
+            "value": "0.0056568542494923801",
+            "source": "固件转矩常数折算",
+            "status": "未实测",
+            "measurement": "用反电动势或转矩常数辨识，核对幅值/RMS和角速度定义。"
+          },
+          {
+            "section": "电机与工况",
+            "key": "p",
+            "label": "p",
+            "kind": "number",
+            "unit": "极对",
+            "value": "5",
+            "source": "固件配置",
+            "status": "未实测",
+            "measurement": "机械转一圈，统计电角度周期数。"
+          },
+          {
+            "section": "电机与工况",
+            "key": "J",
+            "label": "J",
+            "kind": "number",
+            "unit": "kg·m²",
+            "value": "3.1999999999999999e-05",
+            "source": "固件标称，未辨识",
+            "status": "未实测",
+            "measurement": "按已知转矩和角加速度辨识，包含连接负载惯量。"
+          },
+          {
+            "section": "电机与工况",
+            "key": "F",
+            "label": "F",
+            "kind": "number",
+            "unit": "N·m·s/rad",
+            "value": "0",
+            "source": "占位0，未辨识",
+            "status": "未实测",
+            "measurement": "空载不同速度下拟合转矩-速度关系；当前只表示粘性摩擦。"
+          },
+          {
+            "section": "电机与工况",
+            "key": "Iq_limit",
+            "label": "Iq_limit",
+            "kind": "number",
+            "unit": "A，dq幅值",
+            "value": "8",
+            "source": "固件台架限幅",
+            "status": "未实测",
+            "measurement": "8A为指令上限；主动过流保护尚未实现。"
+          },
+          {
+            "section": "负载",
+            "key": "Before",
+            "label": "Before",
+            "kind": "number",
+            "unit": "N·m",
+            "value": "0.20699999999999999",
+            "source": "演示负载",
+            "status": "未实测",
+            "measurement": "阶跃前负载；可用转矩传感器测量。"
+          },
+          {
+            "section": "负载",
+            "key": "After",
+            "label": "After",
+            "kind": "number",
+            "unit": "N·m",
+            "value": "0.20699999999999999",
+            "source": "演示负载",
+            "status": "未实测",
+            "measurement": "阶跃后负载；可用转矩传感器测量。"
+          },
+          {
+            "section": "负载",
+            "key": "Time",
+            "label": "Time",
+            "kind": "number",
+            "unit": "s",
+            "value": "0",
+            "source": "工况给定",
+            "status": "未实测",
+            "measurement": "负载变化时刻。"
+          }
+        ]
+      },
+      "changes": [
+        {
+          "section": "采样设置",
+          "parameter": "noise_rms",
+          "value": "0.02"
+        },
+        {
+          "section": "采样设置",
+          "parameter": "filter_hz",
+          "value": "1500"
+        },
+        {
+          "section": "采样设置",
+          "parameter": "noise_on",
+          "value": "on"
+        },
+        {
+          "section": "采样设置",
+          "parameter": "filter_on",
+          "value": "on"
+        }
+      ],
+      "metrics": {
+        "statistics_window_s": [
+          0.18000000000000002,
+          0.2
+        ],
+        "measurement_mean_error_ABC_A": [
+          -0.0020699906912405833,
+          -0.00029376398062423746,
+          -0.00016951420741005921
+        ],
+        "measurement_rms_error_ABC_A": [
+          0.47188136526984309,
+          0.469116495448747,
+          0.46206489516348004
+        ],
+        "speed_tracking_rms_rpm": 0.513911145753812,
+        "iq_feedback_tracking_rms_A": 0.1695873026093275,
+        "iq_true_tracking_rms_A": 0.25133954347094284,
+        "id_true_tracking_rms_A": 0.6585919353469738,
+        "torque_std_Nm": 0.010678802000018363,
+        "iq_true_peak_A": 9.4829319627271467,
+        "voltage_saturation_fraction": 0,
+        "control_log_period_s": 4.9999999999994493E-5,
+        "physical_current_log_period_s": 1.000000000001E-6,
+        "true_id_mean_A": -0.63395935851088492,
+        "feedback_id_mean_A": 0.0036565145904297429,
+        "angle_error_mean_electrical_deg": 0,
+        "gate_log_period_s": 1.000000000001E-6
+      },
+      "available_signal_count": 52,
+      "retained_signals": [
+        "log_speed",
+        "log_nref",
+        "log_id",
+        "log_iq",
+        "log_iq_ref",
+        "obs_id_ref",
+        "log_Te",
+        "log_TL",
+        "obs_state",
+        "log_iabc_true",
+        "log_iabc_meas",
+        "log_iabc_noise",
+        "log_iabc_adc",
+        "log_iabc_filter",
+        "obs_voltage",
+        "obs_current_fast",
+        "log_theta_true",
+        "log_theta_meas",
+        "log_theta_error",
+        "obs_dead_requested",
+        "obs_dead_gates"
+      ]
+    }
+  ],
+  "custom_analysis": {
+    "schema": 1,
+    "statistics_window_s": [
+      0.030000000000000002,
+      0.05
+    ],
+    "control_period_s": 5.0000000000001432E-5,
+    "filter_hz": 750,
+    "alpha": 0.79008128293775015,
+    "definition": "各组测量总误差=本组滤波确定性误差+本组噪声分量；滤波分解使用同一组真实电流和实际注入序列，不是另一次仿真。",
+    "cases": [
+      {
+        "id": "reference",
+        "noise_injected_rms_ABC_A": [
+          0,
+          0,
+          0
+        ],
+        "noise_component_rms_ABC_A": [
+          0,
+          0,
+          0
+        ],
+        "deterministic_error_rms_ABC_A": [
+          0,
+          0,
+          0
+        ],
+        "measurement_error_rms_ABC_A": [
+          0,
+          0,
+          0
+        ],
+        "decomposition_max_abs_error_A": 0
+      },
+      {
+        "id": "factor",
+        "noise_injected_rms_ABC_A": [
+          0.040491871001856541,
+          0.040103429762002721,
+          0.040475663116735075
+        ],
+        "noise_component_rms_ABC_A": [
+          0.040491871001856541,
+          0.040103429762002721,
+          0.040475663116735075
+        ],
+        "deterministic_error_rms_ABC_A": [
+          0,
+          0,
+          0
+        ],
+        "measurement_error_rms_ABC_A": [
+          0.040491871001856521,
+          0.040103429762002728,
+          0.040475663116735061
+        ],
+        "decomposition_max_abs_error_A": 8.8470897274817162E-16
+      },
+      {
+        "id": "filtered",
+        "noise_injected_rms_ABC_A": [
+          0.040491871001856541,
+          0.040103429762002721,
+          0.040475663116735075
+        ],
+        "noise_component_rms_ABC_A": [
+          0.014430568187086719,
+          0.014223918964318277,
+          0.012543671650387207
+        ],
+        "deterministic_error_rms_ABC_A": [
+          0.93540036067092569,
+          0.904105238331971,
+          0.91806696575085933
+        ],
+        "measurement_error_rms_ABC_A": [
+          0.9385407498530367,
+          0.90654775284006406,
+          0.9191962963075333
+        ],
+        "decomposition_max_abs_error_A": 1.0277022288729398E-13
+      }
+    ],
+    "same_injected_sequence": true,
+    "seed_ABC": [
+      9474,
+      9475,
+      9476
+    ],
+    "nominal_electrical_frequency_Hz": 250,
+    "nominal_gain_dB": -0.45534852004254844,
+    "nominal_phase_deg": -16.273233514672381,
+    "nominal_phase_delay_us": 180.81370571858204,
+    "white_noise_rms_ratio_theoretical": 0.34244371979711713,
+    "frequency_response_source": "由当前离散一阶系数解析计算；不是实测相位或闭环辨识。"
+  }
+}

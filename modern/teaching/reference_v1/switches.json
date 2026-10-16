@@ -1,0 +1,313 @@
+[
+  {
+    "section": "时序设置",
+    "key": "speed_on",
+    "name": "速度分频",
+    "category": "调度",
+    "off": "使用Ts_speed",
+    "on": "使用dt乘分频数",
+    "parameters": [
+      "speed_divider"
+    ],
+    "requires": [],
+    "conflicts": [],
+    "observe": "速度任务周期、速度与电流响应",
+    "boundary": "改变执行周期，不等于自动改变带宽或整定PI。"
+  },
+  {
+    "section": "时序设置",
+    "key": "pwm_on",
+    "name": "整周期输出延迟",
+    "category": "等效时序",
+    "off": "旁路新增输出延迟",
+    "on": "指令延迟指定个dt",
+    "parameters": [
+      "pwm_cycles"
+    ],
+    "requires": [],
+    "conflicts": [
+      "时序设置.real_on"
+    ],
+    "observe": "请求调制量与实际输出",
+    "boundary": "集中等效延迟；不能与真实事件时序叠加。"
+  },
+  {
+    "section": "时序设置",
+    "key": "real_on",
+    "name": "真实时序",
+    "category": "事件时序",
+    "off": "沿用简化任务与载波模式",
+    "on": "顺序ADC、JEOS计算、CCR预装载生效",
+    "parameters": [
+      "trigger_us",
+      "sync_us",
+      "compute_us",
+      "update_mode",
+      "grid_divider"
+    ],
+    "requires": [],
+    "conflicts": [
+      "时序设置.pwm_on",
+      "采样设置.delay_on"
+    ],
+    "observe": "ADC/PWM事件、任务相位",
+    "boundary": "不含完整CPU调度；部分时刻尚未实测。"
+  },
+  {
+    "section": "时序设置",
+    "key": "window_on",
+    "name": "低侧采样窗口",
+    "category": "有效性",
+    "off": "不按低侧窗口屏蔽样本",
+    "on": "检查采样孔径是否落在有效导通窗口",
+    "parameters": [
+      "settle_us"
+    ],
+    "requires": [
+      "时序设置.real_on"
+    ],
+    "conflicts": [],
+    "observe": "采样有效标志、真值与测量值",
+    "boundary": "无效样本置零仅为教学演示。"
+  },
+  {
+    "section": "时序设置",
+    "key": "invalid_hold_on",
+    "name": "无效样本保持",
+    "category": "处理策略",
+    "off": "窗口失效采用原置零演示",
+    "on": "保持上次有效样本",
+    "parameters": [],
+    "requires": [
+      "时序设置.window_on",
+      "时序设置.real_on"
+    ],
+    "conflicts": [],
+    "observe": "有效标志、实际送入控制器的电流",
+    "boundary": "保持不是完整电流重构，也不保证闭环安全。"
+  },
+  {
+    "section": "采样设置",
+    "key": "bias_on",
+    "name": "电流零偏",
+    "category": "测量误差",
+    "off": "新增零偏为零",
+    "on": "三相分别叠加固定零偏",
+    "parameters": [
+      "bias_A"
+    ],
+    "requires": [],
+    "conflicts": [],
+    "observe": "三相真值、测量值与误差",
+    "boundary": "电流域等效值，待逐通道标定。"
+  },
+  {
+    "section": "采样设置",
+    "key": "gain_on",
+    "name": "电流增益误差",
+    "category": "测量误差",
+    "off": "新增增益为1",
+    "on": "三相使用设定增益",
+    "parameters": [
+      "phase_gain"
+    ],
+    "requires": [],
+    "conflicts": [],
+    "observe": "三相真值、测量值与误差",
+    "boundary": "不表示完整放大器非线性。"
+  },
+  {
+    "section": "采样设置",
+    "key": "noise_on",
+    "name": "电流噪声",
+    "category": "测量误差",
+    "off": "新增噪声为零",
+    "on": "按dt生成三相随机噪声",
+    "parameters": [
+      "noise_rms",
+      "noise_seed"
+    ],
+    "requires": [],
+    "conflicts": [],
+    "observe": "噪声、测量电流、dq电流",
+    "boundary": "固定种子便于复现；不模拟全部开关尖峰。"
+  },
+  {
+    "section": "采样设置",
+    "key": "adc_on",
+    "name": "ADC量化与饱和",
+    "category": "测量误差",
+    "off": "旁路量化和量程限制",
+    "on": "使用电流域ADC量化与饱和",
+    "parameters": [
+      "adc_bits",
+      "adc_span"
+    ],
+    "requires": [],
+    "conflicts": [],
+    "observe": "ADC码、量化前后电流",
+    "boundary": "adc_span为全跨度；非正负各一份量程。"
+  },
+  {
+    "section": "采样设置",
+    "key": "filter_on",
+    "name": "数字低通",
+    "category": "处理策略",
+    "off": "旁路数字滤波",
+    "on": "一阶离散低通",
+    "parameters": [
+      "filter_hz"
+    ],
+    "requires": [],
+    "conflicts": [],
+    "observe": "滤波前后电流、幅值与滞后",
+    "boundary": "既影响噪声也影响信号；初态保留模型定义。"
+  },
+  {
+    "section": "采样设置",
+    "key": "delay_on",
+    "name": "整周期采样延迟",
+    "category": "等效时序",
+    "off": "旁路新增采样延迟",
+    "on": "测量结果延迟指定个dt",
+    "parameters": [
+      "delay_cycles"
+    ],
+    "requires": [],
+    "conflicts": [
+      "时序设置.real_on"
+    ],
+    "observe": "原测量值、控制器使用值",
+    "boundary": "与真实时序互斥，防止重复计入延迟。"
+  },
+  {
+    "section": "采样设置",
+    "key": "analog_on",
+    "name": "模拟低通",
+    "category": "前端近似",
+    "off": "旁路模拟低通",
+    "on": "采样前一阶连续低通",
+    "parameters": [
+      "analog_hz"
+    ],
+    "requires": [],
+    "conflicts": [],
+    "observe": "模拟滤波前后、ADC后电流",
+    "boundary": "等效带宽，不是完整运放电路模型。"
+  },
+  {
+    "section": "角度设置",
+    "key": "bias_on",
+    "name": "角度偏置",
+    "category": "测量误差",
+    "off": "新增偏置为零",
+    "on": "叠加电角偏置",
+    "parameters": [
+      "bias_deg"
+    ],
+    "requires": [],
+    "conflicts": [],
+    "observe": "真角度、测量角度、最短角差",
+    "boundary": "单位为电角度；非机械角度。"
+  },
+  {
+    "section": "角度设置",
+    "key": "quant_on",
+    "name": "角度量化",
+    "category": "测量误差",
+    "off": "旁路角度量化",
+    "on": "按电角步长量化",
+    "parameters": [
+      "step_deg"
+    ],
+    "requires": [],
+    "conflicts": [],
+    "observe": "角度误差、dq电流",
+    "boundary": "不含完整ABZ解码与测速。"
+  },
+  {
+    "section": "角度设置",
+    "key": "delay_on",
+    "name": "角度延迟",
+    "category": "等效时序",
+    "off": "旁路新增角度延迟",
+    "on": "角度延迟指定个dt",
+    "parameters": [
+      "delay_cycles"
+    ],
+    "requires": [],
+    "conflicts": [],
+    "observe": "角度误差、dq电流",
+    "boundary": "初始输出保留模型定义；不含预测补偿。"
+  },
+  {
+    "section": "功率设置",
+    "key": "dead_on",
+    "name": "平均死区压降",
+    "category": "历史教学近似",
+    "off": "不扣除平均死区项",
+    "on": "按周期平均公式施加电压误差",
+    "parameters": [
+      "dead_us",
+      "blend_A"
+    ],
+    "requires": [],
+    "conflicts": [
+      "功率设置.gate_on"
+    ],
+    "observe": "平均压降、相电压与三相电流",
+    "boundary": "与门极死区互斥；blend_A是旧模型平滑参数。"
+  },
+  {
+    "section": "功率设置",
+    "key": "drop_on",
+    "name": "器件导通压降",
+    "category": "功率近似",
+    "off": "不施加新增Ron/Vf压降",
+    "on": "按当前桥模式计入导通/续流压降",
+    "parameters": [
+      "ron",
+      "vf"
+    ],
+    "requires": [],
+    "conflicts": [],
+    "observe": "实际相电压、三相电流",
+    "boundary": "详细桥与旧平均模型的压降公式不同；应记录桥模式。"
+  },
+  {
+    "section": "功率设置",
+    "key": "gate_on",
+    "name": "门极死区",
+    "category": "功率非理想",
+    "off": "旁路新增门极死区，使用理想桥路径",
+    "on": "关断立即、开通延后；两管关断时续流",
+    "parameters": [
+      "gate_us",
+      "zero_A"
+    ],
+    "requires": [],
+    "conflicts": [
+      "功率设置.dead_on"
+    ],
+    "observe": "请求/实际门极、相电压、三相电流",
+    "boundary": "当前要求Ld=Lq；zero_A是近零数值带，不是器件实测参数。"
+  },
+  {
+    "section": "功率设置",
+    "key": "comp_on",
+    "name": "死区补偿",
+    "category": "控制算法",
+    "off": "补偿电压为零",
+    "on": "按测量电流极性与滞环施加基础前馈",
+    "parameters": [
+      "comp_us",
+      "hysteresis_A"
+    ],
+    "requires": [
+      "功率设置.gate_on"
+    ],
+    "conflicts": [],
+    "observe": "补偿电压、三相电流、dq与转矩",
+    "boundary": "基础方法保留为对照；效果不保证在所有工况改善。"
+  }
+]

@@ -1,0 +1,82 @@
+{
+  "matlab": "26.1.0.3346908 (R2026a) Update 5",
+  "top_blocks": 164,
+  "functional_snapshot_identical": true,
+  "unresolved_links": 0,
+  "simulation_stop_time_s": 1,
+  "signals": [
+    {
+      "name": "log_SW",
+      "samples": 20001,
+      "max_abs_difference": 0,
+      "identical": true
+    },
+    {
+      "name": "log_TL",
+      "samples": 20001,
+      "max_abs_difference": 0,
+      "identical": true
+    },
+    {
+      "name": "log_Tcm",
+      "samples": 20001,
+      "max_abs_difference": 0,
+      "identical": true
+    },
+    {
+      "name": "log_Te",
+      "samples": 20001,
+      "max_abs_difference": 0,
+      "identical": true
+    },
+    {
+      "name": "log_UDC",
+      "samples": 20001,
+      "max_abs_difference": 0,
+      "identical": true
+    },
+    {
+      "name": "log_id",
+      "samples": 20001,
+      "max_abs_difference": 0,
+      "identical": true
+    },
+    {
+      "name": "log_iq",
+      "samples": 20001,
+      "max_abs_difference": 0,
+      "identical": true
+    },
+    {
+      "name": "log_iq_ref",
+      "samples": 20001,
+      "max_abs_difference": 0,
+      "identical": true
+    },
+    {
+      "name": "log_nref",
+      "samples": 20001,
+      "max_abs_difference": 0,
+      "identical": true
+    },
+    {
+      "name": "log_speed",
+      "samples": 20001,
+      "max_abs_difference": 0,
+      "identical": true
+    },
+    {
+      "name": "log_v_alpha",
+      "samples": 20001,
+      "max_abs_difference": 0,
+      "identical": true
+    },
+    {
+      "name": "log_v_beta",
+      "samples": 20001,
+      "max_abs_difference": 0,
+      "identical": true
+    }
+  ],
+  "all_identical": true
+}

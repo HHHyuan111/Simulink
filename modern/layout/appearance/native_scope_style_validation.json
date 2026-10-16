@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "desktop_wrapper_exception_restore": true,
+  "user_parameters_exact": true,
+  "structure_exact_except_temporary_ids": true,
+  "simulation_recomputed_workspace_values": [
+    "dead_gate_cfg",
+    "dead_h",
+    "timing_adc_cfg",
+    "timing_carrier_y",
+    "timing_control_sample",
+    "timing_h",
+    "timing_on",
+    "timing_pwm_cfg",
+    "timing_speed_sample",
+    "timing_static_math"
+  ],
+  "original_scope_retained": true,
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "style_source_sha256": "06b5835d279e0cc0362f781a79b8dcaa0cd2be9c69de3ccca7aa95b67cf5d62b"
+}

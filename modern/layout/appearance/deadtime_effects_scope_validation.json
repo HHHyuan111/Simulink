@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "original_log_checks": 104,
+  "source_checks": 18,
+  "scope_channels": 9,
+  "sample_time_s": 1E-6,
+  "one_topic_scope": true,
+  "mode_switch_roundtrip": true,
+  "wrapper_mode_preserved_normal_and_exception": true,
+  "structure_restored": true,
+  "definition": {
+    "path": "PMSM_FOC_R2026a/死区教学/死区影响",
+    "layout": [
+      2,
+      2
+    ],
+    "view": "effects",
+    "time_span_s": 0.02,
+    "sample_time": "T"
+  },
+  "scope": "同一详细桥0/2us、600rpm给定各3ms；验证观测接线与结构恢复，不评价稳态畸变或补偿效果",
+  "sources": [
+    {
+      "path": "pmsm_deadtime_scope.m",
+      "sha256": "3eb966d6c39710d786aecf34f489b02c35b58127d38c6a2a7cc4c6a60fc37282"
+    },
+    {
+      "path": "pmsm_scope_style.m",
+      "sha256": "a65c32b37afabd903899dae43ace07b26f0abc502ef1d5b7dc4f08eec63750ff"
+    },
+    {
+      "path": "pmsm_scope_theme.m",
+      "sha256": "e2e8285cf09ca6983e11ea984ce615bc48a3ef6e6f1a4373bafaaccf1d2e7d4b"
+    },
+    {
+      "path": "pmsm_presented_call.m",
+      "sha256": "419b38ce37694f3b514eba7d8455f7372c133bec2383858badc3a1312f362219"
+    },
+    {
+      "path": "validate_pmsm_deadtime_effects_scope.m",
+      "sha256": "ddc2ff5e9a733e7337d29893518f5c71f94fad86a4662102e01ba744b7c4deff"
+    }
+  ]
+}

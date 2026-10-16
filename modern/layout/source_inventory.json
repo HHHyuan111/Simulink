@@ -1,0 +1,4886 @@
+[
+  {
+    "name": "Abs",
+    "type": "Abs",
+    "position": [
+      1075,
+      775,
+      1090,
+      805
+    ],
+    "orientation": "right",
+    "params": {
+      "ZeroCross": "on",
+      "SampleTime": "-1",
+      "OutMin": "[]",
+      "OutMax": "[]",
+      "OutDataTypeStr": "Inherit: Same as input",
+      "LockScale": "off",
+      "RndMeth": "Floor",
+      "SaturateOnIntegerOverflow": "off"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "Sum5",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "Abs1",
+    "type": "Abs",
+    "position": [
+      2350,
+      775,
+      2365,
+      805
+    ],
+    "orientation": "right",
+    "params": {
+      "ZeroCross": "on",
+      "SampleTime": "-1",
+      "OutMin": "[]",
+      "OutMax": "[]",
+      "OutDataTypeStr": "Inherit: Same as input",
+      "LockScale": "off",
+      "RndMeth": "Floor",
+      "SaturateOnIntegerOverflow": "off"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "Sum7",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "Alpha-Beta-Zero\nto dq0",
+    "type": "SubSystem",
+    "position": [
+      1775,
+      71,
+      1815,
+      144
+    ],
+    "orientation": "right",
+    "params": {
+      "ShowPortLabels": "FromPortIcon",
+      "BlockChoice": "",
+      "TemplateBlock": "",
+      "MemberBlocks": "",
+      "Permissions": "ReadWrite",
+      "ErrorFcn": "",
+      "PermitHierarchicalResolution": "All",
+      "TreatAsAtomicUnit": "off",
+      "ShowSubsystemReinitializePorts": "off",
+      "MinAlgLoopOccurrences": "off",
+      "RestrictArgs": "off",
+      "ScheduleAs": "Sample time",
+      "PartitionName": "",
+      "SystemSampleTime": "-1",
+      "SetExecutionDomain": "off",
+      "ExecutionDomainType": "Deduce",
+      "RTWSystemCode": "Auto",
+      "RTWFcnNameOpts": "Auto",
+      "RTWFcnName": "",
+      "RTWFileNameOpts": "Auto",
+      "RTWFileName": "",
+      "FunctionInterfaceSpec": "void_void",
+      "FunctionWithSeparateData": "off",
+      "RTWMemSecFuncInitTerm": "Inherit from model",
+      "RTWMemSecFuncExecute": "Inherit from model",
+      "RTWMemSecDataConstants": "Inherit from model",
+      "RTWMemSecDataInternal": "Inherit from model",
+      "RTWMemSecDataParameters": "Inherit from model",
+      "IsSubsystemVirtual": "on",
+      "Variant": "off",
+      "VariantChoicesSpecifier": "",
+      "VariantChoicesEnumeration": "",
+      "VariantControlVariable": "",
+      "VariantChoices": [],
+      "VariantControlMode": "expression",
+      "VariantControl": "",
+      "LabelModeActiveChoice": "",
+      "VariantActivationTime": "update diagram",
+      "EmptyChoice": "off",
+      "PassThrough": "off",
+      "PropagateVariantConditions": "off",
+      "AllowFlexibleInterface": "on",
+      "TreatAsGroupedWhenPropagatingVariantConditions": "on",
+      "ReferencedSubsystem": "",
+      "Latency": "0",
+      "AutoFrameSizeCalculation": "off"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "abc to\nAlpha-Beta-Zero",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "Zero-Order\nHold3",
+        "sourceport": 1
+      }
+    ]
+  },
+  {
+    "name": "Bus\nSelector",
+    "type": "SubSystem",
+    "position": [
+      1100,
+      156,
+      1105,
+      299
+    ],
+    "orientation": "right",
+    "params": {
+      "ShowPortLabels": "FromPortIcon",
+      "BlockChoice": "",
+      "TemplateBlock": "",
+      "MemberBlocks": "",
+      "Permissions": "ReadWrite",
+      "ErrorFcn": "",
+      "PermitHierarchicalResolution": "All",
+      "TreatAsAtomicUnit": "off",
+      "ShowSubsystemReinitializePorts": "off",
+      "MinAlgLoopOccurrences": "off",
+      "RestrictArgs": "off",
+      "ScheduleAs": "Sample time",
+      "PartitionName": "",
+      "SystemSampleTime": "-1",
+      "SetExecutionDomain": "off",
+      "ExecutionDomainType": "Deduce",
+      "RTWSystemCode": "Auto",
+      "RTWFcnNameOpts": "Auto",
+      "RTWFcnName": "",
+      "RTWFileNameOpts": "Auto",
+      "RTWFileName": "",
+      "FunctionInterfaceSpec": "void_void",
+      "FunctionWithSeparateData": "off",
+      "RTWMemSecFuncInitTerm": "Inherit from model",
+      "RTWMemSecFuncExecute": "Inherit from model",
+      "RTWMemSecDataConstants": "Inherit from model",
+      "RTWMemSecDataInternal": "Inherit from model",
+      "RTWMemSecDataParameters": "Inherit from model",
+      "IsSubsystemVirtual": "on",
+      "Variant": "off",
+      "VariantChoicesSpecifier": "",
+      "VariantChoicesEnumeration": "",
+      "VariantControlVariable": "",
+      "VariantChoices": [],
+      "VariantControlMode": "expression",
+      "VariantControl": "",
+      "LabelModeActiveChoice": "",
+      "VariantActivationTime": "update diagram",
+      "EmptyChoice": "off",
+      "PassThrough": "off",
+      "PropagateVariantConditions": "off",
+      "AllowFlexibleInterface": "on",
+      "TreatAsGroupedWhenPropagatingVariantConditions": "on",
+      "ReferencedSubsystem": "",
+      "Latency": "0",
+      "AutoFrameSizeCalculation": "off"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "Permanent Magnet\nSynchronous Machine",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "Bus\nSelector1",
+    "type": "SubSystem",
+    "position": [
+      1100,
+      55,
+      1105,
+      95
+    ],
+    "orientation": "right",
+    "params": {
+      "ShowPortLabels": "FromPortIcon",
+      "BlockChoice": "",
+      "TemplateBlock": "",
+      "MemberBlocks": "",
+      "Permissions": "ReadWrite",
+      "ErrorFcn": "",
+      "PermitHierarchicalResolution": "All",
+      "TreatAsAtomicUnit": "off",
+      "ShowSubsystemReinitializePorts": "off",
+      "MinAlgLoopOccurrences": "off",
+      "RestrictArgs": "off",
+      "ScheduleAs": "Sample time",
+      "PartitionName": "",
+      "SystemSampleTime": "-1",
+      "SetExecutionDomain": "off",
+      "ExecutionDomainType": "Deduce",
+      "RTWSystemCode": "Auto",
+      "RTWFcnNameOpts": "Auto",
+      "RTWFcnName": "",
+      "RTWFileNameOpts": "Auto",
+      "RTWFileName": "",
+      "FunctionInterfaceSpec": "void_void",
+      "FunctionWithSeparateData": "off",
+      "RTWMemSecFuncInitTerm": "Inherit from model",
+      "RTWMemSecFuncExecute": "Inherit from model",
+      "RTWMemSecDataConstants": "Inherit from model",
+      "RTWMemSecDataInternal": "Inherit from model",
+      "RTWMemSecDataParameters": "Inherit from model",
+      "IsSubsystemVirtual": "on",
+      "Variant": "off",
+      "VariantChoicesSpecifier": "",
+      "VariantChoicesEnumeration": "",
+      "VariantControlVariable": "",
+      "VariantChoices": [],
+      "VariantControlMode": "expression",
+      "VariantControl": "",
+      "LabelModeActiveChoice": "",
+      "VariantActivationTime": "update diagram",
+      "EmptyChoice": "off",
+      "PassThrough": "off",
+      "PropagateVariantConditions": "off",
+      "AllowFlexibleInterface": "on",
+      "TreatAsGroupedWhenPropagatingVariantConditions": "on",
+      "ReferencedSubsystem": "",
+      "Latency": "0",
+      "AutoFrameSizeCalculation": "off"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "Permanent Magnet\nSynchronous Machine",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "Carrier Wave",
+    "type": "SubSystem",
+    "position": [
+      1780,
+      353,
+      1830,
+      377
+    ],
+    "orientation": "right",
+    "params": {
+      "rep_seq_t": "[0 Ts/2 Ts]",
+      "rep_seq_y": "[0 Ts/2 0]"
+    },
+    "inputs": []
+  },
+  {
+    "name": "Chirp1",
+    "type": "SubSystem",
+    "position": [
+      395,
+      500,
+      435,
+      540
+    ],
+    "orientation": "right",
+    "params": {
+      "ShowPortLabels": "FromPortIcon",
+      "BlockChoice": "",
+      "TemplateBlock": "",
+      "MemberBlocks": "",
+      "Permissions": "ReadWrite",
+      "ErrorFcn": "",
+      "PermitHierarchicalResolution": "All",
+      "TreatAsAtomicUnit": "off",
+      "ShowSubsystemReinitializePorts": "off",
+      "MinAlgLoopOccurrences": "off",
+      "RestrictArgs": "off",
+      "ScheduleAs": "Sample time",
+      "PartitionName": "",
+      "SystemSampleTime": "-1",
+      "SetExecutionDomain": "off",
+      "ExecutionDomainType": "Deduce",
+      "RTWSystemCode": "Auto",
+      "RTWFcnNameOpts": "Auto",
+      "RTWFcnName": "",
+      "RTWFileNameOpts": "Auto",
+      "RTWFileName": "",
+      "FunctionInterfaceSpec": "void_void",
+      "FunctionWithSeparateData": "off",
+      "RTWMemSecFuncInitTerm": "Inherit from model",
+      "RTWMemSecFuncExecute": "Inherit from model",
+      "RTWMemSecDataConstants": "Inherit from model",
+      "RTWMemSecDataInternal": "Inherit from model",
+      "RTWMemSecDataParameters": "Inherit from model",
+      "IsSubsystemVirtual": "on",
+      "Variant": "off",
+      "VariantChoicesSpecifier": "",
+      "VariantChoicesEnumeration": "",
+      "VariantControlVariable": "",
+      "VariantChoices": [],
+      "VariantControlMode": "expression",
+      "VariantControl": "",
+      "LabelModeActiveChoice": "",
+      "VariantActivationTime": "update diagram",
+      "EmptyChoice": "off",
+      "PassThrough": "off",
+      "PropagateVariantConditions": "off",
+      "AllowFlexibleInterface": "on",
+      "TreatAsGroupedWhenPropagatingVariantConditions": "on",
+      "ReferencedSubsystem": "",
+      "Latency": "0",
+      "AutoFrameSizeCalculation": "off"
+    },
+    "inputs": []
+  },
+  {
+    "name": "Chirp2",
+    "type": "SubSystem",
+    "position": [
+      395,
+      410,
+      435,
+      450
+    ],
+    "orientation": "right",
+    "params": {
+      "ShowPortLabels": "FromPortIcon",
+      "BlockChoice": "",
+      "TemplateBlock": "",
+      "MemberBlocks": "",
+      "Permissions": "ReadWrite",
+      "ErrorFcn": "",
+      "PermitHierarchicalResolution": "All",
+      "TreatAsAtomicUnit": "off",
+      "ShowSubsystemReinitializePorts": "off",
+      "MinAlgLoopOccurrences": "off",
+      "RestrictArgs": "off",
+      "ScheduleAs": "Sample time",
+      "PartitionName": "",
+      "SystemSampleTime": "-1",
+      "SetExecutionDomain": "off",
+      "ExecutionDomainType": "Deduce",
+      "RTWSystemCode": "Auto",
+      "RTWFcnNameOpts": "Auto",
+      "RTWFcnName": "",
+      "RTWFileNameOpts": "Auto",
+      "RTWFileName": "",
+      "FunctionInterfaceSpec": "void_void",
+      "FunctionWithSeparateData": "off",
+      "RTWMemSecFuncInitTerm": "Inherit from model",
+      "RTWMemSecFuncExecute": "Inherit from model",
+      "RTWMemSecDataConstants": "Inherit from model",
+      "RTWMemSecDataInternal": "Inherit from model",
+      "RTWMemSecDataParameters": "Inherit from model",
+      "IsSubsystemVirtual": "on",
+      "Variant": "off",
+      "VariantChoicesSpecifier": "",
+      "VariantChoicesEnumeration": "",
+      "VariantControlVariable": "",
+      "VariantChoices": [],
+      "VariantControlMode": "expression",
+      "VariantControl": "",
+      "LabelModeActiveChoice": "",
+      "VariantActivationTime": "update diagram",
+      "EmptyChoice": "off",
+      "PassThrough": "off",
+      "PropagateVariantConditions": "off",
+      "AllowFlexibleInterface": "on",
+      "TreatAsGroupedWhenPropagatingVariantConditions": "on",
+      "ReferencedSubsystem": "",
+      "Latency": "0",
+      "AutoFrameSizeCalculation": "off"
+    },
+    "inputs": []
+  },
+  {
+    "name": "Constant",
+    "type": "Constant",
+    "position": [
+      925,
+      567,
+      955,
+      583
+    ],
+    "orientation": "right",
+    "params": {
+      "Value": "1.5",
+      "VectorParams1D": "on",
+      "OutMin": "[]",
+      "OutMax": "[]",
+      "OutDataTypeStr": "Inherit: Inherit from 'Constant value'",
+      "LockScale": "off",
+      "SampleTime": "inf"
+    },
+    "inputs": []
+  },
+  {
+    "name": "Constant1",
+    "type": "Constant",
+    "position": [
+      920,
+      517,
+      955,
+      533
+    ],
+    "orientation": "right",
+    "params": {
+      "Value": "p",
+      "VectorParams1D": "on",
+      "OutMin": "[]",
+      "OutMax": "[]",
+      "OutDataTypeStr": "Inherit: Inherit from 'Constant value'",
+      "LockScale": "off",
+      "SampleTime": "inf"
+    },
+    "inputs": []
+  },
+  {
+    "name": "Constant11",
+    "type": "Constant",
+    "position": [
+      1060,
+      830,
+      1090,
+      860
+    ],
+    "orientation": "right",
+    "params": {
+      "Value": "max(abs(0.1*n),1)",
+      "VectorParams1D": "on",
+      "OutMin": "[]",
+      "OutMax": "[]",
+      "OutDataTypeStr": "Inherit: Inherit from 'Constant value'",
+      "LockScale": "off",
+      "SampleTime": "inf"
+    },
+    "inputs": []
+  },
+  {
+    "name": "Constant13",
+    "type": "Constant",
+    "position": [
+      2335,
+      830,
+      2365,
+      860
+    ],
+    "orientation": "right",
+    "params": {
+      "Value": "0.1*In",
+      "VectorParams1D": "on",
+      "OutMin": "[]",
+      "OutMax": "[]",
+      "OutDataTypeStr": "Inherit: Inherit from 'Constant value'",
+      "LockScale": "off",
+      "SampleTime": "inf"
+    },
+    "inputs": []
+  },
+  {
+    "name": "Constant2",
+    "type": "Constant",
+    "position": [
+      810,
+      542,
+      850,
+      558
+    ],
+    "orientation": "right",
+    "params": {
+      "Value": "phis",
+      "VectorParams1D": "on",
+      "OutMin": "[]",
+      "OutMax": "[]",
+      "OutDataTypeStr": "Inherit: Inherit from 'Constant value'",
+      "LockScale": "off",
+      "SampleTime": "inf"
+    },
+    "inputs": []
+  },
+  {
+    "name": "Constant3",
+    "type": "Constant",
+    "position": [
+      810,
+      567,
+      850,
+      583
+    ],
+    "orientation": "right",
+    "params": {
+      "Value": "Ld",
+      "VectorParams1D": "on",
+      "OutMin": "[]",
+      "OutMax": "[]",
+      "OutDataTypeStr": "Inherit: Inherit from 'Constant value'",
+      "LockScale": "off",
+      "SampleTime": "inf"
+    },
+    "inputs": []
+  },
+  {
+    "name": "Constant4",
+    "type": "Constant",
+    "position": [
+      1300,
+      430,
+      1340,
+      450
+    ],
+    "orientation": "right",
+    "params": {
+      "Value": "Lq",
+      "VectorParams1D": "on",
+      "OutMin": "[]",
+      "OutMax": "[]",
+      "OutDataTypeStr": "Inherit: Inherit from 'Constant value'",
+      "LockScale": "off",
+      "SampleTime": "inf"
+    },
+    "inputs": []
+  },
+  {
+    "name": "Constant5",
+    "type": "Constant",
+    "position": [
+      1545,
+      207,
+      1595,
+      223
+    ],
+    "orientation": "right",
+    "params": {
+      "Value": "0",
+      "VectorParams1D": "on",
+      "OutMin": "[]",
+      "OutMax": "[]",
+      "OutDataTypeStr": "Inherit: Inherit from 'Constant value'",
+      "LockScale": "off",
+      "SampleTime": "inf"
+    },
+    "inputs": []
+  },
+  {
+    "name": "Constant6",
+    "type": "Constant",
+    "position": [
+      1270,
+      540,
+      1310,
+      560
+    ],
+    "orientation": "right",
+    "params": {
+      "Value": "Ld",
+      "VectorParams1D": "on",
+      "OutMin": "[]",
+      "OutMax": "[]",
+      "OutDataTypeStr": "Inherit: Inherit from 'Constant value'",
+      "LockScale": "off",
+      "SampleTime": "inf"
+    },
+    "inputs": []
+  },
+  {
+    "name": "Constant7",
+    "type": "Constant",
+    "position": [
+      1360,
+      500,
+      1395,
+      520
+    ],
+    "orientation": "right",
+    "params": {
+      "Value": "phis",
+      "VectorParams1D": "on",
+      "OutMin": "[]",
+      "OutMax": "[]",
+      "OutDataTypeStr": "Inherit: Inherit from 'Constant value'",
+      "LockScale": "off",
+      "SampleTime": "inf"
+    },
+    "inputs": []
+  },
+  {
+    "name": "Constant8",
+    "type": "Constant",
+    "position": [
+      1595,
+      500,
+      1625,
+      520
+    ],
+    "orientation": "right",
+    "params": {
+      "Value": "Vdc",
+      "VectorParams1D": "on",
+      "OutMin": "[]",
+      "OutMax": "[]",
+      "OutDataTypeStr": "Inherit: Inherit from 'Constant value'",
+      "LockScale": "off",
+      "SampleTime": "inf"
+    },
+    "inputs": []
+  },
+  {
+    "name": "Constant9",
+    "type": "Constant",
+    "position": [
+      1595,
+      539,
+      1625,
+      561
+    ],
+    "orientation": "right",
+    "params": {
+      "Value": "dt",
+      "VectorParams1D": "on",
+      "OutMin": "[]",
+      "OutMax": "[]",
+      "OutDataTypeStr": "Inherit: Inherit from 'Constant value'",
+      "LockScale": "off",
+      "SampleTime": "inf"
+    },
+    "inputs": []
+  },
+  {
+    "name": "DC Voltage Source",
+    "type": "Constant",
+    "position": [
+      755,
+      167,
+      775,
+      203
+    ],
+    "orientation": "right",
+    "params": {
+      "Value": "Vdc",
+      "VectorParams1D": "on",
+      "OutMin": "[]",
+      "OutMax": "[]",
+      "OutDataTypeStr": "Inherit: Inherit from 'Constant value'",
+      "LockScale": "off",
+      "SampleTime": "inf"
+    },
+    "inputs": []
+  },
+  {
+    "name": "Demux",
+    "type": "Demux",
+    "position": [
+      1835,
+      76,
+      1840,
+      134
+    ],
+    "orientation": "right",
+    "params": {
+      "Outputs": "3",
+      "DisplayOption": "bar"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "Alpha-Beta-Zero\nto dq0",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "Demux1",
+    "type": "Demux",
+    "position": [
+      1810,
+      176,
+      1815,
+      234
+    ],
+    "orientation": "right",
+    "params": {
+      "Outputs": "3",
+      "DisplayOption": "bar"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "dq0 to\nAlpha-Beta-Zero",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "Demux2",
+    "type": "Demux",
+    "position": [
+      1805,
+      410,
+      1810,
+      570
+    ],
+    "orientation": "right",
+    "params": {
+      "Outputs": "3",
+      "DisplayOption": "bar"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "SVPWM Function v1.0",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "Demux3",
+    "type": "Demux",
+    "position": [
+      1445,
+      761,
+      1450,
+      819
+    ],
+    "orientation": "right",
+    "params": {
+      "Outputs": "3",
+      "DisplayOption": "bar"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "From19",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "Demux5",
+    "type": "Demux",
+    "position": [
+      2085,
+      806,
+      2090,
+      864
+    ],
+    "orientation": "right",
+    "params": {
+      "Outputs": "3",
+      "DisplayOption": "bar"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "From29",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "Divide",
+    "type": "Product",
+    "position": [
+      1020,
+      487,
+      1050,
+      518
+    ],
+    "orientation": "right",
+    "params": {
+      "Inputs": "*/",
+      "Multiplication": "Element-wise(.*)",
+      "CollapseMode": "All dimensions",
+      "CollapseDim": "1",
+      "InputSameDT": "off",
+      "OutMin": "[]",
+      "OutMax": "[]",
+      "OutDataTypeStr": "Inherit: Inherit via internal rule",
+      "LockScale": "off",
+      "RndMeth": "Floor",
+      "SaturateOnIntegerOverflow": "off",
+      "SampleTime": "-1"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "PI Controller_w",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "Product",
+        "sourceport": 1
+      }
+    ]
+  },
+  {
+    "name": "Divide1",
+    "type": "Product",
+    "position": [
+      1125,
+      782,
+      1140,
+      818
+    ],
+    "orientation": "right",
+    "params": {
+      "Inputs": "*/",
+      "Multiplication": "Element-wise(.*)",
+      "CollapseMode": "All dimensions",
+      "CollapseDim": "1",
+      "InputSameDT": "off",
+      "OutMin": "[]",
+      "OutMax": "[]",
+      "OutDataTypeStr": "Inherit: Inherit via internal rule",
+      "LockScale": "off",
+      "RndMeth": "Floor",
+      "SaturateOnIntegerOverflow": "off",
+      "SampleTime": "-1"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "Abs",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "Constant11",
+        "sourceport": 1
+      }
+    ]
+  },
+  {
+    "name": "Divide2",
+    "type": "Product",
+    "position": [
+      2400,
+      782,
+      2415,
+      818
+    ],
+    "orientation": "right",
+    "params": {
+      "Inputs": "*/",
+      "Multiplication": "Element-wise(.*)",
+      "CollapseMode": "All dimensions",
+      "CollapseDim": "1",
+      "InputSameDT": "off",
+      "OutMin": "[]",
+      "OutMax": "[]",
+      "OutDataTypeStr": "Inherit: Inherit via internal rule",
+      "LockScale": "off",
+      "RndMeth": "Floor",
+      "SaturateOnIntegerOverflow": "off",
+      "SampleTime": "-1"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "Abs1",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "Constant13",
+        "sourceport": 1
+      }
+    ]
+  },
+  {
+    "name": "Electrical Rotation Angle",
+    "type": "Goto",
+    "position": [
+      1405,
+      270,
+      1455,
+      290
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "theta_e",
+      "IconDisplay": "Tag",
+      "TagVisibility": "global"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "Subsystem",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "From",
+    "type": "From",
+    "position": [
+      665,
+      540,
+      715,
+      560
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "speed",
+      "IconDisplay": "Tag"
+    },
+    "inputs": []
+  },
+  {
+    "name": "From1",
+    "type": "From",
+    "position": [
+      1545,
+      110,
+      1595,
+      130
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "theta_e",
+      "IconDisplay": "Tag"
+    },
+    "inputs": []
+  },
+  {
+    "name": "From10",
+    "type": "From",
+    "position": [
+      1545,
+      185,
+      1595,
+      205
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "vq",
+      "IconDisplay": "Tag"
+    },
+    "inputs": []
+  },
+  {
+    "name": "From11",
+    "type": "From",
+    "position": [
+      1545,
+      245,
+      1595,
+      265
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "theta_e",
+      "IconDisplay": "Tag"
+    },
+    "inputs": []
+  },
+  {
+    "name": "From12",
+    "type": "From",
+    "position": [
+      1595,
+      460,
+      1645,
+      480
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "v_beta",
+      "IconDisplay": "Tag"
+    },
+    "inputs": []
+  },
+  {
+    "name": "From13",
+    "type": "From",
+    "position": [
+      670,
+      116,
+      720,
+      134
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "SW",
+      "IconDisplay": "Tag"
+    },
+    "inputs": []
+  },
+  {
+    "name": "From14",
+    "type": "From",
+    "position": [
+      1245,
+      700,
+      1295,
+      720
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "speed",
+      "IconDisplay": "Tag"
+    },
+    "inputs": []
+  },
+  {
+    "name": "From15",
+    "type": "From",
+    "position": [
+      2195,
+      705,
+      2245,
+      725
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "id",
+      "IconDisplay": "Tag"
+    },
+    "inputs": []
+  },
+  {
+    "name": "From16",
+    "type": "From",
+    "position": [
+      1245,
+      730,
+      1295,
+      750
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "Te",
+      "IconDisplay": "Tag"
+    },
+    "inputs": []
+  },
+  {
+    "name": "From17",
+    "type": "From",
+    "position": [
+      1605,
+      701,
+      1655,
+      719
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "SW",
+      "IconDisplay": "Tag"
+    },
+    "inputs": []
+  },
+  {
+    "name": "From18",
+    "type": "From",
+    "position": [
+      1370,
+      700,
+      1420,
+      720
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "Iabc",
+      "IconDisplay": "Tag"
+    },
+    "inputs": []
+  },
+  {
+    "name": "From19",
+    "type": "From",
+    "position": [
+      1365,
+      780,
+      1415,
+      800
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "Uabc",
+      "IconDisplay": "Tag"
+    },
+    "inputs": []
+  },
+  {
+    "name": "From2",
+    "type": "From",
+    "position": [
+      1165,
+      425,
+      1215,
+      445
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "id",
+      "IconDisplay": "Tag"
+    },
+    "inputs": []
+  },
+  {
+    "name": "From20",
+    "type": "From",
+    "position": [
+      1820,
+      720,
+      1870,
+      740
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "v_alpha",
+      "IconDisplay": "Tag"
+    },
+    "inputs": []
+  },
+  {
+    "name": "From21",
+    "type": "From",
+    "position": [
+      1820,
+      745,
+      1870,
+      765
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "v_beta",
+      "IconDisplay": "Tag"
+    },
+    "inputs": []
+  },
+  {
+    "name": "From22",
+    "type": "From",
+    "position": [
+      1820,
+      825,
+      1870,
+      845
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "sector",
+      "IconDisplay": "Tag"
+    },
+    "inputs": []
+  },
+  {
+    "name": "From23",
+    "type": "From",
+    "position": [
+      770,
+      691,
+      820,
+      709
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "id",
+      "IconDisplay": "Tag"
+    },
+    "inputs": []
+  },
+  {
+    "name": "From24",
+    "type": "From",
+    "position": [
+      770,
+      726,
+      820,
+      744
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "iq",
+      "IconDisplay": "Tag"
+    },
+    "inputs": []
+  },
+  {
+    "name": "From25",
+    "type": "From",
+    "position": [
+      2015,
+      720,
+      2065,
+      740
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "v_alpha",
+      "IconDisplay": "Tag"
+    },
+    "inputs": []
+  },
+  {
+    "name": "From26",
+    "type": "From",
+    "position": [
+      2015,
+      745,
+      2065,
+      765
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "v_beta",
+      "IconDisplay": "Tag"
+    },
+    "inputs": []
+  },
+  {
+    "name": "From27",
+    "type": "From",
+    "position": [
+      770,
+      776,
+      820,
+      794
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "UDC",
+      "IconDisplay": "Tag"
+    },
+    "inputs": []
+  },
+  {
+    "name": "From28",
+    "type": "From",
+    "position": [
+      930,
+      705,
+      980,
+      725
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "speed",
+      "IconDisplay": "Tag"
+    },
+    "inputs": []
+  },
+  {
+    "name": "From29",
+    "type": "From",
+    "position": [
+      2010,
+      825,
+      2060,
+      845
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "Umod",
+      "IconDisplay": "Tag"
+    },
+    "inputs": []
+  },
+  {
+    "name": "From3",
+    "type": "From",
+    "position": [
+      1165,
+      485,
+      1215,
+      505
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "ws",
+      "IconDisplay": "Tag"
+    },
+    "inputs": []
+  },
+  {
+    "name": "From30",
+    "type": "From",
+    "position": [
+      1620,
+      785,
+      1670,
+      805
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "Vq_re",
+      "IconDisplay": "Tag"
+    },
+    "inputs": []
+  },
+  {
+    "name": "From31",
+    "type": "From",
+    "position": [
+      1620,
+      760,
+      1670,
+      780
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "Vd_re",
+      "IconDisplay": "Tag"
+    },
+    "inputs": []
+  },
+  {
+    "name": "From32",
+    "type": "From",
+    "position": [
+      1620,
+      810,
+      1670,
+      830
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "vd",
+      "IconDisplay": "Tag"
+    },
+    "inputs": []
+  },
+  {
+    "name": "From33",
+    "type": "From",
+    "position": [
+      1620,
+      835,
+      1670,
+      855
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "vq",
+      "IconDisplay": "Tag"
+    },
+    "inputs": []
+  },
+  {
+    "name": "From35",
+    "type": "From",
+    "position": [
+      665,
+      590,
+      715,
+      610
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "id",
+      "IconDisplay": "Tag"
+    },
+    "inputs": []
+  },
+  {
+    "name": "From36",
+    "type": "From",
+    "position": [
+      930,
+      741,
+      980,
+      759
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "nref2",
+      "IconDisplay": "Tag"
+    },
+    "inputs": []
+  },
+  {
+    "name": "From37",
+    "type": "From",
+    "position": [
+      1165,
+      581,
+      1215,
+      599
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "iq_ref",
+      "IconDisplay": "Tag"
+    },
+    "inputs": []
+  },
+  {
+    "name": "From4",
+    "type": "From",
+    "position": [
+      1515,
+      75,
+      1595,
+      95
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "Currentabc",
+      "IconDisplay": "Tag"
+    },
+    "inputs": []
+  },
+  {
+    "name": "From5",
+    "type": "From",
+    "position": [
+      1165,
+      541,
+      1215,
+      559
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "iq",
+      "IconDisplay": "Tag"
+    },
+    "inputs": []
+  },
+  {
+    "name": "From6",
+    "type": "From",
+    "position": [
+      770,
+      810,
+      820,
+      830
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "speed",
+      "IconDisplay": "Tag"
+    },
+    "inputs": []
+  },
+  {
+    "name": "From7",
+    "type": "From",
+    "position": [
+      2190,
+      742,
+      2250,
+      758
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "id_ref",
+      "IconDisplay": "Tag"
+    },
+    "inputs": []
+  },
+  {
+    "name": "From8",
+    "type": "From",
+    "position": [
+      1595,
+      420,
+      1645,
+      440
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "v_alpha",
+      "IconDisplay": "Tag"
+    },
+    "inputs": []
+  },
+  {
+    "name": "From9",
+    "type": "From",
+    "position": [
+      1545,
+      165,
+      1595,
+      185
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "vd",
+      "IconDisplay": "Tag"
+    },
+    "inputs": []
+  },
+  {
+    "name": "Gain",
+    "type": "Gain",
+    "position": [
+      1280,
+      242,
+      1350,
+      268
+    ],
+    "orientation": "right",
+    "params": {
+      "Gain": "30/pi",
+      "Multiplication": "Element-wise(K.*u)",
+      "ParamMin": "[]",
+      "ParamMax": "[]",
+      "ParamDataTypeStr": "Inherit: Inherit via internal rule",
+      "OutMin": "[]",
+      "OutMax": "[]",
+      "OutDataTypeStr": "Inherit: Inherit via internal rule",
+      "LockScale": "off",
+      "RndMeth": "Floor",
+      "SaturateOnIntegerOverflow": "off",
+      "SampleTime": "-1"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "Bus\nSelector",
+      "sourceport": 4
+    }
+  },
+  {
+    "name": "Gain1",
+    "type": "Gain",
+    "position": [
+      1290,
+      220,
+      1340,
+      240
+    ],
+    "orientation": "right",
+    "params": {
+      "Gain": "p",
+      "Multiplication": "Element-wise(K.*u)",
+      "ParamMin": "[]",
+      "ParamMax": "[]",
+      "ParamDataTypeStr": "Inherit: Inherit via internal rule",
+      "OutMin": "[]",
+      "OutMax": "[]",
+      "OutDataTypeStr": "Inherit: Inherit via internal rule",
+      "LockScale": "off",
+      "RndMeth": "Floor",
+      "SaturateOnIntegerOverflow": "off",
+      "SampleTime": "-1"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "Bus\nSelector",
+      "sourceport": 4
+    }
+  },
+  {
+    "name": "Gain2",
+    "type": "Gain",
+    "position": [
+      460,
+      417,
+      525,
+      443
+    ],
+    "orientation": "right",
+    "params": {
+      "Gain": "0.1*In",
+      "Multiplication": "Element-wise(K.*u)",
+      "ParamMin": "[]",
+      "ParamMax": "[]",
+      "ParamDataTypeStr": "Inherit: Inherit via internal rule",
+      "OutMin": "[]",
+      "OutMax": "[]",
+      "OutDataTypeStr": "Inherit: Inherit via internal rule",
+      "LockScale": "off",
+      "RndMeth": "Floor",
+      "SaturateOnIntegerOverflow": "off",
+      "SampleTime": "-1"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "Chirp2",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "Gain3",
+    "type": "Gain",
+    "position": [
+      460,
+      507,
+      525,
+      533
+    ],
+    "orientation": "right",
+    "params": {
+      "Gain": "0.1*n",
+      "Multiplication": "Element-wise(K.*u)",
+      "ParamMin": "[]",
+      "ParamMax": "[]",
+      "ParamDataTypeStr": "Inherit: Inherit via internal rule",
+      "OutMin": "[]",
+      "OutMax": "[]",
+      "OutDataTypeStr": "Inherit: Inherit via internal rule",
+      "LockScale": "off",
+      "RndMeth": "Floor",
+      "SaturateOnIntegerOverflow": "off",
+      "SampleTime": "-1"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "Chirp1",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "Goto",
+    "type": "Goto",
+    "position": [
+      1405,
+      125,
+      1455,
+      145
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "Iabc",
+      "IconDisplay": "Tag",
+      "TagVisibility": "local"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "Mux",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "Goto1",
+    "type": "Goto",
+    "position": [
+      1405,
+      220,
+      1455,
+      240
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "ws",
+      "IconDisplay": "Tag",
+      "TagVisibility": "global"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "Gain1",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "Goto10",
+    "type": "Goto",
+    "position": [
+      1865,
+      175,
+      1915,
+      195
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "v_alpha",
+      "IconDisplay": "Tag",
+      "TagVisibility": "global"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "Demux1",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "Goto11",
+    "type": "Goto",
+    "position": [
+      1865,
+      195,
+      1915,
+      215
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "v_beta",
+      "IconDisplay": "Tag",
+      "TagVisibility": "global"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "Demux1",
+      "sourceport": 2
+    }
+  },
+  {
+    "name": "Goto12",
+    "type": "Goto",
+    "position": [
+      2205,
+      491,
+      2245,
+      509
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "SW",
+      "IconDisplay": "Tag",
+      "TagVisibility": "global"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "Mux2",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "Goto13",
+    "type": "Goto",
+    "position": [
+      2200,
+      630,
+      2250,
+      650
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "sector",
+      "IconDisplay": "Tag",
+      "TagVisibility": "global"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "SVPWM Function v1.0",
+      "sourceport": 2
+    }
+  },
+  {
+    "name": "Goto14",
+    "type": "Goto",
+    "position": [
+      1405,
+      55,
+      1455,
+      75
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "Vq_re",
+      "IconDisplay": "Tag",
+      "TagVisibility": "global"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "Bus\nSelector1",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "Goto15",
+    "type": "Goto",
+    "position": [
+      1405,
+      75,
+      1455,
+      95
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "Vd_re",
+      "IconDisplay": "Tag",
+      "TagVisibility": "global"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "Bus\nSelector1",
+      "sourceport": 2
+    }
+  },
+  {
+    "name": "Goto16",
+    "type": "Goto",
+    "position": [
+      660,
+      206,
+      710,
+      224
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "UDC",
+      "IconDisplay": "Tag",
+      "TagVisibility": "global"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "Voltage Measurement",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "Goto17",
+    "type": "Goto",
+    "position": [
+      2200,
+      605,
+      2250,
+      625
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "Umod",
+      "IconDisplay": "Tag",
+      "TagVisibility": "local"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "SVPWM Function v1.0",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "Goto18",
+    "type": "Goto",
+    "position": [
+      840,
+      341,
+      890,
+      359
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "TL",
+      "IconDisplay": "Tag",
+      "TagVisibility": "global"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "T_load1",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "Goto19",
+    "type": "Goto",
+    "position": [
+      820,
+      411,
+      870,
+      429
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "nref",
+      "IconDisplay": "Tag",
+      "TagVisibility": "global"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "speed_ref",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "Goto2",
+    "type": "Goto",
+    "position": [
+      1870,
+      75,
+      1920,
+      95
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "id",
+      "IconDisplay": "Tag",
+      "TagVisibility": "global"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "Demux",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "Goto20",
+    "type": "Goto",
+    "position": [
+      580,
+      422,
+      640,
+      438
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "id_ref",
+      "IconDisplay": "Tag",
+      "TagVisibility": "local"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "Gain2",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "Goto21",
+    "type": "Goto",
+    "position": [
+      570,
+      511,
+      620,
+      529
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "nref2",
+      "IconDisplay": "Tag",
+      "TagVisibility": "local"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "Gain3",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "Goto3",
+    "type": "Goto",
+    "position": [
+      1870,
+      96,
+      1920,
+      114
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "iq",
+      "IconDisplay": "Tag",
+      "TagVisibility": "global"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "Demux",
+      "sourceport": 2
+    }
+  },
+  {
+    "name": "Goto4",
+    "type": "Goto",
+    "position": [
+      1405,
+      100,
+      1455,
+      120
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "Uabc",
+      "IconDisplay": "Tag",
+      "TagVisibility": "local"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "Three-Phase\nV-I Measurement",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "Goto5",
+    "type": "Goto",
+    "position": [
+      1405,
+      295,
+      1455,
+      315
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "Te",
+      "IconDisplay": "Tag",
+      "TagVisibility": "global"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "Bus\nSelector",
+      "sourceport": 6
+    }
+  },
+  {
+    "name": "Goto6",
+    "type": "Goto",
+    "position": [
+      1405,
+      245,
+      1455,
+      265
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "speed",
+      "IconDisplay": "Tag",
+      "TagVisibility": "global"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "Gain",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "Goto7",
+    "type": "Goto",
+    "position": [
+      1555,
+      380,
+      1585,
+      400
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "vd",
+      "IconDisplay": "Tag",
+      "TagVisibility": "global"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "Sum2",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "Goto8",
+    "type": "Goto",
+    "position": [
+      1555,
+      580,
+      1585,
+      600
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "vq",
+      "IconDisplay": "Tag",
+      "TagVisibility": "global"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "Sum3",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "Goto9",
+    "type": "Goto",
+    "position": [
+      1090,
+      496,
+      1140,
+      514
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "iq_ref",
+      "IconDisplay": "Tag",
+      "TagVisibility": "global"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "Divide",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "Measured phase currents",
+    "type": "Goto",
+    "position": [
+      950,
+      320,
+      1060,
+      340
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "Currentabc",
+      "IconDisplay": "Tag",
+      "TagVisibility": "global"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "Three-Phase\nV-I Measurement",
+      "sourceport": 2
+    }
+  },
+  {
+    "name": "Mux",
+    "type": "Mux",
+    "position": [
+      1200,
+      116,
+      1205,
+      154
+    ],
+    "orientation": "right",
+    "params": {
+      "Inputs": "3",
+      "DisplayOption": "bar"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "Bus\nSelector",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "Bus\nSelector",
+        "sourceport": 2
+      },
+      {
+        "port": 3,
+        "source": "Bus\nSelector",
+        "sourceport": 3
+      }
+    ]
+  },
+  {
+    "name": "Mux1",
+    "type": "Mux",
+    "position": [
+      1635,
+      166,
+      1640,
+      224
+    ],
+    "orientation": "right",
+    "params": {
+      "Inputs": "3",
+      "DisplayOption": "bar"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "From9",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "From10",
+        "sourceport": 1
+      },
+      {
+        "port": 3,
+        "source": "Constant5",
+        "sourceport": 1
+      }
+    ]
+  },
+  {
+    "name": "Mux2",
+    "type": "Mux",
+    "position": [
+      2160,
+      410,
+      2165,
+      590
+    ],
+    "orientation": "right",
+    "params": {
+      "Inputs": "6",
+      "DisplayOption": "bar"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "Relational\nOperator",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "NOT",
+        "sourceport": 1
+      },
+      {
+        "port": 3,
+        "source": "Relational\nOperator1",
+        "sourceport": 1
+      },
+      {
+        "port": 4,
+        "source": "NOT1",
+        "sourceport": 1
+      },
+      {
+        "port": 5,
+        "source": "Relational\nOperator2",
+        "sourceport": 1
+      },
+      {
+        "port": 6,
+        "source": "NOT2",
+        "sourceport": 1
+      }
+    ]
+  },
+  {
+    "name": "Mux3",
+    "type": "Mux",
+    "position": [
+      1035,
+      706,
+      1040,
+      744
+    ],
+    "orientation": "right",
+    "params": {
+      "Inputs": "2",
+      "DisplayOption": "bar"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "From28",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "From36",
+        "sourceport": 1
+      }
+    ]
+  },
+  {
+    "name": "Mux4",
+    "type": "Mux",
+    "position": [
+      2310,
+      706,
+      2315,
+      744
+    ],
+    "orientation": "right",
+    "params": {
+      "Inputs": "2",
+      "DisplayOption": "bar"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "From15",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "From7",
+        "sourceport": 1
+      }
+    ]
+  },
+  {
+    "name": "NOT",
+    "type": "Logic",
+    "position": [
+      2060,
+      439,
+      2090,
+      471
+    ],
+    "orientation": "right",
+    "params": {
+      "Operator": "NOT",
+      "Inputs": "2",
+      "IconShape": "distinctive",
+      "AllPortsSameDT": "off",
+      "OutDataTypeStr": "boolean",
+      "SampleTime": "-1"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "Relational\nOperator",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "NOT1",
+    "type": "Logic",
+    "position": [
+      2060,
+      499,
+      2090,
+      531
+    ],
+    "orientation": "right",
+    "params": {
+      "Operator": "NOT",
+      "Inputs": "2",
+      "IconShape": "distinctive",
+      "AllPortsSameDT": "off",
+      "OutDataTypeStr": "boolean",
+      "SampleTime": "-1"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "Relational\nOperator1",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "NOT2",
+    "type": "Logic",
+    "position": [
+      2060,
+      559,
+      2090,
+      591
+    ],
+    "orientation": "right",
+    "params": {
+      "Operator": "NOT",
+      "Inputs": "2",
+      "IconShape": "distinctive",
+      "AllPortsSameDT": "off",
+      "OutDataTypeStr": "boolean",
+      "SampleTime": "-1"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "Relational\nOperator2",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "PI Controller_w",
+    "type": "SubSystem",
+    "position": [
+      830,
+      478,
+      965,
+      512
+    ],
+    "orientation": "right",
+    "params": {
+      "Kp": "kp_w",
+      "Ki": "ki_w ",
+      "Ks": "ks_w",
+      "uplimit": "uplimit_w",
+      "downlimit": "downlimit_w",
+      "SampleTime": "1/fwb"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "Sum4",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "PI Controller_w1",
+    "type": "SubSystem",
+    "position": [
+      1310,
+      373,
+      1445,
+      407
+    ],
+    "orientation": "right",
+    "params": {
+      "Kp": "kp_iq",
+      "Ki": "ki_iq",
+      "Ks": "ks_iq",
+      "uplimit": "uplimit_iq",
+      "downlimit": "downlimit_iq",
+      "SampleTime": "dt"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "Sum",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "PI Controller_w2",
+    "type": "SubSystem",
+    "position": [
+      1305,
+      573,
+      1440,
+      607
+    ],
+    "orientation": "right",
+    "params": {
+      "Kp": "kp_iq",
+      "Ki": "ki_iq",
+      "Ks": "ks_iq",
+      "uplimit": "uplimit_iq",
+      "downlimit": "downlimit_iq",
+      "SampleTime": "dt"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "Sum1",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "PWM threshold tag",
+    "type": "Goto",
+    "position": [
+      1790,
+      350,
+      1850,
+      370
+    ],
+    "orientation": "right",
+    "params": {
+      "GotoTag": "Tcm",
+      "IconDisplay": "Tag",
+      "TagVisibility": "global"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "SVPWM Function v1.0",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "Permanent Magnet\nSynchronous Machine",
+    "type": "SubSystem",
+    "position": [
+      975,
+      179,
+      1065,
+      261
+    ],
+    "orientation": "right",
+    "params": {
+      "ShowPortLabels": "FromPortIcon",
+      "BlockChoice": "",
+      "TemplateBlock": "",
+      "MemberBlocks": "",
+      "Permissions": "ReadWrite",
+      "ErrorFcn": "",
+      "PermitHierarchicalResolution": "All",
+      "TreatAsAtomicUnit": "off",
+      "ShowSubsystemReinitializePorts": "off",
+      "MinAlgLoopOccurrences": "off",
+      "RestrictArgs": "off",
+      "ScheduleAs": "Sample time",
+      "PartitionName": "",
+      "SystemSampleTime": "-1",
+      "SetExecutionDomain": "off",
+      "ExecutionDomainType": "Deduce",
+      "RTWSystemCode": "Auto",
+      "RTWFcnNameOpts": "Auto",
+      "RTWFcnName": "",
+      "RTWFileNameOpts": "Auto",
+      "RTWFileName": "",
+      "FunctionInterfaceSpec": "void_void",
+      "FunctionWithSeparateData": "off",
+      "RTWMemSecFuncInitTerm": "Inherit from model",
+      "RTWMemSecFuncExecute": "Inherit from model",
+      "RTWMemSecDataConstants": "Inherit from model",
+      "RTWMemSecDataInternal": "Inherit from model",
+      "RTWMemSecDataParameters": "Inherit from model",
+      "IsSubsystemVirtual": "on",
+      "Variant": "off",
+      "VariantChoicesSpecifier": "",
+      "VariantChoicesEnumeration": "",
+      "VariantControlVariable": "",
+      "VariantChoices": [],
+      "VariantControlMode": "expression",
+      "VariantControl": "",
+      "LabelModeActiveChoice": "",
+      "VariantActivationTime": "update diagram",
+      "EmptyChoice": "off",
+      "PassThrough": "off",
+      "PropagateVariantConditions": "off",
+      "AllowFlexibleInterface": "on",
+      "TreatAsGroupedWhenPropagatingVariantConditions": "on",
+      "ReferencedSubsystem": "",
+      "Latency": "0",
+      "AutoFrameSizeCalculation": "off"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "Three-Phase\nV-I Measurement",
+        "sourceport": 3
+      },
+      {
+        "port": 2,
+        "source": "T_load1",
+        "sourceport": 1
+      }
+    ]
+  },
+  {
+    "name": "Product",
+    "type": "Product",
+    "position": [
+      970,
+      511,
+      985,
+      589
+    ],
+    "orientation": "right",
+    "params": {
+      "Inputs": "3",
+      "Multiplication": "Element-wise(.*)",
+      "CollapseMode": "All dimensions",
+      "CollapseDim": "1",
+      "InputSameDT": "off",
+      "OutMin": "[]",
+      "OutMax": "[]",
+      "OutDataTypeStr": "Inherit: Inherit via internal rule",
+      "LockScale": "off",
+      "RndMeth": "Floor",
+      "SaturateOnIntegerOverflow": "off",
+      "SampleTime": "-1"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "Constant1",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "Sum6",
+        "sourceport": 1
+      },
+      {
+        "port": 3,
+        "source": "Constant",
+        "sourceport": 1
+      }
+    ]
+  },
+  {
+    "name": "Product1",
+    "type": "Product",
+    "position": [
+      1375,
+      431,
+      1405,
+      469
+    ],
+    "orientation": "right",
+    "params": {
+      "Inputs": "3",
+      "Multiplication": "Element-wise(.*)",
+      "CollapseMode": "All dimensions",
+      "CollapseDim": "1",
+      "InputSameDT": "off",
+      "OutMin": "[]",
+      "OutMax": "[]",
+      "OutDataTypeStr": "Inherit: Inherit via internal rule",
+      "LockScale": "off",
+      "RndMeth": "Floor",
+      "SaturateOnIntegerOverflow": "off",
+      "SampleTime": "-1"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "Constant4",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "From5",
+        "sourceport": 1
+      },
+      {
+        "port": 3,
+        "source": "Zero-Order\nHold5",
+        "sourceport": 1
+      }
+    ]
+  },
+  {
+    "name": "Product2",
+    "type": "Product",
+    "position": [
+      1330,
+      526,
+      1350,
+      559
+    ],
+    "orientation": "right",
+    "params": {
+      "Inputs": "2",
+      "Multiplication": "Element-wise(.*)",
+      "CollapseMode": "All dimensions",
+      "CollapseDim": "1",
+      "InputSameDT": "off",
+      "OutMin": "[]",
+      "OutMax": "[]",
+      "OutDataTypeStr": "Inherit: Inherit via internal rule",
+      "LockScale": "off",
+      "RndMeth": "Floor",
+      "SaturateOnIntegerOverflow": "off",
+      "SampleTime": "-1"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "From2",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "Constant6",
+        "sourceport": 1
+      }
+    ]
+  },
+  {
+    "name": "Product3",
+    "type": "Product",
+    "position": [
+      1425,
+      472,
+      1445,
+      568
+    ],
+    "orientation": "right",
+    "params": {
+      "Inputs": "2",
+      "Multiplication": "Element-wise(.*)",
+      "CollapseMode": "All dimensions",
+      "CollapseDim": "1",
+      "InputSameDT": "off",
+      "OutMin": "[]",
+      "OutMax": "[]",
+      "OutDataTypeStr": "Inherit: Inherit via internal rule",
+      "LockScale": "off",
+      "RndMeth": "Floor",
+      "SaturateOnIntegerOverflow": "off",
+      "SampleTime": "-1"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "Zero-Order\nHold5",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "Constant7",
+        "sourceport": 1
+      }
+    ]
+  },
+  {
+    "name": "Product4",
+    "type": "Product",
+    "position": [
+      875,
+      563,
+      890,
+      612
+    ],
+    "orientation": "right",
+    "params": {
+      "Inputs": "2",
+      "Multiplication": "Element-wise(.*)",
+      "CollapseMode": "All dimensions",
+      "CollapseDim": "1",
+      "InputSameDT": "off",
+      "OutMin": "[]",
+      "OutMax": "[]",
+      "OutDataTypeStr": "Inherit: Inherit via internal rule",
+      "LockScale": "off",
+      "RndMeth": "Floor",
+      "SaturateOnIntegerOverflow": "off",
+      "SampleTime": "-1"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "Constant3",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "From35",
+        "sourceport": 1
+      }
+    ]
+  },
+  {
+    "name": "Rate Transition1",
+    "type": "RateTransition",
+    "position": [
+      1860,
+      421,
+      1910,
+      449
+    ],
+    "orientation": "right",
+    "params": {
+      "Integrity": "on",
+      "Deterministic": "off",
+      "InitialCondition": "0",
+      "OutPortSampleTimeOpt": "Specify",
+      "OutPortSampleTimeMultiple": "1",
+      "OutPortSampleTime": "-1"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "Demux2",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "Rate Transition2",
+    "type": "RateTransition",
+    "position": [
+      1860,
+      476,
+      1910,
+      504
+    ],
+    "orientation": "right",
+    "params": {
+      "Integrity": "on",
+      "Deterministic": "off",
+      "InitialCondition": "0",
+      "OutPortSampleTimeOpt": "Specify",
+      "OutPortSampleTimeMultiple": "1",
+      "OutPortSampleTime": "-1"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "Demux2",
+      "sourceport": 2
+    }
+  },
+  {
+    "name": "Rate Transition3",
+    "type": "RateTransition",
+    "position": [
+      1860,
+      531,
+      1910,
+      559
+    ],
+    "orientation": "right",
+    "params": {
+      "Integrity": "on",
+      "Deterministic": "off",
+      "InitialCondition": "0",
+      "OutPortSampleTimeOpt": "Specify",
+      "OutPortSampleTimeMultiple": "1",
+      "OutPortSampleTime": "-1"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "Demux2",
+      "sourceport": 3
+    }
+  },
+  {
+    "name": "Rate Transition4",
+    "type": "RateTransition",
+    "position": [
+      1860,
+      351,
+      1910,
+      379
+    ],
+    "orientation": "right",
+    "params": {
+      "Integrity": "on",
+      "Deterministic": "off",
+      "InitialCondition": "0",
+      "OutPortSampleTimeOpt": "Specify",
+      "OutPortSampleTimeMultiple": "1",
+      "OutPortSampleTime": "-1"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "Carrier Wave",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "Relational\nOperator",
+    "type": "RelationalOperator",
+    "position": [
+      1960,
+      412,
+      1990,
+      443
+    ],
+    "orientation": "right",
+    "params": {
+      "Operator": ">=",
+      "InputSameDT": "off",
+      "OutDataTypeStr": "boolean",
+      "ZeroCross": "on",
+      "SampleTime": "-1",
+      "RndMeth": "Simplest"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "Rate Transition4",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "Rate Transition1",
+        "sourceport": 1
+      }
+    ]
+  },
+  {
+    "name": "Relational\nOperator1",
+    "type": "RelationalOperator",
+    "position": [
+      1960,
+      467,
+      1990,
+      498
+    ],
+    "orientation": "right",
+    "params": {
+      "Operator": ">=",
+      "InputSameDT": "off",
+      "OutDataTypeStr": "boolean",
+      "ZeroCross": "on",
+      "SampleTime": "-1",
+      "RndMeth": "Simplest"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "Rate Transition4",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "Rate Transition2",
+        "sourceport": 1
+      }
+    ]
+  },
+  {
+    "name": "Relational\nOperator2",
+    "type": "RelationalOperator",
+    "position": [
+      1960,
+      522,
+      1990,
+      553
+    ],
+    "orientation": "right",
+    "params": {
+      "Operator": ">=",
+      "InputSameDT": "off",
+      "OutDataTypeStr": "boolean",
+      "ZeroCross": "on",
+      "SampleTime": "-1",
+      "RndMeth": "Simplest"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "Rate Transition4",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "Rate Transition3",
+        "sourceport": 1
+      }
+    ]
+  },
+  {
+    "name": "SVPWM Function v1.0",
+    "type": "SubSystem",
+    "position": [
+      1670,
+      412,
+      1750,
+      568
+    ],
+    "orientation": "right",
+    "params": {
+      "ShowPortLabels": "FromPortIcon",
+      "BlockChoice": "",
+      "TemplateBlock": "",
+      "MemberBlocks": "",
+      "Permissions": "ReadWrite",
+      "ErrorFcn": "Stateflow.Translate.translate",
+      "PermitHierarchicalResolution": "ExplicitOnly",
+      "TreatAsAtomicUnit": "on",
+      "ShowSubsystemReinitializePorts": "off",
+      "MinAlgLoopOccurrences": "off",
+      "RestrictArgs": "off",
+      "ScheduleAs": "Sample time",
+      "PartitionName": "",
+      "SystemSampleTime": "-1",
+      "SetExecutionDomain": "off",
+      "ExecutionDomainType": "Deduce",
+      "RTWSystemCode": "Auto",
+      "RTWFcnNameOpts": "Auto",
+      "RTWFcnName": "",
+      "RTWFileNameOpts": "Auto",
+      "RTWFileName": "",
+      "FunctionInterfaceSpec": "void_void",
+      "FunctionWithSeparateData": "off",
+      "RTWMemSecFuncInitTerm": "Inherit from model",
+      "RTWMemSecFuncExecute": "Inherit from model",
+      "RTWMemSecDataConstants": "Inherit from model",
+      "RTWMemSecDataInternal": "Inherit from model",
+      "RTWMemSecDataParameters": "Inherit from model",
+      "IsSubsystemVirtual": "off",
+      "Variant": "off",
+      "VariantChoicesSpecifier": "",
+      "VariantChoicesEnumeration": "",
+      "VariantControlVariable": "",
+      "VariantChoices": [],
+      "VariantControlMode": "expression",
+      "VariantControl": "",
+      "LabelModeActiveChoice": "",
+      "VariantActivationTime": "update diagram",
+      "EmptyChoice": "off",
+      "PassThrough": "off",
+      "PropagateVariantConditions": "off",
+      "AllowFlexibleInterface": "on",
+      "TreatAsGroupedWhenPropagatingVariantConditions": "on",
+      "ReferencedSubsystem": "",
+      "Latency": "0",
+      "AutoFrameSizeCalculation": "off"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "From8",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "From12",
+        "sourceport": 1
+      },
+      {
+        "port": 3,
+        "source": "Constant8",
+        "sourceport": 1
+      },
+      {
+        "port": 4,
+        "source": "Constant9",
+        "sourceport": 1
+      }
+    ]
+  },
+  {
+    "name": "Scope",
+    "type": "Scope",
+    "position": [
+      1340,
+      142,
+      1380,
+      218
+    ],
+    "orientation": "right",
+    "params": {
+      "OpenAtSimulationStart": "off",
+      "DisplayFullPath": "off",
+      "NumInputPorts": "3",
+      "LayoutDimensionsString": "[1, 1]",
+      "SampleTime": "-1",
+      "FrameBasedProcessingString": "Elements as channels (sample based)",
+      "MaximizeAxes": "Off",
+      "AxesScaling": "Manual",
+      "AxesScalingNumUpdates": "10",
+      "TimeSpan": "Auto",
+      "TimeSpanOverrunAction": "Wrap",
+      "TimeUnits": "None",
+      "TimeDisplayOffset": "0",
+      "TimeAxisLabels": "Bottom displays only",
+      "ShowTimeAxisLabel": "off",
+      "ActiveDisplayString": "1",
+      "Title": "%<SignalLabel>",
+      "ShowLegend": "off",
+      "ShowGrid": "on",
+      "PlotAsMagnitudePhase": "off",
+      "ActiveDisplayYMinimum": "-2.21804",
+      "ActiveDisplayYMaximum": "2.01558",
+      "YLabel": "",
+      "DataLoggingLimitDataPoints": "off",
+      "DataLoggingMaxPoints": "5000",
+      "DataLoggingDecimateData": "off",
+      "DataLoggingDecimation": "2",
+      "DataLogging": "off",
+      "DataLoggingVariableName": "ScopeData",
+      "DataLoggingSaveFormat": "Dataset"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "Bus\nSelector",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "Bus\nSelector",
+        "sourceport": 2
+      },
+      {
+        "port": 3,
+        "source": "Bus\nSelector",
+        "sourceport": 3
+      }
+    ]
+  },
+  {
+    "name": "Scope1",
+    "type": "Scope",
+    "position": [
+      1325,
+      694,
+      1355,
+      756
+    ],
+    "orientation": "right",
+    "params": {
+      "OpenAtSimulationStart": "off",
+      "DisplayFullPath": "off",
+      "NumInputPorts": "2",
+      "LayoutDimensionsString": "[2 1]",
+      "SampleTime": "-1",
+      "FrameBasedProcessingString": "Elements as channels (sample based)",
+      "MaximizeAxes": "Off",
+      "AxesScaling": "Manual",
+      "AxesScalingNumUpdates": "10",
+      "TimeSpan": "Auto",
+      "TimeSpanOverrunAction": "Wrap",
+      "TimeUnits": "None",
+      "TimeDisplayOffset": "0",
+      "TimeAxisLabels": "All",
+      "ShowTimeAxisLabel": "on",
+      "ActiveDisplayString": "1",
+      "Title": "%<SignalLabel>",
+      "ShowLegend": "on",
+      "ShowGrid": "on",
+      "PlotAsMagnitudePhase": "off",
+      "ActiveDisplayYMinimum": "-389.77916",
+      "ActiveDisplayYMaximum": "3379.29942",
+      "YLabel": "",
+      "DataLoggingLimitDataPoints": "off",
+      "DataLoggingMaxPoints": "5000",
+      "DataLoggingDecimateData": "off",
+      "DataLoggingDecimation": "2",
+      "DataLogging": "off",
+      "DataLoggingVariableName": "ScopeData3",
+      "DataLoggingSaveFormat": "Dataset"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "From14",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "From16",
+        "sourceport": 1
+      }
+    ]
+  },
+  {
+    "name": "Scope10",
+    "type": "Scope",
+    "position": [
+      1175,
+      706,
+      1200,
+      779
+    ],
+    "orientation": "right",
+    "params": {
+      "OpenAtSimulationStart": "off",
+      "DisplayFullPath": "off",
+      "NumInputPorts": "2",
+      "LayoutDimensionsString": "[2 1]",
+      "SampleTime": "-1",
+      "FrameBasedProcessingString": "Elements as channels (sample based)",
+      "MaximizeAxes": "Off",
+      "AxesScaling": "Manual",
+      "AxesScalingNumUpdates": "10",
+      "TimeSpan": "Auto",
+      "TimeSpanOverrunAction": "Wrap",
+      "TimeUnits": "None",
+      "TimeDisplayOffset": "0",
+      "TimeAxisLabels": "All",
+      "ShowTimeAxisLabel": "on",
+      "ActiveDisplayString": "1",
+      "Title": "%<SignalLabel>",
+      "ShowLegend": "on",
+      "ShowGrid": "on",
+      "PlotAsMagnitudePhase": "off",
+      "ActiveDisplayYMinimum": "-396.87",
+      "ActiveDisplayYMaximum": "406.58362",
+      "YLabel": "",
+      "DataLoggingLimitDataPoints": "off",
+      "DataLoggingMaxPoints": "5000",
+      "DataLoggingDecimateData": "off",
+      "DataLoggingDecimation": "2",
+      "DataLogging": "off",
+      "DataLoggingVariableName": "ScopeData14",
+      "DataLoggingSaveFormat": "Dataset"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "Mux3",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "Divide1",
+        "sourceport": 1
+      }
+    ]
+  },
+  {
+    "name": "Scope11",
+    "type": "Scope",
+    "position": [
+      2125,
+      803,
+      2165,
+      867
+    ],
+    "orientation": "right",
+    "params": {
+      "OpenAtSimulationStart": "off",
+      "DisplayFullPath": "off",
+      "NumInputPorts": "3",
+      "LayoutDimensionsString": "[3 1]",
+      "SampleTime": "-1",
+      "FrameBasedProcessingString": "Elements as channels (sample based)",
+      "MaximizeAxes": "Off",
+      "AxesScaling": "Manual",
+      "AxesScalingNumUpdates": "10",
+      "TimeSpan": "Auto",
+      "TimeSpanOverrunAction": "Wrap",
+      "TimeUnits": "None",
+      "TimeDisplayOffset": "0",
+      "TimeAxisLabels": "Bottom displays only",
+      "ShowTimeAxisLabel": "on",
+      "ActiveDisplayString": "1",
+      "Title": "%<SignalLabel>",
+      "ShowLegend": "on",
+      "ShowGrid": "on",
+      "PlotAsMagnitudePhase": "off",
+      "ActiveDisplayYMinimum": "2E-6",
+      "ActiveDisplayYMaximum": "2.5E-5",
+      "YLabel": "",
+      "DataLoggingLimitDataPoints": "off",
+      "DataLoggingMaxPoints": "5000",
+      "DataLoggingDecimateData": "off",
+      "DataLoggingDecimation": "2",
+      "DataLogging": "off",
+      "DataLoggingVariableName": "ScopeData13",
+      "DataLoggingSaveFormat": "Dataset"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "Demux5",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "Demux5",
+        "sourceport": 2
+      },
+      {
+        "port": 3,
+        "source": "Demux5",
+        "sourceport": 3
+      }
+    ]
+  },
+  {
+    "name": "Scope12",
+    "type": "Scope",
+    "position": [
+      1090,
+      701,
+      1125,
+      754
+    ],
+    "orientation": "right",
+    "params": {
+      "OpenAtSimulationStart": "off",
+      "DisplayFullPath": "off",
+      "NumInputPorts": "2",
+      "LayoutDimensionsString": "[2 1]",
+      "SampleTime": "-1",
+      "FrameBasedProcessingString": "Elements as channels (sample based)",
+      "MaximizeAxes": "Off",
+      "AxesScaling": "Manual",
+      "AxesScalingNumUpdates": "10",
+      "TimeSpan": "Auto",
+      "TimeSpanOverrunAction": "Wrap",
+      "TimeUnits": "None",
+      "TimeDisplayOffset": "0",
+      "TimeAxisLabels": "All",
+      "ShowTimeAxisLabel": "on",
+      "ActiveDisplayString": "1",
+      "Title": "%<SignalLabel>",
+      "ShowLegend": "on",
+      "ShowGrid": "on",
+      "PlotAsMagnitudePhase": "off",
+      "ActiveDisplayYMinimum": "-396.37475",
+      "ActiveDisplayYMaximum": "405.982",
+      "YLabel": "",
+      "DataLoggingLimitDataPoints": "off",
+      "DataLoggingMaxPoints": "5000",
+      "DataLoggingDecimateData": "off",
+      "DataLoggingDecimation": "2",
+      "DataLogging": "off",
+      "DataLoggingVariableName": "ScopeData15",
+      "DataLoggingSaveFormat": "Dataset"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "From28",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "From36",
+        "sourceport": 1
+      }
+    ]
+  },
+  {
+    "name": "Scope13",
+    "type": "Scope",
+    "position": [
+      2450,
+      706,
+      2475,
+      779
+    ],
+    "orientation": "right",
+    "params": {
+      "OpenAtSimulationStart": "off",
+      "DisplayFullPath": "off",
+      "NumInputPorts": "2",
+      "LayoutDimensionsString": "[2 1]",
+      "SampleTime": "-1",
+      "FrameBasedProcessingString": "Elements as channels (sample based)",
+      "MaximizeAxes": "Off",
+      "AxesScaling": "Manual",
+      "AxesScalingNumUpdates": "10",
+      "TimeSpan": "Auto",
+      "TimeSpanOverrunAction": "Wrap",
+      "TimeUnits": "None",
+      "TimeDisplayOffset": "0",
+      "TimeAxisLabels": "All",
+      "ShowTimeAxisLabel": "on",
+      "ActiveDisplayString": "1",
+      "Title": "%<SignalLabel>",
+      "ShowLegend": "on",
+      "ShowGrid": "on",
+      "PlotAsMagnitudePhase": "off",
+      "ActiveDisplayYMinimum": "-1.66602",
+      "ActiveDisplayYMaximum": "1.57602",
+      "YLabel": "",
+      "DataLoggingLimitDataPoints": "off",
+      "DataLoggingMaxPoints": "5000",
+      "DataLoggingDecimateData": "off",
+      "DataLoggingDecimation": "2",
+      "DataLogging": "off",
+      "DataLoggingVariableName": "ScopeData18",
+      "DataLoggingSaveFormat": "Dataset"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "Mux4",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "Divide2",
+        "sourceport": 1
+      }
+    ]
+  },
+  {
+    "name": "Scope14",
+    "type": "Scope",
+    "position": [
+      1720,
+      757,
+      1775,
+      808
+    ],
+    "orientation": "right",
+    "params": {
+      "OpenAtSimulationStart": "off",
+      "DisplayFullPath": "off",
+      "NumInputPorts": "2",
+      "LayoutDimensionsString": "[1, 1]",
+      "SampleTime": "-1",
+      "FrameBasedProcessingString": "Elements as channels (sample based)",
+      "MaximizeAxes": "Off",
+      "AxesScaling": "Manual",
+      "AxesScalingNumUpdates": "10",
+      "TimeSpan": "Auto",
+      "TimeSpanOverrunAction": "Wrap",
+      "TimeUnits": "None",
+      "TimeDisplayOffset": "0",
+      "TimeAxisLabels": "Bottom displays only",
+      "ShowTimeAxisLabel": "on",
+      "ActiveDisplayString": "1",
+      "Title": "%<SignalLabel>",
+      "ShowLegend": "on",
+      "ShowGrid": "on",
+      "PlotAsMagnitudePhase": "off",
+      "ActiveDisplayYMinimum": "-20.0031",
+      "ActiveDisplayYMaximum": "19.99997",
+      "YLabel": "",
+      "DataLoggingLimitDataPoints": "off",
+      "DataLoggingMaxPoints": "5000",
+      "DataLoggingDecimateData": "off",
+      "DataLoggingDecimation": "2",
+      "DataLogging": "off",
+      "DataLoggingVariableName": "ScopeData16",
+      "DataLoggingSaveFormat": "Dataset"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "From31",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "From30",
+        "sourceport": 1
+      }
+    ]
+  },
+  {
+    "name": "Scope15",
+    "type": "Scope",
+    "position": [
+      1720,
+      807,
+      1775,
+      858
+    ],
+    "orientation": "right",
+    "params": {
+      "OpenAtSimulationStart": "off",
+      "DisplayFullPath": "off",
+      "NumInputPorts": "2",
+      "LayoutDimensionsString": "[1, 1]",
+      "SampleTime": "-1",
+      "FrameBasedProcessingString": "Elements as channels (sample based)",
+      "MaximizeAxes": "Off",
+      "AxesScaling": "Manual",
+      "AxesScalingNumUpdates": "10",
+      "TimeSpan": "Auto",
+      "TimeSpanOverrunAction": "Wrap",
+      "TimeUnits": "None",
+      "TimeDisplayOffset": "0",
+      "TimeAxisLabels": "Bottom displays only",
+      "ShowTimeAxisLabel": "on",
+      "ActiveDisplayString": "1",
+      "Title": "%<SignalLabel>",
+      "ShowLegend": "on",
+      "ShowGrid": "on",
+      "PlotAsMagnitudePhase": "off",
+      "ActiveDisplayYMinimum": "-4.01522",
+      "ActiveDisplayYMaximum": "14.86532",
+      "YLabel": "",
+      "DataLoggingLimitDataPoints": "off",
+      "DataLoggingMaxPoints": "5000",
+      "DataLoggingDecimateData": "off",
+      "DataLoggingDecimation": "2",
+      "DataLogging": "off",
+      "DataLoggingVariableName": "ScopeData17",
+      "DataLoggingSaveFormat": "Dataset"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "From32",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "From33",
+        "sourceport": 1
+      }
+    ]
+  },
+  {
+    "name": "Scope16",
+    "type": "Scope",
+    "position": [
+      2365,
+      701,
+      2400,
+      754
+    ],
+    "orientation": "right",
+    "params": {
+      "OpenAtSimulationStart": "off",
+      "DisplayFullPath": "off",
+      "NumInputPorts": "2",
+      "LayoutDimensionsString": "[2 1]",
+      "SampleTime": "-1",
+      "FrameBasedProcessingString": "Elements as channels (sample based)",
+      "MaximizeAxes": "Off",
+      "AxesScaling": "Manual",
+      "AxesScalingNumUpdates": "10",
+      "TimeSpan": "Auto",
+      "TimeSpanOverrunAction": "Wrap",
+      "TimeUnits": "None",
+      "TimeDisplayOffset": "0",
+      "TimeAxisLabels": "All",
+      "ShowTimeAxisLabel": "on",
+      "ActiveDisplayString": "1",
+      "Title": "%<SignalLabel>",
+      "ShowLegend": "on",
+      "ShowGrid": "on",
+      "PlotAsMagnitudePhase": "off",
+      "ActiveDisplayYMinimum": "-0.53797",
+      "ActiveDisplayYMaximum": "0.49236",
+      "YLabel": "",
+      "DataLoggingLimitDataPoints": "off",
+      "DataLoggingMaxPoints": "5000",
+      "DataLoggingDecimateData": "off",
+      "DataLoggingDecimation": "2",
+      "DataLogging": "off",
+      "DataLoggingVariableName": "ScopeData19",
+      "DataLoggingSaveFormat": "Dataset"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "From15",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "From7",
+        "sourceport": 1
+      }
+    ]
+  },
+  {
+    "name": "Scope2",
+    "type": "Scope",
+    "position": [
+      1690,
+      685,
+      1730,
+      735
+    ],
+    "orientation": "right",
+    "params": {
+      "OpenAtSimulationStart": "off",
+      "DisplayFullPath": "off",
+      "NumInputPorts": "1",
+      "LayoutDimensionsString": "[1, 1]",
+      "SampleTime": "-1",
+      "FrameBasedProcessingString": "Elements as channels (sample based)",
+      "MaximizeAxes": "Off",
+      "AxesScaling": "Manual",
+      "AxesScalingNumUpdates": "10",
+      "TimeSpan": "Auto",
+      "TimeSpanOverrunAction": "Wrap",
+      "TimeUnits": "None",
+      "TimeDisplayOffset": "0",
+      "TimeAxisLabels": "Bottom displays only",
+      "ShowTimeAxisLabel": "on",
+      "ActiveDisplayString": "1",
+      "Title": "%<SignalLabel>",
+      "ShowLegend": "on",
+      "ShowGrid": "on",
+      "PlotAsMagnitudePhase": "off",
+      "ActiveDisplayYMinimum": "-0.125",
+      "ActiveDisplayYMaximum": "1.125",
+      "YLabel": "",
+      "DataLoggingLimitDataPoints": "off",
+      "DataLoggingMaxPoints": "5000",
+      "DataLoggingDecimateData": "off",
+      "DataLoggingDecimation": "2",
+      "DataLogging": "off",
+      "DataLoggingVariableName": "ScopeData4",
+      "DataLoggingSaveFormat": "Dataset"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "From17",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "Scope3",
+    "type": "Scope",
+    "position": [
+      1510,
+      688,
+      1550,
+      732
+    ],
+    "orientation": "right",
+    "params": {
+      "OpenAtSimulationStart": "off",
+      "DisplayFullPath": "off",
+      "NumInputPorts": "1",
+      "LayoutDimensionsString": "[1, 1]",
+      "SampleTime": "-1",
+      "FrameBasedProcessingString": "Elements as channels (sample based)",
+      "MaximizeAxes": "Off",
+      "AxesScaling": "Manual",
+      "AxesScalingNumUpdates": "10",
+      "TimeSpan": "Auto",
+      "TimeSpanOverrunAction": "Wrap",
+      "TimeUnits": "None",
+      "TimeDisplayOffset": "0",
+      "TimeAxisLabels": "Bottom displays only",
+      "ShowTimeAxisLabel": "on",
+      "ActiveDisplayString": "1",
+      "Title": "%<SignalLabel>",
+      "ShowLegend": "on",
+      "ShowGrid": "on",
+      "PlotAsMagnitudePhase": "off",
+      "ActiveDisplayYMinimum": "-14.55664",
+      "ActiveDisplayYMaximum": "14.56696",
+      "YLabel": "",
+      "DataLoggingLimitDataPoints": "off",
+      "DataLoggingMaxPoints": "5000",
+      "DataLoggingDecimateData": "off",
+      "DataLoggingDecimation": "2",
+      "DataLogging": "off",
+      "DataLoggingVariableName": "ScopeData5",
+      "DataLoggingSaveFormat": "Dataset"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "From18",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "Scope4",
+    "type": "Scope",
+    "position": [
+      1525,
+      758,
+      1565,
+      822
+    ],
+    "orientation": "right",
+    "params": {
+      "OpenAtSimulationStart": "off",
+      "DisplayFullPath": "off",
+      "NumInputPorts": "3",
+      "LayoutDimensionsString": "[3 1]",
+      "SampleTime": "-1",
+      "FrameBasedProcessingString": "Elements as channels (sample based)",
+      "MaximizeAxes": "Off",
+      "AxesScaling": "Manual",
+      "AxesScalingNumUpdates": "10",
+      "TimeSpan": "Auto",
+      "TimeSpanOverrunAction": "Wrap",
+      "TimeUnits": "None",
+      "TimeDisplayOffset": "0",
+      "TimeAxisLabels": "Bottom displays only",
+      "ShowTimeAxisLabel": "on",
+      "ActiveDisplayString": "1",
+      "Title": "%<SignalLabel>",
+      "ShowLegend": "on",
+      "ShowGrid": "on",
+      "PlotAsMagnitudePhase": "off",
+      "ActiveDisplayYMinimum": "-30.00473",
+      "ActiveDisplayYMaximum": "30.00442",
+      "YLabel": "",
+      "DataLoggingLimitDataPoints": "off",
+      "DataLoggingMaxPoints": "5000",
+      "DataLoggingDecimateData": "off",
+      "DataLoggingDecimation": "2",
+      "DataLogging": "off",
+      "DataLoggingVariableName": "ScopeData6",
+      "DataLoggingSaveFormat": "Dataset"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "Demux3",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "Demux3",
+        "sourceport": 2
+      },
+      {
+        "port": 3,
+        "source": "Demux3",
+        "sourceport": 3
+      }
+    ]
+  },
+  {
+    "name": "Scope5",
+    "type": "Scope",
+    "position": [
+      1930,
+      717,
+      1985,
+      768
+    ],
+    "orientation": "right",
+    "params": {
+      "OpenAtSimulationStart": "off",
+      "DisplayFullPath": "off",
+      "NumInputPorts": "2",
+      "LayoutDimensionsString": "[1, 1]",
+      "SampleTime": "-1",
+      "FrameBasedProcessingString": "Elements as channels (sample based)",
+      "MaximizeAxes": "Off",
+      "AxesScaling": "Manual",
+      "AxesScalingNumUpdates": "10",
+      "TimeSpan": "Auto",
+      "TimeSpanOverrunAction": "Wrap",
+      "TimeUnits": "None",
+      "TimeDisplayOffset": "0",
+      "TimeAxisLabels": "Bottom displays only",
+      "ShowTimeAxisLabel": "on",
+      "ActiveDisplayString": "1",
+      "Title": "%<SignalLabel>",
+      "ShowLegend": "on",
+      "ShowGrid": "on",
+      "PlotAsMagnitudePhase": "off",
+      "ActiveDisplayYMinimum": "-1.30062",
+      "ActiveDisplayYMaximum": "11.70557",
+      "YLabel": "",
+      "DataLoggingLimitDataPoints": "off",
+      "DataLoggingMaxPoints": "5000",
+      "DataLoggingDecimateData": "off",
+      "DataLoggingDecimation": "2",
+      "DataLogging": "off",
+      "DataLoggingVariableName": "ScopeData7",
+      "DataLoggingSaveFormat": "Dataset"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "From20",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "From21",
+        "sourceport": 1
+      }
+    ]
+  },
+  {
+    "name": "Scope6",
+    "type": "Scope",
+    "position": [
+      2010,
+      359,
+      2040,
+      401
+    ],
+    "orientation": "right",
+    "params": {
+      "OpenAtSimulationStart": "off",
+      "DisplayFullPath": "off",
+      "NumInputPorts": "4",
+      "LayoutDimensionsString": "[1, 1]",
+      "SampleTime": "-1",
+      "FrameBasedProcessingString": "Elements as channels (sample based)",
+      "MaximizeAxes": "Off",
+      "AxesScaling": "Manual",
+      "AxesScalingNumUpdates": "10",
+      "TimeSpan": "Auto",
+      "TimeSpanOverrunAction": "Wrap",
+      "TimeUnits": "None",
+      "TimeDisplayOffset": "0",
+      "TimeAxisLabels": "Bottom displays only",
+      "ShowTimeAxisLabel": "off",
+      "ActiveDisplayString": "1",
+      "Title": "%<SignalLabel>",
+      "ShowLegend": "on",
+      "ShowGrid": "on",
+      "PlotAsMagnitudePhase": "off",
+      "ActiveDisplayYMinimum": "-3E-6",
+      "ActiveDisplayYMaximum": "2.8E-5",
+      "YLabel": "",
+      "DataLoggingLimitDataPoints": "off",
+      "DataLoggingMaxPoints": "5000",
+      "DataLoggingDecimateData": "off",
+      "DataLoggingDecimation": "2",
+      "DataLogging": "off",
+      "DataLoggingVariableName": "ScopeData8",
+      "DataLoggingSaveFormat": "Dataset"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "Rate Transition4",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "Rate Transition1",
+        "sourceport": 1
+      },
+      {
+        "port": 3,
+        "source": "Rate Transition2",
+        "sourceport": 1
+      },
+      {
+        "port": 4,
+        "source": "Rate Transition3",
+        "sourceport": 1
+      }
+    ]
+  },
+  {
+    "name": "Scope7",
+    "type": "Scope",
+    "position": [
+      1935,
+      813,
+      1975,
+      857
+    ],
+    "orientation": "right",
+    "params": {
+      "OpenAtSimulationStart": "off",
+      "DisplayFullPath": "off",
+      "NumInputPorts": "1",
+      "LayoutDimensionsString": "[1, 1]",
+      "SampleTime": "-1",
+      "FrameBasedProcessingString": "Elements as channels (sample based)",
+      "MaximizeAxes": "Off",
+      "AxesScaling": "Manual",
+      "AxesScalingNumUpdates": "10",
+      "TimeSpan": "Auto",
+      "TimeSpanOverrunAction": "Wrap",
+      "TimeUnits": "None",
+      "TimeDisplayOffset": "0",
+      "TimeAxisLabels": "Bottom displays only",
+      "ShowTimeAxisLabel": "on",
+      "ActiveDisplayString": "1",
+      "Title": "%<SignalLabel>",
+      "ShowLegend": "on",
+      "ShowGrid": "on",
+      "PlotAsMagnitudePhase": "off",
+      "ActiveDisplayYMinimum": "0.375",
+      "ActiveDisplayYMaximum": "6.625",
+      "YLabel": "",
+      "DataLoggingLimitDataPoints": "off",
+      "DataLoggingMaxPoints": "5000",
+      "DataLoggingDecimateData": "off",
+      "DataLoggingDecimation": "2",
+      "DataLogging": "off",
+      "DataLoggingVariableName": "ScopeData9",
+      "DataLoggingSaveFormat": "Dataset"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "From22",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "Scope8",
+    "type": "Scope",
+    "position": [
+      855,
+      682,
+      915,
+      753
+    ],
+    "orientation": "right",
+    "params": {
+      "OpenAtSimulationStart": "off",
+      "DisplayFullPath": "off",
+      "NumInputPorts": "2",
+      "LayoutDimensionsString": "[2 1]",
+      "SampleTime": "-1",
+      "FrameBasedProcessingString": "Elements as channels (sample based)",
+      "MaximizeAxes": "Off",
+      "AxesScaling": "Manual",
+      "AxesScalingNumUpdates": "10",
+      "TimeSpan": "Auto",
+      "TimeSpanOverrunAction": "Wrap",
+      "TimeUnits": "None",
+      "TimeDisplayOffset": "0",
+      "TimeAxisLabels": "Bottom displays only",
+      "ShowTimeAxisLabel": "on",
+      "ActiveDisplayString": "1",
+      "Title": "%<SignalLabel>",
+      "ShowLegend": "on",
+      "ShowGrid": "on",
+      "PlotAsMagnitudePhase": "off",
+      "ActiveDisplayYMinimum": "-0.61064",
+      "ActiveDisplayYMaximum": "0.4372",
+      "YLabel": "",
+      "DataLoggingLimitDataPoints": "off",
+      "DataLoggingMaxPoints": "5000",
+      "DataLoggingDecimateData": "off",
+      "DataLoggingDecimation": "2",
+      "DataLogging": "off",
+      "DataLoggingVariableName": "ScopeData10",
+      "DataLoggingSaveFormat": "Dataset"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "From23",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "From24",
+        "sourceport": 1
+      }
+    ]
+  },
+  {
+    "name": "Scope9",
+    "type": "Scope",
+    "position": [
+      855,
+      767,
+      915,
+      838
+    ],
+    "orientation": "right",
+    "params": {
+      "OpenAtSimulationStart": "off",
+      "DisplayFullPath": "off",
+      "NumInputPorts": "2",
+      "LayoutDimensionsString": "[2 1]",
+      "SampleTime": "-1",
+      "FrameBasedProcessingString": "Elements as channels (sample based)",
+      "MaximizeAxes": "Off",
+      "AxesScaling": "Manual",
+      "AxesScalingNumUpdates": "10",
+      "TimeSpan": "Auto",
+      "TimeSpanOverrunAction": "Wrap",
+      "TimeUnits": "None",
+      "TimeDisplayOffset": "0",
+      "TimeAxisLabels": "Bottom displays only",
+      "ShowTimeAxisLabel": "on",
+      "ActiveDisplayString": "1",
+      "Title": "%<SignalLabel>",
+      "ShowLegend": "on",
+      "ShowGrid": "on",
+      "PlotAsMagnitudePhase": "off",
+      "ActiveDisplayYMinimum": "14",
+      "ActiveDisplayYMaximum": "34",
+      "YLabel": "",
+      "DataLoggingLimitDataPoints": "off",
+      "DataLoggingMaxPoints": "5000",
+      "DataLoggingDecimateData": "off",
+      "DataLoggingDecimation": "2",
+      "DataLogging": "off",
+      "DataLoggingVariableName": "ScopeData11",
+      "DataLoggingSaveFormat": "Dataset"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "From27",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "From6",
+        "sourceport": 1
+      }
+    ]
+  },
+  {
+    "name": "Subsystem",
+    "type": "SubSystem",
+    "position": [
+      1300,
+      271,
+      1380,
+      289
+    ],
+    "orientation": "right",
+    "params": {
+      "ShowPortLabels": "FromPortIcon",
+      "BlockChoice": "",
+      "TemplateBlock": "",
+      "MemberBlocks": "",
+      "Permissions": "ReadWrite",
+      "ErrorFcn": "",
+      "PermitHierarchicalResolution": "All",
+      "TreatAsAtomicUnit": "off",
+      "ShowSubsystemReinitializePorts": "off",
+      "MinAlgLoopOccurrences": "off",
+      "RestrictArgs": "off",
+      "ScheduleAs": "Sample time",
+      "PartitionName": "",
+      "SystemSampleTime": "-1",
+      "SetExecutionDomain": "off",
+      "ExecutionDomainType": "Deduce",
+      "RTWSystemCode": "Auto",
+      "RTWFcnNameOpts": "Auto",
+      "RTWFcnName": "",
+      "RTWFileNameOpts": "Auto",
+      "RTWFileName": "",
+      "FunctionInterfaceSpec": "void_void",
+      "FunctionWithSeparateData": "off",
+      "RTWMemSecFuncInitTerm": "Inherit from model",
+      "RTWMemSecFuncExecute": "Inherit from model",
+      "RTWMemSecDataConstants": "Inherit from model",
+      "RTWMemSecDataInternal": "Inherit from model",
+      "RTWMemSecDataParameters": "Inherit from model",
+      "IsSubsystemVirtual": "on",
+      "Variant": "off",
+      "VariantChoicesSpecifier": "",
+      "VariantChoicesEnumeration": "",
+      "VariantControlVariable": "",
+      "VariantChoices": [],
+      "VariantControlMode": "expression",
+      "VariantControl": "",
+      "LabelModeActiveChoice": "",
+      "VariantActivationTime": "update diagram",
+      "EmptyChoice": "off",
+      "PassThrough": "off",
+      "PropagateVariantConditions": "off",
+      "AllowFlexibleInterface": "on",
+      "TreatAsGroupedWhenPropagatingVariantConditions": "on",
+      "ReferencedSubsystem": "",
+      "Latency": "0",
+      "AutoFrameSizeCalculation": "off"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "Bus\nSelector",
+      "sourceport": 5
+    }
+  },
+  {
+    "name": "Sum",
+    "type": "Sum",
+    "position": [
+      1245,
+      380,
+      1265,
+      400
+    ],
+    "orientation": "right",
+    "params": {
+      "IconShape": "round",
+      "Inputs": "|+-",
+      "CollapseMode": "All dimensions",
+      "CollapseDim": "1",
+      "OutMin": "[]",
+      "OutMax": "[]",
+      "OutDataTypeStr": "Inherit: Inherit via internal rule",
+      "AccumDataTypeStr": "Inherit: Inherit via internal rule",
+      "InputSameDT": "off",
+      "LockScale": "off",
+      "RndMeth": "Floor",
+      "SaturateOnIntegerOverflow": "off",
+      "SampleTime": "-1"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "id_ref",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "From2",
+        "sourceport": 1
+      }
+    ]
+  },
+  {
+    "name": "Sum1",
+    "type": "Sum",
+    "position": [
+      1245,
+      580,
+      1265,
+      600
+    ],
+    "orientation": "right",
+    "params": {
+      "IconShape": "round",
+      "Inputs": "-+|",
+      "CollapseMode": "All dimensions",
+      "CollapseDim": "1",
+      "OutMin": "[]",
+      "OutMax": "[]",
+      "OutDataTypeStr": "Inherit: Inherit via internal rule",
+      "AccumDataTypeStr": "Inherit: Inherit via internal rule",
+      "InputSameDT": "off",
+      "LockScale": "off",
+      "RndMeth": "Floor",
+      "SaturateOnIntegerOverflow": "off",
+      "SampleTime": "-1"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "From5",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "From37",
+        "sourceport": 1
+      }
+    ]
+  },
+  {
+    "name": "Sum2",
+    "type": "Sum",
+    "position": [
+      1515,
+      380,
+      1535,
+      400
+    ],
+    "orientation": "right",
+    "params": {
+      "IconShape": "round",
+      "Inputs": "|+-",
+      "CollapseMode": "All dimensions",
+      "CollapseDim": "1",
+      "OutMin": "[]",
+      "OutMax": "[]",
+      "OutDataTypeStr": "Inherit: Inherit via internal rule",
+      "AccumDataTypeStr": "Inherit: Inherit via internal rule",
+      "InputSameDT": "off",
+      "LockScale": "off",
+      "RndMeth": "Floor",
+      "SaturateOnIntegerOverflow": "off",
+      "SampleTime": "-1"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "PI Controller_w1",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "Product1",
+        "sourceport": 1
+      }
+    ]
+  },
+  {
+    "name": "Sum3",
+    "type": "Sum",
+    "position": [
+      1515,
+      580,
+      1535,
+      600
+    ],
+    "orientation": "right",
+    "params": {
+      "IconShape": "round",
+      "Inputs": "++|",
+      "CollapseMode": "All dimensions",
+      "CollapseDim": "1",
+      "OutMin": "[]",
+      "OutMax": "[]",
+      "OutDataTypeStr": "Inherit: Inherit via internal rule",
+      "AccumDataTypeStr": "Inherit: Inherit via internal rule",
+      "InputSameDT": "off",
+      "LockScale": "off",
+      "RndMeth": "Floor",
+      "SaturateOnIntegerOverflow": "off",
+      "SampleTime": "-1"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "Product3",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "PI Controller_w2",
+        "sourceport": 1
+      }
+    ]
+  },
+  {
+    "name": "Sum4",
+    "type": "Sum",
+    "position": [
+      775,
+      485,
+      795,
+      505
+    ],
+    "orientation": "right",
+    "params": {
+      "IconShape": "round",
+      "Inputs": "|+-",
+      "CollapseMode": "All dimensions",
+      "CollapseDim": "1",
+      "OutMin": "[]",
+      "OutMax": "[]",
+      "OutDataTypeStr": "Inherit: Inherit via internal rule",
+      "AccumDataTypeStr": "Inherit: Inherit via internal rule",
+      "InputSameDT": "off",
+      "LockScale": "off",
+      "RndMeth": "Floor",
+      "SaturateOnIntegerOverflow": "off",
+      "SampleTime": "-1"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "speed_ref",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "Zero-Order\nHold2",
+        "sourceport": 1
+      }
+    ]
+  },
+  {
+    "name": "Sum5",
+    "type": "Sum",
+    "position": [
+      1030,
+      780,
+      1050,
+      800
+    ],
+    "orientation": "right",
+    "params": {
+      "IconShape": "round",
+      "Inputs": "|+-",
+      "CollapseMode": "All dimensions",
+      "CollapseDim": "1",
+      "OutMin": "[]",
+      "OutMax": "[]",
+      "OutDataTypeStr": "Inherit: Inherit via internal rule",
+      "AccumDataTypeStr": "Inherit: Inherit via internal rule",
+      "InputSameDT": "off",
+      "LockScale": "off",
+      "RndMeth": "Floor",
+      "SaturateOnIntegerOverflow": "off",
+      "SampleTime": "-1"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "From36",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "From28",
+        "sourceport": 1
+      }
+    ]
+  },
+  {
+    "name": "Sum6",
+    "type": "Sum",
+    "position": [
+      890,
+      540,
+      910,
+      560
+    ],
+    "orientation": "right",
+    "params": {
+      "IconShape": "round",
+      "Inputs": "|++",
+      "CollapseMode": "All dimensions",
+      "CollapseDim": "1",
+      "OutMin": "[]",
+      "OutMax": "[]",
+      "OutDataTypeStr": "Inherit: Inherit via internal rule",
+      "AccumDataTypeStr": "Inherit: Inherit via internal rule",
+      "InputSameDT": "off",
+      "LockScale": "off",
+      "RndMeth": "Floor",
+      "SaturateOnIntegerOverflow": "off",
+      "SampleTime": "-1"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "Constant2",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "Product4",
+        "sourceport": 1
+      }
+    ]
+  },
+  {
+    "name": "Sum7",
+    "type": "Sum",
+    "position": [
+      2305,
+      780,
+      2325,
+      800
+    ],
+    "orientation": "right",
+    "params": {
+      "IconShape": "round",
+      "Inputs": "|+-",
+      "CollapseMode": "All dimensions",
+      "CollapseDim": "1",
+      "OutMin": "[]",
+      "OutMax": "[]",
+      "OutDataTypeStr": "Inherit: Inherit via internal rule",
+      "AccumDataTypeStr": "Inherit: Inherit via internal rule",
+      "InputSameDT": "off",
+      "LockScale": "off",
+      "RndMeth": "Floor",
+      "SaturateOnIntegerOverflow": "off",
+      "SampleTime": "-1"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "From7",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "From15",
+        "sourceport": 1
+      }
+    ]
+  },
+  {
+    "name": "T_load1",
+    "type": "Step",
+    "position": [
+      660,
+      271,
+      705,
+      299
+    ],
+    "orientation": "right",
+    "params": {
+      "Time": "0",
+      "InitialValue": "0.3*Tn",
+      "FinalValue": "0.3*Tn",
+      "OutDataTypeStr": "double",
+      "SampleTime": "dt",
+      "VectorParams1D": "on",
+      "ZeroCross": "on"
+    },
+    "inputs": []
+  },
+  {
+    "name": "Terminator",
+    "type": "Terminator",
+    "position": [
+      1900,
+      115,
+      1920,
+      135
+    ],
+    "orientation": "right",
+    "params": {},
+    "inputs": {
+      "port": 1,
+      "source": "Demux",
+      "sourceport": 3
+    }
+  },
+  {
+    "name": "Terminator1",
+    "type": "Terminator",
+    "position": [
+      1895,
+      215,
+      1915,
+      235
+    ],
+    "orientation": "right",
+    "params": {},
+    "inputs": {
+      "port": 1,
+      "source": "Demux1",
+      "sourceport": 3
+    }
+  },
+  {
+    "name": "Terminator2",
+    "type": "Terminator",
+    "position": [
+      1370,
+      535,
+      1390,
+      555
+    ],
+    "orientation": "right",
+    "params": {},
+    "inputs": {
+      "port": 1,
+      "source": "Product2",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "Three-Phase\nV-I Measurement",
+    "type": "SubSystem",
+    "position": [
+      900,
+      182,
+      935,
+      258
+    ],
+    "orientation": "right",
+    "params": {
+      "ShowPortLabels": "FromPortIcon",
+      "BlockChoice": "",
+      "TemplateBlock": "",
+      "MemberBlocks": "",
+      "Permissions": "ReadWrite",
+      "ErrorFcn": "",
+      "PermitHierarchicalResolution": "All",
+      "TreatAsAtomicUnit": "off",
+      "ShowSubsystemReinitializePorts": "off",
+      "MinAlgLoopOccurrences": "off",
+      "RestrictArgs": "off",
+      "ScheduleAs": "Sample time",
+      "PartitionName": "",
+      "SystemSampleTime": "-1",
+      "SetExecutionDomain": "off",
+      "ExecutionDomainType": "Deduce",
+      "RTWSystemCode": "Auto",
+      "RTWFcnNameOpts": "Auto",
+      "RTWFcnName": "",
+      "RTWFileNameOpts": "Auto",
+      "RTWFileName": "",
+      "FunctionInterfaceSpec": "void_void",
+      "FunctionWithSeparateData": "off",
+      "RTWMemSecFuncInitTerm": "Inherit from model",
+      "RTWMemSecFuncExecute": "Inherit from model",
+      "RTWMemSecDataConstants": "Inherit from model",
+      "RTWMemSecDataInternal": "Inherit from model",
+      "RTWMemSecDataParameters": "Inherit from model",
+      "IsSubsystemVirtual": "on",
+      "Variant": "off",
+      "VariantChoicesSpecifier": "",
+      "VariantChoicesEnumeration": "",
+      "VariantControlVariable": "",
+      "VariantChoices": [],
+      "VariantControlMode": "expression",
+      "VariantControl": "",
+      "LabelModeActiveChoice": "",
+      "VariantActivationTime": "update diagram",
+      "EmptyChoice": "off",
+      "PassThrough": "off",
+      "PropagateVariantConditions": "off",
+      "AllowFlexibleInterface": "on",
+      "TreatAsGroupedWhenPropagatingVariantConditions": "on",
+      "ReferencedSubsystem": "",
+      "Latency": "0",
+      "AutoFrameSizeCalculation": "off"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "Universal Bridge",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "Permanent Magnet\nSynchronous Machine",
+        "sourceport": 2
+      }
+    ]
+  },
+  {
+    "name": "Universal Bridge",
+    "type": "SubSystem",
+    "position": [
+      810,
+      165,
+      880,
+      260
+    ],
+    "orientation": "right",
+    "params": {
+      "ShowPortLabels": "FromPortIcon",
+      "BlockChoice": "",
+      "TemplateBlock": "",
+      "MemberBlocks": "",
+      "Permissions": "ReadWrite",
+      "ErrorFcn": "",
+      "PermitHierarchicalResolution": "All",
+      "TreatAsAtomicUnit": "off",
+      "ShowSubsystemReinitializePorts": "off",
+      "MinAlgLoopOccurrences": "off",
+      "RestrictArgs": "off",
+      "ScheduleAs": "Sample time",
+      "PartitionName": "",
+      "SystemSampleTime": "-1",
+      "SetExecutionDomain": "off",
+      "ExecutionDomainType": "Deduce",
+      "RTWSystemCode": "Auto",
+      "RTWFcnNameOpts": "Auto",
+      "RTWFcnName": "",
+      "RTWFileNameOpts": "Auto",
+      "RTWFileName": "",
+      "FunctionInterfaceSpec": "void_void",
+      "FunctionWithSeparateData": "off",
+      "RTWMemSecFuncInitTerm": "Inherit from model",
+      "RTWMemSecFuncExecute": "Inherit from model",
+      "RTWMemSecDataConstants": "Inherit from model",
+      "RTWMemSecDataInternal": "Inherit from model",
+      "RTWMemSecDataParameters": "Inherit from model",
+      "IsSubsystemVirtual": "on",
+      "Variant": "off",
+      "VariantChoicesSpecifier": "",
+      "VariantChoicesEnumeration": "",
+      "VariantControlVariable": "",
+      "VariantChoices": [],
+      "VariantControlMode": "expression",
+      "VariantControl": "",
+      "LabelModeActiveChoice": "",
+      "VariantActivationTime": "update diagram",
+      "EmptyChoice": "off",
+      "PassThrough": "off",
+      "PropagateVariantConditions": "off",
+      "AllowFlexibleInterface": "on",
+      "TreatAsGroupedWhenPropagatingVariantConditions": "on",
+      "ReferencedSubsystem": "",
+      "Latency": "0",
+      "AutoFrameSizeCalculation": "off"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "From13",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "DC Voltage Source",
+        "sourceport": 1
+      }
+    ]
+  },
+  {
+    "name": "Validation logging",
+    "type": "SubSystem",
+    "position": [
+      680,
+      1030,
+      865,
+      1085
+    ],
+    "orientation": "right",
+    "params": {
+      "ShowPortLabels": "FromPortIcon",
+      "BlockChoice": "",
+      "TemplateBlock": "",
+      "MemberBlocks": "",
+      "Permissions": "ReadWrite",
+      "ErrorFcn": "",
+      "PermitHierarchicalResolution": "All",
+      "TreatAsAtomicUnit": "off",
+      "ShowSubsystemReinitializePorts": "off",
+      "MinAlgLoopOccurrences": "off",
+      "RestrictArgs": "off",
+      "ScheduleAs": "Sample time",
+      "PartitionName": "",
+      "SystemSampleTime": "-1",
+      "SetExecutionDomain": "off",
+      "ExecutionDomainType": "Deduce",
+      "RTWSystemCode": "Auto",
+      "RTWFcnNameOpts": "Auto",
+      "RTWFcnName": "",
+      "RTWFileNameOpts": "Auto",
+      "RTWFileName": "",
+      "FunctionInterfaceSpec": "void_void",
+      "FunctionWithSeparateData": "off",
+      "RTWMemSecFuncInitTerm": "Inherit from model",
+      "RTWMemSecFuncExecute": "Inherit from model",
+      "RTWMemSecDataConstants": "Inherit from model",
+      "RTWMemSecDataInternal": "Inherit from model",
+      "RTWMemSecDataParameters": "Inherit from model",
+      "IsSubsystemVirtual": "on",
+      "Variant": "off",
+      "VariantChoicesSpecifier": "",
+      "VariantChoicesEnumeration": "",
+      "VariantControlVariable": "",
+      "VariantChoices": [],
+      "VariantControlMode": "expression",
+      "VariantControl": "",
+      "LabelModeActiveChoice": "",
+      "VariantActivationTime": "update diagram",
+      "EmptyChoice": "off",
+      "PassThrough": "off",
+      "PropagateVariantConditions": "off",
+      "AllowFlexibleInterface": "on",
+      "TreatAsGroupedWhenPropagatingVariantConditions": "on",
+      "ReferencedSubsystem": "",
+      "Latency": "0",
+      "AutoFrameSizeCalculation": "off"
+    },
+    "inputs": []
+  },
+  {
+    "name": "Voltage Measurement",
+    "type": "Gain",
+    "position": [
+      580,
+      203,
+      605,
+      227
+    ],
+    "orientation": "right",
+    "params": {
+      "Gain": "1",
+      "Multiplication": "Element-wise(K.*u)",
+      "ParamMin": "[]",
+      "ParamMax": "[]",
+      "ParamDataTypeStr": "Inherit: Inherit via internal rule",
+      "OutMin": "[]",
+      "OutMax": "[]",
+      "OutDataTypeStr": "Inherit: Inherit via internal rule",
+      "LockScale": "off",
+      "RndMeth": "Floor",
+      "SaturateOnIntegerOverflow": "off",
+      "SampleTime": "-1"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "DC Voltage Source",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "XY Graph1",
+    "type": "Record",
+    "position": [
+      2125,
+      717,
+      2160,
+      768
+    ],
+    "orientation": "right",
+    "params": {
+      "NumPorts": 2,
+      "FrameSettings": [
+        false,
+        false
+      ],
+      "Decimation": "1",
+      "MaxDataPoints": "inf",
+      "SharedTimeColumn": "on",
+      "ParquetCompression": "fastest",
+      "ParquetRowGroupHeight": "auto",
+      "ParquetRowGroupSize": "512.000000",
+      "ParquetMetadata": "on",
+      "ParquetRowGroupPolicy": "height",
+      "Layout": "[1 1]",
+      "ShowCursor": 0,
+      "SignalIDs": [
+        8,
+        11
+      ],
+      "CursorPositions": [
+        null,
+        null
+      ]
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "From25",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "From26",
+        "sourceport": 1
+      }
+    ]
+  },
+  {
+    "name": "Zero-Order\nHold1",
+    "type": "ZeroOrderHold",
+    "position": [
+      1635,
+      70,
+      1670,
+      100
+    ],
+    "orientation": "right",
+    "params": {
+      "SampleTime": "dt"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "From4",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "Zero-Order\nHold2",
+    "type": "ZeroOrderHold",
+    "position": [
+      735,
+      535,
+      770,
+      565
+    ],
+    "orientation": "right",
+    "params": {
+      "SampleTime": "dt"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "From",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "Zero-Order\nHold3",
+    "type": "ZeroOrderHold",
+    "position": [
+      1635,
+      105,
+      1670,
+      135
+    ],
+    "orientation": "right",
+    "params": {
+      "SampleTime": "dt"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "From1",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "Zero-Order\nHold4",
+    "type": "ZeroOrderHold",
+    "position": [
+      1635,
+      240,
+      1670,
+      270
+    ],
+    "orientation": "right",
+    "params": {
+      "SampleTime": "dt"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "From11",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "Zero-Order\nHold5",
+    "type": "ZeroOrderHold",
+    "position": [
+      1260,
+      480,
+      1295,
+      510
+    ],
+    "orientation": "right",
+    "params": {
+      "SampleTime": "dt"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "From3",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "abc to\nAlpha-Beta-Zero",
+    "type": "SubSystem",
+    "position": [
+      1695,
+      70,
+      1745,
+      100
+    ],
+    "orientation": "right",
+    "params": {
+      "ShowPortLabels": "FromPortIcon",
+      "BlockChoice": "",
+      "TemplateBlock": "",
+      "MemberBlocks": "",
+      "Permissions": "ReadWrite",
+      "ErrorFcn": "",
+      "PermitHierarchicalResolution": "All",
+      "TreatAsAtomicUnit": "off",
+      "ShowSubsystemReinitializePorts": "off",
+      "MinAlgLoopOccurrences": "off",
+      "RestrictArgs": "off",
+      "ScheduleAs": "Sample time",
+      "PartitionName": "",
+      "SystemSampleTime": "-1",
+      "SetExecutionDomain": "off",
+      "ExecutionDomainType": "Deduce",
+      "RTWSystemCode": "Auto",
+      "RTWFcnNameOpts": "Auto",
+      "RTWFcnName": "",
+      "RTWFileNameOpts": "Auto",
+      "RTWFileName": "",
+      "FunctionInterfaceSpec": "void_void",
+      "FunctionWithSeparateData": "off",
+      "RTWMemSecFuncInitTerm": "Inherit from model",
+      "RTWMemSecFuncExecute": "Inherit from model",
+      "RTWMemSecDataConstants": "Inherit from model",
+      "RTWMemSecDataInternal": "Inherit from model",
+      "RTWMemSecDataParameters": "Inherit from model",
+      "IsSubsystemVirtual": "on",
+      "Variant": "off",
+      "VariantChoicesSpecifier": "",
+      "VariantChoicesEnumeration": "",
+      "VariantControlVariable": "",
+      "VariantChoices": [],
+      "VariantControlMode": "expression",
+      "VariantControl": "",
+      "LabelModeActiveChoice": "",
+      "VariantActivationTime": "update diagram",
+      "EmptyChoice": "off",
+      "PassThrough": "off",
+      "PropagateVariantConditions": "off",
+      "AllowFlexibleInterface": "on",
+      "TreatAsGroupedWhenPropagatingVariantConditions": "on",
+      "ReferencedSubsystem": "",
+      "Latency": "0",
+      "AutoFrameSizeCalculation": "off"
+    },
+    "inputs": {
+      "port": 1,
+      "source": "Zero-Order\nHold1",
+      "sourceport": 1
+    }
+  },
+  {
+    "name": "dq0 to\nAlpha-Beta-Zero",
+    "type": "SubSystem",
+    "position": [
+      1725,
+      187,
+      1775,
+      223
+    ],
+    "orientation": "right",
+    "params": {
+      "ShowPortLabels": "FromPortIcon",
+      "BlockChoice": "",
+      "TemplateBlock": "",
+      "MemberBlocks": "",
+      "Permissions": "ReadWrite",
+      "ErrorFcn": "",
+      "PermitHierarchicalResolution": "All",
+      "TreatAsAtomicUnit": "off",
+      "ShowSubsystemReinitializePorts": "off",
+      "MinAlgLoopOccurrences": "off",
+      "RestrictArgs": "off",
+      "ScheduleAs": "Sample time",
+      "PartitionName": "",
+      "SystemSampleTime": "-1",
+      "SetExecutionDomain": "off",
+      "ExecutionDomainType": "Deduce",
+      "RTWSystemCode": "Auto",
+      "RTWFcnNameOpts": "Auto",
+      "RTWFcnName": "",
+      "RTWFileNameOpts": "Auto",
+      "RTWFileName": "",
+      "FunctionInterfaceSpec": "void_void",
+      "FunctionWithSeparateData": "off",
+      "RTWMemSecFuncInitTerm": "Inherit from model",
+      "RTWMemSecFuncExecute": "Inherit from model",
+      "RTWMemSecDataConstants": "Inherit from model",
+      "RTWMemSecDataInternal": "Inherit from model",
+      "RTWMemSecDataParameters": "Inherit from model",
+      "IsSubsystemVirtual": "on",
+      "Variant": "off",
+      "VariantChoicesSpecifier": "",
+      "VariantChoicesEnumeration": "",
+      "VariantControlVariable": "",
+      "VariantChoices": [],
+      "VariantControlMode": "expression",
+      "VariantControl": "",
+      "LabelModeActiveChoice": "",
+      "VariantActivationTime": "update diagram",
+      "EmptyChoice": "off",
+      "PassThrough": "off",
+      "PropagateVariantConditions": "off",
+      "AllowFlexibleInterface": "on",
+      "TreatAsGroupedWhenPropagatingVariantConditions": "on",
+      "ReferencedSubsystem": "",
+      "Latency": "0",
+      "AutoFrameSizeCalculation": "off"
+    },
+    "inputs": [
+      {
+        "port": 1,
+        "source": "Mux1",
+        "sourceport": 1
+      },
+      {
+        "port": 2,
+        "source": "Zero-Order\nHold4",
+        "sourceport": 1
+      }
+    ]
+  },
+  {
+    "name": "id_ref",
+    "type": "Constant",
+    "position": [
+      1045,
+      375,
+      1075,
+      405
+    ],
+    "orientation": "right",
+    "params": {
+      "Value": "0",
+      "VectorParams1D": "on",
+      "OutMin": "[]",
+      "OutMax": "[]",
+      "OutDataTypeStr": "Inherit: Inherit from 'Constant value'",
+      "LockScale": "off",
+      "SampleTime": "inf"
+    },
+    "inputs": []
+  },
+  {
+    "name": "speed_ref",
+    "type": "Constant",
+    "position": [
+      665,
+      480,
+      695,
+      510
+    ],
+    "orientation": "right",
+    "params": {
+      "Value": "n",
+      "VectorParams1D": "on",
+      "OutMin": "[]",
+      "OutMax": "[]",
+      "OutDataTypeStr": "Inherit: Inherit from 'Constant value'",
+      "LockScale": "off",
+      "SampleTime": "inf"
+    },
+    "inputs": []
+  }
+]

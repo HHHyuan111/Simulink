@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "kind": "minimum_startup_v1",
+  "original_folder": "D:\\simulink\\modern\\startup\\runs\\20261015_121920_079_6c2cdc92-7296-4f07-a7ca-76413c536788",
+  "repeated_folder": "D:\\simulink\\modern\\startup\\runs\\20261015_122000_792_e900c324-a1ee-4d70-8fb4-00bcd4534000",
+  "signal_count": 62,
+  "all_time_data_exact": true,
+  "analysis": {
+    "passed": true,
+    "kind": "minimum_startup_v1",
+    "times_ms": [
+      0,
+      15,
+      20,
+      30
+    ],
+    "window_on": false,
+    "sampling_start_s": [
+      0.000178875,
+      0.020078875000000003
+    ],
+    "current_takeover_s": [
+      0.00022887500000000002,
+      0.020128875
+    ],
+    "speed_takeover_s": [
+      0.000278875,
+      0.020178875000000002
+    ],
+    "stop_accepted_s": 0.015028875,
+    "restart_accepted_s": 0.020028875,
+    "full_gate_samples": 480001,
+    "all_stopped_gates_zero": true,
+    "all_sampling_low_sides_on": true,
+    "all_gate_pairs_interlocked": true,
+    "pi_reset_at_native_tasks": true,
+    "stale_pwm_queue_rejected": true,
+    "actual_ccr_source_max_error_s": 0,
+    "restart_speed_rpm": 258.33691270311721,
+    "boundary": "Known electrical zero; low-side zero-vector preparation; readiness uses previous fast-cycle validity; no alignment, fault protection or bumpless transfer."
+  },
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "structure_and_reference_restored": true
+}

@@ -1,0 +1,196 @@
+{
+  "schema": 1,
+  "passed": true,
+  "kind": "core_teaching_observation_baseline_v1",
+  "generated_utc": "2026-10-15T15:26:21.820865+00:00",
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "reference_manifest_sha256": "f977cfaa62d8722221573d9a648f28d8d7bc91f0f6a462c1e09e4488a70ef353",
+  "scope": "Three teaching topics, read-only archive comparisons and short native-observer regressions. No PI tuning or new control algorithm.",
+  "current_stage_exact_original_log_checks": 676,
+  "fresh_validation_reports": [
+    {
+      "path": "teaching/deadtime_lesson/comparison_validation.json",
+      "sha256": "d66633cfafac569d0e57555e939e13a045c3e1e79a100cf7fec1eca0b9353e7e",
+      "modified_utc": "2026-10-15T15:17:33.937558+00:00"
+    },
+    {
+      "path": "teaching/speed_lesson/validation.json",
+      "sha256": "d54cebad5b91b6888f344db26e148e3d8349020e3e1f206564cb6f6893bee92c",
+      "modified_utc": "2026-10-15T15:17:25.922064+00:00"
+    },
+    {
+      "path": "teaching/sampling_lesson/validation.json",
+      "sha256": "818e522d0045824d0f785921ad2c45ee73f0573904a1fe381d9ecc9eae1a200f",
+      "modified_utc": "2026-10-15T15:22:23.399782+00:00"
+    },
+    {
+      "path": "teaching/frequency/noise_spectrum_validation.json",
+      "sha256": "91cfa3c2c21746a03bf9e486aba266e68735ebf71fe24b354eef71da66aafee3",
+      "modified_utc": "2026-10-15T15:17:39.621775+00:00"
+    },
+    {
+      "path": "teaching/core_teaching_navigation_validation.json",
+      "sha256": "b4ac7a1abfc7ceac75284bbd15f73bbc196fcb0c16464b30cf059e6434373760",
+      "modified_utc": "2026-10-15T15:23:15.879788+00:00"
+    },
+    {
+      "path": "layout/appearance/native_scope_validation.json",
+      "sha256": "a9bf1f0478246e378c2680d32a9964b946c11a7710beda64a2836b7f744849b3",
+      "modified_utc": "2026-10-15T15:22:10.084886+00:00"
+    },
+    {
+      "path": "layout/appearance/current_sampling_scope_validation.json",
+      "sha256": "4939bfbc3a60d28c2ee7d33b18309868ee7db7b9f53027708b25dd77429dac20",
+      "modified_utc": "2026-10-15T15:18:24.064201+00:00"
+    },
+    {
+      "path": "layout/appearance/deadtime_scope_validation.json",
+      "sha256": "857baf9429223cc4cbb782026d45fb36d7838dacb36b15d3bad397d3f5222494",
+      "modified_utc": "2026-10-15T15:18:44.305447+00:00"
+    },
+    {
+      "path": "layout/appearance/deadtime_effects_scope_validation.json",
+      "sha256": "f955ebe6cecaedd515f57cbcccd9f0f382fc5ae0184ed0c8a604e37935debfaf",
+      "modified_utc": "2026-10-15T15:19:04.465984+00:00"
+    },
+    {
+      "path": "layout/appearance/deadtime_comp_scope_validation.json",
+      "sha256": "b1a5c64a264e72348af19e9088e42ff00f7e9983ac40b7d76ec64ff112e2a4b8",
+      "modified_utc": "2026-10-15T15:19:35.763861+00:00"
+    }
+  ],
+  "historical_full_replay_evidence": [
+    {
+      "path": "teaching/experiment_low_speed_comp_validation.json",
+      "sha256": "1a94dbb0dd26f014c6902da3ea8ddbc46b2b6cb0b58aea426e8ed5fc6e610942",
+      "scope": "Previous independent full numerical replay; not rerun in this milestone."
+    },
+    {
+      "path": "teaching/experiment_noise_filter_validation.json",
+      "sha256": "3ab92970c17398d59910dce50bab5d54a21936ce1472d4213c7432b643061601",
+      "scope": "Previous independent full numerical replay; not rerun in this milestone."
+    },
+    {
+      "path": "teaching/frequency/speed_loop/delivery_validation.json",
+      "sha256": "21e3004cc1e137af3fd4e0a8b603c90c2be95f3ac287e43deceed0fa7cb6bfc7",
+      "scope": "Previous independent full numerical replay; not rerun in this milestone."
+    },
+    {
+      "path": "teaching/frequency/speed_probe/delivery_validation.json",
+      "sha256": "2d7e6c7321a4d618a38202cfc069a56a78ef3af354afea48d55c7c7f2c9a6643",
+      "scope": "Previous independent full numerical replay; not rerun in this milestone."
+    }
+  ],
+  "sources": [
+    {
+      "path": "teaching/open_pmsm_observations.m",
+      "sha256": "6572f6027287595c20d6b903320edc63a471ac60374ecd112ab8b79d30434c18"
+    },
+    {
+      "path": "teaching/open_pmsm_speed_lesson.m",
+      "sha256": "7f31ea008a80a48deff1635132bd2a1d8cafdf9c68c155cd03d8b400a4e02f06"
+    },
+    {
+      "path": "teaching/open_pmsm_sampling_lesson.m",
+      "sha256": "03a114db59a936033768e92d5a6db49f6f896cde82a14453a7db5747ba4d47cf"
+    },
+    {
+      "path": "teaching/open_pmsm_sampling_comparison.m",
+      "sha256": "3dbc288403abd620ce104305ff709536d61eee795a3acc8656335038ac6a2c82"
+    },
+    {
+      "path": "teaching/open_pmsm_deadtime_lesson.m",
+      "sha256": "578b965fb83dc32a1c1c156cdf52df3954fda61cf11033a1a18cbaa43496bfde"
+    },
+    {
+      "path": "teaching/open_pmsm_deadtime_comparison.m",
+      "sha256": "2ee637aa13a782e19cb151d73eab7f8c38aff3c22c2dc85c60ac05784acbaa90"
+    },
+    {
+      "path": "teaching/pmsm_noise_filter_analysis.m",
+      "sha256": "8e559064e8e046ff91afa146fbcbdd9c58e0617cd97bbda4b0601bec454c63c9"
+    },
+    {
+      "path": "teaching/pmsm_noise_psd.m",
+      "sha256": "e67670cad15d10cd076512bcc9d380008335942f33f88349c012d252f6a92934"
+    },
+    {
+      "path": "teaching/pmsm_current_spectrum.m",
+      "sha256": "890fdd1f0b4ce0d50a2a7f762e688a4334c0a22fad39e2b7fd083129be91a027"
+    },
+    {
+      "path": "teaching/pmsm_deadtime_pair_alignment.m",
+      "sha256": "7fd141413d92268f83be6fb72a22e362762c48758872d1818873c48799f94e0a"
+    },
+    {
+      "path": "layout/appearance/pmsm_native_scope.m",
+      "sha256": "6502bc9cd741912109102a31e0409fbc91e5bd3f60e3060f62139516b1bd57c9"
+    },
+    {
+      "path": "layout/appearance/pmsm_current_sampling_scope.m",
+      "sha256": "4efc1c95db193202d262be1bb48fbaaa1313ca631e6b9522257cb6d4085114fb"
+    },
+    {
+      "path": "layout/appearance/pmsm_deadtime_scope.m",
+      "sha256": "3eb966d6c39710d786aecf34f489b02c35b58127d38c6a2a7cc4c6a60fc37282"
+    },
+    {
+      "path": "layout/appearance/pmsm_scope_style.m",
+      "sha256": "a65c32b37afabd903899dae43ace07b26f0abc502ef1d5b7dc4f08eec63750ff"
+    },
+    {
+      "path": "teaching/validate_pmsm_sampling_lesson.m",
+      "sha256": "15791addbc3bf2d37e164ce1ca911500ae73bc0f018d35585a9cdd2531960f56"
+    },
+    {
+      "path": "teaching/validate_pmsm_speed_lesson.m",
+      "sha256": "8c66041c2b631e8bb4f987200e36e9c5929e2db833e2cda4738895142a2797da"
+    },
+    {
+      "path": "teaching/validate_pmsm_deadtime_comparison.m",
+      "sha256": "2ae1c0f1c3143b1d22f8bbf5d2466b3c49922c2523671c8582b5046e75f3a823"
+    },
+    {
+      "path": "teaching/validate_pmsm_core_navigation.m",
+      "sha256": "1b8b4af3fc118edf8d7ba42a501622c742d28d1857ef328547addac51c11528a"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "teaching/deadtime_lesson/example/comparison.png",
+      "sha256": "08a30923eea9eb85313cdfbc169444f1b90952cd0327a9bc55d8025378c890fb"
+    },
+    {
+      "path": "teaching/speed_lesson/step.png",
+      "sha256": "e147117ad77fad93eb909178d147b569442a84edb60b2e26b34b31bbefb665bf"
+    },
+    {
+      "path": "teaching/speed_lesson/sine.png",
+      "sha256": "39bbb6b404ccc3685797c3bde1a00c754e38fa440df53bd94217c15cad1fd490"
+    },
+    {
+      "path": "teaching/sampling_lesson/comparison.png",
+      "sha256": "4078deb7979f416219431625d64911ffa30c08a2d8935c6fb85f1d80c83d241c"
+    },
+    {
+      "path": "teaching/README_看懂死区.md",
+      "sha256": "a71da06ca54bc5a9327158e4de1a41f4d9e468d17ca9d0dee542a650221315ff"
+    },
+    {
+      "path": "teaching/README_速度控制教学.md",
+      "sha256": "27ac42ca3434a31c1291e0adb4d80d1703e83f8130cb4127d5b1965584cde329"
+    },
+    {
+      "path": "teaching/README_电流采样教学.md",
+      "sha256": "8117c46e1afb90429e5064e09fea3161cce1d3780bd9ad19ed7b2af4e47e86eb"
+    },
+    {
+      "path": "teaching/核心教学观测基线_阶段报告.md",
+      "sha256": "74dc5d7572eb2a9f66aeacd8ca1a4339024cd9039076709f1096a6eef8c7ba52"
+    },
+    {
+      "path": "teaching/核心教学观测基线_体验清单.md",
+      "sha256": "e6114bc15f8c51d4a243bd6c36f1217fe6de2f4a26dec73b4fa79ad74adaed7f"
+    }
+  ]
+}

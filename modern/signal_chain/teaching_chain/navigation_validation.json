@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "topics": [
+    "噪声与滤波",
+    "采样延迟",
+    "数字滤波",
+    "PWM更新",
+    "死区补偿"
+  ],
+  "cross_topic_callbacks": 25,
+  "one_window_per_topic": true,
+  "configuration_preserved": true,
+  "archives_read_only": true,
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "source_folders": [
+    [
+      "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261013_142400_056_noise_filter_639410f8"
+    ],
+    [
+      "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261013_103923_775_sample_delay_80894465",
+      "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261016_092224_391_sample_delay_d2abc88d"
+    ],
+    [
+      "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261013_104038_395_digital_filter_8f38ec15",
+      "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261016_092300_213_digital_filter_ca2bf91a"
+    ],
+    [
+      "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261016_095048_642_timing_deadline_4cdce242"
+    ],
+    [
+      "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261013_133919_965_low_speed_compensation_c1e40d81"
+    ]
+  ]
+}

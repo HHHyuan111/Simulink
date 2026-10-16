@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "independent_process_raw_signals_exact": 40,
+  "analysis_exact": true,
+  "frequency_points": 13,
+  "exact_plotted_traces": 260,
+  "locked_rotor_guards_passed": true,
+  "d_q_T_maximum_difference": 1.4432899320127035E-15,
+  "d_q_L_maximum_difference": 9.012959822011827E-14,
+  "one_Ts_delay_response_error": 5.099032828466975E-10,
+  "linked_time_zoom": true,
+  "bode_and_mechanics_menus_checked": true,
+  "frequency_entry_buttons": 5,
+  "custom_model_and_workspace_preserved": true,
+  "d_axis_archive_preserved": true,
+  "source_record_sha256": "ed6041ea548fd48aebb8bb7f6a4f7400b266314e24be66b421cc1579b33e93e3",
+  "source_run_id": "20261015_162450_667_d9202577"
+}

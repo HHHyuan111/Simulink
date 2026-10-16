@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "custom_parameter_preserved": true,
+  "adc_range_label_correct": true,
+  "open_expand_current_scope": true,
+  "rebuild_preserves_all_layers": true,
+  "wrapper_normal_exception_restore": true,
+  "original_graph_restored": true,
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d"
+}

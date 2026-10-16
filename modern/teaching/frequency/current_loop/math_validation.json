@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "known_response_relative_error": 5.7219584981527971E-16,
+  "first_order_bandwidth_Hz": 997.33680283730519,
+  "known_phase_margin_deg": 90,
+  "invalid_and_unbracketed_rejected": true,
+  "harmonic_contamination_detected": true
+}

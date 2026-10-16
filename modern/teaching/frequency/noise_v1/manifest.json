@@ -1,0 +1,136 @@
+{
+  "schema": 1,
+  "kind": "noise_filter_spectrum",
+  "source_run_id": "20261013_142400_056_noise_filter_639410f8",
+  "source_run_folder": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261013_142400_056_noise_filter_639410f8",
+  "source_record_sha256": "97fec65633e21233346c37de3a4d2df3867528b5a85edb4a983b1bd1ad792d6a",
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "analysis": {
+    "schema": 1,
+    "window_s": [
+      0.12000000000000001,
+      0.2
+    ],
+    "fs_Hz": 20000.0000000022,
+    "sample_count": 1600,
+    "segment_length": 256,
+    "segment_count": 11,
+    "overlap_samples": 128,
+    "window": "periodic Hann",
+    "bin_width_Hz": 78.1250000000086,
+    "enbw_Hz": 117.1875000000129,
+    "means_A": [
+      [
+        -0.0004760528456863697,
+        0.00035999562906149251,
+        -0.000613418141387454
+      ],
+      [
+        -0.00049166643691650382,
+        0.00035076270348548386,
+        -0.00060774578950425746
+      ]
+    ],
+    "time_rms_A": [
+      [
+        0.019418033938103832,
+        0.019491084878004453,
+        0.019808502864681627
+      ],
+      [
+        0.00957116780781249,
+        0.0095365977577249548,
+        0.0096321471591870652
+      ]
+    ],
+    "display_zero_padding_factor": 4,
+    "time_ac_rms_A": [
+      [
+        0.019412197601236861,
+        0.019487760078280691,
+        0.019799002599219916
+      ],
+      [
+        0.0095585311277474033,
+        0.0095301449264157713,
+        0.0096129550062181851
+      ]
+    ],
+    "psd_integral_rms_A": [
+      [
+        0.019278445884525992,
+        0.019413632816129955,
+        0.019954431066491418
+      ],
+      [
+        0.00966710148879811,
+        0.00945165183766495,
+        0.00951823492468521
+      ]
+    ],
+    "weighted_segment_power_A2": [
+      [
+        0.00037165847572259714,
+        0.00037688913911951782,
+        0.00039817931918735783
+      ],
+      [
+        9.3452851194722643E-5,
+        8.93337224604352E-5,
+        9.0596796081497257E-5
+      ]
+    ],
+    "parseval_max_error_A2": 1.0842021724855044E-19,
+    "definition": "Whole-window mean removed; periodic Hann, 50% overlap, one-sided Welch PSD in A^2/Hz. H1=Syx/Sxx on paired input/output noise. PSD integral equals averaged window-weighted segment power, not exactly unweighted finite-record RMS."
+  },
+  "filter_alpha": 0.62422843364860214,
+  "theoretical_white_noise_rms_ratio": 0.48099260907686525,
+  "observed_ac_rms_ratio": [
+    0.49239819849857569,
+    0.48903234071714663,
+    0.48552723593242708
+  ],
+  "nominal_electrical_frequency_Hz": 250,
+  "nominal_filter_gain_dB": -0.11678423948072766,
+  "nominal_filter_phase_deg": -7.3884040489522889,
+  "source_files": [
+    {
+      "path": "pmsm_noise_psd.m",
+      "sha256": "e67670cad15d10cd076512bcc9d380008335942f33f88349c012d252f6a92934"
+    },
+    {
+      "path": "plot_pmsm_noise_spectrum.m",
+      "sha256": "a89bedf757ca0f5006faac693a0aee5555ca4d4ff1f876cfd612fba8849499f5"
+    },
+    {
+      "path": "export_pmsm_noise_spectrum.m",
+      "sha256": "74b01e808101c10e5b229e4878b5e67021ef10891fdf0cfb6b6bb56094f12490"
+    },
+    {
+      "path": "pmsm_noise_filter_analysis.m",
+      "sha256": "8e559064e8e046ff91afa146fbcbdd9c58e0617cd97bbda4b0601bec454c63c9"
+    },
+    {
+      "path": "pmsm_plot_style.m",
+      "sha256": "60619d54cc27fa1b9e495816877cec3ed6a12f024bf9f35da6dba5652d58ccfc"
+    }
+  ],
+  "files": [
+    {
+      "path": "analysis.mat",
+      "sha256": "cf7534cc7f6bedb7cc2a4654e12c8cf41bacb85e3411bdf1fe110f27aeff6d97"
+    },
+    {
+      "path": "spectrum.png",
+      "sha256": "ed04cd2746ea9ee8ac4fa03a3bf1e3530443ff6f2679bfdaa78b52439a726afe"
+    },
+    {
+      "path": "spectrum.fig",
+      "sha256": "9a1a69066f15a2e13269e40c3b99284a13c89f5cce33ddf6faae4e2edf9b07b0"
+    },
+    {
+      "path": "noise_metrics.csv",
+      "sha256": "9f62372fef45ac1b7f54997bb7a125c0d92718ffd994bd678dab1b032babe402"
+    }
+  ]
+}

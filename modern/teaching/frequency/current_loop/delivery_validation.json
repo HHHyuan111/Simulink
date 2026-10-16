@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "independent_process_raw_signals_exact": 24,
+  "amplitude_runs": 4,
+  "analysis_exact": true,
+  "one_Ts_delay_response_error": 5.0990365857236023E-10,
+  "live_custom_configuration_preserved": true,
+  "native_frequency_buttons": 4,
+  "first_folder": "D:\\simulink\\modern\\teaching\\frequency\\current_loop\\runs\\20261015_151355_742_84e9fe40",
+  "repeat_folder": "D:\\simulink\\modern\\teaching\\frequency\\current_loop\\runs\\20261015_151702_340_31cebcc9"
+}

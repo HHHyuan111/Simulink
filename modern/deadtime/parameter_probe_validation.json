@@ -1,0 +1,24 @@
+{
+  "all_passed": true,
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "alignment_only_logs_excluded": [
+    "log_iabc_meas",
+    "log_iabc_true"
+  ],
+  "unchanged_timeseries": 50,
+  "max_abs_difference": 0,
+  "source_model_unchanged": true,
+  "source_workspace_code_unchanged": true,
+  "new_option_titles_rendered": true,
+  "reference": {
+    "dead_us": 2,
+    "comp_us": 2,
+    "hysteresis_A": 0.05,
+    "rpm": 300,
+    "load_Nm": 0.08,
+    "stop_time_s": 0.14,
+    "historical_model_sha256": "afdb0836adf1b2960e398931495b7bf43f8e180c98b8d647e21e1ca53db75be8",
+    "dead_mat_sha256": "d9b873d7aa9e72a00e965fc7362a688b4a778c20bece91afec17f5e4a6f6a188",
+    "comp_mat_sha256": "f0b4fee7e91a9d4da0fd3291507329d220d421681cd2a3865872884738f97a14"
+  }
+}

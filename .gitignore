@@ -18,3 +18,35 @@ review/extracted/
 review/learning/qa_*/
 review/learning/*.log
 **/__pycache__/
+
+# Per-run fixed teaching experiments (curated example figures remain tracked)
+modern/teaching/experiments/runs/
+modern/teaching/experiments/latest.json
+modern/teaching/experiments/repeat_checks/
+
+# Integrated system runs; publish curated figures and validation summaries only
+modern/framework/runs/
+modern/framework/latest.json
+modern/framework/repeat_checks/
+
+# Derived teaching playback exports; curated examples are stored separately
+modern/teaching/vector_lesson/exports/
+
+# Current-loop FRE: raw per-run records stay local; curated example is tracked
+modern/teaching/frequency/current_loop/runs/
+modern/teaching/frequency/current_loop/latest.json
+modern/teaching/frequency/q_loop/runs/
+modern/teaching/frequency/q_loop/latest.json
+modern/teaching/frequency/speed_loop/runs/
+modern/teaching/frequency/speed_loop/latest.json
+modern/teaching/frequency/speed_probe/runs/
+modern/teaching/frequency/speed_probe/latest.json
+
+# Local reference downloads and machine-specific experiment archives
+Ref/
+modern/startup/runs/
+modern/startup/latest.json
+modern/signal_chain/timing_filter/runs/
+modern/signal_chain/timing_filter/latest.json
+modern/signal_chain/feedback_effects_latest.json
+modern/signal_chain/timing_feedback_latest.json

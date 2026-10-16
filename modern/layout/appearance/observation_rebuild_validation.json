@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "report": {
+    "scope_count": 54,
+    "bounds": [
+      80,
+      60,
+      1120,
+      800
+    ],
+    "removed_owned_blocks": 108,
+    "user_configuration_preserved": true,
+    "same_model_and_workspace_code": true
+  },
+  "structure_restored": true
+}

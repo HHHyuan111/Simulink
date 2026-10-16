@@ -1,0 +1,151 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "case": "off",
+      "formula_max_error_A": 0
+    },
+    {
+      "case": "gain_neutral",
+      "formula_max_error_A": 0
+    },
+    {
+      "case": "bias_neutral",
+      "formula_max_error_A": 0
+    },
+    {
+      "case": "gain",
+      "formula_max_error_A": 0
+    },
+    {
+      "case": "bias",
+      "formula_max_error_A": 1.8041124150158794E-16
+    },
+    {
+      "case": "noise_small",
+      "formula_max_error_A": 4.3715031594615539E-16
+    },
+    {
+      "case": "noise_large",
+      "formula_max_error_A": 4.4235448637408581E-16
+    },
+    {
+      "case": "adc8",
+      "formula_max_error_A": 0
+    },
+    {
+      "case": "adc10",
+      "formula_max_error_A": 0
+    },
+    {
+      "case": "filter500",
+      "formula_max_error_A": 1.7763568394002505E-15
+    },
+    {
+      "case": "filter2000",
+      "formula_max_error_A": 1.7763568394002505E-15
+    },
+    {
+      "case": "delay1",
+      "formula_max_error_A": 0
+    },
+    {
+      "case": "delay2",
+      "formula_max_error_A": 0
+    },
+    {
+      "case": "analog",
+      "formula_max_error_A": 0
+    },
+    {
+      "case": "real",
+      "formula_max_error_A": 0
+    },
+    {
+      "case": "real_div4",
+      "formula_max_error_A": 0
+    },
+    {
+      "case": "early_fast",
+      "formula_max_error_A": 0
+    },
+    {
+      "case": "early_slow",
+      "formula_max_error_A": 0
+    },
+    {
+      "case": "early_valley",
+      "formula_max_error_A": 0
+    },
+    {
+      "case": "real_adc8",
+      "formula_max_error_A": 0
+    }
+  ],
+  "event_checks": [
+    {
+      "case": "early_fast",
+      "first_write_us": 19.5,
+      "first_latch_us": 24.999999999999996,
+      "jeos_to_latch_us": 10.499999999999998
+    },
+    {
+      "case": "early_slow",
+      "first_write_us": 29.5,
+      "first_latch_us": 49.999999999999993,
+      "jeos_to_latch_us": 35.499999999999993
+    },
+    {
+      "case": "early_valley",
+      "first_write_us": 19.5,
+      "first_latch_us": 49.999999999999993,
+      "jeos_to_latch_us": 35.499999999999993
+    }
+  ],
+  "compiled_tasks": [
+    {
+      "divider": 2,
+      "task": "电流环",
+      "period_s": 5E-5,
+      "offset_s": 2.8875E-5
+    },
+    {
+      "divider": 2,
+      "task": "速度环",
+      "period_s": 0.0001,
+      "offset_s": 7.8875E-5
+    },
+    {
+      "divider": 2,
+      "task": "SVPWM",
+      "period_s": 5E-5,
+      "offset_s": 2.8875E-5
+    },
+    {
+      "divider": 4,
+      "task": "电流环",
+      "period_s": 5E-5,
+      "offset_s": 2.8875E-5
+    },
+    {
+      "divider": 4,
+      "task": "速度环",
+      "period_s": 0.0002,
+      "offset_s": 0.00017887500000000002
+    },
+    {
+      "divider": 4,
+      "task": "SVPWM",
+      "period_s": 5E-5,
+      "offset_s": 2.8875E-5
+    }
+  ],
+  "exact_view_original_log_checks": 156,
+  "zero_magnitude_physical_regression": true,
+  "noise_amplitude_ratio_exact": true,
+  "conflicts_rejected": 2,
+  "view_normal_exception_restore": true,
+  "original_graph_restored": true,
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "reference_manifest_sha256": "f977cfaa62d8722221573d9a648f28d8d7bc91f0f6a462c1e09e4488a70ef353"
+}

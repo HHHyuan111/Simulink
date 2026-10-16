@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "scenes": 16,
+  "sizes_checked": 2,
+  "parameter_sections_checked": 4,
+  "experiment_ui_sha256": "21c6b9aaabbe0c93b92f27eed2a3731bb6c3c82b6e352ee02a6854df1f5cda81",
+  "framework_ui_sha256": "c41a163c8088def6a2eea851a513b8eb0a07fb6e2950c5273a7e443a6ab24080",
+  "controls_ui_sha256": "4299446152b67172356d1429591e11436cd81d75d7c51d73c87ce2474b1c7d64"
+}

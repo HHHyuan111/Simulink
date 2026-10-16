@@ -1,0 +1,141 @@
+{
+  "schema": 1,
+  "kind": "integrated_system_baseline_v1",
+  "origin_folder": "D:\\simulink\\modern\\framework\\runs\\20261014_104230_738_system_report_059a8301",
+  "origin_record_sha256": "0eb8d064102fb2cafc2c70a5ebd4ea20d2bdc3ba03b38731316b70fc35596fd4",
+  "value": [
+    10000,
+    2,
+    200
+  ],
+  "duration_s": 0.4,
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "report_replay": {
+    "origin_folder": "D:/simulink/modern/framework/runs/20261014_102327_367_system_d5c56c40",
+    "origin_record_sha256": "96b1d3f3f63762323d6abecfa22583ad4a6c7b14006b1f1b03f9e857c63e82ec",
+    "simulation_source_files": [
+      {
+        "path": "framework/pmsm_system_plan.m",
+        "sha256": "ce25ba9bb662d0aaeb1504d6677b6587f7827156bf42b8f89d92d35821c454b3"
+      },
+      {
+        "path": "framework/pmsm_system_inputs.m",
+        "sha256": "71e4dc61b0f253a4f1ce1568daae76e563456cdc821933d3186e5935c277b506"
+      },
+      {
+        "path": "framework/run_pmsm_system_baseline.m",
+        "sha256": "673c3bbe418145139edee33dd7f4b249c8ec9bf8293049d141ccdc94f474f031"
+      },
+      {
+        "path": "framework/pmsm_system_analysis.m",
+        "sha256": "e41d8b64180d3239aa456d4fd69ba9f1d1dc025df83368ef39f381ce96396922"
+      },
+      {
+        "path": "framework/render_pmsm_system_baseline.m",
+        "sha256": "2e8971df9ede59be923931da6d59bb6974fb36daa6ef82c89f897def6855edad"
+      },
+      {
+        "path": "framework/verify_pmsm_system_baseline.m",
+        "sha256": "bcbf7d02ee3bd2707ed9f23dcdbff1c659a3dad118c98517a735a7d34e69e6f6"
+      },
+      {
+        "path": "framework/repeat_pmsm_system_baseline.m",
+        "sha256": "4a0bb6f11670697febac8eeb28c4d237d0ebabb148cda6ff1dc6ef626e78f9be"
+      },
+      {
+        "path": "framework/open_pmsm_framework.m",
+        "sha256": "6d6e02c4fb1e59848022c7aa6b41e73d831dbccd96c741678b1d02bd438bbf2b"
+      },
+      {
+        "path": "teaching/pmsm_encoder_model.m",
+        "sha256": "d47ae238b06f56579136d2b1b147b5d12c43e2103fcc179fbf5369769f84dfd5"
+      },
+      {
+        "path": "teaching/pmsm_encoder_speed_model.m",
+        "sha256": "8042c7e337d3ca80c36471bd2f7a5456c147b04c48a412fb08bbb3594cb9cad7"
+      },
+      {
+        "path": "teaching/pmsm_speed_feedback_model.m",
+        "sha256": "ed508a884e86741aef2cf296276a91c8da4ef5a05159bc62c001b1082aacdded"
+      },
+      {
+        "path": "teaching/pmsm_speed_filter_model.m",
+        "sha256": "bebb595989da44db22be36b383a8eff386c67c7a3a6abc3328975b270b125f95"
+      },
+      {
+        "path": "teaching/teach_hash.m",
+        "sha256": "5896fb748f5833b59c438c079f0922f321882587bea343dcaf76299aca30b666"
+      },
+      {
+        "path": "teaching/teach_values.m",
+        "sha256": "1bf38186e90d1cd49e8cee71a3168674490ffd8aed8a1192b6f58a2399deb6f1"
+      },
+      {
+        "path": "teaching/teach_snapshot.m",
+        "sha256": "adfec0bdb37762e6f42710d55d8c16dbc1c5381d4d683a29a32d93ad3e894a9e"
+      },
+      {
+        "path": "teaching/pmsm_reference.m",
+        "sha256": "f2bd66d3eb7fa0c999957412cf33e5f1d6fa680a288e58bb54071f939175e2fd"
+      },
+      {
+        "path": "teaching/pmsm_experiment_plan.m",
+        "sha256": "13b330a4df48ab29c7864b2f8bd46a8522e4fdfcf5ed225ff23ca84a95911052"
+      },
+      {
+        "path": "teaching/pmsm_experiment_catalog.m",
+        "sha256": "e66e4c24d10cea8cad78f59305f263f09e5a84a3e6dd144f43a172a27c5ed463"
+      },
+      {
+        "path": "teaching/pmsm_check_switches.m",
+        "sha256": "f250045abfc9b760bfc001988b47c08cc01f7c2c1733d9892c415d1cd6196bed"
+      }
+    ],
+    "changed_derived_sources": [
+      "framework/pmsm_system_analysis.m",
+      "framework/render_pmsm_system_baseline.m",
+      "framework/repeat_pmsm_system_baseline.m"
+    ],
+    "replay_script_sha256": "6a17c9a06c7c9defbeed4c9605e3e345e9c4cf95ff3ee19716467b2c015087a4",
+    "copied_inputs": [
+      {
+        "path": "plan.json",
+        "sha256": "323a211f91183a40eb90d4a6b51149ab05923d669b1fcade8058d9d953af2f14"
+      },
+      {
+        "path": "reference_manifest.json",
+        "sha256": "f977cfaa62d8722221573d9a648f28d8d7bc91f0f6a462c1e09e4488a70ef353"
+      },
+      {
+        "path": "reference.mat",
+        "sha256": "55693202b712206a6529ad52fc337220d11ec8a6bea2b312c3912228d17c37e0"
+      },
+      {
+        "path": "factor.mat",
+        "sha256": "59840d58aad74d6de105656b1918404b601cad708b4e7108bcb1586c21a47982"
+      }
+    ]
+  },
+  "files": [
+    {
+      "path": "response.png",
+      "sha256": "f95da92060de6396d3ab28e11bba71f7be3eebaf5fd05e0d66909f100949d1cd"
+    },
+    {
+      "path": "feedback.png",
+      "sha256": "9c1c5365a56916733658e6a34e5c7832b75d122dc6ed5f159d3a58acfb8c3d15"
+    },
+    {
+      "path": "currents.png",
+      "sha256": "2bcce488def43d1b5b0ab3cb71be552b162423c24242af7f5a7af31f7b61fcb7"
+    },
+    {
+      "path": "metrics.csv",
+      "sha256": "f4f03eee2071b12056d3e57a08d8f5efb622a8f7e0d837ac516eaab7ae64f74a"
+    },
+    {
+      "path": "analysis.json",
+      "sha256": "01cb779ae7a93ef33f4ce408ab81f1531bb0853cd080e7c3f930ab5f0db0d43f"
+    }
+  ]
+}

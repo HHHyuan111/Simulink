@@ -1,0 +1,404 @@
+{
+  "original_folder": "D:/simulink/modern/framework/runs/20261014_104230_738_system_report_059a8301",
+  "repeated_folder": "D:\\simulink\\modern\\framework\\runs\\20261014_104449_903_system_59e52cf9",
+  "same_matlab_version": true,
+  "signals": [
+    {
+      "case_id": "reference",
+      "name": "log_speed",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "reference",
+      "name": "log_nref",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "reference",
+      "name": "log_id",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "reference",
+      "name": "log_iq",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "reference",
+      "name": "log_iq_ref",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "reference",
+      "name": "obs_id_ref",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "reference",
+      "name": "log_Te",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "reference",
+      "name": "log_TL",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "reference",
+      "name": "obs_state",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "reference",
+      "name": "log_iabc_true",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "reference",
+      "name": "log_iabc_meas",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "reference",
+      "name": "obs_voltage",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "reference",
+      "name": "obs_current_fast",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "reference",
+      "name": "log_theta_true",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "reference",
+      "name": "log_theta_meas",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "reference",
+      "name": "obs_dead_requested",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "reference",
+      "name": "obs_dead_gates",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "reference",
+      "name": "obs_adc_timing",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "reference",
+      "name": "obs_pwm_timing",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "reference",
+      "name": "log_Tcm_applied",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "reference",
+      "name": "log_Tcm_requested",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "reference",
+      "name": "log_encoder",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "reference",
+      "name": "log_encoder_mechanical",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "reference",
+      "name": "log_encoder_control",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "reference",
+      "name": "log_speed_short",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "reference",
+      "name": "log_speed_window",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "reference",
+      "name": "log_speed_long",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "reference",
+      "name": "log_speed_control",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "reference",
+      "name": "log_speed_feedback",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "reference",
+      "name": "log_speed_filter",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "reference",
+      "name": "obs_pi_speed",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "reference",
+      "name": "obs_pi_d",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "reference",
+      "name": "obs_pi_q",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "factor",
+      "name": "log_speed",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "factor",
+      "name": "log_nref",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "factor",
+      "name": "log_id",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "factor",
+      "name": "log_iq",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "factor",
+      "name": "log_iq_ref",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "factor",
+      "name": "obs_id_ref",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "factor",
+      "name": "log_Te",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "factor",
+      "name": "log_TL",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "factor",
+      "name": "obs_state",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "factor",
+      "name": "log_iabc_true",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "factor",
+      "name": "log_iabc_meas",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "factor",
+      "name": "obs_voltage",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "factor",
+      "name": "obs_current_fast",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "factor",
+      "name": "log_theta_true",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "factor",
+      "name": "log_theta_meas",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "factor",
+      "name": "obs_dead_requested",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "factor",
+      "name": "obs_dead_gates",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "factor",
+      "name": "obs_adc_timing",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "factor",
+      "name": "obs_pwm_timing",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "factor",
+      "name": "log_Tcm_applied",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "factor",
+      "name": "log_Tcm_requested",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "factor",
+      "name": "log_encoder",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "factor",
+      "name": "log_encoder_mechanical",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "factor",
+      "name": "log_encoder_control",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "factor",
+      "name": "log_speed_short",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "factor",
+      "name": "log_speed_window",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "factor",
+      "name": "log_speed_long",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "factor",
+      "name": "log_speed_control",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "factor",
+      "name": "log_speed_feedback",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "factor",
+      "name": "log_speed_filter",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "factor",
+      "name": "obs_pi_speed",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "factor",
+      "name": "obs_pi_d",
+      "same_time": true,
+      "same_data": true
+    },
+    {
+      "case_id": "factor",
+      "name": "obs_pi_q",
+      "same_time": true,
+      "same_data": true
+    }
+  ],
+  "all_exact": true
+}

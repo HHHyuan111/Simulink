@@ -1,0 +1,71 @@
+{
+  "actual_simulations": 3,
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "session_retention_only": true,
+  "files": [
+    {
+      "sha256": "78c77d0c56d6b00d75a89af2e80fee620b38070d5b61b55ae7ef94d6dbbbedc4",
+      "path": "modern/teaching/pmsm_user_runs.m"
+    },
+    {
+      "sha256": "b3898ff10eebc3a7efd31de2ccabeb59724e1585b420f5838d8b2977224472b3",
+      "path": "modern/teaching/pmsm_user_run_signals.m"
+    },
+    {
+      "sha256": "d39570b198c648ee9d44b2673e5b5878b1ae17c3cc65b5ffeec954ab3f710f3a",
+      "path": "modern/teaching/pmsm_user_run_buttons.m"
+    },
+    {
+      "sha256": "4d7b90dc3ad3f604eb2e7373b08540a8d5c15b9dac3c001b0c577a0c915a3d61",
+      "path": "modern/teaching/open_pmsm_sampling_lesson.m"
+    },
+    {
+      "sha256": "fe547e31085a775724c8e73ad9faeb8bb1af10ec6ec348c548dc0076f7aefc38",
+      "path": "modern/teaching/open_pmsm_speed_lesson.m"
+    },
+    {
+      "sha256": "22945891feba231d0bd3fb3d848e93528f68a3718ffa081e598aaa1e6e1c473a",
+      "path": "modern/teaching/open_pmsm_deadtime_lesson.m"
+    },
+    {
+      "sha256": "c7249a05cb41b131cf37e30b839bae2fa3c686f3ddb1d1f54a3e4c242578c93c",
+      "path": "modern/signal_chain/validate_user_run_workflow.m"
+    },
+    {
+      "sha256": "3a21d5c179c56b68cd67aaacef7ebfc2d8d39b4296bd0cf59366bff3c66615be",
+      "path": "modern/signal_chain/user_runs/README.md"
+    },
+    {
+      "sha256": "d8bc700c6307066ca67bb343988f00580d5d0ad3a66428802edb55decdac5668",
+      "path": "modern/signal_chain/user_runs/validation.json"
+    },
+    {
+      "sha256": "39f553a584c8cb6afaee71dd857d6640ab4ade652eb7152f7f4d0bd4b37e3679",
+      "path": "modern/signal_chain/user_runs/sampling_panel.png"
+    },
+    {
+      "sha256": "8563d579fd92b3b6200e69a365ea396c05ac9e6a75d141eaa0904fa2f2f57d41",
+      "path": "modern/signal_chain/user_runs/speed_panel.png"
+    },
+    {
+      "sha256": "f11a0125738c216bfea0692ccbd845163eecf0066f3add3d32e70f0beba42fe4",
+      "path": "modern/signal_chain/user_runs/power_panel.png"
+    },
+    {
+      "sha256": "4466c2081f0c80179b055bec13f8381f166a91bbbaa4a8e590e4bdac92a64929",
+      "path": "modern/signal_chain/user_runs/sampling_comparison.png"
+    },
+    {
+      "sha256": "818e522d0045824d0f785921ad2c45ee73f0573904a1fe381d9ecc9eae1a200f",
+      "path": "modern/teaching/sampling_lesson/validation.json"
+    },
+    {
+      "sha256": "5c4a3605770f48d24b6297f9cb47057b381520952360bdef77f39e61dd21a6a3",
+      "path": "modern/teaching/deadtime_lesson/comparison_validation.json"
+    }
+  ],
+  "passed": true,
+  "native_sdi": true,
+  "imported_signal_records_exact": 62,
+  "duration_s": 0.004
+}

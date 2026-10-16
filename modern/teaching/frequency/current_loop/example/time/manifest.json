@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "source_record_sha256": "73a1c723d4ee1895a509b0f3bc53f096226af3a699ea88376cc7879044b47e3c",
+  "source_run_id": "20261015_151702_340_31cebcc9",
+  "case_definitions": [
+    {
+      "id": "reference",
+      "label": "原反馈",
+      "delay_cycles": 0
+    },
+    {
+      "id": "delay",
+      "label": "增加1Ts延迟",
+      "delay_cycles": 1
+    }
+  ],
+  "source_files": [
+    {
+      "path": "pmsm_current_frequency_folder.m",
+      "sha256": "3ff320f559f856f6da4390e86c3635cd2f4d66f1cbaebef6c9e87a7ddc719e4b"
+    },
+    {
+      "path": "pmsm_current_frequency_time_data.m",
+      "sha256": "6e8dc3df84f27ce836c95e1ea2a59a3f66b9773a11c8bac080d19d99d6a23019"
+    },
+    {
+      "path": "open_pmsm_current_frequency_time.m",
+      "sha256": "2251a64a6efdc086719ce93d025363c29abbe035315e19709d56f26b2437bebe"
+    },
+    {
+      "path": "pmsm_frequency_time_view.m",
+      "sha256": "038328a56de3e1bb746cc2c909a6e274ea200ed29e23c72ccedd586b20277942"
+    },
+    {
+      "path": "open_pmsm_current_frequency.m",
+      "sha256": "5fc3789ec7202c6c413bc75625bd4c3570da338c434621a1eba8aded2a4a6a8c"
+    }
+  ],
+  "sample_time_s": 5E-5,
+  "amplitude_A": 0.2,
+  "data_policy": "Original archived samples, no new simulation or interpolation",
+  "examples": [
+    {
+      "file": "time_100Hz.png",
+      "frequency_Hz": 100,
+      "sample_count": 600,
+      "actual_window_s": [
+        0.35000000000000003,
+        0.37995
+      ],
+      "source_record_sha256": "73a1c723d4ee1895a509b0f3bc53f096226af3a699ea88376cc7879044b47e3c",
+      "sha256": "63500fb6591d876f666ff43bca9dac7a55ee87aac6170c50df9cfcc701c26897"
+    },
+    {
+      "file": "time_1250Hz.png",
+      "frequency_Hz": 1250,
+      "sample_count": 48,
+      "actual_window_s": [
+        0.54715,
+        0.5495
+      ],
+      "source_record_sha256": "73a1c723d4ee1895a509b0f3bc53f096226af3a699ea88376cc7879044b47e3c",
+      "sha256": "2d284dae2696f2f09895392ad768bead4b8878fb8ad4a48a56649503cf8e1e81"
+    },
+    {
+      "file": "time_2500Hz.png",
+      "frequency_Hz": 2500,
+      "sample_count": 24,
+      "actual_window_s": [
+        0.59115000000000006,
+        0.5923
+      ],
+      "source_record_sha256": "73a1c723d4ee1895a509b0f3bc53f096226af3a699ea88376cc7879044b47e3c",
+      "sha256": "44fdf87d43ae10c3479261aecb69baeee9953ef3785f94b454c15d9792325268"
+    }
+  ]
+}

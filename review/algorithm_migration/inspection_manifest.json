@@ -1,0 +1,36 @@
+{
+  "inspection": "static_only_no_matlab_execution",
+  "date": "2026-10-16",
+  "sources": [
+    {
+      "path": "Ref\\11、进阶滑模：ChenshaMotor_FOC_SMOSimple.zip",
+      "sha256": "3caafc152cd3b493261e4abf15496ce8b1bd3723d5f0deafb71d5fd4608e9b76",
+      "bytes": 26036047
+    },
+    {
+      "path": "Ref\\Chensha_FOC_SMOPLL_Final.slx",
+      "sha256": "6428223bffd4fe39423c88dc955bcdadb2763666a0e9cab8640bc62b00dcb844",
+      "bytes": 169389
+    },
+    {
+      "path": "Ref\\MFPCC_ESO_DPCC_2022b.slx",
+      "sha256": "d8b34655e794ede29119e1a74aa83d234a2d4fbb1cf4cb4f43a94fa1d88e3ca9",
+      "bytes": 125350
+    },
+    {
+      "path": "Ref\\SmallSPMSM_iDPCC_2022b.slx",
+      "sha256": "1e9aa14989135fa56ff38c6ceb8ad96933ab68efbf986558dabe2c8c3a9b8a18",
+      "bytes": 80428
+    },
+    {
+      "path": "Ref\\SmallSPMSM_PI_DPCC_2022b.slx",
+      "sha256": "219f5812482db8169774f9f2995c2f4c3ab203f96644b2ae81bdcf093c7e3d5b",
+      "bytes": 113279
+    },
+    {
+      "path": "modern\\PMSM_FOC_R2026a.slx",
+      "sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+      "bytes": 158818
+    }
+  ]
+}

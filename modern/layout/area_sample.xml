@@ -1,0 +1,14 @@
+<Annotation SID="12">
+    <P Name="Name">Voltage Controlled Oscillator</P>
+    <P Name="Position">[42, -81, 517, 109]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="FixedHeight">on</P>
+    <P Name="FixedWidth">on</P>
+    <P Name="ForegroundColor">[0.901961, 0.901961, 1.000000]</P>
+    <P Name="BackgroundColor">[0.901961, 0.901961, 1.000000]</P>
+    <P Name="DropShadow">on</P>
+    <P Name="AnnotationType">area_annotation</P>
+    <P Name="ZOrder">1</P>
+    <P Name="FontSize">12</P>
+  </Annotation>
+  

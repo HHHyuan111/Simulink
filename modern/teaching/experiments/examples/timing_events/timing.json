@@ -1,0 +1,473 @@
+{
+  "schema": 1,
+  "scope": "已有真实时序事件核对；简化模式与事件模式的差别不归因为纯延迟。",
+  "event_step_s": 6.25E-8,
+  "pwm_period_s": 5E-5,
+  "current_period_s": 5E-5,
+  "current_offset_s": 2.8875E-5,
+  "speed_period_s": 0.0001,
+  "speed_offset_s": 7.8874999999999993E-5,
+  "trigger_phase_s": 2.4375E-5,
+  "sample_offsets_ABC_s": [
+    2.8562500000000003E-5,
+    2.70625E-5,
+    2.5562499999999998E-5
+  ],
+  "jeos_phase_s": 2.8875E-5,
+  "write_phase_s": 3.3875E-5,
+  "update_opportunity_period_s": 2.5E-5,
+  "compute_us": 5,
+  "write_wait_us": 16.125000000000007,
+  "jeos_to_apply_us": 21.125000000000004,
+  "event_record_window_s": [
+    0.0497500625,
+    0.049999999999999996
+  ],
+  "truth_record_window_s": [
+    0.0495000625,
+    0.049999999999999996
+  ],
+  "plot_window_s": [
+    0.0499,
+    0.049999999999999996
+  ],
+  "current_event_count": 5,
+  "speed_event_count": 3,
+  "paired_command_count": 5,
+  "sample_error_max_ABC_A": [
+    0,
+    0,
+    0
+  ],
+  "applied_command_max_error_s": 0,
+  "delivered_current_sum_rms_A": 0.024798242613977325,
+  "window_flags_at_jeos_ABC": [
+    1,
+    1,
+    1
+  ],
+  "control_log_first_time_s": 2.8874999999999997E-5,
+  "control_log_period_s": 5.0000000000001432E-5,
+  "trigger_phase_measured": false,
+  "compute_time_measured": false,
+  "commands": [
+    {
+      "sequence": 996,
+      "jeos_time_s": 0.049778875,
+      "write_time_s": 0.049783875,
+      "apply_time_s": 0.0498,
+      "compute_us": 4.999999999998062,
+      "write_wait_us": 16.124999999998778,
+      "jeos_to_apply_us": 21.124999999996842
+    },
+    {
+      "sequence": 997,
+      "jeos_time_s": 0.049828875,
+      "write_time_s": 0.049833875,
+      "apply_time_s": 0.04985,
+      "compute_us": 4.999999999998062,
+      "write_wait_us": 16.124999999998778,
+      "jeos_to_apply_us": 21.124999999996842
+    },
+    {
+      "sequence": 998,
+      "jeos_time_s": 0.049878875,
+      "write_time_s": 0.049883874999999994,
+      "apply_time_s": 0.0499,
+      "compute_us": 4.9999999999911227,
+      "write_wait_us": 16.12500000000572,
+      "jeos_to_apply_us": 21.124999999996842
+    },
+    {
+      "sequence": 999,
+      "jeos_time_s": 0.049928875,
+      "write_time_s": 0.049933874999999996,
+      "apply_time_s": 0.049949999999999994,
+      "compute_us": 4.999999999998062,
+      "write_wait_us": 16.124999999998778,
+      "jeos_to_apply_us": 21.124999999996842
+    },
+    {
+      "sequence": 1000,
+      "jeos_time_s": 0.049978875,
+      "write_time_s": 0.049983875,
+      "apply_time_s": 0.049999999999999996,
+      "compute_us": 4.999999999998062,
+      "write_wait_us": 16.124999999998778,
+      "jeos_to_apply_us": 21.124999999996842
+    }
+  ],
+  "events": [
+    {
+      "id": "trigger",
+      "label": "触发",
+      "time_s": 0.049774374999999996,
+      "cycle_index": 995,
+      "phase_us": 24.375
+    },
+    {
+      "id": "uev",
+      "label": "UEV机会",
+      "time_s": 0.049775,
+      "cycle_index": 995,
+      "phase_us": 24.999999999999996
+    },
+    {
+      "id": "sample_c",
+      "label": "C采样",
+      "time_s": 0.049775562499999995,
+      "cycle_index": 995,
+      "phase_us": 25.562499999999996
+    },
+    {
+      "id": "sample_b",
+      "label": "B采样",
+      "time_s": 0.0497770625,
+      "cycle_index": 995,
+      "phase_us": 27.062499999999996
+    },
+    {
+      "id": "sample_a",
+      "label": "A采样",
+      "time_s": 0.0497785625,
+      "cycle_index": 995,
+      "phase_us": 28.5625
+    },
+    {
+      "id": "jeos",
+      "label": "JEOS",
+      "time_s": 0.049778875,
+      "cycle_index": 995,
+      "phase_us": 28.874999999999996
+    },
+    {
+      "id": "current",
+      "label": "电流环",
+      "time_s": 0.049778875,
+      "cycle_index": 995,
+      "phase_us": 28.874999999999996
+    },
+    {
+      "id": "speed",
+      "label": "速度环",
+      "time_s": 0.049778875,
+      "cycle_index": 995,
+      "phase_us": 28.874999999999996
+    },
+    {
+      "id": "write",
+      "label": "CCR写入",
+      "time_s": 0.049783875,
+      "cycle_index": 995,
+      "phase_us": 33.875
+    },
+    {
+      "id": "uev",
+      "label": "UEV机会",
+      "time_s": 0.0498,
+      "cycle_index": 996,
+      "phase_us": 0
+    },
+    {
+      "id": "apply",
+      "label": "CCR生效",
+      "time_s": 0.0498,
+      "cycle_index": 996,
+      "phase_us": 0
+    },
+    {
+      "id": "trigger",
+      "label": "触发",
+      "time_s": 0.049824375,
+      "cycle_index": 996,
+      "phase_us": 24.375
+    },
+    {
+      "id": "uev",
+      "label": "UEV机会",
+      "time_s": 0.049824999999999994,
+      "cycle_index": 996,
+      "phase_us": 24.999999999999996
+    },
+    {
+      "id": "sample_c",
+      "label": "C采样",
+      "time_s": 0.0498255625,
+      "cycle_index": 996,
+      "phase_us": 25.562499999999996
+    },
+    {
+      "id": "sample_b",
+      "label": "B采样",
+      "time_s": 0.0498270625,
+      "cycle_index": 996,
+      "phase_us": 27.062499999999996
+    },
+    {
+      "id": "sample_a",
+      "label": "A采样",
+      "time_s": 0.0498285625,
+      "cycle_index": 996,
+      "phase_us": 28.5625
+    },
+    {
+      "id": "jeos",
+      "label": "JEOS",
+      "time_s": 0.049828874999999995,
+      "cycle_index": 996,
+      "phase_us": 28.874999999999996
+    },
+    {
+      "id": "current",
+      "label": "电流环",
+      "time_s": 0.049828874999999995,
+      "cycle_index": 996,
+      "phase_us": 28.874999999999996
+    },
+    {
+      "id": "write",
+      "label": "CCR写入",
+      "time_s": 0.049833875,
+      "cycle_index": 996,
+      "phase_us": 33.875
+    },
+    {
+      "id": "uev",
+      "label": "UEV机会",
+      "time_s": 0.04985,
+      "cycle_index": 997,
+      "phase_us": 0
+    },
+    {
+      "id": "apply",
+      "label": "CCR生效",
+      "time_s": 0.04985,
+      "cycle_index": 997,
+      "phase_us": 0
+    },
+    {
+      "id": "trigger",
+      "label": "触发",
+      "time_s": 0.049874375,
+      "cycle_index": 997,
+      "phase_us": 24.375
+    },
+    {
+      "id": "uev",
+      "label": "UEV机会",
+      "time_s": 0.049874999999999996,
+      "cycle_index": 997,
+      "phase_us": 24.999999999999996
+    },
+    {
+      "id": "sample_c",
+      "label": "C采样",
+      "time_s": 0.0498755625,
+      "cycle_index": 997,
+      "phase_us": 25.562499999999996
+    },
+    {
+      "id": "sample_b",
+      "label": "B采样",
+      "time_s": 0.0498770625,
+      "cycle_index": 997,
+      "phase_us": 27.062499999999996
+    },
+    {
+      "id": "sample_a",
+      "label": "A采样",
+      "time_s": 0.049878562499999994,
+      "cycle_index": 997,
+      "phase_us": 28.5625
+    },
+    {
+      "id": "jeos",
+      "label": "JEOS",
+      "time_s": 0.049878874999999996,
+      "cycle_index": 997,
+      "phase_us": 28.874999999999996
+    },
+    {
+      "id": "current",
+      "label": "电流环",
+      "time_s": 0.049878874999999996,
+      "cycle_index": 997,
+      "phase_us": 28.874999999999996
+    },
+    {
+      "id": "speed",
+      "label": "速度环",
+      "time_s": 0.049878874999999996,
+      "cycle_index": 997,
+      "phase_us": 28.874999999999996
+    },
+    {
+      "id": "write",
+      "label": "CCR写入",
+      "time_s": 0.049883874999999994,
+      "cycle_index": 997,
+      "phase_us": 33.875
+    },
+    {
+      "id": "uev",
+      "label": "UEV机会",
+      "time_s": 0.0499,
+      "cycle_index": 998,
+      "phase_us": 0
+    },
+    {
+      "id": "apply",
+      "label": "CCR生效",
+      "time_s": 0.0499,
+      "cycle_index": 998,
+      "phase_us": 0
+    },
+    {
+      "id": "trigger",
+      "label": "触发",
+      "time_s": 0.049924375,
+      "cycle_index": 998,
+      "phase_us": 24.375
+    },
+    {
+      "id": "uev",
+      "label": "UEV机会",
+      "time_s": 0.049925,
+      "cycle_index": 998,
+      "phase_us": 24.999999999999996
+    },
+    {
+      "id": "sample_c",
+      "label": "C采样",
+      "time_s": 0.0499255625,
+      "cycle_index": 998,
+      "phase_us": 25.562499999999996
+    },
+    {
+      "id": "sample_b",
+      "label": "B采样",
+      "time_s": 0.049927062499999994,
+      "cycle_index": 998,
+      "phase_us": 27.062499999999996
+    },
+    {
+      "id": "sample_a",
+      "label": "A采样",
+      "time_s": 0.049928562499999996,
+      "cycle_index": 998,
+      "phase_us": 28.5625
+    },
+    {
+      "id": "jeos",
+      "label": "JEOS",
+      "time_s": 0.049928875,
+      "cycle_index": 998,
+      "phase_us": 28.874999999999996
+    },
+    {
+      "id": "current",
+      "label": "电流环",
+      "time_s": 0.049928875,
+      "cycle_index": 998,
+      "phase_us": 28.874999999999996
+    },
+    {
+      "id": "write",
+      "label": "CCR写入",
+      "time_s": 0.049933874999999996,
+      "cycle_index": 998,
+      "phase_us": 33.875
+    },
+    {
+      "id": "uev",
+      "label": "UEV机会",
+      "time_s": 0.049949999999999994,
+      "cycle_index": 999,
+      "phase_us": 0
+    },
+    {
+      "id": "apply",
+      "label": "CCR生效",
+      "time_s": 0.049949999999999994,
+      "cycle_index": 999,
+      "phase_us": 0
+    },
+    {
+      "id": "trigger",
+      "label": "触发",
+      "time_s": 0.049974374999999994,
+      "cycle_index": 999,
+      "phase_us": 24.375
+    },
+    {
+      "id": "uev",
+      "label": "UEV机会",
+      "time_s": 0.049975,
+      "cycle_index": 999,
+      "phase_us": 24.999999999999996
+    },
+    {
+      "id": "sample_c",
+      "label": "C采样",
+      "time_s": 0.049975562499999994,
+      "cycle_index": 999,
+      "phase_us": 25.562499999999996
+    },
+    {
+      "id": "sample_b",
+      "label": "B采样",
+      "time_s": 0.049977062499999995,
+      "cycle_index": 999,
+      "phase_us": 27.062499999999996
+    },
+    {
+      "id": "sample_a",
+      "label": "A采样",
+      "time_s": 0.0499785625,
+      "cycle_index": 999,
+      "phase_us": 28.5625
+    },
+    {
+      "id": "jeos",
+      "label": "JEOS",
+      "time_s": 0.049978875,
+      "cycle_index": 999,
+      "phase_us": 28.874999999999996
+    },
+    {
+      "id": "current",
+      "label": "电流环",
+      "time_s": 0.049978875,
+      "cycle_index": 999,
+      "phase_us": 28.874999999999996
+    },
+    {
+      "id": "speed",
+      "label": "速度环",
+      "time_s": 0.049978875,
+      "cycle_index": 999,
+      "phase_us": 28.874999999999996
+    },
+    {
+      "id": "write",
+      "label": "CCR写入",
+      "time_s": 0.049983875,
+      "cycle_index": 999,
+      "phase_us": 33.875
+    },
+    {
+      "id": "uev",
+      "label": "UEV机会",
+      "time_s": 0.049999999999999996,
+      "cycle_index": 1000,
+      "phase_us": 0
+    },
+    {
+      "id": "apply",
+      "label": "CCR生效",
+      "time_s": 0.049999999999999996,
+      "cycle_index": 1000,
+      "phase_us": 0
+    }
+  ]
+}

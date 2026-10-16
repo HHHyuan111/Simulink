@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "record_sha256": "d48498c98856b50022fec9a05f7e79ba743643c6345f86f60973b65d8067f467",
+  "source_run": "D:\\simulink\\modern\\teaching\\frequency\\speed_loop\\runs\\20261015_165731_876_ec8e8fe4",
+  "independent_raw_signals_exact": 24,
+  "exact_plotted_traces": 16,
+  "analysis_exact": true,
+  "linked_time_zoom": true,
+  "custom_model_and_workspace_preserved": true,
+  "d_q_archives_preserved": true,
+  "metrics": [
+    {
+      "amplitude_rpm": 20,
+      "rise_time_s": 0.0065000000000000023,
+      "settling_time_s": 0.045700000000000005,
+      "overshoot_percent": 15.694460456819947,
+      "dc_gain": 1.0000000020321533,
+      "tail_peak_error_percent": 1.3743813420674655E-6,
+      "reference_identity_error_rpm": 1.6653345369377348E-15,
+      "tail_drift_percent": 4.1438255493631004E-7,
+      "mechanical_balance_error_Nm": 1.7347234759768071E-18,
+      "max_iq_A": 0.31870281645171528,
+      "max_id_A": 2.461728661836538E-6,
+      "voltage_limit_residual_V": 5.5511151231257827E-17,
+      "pi_saturation_residual": 0
+    },
+    {
+      "amplitude_rpm": 10,
+      "rise_time_s": 0.0065000000000000023,
+      "settling_time_s": 0.045700000000000005,
+      "overshoot_percent": 15.694461075787181,
+      "dc_gain": 1.00000000203215,
+      "tail_peak_error_percent": 1.3743759907924868E-6,
+      "reference_identity_error_rpm": 8.8817841970012523E-16,
+      "tail_drift_percent": 4.1438189768427947E-7,
+      "mechanical_balance_error_Nm": 8.6736173798840355E-19,
+      "max_iq_A": 0.159351408069699,
+      "max_id_A": 6.1543232819270172E-7,
+      "voltage_limit_residual_V": 2.7755575615628914E-17,
+      "pi_saturation_residual": 0
+    }
+  ],
+  "speed_hold_sample_time": [
+    0.0001,
+    0
+  ],
+  "speed_integrator_sample_time": [
+    0.0001,
+    0
+  ]
+}

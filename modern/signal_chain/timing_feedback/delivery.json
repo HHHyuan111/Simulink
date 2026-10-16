@@ -1,0 +1,87 @@
+{
+  "regression_curves": [
+    40,
+    16
+  ],
+  "menu_callbacks": 4,
+  "new_raw_exact_curves": 24,
+  "full_200ms_replay_performed": false,
+  "passed": true,
+  "historical_prefix_signal_records": 54,
+  "reference_manifest_sha256": "f977cfaa62d8722221573d9a648f28d8d7bc91f0f6a462c1e09e4488a70ef353",
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "files": [
+    {
+      "sha256": "37a22de89eac226318977ce8ce191d12803ab2d0d31d287c652a199a5be6f67f",
+      "path": "modern/teaching/open_pmsm_timing_feedback.m"
+    },
+    {
+      "sha256": "6ce2d86439a58234fdbdd1a6a7c17f8f0b69a6a812a42e0480efb830a1bbc9e1",
+      "path": "modern/teaching/pmsm_sampling_comparison_menu.m"
+    },
+    {
+      "sha256": "d4e32017688418dd3238582c7a467d646d4f907bf38b33a0739694c93985a123",
+      "path": "modern/teaching/open_pmsm_sampling_lesson.m"
+    },
+    {
+      "sha256": "4fec9fdb012c8ec7e7ca70083dfcc8a7cb87f752a00defb49f590177cb2243aa",
+      "path": "modern/teaching/open_pmsm_sampling_comparison.m"
+    },
+    {
+      "sha256": "53dc8f9dcb92897515b202ba4e57af5bf54a4a78510bfd2dc874828cf5edfb7d",
+      "path": "modern/teaching/open_pmsm_feedback_effects.m"
+    },
+    {
+      "sha256": "fde56be868fcfa4d2ac532990122dcb0a74a86eb9062d1184143f433cf6b8d3c",
+      "path": "modern/signal_chain/run_timing_feedback.m"
+    },
+    {
+      "sha256": "7952a5e755c3b05f2153e60f282262d60fe9cd254ac1715c4b062689c2cd49ad",
+      "path": "modern/signal_chain/validate_timing_feedback.m"
+    },
+    {
+      "sha256": "cabd54462917a0d2e4d586582bf587603b8627b76a4c7830756b914c9eaa72ba",
+      "path": "modern/signal_chain/validate_timing_feedback_prefix.m"
+    },
+    {
+      "sha256": "405b3593e889c26bfee1fc31b9a261cacc6abdf54c6247e8cfd6a3fcacae566b",
+      "path": "modern/signal_chain/replay_timing_feedback.m"
+    },
+    {
+      "sha256": "f724a3105fcab3cd2068b582b7d3c2d139d37928debaf64d4e80b426d76cd93a",
+      "path": "modern/signal_chain/validate_feedback_effects_view.m"
+    },
+    {
+      "sha256": "94456c1b73b46e6a16e54b04eb95b8d149ca9c19a03bdf1b8876d23b3f64e665",
+      "path": "modern/signal_chain/timing_feedback_latest.json"
+    },
+    {
+      "sha256": "5de886033a93447982b8c997e540e48325bc3affd33cf7b64e262bf17adb57a5",
+      "path": "modern/signal_chain/timing_feedback/validation.json"
+    },
+    {
+      "sha256": "760c67a5007d214ec93b38207c31716752a4ba48cd8fd908e35f9c3976e9495a",
+      "path": "modern/signal_chain/timing_feedback/prefix_validation.json"
+    },
+    {
+      "sha256": "eec3f0f5afcdd9dc2da378634627aa9f6aa6b1dfbc5a41d8579d3068b750c939",
+      "path": "modern/signal_chain/timing_feedback/comparison.png"
+    },
+    {
+      "sha256": "4af92a83dcefb468674ebbf4ccbe8313f19547e1cb89fe1485c1a413ed941e4e",
+      "path": "modern/signal_chain/timing_feedback/comparison.fig"
+    },
+    {
+      "sha256": "0a7a04f45e26d1eb7fa504d88578bee1550344c26f4891605d44c812bb85729a",
+      "path": "modern/signal_chain/timing_feedback/README.md"
+    },
+    {
+      "sha256": "be7ab5314849d4960bcc4a9d624d4c5265d5720570597b96af6ebdb3b06ab6fc",
+      "path": "modern/signal_chain/feedback_effects/validation.json"
+    },
+    {
+      "sha256": "818e522d0045824d0f785921ad2c45ee73f0573904a1fe381d9ecc9eae1a200f",
+      "path": "modern/teaching/sampling_lesson/validation.json"
+    }
+  ]
+}

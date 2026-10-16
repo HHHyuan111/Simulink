@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "actual_simulations": 3,
+  "simulation_duration_s": 0.004,
+  "topics": [
+    "speed",
+    "sampling",
+    "power"
+  ],
+  "sdi_signal_records_exact": 62,
+  "duplicate_capture_reused": true,
+  "single_run_view_checked": true,
+  "latest_two_rolling_checked": true,
+  "actual_button_callbacks_checked": true,
+  "unrelated_runs_preserved": true,
+  "model_parameters_preserved": true,
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "scope": "Manual keep of actual outputs; native SDI overlay; time-domain records only, no algorithm performance claim."
+}

@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "frequency_points": 13,
+  "exact_plotted_traces": 130,
+  "linked_time_zoom": true,
+  "maximum_T_fit_difference": 9.4473560686447084E-10,
+  "maximum_L_fit_difference": 9.0044354382193564E-9,
+  "one_Ts_sample_shift_error_A": 8.3266726846886741E-17,
+  "invalid_frequency_rejected": true,
+  "bode_menu_checked": true,
+  "custom_model_and_workspace_preserved": true,
+  "archive_record_preserved": true
+}

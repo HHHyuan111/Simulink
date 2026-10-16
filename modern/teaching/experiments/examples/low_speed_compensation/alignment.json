@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "cycle_index": 8,
+  "absolute_angle_start_rad": 50.26548245743669,
+  "absolute_angle_end_rad": 56.548667764616276,
+  "method": "按真实转子电角度选择同一完整周期；未按电流峰值平移、未平滑、未插值重采样。",
+  "cases": [
+    {
+      "id": "reference",
+      "time_window_s": [
+        0.16800099999999998,
+        0.188001
+      ],
+      "sample_count": 20001,
+      "angle_window_deg": [
+        0.0013582764981124387,
+        359.99809298746186
+      ],
+      "current_sample_rms_ABC_A": [
+        3.4510942963166054,
+        3.4513885504084061,
+        3.4516307306788421
+      ]
+    },
+    {
+      "id": "factor",
+      "time_window_s": [
+        0.168038,
+        0.18803699999999998
+      ],
+      "sample_count": 20000,
+      "angle_window_deg": [
+        0.0075452633797351365,
+        359.9860875116575
+      ],
+      "current_sample_rms_ABC_A": [
+        3.4583702455115271,
+        3.4586323573215654,
+        3.4587970891003779
+      ]
+    },
+    {
+      "id": "compensated",
+      "time_window_s": [
+        0.168037,
+        0.18803599999999998
+      ],
+      "sample_count": 20000,
+      "angle_window_deg": [
+        0.010886322492714887,
+        359.98745610465409
+      ],
+      "current_sample_rms_ABC_A": [
+        3.4531298493015297,
+        3.4537956985975184,
+        3.4556505596529981
+      ]
+    }
+  ],
+  "startup": {
+    "definition": "各组−零死区组；不折回±180°；速度积分为50μs记录的梯形积分。",
+    "cases": [
+      {
+        "id": "factor",
+        "final_electrical_angle_difference_deg": -0.64426879251152391,
+        "integrated_speed_difference_deg": -0.6451207484335203,
+        "integration_residual_deg": 0.00085195592199638348
+      },
+      {
+        "id": "compensated",
+        "final_electrical_angle_difference_deg": -0.638992590440863,
+        "integrated_speed_difference_deg": -0.63983516941747087,
+        "integration_residual_deg": 0.00084257897660788839
+      }
+    ]
+  }
+}

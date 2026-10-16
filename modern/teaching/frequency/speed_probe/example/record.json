@@ -1,0 +1,167 @@
+{
+  "status": "complete",
+  "plan": {
+    "amplitudes_rpm": [
+      10,
+      5
+    ],
+    "sample_time_s": 5E-5,
+    "speed_task_s": 0.0001,
+    "analysis_sample_time_s": 0.0001,
+    "requested_frequency_Hz": [
+      20,
+      80,
+      250
+    ],
+    "settling_cycles": 2,
+    "minimum_settling_s": 0.1,
+    "measuring_cycles": 4,
+    "scope": "零负载、零速附近自由转子；原速度PI与电流内环；SVPWM周期平均电压，共同1us数值保持；三点试测，非完整带宽/裕度验收",
+    "samples_per_period": [
+      1000,
+      250,
+      80
+    ],
+    "frequency_Hz": [
+      20,
+      80,
+      250
+    ],
+    "segments": [
+      {
+        "start_tick": 400,
+        "measure_tick": 2400,
+        "end_tick": 6400,
+        "frequency_Hz": 20
+      },
+      {
+        "start_tick": 6400,
+        "measure_tick": 8400,
+        "end_tick": 9400,
+        "frequency_Hz": 80
+      },
+      {
+        "start_tick": 9400,
+        "measure_tick": 11400,
+        "end_tick": 11720,
+        "frequency_Hz": 250
+      }
+    ],
+    "duration_s": 0.58600000000000008
+  },
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "source_files": [
+    {
+      "path": "run_pmsm_speed_probe.m",
+      "sha256": "09bbce31822d64fb81f95978447914c6293d2bf673934f3db2c23311fc5ec329"
+    },
+    {
+      "path": "pmsm_speed_probe_plan.m",
+      "sha256": "06666d2a5a77bfbe0119f2629ff2ac60bc531a6df7cc19324920b608d6f18c69"
+    },
+    {
+      "path": "pmsm_sine_response.m",
+      "sha256": "8f42dea97c8f9939c4828b17eeb25f6499b0118ebe060f083bcbe3f1a407090b"
+    },
+    {
+      "path": "plot_pmsm_speed_probe.m",
+      "sha256": "e10d7aafe4878a1806011a61ae9e6502a46a9a588871a15ab599f51c65c6e0aa"
+    },
+    {
+      "path": "plot_pmsm_speed_step.m",
+      "sha256": "6665d2bdbf9bc2a115934265351427e2bd862df57c953bf1c24252800d709f82"
+    },
+    {
+      "path": "teach_values.m",
+      "sha256": "1bf38186e90d1cd49e8cee71a3168674490ffd8aed8a1192b6f58a2399deb6f1"
+    }
+  ],
+  "structure_restored": true,
+  "iq_reference_source": "PMSM_FOC_R2026a/From37",
+  "mechanical_source": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/dwm_dt",
+  "speed_hold_sample_time": [
+    0.0001,
+    0
+  ],
+  "speed_integrator_sample_time": [
+    0.0001,
+    0
+  ],
+  "main_model_unchanged": true,
+  "linearity_T": [
+    1.5642998089094433E-9,
+    1.2037346407887102E-9,
+    2.7993692379891221E-10
+  ],
+  "linearity_L": [
+    2.5617398804327786E-9,
+    1.2090475079565718E-9,
+    2.7200958360367677E-10
+  ],
+  "quality_passed": true,
+  "guards": [
+    {
+      "elapsed_s": 86.4808267,
+      "mechanical_balance_error_Nm": 1.7347234759768071E-18,
+      "max_iq_A": 0.19578710772013858,
+      "max_id_A": 2.2119215724458932E-6,
+      "voltage_limit_residual_V": 6.9388939039072284E-18,
+      "pi_saturation_residual": 0
+    },
+    {
+      "elapsed_s": 86.4419795,
+      "mechanical_balance_error_Nm": 4.3368086899420177E-19,
+      "max_iq_A": 0.097893553796205943,
+      "max_id_A": 5.5298039564042432E-7,
+      "voltage_limit_residual_V": 3.4694469519536142E-18,
+      "pi_saturation_residual": 0
+    }
+  ],
+  "T_real": [
+    0.94422751571117325,
+    0.089806371399661439,
+    -0.020442417654450061
+  ],
+  "T_imag": [
+    -0.60808750122521216,
+    -0.40345794218955328,
+    -0.13354005620056311
+  ],
+  "L_real": [
+    -0.850428186452547,
+    -0.081754045506191447,
+    -0.036532861314008812
+  ],
+  "L_imag": [
+    -1.6307817647638196,
+    -0.40702726494982644,
+    -0.12608399417897515
+  ],
+  "files": [
+    {
+      "path": "analysis.mat",
+      "sha256": "809b3b4043262491312e09642bef25312e3adb826ae7a0d068db3b2fc1575f8d"
+    },
+    {
+      "path": "probe_1_raw.mat",
+      "sha256": "826338d69c8404a12362f3d509cbc3874176c087bbe99ed8f000abdb249172b5"
+    },
+    {
+      "path": "probe_2_raw.mat",
+      "sha256": "8ab1b73481867bf49b3ab65ca365cb0609c0cf9dcd4a9b7f7f698d7f17fa456c"
+    },
+    {
+      "path": "reference_parameters.json",
+      "sha256": "3f048e78dcbb15121a444fd271359f09a04a830c704dbcfcd845277f8b172bf2"
+    },
+    {
+      "path": "response.fig",
+      "sha256": "c1df525ac13661163c140b1bf2889ecfff8dd796418ed4020f5c402bec9c791a"
+    },
+    {
+      "path": "response.png",
+      "sha256": "ff8f87f9f5ce3516a27e1faaa6602c1ddae000134dd820dea8add3a04be9b40d"
+    }
+  ]
+}

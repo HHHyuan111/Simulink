@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "archive_trace_count": 16,
+  "current_scope_reused": true,
+  "callbacks_checked": 3,
+  "time_zoom_linked": true,
+  "current_configuration_preserved": true,
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "source_folders": [
+    "D:\\simulink\\modern\\teaching\\frequency\\speed_loop\\runs\\20261015_165731_876_ec8e8fe4",
+    "D:\\simulink\\modern\\teaching\\frequency\\speed_probe\\runs\\20261015_171610_598_c9d579bd"
+  ],
+  "archive_record_sha256": [
+    "d48498c98856b50022fec9a05f7e79ba743643c6345f86f60973b65d8067f467",
+    "2203105d02d0b2b46115acb30e78f3fa46ec8206b543f1b7dc169ae28978781e"
+  ]
+}

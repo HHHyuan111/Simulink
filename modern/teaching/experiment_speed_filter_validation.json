@@ -1,0 +1,685 @@
+{
+  "all_passed": true,
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "reference_manifest_sha256": "f977cfaa62d8722221573d9a648f28d8d7bc91f0f6a462c1e09e4488a70ef353",
+  "checks": {
+    "only_count_feedback_route_extended": true,
+    "removal_and_task_rates_preserved": true,
+    "invalid_parameters_rejected": true,
+    "counts_filter_recursion_decomposition_and_actual_pi_input": true,
+    "unfiltered_first_50ms_26_signals_preserved": true,
+    "gui_preview_restore_run_report_and_stale_clear": true,
+    "main_reference_pi_and_layout_unchanged": true,
+    "all_66_signals_strictly_repeated": true,
+    "custom_parameters_and_unfiltered_32_signals_preserved": true,
+    "legacy_bias_42_signals_preserved": true,
+    "previous_feedback_default_and_custom_analysis_unchanged": true,
+    "tampered_filter_samples_rejected": true,
+    "note_correction_without_configuration_or_numeric_changes": true
+  },
+  "run_folders": {
+    "default_pair": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261014_003504_216_speed_filter_dcfcd102",
+    "repeated_pair": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261014_002041_304_speed_filter_c9dea098",
+    "custom_pair": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261014_002440_695_speed_filter_45fb10d0",
+    "legacy_bias": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261014_003000_168_current_bias_41f4d571",
+    "default_before_note_correction": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261014_001702_954_speed_filter_5816e41b",
+    "note_correction_replay": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261014_003504_216_speed_filter_dcfcd102"
+  },
+  "fixtures": {
+    "cutoff_20_200_1000_5000": true,
+    "off_is_exact_bypass": true,
+    "zero_initial_state_and_current_input_term": true,
+    "invalid_zero_input_state_decay_and_zero_publication": true,
+    "positive_negative_inputs": true,
+    "original_speed_hold_samples_output": true
+  },
+  "compiled": {
+    "filter_history": [
+      5E-5,
+      2.8875E-5
+    ],
+    "speed_hold": [
+      0.0001,
+      7.8875E-5
+    ]
+  },
+  "filter": {
+    "schema": 1,
+    "contract": {
+      "kind": "speed_filter_pair",
+      "counts_per_mechanical_turn": 10000,
+      "window_ticks": [
+        1,
+        2,
+        8
+      ],
+      "read_period_s": 5E-5,
+      "read_offset_s": 2.8875E-5,
+      "speed_period_s": 0.0001,
+      "event_step_s": 6.25E-8,
+      "rpm_per_count_step": [
+        120,
+        60,
+        15
+      ],
+      "firmware_commit": "48d6e86814ac6657b1313b4c92ef24c88f492e07",
+      "firmware_window_ticks": 2,
+      "firmware_history_depth": 8,
+      "source": "control_cycle_step在有效位置拍按foc_fs喂入speed_est_step；速度PI与测量宏不是该喂入频率",
+      "initialization": "计数反馈在完整历史前使用零并标无效，不回填真值；有效性仅观测，尚无启动门控或故障状态机",
+      "scope": "两组同一机械计数、窗口、真实时序、PI、初态、角度和工况，只切换速度滤波；各自闭环轨迹可改变，非位级等价。",
+      "feedback_on": [
+        true,
+        true
+      ],
+      "window_choice": [
+        2,
+        2
+      ],
+      "speed_filter": "firmware_first_order",
+      "angle_feedback": "原角度",
+      "filter_on": [
+        false,
+        true
+      ],
+      "cutoff_hz": 200,
+      "filter_a": 0.940882602558251,
+      "filter_b": 0.059117397441749042,
+      "filter_update_s": 5E-5,
+      "filter_initial_state": 0,
+      "filter_source": "AxDr_L control_filter.c: a=fs/(fs+2*pi*fc), b=1-a, y=b*x+a*y_prev；ctrl_fb_update每快环调用",
+      "filter_invalid_policy": "输入及发布零，内部状态仍按零输入递推；未模拟固件缺样保持与完整启动/故障状态机"
+    },
+    "cases": [
+      {
+        "id": "reference",
+        "label": "无滤波",
+        "feedback_on": true,
+        "window_ticks": 2,
+        "pi_input_max_check_error_rpm": 0,
+        "invalid_speed_task_samples": 1,
+        "feedback_error_rms_rpm": 24.930931538975194,
+        "iq_command_step_rms_A": 0.507575797213948,
+        "torque_std_Nm": 0.013457773170486268,
+        "final_speed_rpm": 3054.9704831865379,
+        "windows": [
+          {
+            "window_ticks": 1,
+            "rpm_per_count": 120,
+            "quantization_rms_rpm": 47.20169627485933,
+            "window_error_rms_rpm": 0.13877141161898321,
+            "total_error_rms_rpm": 47.195239344873826
+          },
+          {
+            "window_ticks": 2,
+            "rpm_per_count": 60,
+            "quantization_rms_rpm": 24.762902568178504,
+            "window_error_rms_rpm": 0.28110271925664637,
+            "total_error_rms_rpm": 24.732719182081794
+          },
+          {
+            "window_ticks": 8,
+            "rpm_per_count": 15,
+            "quantization_rms_rpm": 6.0713806344161005,
+            "window_error_rms_rpm": 1.0920091423183607,
+            "total_error_rms_rpm": 6.1580682244350617
+          }
+        ],
+        "filter_on": false,
+        "cutoff_hz": 200,
+        "filter_a": 0.940882602558251,
+        "filter_b": 0.059117397441749042,
+        "filter_recursion_max_error_rpm": 0,
+        "raw_quantization_rms_rpm": 24.762902568178504,
+        "quantization_contribution_rms_rpm": 24.762902568178504,
+        "filter_dynamic_error_rms_rpm": 0,
+        "window_average_error_rms_rpm": 0.28110271925664637,
+        "decomposition_max_residual_rpm": 3.5527136788005009E-15
+      },
+      {
+        "id": "factor",
+        "label": "加滤波",
+        "feedback_on": true,
+        "window_ticks": 2,
+        "pi_input_max_check_error_rpm": 0,
+        "invalid_speed_task_samples": 1,
+        "feedback_error_rms_rpm": 5.5039728724593466,
+        "iq_command_step_rms_A": 0.023307359743292969,
+        "torque_std_Nm": 0.010809751477404749,
+        "final_speed_rpm": 3047.8280849188468,
+        "windows": [
+          {
+            "window_ticks": 1,
+            "rpm_per_count": 120,
+            "quantization_rms_rpm": 50.508983215025374,
+            "window_error_rms_rpm": 0.14885903026702302,
+            "total_error_rms_rpm": 50.509347246848463
+          },
+          {
+            "window_ticks": 2,
+            "rpm_per_count": 60,
+            "quantization_rms_rpm": 24.90269842810299,
+            "window_error_rms_rpm": 0.30503515628782868,
+            "total_error_rms_rpm": 24.904601512728131
+          },
+          {
+            "window_ticks": 8,
+            "rpm_per_count": 15,
+            "quantization_rms_rpm": 6.2728390631488571,
+            "window_error_rms_rpm": 1.2438890257848672,
+            "total_error_rms_rpm": 6.3854118909017883
+          }
+        ],
+        "filter_on": true,
+        "cutoff_hz": 200,
+        "filter_a": 0.940882602558251,
+        "filter_b": 0.059117397441749042,
+        "filter_recursion_max_error_rpm": 0,
+        "raw_quantization_rms_rpm": 24.90269842810299,
+        "quantization_contribution_rms_rpm": 1.3313789773906688,
+        "filter_dynamic_error_rms_rpm": 5.05940840951904,
+        "window_average_error_rms_rpm": 0.30503515628782868,
+        "decomposition_max_residual_rpm": 5.1869619710487314E-12
+      }
+    ]
+  },
+  "previous_50ms_prefix": [
+    {
+      "signal": "log_TL",
+      "matched_original_samples": 1000,
+      "exact_time": true,
+      "exact_data": true
+    },
+    {
+      "signal": "log_Te",
+      "matched_original_samples": 1000,
+      "exact_time": true,
+      "exact_data": true
+    },
+    {
+      "signal": "log_encoder",
+      "matched_original_samples": 1000,
+      "exact_time": true,
+      "exact_data": true
+    },
+    {
+      "signal": "log_encoder_control",
+      "matched_original_samples": 1000,
+      "exact_time": true,
+      "exact_data": true
+    },
+    {
+      "signal": "log_encoder_mechanical",
+      "matched_original_samples": 1000,
+      "exact_time": true,
+      "exact_data": true
+    },
+    {
+      "signal": "log_iabc_adc",
+      "matched_original_samples": 1000,
+      "exact_time": true,
+      "exact_data": true
+    },
+    {
+      "signal": "log_iabc_filter",
+      "matched_original_samples": 1000,
+      "exact_time": true,
+      "exact_data": true
+    },
+    {
+      "signal": "log_iabc_meas",
+      "matched_original_samples": 1000,
+      "exact_time": true,
+      "exact_data": true
+    },
+    {
+      "signal": "log_iabc_noise",
+      "matched_original_samples": 1000,
+      "exact_time": true,
+      "exact_data": true
+    },
+    {
+      "signal": "log_iabc_true",
+      "matched_original_samples": 1000,
+      "exact_time": true,
+      "exact_data": true
+    },
+    {
+      "signal": "log_id",
+      "matched_original_samples": 1000,
+      "exact_time": true,
+      "exact_data": true
+    },
+    {
+      "signal": "log_iq",
+      "matched_original_samples": 1000,
+      "exact_time": true,
+      "exact_data": true
+    },
+    {
+      "signal": "log_iq_ref",
+      "matched_original_samples": 1000,
+      "exact_time": true,
+      "exact_data": true
+    },
+    {
+      "signal": "log_nref",
+      "matched_original_samples": 1000,
+      "exact_time": true,
+      "exact_data": true
+    },
+    {
+      "signal": "log_speed",
+      "matched_original_samples": 1000,
+      "exact_time": true,
+      "exact_data": true
+    },
+    {
+      "signal": "log_speed_control",
+      "matched_original_samples": 500,
+      "exact_time": true,
+      "exact_data": true
+    },
+    {
+      "signal": "log_speed_feedback",
+      "matched_original_samples": 500,
+      "exact_time": true,
+      "exact_data": true
+    },
+    {
+      "signal": "log_speed_long",
+      "matched_original_samples": 1000,
+      "exact_time": true,
+      "exact_data": true
+    },
+    {
+      "signal": "log_speed_short",
+      "matched_original_samples": 1000,
+      "exact_time": true,
+      "exact_data": true
+    },
+    {
+      "signal": "log_speed_window",
+      "matched_original_samples": 1000,
+      "exact_time": true,
+      "exact_data": true
+    },
+    {
+      "signal": "log_theta_error",
+      "matched_original_samples": 1000,
+      "exact_time": true,
+      "exact_data": true
+    },
+    {
+      "signal": "log_theta_meas",
+      "matched_original_samples": 1000,
+      "exact_time": true,
+      "exact_data": true
+    },
+    {
+      "signal": "log_theta_true",
+      "matched_original_samples": 1000,
+      "exact_time": true,
+      "exact_data": true
+    },
+    {
+      "signal": "obs_id_ref",
+      "matched_original_samples": 1000,
+      "exact_time": true,
+      "exact_data": true
+    },
+    {
+      "signal": "obs_state",
+      "matched_original_samples": 1000,
+      "exact_time": true,
+      "exact_data": true
+    },
+    {
+      "signal": "obs_voltage",
+      "matched_original_samples": 1000,
+      "exact_time": true,
+      "exact_data": true
+    }
+  ],
+  "custom_filter": {
+    "schema": 1,
+    "contract": {
+      "kind": "speed_filter_pair",
+      "counts_per_mechanical_turn": 5000,
+      "window_ticks": [
+        1,
+        3,
+        12
+      ],
+      "read_period_s": 5E-5,
+      "read_offset_s": 2.8875E-5,
+      "speed_period_s": 0.0001,
+      "event_step_s": 6.25E-8,
+      "rpm_per_count_step": [
+        240,
+        80,
+        20
+      ],
+      "firmware_commit": "48d6e86814ac6657b1313b4c92ef24c88f492e07",
+      "firmware_window_ticks": 2,
+      "firmware_history_depth": 8,
+      "source": "control_cycle_step在有效位置拍按foc_fs喂入speed_est_step；速度PI与测量宏不是该喂入频率",
+      "initialization": "计数反馈在完整历史前使用零并标无效，不回填真值；有效性仅观测，尚无启动门控或故障状态机",
+      "scope": "两组同一机械计数、窗口、真实时序、PI、初态、角度和工况，只切换速度滤波；各自闭环轨迹可改变，非位级等价。",
+      "feedback_on": [
+        true,
+        true
+      ],
+      "window_choice": [
+        2,
+        2
+      ],
+      "speed_filter": "firmware_first_order",
+      "angle_feedback": "原角度",
+      "filter_on": [
+        false,
+        true
+      ],
+      "cutoff_hz": 500,
+      "filter_a": 0.86424475183636684,
+      "filter_b": 0.13575524816363316,
+      "filter_update_s": 5E-5,
+      "filter_initial_state": 0,
+      "filter_source": "AxDr_L control_filter.c: a=fs/(fs+2*pi*fc), b=1-a, y=b*x+a*y_prev；ctrl_fb_update每快环调用",
+      "filter_invalid_policy": "输入及发布零，内部状态仍按零输入递推；未模拟固件缺样保持与完整启动/故障状态机"
+    },
+    "cases": [
+      {
+        "id": "reference",
+        "label": "无滤波",
+        "feedback_on": true,
+        "window_ticks": 3,
+        "pi_input_max_check_error_rpm": 0,
+        "invalid_speed_task_samples": 1,
+        "feedback_error_rms_rpm": 33.809643172676139,
+        "iq_command_step_rms_A": 0.58881777018965065,
+        "torque_std_Nm": 0.018869840692839125,
+        "final_speed_rpm": 3050.3176188069951,
+        "windows": [
+          {
+            "window_ticks": 1,
+            "rpm_per_count": 240,
+            "quantization_rms_rpm": 75.190392342022108,
+            "window_error_rms_rpm": 0.17239244869707626,
+            "total_error_rms_rpm": 75.176562662321217
+          },
+          {
+            "window_ticks": 3,
+            "rpm_per_count": 80,
+            "quantization_rms_rpm": 33.597139040487676,
+            "window_error_rms_rpm": 0.51164030269164784,
+            "total_error_rms_rpm": 33.49545887820868
+          },
+          {
+            "window_ticks": 12,
+            "rpm_per_count": 20,
+            "quantization_rms_rpm": 8.2176469503653209,
+            "window_error_rms_rpm": 1.8178830011184091,
+            "total_error_rms_rpm": 8.4758669041421921
+          }
+        ],
+        "filter_on": false,
+        "cutoff_hz": 500,
+        "filter_a": 0.86424475183636684,
+        "filter_b": 0.13575524816363316,
+        "filter_recursion_max_error_rpm": 0,
+        "raw_quantization_rms_rpm": 33.597139040487676,
+        "quantization_contribution_rms_rpm": 33.597139040487676,
+        "filter_dynamic_error_rms_rpm": 0,
+        "window_average_error_rms_rpm": 0.51164030269164784,
+        "decomposition_max_residual_rpm": 7.1054273576010019E-15
+      },
+      {
+        "id": "factor",
+        "label": "加滤波",
+        "feedback_on": true,
+        "window_ticks": 3,
+        "pi_input_max_check_error_rpm": 0,
+        "invalid_speed_task_samples": 1,
+        "feedback_error_rms_rpm": 7.2529203829209745,
+        "iq_command_step_rms_A": 0.096071836162909333,
+        "torque_std_Nm": 0.011617137566463712,
+        "final_speed_rpm": 3052.0095517615273,
+        "windows": [
+          {
+            "window_ticks": 1,
+            "rpm_per_count": 240,
+            "quantization_rms_rpm": 77.720750384419958,
+            "window_error_rms_rpm": 0.13795335564022917,
+            "total_error_rms_rpm": 77.7183728062572
+          },
+          {
+            "window_ticks": 3,
+            "rpm_per_count": 80,
+            "quantization_rms_rpm": 35.070090966175307,
+            "window_error_rms_rpm": 0.42653870343777328,
+            "total_error_rms_rpm": 35.049905224956696
+          },
+          {
+            "window_ticks": 12,
+            "rpm_per_count": 20,
+            "quantization_rms_rpm": 9.1053860392679145,
+            "window_error_rms_rpm": 1.7177863450475932,
+            "total_error_rms_rpm": 9.2938007104995517
+          }
+        ],
+        "filter_on": true,
+        "cutoff_hz": 500,
+        "filter_a": 0.86424475183636684,
+        "filter_b": 0.13575524816363316,
+        "filter_recursion_max_error_rpm": 0,
+        "raw_quantization_rms_rpm": 35.070090966175307,
+        "quantization_contribution_rms_rpm": 6.9652748006185288,
+        "filter_dynamic_error_rms_rpm": 1.8300517135616325,
+        "window_average_error_rms_rpm": 0.42653870343777328,
+        "decomposition_max_residual_rpm": 2.5757174171303632E-12
+      }
+    ]
+  },
+  "previous_custom_32_comparison": [
+    {
+      "signal": "log_speed",
+      "same_time": true,
+      "same_data": true,
+      "same_time_grid": true
+    },
+    {
+      "signal": "log_nref",
+      "same_time": true,
+      "same_data": true,
+      "same_time_grid": true
+    },
+    {
+      "signal": "log_id",
+      "same_time": true,
+      "same_data": true,
+      "same_time_grid": true
+    },
+    {
+      "signal": "log_iq",
+      "same_time": true,
+      "same_data": true,
+      "same_time_grid": true
+    },
+    {
+      "signal": "log_iq_ref",
+      "same_time": true,
+      "same_data": true,
+      "same_time_grid": true
+    },
+    {
+      "signal": "obs_id_ref",
+      "same_time": true,
+      "same_data": true,
+      "same_time_grid": true
+    },
+    {
+      "signal": "log_Te",
+      "same_time": true,
+      "same_data": true,
+      "same_time_grid": true
+    },
+    {
+      "signal": "log_TL",
+      "same_time": true,
+      "same_data": true,
+      "same_time_grid": true
+    },
+    {
+      "signal": "obs_state",
+      "same_time": true,
+      "same_data": true,
+      "same_time_grid": true
+    },
+    {
+      "signal": "log_iabc_true",
+      "same_time": true,
+      "same_data": true,
+      "same_time_grid": true
+    },
+    {
+      "signal": "log_iabc_meas",
+      "same_time": true,
+      "same_data": true,
+      "same_time_grid": true
+    },
+    {
+      "signal": "log_iabc_noise",
+      "same_time": true,
+      "same_data": true,
+      "same_time_grid": true
+    },
+    {
+      "signal": "log_iabc_adc",
+      "same_time": true,
+      "same_data": true,
+      "same_time_grid": true
+    },
+    {
+      "signal": "log_iabc_filter",
+      "same_time": true,
+      "same_data": true,
+      "same_time_grid": true
+    },
+    {
+      "signal": "obs_voltage",
+      "same_time": true,
+      "same_data": true,
+      "same_time_grid": true
+    },
+    {
+      "signal": "obs_current_fast",
+      "same_time": true,
+      "same_data": true,
+      "same_time_grid": true
+    },
+    {
+      "signal": "log_theta_true",
+      "same_time": true,
+      "same_data": true,
+      "same_time_grid": true
+    },
+    {
+      "signal": "log_theta_meas",
+      "same_time": true,
+      "same_data": true,
+      "same_time_grid": true
+    },
+    {
+      "signal": "log_theta_error",
+      "same_time": true,
+      "same_data": true,
+      "same_time_grid": true
+    },
+    {
+      "signal": "obs_dead_requested",
+      "same_time": true,
+      "same_data": true,
+      "same_time_grid": true
+    },
+    {
+      "signal": "obs_dead_gates",
+      "same_time": true,
+      "same_data": true,
+      "same_time_grid": true
+    },
+    {
+      "signal": "obs_adc_timing",
+      "same_time": true,
+      "same_data": true,
+      "same_time_grid": true
+    },
+    {
+      "signal": "obs_pwm_timing",
+      "same_time": true,
+      "same_data": true,
+      "same_time_grid": true
+    },
+    {
+      "signal": "log_Tcm_applied",
+      "same_time": true,
+      "same_data": true,
+      "same_time_grid": true
+    },
+    {
+      "signal": "log_encoder",
+      "same_time": true,
+      "same_data": true,
+      "same_time_grid": true
+    },
+    {
+      "signal": "log_encoder_mechanical",
+      "same_time": true,
+      "same_data": true,
+      "same_time_grid": true
+    },
+    {
+      "signal": "log_encoder_control",
+      "same_time": true,
+      "same_data": true,
+      "same_time_grid": true
+    },
+    {
+      "signal": "log_speed_short",
+      "same_time": true,
+      "same_data": true,
+      "same_time_grid": true
+    },
+    {
+      "signal": "log_speed_window",
+      "same_time": true,
+      "same_data": true,
+      "same_time_grid": true
+    },
+    {
+      "signal": "log_speed_long",
+      "same_time": true,
+      "same_data": true,
+      "same_time_grid": true
+    },
+    {
+      "signal": "log_speed_control",
+      "same_time": true,
+      "same_data": true,
+      "same_time_grid": true
+    },
+    {
+      "signal": "log_speed_feedback",
+      "same_time": true,
+      "same_data": true,
+      "same_time_grid": true
+    }
+  ],
+  "note_correction": {
+    "old": "三组同一真实时序、62.5ns网格、JEOS角度读取；速度反馈沿用原路径。原模型临时接入可展开的编码器模块，结束恢复连接，不保存SLX。 一次仿真并行三路测速；角度仍走理想路径，编码器仅提供观测计数；机械速度单位rpm，不乘极对数。 本场景计数测速接原速度任务保持之前，三组独立闭环；实际PI输入另行记录。",
+    "current": "两组同一真实时序、62.5ns网格和JEOS计数读取；指定窗口计数测速接速度PI，仅滤波开关不同。滤波20kHz，原速度保持/PI10kHz，零初态，角度沿用原路径；控制记录完整，高频诊断尾部4000点。不保存SLX。",
+    "all_other_plan_fields_identical": true,
+    "strictly_repeated_signals": 66
+  }
+}

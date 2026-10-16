@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "exact_or_tolerance_checked_curves": 16,
+  "noise_sequence_paired": true,
+  "independent_noise_decomposition_checked": true,
+  "time_axes_linked": true,
+  "psd_axis_independent": true,
+  "observer_removed_and_configuration_preserved": true,
+  "menu_checked": true,
+  "callbacks_checked": 2,
+  "archive_read_only": true,
+  "source_run": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261013_142400_056_noise_filter_639410f8",
+  "source_record_sha256": "97fec65633e21233346c37de3a4d2df3867528b5a85edb4a983b1bd1ad792d6a",
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d"
+}

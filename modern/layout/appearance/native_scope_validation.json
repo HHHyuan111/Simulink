@@ -1,0 +1,723 @@
+{
+  "schema": 1,
+  "kind": "native_control_scope_v1",
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "passed": true,
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "definition": {
+    "path": "PMSM_FOC_R2026a/跟踪观测/控制响应",
+    "layout": [
+      2,
+      2
+    ],
+    "style": "blackonwhite",
+    "signal_names": [
+      "n_ref",
+      "n_true",
+      "id_ref",
+      "id_true",
+      "id_fb",
+      "Te",
+      "TL",
+      "iq_ref",
+      "iq_true",
+      "iq_fb"
+    ]
+  },
+  "original_checks": [
+    {
+      "case": "ideal",
+      "signal": "log_SW",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "log_TL",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "log_Tcm",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "log_Tcm_applied",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "log_Tcm_requested",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "log_Te",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "log_UDC",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "log_iabc_adc",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "log_iabc_filter",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "log_iabc_meas",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "log_iabc_noise",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "log_iabc_true",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "log_id",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "log_iq",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "log_iq_ref",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "log_nref",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "log_speed",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "log_theta_error",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "log_theta_meas",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "log_theta_true",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "log_v_alpha",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "log_v_beta",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "obs_adc_codes",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "obs_adc_timing",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "obs_analog_current",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "obs_aw_d",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "obs_aw_q",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "obs_carrier_fast",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "obs_current_fast",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "obs_dead_bridge",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "obs_dead_comp",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "obs_dead_gates",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "obs_dead_requested",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "obs_gates_fast",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "obs_id_ref",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "obs_mod",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "obs_phase_actual",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "obs_phase_ideal",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "obs_pi_d",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "obs_pi_q",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "obs_pi_speed",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "obs_power_drop",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "obs_pwm_timing",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "obs_sector",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "obs_state",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "obs_torque_fast",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "obs_vd",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "obs_vd_actual",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "obs_vdq_fast",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "obs_voltage",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "obs_vq",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "ideal",
+      "signal": "obs_vq_actual",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "log_SW",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "log_TL",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "log_Tcm",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "log_Tcm_applied",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "log_Tcm_requested",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "log_Te",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "log_UDC",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "log_iabc_adc",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "log_iabc_filter",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "log_iabc_meas",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "log_iabc_noise",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "log_iabc_true",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "log_id",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "log_iq",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "log_iq_ref",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "log_nref",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "log_speed",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "log_theta_error",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "log_theta_meas",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "log_theta_true",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "log_v_alpha",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "log_v_beta",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "obs_adc_codes",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "obs_adc_timing",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "obs_analog_current",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "obs_aw_d",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "obs_aw_q",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "obs_carrier_fast",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "obs_current_fast",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "obs_dead_bridge",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "obs_dead_comp",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "obs_dead_gates",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "obs_dead_requested",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "obs_gates_fast",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "obs_id_ref",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "obs_mod",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "obs_phase_actual",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "obs_phase_ideal",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "obs_pi_d",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "obs_pi_q",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "obs_pi_speed",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "obs_power_drop",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "obs_pwm_timing",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "obs_sector",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "obs_state",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "obs_torque_fast",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "obs_vd",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "obs_vd_actual",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "obs_vdq_fast",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "obs_voltage",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "obs_vq",
+      "time_equal": true,
+      "data_equal": true
+    },
+    {
+      "case": "angle_bias",
+      "signal": "obs_vq_actual",
+      "time_equal": true,
+      "data_equal": true
+    }
+  ],
+  "scope_checks": [
+    {
+      "case": "ideal",
+      "display": 1,
+      "time_equal": true,
+      "max_error_A_or_rpm_or_Nm": 0
+    },
+    {
+      "case": "ideal",
+      "display": 2,
+      "time_equal": true,
+      "max_error_A_or_rpm_or_Nm": 0
+    },
+    {
+      "case": "ideal",
+      "display": 3,
+      "time_equal": true,
+      "max_error_A_or_rpm_or_Nm": 0
+    },
+    {
+      "case": "ideal",
+      "display": 4,
+      "time_equal": true,
+      "max_error_A_or_rpm_or_Nm": 0
+    },
+    {
+      "case": "angle_bias",
+      "display": 1,
+      "time_equal": true,
+      "max_error_A_or_rpm_or_Nm": 0
+    },
+    {
+      "case": "angle_bias",
+      "display": 2,
+      "time_equal": true,
+      "max_error_A_or_rpm_or_Nm": 0
+    },
+    {
+      "case": "angle_bias",
+      "display": 3,
+      "time_equal": true,
+      "max_error_A_or_rpm_or_Nm": 0
+    },
+    {
+      "case": "angle_bias",
+      "display": 4,
+      "time_equal": true,
+      "max_error_A_or_rpm_or_Nm": 0
+    }
+  ],
+  "original_structure_restored": true,
+  "fixed_reference_unchanged": true,
+  "gui_reference_wrapper_passed": true,
+  "dangling_lines_before": 0,
+  "dangling_lines_after": 0,
+  "source_files": [
+    {
+      "path": "pmsm_native_scope.m",
+      "sha256": "6502bc9cd741912109102a31e0409fbc91e5bd3f60e3060f62139516b1bd57c9"
+    },
+    {
+      "path": "pmsm_presented_call.m",
+      "sha256": "419b38ce37694f3b514eba7d8455f7372c133bec2383858badc3a1312f362219"
+    },
+    {
+      "path": "validate_pmsm_native_scope.m",
+      "sha256": "25069c3cfa54e0e2dc504176d1c41728ada4fbc5c468896cfa28445aef276b07"
+    }
+  ],
+  "scope": "Two 20ms cases; exact original numerical logs, 10 native Scope channels, wrapper and restoration."
+}

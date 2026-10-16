@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "known_frequency_Hz": 1000,
+  "known_peak_A": 1,
+  "psd_integral_A2": 0.5,
+  "sample_count": 2000,
+  "bin_spacing_Hz": 50,
+  "native_layout": [
+    2,
+    2
+  ]
+}

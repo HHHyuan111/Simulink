@@ -1,0 +1,31 @@
+{
+  "shared_legend": "top",
+  "physical_simulations_rerun": 0,
+  "files": [
+    {
+      "path": "modern/teaching/open_pmsm_timing_filter.m",
+      "sha256": "45821d10842e45192e739f6afca8a8af4a6624a8ae13956688098264473a3f9e"
+    },
+    {
+      "path": "modern/signal_chain/timing_filter_data.m",
+      "sha256": "1f5405c2e57786addac6a5a85c57634c3cc5e492114923ea7a8a913d5bdd3e49"
+    },
+    {
+      "path": "modern/signal_chain/timing_filter/comparison.png",
+      "sha256": "b8c92bc49660ac5e44572ec60025080c68e8a5da43664235ca6174bd4ed50da4"
+    },
+    {
+      "path": "modern/signal_chain/timing_filter/comparison.fig",
+      "sha256": "265dcb0ca5fa6257425def8245fb3bfcafd901c95e91577ebbf5b5bb286bb620"
+    },
+    {
+      "path": "modern/signal_chain/timing_filter/README.md",
+      "sha256": "af8baeb7a0ad61f2a65f789515eb5760faf44e05984f656c73954efcdc0380e8"
+    }
+  ],
+  "increment_legend": "northeast",
+  "labels": "Explicit computation times 5us/15us and filter on/off",
+  "source_record_sha256": "c0f257993b8ae7f5e49a8768b45baf9f5bfa861f797208480de6eb598ddea488",
+  "exported": true,
+  "previous_numeric_validation_sha256": "38b97bce82146597fa7ba34888da26afe8d578b87c9cc409a1b6a18f9cc6e7f1"
+}

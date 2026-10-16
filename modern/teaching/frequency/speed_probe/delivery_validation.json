@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "record_sha256": "2203105d02d0b2b46115acb30e78f3fa46ec8206b543f1b7dc169ae28978781e",
+  "source_run": "D:\\simulink\\modern\\teaching\\frequency\\speed_probe\\runs\\20261015_171610_598_c9d579bd",
+  "independent_raw_signals_exact": 24,
+  "exact_plotted_traces": 48,
+  "fit_analysis_exact": true,
+  "linked_time_zoom": true,
+  "custom_model_and_workspace_preserved": true,
+  "existing_archives_preserved": true,
+  "linearity_T": [
+    1.5642998089094433e-09,
+    1.2037346407887102e-09,
+    2.799369237989122e-10
+  ],
+  "linearity_L": [
+    2.5617398804327786e-09,
+    1.2090475079565718e-09,
+    2.7200958360367677e-10
+  ],
+  "viewer_sources": [
+    {
+      "path": "open_pmsm_speed_probe.m",
+      "sha256": "160a0afb3ac9842c4b12a850e44f57e350d5bca11f2312639e080824919394f0"
+    },
+    {
+      "path": "open_pmsm_speed_probe_time.m",
+      "sha256": "e7e3f61b043d5e19ca176de5a4c6e02e0051c919568e3f32e952e43caae8813b"
+    },
+    {
+      "path": "verify_pmsm_speed_probe.m",
+      "sha256": "fc0b921a4d06871d718e258c63997c05ddb2f2753bc06db43a8e1e6db6311d4f"
+    },
+    {
+      "path": "repeat_pmsm_speed_probe.m",
+      "sha256": "683366d622f1f00fdf46affb2e8a73d33ae95d74faecc12abec374fdbb394a24"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "verification_level": "Static model inspection and Python arithmetic reproduction; no MATLAB compile or simulation",
+  "git_fsck_exit_code": 0,
+  "zip_crc_checks": [
+    {
+      "path": "1_Asynchronous_Motor_FOC/Asynchronous_Motor_FOC_SVPWM_SheeperXu.slx",
+      "zip_crc_ok": true,
+      "bad_entry": null
+    },
+    {
+      "path": "2_PMSM_FOC_MATLAB/PMSM_FOC_SheeperXu/PMSM_FOC.slx",
+      "zip_crc_ok": true,
+      "bad_entry": null
+    },
+    {
+      "path": "2_PMSM_FOC_MATLAB/PMSM_FOC_SheeperXu/PMSM_FOC.slx.r2020b",
+      "zip_crc_ok": true,
+      "bad_entry": null
+    },
+    {
+      "path": "2_PMSM_FOC_MATLAB/PMSM_FOC_SheeperXu/PMSM_FOC.slxc",
+      "zip_crc_ok": true,
+      "bad_entry": null
+    },
+    {
+      "path": "2_PMSM_FOC_MATLAB/PMSM_FOC_SheeperXu/SVPWM.slxc",
+      "zip_crc_ok": true,
+      "bad_entry": null
+    }
+  ],
+  "findings": {
+    "asynchronous_nominal_expression": {
+      "source_expression": "1.5+04",
+      "evaluated_value": 5.5,
+      "unit": "VA",
+      "intended_value_not_confirmed": true
+    },
+    "asynchronous_speed_step": {
+      "time_seconds": 2,
+      "model_stop_seconds": 1.5,
+      "step_occurs_during_default_simulation": false
+    },
+    "pmsm_overmodulation": {
+      "source": "PMSM_FOC.slx: simulink/stateflow/chart_20.xml",
+      "input": {
+        "alpha_volts": 12,
+        "beta_volts": 12,
+        "Vdc_volts": 24,
+        "Ts_seconds": 5e-05
+      },
+      "sector": 3,
+      "original_t1_plus_t2_seconds": 5.915063509461096e-05,
+      "scaled_t1_seconds": 1.3397459621556136e-05,
+      "scaled_t2_seconds": 3.8185397039521196e-05,
+      "scaled_t1_plus_t2_seconds": 5.158285666107733e-05,
+      "t0_seconds": -7.914283305386636e-07,
+      "Tcm_seconds": [
+        -3.957141652693318e-07,
+        6.303015645508736e-06,
+        2.5395714165269335e-05
+      ],
+      "carrier_range_seconds": [
+        0,
+        2.5e-05
+      ],
+      "negative_zero_vector_time": true,
+      "threshold_out_of_carrier_range": true
+    },
+    "pmsm_speed_PI_sampling": {
+      "mask_expression": "1/fwb",
+      "mask_value_seconds": 0.02,
+      "internal_expression": "dt",
+      "internal_value_seconds": 5e-05
+    },
+    "pmsm_power_consistency": {
+      "script_Pn_watts": 200,
+      "computed_Tn_Nm": 0.29807999999999996,
+      "computed_mechanical_power_at_3000rpm_watts": 93.64459381820454,
+      "torque_for_200W_at_3000rpm_Nm": 0.6366197723675814,
+      "speed_PI_torque_limit_Nm": 0.35769599999999996
+    }
+  }
+}

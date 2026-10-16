@@ -1,0 +1,858 @@
+{
+  "passed": true,
+  "raw_exact_curves": 24,
+  "events_independently_checked": true,
+  "two_time_scales_linked_separately": true,
+  "metrics_table_checked": true,
+  "configuration_preserved": true,
+  "source": {
+    "source_folder": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261016_095048_642_timing_deadline_4cdce242",
+    "source_record_sha256": "47f07dfb49b2d0302b63f30ac9981b4d56cb2ef7c03bf16e39e0b3785308169c",
+    "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+    "labels": [
+      "5 μs",
+      "10.5 μs",
+      "15 μs"
+    ],
+    "statistics_window_s": [
+      0.18,
+      0.2
+    ],
+    "metrics": [
+      [
+        0.12867049586678606,
+        0.0034829936060721939,
+        0.22225004145894817
+      ],
+      [
+        0.14277791559795297,
+        0.00436996109282606,
+        0.20203863070712968
+      ],
+      [
+        0.14277791559795297,
+        0.00436996109282606,
+        0.20203863070712968
+      ]
+    ],
+    "events": {
+      "schema": 1,
+      "scope": "同架构受控计算耗时对照；UEV先处理、CCR后写入为已有模型同拍约定，不代表实板零裕量保证。",
+      "event_step_s": 6.25E-8,
+      "trigger_phase_us": 10,
+      "sample_offsets_CBA_us": [
+        11.1875,
+        12.6875,
+        14.1875
+      ],
+      "jeos_phase_us": 14.5,
+      "speed_period_us": 99.999999999999986,
+      "speed_offset_us": 64.5,
+      "plot_window_s": [
+        0.1999,
+        0.19999999999999998
+      ],
+      "cases": [
+        {
+          "id": "reference",
+          "label": "赶上",
+          "compute_us": 5,
+          "write_phase_us": 19.5,
+          "apply_phase_us": 24.999999999999996,
+          "boundary_margin_us": 5.5,
+          "write_wait_us": 5.5,
+          "jeos_to_apply_us": 10.5,
+          "sample_error_max_ABC_A": [
+            0,
+            0,
+            0
+          ],
+          "applied_command_max_error_s": 0,
+          "paired_command_count": 5,
+          "coincident_write_count": 0,
+          "commands": [
+            {
+              "sequence": 3996,
+              "jeos_time_s": 0.19976449999999998,
+              "write_time_s": 0.1997695,
+              "apply_time_s": 0.19977499999999998,
+              "compute_us": 5,
+              "write_wait_us": 5.5,
+              "jeos_to_apply_us": 10.5
+            },
+            {
+              "sequence": 3997,
+              "jeos_time_s": 0.19981449999999998,
+              "write_time_s": 0.19981949999999998,
+              "apply_time_s": 0.199825,
+              "compute_us": 5,
+              "write_wait_us": 5.5,
+              "jeos_to_apply_us": 10.5
+            },
+            {
+              "sequence": 3998,
+              "jeos_time_s": 0.1998645,
+              "write_time_s": 0.1998695,
+              "apply_time_s": 0.199875,
+              "compute_us": 5,
+              "write_wait_us": 5.5,
+              "jeos_to_apply_us": 10.5
+            },
+            {
+              "sequence": 3999,
+              "jeos_time_s": 0.1999145,
+              "write_time_s": 0.1999195,
+              "apply_time_s": 0.199925,
+              "compute_us": 5,
+              "write_wait_us": 5.5,
+              "jeos_to_apply_us": 10.5
+            },
+            {
+              "sequence": 4000,
+              "jeos_time_s": 0.1999645,
+              "write_time_s": 0.1999695,
+              "apply_time_s": 0.19997499999999999,
+              "compute_us": 5,
+              "write_wait_us": 5.5,
+              "jeos_to_apply_us": 10.5
+            }
+          ]
+        },
+        {
+          "id": "factor",
+          "label": "同边界",
+          "compute_us": 10.5,
+          "write_phase_us": 24.999999999999996,
+          "apply_phase_us": 49.999999999999993,
+          "boundary_margin_us": 0,
+          "write_wait_us": 24.999999999999996,
+          "jeos_to_apply_us": 35.499999999999993,
+          "sample_error_max_ABC_A": [
+            0,
+            0,
+            0
+          ],
+          "applied_command_max_error_s": 0,
+          "paired_command_count": 5,
+          "coincident_write_count": 5,
+          "commands": [
+            {
+              "sequence": 3996,
+              "jeos_time_s": 0.19976449999999998,
+              "write_time_s": 0.19977499999999998,
+              "apply_time_s": 0.1998,
+              "compute_us": 10.5,
+              "write_wait_us": 24.999999999999996,
+              "jeos_to_apply_us": 35.499999999999993
+            },
+            {
+              "sequence": 3997,
+              "jeos_time_s": 0.19981449999999998,
+              "write_time_s": 0.199825,
+              "apply_time_s": 0.19985,
+              "compute_us": 10.5,
+              "write_wait_us": 24.999999999999996,
+              "jeos_to_apply_us": 35.499999999999993
+            },
+            {
+              "sequence": 3998,
+              "jeos_time_s": 0.1998645,
+              "write_time_s": 0.199875,
+              "apply_time_s": 0.1999,
+              "compute_us": 10.5,
+              "write_wait_us": 24.999999999999996,
+              "jeos_to_apply_us": 35.499999999999993
+            },
+            {
+              "sequence": 3999,
+              "jeos_time_s": 0.1999145,
+              "write_time_s": 0.199925,
+              "apply_time_s": 0.19995,
+              "compute_us": 10.5,
+              "write_wait_us": 24.999999999999996,
+              "jeos_to_apply_us": 35.499999999999993
+            },
+            {
+              "sequence": 4000,
+              "jeos_time_s": 0.1999645,
+              "write_time_s": 0.19997499999999999,
+              "apply_time_s": 0.19999999999999998,
+              "compute_us": 10.5,
+              "write_wait_us": 24.999999999999996,
+              "jeos_to_apply_us": 35.499999999999993
+            }
+          ]
+        },
+        {
+          "id": "late",
+          "label": "错过",
+          "compute_us": 14.999999999999998,
+          "write_phase_us": 29.5,
+          "apply_phase_us": 49.999999999999993,
+          "boundary_margin_us": -4.5,
+          "write_wait_us": 20.5,
+          "jeos_to_apply_us": 35.499999999999993,
+          "sample_error_max_ABC_A": [
+            0,
+            0,
+            0
+          ],
+          "applied_command_max_error_s": 0,
+          "paired_command_count": 5,
+          "coincident_write_count": 0,
+          "commands": [
+            {
+              "sequence": 3996,
+              "jeos_time_s": 0.19976449999999998,
+              "write_time_s": 0.1997795,
+              "apply_time_s": 0.1998,
+              "compute_us": 14.999999999999998,
+              "write_wait_us": 20.5,
+              "jeos_to_apply_us": 35.499999999999993
+            },
+            {
+              "sequence": 3997,
+              "jeos_time_s": 0.19981449999999998,
+              "write_time_s": 0.1998295,
+              "apply_time_s": 0.19985,
+              "compute_us": 14.999999999999998,
+              "write_wait_us": 20.5,
+              "jeos_to_apply_us": 35.499999999999993
+            },
+            {
+              "sequence": 3998,
+              "jeos_time_s": 0.1998645,
+              "write_time_s": 0.1998795,
+              "apply_time_s": 0.1999,
+              "compute_us": 14.999999999999998,
+              "write_wait_us": 20.5,
+              "jeos_to_apply_us": 35.499999999999993
+            },
+            {
+              "sequence": 3999,
+              "jeos_time_s": 0.1999145,
+              "write_time_s": 0.19992949999999998,
+              "apply_time_s": 0.19995,
+              "compute_us": 14.999999999999998,
+              "write_wait_us": 20.5,
+              "jeos_to_apply_us": 35.499999999999993
+            },
+            {
+              "sequence": 4000,
+              "jeos_time_s": 0.1999645,
+              "write_time_s": 0.1999795,
+              "apply_time_s": 0.19999999999999998,
+              "compute_us": 14.999999999999998,
+              "write_wait_us": 20.5,
+              "jeos_to_apply_us": 35.499999999999993
+            }
+          ]
+        }
+      ],
+      "events": [
+        {
+          "case_id": "reference",
+          "case_label": "赶上",
+          "event": "jeos",
+          "time_s": 0.19976449999999998,
+          "cycle_index": 3995,
+          "phase_us": 14.5
+        },
+        {
+          "case_id": "reference",
+          "case_label": "赶上",
+          "event": "jeos",
+          "time_s": 0.19981449999999998,
+          "cycle_index": 3996,
+          "phase_us": 14.5
+        },
+        {
+          "case_id": "reference",
+          "case_label": "赶上",
+          "event": "jeos",
+          "time_s": 0.1998645,
+          "cycle_index": 3997,
+          "phase_us": 14.5
+        },
+        {
+          "case_id": "reference",
+          "case_label": "赶上",
+          "event": "jeos",
+          "time_s": 0.1999145,
+          "cycle_index": 3998,
+          "phase_us": 14.5
+        },
+        {
+          "case_id": "reference",
+          "case_label": "赶上",
+          "event": "jeos",
+          "time_s": 0.1999645,
+          "cycle_index": 3999,
+          "phase_us": 14.5
+        },
+        {
+          "case_id": "reference",
+          "case_label": "赶上",
+          "event": "write",
+          "time_s": 0.1997695,
+          "cycle_index": 3995,
+          "phase_us": 19.5
+        },
+        {
+          "case_id": "reference",
+          "case_label": "赶上",
+          "event": "write",
+          "time_s": 0.19981949999999998,
+          "cycle_index": 3996,
+          "phase_us": 19.5
+        },
+        {
+          "case_id": "reference",
+          "case_label": "赶上",
+          "event": "write",
+          "time_s": 0.1998695,
+          "cycle_index": 3997,
+          "phase_us": 19.5
+        },
+        {
+          "case_id": "reference",
+          "case_label": "赶上",
+          "event": "write",
+          "time_s": 0.1999195,
+          "cycle_index": 3998,
+          "phase_us": 19.5
+        },
+        {
+          "case_id": "reference",
+          "case_label": "赶上",
+          "event": "write",
+          "time_s": 0.1999695,
+          "cycle_index": 3999,
+          "phase_us": 19.5
+        },
+        {
+          "case_id": "reference",
+          "case_label": "赶上",
+          "event": "uev",
+          "time_s": 0.19977499999999998,
+          "cycle_index": 3995,
+          "phase_us": 24.999999999999996
+        },
+        {
+          "case_id": "reference",
+          "case_label": "赶上",
+          "event": "uev",
+          "time_s": 0.1998,
+          "cycle_index": 3996,
+          "phase_us": 0
+        },
+        {
+          "case_id": "reference",
+          "case_label": "赶上",
+          "event": "uev",
+          "time_s": 0.199825,
+          "cycle_index": 3996,
+          "phase_us": 24.999999999999996
+        },
+        {
+          "case_id": "reference",
+          "case_label": "赶上",
+          "event": "uev",
+          "time_s": 0.19985,
+          "cycle_index": 3997,
+          "phase_us": 0
+        },
+        {
+          "case_id": "reference",
+          "case_label": "赶上",
+          "event": "uev",
+          "time_s": 0.199875,
+          "cycle_index": 3997,
+          "phase_us": 24.999999999999996
+        },
+        {
+          "case_id": "reference",
+          "case_label": "赶上",
+          "event": "uev",
+          "time_s": 0.1999,
+          "cycle_index": 3998,
+          "phase_us": 0
+        },
+        {
+          "case_id": "reference",
+          "case_label": "赶上",
+          "event": "uev",
+          "time_s": 0.199925,
+          "cycle_index": 3998,
+          "phase_us": 24.999999999999996
+        },
+        {
+          "case_id": "reference",
+          "case_label": "赶上",
+          "event": "uev",
+          "time_s": 0.19995,
+          "cycle_index": 3999,
+          "phase_us": 0
+        },
+        {
+          "case_id": "reference",
+          "case_label": "赶上",
+          "event": "uev",
+          "time_s": 0.19997499999999999,
+          "cycle_index": 3999,
+          "phase_us": 24.999999999999996
+        },
+        {
+          "case_id": "reference",
+          "case_label": "赶上",
+          "event": "uev",
+          "time_s": 0.19999999999999998,
+          "cycle_index": 4000,
+          "phase_us": 0
+        },
+        {
+          "case_id": "reference",
+          "case_label": "赶上",
+          "event": "apply",
+          "time_s": 0.19977499999999998,
+          "cycle_index": 3995,
+          "phase_us": 24.999999999999996
+        },
+        {
+          "case_id": "reference",
+          "case_label": "赶上",
+          "event": "apply",
+          "time_s": 0.199825,
+          "cycle_index": 3996,
+          "phase_us": 24.999999999999996
+        },
+        {
+          "case_id": "reference",
+          "case_label": "赶上",
+          "event": "apply",
+          "time_s": 0.199875,
+          "cycle_index": 3997,
+          "phase_us": 24.999999999999996
+        },
+        {
+          "case_id": "reference",
+          "case_label": "赶上",
+          "event": "apply",
+          "time_s": 0.199925,
+          "cycle_index": 3998,
+          "phase_us": 24.999999999999996
+        },
+        {
+          "case_id": "reference",
+          "case_label": "赶上",
+          "event": "apply",
+          "time_s": 0.19997499999999999,
+          "cycle_index": 3999,
+          "phase_us": 24.999999999999996
+        },
+        {
+          "case_id": "factor",
+          "case_label": "同边界",
+          "event": "jeos",
+          "time_s": 0.19976449999999998,
+          "cycle_index": 3995,
+          "phase_us": 14.5
+        },
+        {
+          "case_id": "factor",
+          "case_label": "同边界",
+          "event": "jeos",
+          "time_s": 0.19981449999999998,
+          "cycle_index": 3996,
+          "phase_us": 14.5
+        },
+        {
+          "case_id": "factor",
+          "case_label": "同边界",
+          "event": "jeos",
+          "time_s": 0.1998645,
+          "cycle_index": 3997,
+          "phase_us": 14.5
+        },
+        {
+          "case_id": "factor",
+          "case_label": "同边界",
+          "event": "jeos",
+          "time_s": 0.1999145,
+          "cycle_index": 3998,
+          "phase_us": 14.5
+        },
+        {
+          "case_id": "factor",
+          "case_label": "同边界",
+          "event": "jeos",
+          "time_s": 0.1999645,
+          "cycle_index": 3999,
+          "phase_us": 14.5
+        },
+        {
+          "case_id": "factor",
+          "case_label": "同边界",
+          "event": "write",
+          "time_s": 0.19977499999999998,
+          "cycle_index": 3995,
+          "phase_us": 24.999999999999996
+        },
+        {
+          "case_id": "factor",
+          "case_label": "同边界",
+          "event": "write",
+          "time_s": 0.199825,
+          "cycle_index": 3996,
+          "phase_us": 24.999999999999996
+        },
+        {
+          "case_id": "factor",
+          "case_label": "同边界",
+          "event": "write",
+          "time_s": 0.199875,
+          "cycle_index": 3997,
+          "phase_us": 24.999999999999996
+        },
+        {
+          "case_id": "factor",
+          "case_label": "同边界",
+          "event": "write",
+          "time_s": 0.199925,
+          "cycle_index": 3998,
+          "phase_us": 24.999999999999996
+        },
+        {
+          "case_id": "factor",
+          "case_label": "同边界",
+          "event": "write",
+          "time_s": 0.19997499999999999,
+          "cycle_index": 3999,
+          "phase_us": 24.999999999999996
+        },
+        {
+          "case_id": "factor",
+          "case_label": "同边界",
+          "event": "uev",
+          "time_s": 0.19977499999999998,
+          "cycle_index": 3995,
+          "phase_us": 24.999999999999996
+        },
+        {
+          "case_id": "factor",
+          "case_label": "同边界",
+          "event": "uev",
+          "time_s": 0.1998,
+          "cycle_index": 3996,
+          "phase_us": 0
+        },
+        {
+          "case_id": "factor",
+          "case_label": "同边界",
+          "event": "uev",
+          "time_s": 0.199825,
+          "cycle_index": 3996,
+          "phase_us": 24.999999999999996
+        },
+        {
+          "case_id": "factor",
+          "case_label": "同边界",
+          "event": "uev",
+          "time_s": 0.19985,
+          "cycle_index": 3997,
+          "phase_us": 0
+        },
+        {
+          "case_id": "factor",
+          "case_label": "同边界",
+          "event": "uev",
+          "time_s": 0.199875,
+          "cycle_index": 3997,
+          "phase_us": 24.999999999999996
+        },
+        {
+          "case_id": "factor",
+          "case_label": "同边界",
+          "event": "uev",
+          "time_s": 0.1999,
+          "cycle_index": 3998,
+          "phase_us": 0
+        },
+        {
+          "case_id": "factor",
+          "case_label": "同边界",
+          "event": "uev",
+          "time_s": 0.199925,
+          "cycle_index": 3998,
+          "phase_us": 24.999999999999996
+        },
+        {
+          "case_id": "factor",
+          "case_label": "同边界",
+          "event": "uev",
+          "time_s": 0.19995,
+          "cycle_index": 3999,
+          "phase_us": 0
+        },
+        {
+          "case_id": "factor",
+          "case_label": "同边界",
+          "event": "uev",
+          "time_s": 0.19997499999999999,
+          "cycle_index": 3999,
+          "phase_us": 24.999999999999996
+        },
+        {
+          "case_id": "factor",
+          "case_label": "同边界",
+          "event": "uev",
+          "time_s": 0.19999999999999998,
+          "cycle_index": 4000,
+          "phase_us": 0
+        },
+        {
+          "case_id": "factor",
+          "case_label": "同边界",
+          "event": "apply",
+          "time_s": 0.1998,
+          "cycle_index": 3996,
+          "phase_us": 0
+        },
+        {
+          "case_id": "factor",
+          "case_label": "同边界",
+          "event": "apply",
+          "time_s": 0.19985,
+          "cycle_index": 3997,
+          "phase_us": 0
+        },
+        {
+          "case_id": "factor",
+          "case_label": "同边界",
+          "event": "apply",
+          "time_s": 0.1999,
+          "cycle_index": 3998,
+          "phase_us": 0
+        },
+        {
+          "case_id": "factor",
+          "case_label": "同边界",
+          "event": "apply",
+          "time_s": 0.19995,
+          "cycle_index": 3999,
+          "phase_us": 0
+        },
+        {
+          "case_id": "factor",
+          "case_label": "同边界",
+          "event": "apply",
+          "time_s": 0.19999999999999998,
+          "cycle_index": 4000,
+          "phase_us": 0
+        },
+        {
+          "case_id": "late",
+          "case_label": "错过",
+          "event": "jeos",
+          "time_s": 0.19976449999999998,
+          "cycle_index": 3995,
+          "phase_us": 14.5
+        },
+        {
+          "case_id": "late",
+          "case_label": "错过",
+          "event": "jeos",
+          "time_s": 0.19981449999999998,
+          "cycle_index": 3996,
+          "phase_us": 14.5
+        },
+        {
+          "case_id": "late",
+          "case_label": "错过",
+          "event": "jeos",
+          "time_s": 0.1998645,
+          "cycle_index": 3997,
+          "phase_us": 14.5
+        },
+        {
+          "case_id": "late",
+          "case_label": "错过",
+          "event": "jeos",
+          "time_s": 0.1999145,
+          "cycle_index": 3998,
+          "phase_us": 14.5
+        },
+        {
+          "case_id": "late",
+          "case_label": "错过",
+          "event": "jeos",
+          "time_s": 0.1999645,
+          "cycle_index": 3999,
+          "phase_us": 14.5
+        },
+        {
+          "case_id": "late",
+          "case_label": "错过",
+          "event": "write",
+          "time_s": 0.1997795,
+          "cycle_index": 3995,
+          "phase_us": 29.5
+        },
+        {
+          "case_id": "late",
+          "case_label": "错过",
+          "event": "write",
+          "time_s": 0.1998295,
+          "cycle_index": 3996,
+          "phase_us": 29.5
+        },
+        {
+          "case_id": "late",
+          "case_label": "错过",
+          "event": "write",
+          "time_s": 0.1998795,
+          "cycle_index": 3997,
+          "phase_us": 29.5
+        },
+        {
+          "case_id": "late",
+          "case_label": "错过",
+          "event": "write",
+          "time_s": 0.19992949999999998,
+          "cycle_index": 3998,
+          "phase_us": 29.5
+        },
+        {
+          "case_id": "late",
+          "case_label": "错过",
+          "event": "write",
+          "time_s": 0.1999795,
+          "cycle_index": 3999,
+          "phase_us": 29.5
+        },
+        {
+          "case_id": "late",
+          "case_label": "错过",
+          "event": "uev",
+          "time_s": 0.19977499999999998,
+          "cycle_index": 3995,
+          "phase_us": 24.999999999999996
+        },
+        {
+          "case_id": "late",
+          "case_label": "错过",
+          "event": "uev",
+          "time_s": 0.1998,
+          "cycle_index": 3996,
+          "phase_us": 0
+        },
+        {
+          "case_id": "late",
+          "case_label": "错过",
+          "event": "uev",
+          "time_s": 0.199825,
+          "cycle_index": 3996,
+          "phase_us": 24.999999999999996
+        },
+        {
+          "case_id": "late",
+          "case_label": "错过",
+          "event": "uev",
+          "time_s": 0.19985,
+          "cycle_index": 3997,
+          "phase_us": 0
+        },
+        {
+          "case_id": "late",
+          "case_label": "错过",
+          "event": "uev",
+          "time_s": 0.199875,
+          "cycle_index": 3997,
+          "phase_us": 24.999999999999996
+        },
+        {
+          "case_id": "late",
+          "case_label": "错过",
+          "event": "uev",
+          "time_s": 0.1999,
+          "cycle_index": 3998,
+          "phase_us": 0
+        },
+        {
+          "case_id": "late",
+          "case_label": "错过",
+          "event": "uev",
+          "time_s": 0.199925,
+          "cycle_index": 3998,
+          "phase_us": 24.999999999999996
+        },
+        {
+          "case_id": "late",
+          "case_label": "错过",
+          "event": "uev",
+          "time_s": 0.19995,
+          "cycle_index": 3999,
+          "phase_us": 0
+        },
+        {
+          "case_id": "late",
+          "case_label": "错过",
+          "event": "uev",
+          "time_s": 0.19997499999999999,
+          "cycle_index": 3999,
+          "phase_us": 24.999999999999996
+        },
+        {
+          "case_id": "late",
+          "case_label": "错过",
+          "event": "uev",
+          "time_s": 0.19999999999999998,
+          "cycle_index": 4000,
+          "phase_us": 0
+        },
+        {
+          "case_id": "late",
+          "case_label": "错过",
+          "event": "apply",
+          "time_s": 0.1998,
+          "cycle_index": 3996,
+          "phase_us": 0
+        },
+        {
+          "case_id": "late",
+          "case_label": "错过",
+          "event": "apply",
+          "time_s": 0.19985,
+          "cycle_index": 3997,
+          "phase_us": 0
+        },
+        {
+          "case_id": "late",
+          "case_label": "错过",
+          "event": "apply",
+          "time_s": 0.1999,
+          "cycle_index": 3998,
+          "phase_us": 0
+        },
+        {
+          "case_id": "late",
+          "case_label": "错过",
+          "event": "apply",
+          "time_s": 0.19995,
+          "cycle_index": 3999,
+          "phase_us": 0
+        },
+        {
+          "case_id": "late",
+          "case_label": "错过",
+          "event": "apply",
+          "time_s": 0.19999999999999998,
+          "cycle_index": 4000,
+          "phase_us": 0
+        }
+      ]
+    },
+    "boundary_late_equal_physical_signals": 7,
+    "scope": "同事件架构、同62.5ns网格与原PI；仅计算耗时不同。边界同拍按UEV先处理的模型约定，不是实板边界裕量保证。"
+  }
+}

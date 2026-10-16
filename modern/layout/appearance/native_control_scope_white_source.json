@@ -1,0 +1,14 @@
+{
+  "kind": "native_scope_desktop_preview",
+  "duration_s": 0.2,
+  "layout": [
+    2,
+    2
+  ],
+  "style": "blackonwhite",
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "preview_mat_sha256": "8407fe5c9decda67ed9320184f75a6307dc98c128d6681707a16aad4432ffdb4",
+  "image_sha256": "e5c1a03e204ae8ffc215830d3aa06a878e00f6b0ade4f804e5f0bec0d88ba387",
+  "validation_file": "native_scope_validation.json",
+  "note": "原生Scope白底2×2实际截图；200ms当前模型运行。数值回归范围为理想/角度偏置两种20ms工况。"
+}

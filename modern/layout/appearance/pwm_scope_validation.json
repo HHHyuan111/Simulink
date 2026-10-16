@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "original_log_checks": 104,
+  "source_checks": 12,
+  "real_event_counts_trigger_JEOS_UEV_write_latch": [
+    20,
+    20,
+    41,
+    20,
+    20
+  ],
+  "structure_restored": true,
+  "wrapper_normal_and_exception": true,
+  "definition": {
+    "path": "PMSM_FOC_R2026a/时序观测/PWM与采样",
+    "layout": [
+      2,
+      2
+    ],
+    "style": "blackonwhite"
+  },
+  "sources": [
+    {
+      "path": "pmsm_pwm_scope.m",
+      "sha256": "32984e671035c27b77918bb2455821ef5537175638dc3ddaf7cd3cfca4788483"
+    },
+    {
+      "path": "pmsm_presented_call.m",
+      "sha256": "72f68d235ca5edf45d17b6d9ea420bcb02cfd2e0eb9a580e1d81c847a2cadbad"
+    },
+    {
+      "path": "validate_pmsm_pwm_scope.m",
+      "sha256": "c05d68f78eebbc6d88e0ec0303690a220ce0dee20c47383a345b4afa254543fd"
+    }
+  ],
+  "scope": "Ideal and real timing, 1ms each. Native grid checked at 62.5ns. Not full operating-range validation."
+}

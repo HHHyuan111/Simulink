@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "known_tone_psd_area": true,
+  "parseval_check": true,
+  "white_noise_ratio_and_H1": true,
+  "invalid_inputs_rejected": 3,
+  "repeat_exact": true,
+  "source_run_id": "20261013_142400_056_noise_filter_639410f8",
+  "source_record_sha256": "97fec65633e21233346c37de3a4d2df3867528b5a85edb4a983b1bd1ad792d6a",
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "derived_manifest_sha256": "f71e64f6d752999a6ac7d971359d16fc2cf668b6f2e9a8c5ad9c0c4a5efeb788"
+}

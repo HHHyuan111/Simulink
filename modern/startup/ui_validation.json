@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "native_scope_layout": [
+    2,
+    2
+  ],
+  "scope_bounds": [
+    80,
+    60,
+    1120,
+    800
+  ],
+  "manual_entry_simulated": true,
+  "structure_and_reference_restored": true
+}

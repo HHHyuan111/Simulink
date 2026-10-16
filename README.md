@@ -1,6 +1,8 @@
 
 # Electric Machine Simulation Models
 
+当前 PMSM 教学仿真阶段版本：[2026-10-16](modern/VERSION_2026-10-16.md)。MATLAB R2026a 中进入 `modern`，运行 `open_pmsm_model`。
+
 A collection of MATLAB-based simulation models and control algorithms for electrical machines.
 
 This repository provides simulation resources for electrical machine modeling, control algorithm development, and academic research.

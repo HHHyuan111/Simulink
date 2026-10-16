@@ -1,0 +1,938 @@
+[
+  {
+    "case": "ideal",
+    "signal": "log_SW",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "log_TL",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "log_Tcm",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "log_Tcm_applied",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "log_Tcm_requested",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "log_Te",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "log_UDC",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "log_iabc_adc",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "log_iabc_filter",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "log_iabc_meas",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "log_iabc_noise",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "log_iabc_true",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "log_id",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "log_iq",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "log_iq_ref",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "log_nref",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "log_speed",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "log_theta_error",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "log_theta_meas",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "log_theta_true",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "log_v_alpha",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "log_v_beta",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "obs_adc_codes",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "obs_adc_timing",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "obs_analog_current",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "obs_aw_d",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "obs_aw_q",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "obs_carrier_fast",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "obs_current_fast",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "obs_dead_bridge",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "obs_dead_comp",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "obs_dead_gates",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "obs_dead_requested",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "obs_gates_fast",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "obs_id_ref",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "obs_mod",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "obs_phase_actual",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "obs_phase_ideal",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "obs_pi_d",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "obs_pi_q",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "obs_pi_speed",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "obs_power_drop",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "obs_pwm_timing",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "obs_sector",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "obs_state",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "obs_torque_fast",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "obs_vd",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "obs_vd_actual",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "obs_vdq_fast",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "obs_voltage",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "obs_vq",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "ideal",
+    "signal": "obs_vq_actual",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "log_SW",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "log_TL",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "log_Tcm",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "log_Tcm_applied",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "log_Tcm_requested",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "log_Te",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "log_UDC",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "log_iabc_adc",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "log_iabc_filter",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "log_iabc_meas",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "log_iabc_noise",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "log_iabc_true",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "log_id",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "log_iq",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "log_iq_ref",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "log_nref",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "log_speed",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "log_theta_error",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "log_theta_meas",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "log_theta_true",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "log_v_alpha",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "log_v_beta",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "obs_adc_codes",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "obs_adc_timing",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "obs_analog_current",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "obs_aw_d",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "obs_aw_q",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "obs_carrier_fast",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "obs_current_fast",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "obs_dead_bridge",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "obs_dead_comp",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "obs_dead_gates",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "obs_dead_requested",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "obs_gates_fast",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "obs_id_ref",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "obs_mod",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "obs_phase_actual",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "obs_phase_ideal",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "obs_pi_d",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "obs_pi_q",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "obs_pi_speed",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "obs_power_drop",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "obs_pwm_timing",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "obs_sector",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "obs_state",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "obs_torque_fast",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "obs_vd",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "obs_vd_actual",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "obs_vdq_fast",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "obs_voltage",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "obs_vq",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "sampling_chain",
+    "signal": "obs_vq_actual",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "log_SW",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "log_TL",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "log_Tcm",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "log_Tcm_applied",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "log_Tcm_requested",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "log_Te",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "log_UDC",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "log_iabc_adc",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "log_iabc_filter",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "log_iabc_meas",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "log_iabc_noise",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "log_iabc_true",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "log_id",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "log_iq",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "log_iq_ref",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "log_nref",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "log_speed",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "log_theta_error",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "log_theta_meas",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "log_theta_true",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "log_v_alpha",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "log_v_beta",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "obs_adc_codes",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "obs_adc_timing",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "obs_analog_current",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "obs_aw_d",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "obs_aw_q",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "obs_carrier_fast",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "obs_current_fast",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "obs_dead_bridge",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "obs_dead_comp",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "obs_dead_gates",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "obs_dead_requested",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "obs_gates_fast",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "obs_id_ref",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "obs_mod",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "obs_phase_actual",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "obs_phase_ideal",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "obs_pi_d",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "obs_pi_q",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "obs_pi_speed",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "obs_power_drop",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "obs_pwm_timing",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "obs_sector",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "obs_state",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "obs_torque_fast",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "obs_vd",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "obs_vd_actual",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "obs_vdq_fast",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "obs_voltage",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "obs_vq",
+    "time_equal": true,
+    "data_equal": true
+  },
+  {
+    "case": "event_sampling",
+    "signal": "obs_vq_actual",
+    "time_equal": true,
+    "data_equal": true
+  }
+]

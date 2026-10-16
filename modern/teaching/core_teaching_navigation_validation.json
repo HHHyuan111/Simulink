@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "primary_topics": [
+    "速度控制",
+    "电流采样",
+    "死区与补偿"
+  ],
+  "callbacks_checked": 3,
+  "current_configuration_preserved": true,
+  "graph_restored": true,
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "reference_manifest_sha256": "f977cfaa62d8722221573d9a648f28d8d7bc91f0f6a462c1e09e4488a70ef353"
+}

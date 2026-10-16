@@ -1,0 +1,108 @@
+{
+  "status": "complete",
+  "plan": {
+    "amplitudes_rpm": [
+      20,
+      10
+    ],
+    "sample_time_s": 5E-5,
+    "speed_task_s": 0.0001,
+    "step_time_s": 0.02,
+    "duration_s": 0.25,
+    "dc_start_s": 0.2,
+    "minimum_verified_tail_s": 0.025,
+    "scope": "零负载自由转子；原速度PI与d/q电流环；原SVPWM周期平均电压适配，共同1us数值延迟；非实板标定"
+  },
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "source_files": [
+    {
+      "path": "run_pmsm_speed_step.m",
+      "sha256": "6faa5b0ae4e6f8aca8bce83ca949885172820eeff6a9be6eb20c9bfbf873e60b"
+    },
+    {
+      "path": "pmsm_speed_step_metrics.m",
+      "sha256": "96e6976a182e07bb08d5dea117f25874bb5bbb5c6a7ba8f69fc3ce6bb571fa4d"
+    },
+    {
+      "path": "plot_pmsm_speed_step.m",
+      "sha256": "6665d2bdbf9bc2a115934265351427e2bd862df57c953bf1c24252800d709f82"
+    },
+    {
+      "path": "teach_values.m",
+      "sha256": "1bf38186e90d1cd49e8cee71a3168674490ffd8aed8a1192b6f58a2399deb6f1"
+    }
+  ],
+  "structure_restored": true,
+  "iq_reference_source": "PMSM_FOC_R2026a/From37",
+  "mechanical_source": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/dwm_dt",
+  "normalized_speed_difference": 7.2088539304626664E-10,
+  "speed_hold_sample_time": [
+    0.0001,
+    0
+  ],
+  "speed_integrator_sample_time": [
+    0.0001,
+    0
+  ],
+  "main_model_unchanged": true,
+  "metrics": [
+    {
+      "amplitude_rpm": 20,
+      "rise_time_s": 0.0065000000000000023,
+      "settling_time_s": 0.045700000000000005,
+      "overshoot_percent": 15.694460456819947,
+      "dc_gain": 1.0000000020321533,
+      "tail_peak_error_percent": 1.3743813420674655E-6,
+      "reference_identity_error_rpm": 1.6653345369377348E-15,
+      "tail_drift_percent": 4.1438255493631004E-7,
+      "mechanical_balance_error_Nm": 1.7347234759768071E-18,
+      "max_iq_A": 0.31870281645171528,
+      "max_id_A": 2.461728661836538E-6,
+      "voltage_limit_residual_V": 5.5511151231257827E-17,
+      "pi_saturation_residual": 0
+    },
+    {
+      "amplitude_rpm": 10,
+      "rise_time_s": 0.0065000000000000023,
+      "settling_time_s": 0.045700000000000005,
+      "overshoot_percent": 15.694461075787181,
+      "dc_gain": 1.00000000203215,
+      "tail_peak_error_percent": 1.3743759907924868E-6,
+      "reference_identity_error_rpm": 8.8817841970012523E-16,
+      "tail_drift_percent": 4.1438189768427947E-7,
+      "mechanical_balance_error_Nm": 8.6736173798840355E-19,
+      "max_iq_A": 0.159351408069699,
+      "max_id_A": 6.1543232819270172E-7,
+      "voltage_limit_residual_V": 2.7755575615628914E-17,
+      "pi_saturation_residual": 0
+    }
+  ],
+  "quality_passed": true,
+  "files": [
+    {
+      "path": "analysis.mat",
+      "sha256": "404c001a4fefb117a96df92dd800c4c4d413230f01782188fdb549cf99b320c7"
+    },
+    {
+      "path": "reference_parameters.json",
+      "sha256": "3f048e78dcbb15121a444fd271359f09a04a830c704dbcfcd845277f8b172bf2"
+    },
+    {
+      "path": "response.fig",
+      "sha256": "f8398ceb0cf1241d06cf7869d13e42bd1b68b111e501221e8f5e8e953e63c08a"
+    },
+    {
+      "path": "response.png",
+      "sha256": "08923f74a04a1a68d50b6f2dd243316e451c68da7ae14bac1903c46e78d19e08"
+    },
+    {
+      "path": "step_1_raw.mat",
+      "sha256": "84fee6317926c5ab21d4752fc8979b2c30a7477ccee30fa02110c4ed380338b0"
+    },
+    {
+      "path": "step_2_raw.mat",
+      "sha256": "67c327e0dd13c60ced042ff07ac10d5baa58b4cc5dcd56571fa0dad037630944"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "ideal": {
+    "low_order_THD_percent": 0.60780766333996794,
+    "harmonic_orders": [
+      2,
+      25
+    ],
+    "phase_fundamental_peak_A": 1.8914257582136287,
+    "id_rms_A": 0.00986883824683037,
+    "iq_ac_rms_A": 0.016361897736130393,
+    "torque_period_average_pp_Nm": 0.0038063888811395302,
+    "torque_period_average_ac_rms_Nm": 0.000680082982800174,
+    "speed_mean_rpm": 299.99754546995797,
+    "speed_pp_rpm": 1.0575371599500727,
+    "phase_current_peak_A": 2.03793998014396,
+    "analysis_start_s": 0.0599745,
+    "analysis_end_s": 0.1399745
+  },
+  "dead": {
+    "low_order_THD_percent": 11.109744290910609,
+    "harmonic_orders": [
+      2,
+      25
+    ],
+    "phase_fundamental_peak_A": 1.8913321246867343,
+    "id_rms_A": 0.20336905573344591,
+    "iq_ac_rms_A": 0.052286838182185484,
+    "torque_period_average_pp_Nm": 0.00904208312971401,
+    "torque_period_average_ac_rms_Nm": 0.0022213217300448974,
+    "speed_mean_rpm": 300.00279198922323,
+    "speed_pp_rpm": 2.4288138781541306,
+    "phase_current_peak_A": 2.1854139427035615,
+    "analysis_start_s": 0.0599745,
+    "analysis_end_s": 0.1399745
+  },
+  "comp": {
+    "low_order_THD_percent": 16.04429556913006,
+    "harmonic_orders": [
+      2,
+      25
+    ],
+    "phase_fundamental_peak_A": 1.8919211971293408,
+    "id_rms_A": 0.31290724518683877,
+    "iq_ac_rms_A": 0.10151709719460533,
+    "torque_period_average_pp_Nm": 0.022327964239687109,
+    "torque_period_average_ac_rms_Nm": 0.0043068953681062614,
+    "speed_mean_rpm": 300.00004849520531,
+    "speed_pp_rpm": 3.8525318771704065,
+    "phase_current_peak_A": 2.3736217773298343,
+    "analysis_start_s": 0.0599745,
+    "analysis_end_s": 0.1399745
+  }
+}

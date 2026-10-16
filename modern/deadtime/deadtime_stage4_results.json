@@ -1,0 +1,461 @@
+{
+  "all_passed": true,
+  "source_sha256": "db31d893ca9f0359e6b36e580056da9b74a46457f127da0c1bcccbab4775edec",
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "components": {
+    "rising_delay_ns": 500,
+    "no_shootthrough": true,
+    "short_pulse_suppressed": true,
+    "mean_phase_error_V": [
+      -0.32,
+      0.16,
+      0.16
+    ],
+    "freewheel_passive": true,
+    "zero_current_open_emf": true,
+    "measured_polarity_hysteresis": true,
+    "compensated_average_error_V": [
+      0,
+      0,
+      0
+    ],
+    "all_passed": true
+  },
+  "fine_components": {
+    "rising_delay_ns": 500,
+    "no_shootthrough": true,
+    "short_pulse_suppressed": true,
+    "mean_phase_error_V": [
+      -0.32,
+      0.16,
+      0.16
+    ],
+    "freewheel_passive": true,
+    "zero_current_open_emf": true,
+    "measured_polarity_hysteresis": true,
+    "compensated_average_error_V": [
+      0,
+      0,
+      0
+    ],
+    "all_passed": true
+  },
+  "preserved_blocks": 667,
+  "total_blocks": 729,
+  "root_blocks": 188,
+  "pi_gains": {
+    "kp_w": 0.00069087230807625508,
+    "ki_w": 0.04340878735241975,
+    "ks_w": 0.98718608264211138,
+    "kp_id": 0.7539822368615503,
+    "ki_id": 879.645943005142,
+    "ks_id": 1.1309733552923253,
+    "kp_iq": 0.7539822368615503,
+    "ki_iq": 879.645943005142,
+    "ks_iq": 1.1309733552923253
+  },
+  "off": {
+    "timeseries": 48,
+    "identical": 48,
+    "max_abs_difference": 0
+  },
+  "real": {
+    "timeseries": 48,
+    "identical": 48,
+    "max_abs_difference": 0
+  },
+  "demo": {
+    "ideal": {
+      "low_order_THD_percent": 0.18577015498965238,
+      "harmonic_orders": [
+        2,
+        25
+      ],
+      "phase_fundamental_peak_A": 4.894124318409717,
+      "id_rms_A": 0.015552867158018449,
+      "iq_ac_rms_A": 0.017228323422744087,
+      "torque_period_average_pp_Nm": 0.0032008034478140379,
+      "torque_period_average_ac_rms_Nm": 0.00072474223772076864,
+      "speed_mean_rpm": 600.01535611960219,
+      "speed_pp_rpm": 0.93327344592592,
+      "phase_current_peak_A": 5.2240971339148636,
+      "analysis_start_s": 0.040024500000000005,
+      "analysis_end_s": 0.0799745
+    },
+    "dead": {
+      "low_order_THD_percent": 1.8755018863587027,
+      "harmonic_orders": [
+        2,
+        25
+      ],
+      "phase_fundamental_peak_A": 4.89340275795488,
+      "id_rms_A": 0.091684279680717309,
+      "iq_ac_rms_A": 0.021307103248978113,
+      "torque_period_average_pp_Nm": 0.0046955451413399629,
+      "torque_period_average_ac_rms_Nm": 0.00089998562623246948,
+      "speed_mean_rpm": 600.04366448798066,
+      "speed_pp_rpm": 1.0650542315900111,
+      "phase_current_peak_A": 5.1928581471781614,
+      "analysis_start_s": 0.040024500000000005,
+      "analysis_end_s": 0.0799745
+    },
+    "comp": {
+      "low_order_THD_percent": 0.73145514675121825,
+      "harmonic_orders": [
+        2,
+        25
+      ],
+      "phase_fundamental_peak_A": 4.8936388083007492,
+      "id_rms_A": 0.045259696212901143,
+      "iq_ac_rms_A": 0.017194302293196375,
+      "torque_period_average_pp_Nm": 0.0032424014574460036,
+      "torque_period_average_ac_rms_Nm": 0.00072719158112681483,
+      "speed_mean_rpm": 600.00831830571792,
+      "speed_pp_rpm": 0.93665215736928076,
+      "phase_current_peak_A": 5.2347959084621767,
+      "analysis_start_s": 0.040024500000000005,
+      "analysis_end_s": 0.0799745
+    }
+  },
+  "improvement": {
+    "THD_percent": 60.999498210511405,
+    "id_rms_percent": 50.635270985915824,
+    "torque_ac_rms_percent": 19.199644979776753
+  },
+  "grid_iq_max_difference_A": 0.022913310719201441,
+  "invalid_combinations_rejected": true,
+  "saved_reload_preserved": true,
+  "real_board_calibrated": false,
+  "pi_retuned": false,
+  "original_changes": [
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/ia",
+      "input_changed": true,
+      "parameters_changed": false,
+      "geometry_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/ib",
+      "input_changed": true,
+      "parameters_changed": false,
+      "geometry_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/ic",
+      "input_changed": true,
+      "parameters_changed": false,
+      "geometry_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/Universal Bridge/Vabc",
+      "input_changed": true,
+      "parameters_changed": false,
+      "geometry_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/功率观测/总览",
+      "input_changed": true,
+      "parameters_changed": false,
+      "geometry_changed": true
+    },
+    {
+      "path": "PMSM_FOC_R2026a/功率设置",
+      "input_changed": false,
+      "parameters_changed": true,
+      "geometry_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/功率设置/启用",
+      "input_changed": false,
+      "parameters_changed": true,
+      "geometry_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/采样设置/门极",
+      "input_changed": false,
+      "parameters_changed": true,
+      "geometry_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/限压/残差_d",
+      "input_changed": true,
+      "parameters_changed": false,
+      "geometry_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/限压/残差_q",
+      "input_changed": true,
+      "parameters_changed": false,
+      "geometry_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/限压/诊断",
+      "input_changed": true,
+      "parameters_changed": false,
+      "geometry_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/限压/输入",
+      "input_changed": true,
+      "parameters_changed": false,
+      "geometry_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/限压/输出_d",
+      "input_changed": true,
+      "parameters_changed": false,
+      "geometry_changed": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/限压/输出_q",
+      "input_changed": true,
+      "parameters_changed": false,
+      "geometry_changed": false
+    }
+  ],
+  "root_geometry_preserved": true,
+  "regions_preserved": true,
+  "original_scripts_preserved": true,
+  "internal_scope_resize_only": true,
+  "default_settings": [
+    {
+      "block": "时序设置",
+      "parameters": [
+        {
+          "name": "speed_on",
+          "value": "off"
+        },
+        {
+          "name": "speed_divider",
+          "value": "20"
+        },
+        {
+          "name": "pwm_on",
+          "value": "off"
+        },
+        {
+          "name": "pwm_cycles",
+          "value": "1"
+        },
+        {
+          "name": "real_on",
+          "value": "off"
+        },
+        {
+          "name": "window_on",
+          "value": "off"
+        },
+        {
+          "name": "invalid_hold_on",
+          "value": "off"
+        },
+        {
+          "name": "trigger_us",
+          "value": "24.375"
+        },
+        {
+          "name": "sync_us",
+          "value": "0"
+        },
+        {
+          "name": "compute_us",
+          "value": "5"
+        },
+        {
+          "name": "settle_us",
+          "value": "0.5"
+        },
+        {
+          "name": "update_mode",
+          "value": "峰谷双更新（RCR=0）"
+        },
+        {
+          "name": "grid_divider",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "block": "采样设置",
+      "parameters": [
+        {
+          "name": "bias_on",
+          "value": "off"
+        },
+        {
+          "name": "bias_A",
+          "value": "[0.05 -0.03 0]"
+        },
+        {
+          "name": "gain_on",
+          "value": "off"
+        },
+        {
+          "name": "phase_gain",
+          "value": "[1.01 0.99 1]"
+        },
+        {
+          "name": "noise_on",
+          "value": "off"
+        },
+        {
+          "name": "noise_rms",
+          "value": "0.02"
+        },
+        {
+          "name": "noise_seed",
+          "value": "9474"
+        },
+        {
+          "name": "adc_on",
+          "value": "off"
+        },
+        {
+          "name": "adc_bits",
+          "value": "12"
+        },
+        {
+          "name": "adc_span",
+          "value": "82.5"
+        },
+        {
+          "name": "filter_on",
+          "value": "off"
+        },
+        {
+          "name": "filter_hz",
+          "value": "500"
+        },
+        {
+          "name": "delay_on",
+          "value": "off"
+        },
+        {
+          "name": "delay_cycles",
+          "value": "1"
+        },
+        {
+          "name": "control_period",
+          "value": "dt"
+        },
+        {
+          "name": "analog_on",
+          "value": "off"
+        },
+        {
+          "name": "analog_hz",
+          "value": "5000"
+        },
+        {
+          "name": "numerical_step",
+          "value": "T"
+        },
+        {
+          "name": "real_mode",
+          "value": "strcmp(get_param([bdroot '/时序设置'],'real_on'),'on')"
+        }
+      ]
+    },
+    {
+      "block": "角度设置",
+      "parameters": [
+        {
+          "name": "bias_on",
+          "value": "off"
+        },
+        {
+          "name": "bias_deg",
+          "value": "2"
+        },
+        {
+          "name": "quant_on",
+          "value": "off"
+        },
+        {
+          "name": "step_deg",
+          "value": "0.18"
+        },
+        {
+          "name": "delay_on",
+          "value": "off"
+        },
+        {
+          "name": "delay_cycles",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "block": "功率设置",
+      "parameters": [
+        {
+          "name": "dead_on",
+          "value": "off"
+        },
+        {
+          "name": "dead_us",
+          "value": "0.5"
+        },
+        {
+          "name": "drop_on",
+          "value": "off"
+        },
+        {
+          "name": "ron",
+          "value": "0.01"
+        },
+        {
+          "name": "vf",
+          "value": "0.7"
+        },
+        {
+          "name": "blend_A",
+          "value": "0.1"
+        },
+        {
+          "name": "pwm_period",
+          "value": "Ts"
+        },
+        {
+          "name": "gate_on",
+          "value": "off"
+        },
+        {
+          "name": "comp_on",
+          "value": "off"
+        },
+        {
+          "name": "gate_us",
+          "value": "0.5"
+        },
+        {
+          "name": "comp_us",
+          "value": "0.5"
+        },
+        {
+          "name": "hysteresis_A",
+          "value": "0.05"
+        },
+        {
+          "name": "zero_A",
+          "value": "0.01"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Same 600rpm/0.207Nm initialized operating point and original PI gains in all three demonstrations.",
+    "Ideal demo uses zero deadtime on the same gate grid and bridge; it isolates deadtime from edge quantization.",
+    "0.5us is programmed timer deadtime. Driver propagation, device data and measurement calibration remain unknown.",
+    "Zero-current band0.01A and compensation hysteresis0.05A are demonstrations; floating-star non-salient PMSM only.",
+    "THD covers angular harmonics2-25 in the last two settled electrical cycles of PWM-period averaged current, not switching-frequency THD.",
+    "Active protection, minimum on-time rules, switching losses and detailed capacitance/recovery remain absent.",
+    "Only the two new high-rate gate ToWorkspace logs are bounded to their last4000 points. Algorithm, scripts, other48 logs, gains and geometry unchanged; saved reload verified."
+  ],
+  "publication_status": "published",
+  "reviewed_at": "2026-10-12 12:06:14",
+  "published_at": "2026-10-12 13:31:59",
+  "validated_algorithm_model_sha256": "afdb0836adf1b2960e398931495b7bf43f8e180c98b8d647e21e1ca53db75be8",
+  "logging_retention_only": true,
+  "dead_gate_log_max_points": 4000
+}

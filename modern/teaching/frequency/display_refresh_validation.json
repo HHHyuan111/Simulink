@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "original_science_exact": true,
+  "metrics_csv_exact": true,
+  "display_padding_factor": 4,
+  "fft_true_resolution_Hz": 12.5,
+  "psd_true_bin_width_Hz": 78.125,
+  "psd_enbw_Hz": 117.1875
+}

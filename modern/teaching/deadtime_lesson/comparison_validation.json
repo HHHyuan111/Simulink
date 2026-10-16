@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "source_run": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261013_133919_965_low_speed_compensation_c1e40d81",
+  "source_record_sha256": "1b51b63d221a560d612fb445c0bcfa073b0b3816254f1abfd44eb927c151e764",
+  "exact_plotted_traces": 9,
+  "metrics_recomputed_from_raw": true,
+  "metrics": [
+    [
+      0.064982866755486077,
+      0.0027683503919161243
+    ],
+    [
+      0.027954040718148596,
+      0.0011912264712100559
+    ]
+  ],
+  "current_angle_zoom_linked": true,
+  "native_info_menu_checked": true,
+  "teaching_button_checked": true,
+  "current_model_and_configuration_preserved": true,
+  "archive_read_only": true,
+  "spectrum_curves_checked": 2,
+  "harmonic_series_checked": 2,
+  "spectrum_window_s": [
+    0.12000000000000001,
+    0.2
+  ],
+  "topic_layout": [
+    2,
+    3
+  ],
+  "sources": [
+    {
+      "path": "open_pmsm_deadtime_comparison.m",
+      "sha256": "1796e903ff1e8672e282f8b55a36c49a7ed8f9390430a73a5825b55b3af72ebd"
+    },
+    {
+      "path": "pmsm_deadtime_pair_alignment.m",
+      "sha256": "7fd141413d92268f83be6fb72a22e362762c48758872d1818873c48799f94e0a"
+    },
+    {
+      "path": "pmsm_current_spectrum.m",
+      "sha256": "890fdd1f0b4ce0d50a2a7f762e688a4334c0a22fad39e2b7fd083129be91a027"
+    }
+  ]
+}

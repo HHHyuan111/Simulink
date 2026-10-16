@@ -1,0 +1,140 @@
+{
+  "schema": 1,
+  "contract": {
+    "kind": "speed_filter_pair",
+    "counts_per_mechanical_turn": 10000,
+    "window_ticks": [
+      1,
+      2,
+      8
+    ],
+    "read_period_s": 5E-5,
+    "read_offset_s": 2.8875E-5,
+    "speed_period_s": 0.0001,
+    "event_step_s": 6.25E-8,
+    "rpm_per_count_step": [
+      120,
+      60,
+      15
+    ],
+    "firmware_commit": "48d6e86814ac6657b1313b4c92ef24c88f492e07",
+    "firmware_window_ticks": 2,
+    "firmware_history_depth": 8,
+    "source": "control_cycle_step在有效位置拍按foc_fs喂入speed_est_step；速度PI与测量宏不是该喂入频率",
+    "initialization": "计数反馈在完整历史前使用零并标无效，不回填真值；有效性仅观测，尚无启动门控或故障状态机",
+    "scope": "两组同一机械计数、窗口、真实时序、PI、初态、角度和工况，只切换速度滤波；各自闭环轨迹可改变，非位级等价。",
+    "feedback_on": [
+      true,
+      true
+    ],
+    "window_choice": [
+      2,
+      2
+    ],
+    "speed_filter": "firmware_first_order",
+    "angle_feedback": "原角度",
+    "filter_on": [
+      false,
+      true
+    ],
+    "cutoff_hz": 200,
+    "filter_a": 0.940882602558251,
+    "filter_b": 0.059117397441749042,
+    "filter_update_s": 5E-5,
+    "filter_initial_state": 0,
+    "filter_source": "AxDr_L control_filter.c: a=fs/(fs+2*pi*fc), b=1-a, y=b*x+a*y_prev；ctrl_fb_update每快环调用",
+    "filter_invalid_policy": "输入及发布零，内部状态仍按零输入递推；未模拟固件缺样保持与完整启动/故障状态机"
+  },
+  "cases": [
+    {
+      "id": "reference",
+      "label": "无滤波",
+      "feedback_on": true,
+      "window_ticks": 2,
+      "pi_input_max_check_error_rpm": 0,
+      "invalid_speed_task_samples": 1,
+      "feedback_error_rms_rpm": 24.930931538975194,
+      "iq_command_step_rms_A": 0.507575797213948,
+      "torque_std_Nm": 0.013457773170486268,
+      "final_speed_rpm": 3054.9704831865379,
+      "windows": [
+        {
+          "window_ticks": 1,
+          "rpm_per_count": 120,
+          "quantization_rms_rpm": 47.20169627485933,
+          "window_error_rms_rpm": 0.13877141161898321,
+          "total_error_rms_rpm": 47.195239344873826
+        },
+        {
+          "window_ticks": 2,
+          "rpm_per_count": 60,
+          "quantization_rms_rpm": 24.762902568178504,
+          "window_error_rms_rpm": 0.28110271925664637,
+          "total_error_rms_rpm": 24.732719182081794
+        },
+        {
+          "window_ticks": 8,
+          "rpm_per_count": 15,
+          "quantization_rms_rpm": 6.0713806344161005,
+          "window_error_rms_rpm": 1.0920091423183607,
+          "total_error_rms_rpm": 6.1580682244350617
+        }
+      ],
+      "filter_on": false,
+      "cutoff_hz": 200,
+      "filter_a": 0.940882602558251,
+      "filter_b": 0.059117397441749042,
+      "filter_recursion_max_error_rpm": 0,
+      "raw_quantization_rms_rpm": 24.762902568178504,
+      "quantization_contribution_rms_rpm": 24.762902568178504,
+      "filter_dynamic_error_rms_rpm": 0,
+      "window_average_error_rms_rpm": 0.28110271925664637,
+      "decomposition_max_residual_rpm": 3.5527136788005009E-15
+    },
+    {
+      "id": "factor",
+      "label": "加滤波",
+      "feedback_on": true,
+      "window_ticks": 2,
+      "pi_input_max_check_error_rpm": 0,
+      "invalid_speed_task_samples": 1,
+      "feedback_error_rms_rpm": 5.5039728724593466,
+      "iq_command_step_rms_A": 0.023307359743292969,
+      "torque_std_Nm": 0.010809751477404749,
+      "final_speed_rpm": 3047.8280849188468,
+      "windows": [
+        {
+          "window_ticks": 1,
+          "rpm_per_count": 120,
+          "quantization_rms_rpm": 50.508983215025374,
+          "window_error_rms_rpm": 0.14885903026702302,
+          "total_error_rms_rpm": 50.509347246848463
+        },
+        {
+          "window_ticks": 2,
+          "rpm_per_count": 60,
+          "quantization_rms_rpm": 24.90269842810299,
+          "window_error_rms_rpm": 0.30503515628782868,
+          "total_error_rms_rpm": 24.904601512728131
+        },
+        {
+          "window_ticks": 8,
+          "rpm_per_count": 15,
+          "quantization_rms_rpm": 6.2728390631488571,
+          "window_error_rms_rpm": 1.2438890257848672,
+          "total_error_rms_rpm": 6.3854118909017883
+        }
+      ],
+      "filter_on": true,
+      "cutoff_hz": 200,
+      "filter_a": 0.940882602558251,
+      "filter_b": 0.059117397441749042,
+      "filter_recursion_max_error_rpm": 0,
+      "raw_quantization_rms_rpm": 24.90269842810299,
+      "quantization_contribution_rms_rpm": 1.3313789773906688,
+      "filter_dynamic_error_rms_rpm": 5.05940840951904,
+      "window_average_error_rms_rpm": 0.30503515628782868,
+      "decomposition_max_residual_rpm": 5.1869619710487314E-12
+    }
+  ]
+}

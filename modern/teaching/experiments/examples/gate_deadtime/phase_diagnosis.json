@@ -1,0 +1,12 @@
+{
+  "source_run_id": "20261013_104311_761_gate_deadtime_9bb2d379",
+  "final_reference_speed_rpm": 3000.4740245257208,
+  "final_factor_speed_rpm": 2999.9717823865922,
+  "peak_speed_difference_rpm": 44.081684982031675,
+  "final_mechanical_angle_difference_deg": -12.709476180209554,
+  "final_electrical_angle_difference_deg": -63.547380901047774,
+  "tail_electrical_angle_difference_mean_deg": -63.504212354439,
+  "integrated_speed_difference_electrical_deg": -63.550148166362561,
+  "final_electrical_frequency_hz": 249.99764853221603,
+  "equivalent_time_shift_us": -706.08865139050727
+}

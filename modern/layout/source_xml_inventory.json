@@ -1,0 +1,2340 @@
+[
+  {
+    "name": "Abs",
+    "type": "Abs",
+    "sid": "548",
+    "params": {
+      "Position": "[1075, 775, 1090, 805]",
+      "ZOrder": "100000",
+      "SaturateOnIntegerOverflow": "off"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Abs1",
+    "type": "Abs",
+    "sid": "558",
+    "params": {
+      "Position": "[2350, 775, 2365, 805]",
+      "ZOrder": "100000",
+      "SaturateOnIntegerOverflow": "off"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Alpha-Beta-Zero\nto dq0",
+    "type": "SubSystem",
+    "sid": "597",
+    "params": {
+      "Position": "[1775, 71, 1815, 144]",
+      "ZOrder": "100000",
+      "BackgroundColor": "lightBlue",
+      "ContentPreviewEnabled": "on"
+    },
+    "ports": {
+      "in": "2",
+      "out": "1"
+    }
+  },
+  {
+    "name": "Bus\nSelector",
+    "type": "SubSystem",
+    "sid": "649",
+    "params": {
+      "Position": "[1100, 156, 1105, 299]",
+      "ZOrder": "100000",
+      "BackgroundColor": "lightBlue",
+      "ContentPreviewEnabled": "on"
+    },
+    "ports": {
+      "in": "1",
+      "out": "6"
+    }
+  },
+  {
+    "name": "Bus\nSelector1",
+    "type": "SubSystem",
+    "sid": "660",
+    "params": {
+      "Position": "[1100, 55, 1105, 95]",
+      "ZOrder": "100000",
+      "BackgroundColor": "lightBlue",
+      "ContentPreviewEnabled": "on"
+    },
+    "ports": {
+      "in": "1",
+      "out": "2"
+    }
+  },
+  {
+    "name": "Carrier Wave",
+    "type": "Reference",
+    "sid": "324",
+    "params": {
+      "Position": "[1780, 353, 1830, 377]",
+      "ZOrder": "100000",
+      "LibraryVersion": "9.1",
+      "SourceBlock": "simulink/Sources/Repeating\nSequence",
+      "SourceType": "Repeating table"
+    },
+    "ports": {
+      "out": "1"
+    }
+  },
+  {
+    "name": "Chirp1",
+    "type": "SubSystem",
+    "sid": "683",
+    "params": {
+      "Position": "[395, 500, 435, 540]",
+      "ZOrder": "100000",
+      "BackgroundColor": "lightBlue",
+      "ContentPreviewEnabled": "on"
+    },
+    "ports": {
+      "out": "1"
+    }
+  },
+  {
+    "name": "Chirp2",
+    "type": "SubSystem",
+    "sid": "688",
+    "params": {
+      "Position": "[395, 410, 435, 450]",
+      "ZOrder": "100000",
+      "BackgroundColor": "lightBlue",
+      "ContentPreviewEnabled": "on"
+    },
+    "ports": {
+      "out": "1"
+    }
+  },
+  {
+    "name": "Constant",
+    "type": "Constant",
+    "sid": "194",
+    "params": {
+      "Position": "[925, 567, 955, 583]",
+      "ZOrder": "24583",
+      "Value": "1.5"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Constant1",
+    "type": "Constant",
+    "sid": "195",
+    "params": {
+      "Position": "[920, 517, 955, 533]",
+      "ZOrder": "24584",
+      "Value": "p"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Constant11",
+    "type": "Constant",
+    "sid": "551",
+    "params": {
+      "Position": "[1060, 830, 1090, 860]",
+      "ZOrder": "100000",
+      "Value": "max(abs(0.1*n),1)"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Constant13",
+    "type": "Constant",
+    "sid": "559",
+    "params": {
+      "Position": "[2335, 830, 2365, 860]",
+      "ZOrder": "100000",
+      "Value": "0.1*In"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Constant2",
+    "type": "Constant",
+    "sid": "196",
+    "params": {
+      "Position": "[810, 542, 850, 558]",
+      "ZOrder": "24585",
+      "Value": "phis"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Constant3",
+    "type": "Constant",
+    "sid": "216",
+    "params": {
+      "Position": "[810, 567, 850, 583]",
+      "ZOrder": "24610",
+      "Value": "Ld"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Constant4",
+    "type": "Constant",
+    "sid": "139",
+    "params": {
+      "Position": "[1300, 430, 1340, 450]",
+      "ZOrder": "24595",
+      "Value": "Lq"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Constant5",
+    "type": "Constant",
+    "sid": "232",
+    "params": {
+      "Position": "[1545, 207, 1595, 223]",
+      "ZOrder": "24625",
+      "ForegroundColor": "yellow",
+      "Value": "0"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Constant6",
+    "type": "Constant",
+    "sid": "209",
+    "params": {
+      "Position": "[1270, 540, 1310, 560]",
+      "ZOrder": "24601",
+      "Value": "Ld"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Constant7",
+    "type": "Constant",
+    "sid": "212",
+    "params": {
+      "Position": "[1360, 500, 1395, 520]",
+      "ZOrder": "24606",
+      "Value": "phis"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Constant8",
+    "type": "Constant",
+    "sid": "246",
+    "params": {
+      "Position": "[1595, 500, 1625, 520]",
+      "ZOrder": "24638",
+      "ForegroundColor": "red",
+      "Value": "Vdc"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Constant9",
+    "type": "Constant",
+    "sid": "247",
+    "params": {
+      "Position": "[1595, 539, 1625, 561]",
+      "ZOrder": "24639",
+      "ForegroundColor": "red",
+      "Value": "dt"
+    },
+    "ports": {}
+  },
+  {
+    "name": "DC Voltage Source",
+    "type": "Constant",
+    "sid": "681",
+    "params": {
+      "Position": "[755, 167, 775, 203]",
+      "ZOrder": "100000",
+      "Value": "Vdc"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Demux",
+    "type": "Demux",
+    "sid": "62",
+    "params": {
+      "Position": "[1835, 76, 1840, 134]",
+      "ZOrder": "24494",
+      "Outputs": "3"
+    },
+    "ports": {
+      "in": "1",
+      "out": "3"
+    }
+  },
+  {
+    "name": "Demux1",
+    "type": "Demux",
+    "sid": "236",
+    "params": {
+      "Position": "[1810, 176, 1815, 234]",
+      "ZOrder": "24628",
+      "Outputs": "3"
+    },
+    "ports": {
+      "in": "1",
+      "out": "3"
+    }
+  },
+  {
+    "name": "Demux2",
+    "type": "Demux",
+    "sid": "295",
+    "params": {
+      "Position": "[1805, 410, 1810, 570]",
+      "ZOrder": "24682",
+      "Outputs": "3"
+    },
+    "ports": {
+      "in": "1",
+      "out": "3"
+    }
+  },
+  {
+    "name": "Demux3",
+    "type": "Demux",
+    "sid": "334",
+    "params": {
+      "Position": "[1445, 761, 1450, 819]",
+      "ZOrder": "100000",
+      "Outputs": "3"
+    },
+    "ports": {
+      "in": "1",
+      "out": "3"
+    }
+  },
+  {
+    "name": "Demux5",
+    "type": "Demux",
+    "sid": "352",
+    "params": {
+      "Position": "[2085, 806, 2090, 864]",
+      "ZOrder": "100000",
+      "Outputs": "3"
+    },
+    "ports": {
+      "in": "1",
+      "out": "3"
+    }
+  },
+  {
+    "name": "Divide",
+    "type": "Product",
+    "sid": "193",
+    "params": {
+      "Position": "[1020, 487, 1050, 518]",
+      "ZOrder": "24582",
+      "Inputs": "*/"
+    },
+    "ports": {
+      "in": "2",
+      "out": "1"
+    }
+  },
+  {
+    "name": "Divide1",
+    "type": "Product",
+    "sid": "550",
+    "params": {
+      "Position": "[1125, 782, 1140, 818]",
+      "ZOrder": "100000",
+      "Inputs": "*/"
+    },
+    "ports": {
+      "in": "2",
+      "out": "1"
+    }
+  },
+  {
+    "name": "Divide2",
+    "type": "Product",
+    "sid": "560",
+    "params": {
+      "Position": "[2400, 782, 2415, 818]",
+      "ZOrder": "100000",
+      "Inputs": "*/"
+    },
+    "ports": {
+      "in": "2",
+      "out": "1"
+    }
+  },
+  {
+    "name": "Electrical Rotation Angle",
+    "type": "Goto",
+    "sid": "180",
+    "params": {
+      "Position": "[1405, 270, 1455, 290]",
+      "ZOrder": "24568",
+      "ForegroundColor": "yellow",
+      "GotoTag": "theta_e",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "From",
+    "type": "From",
+    "sid": "201",
+    "params": {
+      "Position": "[665, 540, 715, 560]",
+      "ZOrder": "24589",
+      "ForegroundColor": "green",
+      "GotoTag": "speed",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "From1",
+    "type": "From",
+    "sid": "199",
+    "params": {
+      "Position": "[1545, 110, 1595, 130]",
+      "ZOrder": "24587",
+      "ForegroundColor": "yellow",
+      "GotoTag": "theta_e",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "From10",
+    "type": "From",
+    "sid": "229",
+    "params": {
+      "Position": "[1545, 185, 1595, 205]",
+      "ZOrder": "24622",
+      "ForegroundColor": "yellow",
+      "GotoTag": "vq",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "From11",
+    "type": "From",
+    "sid": "233",
+    "params": {
+      "Position": "[1545, 245, 1595, 265]",
+      "ZOrder": "24626",
+      "ForegroundColor": "yellow",
+      "GotoTag": "theta_e",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "From12",
+    "type": "From",
+    "sid": "243",
+    "params": {
+      "Position": "[1595, 460, 1645, 480]",
+      "ZOrder": "24635",
+      "ForegroundColor": "red",
+      "GotoTag": "v_beta",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "From13",
+    "type": "From",
+    "sid": "245",
+    "params": {
+      "Position": "[670, 116, 720, 134]",
+      "ZOrder": "24637",
+      "ForegroundColor": "blue",
+      "GotoTag": "SW",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "From14",
+    "type": "From",
+    "sid": "259",
+    "params": {
+      "Position": "[1245, 700, 1295, 720]",
+      "ZOrder": "24646",
+      "ForegroundColor": "green",
+      "GotoTag": "speed",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "From15",
+    "type": "From",
+    "sid": "586",
+    "params": {
+      "Position": "[2195, 705, 2245, 725]",
+      "ZOrder": "100000",
+      "ForegroundColor": "[0.666667, 0.000000, 1.000000]",
+      "GotoTag": "id",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "From16",
+    "type": "From",
+    "sid": "271",
+    "params": {
+      "Position": "[1245, 730, 1295, 750]",
+      "ZOrder": "24658",
+      "ForegroundColor": "blue",
+      "GotoTag": "Te",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "From17",
+    "type": "From",
+    "sid": "269",
+    "params": {
+      "Position": "[1605, 701, 1655, 719]",
+      "ZOrder": "24656",
+      "ForegroundColor": "blue",
+      "GotoTag": "SW",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "From18",
+    "type": "From",
+    "sid": "273",
+    "params": {
+      "Position": "[1370, 700, 1420, 720]",
+      "ZOrder": "24660",
+      "ForegroundColor": "yellow",
+      "GotoTag": "Iabc"
+    },
+    "ports": {}
+  },
+  {
+    "name": "From19",
+    "type": "From",
+    "sid": "282",
+    "params": {
+      "Position": "[1365, 780, 1415, 800]",
+      "ZOrder": "24669",
+      "ForegroundColor": "yellow",
+      "GotoTag": "Uabc"
+    },
+    "ports": {}
+  },
+  {
+    "name": "From2",
+    "type": "From",
+    "sid": "202",
+    "params": {
+      "Position": "[1165, 425, 1215, 445]",
+      "ZOrder": "24590",
+      "ForegroundColor": "[0.666667, 0.000000, 1.000000]",
+      "GotoTag": "id",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "From20",
+    "type": "From",
+    "sid": "285",
+    "params": {
+      "Position": "[1820, 720, 1870, 740]",
+      "ZOrder": "24672",
+      "ForegroundColor": "red",
+      "GotoTag": "v_alpha",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "From21",
+    "type": "From",
+    "sid": "286",
+    "params": {
+      "Position": "[1820, 745, 1870, 765]",
+      "ZOrder": "24673",
+      "ForegroundColor": "red",
+      "GotoTag": "v_beta",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "From22",
+    "type": "From",
+    "sid": "308",
+    "params": {
+      "Position": "[1820, 825, 1870, 845]",
+      "ZOrder": "24695",
+      "ForegroundColor": "red",
+      "GotoTag": "sector",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "From23",
+    "type": "From",
+    "sid": "310",
+    "params": {
+      "Position": "[770, 691, 820, 709]",
+      "ZOrder": "24697",
+      "ForegroundColor": "[0.666667, 0.000000, 1.000000]",
+      "GotoTag": "id",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "From24",
+    "type": "From",
+    "sid": "312",
+    "params": {
+      "Position": "[770, 726, 820, 744]",
+      "ZOrder": "24699",
+      "ForegroundColor": "[0.666667, 0.000000, 1.000000]",
+      "GotoTag": "iq",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "From25",
+    "type": "From",
+    "sid": "331",
+    "params": {
+      "Position": "[2015, 720, 2065, 740]",
+      "ZOrder": "100000",
+      "ForegroundColor": "red",
+      "GotoTag": "v_alpha",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "From26",
+    "type": "From",
+    "sid": "332",
+    "params": {
+      "Position": "[2015, 745, 2065, 765]",
+      "ZOrder": "100000",
+      "ForegroundColor": "red",
+      "GotoTag": "v_beta",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "From27",
+    "type": "From",
+    "sid": "497",
+    "params": {
+      "Position": "[770, 776, 820, 794]",
+      "ZOrder": "100000",
+      "ForegroundColor": "blue",
+      "GotoTag": "UDC",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "From28",
+    "type": "From",
+    "sid": "501",
+    "params": {
+      "Position": "[930, 705, 980, 725]",
+      "ZOrder": "100000",
+      "ForegroundColor": "green",
+      "GotoTag": "speed",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "From29",
+    "type": "From",
+    "sid": "350",
+    "params": {
+      "Position": "[2010, 825, 2060, 845]",
+      "ZOrder": "100000",
+      "ForegroundColor": "red",
+      "GotoTag": "Umod"
+    },
+    "ports": {}
+  },
+  {
+    "name": "From3",
+    "type": "From",
+    "sid": "206",
+    "params": {
+      "Position": "[1165, 485, 1215, 505]",
+      "ZOrder": "24598",
+      "ForegroundColor": "[0.666667, 0.000000, 1.000000]",
+      "GotoTag": "ws",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "From30",
+    "type": "From",
+    "sid": "360",
+    "params": {
+      "Position": "[1620, 785, 1670, 805]",
+      "ZOrder": "100000",
+      "ForegroundColor": "blue",
+      "GotoTag": "Vq_re",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "From31",
+    "type": "From",
+    "sid": "361",
+    "params": {
+      "Position": "[1620, 760, 1670, 780]",
+      "ZOrder": "100000",
+      "ForegroundColor": "blue",
+      "GotoTag": "Vd_re",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "From32",
+    "type": "From",
+    "sid": "362",
+    "params": {
+      "Position": "[1620, 810, 1670, 830]",
+      "ZOrder": "100000",
+      "ForegroundColor": "yellow",
+      "GotoTag": "vd",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "From33",
+    "type": "From",
+    "sid": "363",
+    "params": {
+      "Position": "[1620, 835, 1670, 855]",
+      "ZOrder": "100000",
+      "ForegroundColor": "yellow",
+      "GotoTag": "vq",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "From35",
+    "type": "From",
+    "sid": "578",
+    "params": {
+      "Position": "[665, 590, 715, 610]",
+      "ZOrder": "100000",
+      "ForegroundColor": "[0.666667, 0.000000, 1.000000]",
+      "GotoTag": "id",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "From36",
+    "type": "From",
+    "sid": "589",
+    "params": {
+      "Position": "[930, 741, 980, 759]",
+      "ZOrder": "100000",
+      "ForegroundColor": "blue",
+      "GotoTag": "nref2"
+    },
+    "ports": {}
+  },
+  {
+    "name": "From37",
+    "type": "From",
+    "sid": "579",
+    "params": {
+      "Position": "[1165, 581, 1215, 599]",
+      "ZOrder": "100000",
+      "ForegroundColor": "[0.666667, 0.000000, 1.000000]",
+      "GotoTag": "iq_ref",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "From4",
+    "type": "From",
+    "sid": "200",
+    "params": {
+      "Position": "[1515, 75, 1595, 95]",
+      "ZOrder": "24588",
+      "ForegroundColor": "yellow",
+      "GotoTag": "Currentabc",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "From5",
+    "type": "From",
+    "sid": "203",
+    "params": {
+      "Position": "[1165, 541, 1215, 559]",
+      "ZOrder": "24591",
+      "ForegroundColor": "[0.666667, 0.000000, 1.000000]",
+      "GotoTag": "iq",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "From6",
+    "type": "From",
+    "sid": "498",
+    "params": {
+      "Position": "[770, 810, 820, 830]",
+      "ZOrder": "100000",
+      "ForegroundColor": "green",
+      "GotoTag": "speed",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "From7",
+    "type": "From",
+    "sid": "576",
+    "params": {
+      "Position": "[2190, 742, 2250, 758]",
+      "ZOrder": "100000",
+      "GotoTag": "id_ref"
+    },
+    "ports": {}
+  },
+  {
+    "name": "From8",
+    "type": "From",
+    "sid": "242",
+    "params": {
+      "Position": "[1595, 420, 1645, 440]",
+      "ZOrder": "24634",
+      "ForegroundColor": "red",
+      "GotoTag": "v_alpha",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "From9",
+    "type": "From",
+    "sid": "228",
+    "params": {
+      "Position": "[1545, 165, 1595, 185]",
+      "ZOrder": "24621",
+      "ForegroundColor": "yellow",
+      "GotoTag": "vd",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Gain",
+    "type": "Gain",
+    "sid": "171",
+    "params": {
+      "Position": "[1280, 242, 1350, 268]",
+      "ZOrder": "24561",
+      "Gain": "30/pi"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Gain1",
+    "type": "Gain",
+    "sid": "186",
+    "params": {
+      "Position": "[1290, 220, 1340, 240]",
+      "ZOrder": "24575",
+      "Gain": "p"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Gain2",
+    "type": "Gain",
+    "sid": "573",
+    "params": {
+      "Position": "[460, 417, 525, 443]",
+      "ZOrder": "100000",
+      "Gain": "0.1*In"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Gain3",
+    "type": "Gain",
+    "sid": "553",
+    "params": {
+      "Position": "[460, 507, 525, 533]",
+      "ZOrder": "100000",
+      "Gain": "0.1*n"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Goto",
+    "type": "Goto",
+    "sid": "34",
+    "params": {
+      "Position": "[1405, 125, 1455, 145]",
+      "ZOrder": "24472",
+      "ForegroundColor": "yellow",
+      "GotoTag": "Iabc"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Goto1",
+    "type": "Goto",
+    "sid": "188",
+    "params": {
+      "Position": "[1405, 220, 1455, 240]",
+      "ZOrder": "24577",
+      "ForegroundColor": "[0.666667, 0.000000, 1.000000]",
+      "GotoTag": "ws",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Goto10",
+    "type": "Goto",
+    "sid": "237",
+    "params": {
+      "Position": "[1865, 175, 1915, 195]",
+      "ZOrder": "24629",
+      "ForegroundColor": "red",
+      "GotoTag": "v_alpha",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Goto11",
+    "type": "Goto",
+    "sid": "238",
+    "params": {
+      "Position": "[1865, 195, 1915, 215]",
+      "ZOrder": "24630",
+      "ForegroundColor": "red",
+      "GotoTag": "v_beta",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Goto12",
+    "type": "Goto",
+    "sid": "244",
+    "params": {
+      "Position": "[2205, 491, 2245, 509]",
+      "ZOrder": "24636",
+      "ForegroundColor": "blue",
+      "GotoTag": "SW",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Goto13",
+    "type": "Goto",
+    "sid": "307",
+    "params": {
+      "Position": "[2200, 630, 2250, 650]",
+      "ZOrder": "24694",
+      "ForegroundColor": "red",
+      "GotoTag": "sector",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Goto14",
+    "type": "Goto",
+    "sid": "358",
+    "params": {
+      "Position": "[1405, 55, 1455, 75]",
+      "ZOrder": "100000",
+      "ForegroundColor": "blue",
+      "GotoTag": "Vq_re",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Goto15",
+    "type": "Goto",
+    "sid": "359",
+    "params": {
+      "Position": "[1405, 75, 1455, 95]",
+      "ZOrder": "100000",
+      "ForegroundColor": "blue",
+      "GotoTag": "Vd_re",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Goto16",
+    "type": "Goto",
+    "sid": "496",
+    "params": {
+      "Position": "[660, 206, 710, 224]",
+      "ZOrder": "100000",
+      "ForegroundColor": "blue",
+      "GotoTag": "UDC",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Goto17",
+    "type": "Goto",
+    "sid": "372",
+    "params": {
+      "Position": "[2200, 605, 2250, 625]",
+      "ZOrder": "100000",
+      "ForegroundColor": "red",
+      "GotoTag": "Umod"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Goto18",
+    "type": "Goto",
+    "sid": "506",
+    "params": {
+      "Position": "[840, 341, 890, 359]",
+      "ZOrder": "100000",
+      "ForegroundColor": "blue",
+      "GotoTag": "TL",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Goto19",
+    "type": "Goto",
+    "sid": "509",
+    "params": {
+      "Position": "[820, 411, 870, 429]",
+      "ZOrder": "100000",
+      "ForegroundColor": "blue",
+      "GotoTag": "nref",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Goto2",
+    "type": "Goto",
+    "sid": "65",
+    "params": {
+      "Position": "[1870, 75, 1920, 95]",
+      "ZOrder": "24497",
+      "ForegroundColor": "[0.666667, 0.000000, 1.000000]",
+      "GotoTag": "id",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Goto20",
+    "type": "Goto",
+    "sid": "575",
+    "params": {
+      "Position": "[580, 422, 640, 438]",
+      "ZOrder": "100000",
+      "GotoTag": "id_ref"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Goto21",
+    "type": "Goto",
+    "sid": "588",
+    "params": {
+      "Position": "[570, 511, 620, 529]",
+      "ZOrder": "100000",
+      "ForegroundColor": "blue",
+      "GotoTag": "nref2"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Goto3",
+    "type": "Goto",
+    "sid": "66",
+    "params": {
+      "Position": "[1870, 96, 1920, 114]",
+      "ZOrder": "24498",
+      "ForegroundColor": "[0.666667, 0.000000, 1.000000]",
+      "GotoTag": "iq",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Goto4",
+    "type": "Goto",
+    "sid": "281",
+    "params": {
+      "Position": "[1405, 100, 1455, 120]",
+      "ZOrder": "24668",
+      "ForegroundColor": "yellow",
+      "GotoTag": "Uabc"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Goto5",
+    "type": "Goto",
+    "sid": "189",
+    "params": {
+      "Position": "[1405, 295, 1455, 315]",
+      "ZOrder": "24578",
+      "ForegroundColor": "blue",
+      "GotoTag": "Te",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Goto6",
+    "type": "Goto",
+    "sid": "172",
+    "params": {
+      "Position": "[1405, 245, 1455, 265]",
+      "ZOrder": "24562",
+      "ForegroundColor": "green",
+      "GotoTag": "speed",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Goto7",
+    "type": "Goto",
+    "sid": "220",
+    "params": {
+      "Position": "[1555, 380, 1585, 400]",
+      "ZOrder": "24613",
+      "ForegroundColor": "yellow",
+      "GotoTag": "vd",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Goto8",
+    "type": "Goto",
+    "sid": "221",
+    "params": {
+      "Position": "[1555, 580, 1585, 600]",
+      "ZOrder": "24614",
+      "ForegroundColor": "yellow",
+      "GotoTag": "vq",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Goto9",
+    "type": "Goto",
+    "sid": "222",
+    "params": {
+      "Position": "[1090, 496, 1140, 514]",
+      "ZOrder": "24615",
+      "ForegroundColor": "[0.666667, 0.000000, 1.000000]",
+      "GotoTag": "iq_ref",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Measured phase currents",
+    "type": "Goto",
+    "sid": "693",
+    "params": {
+      "Position": "[950, 320, 1060, 340]",
+      "ZOrder": "100000",
+      "GotoTag": "Currentabc",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Mux",
+    "type": "Mux",
+    "sid": "32",
+    "params": {
+      "Position": "[1200, 116, 1205, 154]",
+      "ZOrder": "24470",
+      "Inputs": "3",
+      "DisplayOption": "bar"
+    },
+    "ports": {
+      "in": "3",
+      "out": "1"
+    }
+  },
+  {
+    "name": "Mux1",
+    "type": "Mux",
+    "sid": "231",
+    "params": {
+      "Position": "[1635, 166, 1640, 224]",
+      "ZOrder": "24624",
+      "ForegroundColor": "yellow",
+      "Inputs": "3",
+      "DisplayOption": "bar"
+    },
+    "ports": {
+      "in": "3",
+      "out": "1"
+    }
+  },
+  {
+    "name": "Mux2",
+    "type": "Mux",
+    "sid": "298",
+    "params": {
+      "Position": "[2160, 410, 2165, 590]",
+      "ZOrder": "24685",
+      "Inputs": "6",
+      "DisplayOption": "bar"
+    },
+    "ports": {
+      "in": "6",
+      "out": "1"
+    }
+  },
+  {
+    "name": "Mux3",
+    "type": "Mux",
+    "sid": "534",
+    "params": {
+      "Position": "[1035, 706, 1040, 744]",
+      "ZOrder": "100000",
+      "Inputs": "2",
+      "DisplayOption": "bar"
+    },
+    "ports": {
+      "in": "2",
+      "out": "1"
+    }
+  },
+  {
+    "name": "Mux4",
+    "type": "Mux",
+    "sid": "563",
+    "params": {
+      "Position": "[2310, 706, 2315, 744]",
+      "ZOrder": "100000",
+      "Inputs": "2",
+      "DisplayOption": "bar"
+    },
+    "ports": {
+      "in": "2",
+      "out": "1"
+    }
+  },
+  {
+    "name": "NOT",
+    "type": "Logic",
+    "sid": "299",
+    "params": {
+      "Position": "[2060, 439, 2090, 471]",
+      "ZOrder": "24686",
+      "Operator": "NOT",
+      "IconShape": "distinctive",
+      "AllPortsSameDT": "off",
+      "OutDataTypeStr": "boolean"
+    },
+    "ports": {
+      "in": "1",
+      "out": "1"
+    }
+  },
+  {
+    "name": "NOT1",
+    "type": "Logic",
+    "sid": "300",
+    "params": {
+      "Position": "[2060, 499, 2090, 531]",
+      "ZOrder": "24687",
+      "Operator": "NOT",
+      "IconShape": "distinctive",
+      "AllPortsSameDT": "off",
+      "OutDataTypeStr": "boolean"
+    },
+    "ports": {
+      "in": "1",
+      "out": "1"
+    }
+  },
+  {
+    "name": "NOT2",
+    "type": "Logic",
+    "sid": "301",
+    "params": {
+      "Position": "[2060, 559, 2090, 591]",
+      "ZOrder": "24688",
+      "Operator": "NOT",
+      "IconShape": "distinctive",
+      "AllPortsSameDT": "off",
+      "OutDataTypeStr": "boolean"
+    },
+    "ports": {
+      "in": "1",
+      "out": "1"
+    }
+  },
+  {
+    "name": "PI Controller_w",
+    "type": "SubSystem",
+    "sid": "155",
+    "params": {
+      "Position": "[830, 478, 965, 512]",
+      "ZOrder": "24555",
+      "BackgroundColor": "cyan",
+      "ContentPreviewEnabled": "on"
+    },
+    "ports": {
+      "in": "1",
+      "out": "1"
+    }
+  },
+  {
+    "name": "PI Controller_w1",
+    "type": "SubSystem",
+    "sid": "439",
+    "params": {
+      "Position": "[1310, 373, 1445, 407]",
+      "ZOrder": "100000",
+      "BackgroundColor": "cyan",
+      "ContentPreviewEnabled": "on"
+    },
+    "ports": {
+      "in": "1",
+      "out": "1"
+    }
+  },
+  {
+    "name": "PI Controller_w2",
+    "type": "SubSystem",
+    "sid": "453",
+    "params": {
+      "Position": "[1305, 573, 1440, 607]",
+      "ZOrder": "100000",
+      "BackgroundColor": "cyan",
+      "ContentPreviewEnabled": "on"
+    },
+    "ports": {
+      "in": "1",
+      "out": "1"
+    }
+  },
+  {
+    "name": "PWM threshold tag",
+    "type": "Goto",
+    "sid": "718",
+    "params": {
+      "Position": "[1790, 350, 1850, 370]",
+      "ZOrder": "100000",
+      "GotoTag": "Tcm",
+      "TagVisibility": "global"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Permanent Magnet\nSynchronous Machine",
+    "type": "SubSystem",
+    "sid": "626",
+    "params": {
+      "Position": "[975, 179, 1065, 261]",
+      "ZOrder": "100000",
+      "BackgroundColor": "lightBlue",
+      "ContentPreviewEnabled": "on"
+    },
+    "ports": {
+      "in": "2",
+      "out": "2"
+    }
+  },
+  {
+    "name": "Product",
+    "type": "Product",
+    "sid": "197",
+    "params": {
+      "Position": "[970, 511, 985, 589]",
+      "ZOrder": "24586",
+      "Inputs": "3"
+    },
+    "ports": {
+      "in": "3",
+      "out": "1"
+    }
+  },
+  {
+    "name": "Product1",
+    "type": "Product",
+    "sid": "141",
+    "params": {
+      "Position": "[1375, 431, 1405, 469]",
+      "ZOrder": "24596",
+      "Inputs": "3"
+    },
+    "ports": {
+      "in": "3",
+      "out": "1"
+    }
+  },
+  {
+    "name": "Product2",
+    "type": "Product",
+    "sid": "214",
+    "params": {
+      "Position": "[1330, 526, 1350, 559]",
+      "ZOrder": "24608"
+    },
+    "ports": {
+      "in": "2",
+      "out": "1"
+    }
+  },
+  {
+    "name": "Product3",
+    "type": "Product",
+    "sid": "213",
+    "params": {
+      "Position": "[1425, 472, 1445, 568]",
+      "ZOrder": "24607"
+    },
+    "ports": {
+      "in": "2",
+      "out": "1"
+    }
+  },
+  {
+    "name": "Product4",
+    "type": "Product",
+    "sid": "217",
+    "params": {
+      "Position": "[875, 563, 890, 612]",
+      "ZOrder": "24611"
+    },
+    "ports": {
+      "in": "2",
+      "out": "1"
+    }
+  },
+  {
+    "name": "Rate Transition1",
+    "type": "RateTransition",
+    "sid": "346",
+    "params": {
+      "Position": "[1860, 421, 1910, 449]",
+      "ZOrder": "100000",
+      "Deterministic": "off"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Rate Transition2",
+    "type": "RateTransition",
+    "sid": "347",
+    "params": {
+      "Position": "[1860, 476, 1910, 504]",
+      "ZOrder": "100000",
+      "Deterministic": "off"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Rate Transition3",
+    "type": "RateTransition",
+    "sid": "348",
+    "params": {
+      "Position": "[1860, 531, 1910, 559]",
+      "ZOrder": "100000",
+      "Deterministic": "off"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Rate Transition4",
+    "type": "RateTransition",
+    "sid": "426",
+    "params": {
+      "Position": "[1860, 351, 1910, 379]",
+      "ZOrder": "100000",
+      "Deterministic": "off"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Relational\nOperator",
+    "type": "RelationalOperator",
+    "sid": "291",
+    "params": {
+      "Position": "[1960, 412, 1990, 443]",
+      "ZOrder": "24678",
+      "InputSameDT": "off",
+      "OutDataTypeStr": "boolean",
+      "RndMeth": "Simplest"
+    },
+    "ports": {
+      "in": "2",
+      "out": "1"
+    }
+  },
+  {
+    "name": "Relational\nOperator1",
+    "type": "RelationalOperator",
+    "sid": "292",
+    "params": {
+      "Position": "[1960, 467, 1990, 498]",
+      "ZOrder": "24679",
+      "InputSameDT": "off",
+      "OutDataTypeStr": "boolean",
+      "RndMeth": "Simplest"
+    },
+    "ports": {
+      "in": "2",
+      "out": "1"
+    }
+  },
+  {
+    "name": "Relational\nOperator2",
+    "type": "RelationalOperator",
+    "sid": "293",
+    "params": {
+      "Position": "[1960, 522, 1990, 553]",
+      "ZOrder": "24680",
+      "InputSameDT": "off",
+      "OutDataTypeStr": "boolean",
+      "RndMeth": "Simplest"
+    },
+    "ports": {
+      "in": "2",
+      "out": "1"
+    }
+  },
+  {
+    "name": "SVPWM Function v1.0",
+    "type": "SubSystem",
+    "sid": "240",
+    "params": {
+      "Position": "[1670, 412, 1750, 568]",
+      "ZOrder": "24632",
+      "LibrarySourceBlock": "simulink/User-Defined\nFunctions/MATLAB Function",
+      "LibrarySourceProduct": null,
+      "ErrorFcn": "Stateflow.Translate.translate",
+      "PermitHierarchicalResolution": "ExplicitOnly",
+      "TreatAsAtomicUnit": "on",
+      "SFBlockType": "MATLAB Function",
+      "ContentPreviewEnabled": "on"
+    },
+    "ports": {
+      "in": "4",
+      "out": "2"
+    }
+  },
+  {
+    "name": "Scope",
+    "type": "Scope",
+    "sid": "28",
+    "params": {
+      "Position": "[1340, 142, 1380, 218]",
+      "ZOrder": "24467",
+      "GraphicalSettings": "{\"GraphicalSettings\":{\"LegacySettings\":true,\"Style\":{\"AxesScalingProperties\":{\"ScaleAxesLimitsAtStop\":false},\"Style\":{\"AxesColor\":\"[0 0 0]\",\"ChannelNames\":[\"\"],\"ColorOrder\":\"[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863]\",\"CurrentConfiguration\":\"extmgr.ConfigurationSet\",\"DefaultLegendLabel\":[\"\",\"\",\"\"],\"LabelsColor\":\"[0.686274509803922 0.686274509803922 0.686274509803922]\",\"LineColor\":[\"auto\",\"auto\",\"auto\"],\"LineStyle\":[\"-\",\"-\",\"-\"],\"LineWidth\":[1.5,1.5,1.5],\"Marker\":[\"none\",\"none\",\"none\"],\"MinimizeControls\":\"false\",\"NumLines\":[3],\"Placement\":\"1\",\"PlotType\":\"Auto\",\"ShowContent\":\"true\",\"Version\":\"2022b\",\"Visible\":[true,true,true],\"YGrid\":\"true\"}}}}",
+      "WasSavedAsWebScope": "on",
+      "Floating": "off",
+      "MultipleDisplayCache": "[{\"MaxYLimMag\":2.21804,\"MaxYLimReal\":2.01558,\"MinYLimMag\":0,\"MinYLimReal\":-2.21804,\"PlotAsMagnitudePhase\":false,\"ShowGrid\":true,\"ShowLegend\":false,\"Title\":\"%<SignalLabel>\",\"YLabel\":\"\"}]",
+      "NumInputPorts": "3",
+      "ActiveDisplayYMinimum": "-2.21804",
+      "ActiveDisplayYMaximum": "2.01558"
+    },
+    "ports": {
+      "in": "3"
+    }
+  },
+  {
+    "name": "Scope1",
+    "type": "Scope",
+    "sid": "255",
+    "params": {
+      "Position": "[1325, 694, 1355, 756]",
+      "ZOrder": "24642",
+      "GraphicalSettings": "{\"GraphicalSettings\":{\"LegacySettings\":true,\"Style\":{\"AxesScalingProperties\":{\"ScaleAxesLimitsAtStop\":false},\"Stats\":{\"Enabled\":\"true\"},\"Style\":{\"AxesColor\":\"[1 1 1]\",\"BackgroundColor\":\"[1 1 1]\",\"ChannelNames\":[\"\",\"\"],\"ColorOrder\":\"[0 0.447058823529412 0.741176470588235;0.850980392156863 0.325490196078431 0.0980392156862745;0.929411764705882 0.694117647058824 0.125490196078431;0.494117647058824 0.184313725490196 0.556862745098039;0.466666666666667 0.674509803921569 0.188235294117647;0.301960784313725 0.745098039215686 0.933333333333333;0.635294117647059 0.0784313725490196 0.184313725490196]\",\"CurrentConfiguration\":\"extmgr.ConfigurationSet\",\"DefaultLegendLabel\":[\"\",\"\"],\"LabelsColor\":\"[0 0 0]\",\"LineColor\":[\"[0.850980392156863 0.325490196078431 0.0980392156862745]\",\"[0 0.498039215686275 0]\"],\"LineStyle\":[\"-\",\"-\"],\"LineWidth\":[2,1.5],\"Marker\":[\"none\",\"none\"],\"MeasurementChannel\":\"1\",\"Measurements\":\"struct\",\"MinimizeControls\":\"false\",\"NumLines\":[1,1],\"Placement\":\"2\",\"PlotType\":\"Auto\",\"PreserveColors\":\"true\",\"PreviousAutoscale\":\"XY\",\"PreviousZoomMode\":\"ZoomX\",\"ShowContent\":\"true\",\"Version\":\"2022b\",\"Visible\":[true,true],\"YGrid\":\"true\",\"traceselector\":\"struct\"}}}}",
+      "WindowPosition": "[418 559 1036 344]",
+      "WasSavedAsWebScope": "on",
+      "Floating": "off",
+      "MultipleDisplayCache": "[{\"MaxYLimMag\":3379.29942,\"MaxYLimReal\":3379.29942,\"MinYLimMag\":0,\"MinYLimReal\":-389.77916,\"PlotAsMagnitudePhase\":false,\"ShowGrid\":true,\"ShowLegend\":true,\"Title\":\"%<SignalLabel>\",\"YLabel\":\"\"},{\"MaxYLimMag\":0.34454,\"MaxYLimReal\":0.43813,\"MinYLimMag\":0,\"MinYLimReal\":-0.04868,\"PlotAsMagnitudePhase\":false,\"ShowGrid\":true,\"ShowLegend\":true,\"Title\":\"%<SignalLabel>\",\"YLabel\":\"\"}]",
+      "NumInputPorts": "2",
+      "LayoutDimensionsString": "[2 1]",
+      "TimeAxisLabels": "All",
+      "ShowTimeAxisLabel": "on",
+      "ShowLegend": "on",
+      "ActiveDisplayYMinimum": "-389.77916",
+      "ActiveDisplayYMaximum": "3379.29942",
+      "DataLoggingVariableName": "ScopeData3"
+    },
+    "ports": {
+      "in": "2"
+    }
+  },
+  {
+    "name": "Scope10",
+    "type": "Scope",
+    "sid": "504",
+    "params": {
+      "Position": "[1175, 706, 1200, 779]",
+      "ZOrder": "100000",
+      "GraphicalSettings": "{\"GraphicalSettings\":{\"LegacySettings\":true,\"Style\":{\"AxesScalingProperties\":{\"ScaleAxesLimitsAtStop\":false},\"Style\":{\"AxesColor\":\"[1 1 1]\",\"BackgroundColor\":\"[1 1 1]\",\"ChannelNames\":[\"\",\"\"],\"ColorOrder\":\"[0 0.447058823529412 0.741176470588235;0.850980392156863 0.325490196078431 0.0980392156862745;0.929411764705882 0.694117647058824 0.125490196078431;0.494117647058824 0.184313725490196 0.556862745098039;0.466666666666667 0.674509803921569 0.188235294117647;0.301960784313725 0.745098039215686 0.933333333333333;0.635294117647059 0.0784313725490196 0.184313725490196]\",\"CurrentConfiguration\":\"extmgr.ConfigurationSet\",\"DefaultLegendLabel\":[\"\",\"\",\"\"],\"LabelsColor\":\"[0 0 0]\",\"LineColor\":[\"[0.850980392156863 0.325490196078431 0.0980392156862745]\",\"[0 0.447058823529412 0.741176470588235]\",\"auto\"],\"LineStyle\":[\"-\",\"-\",\"-\"],\"LineWidth\":[2,1.5,1.5],\"Marker\":[\"none\",\"none\",\"none\"],\"MinimizeControls\":\"false\",\"NumLines\":[2,1],\"Placement\":\"2\",\"PlotType\":\"Auto\",\"PreserveColors\":\"true\",\"PreviousAutoscale\":\"XY\",\"PreviousZoomMode\":\"ZoomX\",\"ShowContent\":\"true\",\"Version\":\"2022b\",\"Visible\":[true,true,true],\"YGrid\":\"true\"}}}}",
+      "WindowPosition": "[576 303 762 421]",
+      "WasSavedAsWebScope": "on",
+      "Floating": "off",
+      "MultipleDisplayCache": "[{\"MaxYLimMag\":406.58362,\"MaxYLimReal\":406.58362,\"MinYLimMag\":0,\"MinYLimReal\":-396.87,\"PlotAsMagnitudePhase\":false,\"ShowGrid\":true,\"ShowLegend\":true,\"Title\":\"%<SignalLabel>\",\"YLabel\":\"\"},{\"MaxYLimMag\":381.39396,\"MaxYLimReal\":1.29591,\"MinYLimMag\":0,\"MinYLimReal\":-0.14399,\"PlotAsMagnitudePhase\":false,\"ShowGrid\":true,\"ShowLegend\":true,\"Title\":\"%<SignalLabel>\",\"YLabel\":\"\"}]",
+      "NumInputPorts": "2",
+      "LayoutDimensionsString": "[2 1]",
+      "TimeAxisLabels": "All",
+      "ShowTimeAxisLabel": "on",
+      "ShowLegend": "on",
+      "ActiveDisplayYMinimum": "-396.87",
+      "ActiveDisplayYMaximum": "406.58362",
+      "DataLoggingVariableName": "ScopeData14"
+    },
+    "ports": {
+      "in": "2"
+    }
+  },
+  {
+    "name": "Scope11",
+    "type": "Scope",
+    "sid": "353",
+    "params": {
+      "Position": "[2125, 803, 2165, 867]",
+      "ZOrder": "100000",
+      "GraphicalSettings": "{\"GraphicalSettings\":{\"LegacySettings\":true,\"Style\":{\"AxesScalingProperties\":{\"ScaleAxesLimitsAtStop\":false},\"Style\":{\"AxesColor\":\"[1 1 1]\",\"BackgroundColor\":\"[1 1 1]\",\"ChannelNames\":[\"\",\"\",\"\"],\"ColorOrder\":\"[0 0.447058823529412 0.741176470588235;0.850980392156863 0.325490196078431 0.0980392156862745;0.929411764705882 0.694117647058824 0.125490196078431;0.494117647058824 0.184313725490196 0.556862745098039;0.466666666666667 0.674509803921569 0.188235294117647;0.301960784313725 0.745098039215686 0.933333333333333;0.635294117647059 0.0784313725490196 0.184313725490196]\",\"CurrentConfiguration\":\"extmgr.ConfigurationSet\",\"DefaultLegendLabel\":[\"\",\"\",\"\"],\"LabelsColor\":\"[0 0 0]\",\"LineColor\":[\"[0.850980392156863 0.325490196078431 0.0980392156862745]\",\"[0 0.447058823529412 0.741176470588235]\",\"[0 0.498039215686275 0]\"],\"LineStyle\":[\"-\",\"-\",\"-\"],\"LineWidth\":[1.5,1.5,1.5],\"Marker\":[\"none\",\"none\",\"none\"],\"MarkerSize\":\"8\",\"MinimizeControls\":\"false\",\"NumLines\":[1,1,1],\"Placement\":\"3\",\"PlotType\":\"Auto\",\"PreserveColors\":\"true\",\"PreviousAutoscale\":\"XY\",\"PreviousZoomMode\":\"ZoomX\",\"ShowContent\":\"true\",\"Version\":\"2022b\",\"Visible\":[true,true,true],\"YGrid\":\"true\"}}}}",
+      "WindowPosition": "[680 232 882 518]",
+      "WasSavedAsWebScope": "on",
+      "Floating": "off",
+      "MultipleDisplayCache": "[{\"MaxYLimMag\":2.1E-5,\"MaxYLimReal\":2.5E-5,\"MinYLimMag\":4E-6,\"MinYLimReal\":2E-6,\"PlotAsMagnitudePhase\":false,\"ShowGrid\":true,\"ShowLegend\":true,\"Title\":\"%<SignalLabel>\",\"YLabel\":\"\"},{\"MaxYLimMag\":27.06716,\"MaxYLimReal\":2.3E-5,\"MinYLimMag\":0,\"MinYLimReal\":-0,\"PlotAsMagnitudePhase\":false,\"ShowGrid\":true,\"ShowLegend\":true,\"Title\":\"%<SignalLabel>\",\"YLabel\":\"\"},{\"MaxYLimMag\":2.2E-5,\"MaxYLimReal\":2.2E-5,\"MinYLimMag\":3E-6,\"MinYLimReal\":3E-6,\"PlotAsMagnitudePhase\":false,\"ShowGrid\":true,\"ShowLegend\":true,\"Title\":\"%<SignalLabel>\",\"YLabel\":\"\"}]",
+      "NumInputPorts": "3",
+      "LayoutDimensionsString": "[3 1]",
+      "ShowTimeAxisLabel": "on",
+      "ShowLegend": "on",
+      "ActiveDisplayYMinimum": "2E-6",
+      "ActiveDisplayYMaximum": "2.5E-5",
+      "DataLoggingVariableName": "ScopeData13"
+    },
+    "ports": {
+      "in": "3"
+    }
+  },
+  {
+    "name": "Scope12",
+    "type": "Scope",
+    "sid": "549",
+    "params": {
+      "Position": "[1090, 701, 1125, 754]",
+      "ZOrder": "100000",
+      "GraphicalSettings": "{\"GraphicalSettings\":{\"LegacySettings\":true,\"Style\":{\"AxesScalingProperties\":{\"ScaleAxesLimitsAtStop\":false},\"Cursors\":{\"CursorChannels\":\"[1 1]\",\"Enabled\":\"true\",\"Horizontal\":\"true\",\"LinkToWaveform\":\"false\",\"LockSpacing\":\"false\",\"SnapToData\":\"false\",\"XLocation\":\"[0.25 0.75]\",\"YLocation\":\"[NaN NaN]\"},\"Stats\":{\"Enabled\":\"true\"},\"Style\":{\"AxesColor\":\"[1 1 1]\",\"BackgroundColor\":\"[1 1 1]\",\"ChannelNames\":[\"\",\"\"],\"ColorOrder\":\"[0 0.447058823529412 0.741176470588235;0.850980392156863 0.325490196078431 0.0980392156862745;0.929411764705882 0.694117647058824 0.125490196078431;0.494117647058824 0.184313725490196 0.556862745098039;0.466666666666667 0.674509803921569 0.188235294117647;0.301960784313725 0.745098039215686 0.933333333333333;0.635294117647059 0.0784313725490196 0.184313725490196]\",\"CurrentConfiguration\":\"extmgr.ConfigurationSet\",\"DefaultLegendLabel\":[\"\",\"\"],\"LabelsColor\":\"[0 0 0]\",\"LineColor\":[\"[0.850980392156863 0.325490196078431 0.0980392156862745]\",\"[0 0.447058823529412 0.741176470588235]\"],\"LineStyle\":[\"-\",\"-\"],\"LineWidth\":[2,2],\"Marker\":[\"none\",\"none\"],\"MeasurementChannel\":\"1\",\"Measurements\":\"struct\",\"MeasurementsPanelOpen\":\"1\",\"MinimizeControls\":\"false\",\"NumLines\":[1,1],\"Placement\":\"2\",\"PlotType\":\"Auto\",\"PreserveColors\":\"true\",\"PreviousAutoscale\":\"X\",\"PreviousZoomMode\":\"ZoomX\",\"SettingsPanelOpen\":\"1\",\"ShowContent\":\"true\",\"ShowVertical\":\"true\",\"Version\":\"2022b\",\"Visible\":[true,true],\"YGrid\":\"true\",\"traceselector\":\"struct\"}}}}",
+      "WindowPosition": "[336 122 1337 761]",
+      "WasSavedAsWebScope": "on",
+      "Floating": "off",
+      "MultipleDisplayCache": "[{\"MaxYLimMag\":405.982,\"MaxYLimReal\":405.982,\"MinYLimMag\":0,\"MinYLimReal\":-396.37475,\"PlotAsMagnitudePhase\":false,\"ShowGrid\":true,\"ShowLegend\":true,\"Title\":\"%<SignalLabel>\",\"YLabel\":\"\"},{\"MaxYLimMag\":375,\"MaxYLimReal\":375,\"MinYLimMag\":0,\"MinYLimReal\":-375,\"PlotAsMagnitudePhase\":false,\"ShowGrid\":true,\"ShowLegend\":true,\"Title\":\"%<SignalLabel>\",\"YLabel\":\"\"}]",
+      "NumInputPorts": "2",
+      "LayoutDimensionsString": "[2 1]",
+      "TimeAxisLabels": "All",
+      "ShowTimeAxisLabel": "on",
+      "ShowLegend": "on",
+      "ActiveDisplayYMinimum": "-396.37475",
+      "ActiveDisplayYMaximum": "405.982",
+      "DataLoggingVariableName": "ScopeData15"
+    },
+    "ports": {
+      "in": "2"
+    }
+  },
+  {
+    "name": "Scope13",
+    "type": "Scope",
+    "sid": "564",
+    "params": {
+      "Position": "[2450, 706, 2475, 779]",
+      "ZOrder": "100000",
+      "GraphicalSettings": "{\"GraphicalSettings\":{\"LegacySettings\":true,\"Style\":{\"AxesScalingProperties\":{\"ScaleAxesLimitsAtStop\":false},\"Style\":{\"AxesColor\":\"[1 1 1]\",\"BackgroundColor\":\"[1 1 1]\",\"ChannelNames\":[\"\",\"\"],\"ColorOrder\":\"[0 0.447058823529412 0.741176470588235;0.850980392156863 0.325490196078431 0.0980392156862745;0.929411764705882 0.694117647058824 0.125490196078431;0.494117647058824 0.184313725490196 0.556862745098039;0.466666666666667 0.674509803921569 0.188235294117647;0.301960784313725 0.745098039215686 0.933333333333333;0.635294117647059 0.0784313725490196 0.184313725490196]\",\"CurrentConfiguration\":\"extmgr.ConfigurationSet\",\"DefaultLegendLabel\":[\"\",\"\",\"\"],\"LabelsColor\":\"[0 0 0]\",\"LineColor\":[\"[0.850980392156863 0.325490196078431 0.0980392156862745]\",\"[0 0.447058823529412 0.741176470588235]\",\"auto\"],\"LineStyle\":[\"-\",\"-\",\"-\"],\"LineWidth\":[2,1.5,1.5],\"Marker\":[\"none\",\"none\",\"none\"],\"MinimizeControls\":\"false\",\"NumLines\":[2,1],\"Placement\":\"2\",\"PlotType\":\"Auto\",\"PreserveColors\":\"true\",\"PreviousAutoscale\":\"XY\",\"PreviousZoomMode\":\"ZoomX\",\"ShowContent\":\"true\",\"Version\":\"2022b\",\"Visible\":[true,false,true],\"YGrid\":\"true\"}}}}",
+      "WindowPosition": "[576 303 762 421]",
+      "WasSavedAsWebScope": "on",
+      "Floating": "off",
+      "MultipleDisplayCache": "[{\"MaxYLimMag\":1.66602,\"MaxYLimReal\":1.57602,\"MinYLimMag\":0,\"MinYLimReal\":-1.66602,\"PlotAsMagnitudePhase\":false,\"ShowGrid\":true,\"ShowLegend\":true,\"Title\":\"%<SignalLabel>\",\"YLabel\":\"\"},{\"MaxYLimMag\":381.39396,\"MaxYLimReal\":1.75984,\"MinYLimMag\":0,\"MinYLimReal\":-0.19552,\"PlotAsMagnitudePhase\":false,\"ShowGrid\":true,\"ShowLegend\":true,\"Title\":\"%<SignalLabel>\",\"YLabel\":\"\"}]",
+      "NumInputPorts": "2",
+      "LayoutDimensionsString": "[2 1]",
+      "TimeAxisLabels": "All",
+      "ShowTimeAxisLabel": "on",
+      "ShowLegend": "on",
+      "ActiveDisplayYMinimum": "-1.66602",
+      "ActiveDisplayYMaximum": "1.57602",
+      "DataLoggingVariableName": "ScopeData18"
+    },
+    "ports": {
+      "in": "2"
+    }
+  },
+  {
+    "name": "Scope14",
+    "type": "Scope",
+    "sid": "365",
+    "params": {
+      "Position": "[1720, 757, 1775, 808]",
+      "ZOrder": "100000",
+      "GraphicalSettings": "{\"GraphicalSettings\":{\"LegacySettings\":true,\"Style\":{\"AxesScalingProperties\":{\"ScaleAxesLimitsAtStop\":false},\"Style\":{\"AxesColor\":\"[1 1 1]\",\"BackgroundColor\":\"[1 1 1]\",\"ChannelNames\":[\"\"],\"ColorOrder\":\"[0 0.447058823529412 0.741176470588235;0.850980392156863 0.325490196078431 0.0980392156862745;0.929411764705882 0.694117647058824 0.125490196078431;0.494117647058824 0.184313725490196 0.556862745098039;0.466666666666667 0.674509803921569 0.188235294117647;0.301960784313725 0.745098039215686 0.933333333333333;0.635294117647059 0.0784313725490196 0.184313725490196]\",\"CurrentConfiguration\":\"extmgr.ConfigurationSet\",\"DefaultLegendLabel\":[\"\",\"\"],\"LabelsColor\":\"[0.501960784313725 0.501960784313725 0.501960784313725]\",\"LineColor\":[\"[0.850980392156863 0.325490196078431 0.0980392156862745]\",\"[0 0.447058823529412 0.741176470588235]\"],\"LineStyle\":[\"-\",\"-\"],\"LineWidth\":[1.5,1.5],\"Marker\":[\"none\",\"none\"],\"MinimizeControls\":\"false\",\"NumLines\":[2],\"Placement\":\"1\",\"PlotType\":\"Auto\",\"PreserveColors\":\"true\",\"ShowContent\":\"true\",\"Version\":\"2022b\",\"Visible\":[true,true],\"YGrid\":\"true\"}}}}",
+      "WindowPosition": "[680 154 947 596]",
+      "WasSavedAsWebScope": "on",
+      "Floating": "off",
+      "MultipleDisplayCache": "[{\"MaxYLimMag\":20.0031,\"MaxYLimReal\":19.99997,\"MinYLimMag\":0,\"MinYLimReal\":-20.0031,\"PlotAsMagnitudePhase\":false,\"ShowGrid\":true,\"ShowLegend\":true,\"Title\":\"%<SignalLabel>\",\"YLabel\":\"\"}]",
+      "NumInputPorts": "2",
+      "ShowTimeAxisLabel": "on",
+      "ShowLegend": "on",
+      "ActiveDisplayYMinimum": "-20.0031",
+      "ActiveDisplayYMaximum": "19.99997",
+      "DataLoggingVariableName": "ScopeData16"
+    },
+    "ports": {
+      "in": "2"
+    }
+  },
+  {
+    "name": "Scope15",
+    "type": "Scope",
+    "sid": "366",
+    "params": {
+      "Position": "[1720, 807, 1775, 858]",
+      "ZOrder": "100000",
+      "GraphicalSettings": "{\"GraphicalSettings\":{\"LegacySettings\":true,\"Style\":{\"AxesScalingProperties\":{\"ScaleAxesLimitsAtStop\":false},\"Style\":{\"AxesColor\":\"[1 1 1]\",\"BackgroundColor\":\"[1 1 1]\",\"ChannelNames\":[\"\"],\"ColorOrder\":\"[0 0.447058823529412 0.741176470588235;0.850980392156863 0.325490196078431 0.0980392156862745;0.929411764705882 0.694117647058824 0.125490196078431;0.494117647058824 0.184313725490196 0.556862745098039;0.466666666666667 0.674509803921569 0.188235294117647;0.301960784313725 0.745098039215686 0.933333333333333;0.635294117647059 0.0784313725490196 0.184313725490196]\",\"CurrentConfiguration\":\"extmgr.ConfigurationSet\",\"DefaultLegendLabel\":[\"\",\"\"],\"LabelsColor\":\"[0.501960784313725 0.501960784313725 0.501960784313725]\",\"LineColor\":[\"[0.850980392156863 0.325490196078431 0.0980392156862745]\",\"[0 0.447058823529412 0.741176470588235]\"],\"LineStyle\":[\"-\",\"-\"],\"LineWidth\":[1.5,1.5],\"Marker\":[\"none\",\"none\"],\"MinimizeControls\":\"false\",\"NumLines\":[2],\"Placement\":\"1\",\"PlotType\":\"Auto\",\"PreserveColors\":\"true\",\"ShowContent\":\"true\",\"Version\":\"2022b\",\"Visible\":[true,true],\"YGrid\":\"true\"}}}}",
+      "WindowPosition": "[434 178 947 596]",
+      "WasSavedAsWebScope": "on",
+      "Floating": "off",
+      "MultipleDisplayCache": "[{\"MaxYLimMag\":14.86532,\"MaxYLimReal\":14.86532,\"MinYLimMag\":0,\"MinYLimReal\":-4.01522,\"PlotAsMagnitudePhase\":false,\"ShowGrid\":true,\"ShowLegend\":true,\"Title\":\"%<SignalLabel>\",\"YLabel\":\"\"}]",
+      "NumInputPorts": "2",
+      "ShowTimeAxisLabel": "on",
+      "ShowLegend": "on",
+      "ActiveDisplayYMinimum": "-4.01522",
+      "ActiveDisplayYMaximum": "14.86532",
+      "DataLoggingVariableName": "ScopeData17"
+    },
+    "ports": {
+      "in": "2"
+    }
+  },
+  {
+    "name": "Scope16",
+    "type": "Scope",
+    "sid": "565",
+    "params": {
+      "Position": "[2365, 701, 2400, 754]",
+      "ZOrder": "100000",
+      "GraphicalSettings": "{\"GraphicalSettings\":{\"LegacySettings\":true,\"Style\":{\"AxesScalingProperties\":{\"ScaleAxesLimitsAtStop\":false},\"Cursors\":{\"CursorChannels\":\"[1 1]\",\"Enabled\":\"true\",\"Horizontal\":\"true\",\"LinkToWaveform\":\"false\",\"LockSpacing\":\"0\",\"SnapToData\":\"1\",\"XLocation\":\"[0.25 0.75]\",\"YLocation\":\"[NaN NaN]\"},\"Stats\":{\"Enabled\":\"true\"},\"Style\":{\"AxesColor\":\"[1 1 1]\",\"BackgroundColor\":\"[1 1 1]\",\"ChannelNames\":[\"\",\"\"],\"ColorOrder\":\"[0 0.447058823529412 0.741176470588235;0.850980392156863 0.325490196078431 0.0980392156862745;0.929411764705882 0.694117647058824 0.125490196078431;0.494117647058824 0.184313725490196 0.556862745098039;0.466666666666667 0.674509803921569 0.188235294117647;0.301960784313725 0.745098039215686 0.933333333333333;0.635294117647059 0.0784313725490196 0.184313725490196]\",\"CurrentConfiguration\":\"extmgr.ConfigurationSet\",\"DefaultLegendLabel\":[\"\",\"\"],\"LabelsColor\":\"[0 0 0]\",\"LineColor\":[\"[0.850980392156863 0.325490196078431 0.0980392156862745]\",\"auto\"],\"LineStyle\":[\"-\",\"-\"],\"LineWidth\":[2,1.5],\"Marker\":[\"none\",\"none\"],\"MeasurementChannel\":\"1\",\"Measurements\":\"struct\",\"MeasurementsPanelOpen\":\"1\",\"MinimizeControls\":\"false\",\"NumLines\":[1,1],\"Placement\":\"2\",\"PlotType\":\"Auto\",\"PreserveColors\":\"true\",\"PreviousAutoscale\":\"XY\",\"PreviousZoomMode\":\"ZoomX\",\"SettingsPanelOpen\":\"1\",\"ShowContent\":\"true\",\"ShowVertical\":\"true\",\"Version\":\"2022b\",\"Visible\":[true,true],\"YGrid\":\"true\",\"traceselector\":\"struct\"}}}}",
+      "WindowPosition": "[336 122 1338 761]",
+      "WasSavedAsWebScope": "on",
+      "Floating": "off",
+      "MultipleDisplayCache": "[{\"MaxYLimMag\":0.53797,\"MaxYLimReal\":0.49236,\"MinYLimMag\":0,\"MinYLimReal\":-0.53797,\"PlotAsMagnitudePhase\":false,\"ShowGrid\":true,\"ShowLegend\":true,\"Title\":\"%<SignalLabel>\",\"YLabel\":\"\"},{\"MaxYLimMag\":381.39396,\"MaxYLimReal\":1.15,\"MinYLimMag\":0,\"MinYLimReal\":-1.15,\"PlotAsMagnitudePhase\":false,\"ShowGrid\":true,\"ShowLegend\":true,\"Title\":\"%<SignalLabel>\",\"YLabel\":\"\"}]",
+      "NumInputPorts": "2",
+      "LayoutDimensionsString": "[2 1]",
+      "TimeAxisLabels": "All",
+      "ShowTimeAxisLabel": "on",
+      "ShowLegend": "on",
+      "ActiveDisplayYMinimum": "-0.53797",
+      "ActiveDisplayYMaximum": "0.49236",
+      "DataLoggingVariableName": "ScopeData19"
+    },
+    "ports": {
+      "in": "2"
+    }
+  },
+  {
+    "name": "Scope2",
+    "type": "Scope",
+    "sid": "275",
+    "params": {
+      "Position": "[1690, 685, 1730, 735]",
+      "ZOrder": "24662",
+      "GraphicalSettings": "{\"GraphicalSettings\":{\"LegacySettings\":true,\"Style\":{\"AxesScalingProperties\":{\"ScaleAxesLimitsAtStop\":false},\"Style\":{\"AxesColor\":\"[1 1 1]\",\"BackgroundColor\":\"[1 1 1]\",\"ChannelNames\":[\"\"],\"ColorOrder\":\"[0 0.447058823529412 0.741176470588235;0.850980392156863 0.325490196078431 0.0980392156862745;0.929411764705882 0.694117647058824 0.125490196078431;0.494117647058824 0.184313725490196 0.556862745098039;0.466666666666667 0.674509803921569 0.188235294117647;0.301960784313725 0.745098039215686 0.933333333333333;0.635294117647059 0.0784313725490196 0.184313725490196]\",\"CurrentConfiguration\":\"extmgr.ConfigurationSet\",\"DefaultLegendLabel\":[\"\",\"\",\"\",\"\",\"\",\"\"],\"LabelsColor\":\"[0.501960784313725 0.501960784313725 0.501960784313725]\",\"LineColor\":[\"[0.850980392156863 0.325490196078431 0.0980392156862745]\",\"\",\"\",\"\",\"\",\"\"],\"LineStyle\":[\"-\",\"\",\"\",\"\",\"\",\"\"],\"LineWidth\":[1,0,0,0,0,0],\"Marker\":[\"none\",\"\",\"\",\"\",\"\",\"\"],\"MinimizeControls\":\"false\",\"NumLines\":[6],\"Placement\":\"1\",\"PlotType\":\"Auto\",\"PreserveColors\":\"true\",\"PreviousAutoscale\":\"XY\",\"ShowContent\":\"true\",\"Version\":\"2022b\",\"Visible\":[true,true,true,true,true,true],\"YGrid\":\"true\"}}}}",
+      "WindowPosition": "[680 154 947 596]",
+      "WasSavedAsWebScope": "on",
+      "Floating": "off",
+      "MultipleDisplayCache": "[{\"MaxYLimMag\":1.125,\"MaxYLimReal\":1.125,\"MinYLimMag\":0,\"MinYLimReal\":-0.125,\"PlotAsMagnitudePhase\":false,\"ShowGrid\":true,\"ShowLegend\":true,\"Title\":\"%<SignalLabel>\",\"YLabel\":\"\"}]",
+      "NumInputPorts": "1",
+      "ShowTimeAxisLabel": "on",
+      "ShowLegend": "on",
+      "ActiveDisplayYMinimum": "-0.125",
+      "ActiveDisplayYMaximum": "1.125",
+      "DataLoggingVariableName": "ScopeData4"
+    },
+    "ports": {
+      "in": "1"
+    }
+  },
+  {
+    "name": "Scope3",
+    "type": "Scope",
+    "sid": "274",
+    "params": {
+      "Position": "[1510, 688, 1550, 732]",
+      "ZOrder": "24661",
+      "GraphicalSettings": "{\"GraphicalSettings\":{\"LegacySettings\":true,\"Style\":{\"AxesScalingProperties\":{\"ScaleAxesLimitsAtStop\":false},\"Style\":{\"AxesColor\":\"[1 1 1]\",\"BackgroundColor\":\"[1 1 1]\",\"ChannelNames\":[\"\"],\"ColorOrder\":\"[0 0.447058823529412 0.741176470588235;0.850980392156863 0.325490196078431 0.0980392156862745;0.929411764705882 0.694117647058824 0.125490196078431;0.494117647058824 0.184313725490196 0.556862745098039;0.466666666666667 0.674509803921569 0.188235294117647;0.301960784313725 0.745098039215686 0.933333333333333;0.635294117647059 0.0784313725490196 0.184313725490196]\",\"CurrentConfiguration\":\"extmgr.ConfigurationSet\",\"DefaultLegendLabel\":[\"\",\"\",\"\"],\"LabelsColor\":\"[0 0 0]\",\"LineColor\":[\"[0.850980392156863 0.325490196078431 0.0980392156862745]\",\"[0 0.447058823529412 0.741176470588235]\",\"[0 0.498039215686275 0]\"],\"LineStyle\":[\"-\",\"-\",\"-\"],\"LineWidth\":[1.5,1.5,1.5],\"Marker\":[\"none\",\"none\",\"none\"],\"MinimizeControls\":\"false\",\"NumLines\":[3],\"Placement\":\"1\",\"PlotType\":\"Auto\",\"PreserveColors\":\"true\",\"PreviousZoomMode\":\"ZoomX\",\"ShowContent\":\"true\",\"Version\":\"2022b\",\"Visible\":[true,true,true],\"YGrid\":\"true\"}}}}",
+      "WindowPosition": "[680 490 837 260]",
+      "WasSavedAsWebScope": "on",
+      "Floating": "off",
+      "MultipleDisplayCache": "[{\"MaxYLimMag\":14.56696,\"MaxYLimReal\":14.56696,\"MinYLimMag\":0,\"MinYLimReal\":-14.55664,\"PlotAsMagnitudePhase\":false,\"ShowGrid\":true,\"ShowLegend\":true,\"Title\":\"%<SignalLabel>\",\"YLabel\":\"\"}]",
+      "NumInputPorts": "1",
+      "ShowTimeAxisLabel": "on",
+      "ShowLegend": "on",
+      "ActiveDisplayYMinimum": "-14.55664",
+      "ActiveDisplayYMaximum": "14.56696",
+      "DataLoggingVariableName": "ScopeData5"
+    },
+    "ports": {
+      "in": "1"
+    }
+  },
+  {
+    "name": "Scope4",
+    "type": "Scope",
+    "sid": "288",
+    "params": {
+      "Position": "[1525, 758, 1565, 822]",
+      "ZOrder": "24675",
+      "GraphicalSettings": "{\"GraphicalSettings\":{\"LegacySettings\":true,\"Style\":{\"AxesScalingProperties\":{\"ScaleAxesLimitsAtStop\":false},\"Style\":{\"AxesColor\":\"[1 1 1]\",\"BackgroundColor\":\"[1 1 1]\",\"ChannelNames\":[\"\",\"\",\"\"],\"ColorOrder\":\"[0 0.447058823529412 0.741176470588235;0.850980392156863 0.325490196078431 0.0980392156862745;0.929411764705882 0.694117647058824 0.125490196078431;0.494117647058824 0.184313725490196 0.556862745098039;0.466666666666667 0.674509803921569 0.188235294117647;0.301960784313725 0.745098039215686 0.933333333333333;0.635294117647059 0.0784313725490196 0.184313725490196]\",\"CurrentConfiguration\":\"extmgr.ConfigurationSet\",\"DefaultLegendLabel\":[\"\",\"\",\"\"],\"LabelsColor\":\"[0 0 0]\",\"LineColor\":[\"[0.850980392156863 0.325490196078431 0.0980392156862745]\",\"auto\",\"[0 0.498039215686275 0]\"],\"LineStyle\":[\"-\",\"-\",\"-\"],\"LineWidth\":[1.5,1.5,0.75],\"Marker\":[\"none\",\"none\",\"none\"],\"MinimizeControls\":\"false\",\"NumLines\":[1,1,1],\"Placement\":\"3\",\"PlotType\":\"Auto\",\"PreserveColors\":\"true\",\"PreviousAutoscale\":\"XY\",\"PreviousZoomMode\":\"ZoomX\",\"ShowContent\":\"true\",\"Version\":\"2022b\",\"Visible\":[true,true,true],\"YGrid\":\"true\"}}}}",
+      "WindowPosition": "[680 154 947 596]",
+      "WasSavedAsWebScope": "on",
+      "Floating": "off",
+      "MultipleDisplayCache": "[{\"MaxYLimMag\":30.00473,\"MaxYLimReal\":30.00442,\"MinYLimMag\":0,\"MinYLimReal\":-30.00473,\"PlotAsMagnitudePhase\":false,\"ShowGrid\":true,\"ShowLegend\":true,\"Title\":\"%<SignalLabel>\",\"YLabel\":\"\"},{\"MaxYLimMag\":27.06716,\"MaxYLimReal\":30.00616,\"MinYLimMag\":0,\"MinYLimReal\":-30.00481,\"PlotAsMagnitudePhase\":false,\"ShowGrid\":true,\"ShowLegend\":true,\"Title\":\"%<SignalLabel>\",\"YLabel\":\"\"},{\"MaxYLimMag\":15.07865,\"MaxYLimReal\":30.00834,\"MinYLimMag\":0,\"MinYLimReal\":-30.00504,\"PlotAsMagnitudePhase\":false,\"ShowGrid\":true,\"ShowLegend\":true,\"Title\":\"%<SignalLabel>\",\"YLabel\":\"\"}]",
+      "NumInputPorts": "3",
+      "LayoutDimensionsString": "[3 1]",
+      "ShowTimeAxisLabel": "on",
+      "ShowLegend": "on",
+      "ActiveDisplayYMinimum": "-30.00473",
+      "ActiveDisplayYMaximum": "30.00442",
+      "DataLoggingVariableName": "ScopeData6"
+    },
+    "ports": {
+      "in": "3"
+    }
+  },
+  {
+    "name": "Scope5",
+    "type": "Scope",
+    "sid": "287",
+    "params": {
+      "Position": "[1930, 717, 1985, 768]",
+      "ZOrder": "24674",
+      "GraphicalSettings": "{\"GraphicalSettings\":{\"LegacySettings\":true,\"Style\":{\"AxesScalingProperties\":{\"ScaleAxesLimitsAtStop\":false},\"Style\":{\"AxesColor\":\"[1 1 1]\",\"BackgroundColor\":\"[1 1 1]\",\"ChannelNames\":[\"\"],\"ColorOrder\":\"[0 0.447058823529412 0.741176470588235;0.850980392156863 0.325490196078431 0.0980392156862745;0.929411764705882 0.694117647058824 0.125490196078431;0.494117647058824 0.184313725490196 0.556862745098039;0.466666666666667 0.674509803921569 0.188235294117647;0.301960784313725 0.745098039215686 0.933333333333333;0.635294117647059 0.0784313725490196 0.184313725490196]\",\"CurrentConfiguration\":\"extmgr.ConfigurationSet\",\"DefaultLegendLabel\":[\"\",\"\"],\"LabelsColor\":\"[0.501960784313725 0.501960784313725 0.501960784313725]\",\"LineColor\":[\"[0.850980392156863 0.325490196078431 0.0980392156862745]\",\"[0 0.447058823529412 0.741176470588235]\"],\"LineStyle\":[\"-\",\"-\"],\"LineWidth\":[1.5,1.5],\"Marker\":[\"none\",\"none\"],\"MinimizeControls\":\"false\",\"NumLines\":[2],\"Placement\":\"1\",\"PlotType\":\"Auto\",\"PreserveColors\":\"true\",\"ShowContent\":\"true\",\"Version\":\"2022b\",\"Visible\":[true,true],\"YGrid\":\"true\"}}}}",
+      "WindowPosition": "[680 154 947 596]",
+      "WasSavedAsWebScope": "on",
+      "Floating": "off",
+      "MultipleDisplayCache": "[{\"MaxYLimMag\":11.70557,\"MaxYLimReal\":11.70557,\"MinYLimMag\":0,\"MinYLimReal\":-1.30062,\"PlotAsMagnitudePhase\":false,\"ShowGrid\":true,\"ShowLegend\":true,\"Title\":\"%<SignalLabel>\",\"YLabel\":\"\"}]",
+      "NumInputPorts": "2",
+      "ShowTimeAxisLabel": "on",
+      "ShowLegend": "on",
+      "ActiveDisplayYMinimum": "-1.30062",
+      "ActiveDisplayYMaximum": "11.70557",
+      "DataLoggingVariableName": "ScopeData7"
+    },
+    "ports": {
+      "in": "2"
+    }
+  },
+  {
+    "name": "Scope6",
+    "type": "Scope",
+    "sid": "302",
+    "params": {
+      "Position": "[2010, 359, 2040, 401]",
+      "ZOrder": "24689",
+      "GraphicalSettings": "{\"GraphicalSettings\":{\"LegacySettings\":true,\"Style\":{\"AxesScalingProperties\":{\"ScaleAxesLimitsAtStop\":false},\"Style\":{\"AxesColor\":\"[1 1 1]\",\"BackgroundColor\":\"[1 1 1]\",\"ChannelNames\":[\"\"],\"ColorOrder\":\"[0 0.447058823529412 0.741176470588235;0.850980392156863 0.325490196078431 0.0980392156862745;0.929411764705882 0.694117647058824 0.125490196078431;0.494117647058824 0.184313725490196 0.556862745098039;0.466666666666667 0.674509803921569 0.188235294117647;0.301960784313725 0.745098039215686 0.933333333333333;0.635294117647059 0.0784313725490196 0.184313725490196]\",\"CurrentConfiguration\":\"extmgr.ConfigurationSet\",\"DefaultLegendLabel\":[\"\",\"\",\"\",\"\"],\"LabelsColor\":\"[0 0 0]\",\"LineColor\":[\"[1 1 0]\",\"[0 0.447058823529412 0.741176470588235]\",\"[1 0.411764705882353 0.16078431372549]\",\"[0 0.498039215686275 0]\"],\"LineStyle\":[\"-\",\"-\",\"-\",\"-\"],\"LineWidth\":[1.5,1.2,1.2,1.2],\"Marker\":[\"none\",\"none\",\"none\",\"none\"],\"MinimizeControls\":\"false\",\"NumLines\":[4],\"Placement\":\"1\",\"PlotType\":\"Auto\",\"PreviousZoomMode\":\"ZoomX\",\"ShowContent\":\"true\",\"Version\":\"2022b\",\"Visible\":[true,true,true,true],\"YGrid\":\"true\"}}}}",
+      "WindowPosition": "[434 334 1155 426]",
+      "WasSavedAsWebScope": "on",
+      "Floating": "off",
+      "MultipleDisplayCache": "[{\"MaxYLimMag\":2.8E-5,\"MaxYLimReal\":2.8E-5,\"MinYLimMag\":0,\"MinYLimReal\":-3E-6,\"PlotAsMagnitudePhase\":false,\"ShowGrid\":true,\"ShowLegend\":true,\"Title\":\"%<SignalLabel>\",\"YLabel\":\"\"}]",
+      "NumInputPorts": "4",
+      "ShowLegend": "on",
+      "ActiveDisplayYMinimum": "-3E-6",
+      "ActiveDisplayYMaximum": "2.8E-5",
+      "DataLoggingVariableName": "ScopeData8"
+    },
+    "ports": {
+      "in": "4"
+    }
+  },
+  {
+    "name": "Scope7",
+    "type": "Scope",
+    "sid": "309",
+    "params": {
+      "Position": "[1935, 813, 1975, 857]",
+      "ZOrder": "24696",
+      "GraphicalSettings": "{\"GraphicalSettings\":{\"LegacySettings\":true,\"Style\":{\"AxesScalingProperties\":{\"ScaleAxesLimitsAtStop\":false},\"Style\":{\"AxesColor\":\"[1 1 1]\",\"BackgroundColor\":\"[1 1 1]\",\"ChannelNames\":[\"\"],\"ColorOrder\":\"[0 0.447058823529412 0.741176470588235;0.850980392156863 0.325490196078431 0.0980392156862745;0.929411764705882 0.694117647058824 0.125490196078431;0.494117647058824 0.184313725490196 0.556862745098039;0.466666666666667 0.674509803921569 0.188235294117647;0.301960784313725 0.745098039215686 0.933333333333333;0.635294117647059 0.0784313725490196 0.184313725490196]\",\"CurrentConfiguration\":\"extmgr.ConfigurationSet\",\"DefaultLegendLabel\":[\"\"],\"LabelsColor\":\"[0 0 0]\",\"LineColor\":[\"[0.850980392156863 0.325490196078431 0.0980392156862745]\"],\"LineStyle\":[\"-\"],\"LineWidth\":[1.5],\"Marker\":[\"none\"],\"MinimizeControls\":\"false\",\"NumLines\":[1],\"Placement\":\"1\",\"PlotType\":\"Auto\",\"PreserveColors\":\"true\",\"PreviousAutoscale\":\"XY\",\"PreviousZoomMode\":\"ZoomX\",\"ShowContent\":\"true\",\"Version\":\"2022b\",\"Visible\":[true],\"YGrid\":\"true\"}}}}",
+      "WindowPosition": "[680 518 789 232]",
+      "WasSavedAsWebScope": "on",
+      "Floating": "off",
+      "MultipleDisplayCache": "[{\"MaxYLimMag\":6.625,\"MaxYLimReal\":6.625,\"MinYLimMag\":0.375,\"MinYLimReal\":0.375,\"PlotAsMagnitudePhase\":false,\"ShowGrid\":true,\"ShowLegend\":true,\"Title\":\"%<SignalLabel>\",\"YLabel\":\"\"}]",
+      "NumInputPorts": "1",
+      "ShowTimeAxisLabel": "on",
+      "ShowLegend": "on",
+      "ActiveDisplayYMinimum": "0.375",
+      "ActiveDisplayYMaximum": "6.625",
+      "DataLoggingVariableName": "ScopeData9"
+    },
+    "ports": {
+      "in": "1"
+    }
+  },
+  {
+    "name": "Scope8",
+    "type": "Scope",
+    "sid": "314",
+    "params": {
+      "Position": "[855, 682, 915, 753]",
+      "ZOrder": "24701",
+      "GraphicalSettings": "{\"GraphicalSettings\":{\"LegacySettings\":true,\"Style\":{\"AxesScalingProperties\":{\"ScaleAxesLimitsAtStop\":false},\"Style\":{\"AxesColor\":\"[1 1 1]\",\"BackgroundColor\":\"[1 1 1]\",\"ChannelNames\":[\"\",\"\"],\"ColorOrder\":\"[0 0.447058823529412 0.741176470588235;0.850980392156863 0.325490196078431 0.0980392156862745;0.929411764705882 0.694117647058824 0.125490196078431;0.494117647058824 0.184313725490196 0.556862745098039;0.466666666666667 0.674509803921569 0.188235294117647;0.301960784313725 0.745098039215686 0.933333333333333;0.635294117647059 0.0784313725490196 0.184313725490196]\",\"CurrentConfiguration\":\"extmgr.ConfigurationSet\",\"DefaultLegendLabel\":[\"\",\"\"],\"LabelsColor\":\"[0 0 0]\",\"LineColor\":[\"[0.850980392156863 0.325490196078431 0.0980392156862745]\",\"[0 0.447058823529412 0.741176470588235]\"],\"LineStyle\":[\"-\",\"-\"],\"LineWidth\":[2,1.5],\"Marker\":[\"none\",\"none\"],\"MinimizeControls\":\"false\",\"NumLines\":[1,1],\"Placement\":\"2\",\"PlotType\":\"Auto\",\"PreserveColors\":\"true\",\"PreviousAutoscale\":\"XY\",\"PreviousZoomMode\":\"ZoomX\",\"ShowContent\":\"true\",\"Version\":\"2022b\",\"Visible\":[true,true],\"YGrid\":\"true\"}}}}",
+      "WindowPosition": "[680 383 904 367]",
+      "WasSavedAsWebScope": "on",
+      "Floating": "off",
+      "MultipleDisplayCache": "[{\"MaxYLimMag\":0.61064,\"MaxYLimReal\":0.4372,\"MinYLimMag\":0,\"MinYLimReal\":-0.61064,\"PlotAsMagnitudePhase\":false,\"ShowGrid\":true,\"ShowLegend\":true,\"Title\":\"%<SignalLabel>\",\"YLabel\":\"\"},{\"MaxYLimMag\":7.06841,\"MaxYLimReal\":13.24398,\"MinYLimMag\":0,\"MinYLimReal\":-4.43015,\"PlotAsMagnitudePhase\":false,\"ShowGrid\":true,\"ShowLegend\":true,\"Title\":\"%<SignalLabel>\",\"YLabel\":\"\"}]",
+      "NumInputPorts": "2",
+      "LayoutDimensionsString": "[2 1]",
+      "ShowTimeAxisLabel": "on",
+      "ShowLegend": "on",
+      "ActiveDisplayYMinimum": "-0.61064",
+      "ActiveDisplayYMaximum": "0.4372",
+      "DataLoggingVariableName": "ScopeData10"
+    },
+    "ports": {
+      "in": "2"
+    }
+  },
+  {
+    "name": "Scope9",
+    "type": "Scope",
+    "sid": "499",
+    "params": {
+      "Position": "[855, 767, 915, 838]",
+      "ZOrder": "100000",
+      "GraphicalSettings": "{\"GraphicalSettings\":{\"LegacySettings\":true,\"Style\":{\"AxesScalingProperties\":{\"ScaleAxesLimitsAtStop\":false},\"Stats\":{\"Enabled\":\"true\"},\"Style\":{\"AxesColor\":\"[1 1 1]\",\"BackgroundColor\":\"[1 1 1]\",\"ChannelNames\":[\"\",\"\"],\"ColorOrder\":\"[0 0.447058823529412 0.741176470588235;0.850980392156863 0.325490196078431 0.0980392156862745;0.929411764705882 0.694117647058824 0.125490196078431;0.494117647058824 0.184313725490196 0.556862745098039;0.466666666666667 0.674509803921569 0.188235294117647;0.301960784313725 0.745098039215686 0.933333333333333;0.635294117647059 0.0784313725490196 0.184313725490196]\",\"CurrentConfiguration\":\"extmgr.ConfigurationSet\",\"DefaultLegendLabel\":[\"\",\"\"],\"LabelsColor\":\"[0 0 0]\",\"LineColor\":[\"[0.850980392156863 0.325490196078431 0.0980392156862745]\",\"[0 0.447058823529412 0.741176470588235]\"],\"LineStyle\":[\"-\",\"-\"],\"LineWidth\":[2,1.5],\"Marker\":[\"none\",\"none\"],\"MeasurementChannel\":\"2\",\"Measurements\":\"struct\",\"MinimizeControls\":\"false\",\"NumLines\":[1,1],\"Placement\":\"2\",\"PlotType\":\"Auto\",\"PreserveColors\":\"true\",\"PreviousZoomMode\":\"ZoomX\",\"ShowContent\":\"true\",\"Version\":\"2022b\",\"Visible\":[true,true],\"YGrid\":\"true\",\"traceselector\":\"struct\"}}}}",
+      "WindowPosition": "[680 285 908 465]",
+      "WasSavedAsWebScope": "on",
+      "Floating": "off",
+      "MultipleDisplayCache": "[{\"MaxYLimMag\":34,\"MaxYLimReal\":34,\"MinYLimMag\":14,\"MinYLimReal\":14,\"PlotAsMagnitudePhase\":false,\"ShowGrid\":true,\"ShowLegend\":true,\"Title\":\"%<SignalLabel>\",\"YLabel\":\"\"},{\"MaxYLimMag\":7.06841,\"MaxYLimReal\":3402.52328,\"MinYLimMag\":0,\"MinYLimReal\":-378.05814,\"PlotAsMagnitudePhase\":false,\"ShowGrid\":true,\"ShowLegend\":true,\"Title\":\"%<SignalLabel>\",\"YLabel\":\"\"}]",
+      "NumInputPorts": "2",
+      "LayoutDimensionsString": "[2 1]",
+      "ShowTimeAxisLabel": "on",
+      "ShowLegend": "on",
+      "ActiveDisplayYMinimum": "14",
+      "ActiveDisplayYMaximum": "34",
+      "DataLoggingVariableName": "ScopeData11"
+    },
+    "ports": {
+      "in": "2"
+    }
+  },
+  {
+    "name": "Subsystem",
+    "type": "SubSystem",
+    "sid": "177",
+    "params": {
+      "Position": "[1300, 271, 1380, 289]",
+      "ZOrder": "24567",
+      "ContentPreviewEnabled": "on"
+    },
+    "ports": {
+      "in": "1",
+      "out": "1"
+    }
+  },
+  {
+    "name": "Sum",
+    "type": "Sum",
+    "sid": "40",
+    "params": {
+      "Position": "[1245, 380, 1265, 400]",
+      "ZOrder": "24478",
+      "Inputs": "|+-"
+    },
+    "ports": {
+      "in": "2",
+      "out": "1"
+    }
+  },
+  {
+    "name": "Sum1",
+    "type": "Sum",
+    "sid": "133",
+    "params": {
+      "Position": "[1245, 580, 1265, 600]",
+      "ZOrder": "24541",
+      "Inputs": "-+|"
+    },
+    "ports": {
+      "in": "2",
+      "out": "1"
+    }
+  },
+  {
+    "name": "Sum2",
+    "type": "Sum",
+    "sid": "144",
+    "params": {
+      "Position": "[1515, 380, 1535, 400]",
+      "ZOrder": "24551",
+      "Inputs": "|+-"
+    },
+    "ports": {
+      "in": "2",
+      "out": "1"
+    }
+  },
+  {
+    "name": "Sum3",
+    "type": "Sum",
+    "sid": "152",
+    "params": {
+      "Position": "[1515, 580, 1535, 600]",
+      "ZOrder": "24553",
+      "Inputs": "++|"
+    },
+    "ports": {
+      "in": "2",
+      "out": "1"
+    }
+  },
+  {
+    "name": "Sum4",
+    "type": "Sum",
+    "sid": "169",
+    "params": {
+      "Position": "[775, 485, 795, 505]",
+      "ZOrder": "24558",
+      "Inputs": "|+-"
+    },
+    "ports": {
+      "in": "2",
+      "out": "1"
+    }
+  },
+  {
+    "name": "Sum5",
+    "type": "Sum",
+    "sid": "546",
+    "params": {
+      "Position": "[1030, 780, 1050, 800]",
+      "ZOrder": "100000",
+      "Inputs": "|+-"
+    },
+    "ports": {
+      "in": "2",
+      "out": "1"
+    }
+  },
+  {
+    "name": "Sum6",
+    "type": "Sum",
+    "sid": "215",
+    "params": {
+      "Position": "[890, 540, 910, 560]",
+      "ZOrder": "24609",
+      "Inputs": "|++"
+    },
+    "ports": {
+      "in": "2",
+      "out": "1"
+    }
+  },
+  {
+    "name": "Sum7",
+    "type": "Sum",
+    "sid": "566",
+    "params": {
+      "Position": "[2305, 780, 2325, 800]",
+      "ZOrder": "100000",
+      "Inputs": "|+-"
+    },
+    "ports": {
+      "in": "2",
+      "out": "1"
+    }
+  },
+  {
+    "name": "T_load1",
+    "type": "Step",
+    "sid": "523",
+    "params": {
+      "Position": "[660, 271, 705, 299]",
+      "ZOrder": "100000",
+      "BackgroundColor": "orange",
+      "Time": "0",
+      "InitialValue": "0.3*Tn",
+      "FinalValue": "0.3*Tn",
+      "SampleTime": "dt"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Terminator",
+    "type": "Terminator",
+    "sid": "265",
+    "params": {
+      "Position": "[1900, 115, 1920, 135]",
+      "ZOrder": "24652"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Terminator1",
+    "type": "Terminator",
+    "sid": "266",
+    "params": {
+      "Position": "[1895, 215, 1915, 235]",
+      "ZOrder": "24653"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Terminator2",
+    "type": "Terminator",
+    "sid": "468",
+    "params": {
+      "Position": "[1370, 535, 1390, 555]",
+      "ZOrder": "100000"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Three-Phase\nV-I Measurement",
+    "type": "SubSystem",
+    "sid": "671",
+    "params": {
+      "Position": "[900, 182, 935, 258]",
+      "ZOrder": "100000",
+      "BackgroundColor": "lightBlue",
+      "ContentPreviewEnabled": "on"
+    },
+    "ports": {
+      "in": "2",
+      "out": "3"
+    }
+  },
+  {
+    "name": "Universal Bridge",
+    "type": "SubSystem",
+    "sid": "615",
+    "params": {
+      "Position": "[810, 165, 880, 260]",
+      "ZOrder": "100000",
+      "BackgroundColor": "lightBlue",
+      "ContentPreviewEnabled": "on"
+    },
+    "ports": {
+      "in": "2",
+      "out": "1"
+    }
+  },
+  {
+    "name": "Validation logging",
+    "type": "SubSystem",
+    "sid": "695",
+    "params": {
+      "Position": "[680, 1030, 865, 1085]",
+      "ZOrder": "100000",
+      "BackgroundColor": "gray",
+      "ContentPreviewEnabled": "on"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Voltage Measurement",
+    "type": "Gain",
+    "sid": "682",
+    "params": {
+      "Position": "[580, 203, 605, 227]",
+      "ZOrder": "100000"
+    },
+    "ports": {}
+  },
+  {
+    "name": "XY Graph1",
+    "type": "Record",
+    "sid": "330",
+    "params": {
+      "Position": "[2125, 717, 2160, 768]",
+      "ZOrder": "100000",
+      "NumPorts": "2.0",
+      "FileSettingsInternal": "{\"entries\":[{\"content\":{\"excelSettings\":{\"content\":{},\"type\":\"Streamout.ExcelSettings\"},\"parquetSettings\":{\"content\":{},\"type\":\"Streamout.ParquetSettings\"}},\"type\":\"Streamout.FileSettingStorage\",\"uuid\":\"\"}],\"packageUris\":[\"http:\\/\\/schema.mathworks.com\\/mf0\\/streamout_blocks\\/R2020a\"],\"version\":\"1.0\"}",
+      "FrameSettings": "[0, 0]",
+      "Layout": "[1 1]",
+      "SignalsInternal": "{\"entries\":[{\"content\":{\"signals\":[{\"content\":{\"blockPath\":[],\"dimensions\":[1],\"domain\":\"\",\"lineColor\":\"#a2142f\",\"plots\":[ 1 ],\"port\":1,\"signalID\":1,\"signalName\":\"U_alpha\"},\"type\":\"RecordBlkView.Signal\",\"uuid\":\"\"},{\"content\":{\"blockPath\":[],\"dimensions\":[1],\"domain\":\"\",\"lineColor\":\"#139fff\",\"plots\":[ 1 ],\"port\":2,\"signalID\":2,\"signalName\":\"U_beta\"},\"type\":\"RecordBlkView.Signal\",\"uuid\":\"\"}]},\"type\":\"RecordBlkView.InputSignals\",\"uuid\":\"\"}],\"packageUris\":[\"http:\\/\\/schema.mathworks.com\\/mf0\\/streamout_blocks\\/R2020a\"],\"version\":\"1.0\"}",
+      "CanvasColor": null,
+      "VisualizationBindings": "{\"xyplotplugin\":{\"info\":[{\"series\":[{\"bindingParametersList\":[{\"parameter\":\"X-Axis\",\"signalID\":1,\"signalName\":\"U_alpha\"},{\"parameter\":\"Y-Axis\",\"signalID\":2,\"signalName\":\"U_beta\"}],\"seriesID\":0}],\"subplotID\":1}]}}",
+      "CompatibilityTag": "XY",
+      "st": "-1"
+    },
+    "ports": {
+      "in": "2"
+    }
+  },
+  {
+    "name": "Zero-Order\nHold1",
+    "type": "ZeroOrderHold",
+    "sid": "183",
+    "params": {
+      "Position": "[1635, 70, 1670, 100]",
+      "ZOrder": "24571",
+      "ShowName": "off",
+      "FontName": "Arial",
+      "FontSize": "12",
+      "SampleTime": "dt"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Zero-Order\nHold2",
+    "type": "ZeroOrderHold",
+    "sid": "190",
+    "params": {
+      "Position": "[735, 535, 770, 565]",
+      "ZOrder": "24579",
+      "ShowName": "off",
+      "FontName": "Arial",
+      "FontSize": "12",
+      "SampleTime": "dt"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Zero-Order\nHold3",
+    "type": "ZeroOrderHold",
+    "sid": "191",
+    "params": {
+      "Position": "[1635, 105, 1670, 135]",
+      "ZOrder": "24580",
+      "ShowName": "off",
+      "FontName": "Arial",
+      "FontSize": "12",
+      "SampleTime": "dt"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Zero-Order\nHold4",
+    "type": "ZeroOrderHold",
+    "sid": "235",
+    "params": {
+      "Position": "[1635, 240, 1670, 270]",
+      "ZOrder": "24627",
+      "ShowName": "off",
+      "FontName": "Arial",
+      "FontSize": "12",
+      "SampleTime": "dt"
+    },
+    "ports": {}
+  },
+  {
+    "name": "Zero-Order\nHold5",
+    "type": "ZeroOrderHold",
+    "sid": "210",
+    "params": {
+      "Position": "[1260, 480, 1295, 510]",
+      "ZOrder": "24602",
+      "ShowName": "off",
+      "FontName": "Arial",
+      "FontSize": "12",
+      "SampleTime": "dt"
+    },
+    "ports": {}
+  },
+  {
+    "name": "abc to\nAlpha-Beta-Zero",
+    "type": "SubSystem",
+    "sid": "593",
+    "params": {
+      "Position": "[1695, 70, 1745, 100]",
+      "ZOrder": "100000",
+      "BackgroundColor": "lightBlue",
+      "ContentPreviewEnabled": "on"
+    },
+    "ports": {
+      "in": "1",
+      "out": "1"
+    }
+  },
+  {
+    "name": "dq0 to\nAlpha-Beta-Zero",
+    "type": "SubSystem",
+    "sid": "606",
+    "params": {
+      "Position": "[1725, 187, 1775, 223]",
+      "ZOrder": "100000",
+      "BackgroundColor": "lightBlue",
+      "ContentPreviewEnabled": "on"
+    },
+    "ports": {
+      "in": "2",
+      "out": "1"
+    }
+  },
+  {
+    "name": "id_ref",
+    "type": "Constant",
+    "sid": "590",
+    "params": {
+      "Position": "[1045, 375, 1075, 405]",
+      "ZOrder": "100000",
+      "BackgroundColor": "orange",
+      "Value": "0"
+    },
+    "ports": {}
+  },
+  {
+    "name": "speed_ref",
+    "type": "Constant",
+    "sid": "592",
+    "params": {
+      "Position": "[665, 480, 695, 510]",
+      "ZOrder": "100000",
+      "BackgroundColor": "orange",
+      "Value": "n"
+    },
+    "ports": {}
+  }
+]

@@ -1,0 +1,629 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "source_folder": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261016_092224_391_sample_delay_d2abc88d",
+      "repeat_folder": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261016_093023_114_sample_delay_2ccb7e00",
+      "comparison": {
+        "schema": 1,
+        "original_folder": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261016_092224_391_sample_delay_d2abc88d",
+        "repeated_folder": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261016_093023_114_sample_delay_2ccb7e00",
+        "original_record_sha256": "ec679ea84dc53ec418660e18ded8f7327c813c966770a4c139895647bfbbbcf5",
+        "repeated_record_sha256": "c8668346cf8a1a3bae72086ab5799c95eabe23d40c6a3c46c664934bdddeae06",
+        "same_matlab_version": true,
+        "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+        "baseline_manifest_sha256": "f977cfaa62d8722221573d9a648f28d8d7bc91f0f6a462c1e09e4488a70ef353",
+        "comparison": "原档案保留的每路信号Time/Data逐点比较；不比较PNG或MAT文件字节。",
+        "signals": [
+          {
+            "case_id": "reference",
+            "name": "log_speed",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "reference",
+            "name": "log_nref",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "reference",
+            "name": "log_id",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "reference",
+            "name": "log_iq",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "reference",
+            "name": "log_iq_ref",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "reference",
+            "name": "obs_id_ref",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "reference",
+            "name": "log_Te",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "reference",
+            "name": "log_TL",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "reference",
+            "name": "obs_state",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "reference",
+            "name": "log_iabc_true",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "reference",
+            "name": "log_iabc_meas",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "reference",
+            "name": "log_iabc_noise",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "reference",
+            "name": "log_iabc_adc",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "reference",
+            "name": "log_iabc_filter",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "reference",
+            "name": "obs_voltage",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "reference",
+            "name": "obs_current_fast",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "reference",
+            "name": "log_theta_true",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "reference",
+            "name": "log_theta_meas",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "reference",
+            "name": "log_theta_error",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "reference",
+            "name": "obs_dead_requested",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "reference",
+            "name": "obs_dead_gates",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "log_speed",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "log_nref",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "log_id",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "log_iq",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "log_iq_ref",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "obs_id_ref",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "log_Te",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "log_TL",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "obs_state",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "log_iabc_true",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "log_iabc_meas",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "log_iabc_noise",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "log_iabc_adc",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "log_iabc_filter",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "obs_voltage",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "obs_current_fast",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "log_theta_true",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "log_theta_meas",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "log_theta_error",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "obs_dead_requested",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "obs_dead_gates",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          }
+        ],
+        "all_exact": true
+      }
+    },
+    {
+      "source_folder": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261016_092300_213_digital_filter_ca2bf91a",
+      "repeat_folder": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261016_093146_580_digital_filter_dbe185ec",
+      "comparison": {
+        "schema": 1,
+        "original_folder": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261016_092300_213_digital_filter_ca2bf91a",
+        "repeated_folder": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261016_093146_580_digital_filter_dbe185ec",
+        "original_record_sha256": "1a5e60c04e0f091f00470fe553b457745baa96d69fcb9e9a3243a560af3ce936",
+        "repeated_record_sha256": "569118bdc4dfe7316044a5244208d88590f321ffd995eafb7f18db608d797e37",
+        "same_matlab_version": true,
+        "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+        "baseline_manifest_sha256": "f977cfaa62d8722221573d9a648f28d8d7bc91f0f6a462c1e09e4488a70ef353",
+        "comparison": "原档案保留的每路信号Time/Data逐点比较；不比较PNG或MAT文件字节。",
+        "signals": [
+          {
+            "case_id": "reference",
+            "name": "log_speed",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "reference",
+            "name": "log_nref",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "reference",
+            "name": "log_id",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "reference",
+            "name": "log_iq",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "reference",
+            "name": "log_iq_ref",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "reference",
+            "name": "obs_id_ref",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "reference",
+            "name": "log_Te",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "reference",
+            "name": "log_TL",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "reference",
+            "name": "obs_state",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "reference",
+            "name": "log_iabc_true",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "reference",
+            "name": "log_iabc_meas",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "reference",
+            "name": "log_iabc_noise",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "reference",
+            "name": "log_iabc_adc",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "reference",
+            "name": "log_iabc_filter",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "reference",
+            "name": "obs_voltage",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "reference",
+            "name": "obs_current_fast",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "reference",
+            "name": "log_theta_true",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "reference",
+            "name": "log_theta_meas",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "reference",
+            "name": "log_theta_error",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "reference",
+            "name": "obs_dead_requested",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "reference",
+            "name": "obs_dead_gates",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "log_speed",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "log_nref",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "log_id",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "log_iq",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "log_iq_ref",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "obs_id_ref",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "log_Te",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "log_TL",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "obs_state",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "log_iabc_true",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "log_iabc_meas",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "log_iabc_noise",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "log_iabc_adc",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "log_iabc_filter",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "obs_voltage",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "obs_current_fast",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "log_theta_true",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "log_theta_meas",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "log_theta_error",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "obs_dead_requested",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          },
+          {
+            "case_id": "factor",
+            "name": "obs_dead_gates",
+            "same_time": true,
+            "same_data": true,
+            "max_abs_error": 0
+          }
+        ],
+        "all_exact": true
+      }
+    }
+  ]
+}

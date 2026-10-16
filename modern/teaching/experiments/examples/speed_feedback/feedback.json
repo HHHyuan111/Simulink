@@ -1,0 +1,146 @@
+{
+  "schema": 1,
+  "contract": {
+    "kind": "speed_feedback_three_cases",
+    "counts_per_mechanical_turn": 10000,
+    "window_ticks": [
+      1,
+      2,
+      8
+    ],
+    "read_period_s": 5E-5,
+    "read_offset_s": 2.8875E-5,
+    "speed_period_s": 0.0001,
+    "event_step_s": 6.25E-8,
+    "rpm_per_count_step": [
+      120,
+      60,
+      15
+    ],
+    "firmware_commit": "48d6e86814ac6657b1313b4c92ef24c88f492e07",
+    "firmware_window_ticks": 2,
+    "firmware_history_depth": 8,
+    "source": "control_cycle_step在有效位置拍按foc_fs喂入speed_est_step；速度PI与测量宏不是该喂入频率",
+    "initialization": "计数反馈在完整历史前使用零并标无效，不回填真值；有效性仅观测，尚无启动门控或故障状态机",
+    "scope": "相同真实时序、原PI、角度、初态与工况，仅改变速度来源及选用窗口；各组物理轨迹独立变化，无速度滤波。",
+    "feedback_on": [
+      false,
+      true,
+      true
+    ],
+    "window_choice": [
+      2,
+      2,
+      3
+    ],
+    "speed_filter": "off",
+    "angle_feedback": "原角度"
+  },
+  "cases": [
+    {
+      "id": "reference",
+      "label": "原速度",
+      "feedback_on": false,
+      "window_ticks": 2,
+      "pi_input_max_check_error_rpm": 0,
+      "invalid_speed_task_samples": 1,
+      "feedback_error_rms_rpm": 0,
+      "iq_command_step_rms_A": 0,
+      "torque_std_Nm": 0.0014655109624581021,
+      "final_speed_rpm": 2006.8421066506223,
+      "windows": [
+        {
+          "window_ticks": 1,
+          "rpm_per_count": 120,
+          "quantization_rms_rpm": 49.680833688180321,
+          "window_error_rms_rpm": 1.0329460309431577,
+          "total_error_rms_rpm": 49.694407581545647
+        },
+        {
+          "window_ticks": 2,
+          "rpm_per_count": 60,
+          "quantization_rms_rpm": 24.979261775132994,
+          "window_error_rms_rpm": 2.0558937441569896,
+          "total_error_rms_rpm": 25.064913226607313
+        },
+        {
+          "window_ticks": 8,
+          "rpm_per_count": 15,
+          "quantization_rms_rpm": 6.01100196638918,
+          "window_error_rms_rpm": 8.1927768884982619,
+          "total_error_rms_rpm": 10.184585130790813
+        }
+      ]
+    },
+    {
+      "id": "factor",
+      "label": "窗口测速",
+      "feedback_on": true,
+      "window_ticks": 2,
+      "pi_input_max_check_error_rpm": 0,
+      "invalid_speed_task_samples": 1,
+      "feedback_error_rms_rpm": 25.142707018330491,
+      "iq_command_step_rms_A": 0,
+      "torque_std_Nm": 0.0014655109624581021,
+      "final_speed_rpm": 2006.8421066506223,
+      "windows": [
+        {
+          "window_ticks": 1,
+          "rpm_per_count": 120,
+          "quantization_rms_rpm": 49.680833688180321,
+          "window_error_rms_rpm": 1.0329460309431577,
+          "total_error_rms_rpm": 49.694407581545647
+        },
+        {
+          "window_ticks": 2,
+          "rpm_per_count": 60,
+          "quantization_rms_rpm": 24.979261775132994,
+          "window_error_rms_rpm": 2.0558937441569896,
+          "total_error_rms_rpm": 25.064913226607313
+        },
+        {
+          "window_ticks": 8,
+          "rpm_per_count": 15,
+          "quantization_rms_rpm": 6.01100196638918,
+          "window_error_rms_rpm": 8.1927768884982619,
+          "total_error_rms_rpm": 10.184585130790813
+        }
+      ]
+    },
+    {
+      "id": "long",
+      "label": "长窗测速",
+      "feedback_on": true,
+      "window_ticks": 8,
+      "pi_input_max_check_error_rpm": 0,
+      "invalid_speed_task_samples": 4,
+      "feedback_error_rms_rpm": 10.186218888197468,
+      "iq_command_step_rms_A": 0,
+      "torque_std_Nm": 0.0014655109624581021,
+      "final_speed_rpm": 2006.8421066506223,
+      "windows": [
+        {
+          "window_ticks": 1,
+          "rpm_per_count": 120,
+          "quantization_rms_rpm": 49.680833688180321,
+          "window_error_rms_rpm": 1.0329460309431577,
+          "total_error_rms_rpm": 49.694407581545647
+        },
+        {
+          "window_ticks": 2,
+          "rpm_per_count": 60,
+          "quantization_rms_rpm": 24.979261775132994,
+          "window_error_rms_rpm": 2.0558937441569896,
+          "total_error_rms_rpm": 25.064913226607313
+        },
+        {
+          "window_ticks": 8,
+          "rpm_per_count": 15,
+          "quantization_rms_rpm": 6.01100196638918,
+          "window_error_rms_rpm": 8.1927768884982619,
+          "total_error_rms_rpm": 10.184585130790813
+        }
+      ]
+    }
+  ]
+}

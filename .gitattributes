@@ -1,2 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Preserve sealed model/source/report SHA256 values across clones.
+modern/** -text
+review/** -text

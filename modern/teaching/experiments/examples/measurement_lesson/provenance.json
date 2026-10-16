@@ -1,0 +1,54 @@
+{
+  "current_bias": {
+    "source_run_id": "20261013_103628_242_current_bias_c8d1178d",
+    "record_sha256": "d828058aeb4e4007791a626430150a620e4bddbafec24601d0b138ed21509e07",
+    "factor_value": [
+      0.05,
+      -0.03,
+      0
+    ],
+    "factor_unit": "A，ABC",
+    "tail_measurement_mean_error_A": [
+      0.049999999999999843,
+      -0.030000000000000044,
+      0
+    ],
+    "tail_measurement_rms_error_A": [
+      0.04999999999999985,
+      0.030000000000000023,
+      0
+    ]
+  },
+  "current_noise": {
+    "source_run_id": "20261013_103808_917_current_noise_d758c0d2",
+    "record_sha256": "69d824975cc23977a60d6e95e5e89fda1583c6b611ded948317ea0a506542126",
+    "factor_value": 0.02,
+    "factor_unit": "A RMS，每相",
+    "tail_measurement_mean_error_A": [
+      -0.0017173950794315939,
+      0.00086175811823475566,
+      -0.0016707694214379927
+    ],
+    "tail_measurement_rms_error_A": [
+      0.01925351282571169,
+      0.019278537620409569,
+      0.019048866988213245
+    ]
+  },
+  "sample_delay": {
+    "source_run_id": "20261013_103923_775_sample_delay_80894465",
+    "record_sha256": "7e354968c5b29f1d146ce7dc0a0bdf98370ec895ff02d1226609e3039c3e30ec",
+    "factor_value": 1,
+    "factor_unit": "个电流控制周期",
+    "tail_true_id_mean_A": -0.38253768358506157,
+    "tail_measured_id_mean_A": 0.0046982610654501033,
+    "tail_reference_id_mean_A": 0.0010571590919511693
+  },
+  "statistics_window_s": [
+    0.18000000000000002,
+    0.2
+  ],
+  "renderer_sha256": "a1c71217b9770f4c286430a5b28eb9c3e64250901fd03528d8f6c70c0b327d90",
+  "style_sha256": "60619d54cc27fa1b9e495816877cec3ed6a12f024bf9f35da6dba5652d58ccfc",
+  "figure_sha256": "f07079bc6a67053e5c2998c3744a1b5ca0ab9a19d4ca3aeed6ab4e8ff3953d4b"
+}

@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "original_log_checks": 156,
+  "source_checks": 17,
+  "observed_step_seconds": [
+    1.0000000000000243E-6,
+    6.25000000000083E-8,
+    1.0000000000000243E-6
+  ],
+  "structure_restored": true,
+  "wrapper_normal_and_exception": true,
+  "definition": {
+    "path": "PMSM_FOC_R2026a/测量观测/采样明细/电流与采样",
+    "layout": [
+      2,
+      2
+    ],
+    "style": "blackonwhite"
+  },
+  "sources": [
+    {
+      "path": "pmsm_current_sampling_scope.m",
+      "sha256": "4efc1c95db193202d262be1bb48fbaaa1313ca631e6b9522257cb6d4085114fb"
+    },
+    {
+      "path": "pmsm_current_sampling_fit.m",
+      "sha256": "d0297ec07c09885eb28b530fb9f4fa5219ef8e6b6d69a0519238434439000246"
+    },
+    {
+      "path": "pmsm_scope_style.m",
+      "sha256": "a65c32b37afabd903899dae43ace07b26f0abc502ef1d5b7dc4f08eec63750ff"
+    },
+    {
+      "path": "pmsm_presented_call.m",
+      "sha256": "419b38ce37694f3b514eba7d8455f7372c133bec2383858badc3a1312f362219"
+    },
+    {
+      "path": "validate_pmsm_current_sampling_scope.m",
+      "sha256": "f9484464ff0c49a3079b483b879c3a6fbc208440be60914a17742700f29108f8"
+    }
+  ],
+  "scope": "Three 1ms cases: ideal, real timing, ideal timing with ADC and legacy one-cycle delay. No full operating-range or physical ADC calibration claim."
+}

@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "original_log_checks": 104,
+  "display_checks": 8,
+  "structure_restored": true,
+  "wrapper_normal_and_exception": true,
+  "definition": {
+    "path": "PMSM_FOC_R2026a/测量观测/电流与电压",
+    "layout": [
+      2,
+      2
+    ],
+    "style": "blackonwhite"
+  },
+  "sources": [
+    {
+      "path": "pmsm_electrical_scope.m",
+      "sha256": "2ea82496604b1f47ef65f8e600866b8412c2845fbc356fb59493dc897cdbbb3c"
+    },
+    {
+      "path": "pmsm_presented_call.m",
+      "sha256": "0c1691ec25c00133812b12caef5827d4447e83eb91e8418cc790a1f1394c92e8"
+    },
+    {
+      "path": "validate_pmsm_electrical_scope.m",
+      "sha256": "b4623aabb6b8ae8bd599b6ea3f32c3a749317d456391ee2a6a7a20e5b0643cee"
+    }
+  ],
+  "scope": "Two 10ms cases; ideal and angle bias. Not full operating-range validation."
+}

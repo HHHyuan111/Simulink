@@ -1,0 +1,285 @@
+{
+  "scope": "简洁展示图与摘要；完整数值档案在source_run_folder。说明文字见notes.md。",
+  "scenario": {
+    "id": "sampling_window",
+    "name": "低侧采样窗口",
+    "section": "时序设置",
+    "switch": "window_on",
+    "parameter": "trigger_us",
+    "default_value": [
+      31.25,
+      0.5
+    ],
+    "unit": "μs，触发相位 / 稳定等待",
+    "size": 2,
+    "minimum": [
+      0,
+      0
+    ],
+    "maximum": [
+      40.4375,
+      10
+    ],
+    "integer": false,
+    "question": "低侧关断时，采样值为什么不能代表相电流？",
+    "observe": "比较窗口关闭、无效置零、保持上次有效样本；先看门极与孔径，再看ABC反馈和真实闭环。",
+    "boundary": "相位与等待为演示值；三组同架构，仅窗口/保持开关不同。置零是教学近似，保持不是电流重构，不预设改善。"
+  },
+  "factor_value": [
+    31.25,
+    0.5
+  ],
+  "factor_unit": "μs，触发相位 / 稳定等待",
+  "duration_s": 0.05,
+  "statistics_window_s": [
+    0.030000000000000002,
+    0.05
+  ],
+  "plot_window_s": [
+    0.04,
+    0.05
+  ],
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "baseline_manifest_sha256": "f977cfaa62d8722221573d9a648f28d8d7bc91f0f6a462c1e09e4488a70ef353",
+  "source_run_id": "20261013_191346_775_sampling_window_6ffce808",
+  "source_run_folder": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261013_191346_775_sampling_window_6ffce808",
+  "source_record_sha256": "183354a833b216481ee54a10d26fe78ce24610ac1869e1fb85aebef46d1dd075",
+  "numerical": {
+    "reference_fixed_step_s": 6.25E-8,
+    "factor_fixed_step_s": 6.25E-8,
+    "note": "三组同一真实时序、62.5ns网格和峰谷双更新；ADC诊断全程按JEOS快照（不是全速事件记录），物理电流/请求门极按事件网格全程记录，实际门极/生效阈值保留尾部8000点，PWM诊断尾部4000点；默认每组50ms启动。"
+  },
+  "cases": [
+    {
+      "id": "reference",
+      "label": "窗口关闭",
+      "metrics": {
+        "statistics_window_s": [
+          0.030000000000000002,
+          0.05
+        ],
+        "measurement_mean_error_ABC_A": [
+          -0.0022927790289522481,
+          -0.003266085420252798,
+          0.0194796247324407
+        ],
+        "measurement_rms_error_ABC_A": [
+          0.023625073507749821,
+          0.13117066643966416,
+          0.20496170014390447
+        ],
+        "speed_tracking_rms_rpm": 1342.7723212576232,
+        "iq_feedback_tracking_rms_A": 0.025558227317443144,
+        "iq_true_tracking_rms_A": 0.14562342985532276,
+        "id_true_tracking_rms_A": 0.12805599278910354,
+        "torque_std_Nm": 0.0027229908437114959,
+        "iq_true_peak_A": 8.2815699397904066,
+        "voltage_saturation_fraction": 0,
+        "control_log_period_s": 5.0000000000001432E-5,
+        "physical_current_log_period_s": 6.25000000000625E-8,
+        "true_id_mean_A": -0.017398020118618525,
+        "feedback_id_mean_A": 0.0094621999704725072,
+        "angle_error_mean_electrical_deg": 0,
+        "gate_log_period_s": 6.2500000001797229E-8
+      }
+    },
+    {
+      "id": "factor",
+      "label": "无效置零",
+      "metrics": {
+        "statistics_window_s": [
+          0.030000000000000002,
+          0.05
+        ],
+        "measurement_mean_error_ABC_A": [
+          -2.0113133741361491,
+          -1.5921411180282496,
+          -2.420368643429935
+        ],
+        "measurement_rms_error_ABC_A": [
+          4.7948324424151334,
+          3.4520807265992346,
+          5.3140184936377537
+        ],
+        "speed_tracking_rms_rpm": 222.38886116009937,
+        "iq_feedback_tracking_rms_A": 0.73055287360206767,
+        "iq_true_tracking_rms_A": 4.7264403724227364,
+        "id_true_tracking_rms_A": 2.2208518753071242,
+        "torque_std_Nm": 0.20905379644219615,
+        "iq_true_peak_A": 23.235918869898903,
+        "voltage_saturation_fraction": 0,
+        "control_log_period_s": 5.0000000000001432E-5,
+        "physical_current_log_period_s": 6.25000000000625E-8,
+        "true_id_mean_A": 0.60381652418132392,
+        "feedback_id_mean_A": -0.0059621740974209044,
+        "angle_error_mean_electrical_deg": 0,
+        "gate_log_period_s": 6.2500000001797229E-8
+      }
+    },
+    {
+      "id": "held",
+      "label": "保持样本",
+      "metrics": {
+        "statistics_window_s": [
+          0.030000000000000002,
+          0.05
+        ],
+        "measurement_mean_error_ABC_A": [
+          -2.860662103146284,
+          -3.17786542134624,
+          -2.92143736218391
+        ],
+        "measurement_rms_error_ABC_A": [
+          6.8136145609725984,
+          8.0976050362375975,
+          7.5534769000665838
+        ],
+        "speed_tracking_rms_rpm": 264.14759068099789,
+        "iq_feedback_tracking_rms_A": 1.4558001909209504,
+        "iq_true_tracking_rms_A": 7.1914999328088332,
+        "id_true_tracking_rms_A": 3.6972003296793332,
+        "torque_std_Nm": 0.30027600032202412,
+        "iq_true_peak_A": 33.076749693545516,
+        "voltage_saturation_fraction": 0.046,
+        "control_log_period_s": 5.0000000000001432E-5,
+        "physical_current_log_period_s": 6.25000000000625E-8,
+        "true_id_mean_A": 1.2149066050915591,
+        "feedback_id_mean_A": 0.050395993083920662,
+        "angle_error_mean_electrical_deg": 0,
+        "gate_log_period_s": 6.2500000001797229E-8
+      }
+    }
+  ],
+  "figure_sha256": {
+    "comparison": "f16a9caca61506f1761247668662e8c3864287cf95af6476b46ded628dfa85a5",
+    "response": "313f17dffb69e479a9420435dc1369ef7cc4e38af44c40a9ec266275ea8a89d5",
+    "mechanism": "0ae052eeb04d9f69d204d3c883b4e54b2394bc3d71534c1b5386435f249d38c0"
+  },
+  "renderer_files": [
+    {
+      "path": "plot_pmsm_speed_filter.m",
+      "sha256": "03a53e2cde283ab6d1f861aaad28248e1df1a79a36c2a94e65101e8ab9e30938"
+    },
+    {
+      "path": "pmsm_speed_filter_analysis.m",
+      "sha256": "bdab01efaf331b034b244f6359e4a7e280cde1db2dc59655d886a4325cdd9877"
+    },
+    {
+      "path": "plot_pmsm_speed_feedback.m",
+      "sha256": "ec30c08819596756309f33c0743c32efb4f3356342ddf4ff2e907c659e4a6e3f"
+    },
+    {
+      "path": "pmsm_speed_feedback_analysis.m",
+      "sha256": "89e3ae84fb9a5746d4bba54707cf79e77944fa081ccf554ca1f770c985a203cd"
+    },
+    {
+      "path": "plot_pmsm_encoder_speed.m",
+      "sha256": "1882e83d11f0a057055e28a88bbef0a8f53e7f662e481652e7e6c8d055e235b7"
+    },
+    {
+      "path": "pmsm_encoder_speed_analysis.m",
+      "sha256": "6a16b6f24e0d070c03812bbc5789aff7c4d2f5f5ce85cbeaaa9f5a42a6c3b8dd"
+    },
+    {
+      "path": "plot_pmsm_encoder.m",
+      "sha256": "890806b74bc28efed0e64d4ef033dcfe69ebfe057f80fc9f77df8138227d4f35"
+    },
+    {
+      "path": "pmsm_encoder_analysis.m",
+      "sha256": "13eb1faf74e71b6ea022cf383548976d8fd1cdcb67320f0ff6e82a8bd39491ed"
+    },
+    {
+      "path": "plot_pmsm_sampling_window.m",
+      "sha256": "7a196db952b45f605182b2be32c4699cbf2c59a766ae0bdf8f8684c7450c2755"
+    },
+    {
+      "path": "pmsm_sampling_window_analysis.m",
+      "sha256": "d54c4b8186eaa4a4bc6fce9bfeaf1937ff3e969fde9d1a631293600446e0b8c6"
+    },
+    {
+      "path": "plot_pmsm_timing_deadline.m",
+      "sha256": "1e594b9974cc8dc323257d508678c062f2018ce17297a6edb9df70ef553def1a"
+    },
+    {
+      "path": "pmsm_timing_deadline_analysis.m",
+      "sha256": "67ce76116e7d3fb82ad32121034d848d96b385a2f898cfe3e89dc38d6b0653dd"
+    },
+    {
+      "path": "plot_pmsm_experiment.m",
+      "sha256": "3934519949c0177736895e2d45b956671e304dde3d08bb0cb09c81d00db03abb"
+    },
+    {
+      "path": "plot_pmsm_mechanism.m",
+      "sha256": "e8cb752637a98ced50c040f48905c970650cc45af8fdd3820c94a5db6ea323a9"
+    },
+    {
+      "path": "plot_pmsm_deadtime_pair.m",
+      "sha256": "ecb5cba0c68654c83c83ac36a88cb144871ca88c98857f77cd851c1703ec5618"
+    },
+    {
+      "path": "plot_pmsm_low_speed_comp.m",
+      "sha256": "178a58d362321b402e1c85642bda39c7cb67423fd5cddc741b4dd0fb5bc7e591"
+    },
+    {
+      "path": "plot_pmsm_noise_filter.m",
+      "sha256": "ca97f345a6e53f80ebe019b1c006107c2b84f2e5cd59905b41e1e91cfc3d3ffb"
+    },
+    {
+      "path": "pmsm_noise_filter_analysis.m",
+      "sha256": "8e559064e8e046ff91afa146fbcbdd9c58e0617cd97bbda4b0601bec454c63c9"
+    },
+    {
+      "path": "plot_pmsm_timing_events.m",
+      "sha256": "81bbf0d8464c945b270393932e0158735b00788646decae7540761548cafbdac"
+    },
+    {
+      "path": "pmsm_timing_events_analysis.m",
+      "sha256": "f5617baeef752f8cc84a9981f1975da2be429aebff34cf555a6054f328c4c701"
+    },
+    {
+      "path": "pmsm_deadtime_pair_alignment.m",
+      "sha256": "7fd141413d92268f83be6fb72a22e362762c48758872d1818873c48799f94e0a"
+    },
+    {
+      "path": "pmsm_plot_style.m",
+      "sha256": "60619d54cc27fa1b9e495816877cec3ed6a12f024bf9f35da6dba5652d58ccfc"
+    },
+    {
+      "path": "export_pmsm_experiment_examples.m",
+      "sha256": "cd5884b429fc9c5cd14e7318c7aefafdfdee31c3d2be3a4f90fbf90cd93a7967"
+    }
+  ],
+  "comparison_contract": {
+    "kind": "same_timing_window_three_cases",
+    "trigger_phase_s": 3.125E-5,
+    "settle_s": 5E-7,
+    "compute_us": 5,
+    "trigger_sync_s": 0,
+    "aperture_s": 1.1875E-6,
+    "rank_s": 1.5E-6,
+    "pwm_period_s": 5E-5,
+    "speed_period_s": 0.0001,
+    "event_step_s": 6.25E-8,
+    "jeos_phase_s": 3.575E-5,
+    "update_mode": "峰谷双更新（RCR=0）",
+    "initial_gate_history": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      1
+    ],
+    "gate_history_ticks": 1,
+    "initial_held_value_A": [
+      0,
+      0,
+      0
+    ],
+    "parameters_measured": false,
+    "scope": "沿用请求门极的一网格历史检查完整孔径；本场景门极死区关闭。置零/保持仅为教学策略，未实现电流重构及主动保护。"
+  },
+  "window_sha256": "a89dfe72e24f826c4ab9dd08fa861f5907f1a147e396ecc46b9f390dfac1a31f",
+  "samples_sha256": "4c81aea1d634694af27b756ab41549ee99bd7c3cec8edd2ba8fc78f474b0b868",
+  "notes_sha256": "a97015cab19bd65538aafa8134f3c794e673f085ca54ace5e9bd19eabebe5015"
+}

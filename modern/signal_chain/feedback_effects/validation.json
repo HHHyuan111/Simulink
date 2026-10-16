@@ -1,0 +1,101 @@
+{
+  "passed": true,
+  "raw_exact_curves": 40,
+  "time_axes_linked": true,
+  "metrics_table_checked": true,
+  "native_menu_callbacks": 5,
+  "configuration_preserved": true,
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "topics": [
+    {
+      "kind": "delay",
+      "source_folders": [
+        "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261013_103923_775_sample_delay_80894465",
+        "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261016_092224_391_sample_delay_d2abc88d"
+      ],
+      "source_record_sha256": [
+        "7e354968c5b29f1d146ce7dc0a0bdf98370ec895ff02d1226609e3039c3e30ec",
+        "ec679ea84dc53ec418660e18ded8f7327c813c966770a4c139895647bfbbbcf5"
+      ],
+      "labels": [
+        "参考",
+        "1拍",
+        "2拍"
+      ],
+      "window_s": [
+        0.18,
+        0.2
+      ],
+      "metrics": [
+        [
+          0.17643765517922291,
+          0.0075223128283436851,
+          0.42970138970647048
+        ],
+        [
+          0.24519794170046,
+          0.010429040005403442,
+          0.4817343749025419
+        ],
+        [
+          0.41061223847872219,
+          0.017314596830442293,
+          0.8071028210117176
+        ]
+      ],
+      "metric_names": [
+        "真实iq跟踪RMS [A]",
+        "转矩标准差 [N·m]",
+        "转速跟踪RMS [rpm]"
+      ],
+      "baseline_exact_signal_count": 21,
+      "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+      "definition": "各组自身真值、反馈、给定；末20ms控制任务瞬时记录，不宣称稳态或PWM周期平均纹波。"
+    },
+    {
+      "kind": "filter",
+      "source_folders": [
+        "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261013_104038_395_digital_filter_8f38ec15",
+        "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261016_092300_213_digital_filter_ca2bf91a"
+      ],
+      "source_record_sha256": [
+        "c0de25cec723bd18ada707b257b18e0a11f183dcb4fa770a8d6ff86ad757de44",
+        "1a5e60c04e0f091f00470fe553b457745baa96d69fcb9e9a3243a560af3ce936"
+      ],
+      "labels": [
+        "参考",
+        "1500 Hz",
+        "500 Hz"
+      ],
+      "window_s": [
+        0.18,
+        0.2
+      ],
+      "metrics": [
+        [
+          0.17643765517922291,
+          0.0075223128283436851,
+          0.42970138970647048
+        ],
+        [
+          0.21494276310089863,
+          0.0090870148146881529,
+          0.42442571289405984
+        ],
+        [
+          0.40464226946738269,
+          0.016828004494238425,
+          1.5200676136062263
+        ]
+      ],
+      "metric_names": [
+        "真实iq跟踪RMS [A]",
+        "转矩标准差 [N·m]",
+        "转速跟踪RMS [rpm]"
+      ],
+      "baseline_exact_signal_count": 21,
+      "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+      "definition": "各组自身真值、反馈、给定；末20ms控制任务瞬时记录，不宣称稳态或PWM周期平均纹波。"
+    }
+  ]
+}

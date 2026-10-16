@@ -1,0 +1,74 @@
+{
+  "passed": true,
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "cases": [
+    {
+      "id": "off",
+      "physical_reference_case": 0,
+      "duration_s": 0.002
+    },
+    {
+      "id": "dormant_parameters",
+      "physical_reference_case": 1,
+      "duration_s": 0.002
+    },
+    {
+      "id": "noise_zero",
+      "physical_reference_case": 1,
+      "duration_s": 0.002
+    },
+    {
+      "id": "angle_bias_zero",
+      "physical_reference_case": 1,
+      "duration_s": 0.002
+    },
+    {
+      "id": "average_dead_zero",
+      "physical_reference_case": 1,
+      "duration_s": 0.002
+    },
+    {
+      "id": "drop_zero_ideal",
+      "physical_reference_case": 1,
+      "duration_s": 0.002
+    },
+    {
+      "id": "measurement_neutral_combination",
+      "physical_reference_case": 1,
+      "duration_s": 0.002
+    },
+    {
+      "id": "gate_zero",
+      "physical_reference_case": 0,
+      "duration_s": 0.002
+    },
+    {
+      "id": "gate_two",
+      "physical_reference_case": 0,
+      "duration_s": 0.002
+    },
+    {
+      "id": "comp_zero",
+      "physical_reference_case": 9,
+      "duration_s": 0.002
+    },
+    {
+      "id": "drop_zero_detailed",
+      "physical_reference_case": 9,
+      "duration_s": 0.002
+    },
+    {
+      "id": "measurement_combination",
+      "physical_reference_case": 0,
+      "duration_s": 0.002
+    }
+  ],
+  "exact_physical_record_comparisons": 40,
+  "combination_tests": 193,
+  "accepted_combinations": 138,
+  "rejected_combinations": 55,
+  "transactional_rejections": 13,
+  "original_state_preserved": true,
+  "raw_cache_sha256": "55d1f04d7f6e1c9d607a5731408798661c23dfad62408893c693bf30e3c56866",
+  "scope": "2ms zero/disabled/combined behavior; zero gate uses detailed bridge, not ideal baseline; not long-term stability or exhaustive combinations."
+}

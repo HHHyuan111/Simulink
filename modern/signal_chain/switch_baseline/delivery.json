@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "exact_physical_record_comparisons": 40,
+  "raw_cache": {
+    "path": "modern/.build/switch_baseline/runs.mat",
+    "sha256": "55d1f04d7f6e1c9d607a5731408798661c23dfad62408893c693bf30e3c56866"
+  },
+  "reference_manifest_sha256": "f977cfaa62d8722221573d9a648f28d8d7bc91f0f6a462c1e09e4488a70ef353",
+  "rule_checks": 193,
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "transactional_rejections": 13,
+  "files": [
+    {
+      "path": "modern/signal_chain/validate_switch_baseline.m",
+      "sha256": "5b0e251f48c91bd33c40f9337f218e7012adc6ff40e6997c5840fcdfd615fe1f"
+    },
+    {
+      "path": "modern/signal_chain/switch_baseline/README.md",
+      "sha256": "e68d4d69d6f0a8bd34557aa4f8c7023cb26d322af4a80f47c85afadbaf9566a9"
+    },
+    {
+      "path": "modern/signal_chain/switch_baseline/validation.json",
+      "sha256": "ae8e6be68046762f28e8245920bd267dcb4113b09ab37625773281cae0e65ec7"
+    }
+  ],
+  "physical_cases": 12,
+  "physical_case_duration_s": 0.002
+}

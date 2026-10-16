@@ -1,0 +1,77 @@
+{
+  "validated_curve_groups": [
+    40,
+    24,
+    16,
+    9
+  ],
+  "reference_manifest_sha256": "f977cfaa62d8722221573d9a648f28d8d7bc91f0f6a462c1e09e4488a70ef353",
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "harmonic_series": 2,
+  "passed": true,
+  "files": [
+    {
+      "sha256": "ba02b5744925db2f99b7ba5a6619cd3a5634160736d332cf2b1adf7d9d53e804",
+      "path": "modern/signal_chain/teaching_chain/navigation_validation.json"
+    },
+    {
+      "sha256": "f834c6fc1a2cade15d445bf0e579509bb06af277224af3b775cb735ce1f86786",
+      "path": "modern/signal_chain/feedback_effects/validation.json"
+    },
+    {
+      "sha256": "5de886033a93447982b8c997e540e48325bc3affd33cf7b64e262bf17adb57a5",
+      "path": "modern/signal_chain/timing_feedback/validation.json"
+    },
+    {
+      "sha256": "818e522d0045824d0f785921ad2c45ee73f0573904a1fe381d9ecc9eae1a200f",
+      "path": "modern/teaching/sampling_lesson/validation.json"
+    },
+    {
+      "sha256": "5c4a3605770f48d24b6297f9cb47057b381520952360bdef77f39e61dd21a6a3",
+      "path": "modern/teaching/deadtime_lesson/comparison_validation.json"
+    },
+    {
+      "sha256": "738d1428f9901dc789d3f0a84386fc4d313e6fd279cea04345fe9d119b923a71",
+      "path": "modern/teaching/pmsm_sampling_comparison_menu.m"
+    },
+    {
+      "sha256": "1796e903ff1e8672e282f8b55a36c49a7ed8f9390430a73a5825b55b3af72ebd",
+      "path": "modern/teaching/open_pmsm_deadtime_comparison.m"
+    },
+    {
+      "sha256": "35679528b7b7f6238ee8d03a3187205d3194f407283908464141248e88b638e1",
+      "path": "modern/teaching/open_pmsm_sampling_lesson.m"
+    },
+    {
+      "sha256": "4fec9fdb012c8ec7e7ca70083dfcc8a7cb87f752a00defb49f590177cb2243aa",
+      "path": "modern/teaching/open_pmsm_sampling_comparison.m"
+    },
+    {
+      "sha256": "53dc8f9dcb92897515b202ba4e57af5bf54a4a78510bfd2dc874828cf5edfb7d",
+      "path": "modern/teaching/open_pmsm_feedback_effects.m"
+    },
+    {
+      "sha256": "37a22de89eac226318977ce8ce191d12803ab2d0d31d287c652a199a5be6f67f",
+      "path": "modern/teaching/open_pmsm_timing_feedback.m"
+    },
+    {
+      "sha256": "35b4acdac09f90e40cda6b4334568da74bf3b2d5a416e48fcf7f98388c4dc6b3",
+      "path": "modern/signal_chain/validate_teaching_chain_navigation.m"
+    },
+    {
+      "sha256": "5b213553544a091d710332ca70b2605d711f558695ce656499c94a4e72eb104d",
+      "path": "modern/signal_chain/validate_feedback_effects_view.m"
+    },
+    {
+      "sha256": "9ec4b01fe8203a2937068b02d4e6ff3317607b6d49c733b472324be8475414c8",
+      "path": "modern/signal_chain/teaching_chain/README.md"
+    },
+    {
+      "sha256": "f8c71fa9f4d918f380ab6f5fa3743b7f325860ee58a7b07db72ff62e9b574193",
+      "path": "modern/signal_chain/teaching_chain/entry.png"
+    }
+  ],
+  "cross_topic_callbacks": 25,
+  "spectrum_curves": 2,
+  "physical_simulations_rerun": 0
+}

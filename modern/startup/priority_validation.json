@@ -1,0 +1,5 @@
+{
+  "passed": true,
+  "permanent_not_ready_holds_waiting": true,
+  "stop_wins_over_speed_takeover": true
+}

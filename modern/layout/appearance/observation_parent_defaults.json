@@ -1,0 +1,17 @@
+[
+  {
+    "name": "时序观测",
+    "mask_display": "disp('时序观测');",
+    "open_fcn": "open_system([gcb '/总览']);"
+  },
+  {
+    "name": "测量观测",
+    "mask_display": "disp('测量观测');",
+    "open_fcn": "open_system([gcb '/总览']);"
+  },
+  {
+    "name": "跟踪观测",
+    "mask_display": "disp('跟踪观测');",
+    "open_fcn": "open_system([gcb '/总览']);"
+  }
+]

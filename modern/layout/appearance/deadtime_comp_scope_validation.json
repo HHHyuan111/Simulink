@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "original_log_checks": 156,
+  "source_checks": 21,
+  "scope_channels": 7,
+  "sample_time_s": 5E-5,
+  "max_compensation_voltage_formula_error_V": 0,
+  "polarity_sample_counts_negative_zero_positive": [
+    77,
+    4,
+    0
+  ],
+  "zero_magnitude_physical_regression": true,
+  "three_mode_roundtrip": true,
+  "wrapper_mode_preserved_normal_and_exception": true,
+  "structure_restored": true,
+  "definition": {
+    "path": "PMSM_FOC_R2026a/死区教学/补偿作用",
+    "layout": [
+      2,
+      2
+    ],
+    "view": "compensation",
+    "time_span_s": 0.02,
+    "sample_time": "timing_control_sample"
+  },
+  "scope": "详细桥2us、600rpm给定：补偿关/匹配2us/零补偿幅值，各4ms；只验证观测与算法诊断来源，不评价稳态补偿改善",
+  "sources": [
+    {
+      "path": "pmsm_deadtime_scope.m",
+      "sha256": "3eb966d6c39710d786aecf34f489b02c35b58127d38c6a2a7cc4c6a60fc37282"
+    },
+    {
+      "path": "pmsm_scope_style.m",
+      "sha256": "a65c32b37afabd903899dae43ace07b26f0abc502ef1d5b7dc4f08eec63750ff"
+    },
+    {
+      "path": "pmsm_scope_theme.m",
+      "sha256": "e2e8285cf09ca6983e11ea984ce615bc48a3ef6e6f1a4373bafaaccf1d2e7d4b"
+    },
+    {
+      "path": "pmsm_presented_call.m",
+      "sha256": "419b38ce37694f3b514eba7d8455f7372c133bec2383858badc3a1312f362219"
+    },
+    {
+      "path": "validate_pmsm_deadtime_comp_scope.m",
+      "sha256": "5b85e7ac6381b42ae6a63c2f2f72d83302ec70e1b912275805a98457d9cad95f"
+    }
+  ]
+}

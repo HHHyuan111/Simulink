@@ -1,0 +1,56 @@
+[
+  {
+    "file": "01_死区补偿综合效果.png",
+    "source": "modern/teaching/deadtime_lesson/example/comparison.png",
+    "sha256": "bb5975f671f736b3f09aab625b7a0d1f5a77e7af612a7797cc1ac4b74c4d1e52",
+    "bytes": 191199
+  },
+  {
+    "file": "02_噪声与滤波功率谱.png",
+    "source": "modern/teaching/frequency/noise_v1/spectrum.png",
+    "sha256": "95bd43c69d1d0f4a13d83140fae9ae7fefe844361af5d3d6815f39af1b1b6b74",
+    "bytes": 179408
+  },
+  {
+    "file": "03_三相采样九宫格.png",
+    "source": "modern/teaching/experiments/examples/noise_filter/comparison.png",
+    "sha256": "1afcaee1c74139c39a2063c20bf0b91783d523fd6de4193f048193eb551c9d07",
+    "bytes": 251450
+  },
+  {
+    "file": "04_原生Scope采样链.jpg",
+    "source": "modern/layout/appearance/native_current_sampling_scope.jpg",
+    "sha256": "67d0f800586aa964f7dc89039d95b4e243c7ec9858d50ec0f561df98fdb1745a",
+    "bytes": 140373
+  },
+  {
+    "file": "05_角度偏置与dq电流.png",
+    "source": "modern/teaching/experiments/examples/angle_bias/mechanism.png",
+    "sha256": "c8bd69f7a7205d0f6f4fa9a8800097698adc62f90b81dbd57e6b276d40453eb1",
+    "bytes": 182512
+  },
+  {
+    "file": "06_编码器反馈链.png",
+    "source": "modern/framework/examples/feedback.png",
+    "sha256": "9c1c5365a56916733658e6a34e5c7832b75d122dc6ed5f159d3a58acfb8c3d15",
+    "bytes": 149327
+  },
+  {
+    "file": "07_整机三相与dq电流.png",
+    "source": "modern/framework/examples/currents.png",
+    "sha256": "2bcce488def43d1b5b0ab3cb71be552b162423c24242af7f5a7af31f7b61fcb7",
+    "bytes": 193628
+  },
+  {
+    "file": "08_备选_延迟与环路频响.png",
+    "source": "modern/teaching/frequency/current_loop/example/response.png",
+    "sha256": "38c3703183160230bbe0ed7b15a345faee279016864fb10fa7844cb77a18ddbc",
+    "bytes": 152766
+  },
+  {
+    "file": "09_备选_ADC与PWM时序.png",
+    "source": "modern/teaching/experiments/examples/timing_events/mechanism.png",
+    "sha256": "40a77090c3e9abaf70480463b3ab7cfb8beaf8317beabadc0a283c34a3621c6f",
+    "bytes": 79230
+  }
+]

@@ -1,0 +1,249 @@
+{
+  "schema": 1,
+  "kind": "curated_fixed_reference_example",
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "scope": "固定参考+实验专用SVPWM周期平均电压适配器；零速、零负载、d轴小信号；q轴和速度环保留；原PI冻结；非实板标定",
+  "plan": {
+    "schema": 1,
+    "sample_time_s": 5E-05,
+    "requested_frequency_Hz": [
+      50,
+      100,
+      200,
+      400,
+      600,
+      800,
+      1000,
+      1250,
+      1600,
+      2000,
+      2500,
+      3333,
+      4000
+    ],
+    "amplitudes_A": [
+      0.2,
+      0.1
+    ],
+    "settling_cycles": 4,
+    "measuring_cycles": 8,
+    "minimum_settling_s": 0.01,
+    "warmup_s": 0.02,
+    "cases": [
+      {
+        "id": "reference",
+        "label": "原反馈",
+        "delay_cycles": 0
+      },
+      {
+        "id": "delay",
+        "label": "增加1Ts延迟",
+        "delay_cycles": 1
+      }
+    ],
+    "scope": "固定参考+实验专用SVPWM周期平均电压适配器；零速、零负载、d轴小信号；q轴和速度环保留；原PI冻结；非实板标定",
+    "injection": "原id_ref→d轴误差正端；反馈取同一误差负端；误差取原PI输入；真实id取原电机状态",
+    "average_adapter": {
+      "formula": "D=1-2*Tcm/Ts; Vabc=Vdc*(D-mean(D))",
+      "common_numerical_delay_s": 1E-06,
+      "reason": "1us switching grid cannot resolve small perturbations; common one-T state breaks algebraic voltage antiwindup feedback; not a hardware delay calibration"
+    },
+    "samples_per_period": [
+      400,
+      200,
+      100,
+      50,
+      33,
+      25,
+      20,
+      16,
+      13,
+      10,
+      8,
+      6,
+      5
+    ],
+    "frequency_Hz": [
+      50,
+      100,
+      200,
+      400,
+      606.0606060606061,
+      800,
+      1000,
+      1250,
+      1538.4615384615383,
+      2000,
+      2500,
+      3333.333333333333,
+      4000
+    ],
+    "segments": [
+      {
+        "start_tick": 400,
+        "measure_tick": 2000,
+        "end_tick": 5200,
+        "frequency_Hz": 50
+      },
+      {
+        "start_tick": 5200,
+        "measure_tick": 6000,
+        "end_tick": 7600,
+        "frequency_Hz": 100
+      },
+      {
+        "start_tick": 7600,
+        "measure_tick": 8000,
+        "end_tick": 8800,
+        "frequency_Hz": 200
+      },
+      {
+        "start_tick": 8800,
+        "measure_tick": 9000,
+        "end_tick": 9400,
+        "frequency_Hz": 400
+      },
+      {
+        "start_tick": 9400,
+        "measure_tick": 9631,
+        "end_tick": 9895,
+        "frequency_Hz": 606.0606060606061
+      },
+      {
+        "start_tick": 9895,
+        "measure_tick": 10095,
+        "end_tick": 10295,
+        "frequency_Hz": 800
+      },
+      {
+        "start_tick": 10295,
+        "measure_tick": 10495,
+        "end_tick": 10655,
+        "frequency_Hz": 1000
+      },
+      {
+        "start_tick": 10655,
+        "measure_tick": 10863,
+        "end_tick": 10991,
+        "frequency_Hz": 1250
+      },
+      {
+        "start_tick": 10991,
+        "measure_tick": 11199,
+        "end_tick": 11303,
+        "frequency_Hz": 1538.4615384615383
+      },
+      {
+        "start_tick": 11303,
+        "measure_tick": 11503,
+        "end_tick": 11583,
+        "frequency_Hz": 2000
+      },
+      {
+        "start_tick": 11583,
+        "measure_tick": 11783,
+        "end_tick": 11847,
+        "frequency_Hz": 2500
+      },
+      {
+        "start_tick": 11847,
+        "measure_tick": 12051,
+        "end_tick": 12099,
+        "frequency_Hz": 3333.333333333333
+      },
+      {
+        "start_tick": 12099,
+        "measure_tick": 12299,
+        "end_tick": 12339,
+        "frequency_Hz": 4000
+      }
+    ],
+    "duration_s": 0.61695
+  },
+  "source_files": [
+    {
+      "path": "run_pmsm_current_frequency.m",
+      "sha256": "ad11122bbf65315fea47daff8b3cd9105741ab5d5f7645675c84585a4badaecc"
+    },
+    {
+      "path": "pmsm_current_frequency_plan.m",
+      "sha256": "980734ce7e219c23c1029f636cd3df010f40e6ad26c2e1ba0d46879552324d94"
+    },
+    {
+      "path": "pmsm_sine_response.m",
+      "sha256": "8f42dea97c8f9939c4828b17eeb25f6499b0118ebe060f083bcbe3f1a407090b"
+    },
+    {
+      "path": "pmsm_frequency_metrics.m",
+      "sha256": "0a817d5ac3b8a583c2b4cf971ffbea2c14c999de2e22fe8bb2ac0d65801d6ba3"
+    },
+    {
+      "path": "plot_pmsm_current_frequency.m",
+      "sha256": "d177ab0e2a470e26957d20ea2fbd70d2cf3f73b81e32f5b09608791e4836b7b8"
+    },
+    {
+      "path": "teach_values.m",
+      "sha256": "1bf38186e90d1cd49e8cee71a3168674490ffd8aed8a1192b6f58a2399deb6f1"
+    }
+  ],
+  "cases": [
+    {
+      "id": "reference",
+      "label": "原反馈",
+      "valid": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "metrics": {
+        "bandwidth_Hz": 1551.5965148359392,
+        "gain_crossing_Hz": 1198.163832605373,
+        "phase_margin_deg": 77.87153358483377,
+        "bandwidth_status": "已测点之间对数频率插值",
+        "margin_status": "反馈/误差估计返回比；已测点之间插值；仅经典局部裕度",
+        "reference_gain": "0dB tracking at DC; first sweep point must be within 0.25dB",
+        "boundary": "仅零速d轴小信号条件下的离散扫频估计；不是全工况稳定性保证"
+      }
+    },
+    {
+      "id": "delay",
+      "label": "增加1Ts延迟",
+      "valid": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "metrics": {
+        "bandwidth_Hz": 2877.0766141511185,
+        "gain_crossing_Hz": 1198.1638324221165,
+        "phase_margin_deg": 56.2256468928555,
+        "bandwidth_status": "已测点之间对数频率插值",
+        "margin_status": "反馈/误差估计返回比；已测点之间插值；仅经典局部裕度",
+        "reference_gain": "0dB tracking at DC; first sweep point must be within 0.25dB",
+        "boundary": "仅零速d轴小信号条件下的离散扫频估计；不是全工况稳定性保证"
+      }
+    }
+  ],
+  "raw_replay_signals": 24,
+  "raw_data_location": "Local per-run archives; use repeat_pmsm_current_frequency to regenerate."
+}

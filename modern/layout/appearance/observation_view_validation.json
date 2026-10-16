@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "legacy_scopes": 50,
+  "all_bounds": [
+    80,
+    60,
+    1120,
+    800
+  ],
+  "legacy_layouts_preserved": true,
+  "original_time_data_exact": 52,
+  "navigation_buttons": [
+    4,
+    3
+  ],
+  "structure_restored": true,
+  "main_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d"
+}

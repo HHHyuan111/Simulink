@@ -1,0 +1,47 @@
+function fig=open_pmsm_framework(visible)
+% Unified navigation; no unimplemented toggles and no automatic simulation.
+if nargin<1,visible='on';end
+here=fileparts(mfilename('fullpath'));root=fileparts(here);addpath(fullfile(root,'teaching'));
+fig=uifigure('Name','PMSM仿真框架','Position',[180 180 850 520],'Visible',visible);
+g=uigridlayout(fig,[5 3]);g.RowHeight={35,'1x',40,40,30};g.ColumnWidth={'1x','1x','1x'};
+label=uilabel(g,'Text','PMSM 仿真框架','FontSize',20);label.Layout.Row=1;label.Layout.Column=[1 3];
+data={'控制与电机','FOC、前馈、限压、SVPWM、200W电机','已建立，未实测校准';...
+ '功率级','死区、续流、压降、基础补偿','单项对照已建立';...
+ '采样与时序','ADC、任务频率、CCR、有效窗口','单项对照已建立';...
+ '位置与速度','编码器角度、计数测速、速度滤波','单项对照已建立';...
+ '整机运行','组合反馈、变速、增载、平台判定','查看最新整机验收';...
+ '启停与保护','启停接管、电角定位、故障保护','待开发'};
+t=uitable(g,'Data',data,'ColumnName',{'部分','功能','状态'},'ColumnWidth',{110,370,260},'RowName',{});t.Layout.Row=2;t.Layout.Column=[1 3];
+uibutton(g,'Text','打开原模型','ButtonPushedFcn',@(~,~)openModel);
+uibutton(g,'Text','单项实验','ButtonPushedFcn',@(~,~)open_pmsm_experiments);
+uibutton(g,'Text','功能与使用说明','ButtonPushedFcn',@(~,~)edit(fullfile(here,'README.md')));
+run=uibutton(g,'Text','运行整机基线','ButtonPushedFcn',@(~,~)runSystem);
+uibutton(g,'Text','查看整机结果','ButtonPushedFcn',@(~,~)showResult);
+uibutton(g,'Text','恢复固定参考','ButtonPushedFcn',@(~,~)restore);
+status=uilabel(g,'Text','先查看说明；整机实验使用原模型，运行后恢复固定参考。');status.Layout.Row=5;status.Layout.Column=[1 3];
+ function openModel
+  open_system(fullfile(root,'PMSM_FOC_R2026a.slx'));
+ end
+ function restore
+  try
+   mdl='PMSM_FOC_R2026a';if bdIsLoaded(mdl)
+    if pmsm_system_inputs('installed',mdl),pmsm_system_inputs('remove',mdl);end
+    if pmsm_encoder_model('installed',mdl),pmsm_encoder_model('remove',mdl);end
+   end
+   pmsm_reference('restore');status.Text='固定参考已恢复，未保存覆盖SLX。';
+  catch err,uialert(fig,err.message,'恢复失败');end
+ end
+ function runSystem
+  run.Enable='off';status.Text='正在运行两组整机实验，请等待…';drawnow;
+  try,r=run_pmsm_system_baseline;status.Text=['已完成：' r.id];showResult;
+  catch err,status.Text='运行失败，已生成的原始档案保留。';uialert(fig,err.message,'整机实验失败');end
+  run.Enable='on';
+ end
+ function showResult
+  try
+   latest=jsondecode(fileread(fullfile(here,'latest.json')));verify_pmsm_system_baseline(latest.folder);
+   files={'response.png','feedback.png','currents.png'};
+   for j=1:3,f=figure('Name',files{j},'Color','white');ax=axes(f);image(ax,imread(fullfile(latest.folder,files{j})));axis(ax,'image','off');end
+  catch err,uialert(fig,err.message,'尚无完整整机结果');end
+ end
+end

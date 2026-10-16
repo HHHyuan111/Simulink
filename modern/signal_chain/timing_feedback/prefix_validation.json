@@ -1,0 +1,280 @@
+{
+  "passed": true,
+  "source_folder": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261016_095048_642_timing_deadline_4cdce242",
+  "historical_folder": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261013_160031_951_timing_deadline_693b188d",
+  "historical_record_sha256": "a780a21b948cd42127303998c71a9eae68f2e00f70ddedd0518ce10680ab96fb",
+  "source_record_sha256": "47f07dfb49b2d0302b63f30ac9981b4d56cb2ef7c03bf16e39e0b3785308169c",
+  "checks": [
+    {
+      "case_id": "reference",
+      "signal": "log_TL",
+      "samples": 1000
+    },
+    {
+      "case_id": "reference",
+      "signal": "log_Te",
+      "samples": 1000
+    },
+    {
+      "case_id": "reference",
+      "signal": "log_iabc_adc",
+      "samples": 1000
+    },
+    {
+      "case_id": "reference",
+      "signal": "log_iabc_filter",
+      "samples": 1000
+    },
+    {
+      "case_id": "reference",
+      "signal": "log_iabc_meas",
+      "samples": 1000
+    },
+    {
+      "case_id": "reference",
+      "signal": "log_iabc_noise",
+      "samples": 1000
+    },
+    {
+      "case_id": "reference",
+      "signal": "log_iabc_true",
+      "samples": 1000
+    },
+    {
+      "case_id": "reference",
+      "signal": "log_id",
+      "samples": 1000
+    },
+    {
+      "case_id": "reference",
+      "signal": "log_iq",
+      "samples": 1000
+    },
+    {
+      "case_id": "reference",
+      "signal": "log_iq_ref",
+      "samples": 1000
+    },
+    {
+      "case_id": "reference",
+      "signal": "log_nref",
+      "samples": 1000
+    },
+    {
+      "case_id": "reference",
+      "signal": "log_speed",
+      "samples": 1000
+    },
+    {
+      "case_id": "reference",
+      "signal": "log_theta_error",
+      "samples": 1000
+    },
+    {
+      "case_id": "reference",
+      "signal": "log_theta_meas",
+      "samples": 1000
+    },
+    {
+      "case_id": "reference",
+      "signal": "log_theta_true",
+      "samples": 1000
+    },
+    {
+      "case_id": "reference",
+      "signal": "obs_id_ref",
+      "samples": 1000
+    },
+    {
+      "case_id": "reference",
+      "signal": "obs_state",
+      "samples": 1000
+    },
+    {
+      "case_id": "reference",
+      "signal": "obs_voltage",
+      "samples": 1000
+    },
+    {
+      "case_id": "factor",
+      "signal": "log_TL",
+      "samples": 1000
+    },
+    {
+      "case_id": "factor",
+      "signal": "log_Te",
+      "samples": 1000
+    },
+    {
+      "case_id": "factor",
+      "signal": "log_iabc_adc",
+      "samples": 1000
+    },
+    {
+      "case_id": "factor",
+      "signal": "log_iabc_filter",
+      "samples": 1000
+    },
+    {
+      "case_id": "factor",
+      "signal": "log_iabc_meas",
+      "samples": 1000
+    },
+    {
+      "case_id": "factor",
+      "signal": "log_iabc_noise",
+      "samples": 1000
+    },
+    {
+      "case_id": "factor",
+      "signal": "log_iabc_true",
+      "samples": 1000
+    },
+    {
+      "case_id": "factor",
+      "signal": "log_id",
+      "samples": 1000
+    },
+    {
+      "case_id": "factor",
+      "signal": "log_iq",
+      "samples": 1000
+    },
+    {
+      "case_id": "factor",
+      "signal": "log_iq_ref",
+      "samples": 1000
+    },
+    {
+      "case_id": "factor",
+      "signal": "log_nref",
+      "samples": 1000
+    },
+    {
+      "case_id": "factor",
+      "signal": "log_speed",
+      "samples": 1000
+    },
+    {
+      "case_id": "factor",
+      "signal": "log_theta_error",
+      "samples": 1000
+    },
+    {
+      "case_id": "factor",
+      "signal": "log_theta_meas",
+      "samples": 1000
+    },
+    {
+      "case_id": "factor",
+      "signal": "log_theta_true",
+      "samples": 1000
+    },
+    {
+      "case_id": "factor",
+      "signal": "obs_id_ref",
+      "samples": 1000
+    },
+    {
+      "case_id": "factor",
+      "signal": "obs_state",
+      "samples": 1000
+    },
+    {
+      "case_id": "factor",
+      "signal": "obs_voltage",
+      "samples": 1000
+    },
+    {
+      "case_id": "late",
+      "signal": "log_TL",
+      "samples": 1000
+    },
+    {
+      "case_id": "late",
+      "signal": "log_Te",
+      "samples": 1000
+    },
+    {
+      "case_id": "late",
+      "signal": "log_iabc_adc",
+      "samples": 1000
+    },
+    {
+      "case_id": "late",
+      "signal": "log_iabc_filter",
+      "samples": 1000
+    },
+    {
+      "case_id": "late",
+      "signal": "log_iabc_meas",
+      "samples": 1000
+    },
+    {
+      "case_id": "late",
+      "signal": "log_iabc_noise",
+      "samples": 1000
+    },
+    {
+      "case_id": "late",
+      "signal": "log_iabc_true",
+      "samples": 1000
+    },
+    {
+      "case_id": "late",
+      "signal": "log_id",
+      "samples": 1000
+    },
+    {
+      "case_id": "late",
+      "signal": "log_iq",
+      "samples": 1000
+    },
+    {
+      "case_id": "late",
+      "signal": "log_iq_ref",
+      "samples": 1000
+    },
+    {
+      "case_id": "late",
+      "signal": "log_nref",
+      "samples": 1000
+    },
+    {
+      "case_id": "late",
+      "signal": "log_speed",
+      "samples": 1000
+    },
+    {
+      "case_id": "late",
+      "signal": "log_theta_error",
+      "samples": 1000
+    },
+    {
+      "case_id": "late",
+      "signal": "log_theta_meas",
+      "samples": 1000
+    },
+    {
+      "case_id": "late",
+      "signal": "log_theta_true",
+      "samples": 1000
+    },
+    {
+      "case_id": "late",
+      "signal": "obs_id_ref",
+      "samples": 1000
+    },
+    {
+      "case_id": "late",
+      "signal": "obs_state",
+      "samples": 1000
+    },
+    {
+      "case_id": "late",
+      "signal": "obs_voltage",
+      "samples": 1000
+    }
+  ],
+  "scope": "新200ms的前50ms完整控制日志与既有封存档案逐点比较；前两组计算时间相同，第三组旧11μs与新15μs均在50μs更新生效。未比较高频尾部诊断，未将其声称为新200ms的完整独立重跑。"
+}

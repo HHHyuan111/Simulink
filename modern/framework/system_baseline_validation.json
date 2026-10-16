@@ -1,0 +1,221 @@
+{
+  "kind": "integrated_system_baseline_v1",
+  "default_folder": "D:/simulink/modern/framework/runs/20261014_104230_738_system_report_059a8301",
+  "checks": {
+    "raw_data_mechanism_and_platform_analysis": true,
+    "invalid_parameters_rejected": true,
+    "install_remove_preserves_original_structure": true,
+    "unified_navigation_created": true,
+    "changed_plan_rejected": true,
+    "legacy_speed_filter_66_signals_exact": true,
+    "main_and_reference_preserved": true
+  },
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "reference_sha256": "f977cfaa62d8722221573d9a648f28d8d7bc91f0f6a462c1e09e4488a70ef353",
+  "platforms_pass": true,
+  "legacy_regression": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261014_101512_050_speed_filter_314bd781",
+  "previous_gallery_validation": {
+    "all_passed": true,
+    "scope": "从已校验MAT原始记录生成简洁展示图及独立文字说明；不改原始结果包。",
+    "source_index_sha256": "98473ec409eb7d464a8f507c26ab66902a989cbae15b5bb261b00cd3818522fe",
+    "renderer_files": [
+      {
+        "path": "plot_pmsm_speed_filter.m",
+        "sha256": "03a53e2cde283ab6d1f861aaad28248e1df1a79a36c2a94e65101e8ab9e30938"
+      },
+      {
+        "path": "pmsm_speed_filter_analysis.m",
+        "sha256": "bdab01efaf331b034b244f6359e4a7e280cde1db2dc59655d886a4325cdd9877"
+      },
+      {
+        "path": "plot_pmsm_speed_feedback.m",
+        "sha256": "ec30c08819596756309f33c0743c32efb4f3356342ddf4ff2e907c659e4a6e3f"
+      },
+      {
+        "path": "pmsm_speed_feedback_analysis.m",
+        "sha256": "89e3ae84fb9a5746d4bba54707cf79e77944fa081ccf554ca1f770c985a203cd"
+      },
+      {
+        "path": "plot_pmsm_encoder_speed.m",
+        "sha256": "1882e83d11f0a057055e28a88bbef0a8f53e7f662e481652e7e6c8d055e235b7"
+      },
+      {
+        "path": "pmsm_encoder_speed_analysis.m",
+        "sha256": "6a16b6f24e0d070c03812bbc5789aff7c4d2f5f5ce85cbeaaa9f5a42a6c3b8dd"
+      },
+      {
+        "path": "plot_pmsm_encoder.m",
+        "sha256": "890806b74bc28efed0e64d4ef033dcfe69ebfe057f80fc9f77df8138227d4f35"
+      },
+      {
+        "path": "pmsm_encoder_analysis.m",
+        "sha256": "13eb1faf74e71b6ea022cf383548976d8fd1cdcb67320f0ff6e82a8bd39491ed"
+      },
+      {
+        "path": "plot_pmsm_sampling_window.m",
+        "sha256": "7a196db952b45f605182b2be32c4699cbf2c59a766ae0bdf8f8684c7450c2755"
+      },
+      {
+        "path": "pmsm_sampling_window_analysis.m",
+        "sha256": "d54c4b8186eaa4a4bc6fce9bfeaf1937ff3e969fde9d1a631293600446e0b8c6"
+      },
+      {
+        "path": "plot_pmsm_timing_deadline.m",
+        "sha256": "1e594b9974cc8dc323257d508678c062f2018ce17297a6edb9df70ef553def1a"
+      },
+      {
+        "path": "pmsm_timing_deadline_analysis.m",
+        "sha256": "67ce76116e7d3fb82ad32121034d848d96b385a2f898cfe3e89dc38d6b0653dd"
+      },
+      {
+        "path": "plot_pmsm_experiment.m",
+        "sha256": "3934519949c0177736895e2d45b956671e304dde3d08bb0cb09c81d00db03abb"
+      },
+      {
+        "path": "plot_pmsm_mechanism.m",
+        "sha256": "e8cb752637a98ced50c040f48905c970650cc45af8fdd3820c94a5db6ea323a9"
+      },
+      {
+        "path": "plot_pmsm_deadtime_pair.m",
+        "sha256": "ecb5cba0c68654c83c83ac36a88cb144871ca88c98857f77cd851c1703ec5618"
+      },
+      {
+        "path": "plot_pmsm_low_speed_comp.m",
+        "sha256": "178a58d362321b402e1c85642bda39c7cb67423fd5cddc741b4dd0fb5bc7e591"
+      },
+      {
+        "path": "plot_pmsm_noise_filter.m",
+        "sha256": "ca97f345a6e53f80ebe019b1c006107c2b84f2e5cd59905b41e1e91cfc3d3ffb"
+      },
+      {
+        "path": "pmsm_noise_filter_analysis.m",
+        "sha256": "8e559064e8e046ff91afa146fbcbdd9c58e0617cd97bbda4b0601bec454c63c9"
+      },
+      {
+        "path": "plot_pmsm_timing_events.m",
+        "sha256": "81bbf0d8464c945b270393932e0158735b00788646decae7540761548cafbdac"
+      },
+      {
+        "path": "pmsm_timing_events_analysis.m",
+        "sha256": "f5617baeef752f8cc84a9981f1975da2be429aebff34cf555a6054f328c4c701"
+      },
+      {
+        "path": "pmsm_deadtime_pair_alignment.m",
+        "sha256": "7fd141413d92268f83be6fb72a22e362762c48758872d1818873c48799f94e0a"
+      },
+      {
+        "path": "pmsm_plot_style.m",
+        "sha256": "60619d54cc27fa1b9e495816877cec3ed6a12f024bf9f35da6dba5652d58ccfc"
+      },
+      {
+        "path": "export_pmsm_experiment_examples.m",
+        "sha256": "cd5884b429fc9c5cd14e7318c7aefafdfdee31c3d2be3a4f90fbf90cd93a7967"
+      }
+    ],
+    "examples": {
+      "current_bias": {
+        "comparison": "f36edb7d5b5071d613c335f88a16be5f8d928c4c3780e1b1c9e1f26dd2e5bf3a",
+        "response": "83a96052ecb3a933863723f5c830eca19a8ce72b38c7495fcf7d86547fb165b9"
+      },
+      "current_noise": {
+        "comparison": "dc6c7cba78836dc9cdb1e4c179fd7affcdb4941c641f0e36c8da45c31f1af2a8",
+        "response": "447882f568164959ff5548adfc889b18dcee46f1a936f117c5e6f2abaa1c825a"
+      },
+      "sample_delay": {
+        "comparison": "05049625786ad55f51bae86857fe4b4b0c795129c84e22e962cc70b73406f46d",
+        "response": "4df4f92f4dabbe2083dab76e1272e9a91fff5ee9ecef6e86dd8502af89fa6011"
+      },
+      "digital_filter": {
+        "comparison": "adb56861a85691b5c218ce253d14174db0e4b053eca98970114b0eb4191ccf42",
+        "response": "e3be128b276831c920d475582de7a0317a9439e8111bcdc8d383e1738b5ec58e",
+        "mechanism": "f45e1a7052d16c7ceffcc213e1cc03240a92c0bdc2bac4cb4d1024240b076c35"
+      },
+      "angle_bias": {
+        "comparison": "2b64fed54f3a8b8fa07c24564f0171935453c447f46249723132d0461abc3c60",
+        "response": "89289f49894a11acc4c4131a89a526ae11594f86ec7754405341a2d24a1e914c",
+        "mechanism": "c8bd69f7a7205d0f6f4fa9a8800097698adc62f90b81dbd57e6b276d40453eb1"
+      },
+      "gate_deadtime": {
+        "comparison": "25fa0c0bf40833d5d55bf4703e69d11dd174195e96b593534a215f1af14449b0",
+        "response": "85ab76c2ced074a2b875ee3424f9ee3e4baa94ffe729aed3615eba7c5fdfa97a",
+        "mechanism": "3b655d4132aed4e5f55237014636ac127de802fe3eaa2fd5d6da43b338fe3ec8"
+      },
+      "gate_deadtime_pair": {
+        "comparison": "c1e3c4b1736fab4ded6eafd2b5a12bcbd95f7aef7c0acfa0e3a049e72a0c8946",
+        "response": "ab4fab1447e0213d7155fcd0575ef21fca6f74b00d833ce6d81d6b6c0d879ed0",
+        "mechanism": "85edfdea94d657f70de8ae9f2d4a8a2e6a7476fc349cda49c261a7aaee6594c6",
+        "startup": "6cf8f29f8052853ca3e270b8c209095425fe9917aff3a4f228f9ff59994bd71f"
+      },
+      "low_speed_compensation": {
+        "comparison": "dd8dfb98216386fce381f8db031534b4c77716890a5c6d85388f22cfe794e375",
+        "response": "dbc3ee85d0b0471d5c8bc02eddfad7b0428d6661cce1a8327c60963081b77632",
+        "mechanism": "f2f01261d4606f584158625805d150e58dca27ce38e0305ccb37c667b36e079f",
+        "startup": "1a38daf0f42bcf583171e46ecdb5bae22e2e835b055f803045ae1c8b8bda174c"
+      },
+      "noise_filter": {
+        "comparison": "1afcaee1c74139c39a2063c20bf0b91783d523fd6de4193f048193eb551c9d07",
+        "response": "d3ad430950780acc51f2d14dcf23405466f3e85303275a23fd4d65b050727178",
+        "mechanism": "7ea7f1aa872bf597c1832095398c29bcaf5a50bfdda7d24fba8a3c81584e1b09"
+      },
+      "timing_events": {
+        "comparison": "22e1149e9b9e5b3b326f082075cf869082e02aade45f882ead6f6d7b8a5a1073",
+        "response": "3cd141c1dda78178db024ff7303eb6a6199a0643058485fd437e26eaac9ee864",
+        "mechanism": "40a77090c3e9abaf70480463b3ab7cfb8beaf8317beabadc0a283c34a3621c6f"
+      },
+      "timing_deadline": {
+        "comparison": "fa83b17e39a5c153e9d3c17f59479c72916cad0d6430a5f62338311872f9393b",
+        "response": "18b42b64bb546b97b2daa747a34a5865b379e446e05cc2e5dd5a5c8de1c12221",
+        "mechanism": "f030aa5d3145c7b30f73f90835f3834a205651418e190b7626257ae58e28578a"
+      },
+      "sampling_window": {
+        "comparison": "f16a9caca61506f1761247668662e8c3864287cf95af6476b46ded628dfa85a5",
+        "response": "313f17dffb69e479a9420435dc1369ef7cc4e38af44c40a9ec266275ea8a89d5",
+        "mechanism": "0ae052eeb04d9f69d204d3c883b4e54b2394bc3d71534c1b5386435f249d38c0"
+      },
+      "encoder_angle": {
+        "comparison": "36c69d443cf177f67e31d4488e283685f9082f800db836ebe09c2dce9ea636c3",
+        "response": "be751ae6f5db35eb9038ef0613fad3025aec03536c0a2e599de19a024ccaf12e",
+        "mechanism": "9f59d034a4a537f6ba2b2c5a714027f3c36c07973126504c33ac1185b93c629d"
+      },
+      "encoder_speed": {
+        "comparison": "443f15b8a29eef55c4839abef625944976693111a17008728be077e77ccdbfd7",
+        "response": "70488b227b0c92bbb058238e46863306518860de7b5c80b6ac9a4d70c59c24cd",
+        "mechanism": "dfc544d60c235083b5681ab3ee6a28924eb1a34e0602a2d93b0242b4c4b7ee33"
+      },
+      "speed_feedback": {
+        "comparison": "55020ff902b7fdf9dbaf64c6c0b9ed63708674a62fe9b884df08b84fe397c53f",
+        "response": "93eeb7ce910bb63b5360f314ca63f59f817b607c94ea8ae9d00aee5403698015",
+        "mechanism": "b2160009fe72c447b1f4932b476d1f7beaa9ba5d372b0d155b26d5f5e155df53",
+        "extended_response": "875090824dfd6c6405f2c7af59b3c5332356ad8142e5d27c163cd4fa5fe2801a"
+      },
+      "speed_filter": {
+        "comparison": "638d03eb65286e010a7bd4829ab52fae91c0a9e75f72a67d413fac8189f55a3d",
+        "response": "8c32e6b078fa89d01d0d077de1360b140f1092d67da0c57104ec5f20f1b85b42",
+        "mechanism": "2b1556df0e916e6340f96f9c9c77b79920591fb6e13c6e2d0764c970d5e57578"
+      }
+    },
+    "additional_pair_index_sha256": "32fd54dfd7245da5a7fc61b2169350aa56aca4ec382219f7c19ab823b6ed4faf",
+    "additional_low_speed_index_sha256": "1a94dbb0dd26f014c6902da3ea8ddbc46b2b6cb0b58aea426e8ed5fc6e610942",
+    "additional_noise_filter_index_sha256": "3ab92970c17398d59910dce50bab5d54a21936ce1472d4213c7432b643061601",
+    "additional_timing_events_index_sha256": "051ade9238f34f51756c4488688a0a08cd090abd0d04e252ad13957dbad26835",
+    "additional_timing_deadline_index_sha256": "8033e6b6b39cfe222515f483e5d568291000c77c57c21233ff5f2b4f6dc22118",
+    "additional_sampling_window_index_sha256": "05052de50f892df9f34222d7f989f6b38be2d52996f78d9601d306e1326475e1",
+    "additional_encoder_index_sha256": "535448a85dd721e2b10f799b0413fa257bdbe52549ed0855379c0147a9be2ca5",
+    "additional_encoder_speed_index_sha256": "84bac6fbdb18d30ac9bd18809e72e7d62b9aed0c73dfed6266bb959517027617",
+    "additional_speed_feedback_index_sha256": "848be96d803fd394b05568fba2d1c561ee8a4cb7d1edf2d34768bb1067fbbabb",
+    "additional_speed_filter_index_sha256": "3fa639cda8176a46c07dfdf0b52e535cc95ca4d6493b981e661bb9fb5c96e547"
+  },
+  "all_interface_checks_passed": true,
+  "reproducibility": {
+    "original_folder": "D:/simulink/modern/framework/runs/20261014_104230_738_system_report_059a8301",
+    "repeated_folder": "D:\\simulink\\modern\\framework\\runs\\20261014_104449_903_system_59e52cf9",
+    "signal_count": 66,
+    "all_exact": true,
+    "receipt": "D:\\simulink\\modern\\framework\\repeat_checks\\20261014_104449_903_system_59e52cf9.json",
+    "receipt_sha256": "4a9055b86819c26438cff6ccf92b38409dfd5d119ce08202bbf3f7bfda831e3a"
+  },
+  "all_passed": true,
+  "repeat_evidence_found": true,
+  "example_source_sha256": "24cb0f549e9b1e38e4f5928ab8795a1b1ab929b4083eb9c34cb14d9f13238f06",
+  "validator_sha256": "e98efd39701fea444cb9c04e9754690456468f020eaaff55831eecb81543cb9d"
+}

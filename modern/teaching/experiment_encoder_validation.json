@@ -1,0 +1,395 @@
+{
+  "all_passed": true,
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "reference_manifest_sha256": "f977cfaa62d8722221573d9a648f28d8d7bc91f0f6a462c1e09e4488a70ef353",
+  "checks": {
+    "reversible_module_and_forward_reverse_wrap_fixtures": true,
+    "same_baseline_and_only_encoder_or_delay_differs": true,
+    "invalid_inputs_rejected": 8,
+    "actual_read_delay_park_sample_times": true,
+    "raw_counts_history_actual_park_and_inverse_verified": true,
+    "gui_three_inputs_preview_restore_reports_and_stale_clear": true,
+    "main_pi_reference_and_layout_unchanged": true,
+    "default_all_81_signals_repeated": true,
+    "edited_counts_zero_offset_and_zero_delay_bypass": true,
+    "ideal_angle_old_22_signals_exact_and_two_common_grid": true,
+    "legacy_current_bias_42_signals_preserved": true,
+    "previous_sampling_window_archive_preserved": true,
+    "tampered_source_samples_rejected": true
+  },
+  "run_folders": {
+    "default_three": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261013_220403_123_encoder_angle_c22b1d6d",
+    "repeated_three": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261013_220755_781_encoder_angle_7e2bb91f",
+    "custom_three": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261013_222344_545_encoder_angle_eddf6be7",
+    "legacy_bias": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261013_223259_190_current_bias_f5284f49"
+  },
+  "fixtures": {
+    "positive_negative_and_mechanical_wrap": true,
+    "counts_not_divisible_by_poles": true,
+    "direction_mismatch_not_hidden": true,
+    "nonzero_zero_offset": true,
+    "delay_0_2_3": true,
+    "ideal_bypass": true,
+    "legacy_angle_double_application_rejected": true
+  },
+  "compiled": {
+    "block1": [
+      5E-5,
+      2.8875E-5
+    ],
+    "block2": [
+      5E-5,
+      2.8875E-5
+    ],
+    "block3": [
+      5E-5,
+      2.8875E-5
+    ],
+    "block4": [
+      5E-5,
+      2.8875E-5
+    ]
+  },
+  "encoder": {
+    "schema": 1,
+    "scope": "机械计数与同步读取的功能模型；不含ABZ边沿、输入滤波、Z相、自动对齐及位级等价。",
+    "contract": {
+      "kind": "mechanical_count_angle_three_cases",
+      "counts_per_mechanical_turn": 10000,
+      "pole_pairs": 5,
+      "sensor_direction": -1,
+      "software_direction": -1,
+      "electrical_zero_deg": 0,
+      "delay_cycles": 2,
+      "delay_s": 0.0001,
+      "read_period_s": 5E-5,
+      "read_offset_s": 2.8875E-5,
+      "event_step_s": 6.25E-8,
+      "quantization_rule": "raw=mod(floor(sensor_dir*theta_m*N/(2*pi)),N); corrected=mod(direction*raw,N)",
+      "initial_delayed_packet": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "speed_feedback": "沿用原速度路径；尚未使用计数测速",
+      "firmware_commit": "48d6e86814ac6657b1313b4c92ef24c88f492e07",
+      "parameter_sources": "10000计数及方向−1来自固件配置；零位默认手动对齐为0；两拍延迟为教学值，非实测",
+      "scope": "机械计数与同步读取的功能模型；不含ABZ边沿、输入滤波、Z相、自动对齐及位级等价。"
+    },
+    "cases": [
+      {
+        "id": "reference",
+        "sample_count": 1000,
+        "fresh_angle_max_error_rad": 0,
+        "actual_park_angle_max_error_rad": 0,
+        "park_inverse_max_error_rad": 0,
+        "park_formula_max_error_A": 3.5527136788005009E-15,
+        "invalid_initial_samples": 0,
+        "quantization_max_electrical_deg": 0.17990998077147508,
+        "angle_rms_electrical_deg": 0,
+        "angle_peak_electrical_deg": 0,
+        "source_age_us": 0,
+        "counts_integer_and_causal": true
+      },
+      {
+        "id": "factor",
+        "sample_count": 1000,
+        "fresh_angle_max_error_rad": 0,
+        "actual_park_angle_max_error_rad": 0,
+        "park_inverse_max_error_rad": 0,
+        "park_formula_max_error_A": 3.5527136788005009E-15,
+        "invalid_initial_samples": 0,
+        "quantization_max_electrical_deg": 0.17996012854421264,
+        "angle_rms_electrical_deg": 0.1080923466290708,
+        "angle_peak_electrical_deg": 0.17996012854421264,
+        "source_age_us": 0,
+        "counts_integer_and_causal": true
+      },
+      {
+        "id": "delayed",
+        "sample_count": 1000,
+        "fresh_angle_max_error_rad": 0,
+        "actual_park_angle_max_error_rad": 0,
+        "park_inverse_max_error_rad": 0,
+        "park_formula_max_error_A": 3.5527136788005009E-15,
+        "invalid_initial_samples": 2,
+        "quantization_max_electrical_deg": 0.17995282701928081,
+        "angle_rms_electrical_deg": 4.7328458217711766,
+        "angle_peak_electrical_deg": 5.9741698913899448,
+        "source_age_us": 100.00000000000287,
+        "counts_integer_and_causal": true
+      }
+    ]
+  },
+  "custom_encoder": {
+    "schema": 1,
+    "scope": "机械计数与同步读取的功能模型；不含ABZ边沿、输入滤波、Z相、自动对齐及位级等价。",
+    "contract": {
+      "kind": "mechanical_count_angle_three_cases",
+      "counts_per_mechanical_turn": 500,
+      "pole_pairs": 5,
+      "sensor_direction": -1,
+      "software_direction": -1,
+      "electrical_zero_deg": 7.5,
+      "delay_cycles": 0,
+      "delay_s": 0,
+      "read_period_s": 5E-5,
+      "read_offset_s": 2.8875E-5,
+      "event_step_s": 6.25E-8,
+      "quantization_rule": "raw=mod(floor(sensor_dir*theta_m*N/(2*pi)),N); corrected=mod(direction*raw,N)",
+      "initial_delayed_packet": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "speed_feedback": "沿用原速度路径；尚未使用计数测速",
+      "firmware_commit": "48d6e86814ac6657b1313b4c92ef24c88f492e07",
+      "parameter_sources": "10000计数及方向−1来自固件配置；零位默认手动对齐为0；两拍延迟为教学值，非实测",
+      "scope": "机械计数与同步读取的功能模型；不含ABZ边沿、输入滤波、Z相、自动对齐及位级等价。"
+    },
+    "cases": [
+      {
+        "id": "reference",
+        "sample_count": 1000,
+        "fresh_angle_max_error_rad": 0,
+        "actual_park_angle_max_error_rad": 0,
+        "park_inverse_max_error_rad": 0,
+        "park_formula_max_error_A": 3.5527136788005009E-15,
+        "invalid_initial_samples": 0,
+        "quantization_max_electrical_deg": 3.5996618986418092,
+        "angle_rms_electrical_deg": 0,
+        "angle_peak_electrical_deg": 0,
+        "source_age_us": 0,
+        "counts_integer_and_causal": true
+      },
+      {
+        "id": "factor",
+        "sample_count": 1000,
+        "fresh_angle_max_error_rad": 0,
+        "actual_park_angle_max_error_rad": 0,
+        "park_inverse_max_error_rad": 0,
+        "park_formula_max_error_A": 3.5527136788005009E-15,
+        "invalid_initial_samples": 0,
+        "quantization_max_electrical_deg": 3.5990576655345987,
+        "angle_rms_electrical_deg": 9.3917534849974444,
+        "angle_peak_electrical_deg": 11.087803397574183,
+        "source_age_us": 0,
+        "counts_integer_and_causal": true
+      },
+      {
+        "id": "delayed",
+        "sample_count": 1000,
+        "fresh_angle_max_error_rad": 0,
+        "actual_park_angle_max_error_rad": 0,
+        "park_inverse_max_error_rad": 0,
+        "park_formula_max_error_A": 3.5527136788005009E-15,
+        "invalid_initial_samples": 0,
+        "quantization_max_electrical_deg": 3.5990576655345987,
+        "angle_rms_electrical_deg": 9.3917534849974444,
+        "angle_peak_electrical_deg": 11.087803397574183,
+        "source_age_us": 0,
+        "counts_integer_and_causal": true
+      }
+    ]
+  },
+  "archive_comparison": {
+    "scope": "22路完整Time/Data严格相同；物理高频电流与生效阈值日志采样密度不同，仅比较重叠区间的全部共同原始采样点，不插值。",
+    "signals": [
+      {
+        "signal": "log_speed",
+        "old_sample_count": 1000,
+        "new_sample_count": 1000,
+        "compared_sample_count": 1000,
+        "strict_full_time_data": true,
+        "max_value_error": 0
+      },
+      {
+        "signal": "log_nref",
+        "old_sample_count": 1000,
+        "new_sample_count": 1000,
+        "compared_sample_count": 1000,
+        "strict_full_time_data": true,
+        "max_value_error": 0
+      },
+      {
+        "signal": "log_id",
+        "old_sample_count": 1000,
+        "new_sample_count": 1000,
+        "compared_sample_count": 1000,
+        "strict_full_time_data": true,
+        "max_value_error": 0
+      },
+      {
+        "signal": "log_iq",
+        "old_sample_count": 1000,
+        "new_sample_count": 1000,
+        "compared_sample_count": 1000,
+        "strict_full_time_data": true,
+        "max_value_error": 0
+      },
+      {
+        "signal": "log_iq_ref",
+        "old_sample_count": 1000,
+        "new_sample_count": 1000,
+        "compared_sample_count": 1000,
+        "strict_full_time_data": true,
+        "max_value_error": 0
+      },
+      {
+        "signal": "obs_id_ref",
+        "old_sample_count": 1000,
+        "new_sample_count": 1000,
+        "compared_sample_count": 1000,
+        "strict_full_time_data": true,
+        "max_value_error": 0
+      },
+      {
+        "signal": "log_Te",
+        "old_sample_count": 1000,
+        "new_sample_count": 1000,
+        "compared_sample_count": 1000,
+        "strict_full_time_data": true,
+        "max_value_error": 0
+      },
+      {
+        "signal": "log_TL",
+        "old_sample_count": 1000,
+        "new_sample_count": 1000,
+        "compared_sample_count": 1000,
+        "strict_full_time_data": true,
+        "max_value_error": 0
+      },
+      {
+        "signal": "obs_state",
+        "old_sample_count": 1000,
+        "new_sample_count": 1000,
+        "compared_sample_count": 1000,
+        "strict_full_time_data": true,
+        "max_value_error": 0
+      },
+      {
+        "signal": "log_iabc_true",
+        "old_sample_count": 1000,
+        "new_sample_count": 1000,
+        "compared_sample_count": 1000,
+        "strict_full_time_data": true,
+        "max_value_error": 0
+      },
+      {
+        "signal": "log_iabc_meas",
+        "old_sample_count": 1000,
+        "new_sample_count": 1000,
+        "compared_sample_count": 1000,
+        "strict_full_time_data": true,
+        "max_value_error": 0
+      },
+      {
+        "signal": "log_iabc_noise",
+        "old_sample_count": 1000,
+        "new_sample_count": 1000,
+        "compared_sample_count": 1000,
+        "strict_full_time_data": true,
+        "max_value_error": 0
+      },
+      {
+        "signal": "log_iabc_adc",
+        "old_sample_count": 1000,
+        "new_sample_count": 1000,
+        "compared_sample_count": 1000,
+        "strict_full_time_data": true,
+        "max_value_error": 0
+      },
+      {
+        "signal": "log_iabc_filter",
+        "old_sample_count": 1000,
+        "new_sample_count": 1000,
+        "compared_sample_count": 1000,
+        "strict_full_time_data": true,
+        "max_value_error": 0
+      },
+      {
+        "signal": "obs_voltage",
+        "old_sample_count": 1000,
+        "new_sample_count": 1000,
+        "compared_sample_count": 1000,
+        "strict_full_time_data": true,
+        "max_value_error": 0
+      },
+      {
+        "signal": "obs_current_fast",
+        "old_sample_count": 8000,
+        "new_sample_count": 50001,
+        "compared_sample_count": 500,
+        "strict_full_time_data": false,
+        "max_value_error": 0
+      },
+      {
+        "signal": "log_theta_true",
+        "old_sample_count": 1000,
+        "new_sample_count": 1000,
+        "compared_sample_count": 1000,
+        "strict_full_time_data": true,
+        "max_value_error": 0
+      },
+      {
+        "signal": "log_theta_meas",
+        "old_sample_count": 1000,
+        "new_sample_count": 1000,
+        "compared_sample_count": 1000,
+        "strict_full_time_data": true,
+        "max_value_error": 0
+      },
+      {
+        "signal": "log_theta_error",
+        "old_sample_count": 1000,
+        "new_sample_count": 1000,
+        "compared_sample_count": 1000,
+        "strict_full_time_data": true,
+        "max_value_error": 0
+      },
+      {
+        "signal": "obs_dead_requested",
+        "old_sample_count": 4000,
+        "new_sample_count": 4000,
+        "compared_sample_count": 4000,
+        "strict_full_time_data": true,
+        "max_value_error": 0
+      },
+      {
+        "signal": "obs_dead_gates",
+        "old_sample_count": 4000,
+        "new_sample_count": 4000,
+        "compared_sample_count": 4000,
+        "strict_full_time_data": true,
+        "max_value_error": 0
+      },
+      {
+        "signal": "obs_adc_timing",
+        "old_sample_count": 4000,
+        "new_sample_count": 4000,
+        "compared_sample_count": 4000,
+        "strict_full_time_data": true,
+        "max_value_error": 0
+      },
+      {
+        "signal": "obs_pwm_timing",
+        "old_sample_count": 4000,
+        "new_sample_count": 4000,
+        "compared_sample_count": 4000,
+        "strict_full_time_data": true,
+        "max_value_error": 0
+      },
+      {
+        "signal": "log_Tcm_applied",
+        "old_sample_count": 8000,
+        "new_sample_count": 1000,
+        "compared_sample_count": 10,
+        "strict_full_time_data": false,
+        "max_value_error": 0
+      }
+    ]
+  }
+}

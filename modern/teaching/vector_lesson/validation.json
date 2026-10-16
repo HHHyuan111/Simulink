@@ -1,0 +1,247 @@
+{
+  "schema": 1,
+  "kind": "coordinates_lesson_validation_v1",
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "source_id": "20261013_104154_205_angle_bias_52be36f7",
+  "source_record_sha256": "cc21b6d393c1c05e943ed27f6cc9a2cfd0d3feae5fb4e9bd2d60d336b8c27016",
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "work_folder": "D:\\simulink\\modern\\.build\\vector_validation_6b907107-7cf5-4fe1-9117-a026431a2481",
+  "sample_period_s": 4.9999999999994493E-5,
+  "case_samples": [
+    4001,
+    4001
+  ],
+  "residuals": [
+    {
+      "true_dq_A": 8.68749516769185E-14,
+      "feedback_dq_A": 3.5527136788005009E-15,
+      "clarke_roundtrip_A": 1.7763568394002505E-15,
+      "angle_error_rad": 0,
+      "configured_bias_rad": 0
+    },
+    {
+      "true_dq_A": 8.2489570729649131E-14,
+      "feedback_dq_A": 3.5527136788005009E-15,
+      "clarke_roundtrip_A": 1.7763568394002505E-15,
+      "angle_error_rad": 0,
+      "configured_bias_rad": 3.3306690738754696E-16
+    }
+  ],
+  "source_files": [
+    {
+      "path": "open_pmsm_vector_lesson.m",
+      "sha256": "680c24d5100d7e5c4e029e6262f17f3ced8f018d67d7399a01c94e2a650f56c0"
+    },
+    {
+      "path": "open_pmsm_teaching.m",
+      "sha256": "d384fc0d91490f576b60872a4c15af9c0394a509ffb5e07144e572423380e1dc"
+    },
+    {
+      "path": "vector_lesson/pmsm_vector_transform.m",
+      "sha256": "fcaa5a6f9853095f8f875bc93080dc44953fc520c8482e004f06f5a90989e697"
+    },
+    {
+      "path": "vector_lesson/pmsm_vector_load.m",
+      "sha256": "f0dc52a918a0db50ef1ce00f67cbff747051cbed7518a4dd3d29a7bb38273188"
+    },
+    {
+      "path": "vector_lesson/pmsm_vector_frame.m",
+      "sha256": "c6ba2bfce1656821c246ca9e0ed5f2bdeae01760e3287d4020d1c1981b37c06e"
+    },
+    {
+      "path": "vector_lesson/pmsm_vector_plot.m",
+      "sha256": "26c00ca5e6df4c767703a82278fe37aaccb28598436bb5c29b50483c0d0347fe"
+    },
+    {
+      "path": "vector_lesson/export_pmsm_vector_lesson.m",
+      "sha256": "3746bf9ee04af9394a377df96002fb20bcc83d54502d1eccff1eae13f7d2cb92"
+    },
+    {
+      "path": "vector_lesson/verify_pmsm_vector_export.m",
+      "sha256": "6cfa5dc68a127f6c74d06df58eac978f967e6a68e8a93c42c349208350c8d539"
+    },
+    {
+      "path": "vector_lesson/validate_pmsm_vector_lesson.m",
+      "sha256": "160a2037a590ce4a4e48e42a99193b5cc74cfca23b074131276366b9634beedd"
+    }
+  ],
+  "checks": [
+    {
+      "name": "known_dq_and_nonzero_zero_sequence",
+      "passed": true,
+      "detail": "Known rotating vector including nonzero zero sequence, 0..360 electrical degrees."
+    },
+    {
+      "name": "clarke_roundtrip",
+      "passed": true,
+      "detail": "Full inverse retains zero sequence."
+    },
+    {
+      "name": "mismatched_sample_count",
+      "passed": true,
+      "detail": "Invalid input or archive rejected."
+    },
+    {
+      "name": "nonfinite_input",
+      "passed": true,
+      "detail": "Invalid input or archive rejected."
+    },
+    {
+      "name": "independent_reload_exact",
+      "passed": true,
+      "detail": "Two separate reads produce identical full derived records."
+    },
+    {
+      "name": "model_log_transform_reference",
+      "passed": true,
+      "detail": "{\"true_dq_A\":8.68749516769185E-14,\"feedback_dq_A\":3.5527136788005009E-15,\"clarke_roundtrip_A\":1.7763568394002505E-15,\"angle_error_rad\":0,\"configured_bias_rad\":0}"
+    },
+    {
+      "name": "bias_rotation_reference",
+      "passed": true,
+      "detail": "The two frames obey the rotation identity at every sample."
+    },
+    {
+      "name": "model_log_transform_factor",
+      "passed": true,
+      "detail": "{\"true_dq_A\":8.2489570729649131E-14,\"feedback_dq_A\":3.5527136788005009E-15,\"clarke_roundtrip_A\":1.7763568394002505E-15,\"angle_error_rad\":0,\"configured_bias_rad\":3.3306690738754696E-16}"
+    },
+    {
+      "name": "bias_rotation_factor",
+      "passed": true,
+      "detail": "The two frames obey the rotation identity at every sample."
+    },
+    {
+      "name": "native_cursor_case1_window1",
+      "passed": true,
+      "detail": "Clamping and snapping without interpolation."
+    },
+    {
+      "name": "native_cursor_case2_window1",
+      "passed": true,
+      "detail": "Clamping and snapping without interpolation."
+    },
+    {
+      "name": "native_cursor_case1_window2",
+      "passed": true,
+      "detail": "Clamping and snapping without interpolation."
+    },
+    {
+      "name": "native_cursor_case2_window2",
+      "passed": true,
+      "detail": "Clamping and snapping without interpolation."
+    },
+    {
+      "name": "native_cursor_case1_window3",
+      "passed": true,
+      "detail": "Clamping and snapping without interpolation."
+    },
+    {
+      "name": "native_cursor_case2_window3",
+      "passed": true,
+      "detail": "Clamping and snapping without interpolation."
+    },
+    {
+      "name": "missing_archive",
+      "passed": true,
+      "detail": "Invalid input or archive rejected."
+    },
+    {
+      "name": "linked_ui_case1_window1",
+      "passed": true,
+      "detail": "Actual dropdown and scrub callbacks update all four plots from one native sample."
+    },
+    {
+      "name": "linked_ui_case2_window1",
+      "passed": true,
+      "detail": "Actual dropdown and scrub callbacks update all four plots from one native sample."
+    },
+    {
+      "name": "linked_ui_case1_window2",
+      "passed": true,
+      "detail": "Actual dropdown and scrub callbacks update all four plots from one native sample."
+    },
+    {
+      "name": "linked_ui_case2_window2",
+      "passed": true,
+      "detail": "Actual dropdown and scrub callbacks update all four plots from one native sample."
+    },
+    {
+      "name": "linked_ui_case1_window3",
+      "passed": true,
+      "detail": "Actual dropdown and scrub callbacks update all four plots from one native sample."
+    },
+    {
+      "name": "linked_ui_case2_window3",
+      "passed": true,
+      "detail": "Actual dropdown and scrub callbacks update all four plots from one native sample."
+    },
+    {
+      "name": "numeric_time_snaps",
+      "passed": true,
+      "detail": "195.013ms resolves to native 195.000ms."
+    },
+    {
+      "name": "axis_toggle",
+      "passed": true,
+      "detail": "Optional coordinate axes and legends switch together."
+    },
+    {
+      "name": "play_pause",
+      "passed": true,
+      "detail": "Timer advances native samples and pause stops it."
+    },
+    {
+      "name": "reset_cursor",
+      "passed": true,
+      "detail": "Reset returns to window start."
+    },
+    {
+      "name": "minimum_layout",
+      "passed": true,
+      "detail": "Resize callback restores the minimum 1100×760 layout."
+    },
+    {
+      "name": "timer_cleanup",
+      "passed": true,
+      "detail": "Closing only this lesson releases its playback timer."
+    },
+    {
+      "name": "export_manifest",
+      "passed": true,
+      "detail": "Source fingerprints and six generated files verified."
+    },
+    {
+      "name": "overwrite_existing_export",
+      "passed": true,
+      "detail": "Invalid input or archive rejected."
+    },
+    {
+      "name": "in_memory_data_change",
+      "passed": true,
+      "detail": "Invalid input or archive rejected."
+    },
+    {
+      "name": "tampered_export_rejected",
+      "passed": true,
+      "detail": "Invalid input or archive rejected."
+    },
+    {
+      "name": "source_archive_unchanged",
+      "passed": true,
+      "detail": "Source record and both MAT files retain their exact identities."
+    },
+    {
+      "name": "workbench_entry",
+      "passed": true,
+      "detail": "Lesson wrapper adds a workbench entry without changing the old launcher."
+    },
+    {
+      "name": "baseline_files_unchanged",
+      "passed": true,
+      "detail": "SLX, fixed reference and original launcher are unchanged."
+    }
+  ],
+  "all_passed": true,
+  "scope": "Archived data transforms, actual UI callbacks, native-sample playback and derived exports. No new simulation or algorithm validation."
+}

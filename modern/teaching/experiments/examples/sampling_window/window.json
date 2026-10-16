@@ -1,0 +1,181 @@
+{
+  "schema": 1,
+  "scope": "沿用请求门极的一网格历史检查完整孔径；本场景门极死区关闭。置零/保持仅为教学策略，未实现电流重构及主动保护。",
+  "trigger_us": 31.25,
+  "settle_us": 0.5,
+  "settle_ticks": 8,
+  "event_step_s": 6.25E-8,
+  "jeos_phase_us": 35.75,
+  "sample_end_CBA_us": [
+    32.437499999999993,
+    33.9375,
+    35.4375
+  ],
+  "statistics_window_s": [
+    0.030000000000000002,
+    0.05
+  ],
+  "plot_window_s": [
+    0.04,
+    0.05
+  ],
+  "adc_record_kind": "全程JEOS快照，不是全网格ADC事件记录",
+  "cases": [
+    {
+      "id": "reference",
+      "label": "窗口关闭",
+      "jeos_sample_count": 1000,
+      "valid_fraction_full_ABC": [
+        0.707,
+        0.829,
+        0.948
+      ],
+      "valid_fraction_tail_ABC": [
+        0.525,
+        0.6125,
+        0.87
+      ],
+      "invalid_count_ABC": [
+        293,
+        171,
+        52
+      ],
+      "aperture_flag_mismatch_count": 0,
+      "accepted_phase_sample_count": 3000,
+      "accepted_sample_max_error_A": 0,
+      "policy_max_error_A": 0,
+      "controller_path_max_error_A": 0,
+      "requested_actual_gate_tail_max_error": 0,
+      "max_known_source_age_us_ABC": [
+        0,
+        0,
+        0
+      ],
+      "invalid_initial_zero_count_ABC": [
+        0,
+        0,
+        0
+      ],
+      "measurement_rms_at_jeos_ABC_A": [
+        0.023625073507749821,
+        0.13117066643966416,
+        0.20496170014390447
+      ]
+    },
+    {
+      "id": "factor",
+      "label": "无效置零",
+      "jeos_sample_count": 1000,
+      "valid_fraction_full_ABC": [
+        0.702,
+        0.75,
+        0.787
+      ],
+      "valid_fraction_tail_ABC": [
+        0.5775,
+        0.605,
+        0.5775
+      ],
+      "invalid_count_ABC": [
+        298,
+        250,
+        213
+      ],
+      "aperture_flag_mismatch_count": 0,
+      "accepted_phase_sample_count": 2239,
+      "accepted_sample_max_error_A": 0,
+      "policy_max_error_A": 0,
+      "controller_path_max_error_A": 0,
+      "requested_actual_gate_tail_max_error": 0,
+      "max_known_source_age_us_ABC": [
+        0,
+        0,
+        0
+      ],
+      "invalid_initial_zero_count_ABC": [
+        298,
+        250,
+        213
+      ],
+      "measurement_rms_at_jeos_ABC_A": [
+        4.7948324424151334,
+        3.4520807265992346,
+        5.3140184936377537
+      ]
+    },
+    {
+      "id": "held",
+      "label": "保持样本",
+      "jeos_sample_count": 1000,
+      "valid_fraction_full_ABC": [
+        0.701,
+        0.747,
+        0.799
+      ],
+      "valid_fraction_tail_ABC": [
+        0.585,
+        0.58,
+        0.5925
+      ],
+      "invalid_count_ABC": [
+        299,
+        253,
+        201
+      ],
+      "aperture_flag_mismatch_count": 0,
+      "accepted_phase_sample_count": 2247,
+      "accepted_sample_max_error_A": 0,
+      "policy_max_error_A": 0,
+      "controller_path_max_error_A": 0,
+      "requested_actual_gate_tail_max_error": 0,
+      "max_known_source_age_us_ABC": [
+        4450,
+        2900,
+        1900
+      ],
+      "invalid_initial_zero_count_ABC": [
+        0,
+        0,
+        0
+      ],
+      "measurement_rms_at_jeos_ABC_A": [
+        6.8136145609725984,
+        8.0976050362375975,
+        7.5534769000665838
+      ]
+    }
+  ],
+  "example": {
+    "sample_index": 1000,
+    "cycle_index": 999,
+    "cycle_start_time_s": 0.049949999999999994,
+    "selection": "置零组最后10ms内，无效相数最多的最后一次JEOS；全有效时取最后一次。",
+    "sample_start_ABC_us": [
+      34.25,
+      32.75,
+      31.25
+    ],
+    "sample_end_ABC_us": [
+      35.4375,
+      33.9375,
+      32.437499999999993
+    ],
+    "valid_ABC_by_case": [
+      [
+        true,
+        true,
+        false
+      ],
+      [
+        false,
+        true,
+        false
+      ],
+      [
+        true,
+        true,
+        false
+      ]
+    ]
+  }
+}

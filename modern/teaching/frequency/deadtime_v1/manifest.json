@@ -1,0 +1,225 @@
+{
+  "schema": 1,
+  "kind": "deadtime_current_spectrum",
+  "source_run_id": "20261013_133919_965_low_speed_compensation_c1e40d81",
+  "source_run_folder": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261013_133919_965_low_speed_compensation_c1e40d81",
+  "source_record_sha256": "1b51b63d221a560d612fb445c0bcfa073b0b3816254f1abfd44eb927c151e764",
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "window_s": [
+    0.12000000000000001,
+    0.2
+  ],
+  "labels": [
+    "零死区",
+    "死区",
+    "补偿"
+  ],
+  "cases": [
+    {
+      "schema": 1,
+      "window_s": [
+        0.12000000000000001,
+        0.2
+      ],
+      "sample_times_s": [
+        0.12,
+        0.19999899999999998
+      ],
+      "sample_count": 80000,
+      "fs_Hz": 999999.99999899988,
+      "bin_width_Hz": 12.499999999987498,
+      "window": "periodic Hann",
+      "coherent_gain": 0.49999999999999856,
+      "enbw_Hz": 18.749999999981362,
+      "fe_Hz": 49.999210450135472,
+      "electrical_cycles": 3.9999368360148382,
+      "relative_speed_span": 0.00050274698224187083,
+      "relative_amplitude_drift_ABC": [
+        0.00011773547284379673,
+        5.2142977407659186E-5,
+        3.165056389498947E-5
+      ],
+      "dc_A": [
+        2.1233793626666007E-5,
+        -1.9001639744408795E-5,
+        -2.2321538837572433E-6
+      ],
+      "display_zero_padding_factor": 4,
+      "harmonic_orders": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "low_order_ratio_percent": [
+        0.1933007424527689,
+        0.18892445995545359,
+        0.16802397010687
+      ],
+      "definition": "FFT: DC removed, periodic Hann, single-sided peak amplitude. Harmonics: simultaneous least-squares fit of DC and orders 1..H to recorded true electrical angle. Ratio excludes switching and asynchronous components; not full-band THD."
+    },
+    {
+      "schema": 1,
+      "window_s": [
+        0.12000000000000001,
+        0.2
+      ],
+      "sample_times_s": [
+        0.12,
+        0.19999899999999998
+      ],
+      "sample_count": 80000,
+      "fs_Hz": 999999.99999899988,
+      "bin_width_Hz": 12.499999999987498,
+      "window": "periodic Hann",
+      "coherent_gain": 0.49999999999999856,
+      "enbw_Hz": 18.749999999981362,
+      "fe_Hz": 49.999395465511462,
+      "electrical_cycles": 3.9999516372449171,
+      "relative_speed_span": 0.0021194687383757375,
+      "relative_amplitude_drift_ABC": [
+        0.00010190132544825199,
+        5.4977492330185391E-6,
+        1.7716283581286557E-5
+      ],
+      "dc_A": [
+        0.00017275614237702064,
+        5.2251028179527578E-5,
+        -0.00022500717055770297
+      ],
+      "display_zero_padding_factor": 4,
+      "harmonic_orders": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "low_order_ratio_percent": [
+        6.4360253275765089,
+        6.4521306234917617,
+        6.4458768623823683
+      ],
+      "definition": "FFT: DC removed, periodic Hann, single-sided peak amplitude. Harmonics: simultaneous least-squares fit of DC and orders 1..H to recorded true electrical angle. Ratio excludes switching and asynchronous components; not full-band THD."
+    },
+    {
+      "schema": 1,
+      "window_s": [
+        0.12000000000000001,
+        0.2
+      ],
+      "sample_times_s": [
+        0.12,
+        0.19999899999999998
+      ],
+      "sample_count": 80000,
+      "fs_Hz": 999999.99999899988,
+      "bin_width_Hz": 12.499999999987498,
+      "window": "periodic Hann",
+      "coherent_gain": 0.49999999999999856,
+      "enbw_Hz": 18.749999999981362,
+      "fe_Hz": 49.999280902355217,
+      "electrical_cycles": 3.9999424721924175,
+      "relative_speed_span": 0.0010636038646471063,
+      "relative_amplitude_drift_ABC": [
+        0.00012165741551283329,
+        8.389027299896141E-6,
+        9.4403787676145565E-5
+      ],
+      "dc_A": [
+        0.00015680850845619927,
+        2.3690107797211358E-5,
+        -0.00018049861625401851
+      ],
+      "display_zero_padding_factor": 4,
+      "harmonic_orders": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "low_order_ratio_percent": [
+        3.5625978823474593,
+        3.5358081226992581,
+        3.6805583704656026
+      ],
+      "definition": "FFT: DC removed, periodic Hann, single-sided peak amplitude. Harmonics: simultaneous least-squares fit of DC and orders 1..H to recorded true electrical angle. Ratio excludes switching and asynchronous components; not full-band THD."
+    }
+  ],
+  "source_files": [
+    {
+      "path": "pmsm_current_spectrum.m",
+      "sha256": "890fdd1f0b4ce0d50a2a7f762e688a4334c0a22fad39e2b7fd083129be91a027"
+    },
+    {
+      "path": "plot_pmsm_spectrum.m",
+      "sha256": "526bf521bcd25245633fd0b99c7779f11fb5ccd49c06286422afd2a22b94c7c8"
+    },
+    {
+      "path": "export_pmsm_deadtime_spectrum.m",
+      "sha256": "eac7ecea2830006fd6d681e9e92f2ede2ada939b33d921a0874ed00021568382"
+    }
+  ],
+  "files": [
+    {
+      "path": "analysis.mat",
+      "sha256": "4d39f9fd57a668904f9c3840a737559581295867734b151763dd41685ed251de"
+    },
+    {
+      "path": "spectrum.png",
+      "sha256": "c1977ee1cfab7cfd47141e41b6f15432aba88787024b0000ec91f9752570b7d1"
+    },
+    {
+      "path": "spectrum.fig",
+      "sha256": "c49343887b728bbe7dd72cb5f4efe85d9fe5ff24ec82252164d8ef5157efc961"
+    },
+    {
+      "path": "harmonics.csv",
+      "sha256": "38b94610f61dcc711fdf337416a5b5d8b9c2b011d82a16ca75aa03e83145ae91"
+    }
+  ]
+}

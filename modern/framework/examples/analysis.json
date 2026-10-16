@@ -1,0 +1,223 @@
+{
+  "kind": "integrated_system_baseline_v1",
+  "contract": {
+    "kind": "integrated_system_baseline_v1",
+    "counts_per_mechanical_turn": 10000,
+    "window_ticks": [
+      1,
+      2,
+      8
+    ],
+    "read_period_s": 5E-5,
+    "read_offset_s": 2.8875E-5,
+    "speed_period_s": 0.0001,
+    "event_step_s": 6.25E-8,
+    "rpm_per_count_step": [
+      120,
+      60,
+      15
+    ],
+    "firmware_commit": "48d6e86814ac6657b1313b4c92ef24c88f492e07",
+    "firmware_window_ticks": 2,
+    "firmware_history_depth": 8,
+    "source": "control_cycle_step在有效位置拍按foc_fs喂入speed_est_step；速度PI与测量宏不是该喂入频率",
+    "initialization": "计数反馈在完整历史前使用零并标无效，不回填真值；有效性仅观测，尚无启动门控或故障状态机",
+    "scope": "两组同一真实时序、原理想桥、PI、电机、初态和给定；同时改变角度与速度反馈，不作单因素归因。",
+    "feedback_on": [
+      false,
+      true
+    ],
+    "window_choice": [
+      2,
+      2
+    ],
+    "speed_filter": "firmware_first_order",
+    "angle_feedback": "参考为原角度；组合为同次机械计数恢复的电角度",
+    "filter_on": [
+      false,
+      true
+    ],
+    "cutoff_hz": 200,
+    "filter_a": 0.940882602558251,
+    "filter_b": 0.059117397441749042,
+    "filter_update_s": 5E-5,
+    "filter_initial_state": 0,
+    "filter_source": "AxDr_L control_filter.c: a=fs/(fs+2*pi*fc), b=1-a, y=b*x+a*y_prev；ctrl_fb_update每快环调用",
+    "filter_invalid_policy": "输入及发布零，内部状态仍按零输入递推；未模拟固件缺样保持与完整启动/故障状态机",
+    "angle_on": [
+      false,
+      true
+    ],
+    "power": "原理想桥；门极死区、压降及补偿关闭。当前无功率关断场景，续流及死区通过原单项实验和后续组合另验。",
+    "startup": "已知正确电角零位，控制环直接执行；历史不足测速零，无启动门控、自动定位或主动保护",
+    "pole_pairs": 5
+  },
+  "input_schedule": {
+    "speed_before_rpm": 3000,
+    "speed_after_rpm": 2000,
+    "speed_step_s": 0.2,
+    "load_before_Nm": 0.207,
+    "load_after_Nm": 0.25,
+    "load_step_s": 0.3
+  },
+  "cases": [
+    {
+      "id": "reference",
+      "label": "理想反馈",
+      "checks": {
+        "angle_max_error_rad": 0,
+        "park_max_error_A": 3.5527136788005009E-15,
+        "filter_max_error_rpm": 0,
+        "actual_pi_input_max_error_rpm": 0,
+        "actual_ccr_max_error_s": 0,
+        "all_three_speed_windows_checked": true,
+        "speed_step_actual_s": 0.20007887500000002,
+        "load_step_actual_s": 0.300028875,
+        "fast_samples": 8000,
+        "speed_samples": 4000,
+        "pwm_log_time_max_difference_s": 0,
+        "pwm_matched_by_native_grid_ticks": true
+      },
+      "stages": [
+        {
+          "name": "初始平台",
+          "window_s": [
+            0.16,
+            0.2
+          ],
+          "speed_mean_rpm": 2999.9767060384656,
+          "speed_error_mean_rpm": -0.023293961535234758,
+          "speed_error_rms_rpm": 0.20415026717181164,
+          "speed_span_rpm": 0.66176317108829608,
+          "speed_slope_rpm_per_s": 2.8841737411656236,
+          "true_id_rms_A": 0.048163782820435548,
+          "true_iq_tracking_rms_A": 0.17121699164253895,
+          "torque_mean_Nm": 0.19216376161156631,
+          "torque_std_Nm": 0.0021341318381022639,
+          "platform_pass": true
+        },
+        {
+          "name": "变速后平台",
+          "window_s": [
+            0.28,
+            0.3
+          ],
+          "speed_mean_rpm": 2000.1301457561342,
+          "speed_error_mean_rpm": 0.13014575613456431,
+          "speed_error_rms_rpm": 0.25585578752517035,
+          "speed_span_rpm": 0.705981700919665,
+          "speed_slope_rpm_per_s": -6.2399640817211575,
+          "true_id_rms_A": 0.0354667168455882,
+          "true_iq_tracking_rms_A": 0.11920661021848739,
+          "torque_mean_Nm": 0.19675462585521686,
+          "torque_std_Nm": 0.0015533237228498428,
+          "platform_pass": true
+        },
+        {
+          "name": "增载后平台",
+          "window_s": [
+            0.38,
+            0.4
+          ],
+          "speed_mean_rpm": 2000.0090052767775,
+          "speed_error_mean_rpm": 0.0090052767776381878,
+          "speed_error_rms_rpm": 0.23529249928543913,
+          "speed_span_rpm": 0.75614799795971521,
+          "speed_slope_rpm_per_s": -4.1209770563843788,
+          "true_id_rms_A": 0.0348838481320393,
+          "true_iq_tracking_rms_A": 0.12249650105622868,
+          "torque_mean_Nm": 0.23956450586005132,
+          "torque_std_Nm": 0.0016495165495926398,
+          "platform_pass": true
+        }
+      ],
+      "platforms_pass": true,
+      "peak_true_iq_A": 8.5970666871322532,
+      "peak_iq_command_A": 8,
+      "final_speed_rpm": 1999.7608227108635
+    },
+    {
+      "id": "factor",
+      "label": "编码器反馈",
+      "checks": {
+        "angle_max_error_rad": 0,
+        "park_max_error_A": 3.5527136788005009E-15,
+        "filter_max_error_rpm": 0,
+        "actual_pi_input_max_error_rpm": 0,
+        "actual_ccr_max_error_s": 0,
+        "all_three_speed_windows_checked": true,
+        "speed_step_actual_s": 0.20007887500000002,
+        "load_step_actual_s": 0.300028875,
+        "fast_samples": 8000,
+        "speed_samples": 4000,
+        "pwm_log_time_max_difference_s": 5.5511151231257827E-17,
+        "pwm_matched_by_native_grid_ticks": true
+      },
+      "stages": [
+        {
+          "name": "初始平台",
+          "window_s": [
+            0.16,
+            0.2
+          ],
+          "speed_mean_rpm": 3000.0024955383942,
+          "speed_error_mean_rpm": 0.0024955383943984087,
+          "speed_error_rms_rpm": 0.36265109536162149,
+          "speed_span_rpm": 1.487187030134919,
+          "speed_slope_rpm_per_s": 0.78080723903681171,
+          "true_id_rms_A": 0.052574869655943504,
+          "true_iq_tracking_rms_A": 0.17459193624027963,
+          "torque_mean_Nm": 0.19218152173970629,
+          "torque_std_Nm": 0.0032607302685658079,
+          "platform_pass": true
+        },
+        {
+          "name": "变速后平台",
+          "window_s": [
+            0.28,
+            0.3
+          ],
+          "speed_mean_rpm": 2000.0321468467637,
+          "speed_error_mean_rpm": 0.032146846762883,
+          "speed_error_rms_rpm": 0.2373700407530889,
+          "speed_span_rpm": 0.842897733759628,
+          "speed_slope_rpm_per_s": -2.5491253683106923,
+          "true_id_rms_A": 0.0375192010815754,
+          "true_iq_tracking_rms_A": 0.11993777902007777,
+          "torque_mean_Nm": 0.19683853052377917,
+          "torque_std_Nm": 0.0017487664863939825,
+          "platform_pass": true
+        },
+        {
+          "name": "增载后平台",
+          "window_s": [
+            0.38,
+            0.4
+          ],
+          "speed_mean_rpm": 1999.9589620262,
+          "speed_error_mean_rpm": -0.04103797380022229,
+          "speed_error_rms_rpm": 0.21717337494971625,
+          "speed_span_rpm": 0.67530797183417235,
+          "speed_slope_rpm_per_s": -3.7690576043485469,
+          "true_id_rms_A": 0.036439529917244834,
+          "true_iq_tracking_rms_A": 0.12286273315586634,
+          "torque_mean_Nm": 0.23958565211268673,
+          "torque_std_Nm": 0.0015568312363049115,
+          "platform_pass": true
+        }
+      ],
+      "platforms_pass": true,
+      "peak_true_iq_A": 8.5732994681798864,
+      "peak_iq_command_A": 8,
+      "final_speed_rpm": 1999.6315474296302
+    }
+  ],
+  "interface_checks_passed": true,
+  "all_platforms_pass": true,
+  "boundaries": [
+    "Known electrical zero; no alignment/startup gating/active protection.",
+    "Angle and speed feedback change together; this is system integration, not single-factor attribution.",
+    "Nominal motor and unmeasured timing assumptions; not calibrated hardware accuracy.",
+    "High-rate gate and PWM diagnostics retain only the tail; not a full-run gate-edge audit."
+  ]
+}

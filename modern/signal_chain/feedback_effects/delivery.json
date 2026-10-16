@@ -1,0 +1,73 @@
+{
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "passed": true,
+  "scope": "200ms archived delay/filter comparisons; native menus; independent replay and view checks; unchanged frozen SLX",
+  "files": [
+    {
+      "path": "modern/teaching/open_pmsm_feedback_effects.m",
+      "sha256": "53dc8f9dcb92897515b202ba4e57af5bf54a4a78510bfd2dc874828cf5edfb7d"
+    },
+    {
+      "path": "modern/teaching/pmsm_sampling_comparison_menu.m",
+      "sha256": "c3c5b0b45775a512c928de297783c5d7a07b463e3a84ce13bacc76e4f1b96cb6"
+    },
+    {
+      "path": "modern/teaching/open_pmsm_sampling_comparison.m",
+      "sha256": "4fec9fdb012c8ec7e7ca70083dfcc8a7cb87f752a00defb49f590177cb2243aa"
+    },
+    {
+      "path": "modern/teaching/open_pmsm_sampling_lesson.m",
+      "sha256": "d4e32017688418dd3238582c7a467d646d4f907bf38b33a0739694c93985a123"
+    },
+    {
+      "path": "modern/signal_chain/run_feedback_effects.m",
+      "sha256": "ac279dbd68d06c82f70bdd28b7d66715c507f2e8eae603e591ae0837512f1b25"
+    },
+    {
+      "path": "modern/signal_chain/validate_feedback_effects_view.m",
+      "sha256": "2c42bb226d830f1498d374ad84d0840b29d2543bc636ea3f256506bc52adcb6c"
+    },
+    {
+      "path": "modern/signal_chain/validate_feedback_effects_replay.m",
+      "sha256": "ecd6738ec8c0095e57815dd610b35837d9425cb6782b6ddd3c0995a1fa7f2b3d"
+    },
+    {
+      "path": "modern/signal_chain/feedback_effects_latest.json",
+      "sha256": "182eba9e30655c7ff89d8fba39d6530360d8549f6ba4b34e0b10110b6d93ef2d"
+    },
+    {
+      "path": "modern/signal_chain/feedback_effects_replay.json",
+      "sha256": "d2d987bb4b2d13adfd37b69cb07538d1dd1cb114ae72ba0ed7aed12fce93fa11"
+    },
+    {
+      "path": "modern/signal_chain/feedback_effects/validation.json",
+      "sha256": "c03571bdf8a9cd2b6258e93d5bc7f81e7a3476e841c921303ed14e3f1d67a8e6"
+    },
+    {
+      "path": "modern/signal_chain/feedback_effects/delay.png",
+      "sha256": "4eb8d243e8acf06fc5149b80f87d0d9967bc24b4950dc2a3464f85fedbc3b651"
+    },
+    {
+      "path": "modern/signal_chain/feedback_effects/filter.png",
+      "sha256": "8ebe01ec74acd99049fd614824d1f2f4abe6f4a89155be1421908227932b330e"
+    },
+    {
+      "path": "modern/signal_chain/feedback_effects/delay.fig",
+      "sha256": "ee19237f8fa950fe90851494c9c2850c5c098b89811b8e2d9278890a38ba3a0c"
+    },
+    {
+      "path": "modern/signal_chain/feedback_effects/filter.fig",
+      "sha256": "45f8d333d194ec1854ed81c824b4482727c98e4b522ccfaa0c5e0756123707e9"
+    },
+    {
+      "path": "modern/teaching/sampling_lesson/validation.json",
+      "sha256": "818e522d0045824d0f785921ad2c45ee73f0573904a1fe381d9ecc9eae1a200f"
+    },
+    {
+      "path": "modern/signal_chain/feedback_effects/README.md",
+      "sha256": "169266e5e438094e7c589b151c372f6467601d886359a4a1128d53e1ee008186"
+    }
+  ],
+  "exact_replayed_signal_records": 84,
+  "raw_exact_plotted_curves": 40
+}

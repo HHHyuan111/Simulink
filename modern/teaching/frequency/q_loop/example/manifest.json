@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "source_record_sha256": "ed6041ea548fd48aebb8bb7f6a4f7400b266314e24be66b421cc1579b33e93e3",
+  "source_run_id": "20261015_162450_667_d9202577",
+  "viewer_sources": [
+    {
+      "path": "open_pmsm_q_frequency.m",
+      "sha256": "d5238fd07363e8f4489c40050f8000fe231964d68a5190fbebb3205c02ed651b"
+    },
+    {
+      "path": "open_pmsm_q_frequency_time.m",
+      "sha256": "e1cd389cf6fed9a40e23d6cfcb3279433915bbb67e84c02ac28ea9fb08fba854"
+    },
+    {
+      "path": "pmsm_q_frequency_time_data.m",
+      "sha256": "5dc9679602e1f734aa0de50e6cb828135f96540c82235aa7411a83559485fe0f"
+    },
+    {
+      "path": "pmsm_q_frequency_folder.m",
+      "sha256": "c864e3eae6edc9a64c4a9c3e0ccc9eff851313048236d771ff9dedbb90b1f4e5"
+    },
+    {
+      "path": "pmsm_frequency_time_view.m",
+      "sha256": "038328a56de3e1bb746cc2c909a6e274ea200ed29e23c72ccedd586b20277942"
+    }
+  ],
+  "files": [
+    {
+      "path": "response.png",
+      "sha256": "f6564adfa1394f85c724ec1e8174d75cfc6813edb0874e5eda0dbe77a9e7d523"
+    },
+    {
+      "path": "response.fig",
+      "sha256": "64d7420ca85484b94020f5788bebd410227c321505cec2f293605607d0ce44a7"
+    },
+    {
+      "path": "current_1250Hz.png",
+      "sha256": "188b0840f115b7f6b74723c21d6fb6cda1246fb928f411c3bd4a570ae6fb00e2"
+    },
+    {
+      "path": "mechanics_1250Hz.png",
+      "sha256": "ff613ca1d1945cfa357e2ffb09c6c15cc867ba698cf1b2b06df6b822f89fb29a"
+    },
+    {
+      "path": "summary.json",
+      "sha256": "e2bc9c7ecfbdce6f486c05d58c3665620cf1811cc2caedc29ee374419aa1d255"
+    }
+  ]
+}

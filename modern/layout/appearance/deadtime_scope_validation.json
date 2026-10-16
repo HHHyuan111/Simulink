@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "original_log_checks": 156,
+  "source_checks": 19,
+  "deadtime_edges_checked": 61,
+  "disabled_bridge_voltage_is_nan": true,
+  "scope": "原理想桥、详细桥0/2us各1.5ms；只验证观测接线与短时门极，不评价稳态补偿效果",
+  "structure_restored": true,
+  "wrapper_normal_and_exception": true,
+  "definition": {
+    "path": "PMSM_FOC_R2026a/死区教学/看懂死区",
+    "layout": [
+      2,
+      2
+    ],
+    "view": "gates",
+    "time_span_s": 0.0001,
+    "sample_time": "dead_h"
+  }
+}

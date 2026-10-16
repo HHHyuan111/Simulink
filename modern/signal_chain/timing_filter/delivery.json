@@ -1,0 +1,82 @@
+{
+  "independent_prefix_duration_s": 0.002,
+  "passed": true,
+  "derived_workspace_restored": true,
+  "full_200ms_replay_performed": false,
+  "new_full_200ms_runs": 2,
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "files": [
+    {
+      "sha256": "af40daebae3a65a1d8c2f49a31c8e3aef1ae0eae1c2629f28e38a1f7d32645a0",
+      "path": "modern/signal_chain/run_timing_filter_baseline.m"
+    },
+    {
+      "sha256": "45fe6c1c8d3d981e91690d08f2c0360010e8528060b6bdc4ac764550addef6c2",
+      "path": "modern/signal_chain/finalize_timing_filter_baseline.m"
+    },
+    {
+      "sha256": "26bdc478d2bed8da262cca0ae071ad046b524137c55f82dd812cc4f9139c45c7",
+      "path": "modern/signal_chain/timing_filter_data.m"
+    },
+    {
+      "sha256": "88e4a76bf33fdfd62338d19a4ccbc349dc51060d8d812799d06fe7d688963b72",
+      "path": "modern/signal_chain/validate_timing_filter.m"
+    },
+    {
+      "sha256": "7f9ab7bde677efed76d8f24faae38a17ee8dea2232fa415c98a4efc16819fae0",
+      "path": "modern/teaching/open_pmsm_timing_filter.m"
+    },
+    {
+      "sha256": "bd37d43f6986e82f842d6c09a88983460ab37ee42a5f4ba9e11d6b5f2c71871c",
+      "path": "modern/teaching/open_pmsm_timing_feedback.m"
+    },
+    {
+      "sha256": "c65e9a8eba90062f0bc928df51e03d2a3a94d2788fdfb8e3611abd7c9a20275c",
+      "path": "modern/signal_chain/timing_filter/latest.json"
+    },
+    {
+      "sha256": "38b97bce82146597fa7ba34888da26afe8d578b87c9cc409a1b6a18f9cc6e7f1",
+      "path": "modern/signal_chain/timing_filter/validation.json"
+    },
+    {
+      "sha256": "cd7af735af3e53c5486158e77b9ea9828d61ef8d04dfcabe7720e1e3af02a10d",
+      "path": "modern/signal_chain/timing_filter/comparison.png"
+    },
+    {
+      "sha256": "fc93b0d58925254ae6557892ef84c95cd8753b688ff8814b182917683e6004e2",
+      "path": "modern/signal_chain/timing_filter/comparison.fig"
+    },
+    {
+      "sha256": "b0b734397f83846e7957ba4351e72176790dafe103284f8c6530926f6ca33c1b",
+      "path": "modern/signal_chain/timing_filter/README.md"
+    },
+    {
+      "sha256": "5de886033a93447982b8c997e540e48325bc3affd33cf7b64e262bf17adb57a5",
+      "path": "modern/signal_chain/timing_feedback/validation.json"
+    },
+    {
+      "sha256": "ba02b5744925db2f99b7ba5a6619cd3a5634160736d332cf2b1adf7d9d53e804",
+      "path": "modern/signal_chain/teaching_chain/navigation_validation.json"
+    },
+    {
+      "sha256": "c0f257993b8ae7f5e49a8768b45baf9f5bfa861f797208480de6eb598ddea488",
+      "path": "D:\\simulink\\modern\\signal_chain\\timing_filter\\runs\\20261016_104210_669\\record.json"
+    },
+    {
+      "sha256": "5259ef7bceb8333a211924775c87e7b8f6a56c73f95d6bf5475842ccb2b9468c",
+      "path": "D:\\simulink\\modern\\signal_chain\\timing_filter\\runs\\20261016_104210_669\\filtered_1.mat"
+    },
+    {
+      "sha256": "feeea8f5b80d6b2d91759e222b79cc10375b44c3bc16b7c81a4d85ceea7c5f08",
+      "path": "D:\\simulink\\modern\\signal_chain\\timing_filter\\runs\\20261016_104210_669\\filtered_2.mat"
+    },
+    {
+      "sha256": "6fd10cc2e1afffe80bbe201292cbe2b5a333813526c6030cb6ca90d8364bf4bf",
+      "path": "D:\\simulink\\modern\\signal_chain\\timing_filter\\runs\\20261016_104210_669\\runtime.m"
+    }
+  ],
+  "exact_prefix_signal_records": 72,
+  "raw_checked_curves": 25,
+  "reused_full_200ms_runs": 2,
+  "reference_manifest_sha256": "f977cfaa62d8722221573d9a648f28d8d7bc91f0f6a462c1e09e4488a70ef353"
+}

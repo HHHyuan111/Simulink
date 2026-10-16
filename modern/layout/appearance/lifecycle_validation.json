@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "close_reopen": true,
+  "roundtrip": true,
+  "callbacks_restored": true,
+  "presentation_sha256": "0b140ce50be168648ac49b04af0f6b4665d168a98f4528a8f8e71848a5e1d05a"
+}

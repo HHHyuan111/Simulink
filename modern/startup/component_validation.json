@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "state_and_priority_cases": 3,
+  "legacy_pwm_exact_ticks": 2401,
+  "queued_write_cancelled_at_update": true,
+  "gate_modes_checked": true
+}

@@ -1,0 +1,54 @@
+{
+  "model_changed": false,
+  "pi_retuned": false,
+  "cases": {
+    "reference_05us": {
+      "dead_us": 0.5,
+      "rpm": 600,
+      "load_Nm": 0.207,
+      "low_order_THD_percent": 0.73145514675121825,
+      "analysis_window_s": [
+        0.040024500000000005,
+        0.0799745
+      ],
+      "polarity_reversals_ABC": [
+        4,
+        4,
+        4
+      ],
+      "expected_for_two_clean_cycles": 4,
+      "mismatch_fraction_excluding_abs_mean_current_below_01A": [
+        0,
+        0,
+        0
+      ],
+      "JEOS_to_latch_us_tail": 21.125,
+      "source_mat_sha256": "e0a54946d320c186d9eab599a209e5d7397aa5bb0efb70d0415506161967ebe2",
+      "note": "Period mean is an offline diagnostic only; mismatch fraction denominator is all valid control samples, with near-zero numerator excluded. Existing measured-current logs are not assumed synchronous with the compensation task."
+    },
+    "low_speed_2us": {
+      "dead_us": 2,
+      "rpm": 300,
+      "load_Nm": 0.08,
+      "low_order_THD_percent": 16.04429556913006,
+      "analysis_window_s": [
+        0.0599745,
+        0.1399745
+      ],
+      "polarity_reversals_ABC": [
+        4,
+        4,
+        4
+      ],
+      "expected_for_two_clean_cycles": 4,
+      "mismatch_fraction_excluding_abs_mean_current_below_01A": [
+        0,
+        0,
+        0
+      ],
+      "JEOS_to_latch_us_tail": 21.125,
+      "source_mat_sha256": "f0b4fee7e91a9d4da0fd3291507329d220d421681cd2a3865872884738f97a14",
+      "note": "Period mean is an offline diagnostic only; mismatch fraction denominator is all valid control samples, with near-zero numerator excluded. Existing measured-current logs are not assumed synchronous with the compensation task."
+    }
+  }
+}

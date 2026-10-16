@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "passed": true,
+  "generated_utc": "2026-10-16T01:18:10.205227+00:00",
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "reference_manifest_sha256": "f977cfaa62d8722221573d9a648f28d8d7bc91f0f6a462c1e09e4488a70ef353",
+  "physical_cases": 20,
+  "case_duration_s": 0.002,
+  "exact_view_original_logs": 156,
+  "verification_scope": "Short equation, task timing, source/label and local-view regression; not board calibration or long-term stability.",
+  "reports": [
+    {
+      "path": "validation.json",
+      "sha256": "710818abc1380160bca60402d16ef1718b8f6ed724de7bb4d950f4c344a301d2"
+    },
+    {
+      "path": "view_regression.json",
+      "sha256": "ef728c4d5883e9ebf4496975ba4d86b91625aade5deef7d415252b8e4cb54d2a"
+    },
+    {
+      "path": "ui_validation.json",
+      "sha256": "b71408dbc14aaa84ec25bb3fc6e29011b4e5e38099aeefc0e115a3800eb2907d"
+    }
+  ],
+  "sources": [
+    {
+      "path": "signal_chain/inspect_signal_chain.m",
+      "sha256": "c8dc5c70cbbadcdb05f367883a887842b3f8c81cd17b778dd816048b1c5b1e19"
+    },
+    {
+      "path": "signal_chain/validate_signal_chain.m",
+      "sha256": "2773d6fac6876bebdb87779cead568d918aa6415903ec5112f6bb0db6575e840"
+    },
+    {
+      "path": "signal_chain/render_signal_chain_results.m",
+      "sha256": "bdc758471cfb98171537c8904e95ff3ec9c8cd3febffd13ba121c2cb266d94b1"
+    },
+    {
+      "path": "signal_chain/validate_signal_chain_view_regression.m",
+      "sha256": "0a5eddc22bfb09d49d2841e8e9d6b53f11a852df77a9385a475a2eccd669e3da"
+    },
+    {
+      "path": "signal_chain/validate_signal_chain_ui.m",
+      "sha256": "a13692fff8f112cc826bc58f61a49bfb53c7b49224d7dda6dc4915ceef0c5a46"
+    },
+    {
+      "path": "layout/appearance/pmsm_signal_chain_view.m",
+      "sha256": "b68b06095137182de8ef78b50e94acee310f93716830c8a95467d6b70bd3b3f0"
+    },
+    {
+      "path": "layout/appearance/pmsm_sampling_labels.m",
+      "sha256": "97071f7e4310a1098e80b4fa9538e544503acb348ed4c5b9b27c617a06949ac7"
+    },
+    {
+      "path": "layout/appearance/open_pmsm_controls.m",
+      "sha256": "f8b732fc1aa9f27dafbed606da558a68139afd752befa7455d308ac22a8dc872"
+    },
+    {
+      "path": "layout/appearance/pmsm_presented_call.m",
+      "sha256": "b5fb34656068079fe434f19d03c5eeaae29d43f881c45da22411fd12b5e7fa95"
+    },
+    {
+      "path": "layout/appearance/rebuild_pmsm_observations.m",
+      "sha256": "d8081659138ec2fcea26a3fe410eb0425ec295b9222bf058fc7cb9e22ed73679"
+    },
+    {
+      "path": "teaching/open_pmsm_current_sampling_scope.m",
+      "sha256": "f595f05afd3f2d7f020fa1b95dcced22a6bd430490037ad900fcaa567bb7499a"
+    },
+    {
+      "path": "open_pmsm_model.m",
+      "sha256": "a0e58b376431d893ee16d02b2fd886a5a1f390420d7b61e9dac3f2a35fdb4a3c"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "signal_chain/README.md",
+      "sha256": "b31d7604ac602be9b5912b55d21cbce44d0e73eb4fe6b2792406329747bd977b"
+    },
+    {
+      "path": "signal_chain/采样设置.png",
+      "sha256": "e840e8765868369fc99318888ca368dbe4dc3d0fd28b3c3b7e34a281ddcc4ea3"
+    },
+    {
+      "path": "signal_chain/输出延迟.png",
+      "sha256": "9f2211f71439260156ee8e7335923ee3fbcd7904469282dfc1330d7796dc84b8"
+    },
+    {
+      "path": "signal_chain/results/sampling.png",
+      "sha256": "e5aa7ac26ef98ef3a44f1504adc698aff4ae059a055a8a52437113a8d9c2dcd9"
+    },
+    {
+      "path": "signal_chain/results/timing.png",
+      "sha256": "b256fbdf3828d8078467ec03bf8c65423a0fa93d35a5c8fc4086f0748e0d32f3"
+    },
+    {
+      "path": "signal_chain/results/source.json",
+      "sha256": "9fae91a56f0fdf31b75af065668c15921c78f45b3648d1ce7dd314a7809c1440"
+    },
+    {
+      "path": "teaching/README_参数设置与实测.md",
+      "sha256": "2add1e9072a6b3f8514755dde99f55e84a97ffe6f8cc698c90859756310119ed"
+    }
+  ]
+}

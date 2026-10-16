@@ -1,0 +1,102 @@
+{
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "model_changed": false,
+  "pi_retuned": false,
+  "dead_us": 2,
+  "comp_us": 2,
+  "cases": {
+    "low_h005": {
+      "low_order_THD_percent": 12.428233016655703,
+      "harmonic_orders": [
+        2,
+        25
+      ],
+      "phase_fundamental_peak_A": 1.8926518735670403,
+      "id_rms_A": 0.2489644103661284,
+      "iq_ac_rms_A": 0.069542464349470437,
+      "torque_period_average_pp_Nm": 0.020264244082307731,
+      "torque_period_average_ac_rms_Nm": 0.0029246177876393561,
+      "speed_mean_rpm": 299.99898861706936,
+      "speed_pp_rpm": 3.4384993561399142,
+      "phase_current_peak_A": 2.3257350364009413,
+      "analysis_start_s": 0.0599745,
+      "analysis_end_s": 0.1399745,
+      "polarity_reversals_ABC": [
+        4,
+        4,
+        4
+      ],
+      "hysteresis_A": 0.005,
+      "rpm": 300,
+      "load_Nm": 0.08,
+      "elapsed_s": 79.8892059,
+      "measured_input_replays_polarity": true
+    },
+    "low_h0": {
+      "low_order_THD_percent": 11.828376825803188,
+      "harmonic_orders": [
+        2,
+        25
+      ],
+      "phase_fundamental_peak_A": 1.8923363750363484,
+      "id_rms_A": 0.23836317932225476,
+      "iq_ac_rms_A": 0.064788410124169957,
+      "torque_period_average_pp_Nm": 0.019589161448839668,
+      "torque_period_average_ac_rms_Nm": 0.0027219224305688665,
+      "speed_mean_rpm": 299.99789802883993,
+      "speed_pp_rpm": 3.1476948904050914,
+      "phase_current_peak_A": 2.3189356010627247,
+      "analysis_start_s": 0.0599745,
+      "analysis_end_s": 0.1399745,
+      "polarity_reversals_ABC": [
+        4,
+        4,
+        4
+      ],
+      "hysteresis_A": 0,
+      "rpm": 300,
+      "load_Nm": 0.08,
+      "elapsed_s": 74.1322858,
+      "measured_input_replays_polarity": true
+    },
+    "normal_h005": {
+      "low_order_THD_percent": 3.3357978457572295,
+      "harmonic_orders": [
+        2,
+        25
+      ],
+      "phase_fundamental_peak_A": 4.8944719629902247,
+      "id_rms_A": 0.17888256779008629,
+      "iq_ac_rms_A": 0.02848841140400702,
+      "torque_period_average_pp_Nm": 0.0081648898203527664,
+      "torque_period_average_ac_rms_Nm": 0.0011639054066299819,
+      "speed_mean_rpm": 599.99907160884425,
+      "speed_pp_rpm": 1.2231768303553281,
+      "phase_current_peak_A": 5.2435252746909713,
+      "analysis_start_s": 0.0399745,
+      "analysis_end_s": 0.0799745,
+      "polarity_reversals_ABC": [
+        4,
+        4,
+        4
+      ],
+      "hysteresis_A": 0.005,
+      "rpm": 600,
+      "load_Nm": 0.207,
+      "elapsed_s": 42.9465896,
+      "measured_input_replays_polarity": true
+    }
+  },
+  "all_passed": true,
+  "reference": {
+    "dead_us": 2,
+    "comp_us": 2,
+    "hysteresis_A": 0.05,
+    "rpm": 300,
+    "load_Nm": 0.08,
+    "stop_time_s": 0.14,
+    "historical_model_sha256": "afdb0836adf1b2960e398931495b7bf43f8e180c98b8d647e21e1ca53db75be8",
+    "dead_mat_sha256": "d9b873d7aa9e72a00e965fc7362a688b4a778c20bece91afec17f5e4a6f6a188",
+    "comp_mat_sha256": "f0b4fee7e91a9d4da0fd3291507329d220d421681cd2a3865872884738f97a14"
+  }
+}

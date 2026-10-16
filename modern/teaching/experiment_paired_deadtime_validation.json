@@ -1,0 +1,79 @@
+{
+  "all_passed": true,
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "reference_manifest_sha256": "f977cfaa62d8722221573d9a648f28d8d7bc91f0f6a462c1e09e4488a70ef353",
+  "run_folders": {
+    "default_pair": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261013_122052_075_gate_deadtime_pair_6da7c551",
+    "zero_pair": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261013_122434_443_gate_deadtime_pair_25f22c31",
+    "legacy_bias": "D:\\simulink\\modern\\teaching\\experiments\\runs\\20261013_122529_772_current_bias_8d355a78"
+  },
+  "checks": {
+    "invalid_inputs_rejected": 4,
+    "only_deadtime_setting_differs": true,
+    "default_pair_all_42_signals_repeated": true,
+    "zero_deadtime_gates_equal_requests": true,
+    "both_fine_grid_and_synchronous_angle_current": true,
+    "nonzero_rising_edges_2us": 30,
+    "no_overlap_and_fall_immediate": true,
+    "alignment_uses_unmodified_original_samples": true,
+    "startup_angle_matches_speed_integral": true,
+    "gui_default_and_startup_callback": true,
+    "gui_stale_result_cleared": true,
+    "zero_pair_all_21_signals_exact": true,
+    "zero_reference_first_50ms_repeated": true,
+    "legacy_bias_all_signals_exact": true,
+    "alignment_tamper_rejected": true,
+    "main_reference_pi_layout_unchanged": true
+  },
+  "prior_default_folder": "D:/simulink/modern/teaching/experiments/runs/20261013_121512_329_gate_deadtime_pair_3022e500",
+  "alignment": {
+    "schema": 1,
+    "cycle_index": 39,
+    "absolute_angle_start_rad": 245.04422698000386,
+    "absolute_angle_end_rad": 251.32741228718345,
+    "method": "按真实转子电角度选择同一完整周期；未按电流峰值平移、未平滑、未插值重采样。",
+    "cases": [
+      {
+        "id": "reference",
+        "time_window_s": [
+          0.193319,
+          0.197318
+        ],
+        "sample_count": 4000,
+        "angle_window_deg": [
+          0.048743522072416452,
+          359.95789519685451
+        ],
+        "current_sample_rms_ABC_A": [
+          3.4575955619812477,
+          3.4570049362066819,
+          3.4618003976651037
+        ]
+      },
+      {
+        "id": "factor",
+        "time_window_s": [
+          0.194244,
+          0.198243
+        ],
+        "sample_count": 4000,
+        "angle_window_deg": [
+          0.08167177998774125,
+          359.98853284796843
+        ],
+        "current_sample_rms_ABC_A": [
+          3.4591521918262189,
+          3.4610099952395696,
+          3.4612503262850089
+        ]
+      }
+    ],
+    "startup": {
+      "final_electrical_angle_difference_deg": -83.218406992178629,
+      "integrated_speed_difference_deg": -83.22225244416336,
+      "final_integration_residual_deg": 0.00384545198473063,
+      "peak_speed_difference_rpm": 65.675685374435034,
+      "definition": "死区组−零死区组；累计角度差未折回±180°；速度积分采用50μs控制记录的梯形积分。"
+    }
+  }
+}

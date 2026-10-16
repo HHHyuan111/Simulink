@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "statistics_window_s": [
+    0.18000000000000002,
+    0.2
+  ],
+  "control_period_s": 4.9999999999994493E-5,
+  "filter_hz": 1500,
+  "alpha": 0.62422843364860214,
+  "definition": "各组测量总误差=本组滤波确定性误差+本组噪声分量；滤波分解使用同一组真实电流和实际注入序列，不是另一次仿真。",
+  "cases": [
+    {
+      "id": "reference",
+      "noise_injected_rms_ABC_A": [
+        0,
+        0,
+        0
+      ],
+      "noise_component_rms_ABC_A": [
+        0,
+        0,
+        0
+      ],
+      "deterministic_error_rms_ABC_A": [
+        0,
+        0,
+        0
+      ],
+      "measurement_error_rms_ABC_A": [
+        0,
+        0,
+        0
+      ],
+      "decomposition_max_abs_error_A": 0
+    },
+    {
+      "id": "factor",
+      "noise_injected_rms_ABC_A": [
+        0.019253512825711687,
+        0.019278537620409569,
+        0.019048866988213238
+      ],
+      "noise_component_rms_ABC_A": [
+        0.019253512825711687,
+        0.019278537620409569,
+        0.019048866988213238
+      ],
+      "deterministic_error_rms_ABC_A": [
+        0,
+        0,
+        0
+      ],
+      "measurement_error_rms_ABC_A": [
+        0.01925351282571169,
+        0.019278537620409569,
+        0.019048866988213245
+      ],
+      "decomposition_max_abs_error_A": 8.8817841970012523E-16
+    },
+    {
+      "id": "filtered",
+      "noise_injected_rms_ABC_A": [
+        0.019253512825711687,
+        0.019278537620409569,
+        0.019048866988213238
+      ],
+      "noise_component_rms_ABC_A": [
+        0.010019780349402227,
+        0.00966567161743768,
+        0.0094306090111782818
+      ],
+      "deterministic_error_rms_ABC_A": [
+        0.47183503915800212,
+        0.46853782719205478,
+        0.46340803836215794
+      ],
+      "measurement_error_rms_ABC_A": [
+        0.47188136526984309,
+        0.469116495448747,
+        0.46206489516348004
+      ],
+      "decomposition_max_abs_error_A": 2.5064412351172294E-13
+    }
+  ],
+  "same_injected_sequence": true,
+  "seed_ABC": [
+    9474,
+    9475,
+    9476
+  ],
+  "nominal_electrical_frequency_Hz": 250,
+  "nominal_gain_dB": -0.11678423948072766,
+  "nominal_phase_deg": -7.3884040489522889,
+  "nominal_phase_delay_us": 82.0933783216921,
+  "white_noise_rms_ratio_theoretical": 0.48099260907686525,
+  "frequency_response_source": "由当前离散一阶系数解析计算；不是实测相位或闭环辨识。"
+}

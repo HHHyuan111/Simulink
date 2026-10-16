@@ -1,0 +1,22 @@
+{
+  "all_passed": true,
+  "scope": "重新绘制机制页的坐标显示；读取已验证结果，不重新仿真或修改原始结果包。",
+  "examples": {
+    "digital_filter": {
+      "comparison": "6c6524b79f6123fc9e9c4d4f3592c92ffe81dc7ce5798ce2008e0585cc0cda6a",
+      "response": "3cfc160714c665411fbc76f2d9a9cdd69324a2b36cb4eb2845d3276efcb9158f",
+      "mechanism": "0467c6064daa497fa28c44d4678589178d9b551121d4d9d03737d4ce6e7b4bc7"
+    },
+    "angle_bias": {
+      "comparison": "ebaff9dc2df83c64db5f6459077e37df472baf41063e0b1789576e9de0558ba6",
+      "response": "e48f884f64883fbfe2774844c186774825a0d54cefc5ec750117487da2ab124a",
+      "mechanism": "6a189001f13ff9bd838fc66fd6f36b606b8565067a2ca19b075f3b20b12c6f93"
+    },
+    "gate_deadtime": {
+      "comparison": "2d253eb40b4a99834ff1a1a2fbc482298403776a8f840a20d3294341c5e902e7",
+      "response": "c7f78604ebd812ba984bf55e58ecb913799b72a6c42c846d2f344317bca0aa59",
+      "mechanism": "57c7d4e5f36adca54abd9f4ada0ed60bcc8b165067faacd5b613eb5e0d47b8cb"
+    }
+  },
+  "renderer_sha256": "48d9e998ae3a5dfa0a6ec7e2a347b5806208508bd56974b88ce380b443cfb00a"
+}

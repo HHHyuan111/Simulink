@@ -1,0 +1,1667 @@
+{
+  "model_unchanged_sha256": "a745187d8a8b40986515717c7ebc6594f488e745b7f73bd922bf1bdc39b46994",
+  "top_level_count": 164,
+  "internal_count": 165,
+  "total_count": 329,
+  "region_counts": [
+    16,
+    21,
+    21,
+    23,
+    11,
+    14,
+    17,
+    16,
+    25
+  ],
+  "blocks": [
+    {
+      "sid": "PMSM_FOC_R2026a:592",
+      "name": "speed_ref",
+      "description": "主转速给定 n=3000 rpm；常量直接进入速度误差。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:169",
+      "name": "Sum4",
+      "description": "目标转速减去保持后的实际转速，得到 rpm 误差。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:155",
+      "name": "PI Controller_w",
+      "description": "速度 PI；输出按 Te_ref 使用，增益单位及面板采样参数待统一。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:193",
+      "name": "Divide",
+      "description": "转矩要求除以当前换算分母，输出 iq_ref，A。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:222",
+      "name": "Goto9",
+      "description": "发布标签 iq_ref：主 q 轴给定，A；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:509",
+      "name": "Goto19",
+      "description": "发布标签 nref：主转速给定，rpm；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:201",
+      "name": "From",
+      "description": "读取标签 speed：机械转速，rpm；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:190",
+      "name": "Zero-Order Hold2",
+      "description": "按 dt=50 μs 采样保持；两次更新之间输出保持不变。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:196",
+      "name": "Constant2",
+      "description": "永磁磁链 phis=0.0054 Wb。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:216",
+      "name": "Constant3",
+      "description": "d 轴电感 Ld=120 μH。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:578",
+      "name": "From35",
+      "description": "读取标签 id：d 轴电流，A；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:217",
+      "name": "Product4",
+      "description": "计算 Ld·id，当前转矩换算的一部分。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:215",
+      "name": "Sum6",
+      "description": "计算 phis+Ld·id；它与完整凸极转矩分母有差别。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:195",
+      "name": "Constant1",
+      "description": "极对数 p=4。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:194",
+      "name": "Constant",
+      "description": "幅值不变变换的转矩系数 1.5。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:197",
+      "name": "Product",
+      "description": "计算 1.5·p·(phis+Ld·id)，作为电流换算分母。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:590",
+      "name": "id_ref",
+      "description": "主 d 轴给定为常量 0 A；与辅助标签 id_ref 独立。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:40",
+      "name": "Sum",
+      "description": "id_ref−id，得到 d 轴电流误差。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:439",
+      "name": "PI Controller_w1",
+      "description": "d 轴 PI，但当前遮罩引用 q 轴增益和限幅；内部周期为 dt。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:144",
+      "name": "Sum2",
+      "description": "d 轴 PI 减去 ωe·Lq·iq，输出最终 vd。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:220",
+      "name": "Goto7",
+      "description": "发布标签 vd：最终 d 轴电压要求，V；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:202",
+      "name": "From2",
+      "description": "读取标签 id：d 轴电流，A；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:203",
+      "name": "From5",
+      "description": "读取标签 iq：q 轴电流，A；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:206",
+      "name": "From3",
+      "description": "读取标签 ws：电角速度，rad/s；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:210",
+      "name": "Zero-Order Hold5",
+      "description": "按 dt=50 μs 采样保持；两次更新之间输出保持不变。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:139",
+      "name": "Constant4",
+      "description": "q 轴电感 Lq=120 μH。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:141",
+      "name": "Product1",
+      "description": "计算 ωe·Lq·iq，d 轴交叉耦合前馈。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:212",
+      "name": "Constant7",
+      "description": "永磁磁链 phis。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:213",
+      "name": "Product3",
+      "description": "计算 ωe·phis，当前 q 轴反电动势前馈；不含 Ld·id。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:579",
+      "name": "From37",
+      "description": "读取标签 iq_ref：主 q 轴给定，A；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:133",
+      "name": "Sum1",
+      "description": "端口 1 减 iq、端口 2 加 iq_ref，结果为 iq_ref−iq。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:453",
+      "name": "PI Controller_w2",
+      "description": "q 轴离散 PI，含积分状态限幅和饱和误差反馈。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:152",
+      "name": "Sum3",
+      "description": "q 轴 PI 与 ωe·phis 相加，输出最终 vq。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:221",
+      "name": "Goto8",
+      "description": "发布标签 vq：最终 q 轴电压要求，V；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:209",
+      "name": "Constant6",
+      "description": "d 轴电感 Ld。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:214",
+      "name": "Product2",
+      "description": "计算 Ld·id，但输出未接入 q 轴前馈。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:468",
+      "name": "Terminator2",
+      "description": "终止未使用的 Ld·id 支路，不参与主控制计算。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:200",
+      "name": "From4",
+      "description": "读取标签 Currentabc：三相电流控制反馈，A；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:183",
+      "name": "Zero-Order Hold1",
+      "description": "按 dt=50 μs 采样保持；两次更新之间输出保持不变。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:593",
+      "name": "abc to Alpha-Beta-Zero",
+      "description": "Clarke 变换，幅值不变；输出 [α β 0]。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:597",
+      "name": "Alpha-Beta-Zero to dq0",
+      "description": "Park 变换，使用采样电角度得到 [id iq i0]。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:62",
+      "name": "Demux",
+      "description": "拆分 Park 输出；依次为 id、iq、i0。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:65",
+      "name": "Goto2",
+      "description": "发布标签 id：d 轴电流，A；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:66",
+      "name": "Goto3",
+      "description": "发布标签 iq：q 轴电流，A；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:265",
+      "name": "Terminator",
+      "description": "终止当前不使用的电流零序分量。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:199",
+      "name": "From1",
+      "description": "读取标签 theta_e：电角度，rad；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:191",
+      "name": "Zero-Order Hold3",
+      "description": "按 dt=50 μs 采样保持；两次更新之间输出保持不变。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:228",
+      "name": "From9",
+      "description": "读取标签 vd：最终 d 轴电压要求，V；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:229",
+      "name": "From10",
+      "description": "读取标签 vq：最终 q 轴电压要求，V；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:232",
+      "name": "Constant5",
+      "description": "逆变换零序电压给定为 0 V。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:231",
+      "name": "Mux1",
+      "description": "按 [vd vq 0] 顺序组合输入。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:606",
+      "name": "dq0 to Alpha-Beta-Zero",
+      "description": "逆 Park 变换；输出 [vα vβ v0]。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:236",
+      "name": "Demux1",
+      "description": "拆分逆 Park 输出的三个坐标分量。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:237",
+      "name": "Goto10",
+      "description": "发布标签 v_alpha：α 轴电压要求，V；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:238",
+      "name": "Goto11",
+      "description": "发布标签 v_beta：β 轴电压要求，V；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:266",
+      "name": "Terminator1",
+      "description": "终止不使用的电压零序分量。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:233",
+      "name": "From11",
+      "description": "读取标签 theta_e：电角度，rad；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:235",
+      "name": "Zero-Order Hold4",
+      "description": "按 dt=50 μs 采样保持；两次更新之间输出保持不变。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:242",
+      "name": "From8",
+      "description": "读取标签 v_alpha：α 轴电压要求，V；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:243",
+      "name": "From12",
+      "description": "读取标签 v_beta：β 轴电压要求，V；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:246",
+      "name": "Constant8",
+      "description": "调制使用的母线 Vdc=24 V，当前为常量。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:247",
+      "name": "Constant9",
+      "description": "调制周期 dt=50 μs。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:240",
+      "name": "SVPWM Function v1.0",
+      "description": "根据 αβ 电压计算 Tcm 与 sector；完整源码和现有问题见正文及附录。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:295",
+      "name": "Demux2",
+      "description": "将 Tcm 向量拆成 A、B、C 三相比较阈值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:346",
+      "name": "Rate Transition1",
+      "description": "采样率过渡，OutPortSampleTime=-1；数据完整性开启、确定性关闭；不能等同完整 PWM 延迟。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:347",
+      "name": "Rate Transition2",
+      "description": "采样率过渡，OutPortSampleTime=-1；数据完整性开启、确定性关闭；不能等同完整 PWM 延迟。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:348",
+      "name": "Rate Transition3",
+      "description": "采样率过渡，OutPortSampleTime=-1；数据完整性开启、确定性关闭；不能等同完整 PWM 延迟。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:291",
+      "name": "Relational Operator",
+      "description": "载波≥A 相阈值时上管为 1。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:292",
+      "name": "Relational Operator1",
+      "description": "载波≥B 相阈值时上管为 1。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:293",
+      "name": "Relational Operator2",
+      "description": "载波≥C 相阈值时上管为 1。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:299",
+      "name": "NOT",
+      "description": "A 相上管逻辑取反生成下管；无死区。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:300",
+      "name": "NOT1",
+      "description": "B 相上管逻辑取反生成下管；无死区。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:301",
+      "name": "NOT2",
+      "description": "C 相上管逻辑取反生成下管；无死区。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:298",
+      "name": "Mux2",
+      "description": "按 [AH AL BH BL CH CL] 组合六路门极。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:244",
+      "name": "Goto12",
+      "description": "发布标签 SW：六路门极 [AH AL BH BL CH CL]；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:324",
+      "name": "Carrier Wave",
+      "description": "周期三角载波，时间点 [0 Ts/2 Ts]，幅值 [0 Ts/2 0]，单位 s。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:426",
+      "name": "Rate Transition4",
+      "description": "采样率过渡，OutPortSampleTime=-1；数据完整性开启、确定性关闭；不能等同完整 PWM 延迟。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:302",
+      "name": "Scope6",
+      "description": "四端口依次观察载波与 A、B、C 三相阈值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:307",
+      "name": "Goto13",
+      "description": "发布标签 sector：扇区编码，取 0 至 6；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:372",
+      "name": "Goto17",
+      "description": "发布标签 Umod：三相比较时间 Tcm，s；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:718",
+      "name": "PWM threshold tag",
+      "description": "发布标签 Tcm：三相比较时间 Tcm，s；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:681",
+      "name": "DC Voltage Source",
+      "description": "理想恒定直流电源 Vdc=24 V；没有源阻抗或电容状态。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:245",
+      "name": "From13",
+      "description": "读取标签 SW：六路门极 [AH AL BH BL CH CL]；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:615",
+      "name": "Universal Bridge",
+      "description": "理想六开关桥计算浮动星点三相电压，未建模器件和续流。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:671",
+      "name": "Three-Phase V-I Measurement",
+      "description": "输入相电压和相电流，输出线电压、电流反馈和传给电机的相电压。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:626",
+      "name": "Permanent Magnet Synchronous Machine",
+      "description": "连续 dq 电机方程；四个状态为 id、iq、ωm、θm，另计算测量向量和 Iabc。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:523",
+      "name": "T_load1",
+      "description": "负载 Step：Time=0，前后均为 0.3·Tn=0.089424 N·m，SampleTime=dt。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:682",
+      "name": "Voltage Measurement",
+      "description": "Gain=1，原样发布电源数值作为母线测量。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:496",
+      "name": "Goto16",
+      "description": "发布标签 UDC：理想母线测量，V；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:506",
+      "name": "Goto18",
+      "description": "发布标签 TL：负载转矩，N·m；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:281",
+      "name": "Goto4",
+      "description": "发布标签 Uabc：线电压 [Vab Vbc Vca]，V；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:693",
+      "name": "Measured phase currents",
+      "description": "发布标签 Currentabc：三相电流控制反馈，A；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:649",
+      "name": "Bus Selector",
+      "description": "拆分八元素电机测量向量，输出前六项；不是电气总线块。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:32",
+      "name": "Mux",
+      "description": "将 ia、ib、ic 重新组合成电流观测向量。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:28",
+      "name": "Scope",
+      "description": "三个输入端口分别观察 ia、ib、ic。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:34",
+      "name": "Goto",
+      "description": "发布标签 Iabc：三相电流观测向量，A；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:171",
+      "name": "Gain",
+      "description": "30/π，将机械 rad/s 转为 rpm。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:172",
+      "name": "Goto6",
+      "description": "发布标签 speed：机械转速，rpm；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:186",
+      "name": "Gain1",
+      "description": "乘极对数 p，将机械角速度转为电角速度。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:188",
+      "name": "Goto1",
+      "description": "发布标签 ws：电角速度，rad/s；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:177",
+      "name": "Subsystem",
+      "description": "θm 乘 p 后 mod 2π，生成理想电角度。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:180",
+      "name": "Electrical Rotation Angle",
+      "description": "发布标签 theta_e：电角度，rad；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:189",
+      "name": "Goto5",
+      "description": "发布标签 Te：电磁转矩，N·m；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:660",
+      "name": "Bus Selector1",
+      "description": "从同一测量向量只取第 7 项 vq_actual 与第 8 项 vd_actual。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:358",
+      "name": "Goto14",
+      "description": "发布标签 Vq_re：电机端实际 q 轴电压，V；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:359",
+      "name": "Goto15",
+      "description": "发布标签 Vd_re：电机端实际 d 轴电压，V；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:259",
+      "name": "From14",
+      "description": "读取标签 speed：机械转速，rpm；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:271",
+      "name": "From16",
+      "description": "读取标签 Te：电磁转矩，N·m；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:255",
+      "name": "Scope1",
+      "description": "端口顺序 speed、Te；分别读 rpm 和 N·m。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:310",
+      "name": "From23",
+      "description": "读取标签 id：d 轴电流，A；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:312",
+      "name": "From24",
+      "description": "读取标签 iq：q 轴电流，A；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:314",
+      "name": "Scope8",
+      "description": "端口顺序 id、iq，不包含 iq_ref。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:273",
+      "name": "From18",
+      "description": "读取标签 Iabc：三相电流观测向量，A；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:274",
+      "name": "Scope3",
+      "description": "观察 Iabc 三元素向量。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:282",
+      "name": "From19",
+      "description": "读取标签 Uabc：线电压 [Vab Vbc Vca]，V；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:334",
+      "name": "Demux3",
+      "description": "拆开 Uabc 的 [Vab Vbc Vca]，不是三相相电压。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:288",
+      "name": "Scope4",
+      "description": "依次观察三相线电压 Vab、Vbc、Vca。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:361",
+      "name": "From31",
+      "description": "读取标签 Vd_re：电机端实际 d 轴电压，V；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:360",
+      "name": "From30",
+      "description": "读取标签 Vq_re：电机端实际 q 轴电压，V；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:365",
+      "name": "Scope14",
+      "description": "端口顺序 Vd_re、Vq_re，即电机实际 dq 电压。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:362",
+      "name": "From32",
+      "description": "读取标签 vd：最终 d 轴电压要求，V；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:363",
+      "name": "From33",
+      "description": "读取标签 vq：最终 q 轴电压要求，V；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:366",
+      "name": "Scope15",
+      "description": "端口顺序 vd、vq，即控制器电压要求。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:269",
+      "name": "From17",
+      "description": "读取标签 SW：六路门极 [AH AL BH BL CH CL]；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:275",
+      "name": "Scope2",
+      "description": "观察六路 SW 门极向量。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:285",
+      "name": "From20",
+      "description": "读取标签 v_alpha：α 轴电压要求，V；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:286",
+      "name": "From21",
+      "description": "读取标签 v_beta：β 轴电压要求，V；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:287",
+      "name": "Scope5",
+      "description": "端口顺序 v_alpha、v_beta。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:350",
+      "name": "From29",
+      "description": "读取标签 Umod：三相比较时间 Tcm，s；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:352",
+      "name": "Demux5",
+      "description": "拆开 Umod，也就是三相 Tcm。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:353",
+      "name": "Scope11",
+      "description": "依次观察三相 Tcm，单位 s。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:331",
+      "name": "From25",
+      "description": "读取标签 v_alpha：α 轴电压要求，V；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:332",
+      "name": "From26",
+      "description": "读取标签 v_beta：β 轴电压要求，V；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:330",
+      "name": "XY Graph1",
+      "description": "横轴 v_alpha、纵轴 v_beta，观察电压矢量轨迹。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:308",
+      "name": "From22",
+      "description": "读取标签 sector：扇区编码，取 0 至 6；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:309",
+      "name": "Scope7",
+      "description": "观察扇区编码；物理顺序与数字排序不同。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:497",
+      "name": "From27",
+      "description": "读取标签 UDC：理想母线测量，V；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:498",
+      "name": "From6",
+      "description": "读取标签 speed：机械转速，rpm；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:499",
+      "name": "Scope9",
+      "description": "端口顺序 UDC、speed，单位分别为 V 和 rpm。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:501",
+      "name": "From28",
+      "description": "读取标签 speed：机械转速，rpm；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:589",
+      "name": "From36",
+      "description": "读取标签 nref2：辅助速度 Chirp，rpm；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:534",
+      "name": "Mux3",
+      "description": "组合实际 speed 与辅助 nref2。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:504",
+      "name": "Scope10",
+      "description": "端口 1 是双信号向量，端口 2 是归一化绝对差值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:546",
+      "name": "Sum5",
+      "description": "辅助 nref2 减去实际 speed；不是主速度误差。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:548",
+      "name": "Abs",
+      "description": "速度辅助差值取绝对值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:551",
+      "name": "Constant11",
+      "description": "max(abs(0.1*n),1)=300 rpm，速度辅助误差分母。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:550",
+      "name": "Divide1",
+      "description": "速度绝对差值除以 300 rpm，得到无量纲量。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:549",
+      "name": "Scope12",
+      "description": "端口顺序实际 speed、辅助 nref2。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:586",
+      "name": "From15",
+      "description": "读取标签 id：d 轴电流，A；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:576",
+      "name": "From7",
+      "description": "读取标签 id_ref：辅助 d 轴 Chirp，A；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:563",
+      "name": "Mux4",
+      "description": "组合实际 id 与辅助 Chirp 标签 id_ref。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:564",
+      "name": "Scope13",
+      "description": "端口 1 是双信号向量，端口 2 是归一化绝对差值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:566",
+      "name": "Sum7",
+      "description": "辅助 id_ref 减去实际 id；不是主 d 轴给定误差。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:558",
+      "name": "Abs1",
+      "description": "辅助 d 轴差值取绝对值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:559",
+      "name": "Constant13",
+      "description": "0.1*In=0.92 A，辅助误差分母。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:560",
+      "name": "Divide2",
+      "description": "辅助电流绝对差值除以 0.92 A。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:565",
+      "name": "Scope16",
+      "description": "端口顺序实际 id、辅助 id_ref。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:683",
+      "name": "Chirp1",
+      "description": "10 s 内由 0 扫至 500 Hz 的余弦 Chirp，以 dt 保持；不驱动主给定。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:553",
+      "name": "Gain3",
+      "description": "0.1*n=300，将单位 Chirp 缩放为辅助 rpm。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:588",
+      "name": "Goto21",
+      "description": "发布标签 nref2：辅助速度 Chirp，rpm；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:688",
+      "name": "Chirp2",
+      "description": "10 s 内由 0 扫至 5000 Hz 的余弦 Chirp，以 dt 保持；不驱动主给定。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:573",
+      "name": "Gain2",
+      "description": "0.1*In=0.92，将 Chirp 缩放为辅助 A。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:575",
+      "name": "Goto20",
+      "description": "发布标签 id_ref：辅助 d 轴 Chirp，A；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:695",
+      "name": "Validation logging",
+      "description": "只读 12 个标签并按 dt 存 timeseries；不参与控制反馈。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:598",
+      "name": "alpha_beta_zero",
+      "description": "端口 1 输入 [α β 0]。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:604",
+      "name": "axis_0",
+      "description": "原样取第三项零序分量。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:602",
+      "name": "axis_1",
+      "description": "计算 α·cosθe+β·sinθe，得到 d。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:603",
+      "name": "axis_2",
+      "description": "计算 −α·sinθe+β·cosθe，得到 q。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:605",
+      "name": "dq0",
+      "description": "输出 [d q 0]。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:600",
+      "name": "input_vector",
+      "description": "组合坐标三分量与 θe；第 4 项为角度。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:601",
+      "name": "result",
+      "description": "组合三个坐标分量，顺序由子系统输出约定。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:599",
+      "name": "theta_e",
+      "description": "端口 2 输入电角度，rad。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:650",
+      "name": "measurement_vector",
+      "description": "接收 [ia ib ic ωm θm Te vq_actual vd_actual] 八元素向量。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:652",
+      "name": "signal_1",
+      "description": "输出第 1 项 ia。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:653",
+      "name": "signal_2",
+      "description": "输出第 2 项 ib。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:654",
+      "name": "signal_3",
+      "description": "输出第 3 项 ic。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:655",
+      "name": "signal_4",
+      "description": "输出第 4 项 ωm。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:656",
+      "name": "signal_5",
+      "description": "输出第 5 项 θm。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:657",
+      "name": "signal_6",
+      "description": "输出第 6 项 Te。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:651",
+      "name": "signals",
+      "description": "将测量向量按原顺序拆为八个标量。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:658",
+      "name": "unused_7",
+      "description": "终止本子系统不用的第 7 项 vq_actual。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:659",
+      "name": "unused_8",
+      "description": "终止本子系统不用的第 8 项 vd_actual。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:661",
+      "name": "measurement_vector",
+      "description": "接收 [ia ib ic ωm θm Te vq_actual vd_actual] 八元素向量。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:663",
+      "name": "signal_7",
+      "description": "输出第 7 项 vq_actual。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:664",
+      "name": "signal_8",
+      "description": "输出第 8 项 vd_actual。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:662",
+      "name": "signals",
+      "description": "将测量向量按原顺序拆为八个标量。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:665",
+      "name": "unused_1",
+      "description": "终止本子系统不用的第 1 项 ia。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:666",
+      "name": "unused_2",
+      "description": "终止本子系统不用的第 2 项 ib。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:667",
+      "name": "unused_3",
+      "description": "终止本子系统不用的第 3 项 ic。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:668",
+      "name": "unused_4",
+      "description": "终止本子系统不用的第 4 项 ωm。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:669",
+      "name": "unused_5",
+      "description": "终止本子系统不用的第 5 项 θm。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:670",
+      "name": "unused_6",
+      "description": "终止本子系统不用的第 6 项 Te。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:687",
+      "name": "chirp",
+      "description": "输出单位幅值辅助 Chirp。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:685",
+      "name": "linear_chirp",
+      "description": "计算 cos(π·500·t²/10)，构成线性扫频余弦。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:686",
+      "name": "sample",
+      "description": "按 dt=50 μs 采样保持；两次更新之间输出保持不变。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:684",
+      "name": "sweep_time",
+      "description": "10 s 重复斜坡，输出当前扫频周期内的时间。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:692",
+      "name": "chirp",
+      "description": "输出单位幅值辅助 Chirp。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:690",
+      "name": "linear_chirp",
+      "description": "计算 cos(π·5000·t²/10)，构成线性扫频余弦。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:691",
+      "name": "sample",
+      "description": "按 dt=50 μs 采样保持；两次更新之间输出保持不变。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:689",
+      "name": "sweep_time",
+      "description": "10 s 重复斜坡，输出当前扫频周期内的时间。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:157",
+      "name": "Add",
+      "description": "比例项加积分项再减 Bm·error。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:438",
+      "name": "Discrete-Time Integrator",
+      "description": "后向欧拉离散积分，SampleTime=dt、初值 0，积分状态限制在 downlimit 至 uplimit。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:436",
+      "name": "Gain",
+      "description": "限幅前后差乘 Ks；后面还会乘 Ki。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:486",
+      "name": "Gain1",
+      "description": "误差乘 Bm；当前为 0，并非机械摩擦补偿。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:159",
+      "name": "Ki",
+      "description": "抗饱和修正后的误差乘遮罩 Ki，驱动积分器。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:160",
+      "name": "Kp",
+      "description": "误差乘遮罩 Kp，生成比例项。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:165",
+      "name": "Out",
+      "description": "向外输出限幅后的 PI 结果。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:161",
+      "name": "Saturation",
+      "description": "总输出限制在 downlimit 与 uplimit。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:162",
+      "name": "Scope2",
+      "description": "观察比例支路保持后的值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:163",
+      "name": "Scope3",
+      "description": "观察积分器输出。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:435",
+      "name": "Sum",
+      "description": "计算限幅前输出减去限幅后输出。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:437",
+      "name": "Sum1",
+      "description": "从原误差减去 Ks 倍饱和差。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:164",
+      "name": "Zero-Order Hold",
+      "description": "按 dt=50 μs 采样保持；两次更新之间输出保持不变。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:156",
+      "name": "error",
+      "description": "子系统误差入口；速度为 rpm，电流环为 A。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:441",
+      "name": "Add",
+      "description": "比例项加积分项。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:442",
+      "name": "Discrete-Time Integrator",
+      "description": "后向欧拉离散积分，SampleTime=dt、初值 0，积分状态限制在 downlimit 至 uplimit。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:443",
+      "name": "Gain",
+      "description": "限幅前后差乘 Ks；后面还会乘 Ki。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:444",
+      "name": "Ki",
+      "description": "抗饱和修正后的误差乘遮罩 Ki，驱动积分器。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:445",
+      "name": "Kp",
+      "description": "误差乘遮罩 Kp，生成比例项。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:452",
+      "name": "Out",
+      "description": "向外输出限幅后的 PI 结果。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:446",
+      "name": "Saturation",
+      "description": "总输出限制在 downlimit 与 uplimit。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:447",
+      "name": "Scope2",
+      "description": "观察比例支路保持后的值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:448",
+      "name": "Scope3",
+      "description": "观察积分器输出。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:449",
+      "name": "Sum",
+      "description": "计算限幅前输出减去限幅后输出。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:450",
+      "name": "Sum1",
+      "description": "从原误差减去 Ks 倍饱和差。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:451",
+      "name": "Zero-Order Hold",
+      "description": "按 dt=50 μs 采样保持；两次更新之间输出保持不变。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:440",
+      "name": "error",
+      "description": "子系统误差入口；速度为 rpm，电流环为 A。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:455",
+      "name": "Add",
+      "description": "比例项加积分项。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:456",
+      "name": "Discrete-Time Integrator",
+      "description": "后向欧拉离散积分，SampleTime=dt、初值 0，积分状态限制在 downlimit 至 uplimit。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:457",
+      "name": "Gain",
+      "description": "限幅前后差乘 Ks；后面还会乘 Ki。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:458",
+      "name": "Ki",
+      "description": "抗饱和修正后的误差乘遮罩 Ki，驱动积分器。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:459",
+      "name": "Kp",
+      "description": "误差乘遮罩 Kp，生成比例项。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:466",
+      "name": "Out",
+      "description": "向外输出限幅后的 PI 结果。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:460",
+      "name": "Saturation",
+      "description": "总输出限制在 downlimit 与 uplimit。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:461",
+      "name": "Scope2",
+      "description": "观察比例支路保持后的值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:462",
+      "name": "Scope3",
+      "description": "观察积分器输出。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:463",
+      "name": "Sum",
+      "description": "计算限幅前输出减去限幅后输出。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:464",
+      "name": "Sum1",
+      "description": "从原误差减去 Ks 倍饱和差。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:465",
+      "name": "Zero-Order Hold",
+      "description": "按 dt=50 μs 采样保持；两次更新之间输出保持不变。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:454",
+      "name": "error",
+      "description": "子系统误差入口；速度为 rpm，电流环为 A。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:647",
+      "name": "Iabc",
+      "description": "端口 2 输出 Iabc，A。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:642",
+      "name": "Te",
+      "description": "计算 1.5·p·[phis·iq+(Ld−Lq)·id·iq]，N·m。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:627",
+      "name": "Vabc",
+      "description": "端口 1 输入相电压 [va vb vc]，V。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:646",
+      "name": "current_vector",
+      "description": "组合三相电流 [ia ib ic]。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:631",
+      "name": "derivatives",
+      "description": "组合 [did/dt diq/dt dωm/dt dθm/dt]。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:632",
+      "name": "did_dt",
+      "description": "按 d 轴电压方程计算 (vd−Rs·id+ωe·Lq·iq)/Ld，A/s。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:633",
+      "name": "diq_dt",
+      "description": "按 q 轴电压方程计算 (vq−Rs·iq−ωe·(Ld·id+phis))/Lq，A/s。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:635",
+      "name": "dtheta_dt",
+      "description": "取 ωm 作为机械角度的导数。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:634",
+      "name": "dwm_dt",
+      "description": "由电磁转矩减负载和黏性摩擦再除惯量，得到机械角加速度。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:637",
+      "name": "ia",
+      "description": "用 θe=p·θm 将 dq 电流变回 a 相。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:638",
+      "name": "ib",
+      "description": "以 θe−2π/3 将 dq 电流变回 b 相。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:639",
+      "name": "ic",
+      "description": "以 θe+2π/3 将 dq 电流变回 c 相。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:629",
+      "name": "id_iq_wm_theta",
+      "description": "连续积分四个状态，初值 [0;0;0;0]；导数顺序必须一致。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:628",
+      "name": "load_torque",
+      "description": "端口 2 输入 TL，N·m。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:636",
+      "name": "measurement",
+      "description": "组合 [ia ib ic ωm θm Te vq_actual vd_actual]。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:645",
+      "name": "measurement_vector",
+      "description": "端口 1 输出八元素测量向量。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:641",
+      "name": "theta_m",
+      "description": "取第 7 项机械角，rad。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:630",
+      "name": "v_state_load",
+      "description": "组合 [va vb vc id iq wm θm TL] 八元素计算输入。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:644",
+      "name": "vd_actual",
+      "description": "按电机角度将实际相电压变换为 d 轴电压，V。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:643",
+      "name": "vq_actual",
+      "description": "按电机角度将实际相电压变换为 q 轴电压，V。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:640",
+      "name": "wm",
+      "description": "从计算向量第 6 项取机械角速度，rad/s。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:240::39",
+      "name": "Demux",
+      "description": "Stateflow 自动生成的内部输出拆分，不是额外的 SVPWM 算法。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:240::38",
+      "name": "SFunction",
+      "description": "Stateflow 生成的执行封装 sf_sfun；用户算法是附录中的 MATLAB Function。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:240::40",
+      "name": "Terminator",
+      "description": "终止 Stateflow 封装不用的内部输出。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:240::28",
+      "name": "Tcm",
+      "description": "输出三相比较阈值 [TcmA TcmB TcmC]，s。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:240::27",
+      "name": "Ts",
+      "description": "端口 4 输入 PWM 周期，s。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:240::26",
+      "name": "Vdc",
+      "description": "端口 3 输入母线，V。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:240::1",
+      "name": "alpha",
+      "description": "端口 1 输入 α 轴电压要求，V。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:240::25",
+      "name": "beta",
+      "description": "端口 2 输入 β 轴电压要求，V。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:240::37",
+      "name": "sector",
+      "description": "输出符号判定的扇区编码。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:176",
+      "name": "Constant",
+      "description": "周期常量 2π。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:174",
+      "name": "Gain1",
+      "description": "机械角乘极对数 p。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:175",
+      "name": "Mod",
+      "description": "对 p·θm 取 mod 2π，得到 [0,2π) 电角度。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:484",
+      "name": "Scope",
+      "description": "观察电角度环绕。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:179",
+      "name": "theta_e",
+      "description": "输出 theta_e，rad。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:178",
+      "name": "theta_m",
+      "description": "输入机械角度 θm，rad。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:673",
+      "name": "Iabc",
+      "description": "输入电机三相电流。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:679",
+      "name": "Iabc_measured",
+      "description": "端口 2 原样输出输入电流，A。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:675",
+      "name": "Vab",
+      "description": "计算 va−vb。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:678",
+      "name": "Vab_Vbc_Vca",
+      "description": "端口 1 输出线电压，V。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:672",
+      "name": "Vabc",
+      "description": "输入三相相电压。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:680",
+      "name": "Vabc_to_motor",
+      "description": "端口 3 原样传递相电压，V。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:676",
+      "name": "Vbc",
+      "description": "计算 vb−vc。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:677",
+      "name": "Vca",
+      "description": "计算 vc−va。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:674",
+      "name": "line_voltage",
+      "description": "组合 [Vab Vbc Vca]。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:624",
+      "name": "Vabc",
+      "description": "输出电机相电压 [va vb vc]，V。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:617",
+      "name": "Vdc",
+      "description": "输入母线电压，V。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:618",
+      "name": "double gates",
+      "description": "门极转换为 double，供算术表达式使用。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:619",
+      "name": "gates_and_bus",
+      "description": "把六路门极和 Vdc 组合为七元素向量。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:621",
+      "name": "phase_A",
+      "description": "按浮动中性点公式计算 a 相电压，见第 05 区。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:622",
+      "name": "phase_B",
+      "description": "按相同公式计算 b 相电压。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:623",
+      "name": "phase_C",
+      "description": "按相同公式计算 c 相电压。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:620",
+      "name": "phase_voltage",
+      "description": "组合 [va vb vc]。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:616",
+      "name": "six_gates",
+      "description": "输入 [AH AL BH BL CH CL] 六路逻辑。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:710",
+      "name": "Log SW",
+      "description": "读取标签 SW：六路门极 [AH AL BH BL CH CL]；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:714",
+      "name": "Log TL",
+      "description": "读取标签 TL：负载转矩，N·m；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:704",
+      "name": "Log Te",
+      "description": "读取标签 Te：电磁转矩，N·m；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:712",
+      "name": "Log UDC",
+      "description": "读取标签 UDC：理想母线测量，V；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:698",
+      "name": "Log id",
+      "description": "读取标签 id：d 轴电流，A；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:700",
+      "name": "Log iq",
+      "description": "读取标签 iq：q 轴电流，A；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:702",
+      "name": "Log iq_ref",
+      "description": "读取标签 iq_ref：主 q 轴给定，A；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:716",
+      "name": "Log nref",
+      "description": "读取标签 nref：主转速给定，rpm；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:696",
+      "name": "Log speed",
+      "description": "读取标签 speed：机械转速，rpm；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:706",
+      "name": "Log v_alpha",
+      "description": "读取标签 v_alpha：α 轴电压要求，V；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:708",
+      "name": "Log v_beta",
+      "description": "读取标签 v_beta：β 轴电压要求，V；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:719",
+      "name": "PWM thresholds",
+      "description": "读取标签 Tcm：三相比较时间 Tcm，s；不改变数值。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:720",
+      "name": "Save PWM thresholds",
+      "description": "保存 log_Tcm 为 timeseries，SampleTime=dt，Decimation=1，样本上限 inf。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:711",
+      "name": "Save SW",
+      "description": "保存 log_SW 为 timeseries，SampleTime=dt，Decimation=1，样本上限 inf。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:715",
+      "name": "Save TL",
+      "description": "保存 log_TL 为 timeseries，SampleTime=dt，Decimation=1，样本上限 inf。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:705",
+      "name": "Save Te",
+      "description": "保存 log_Te 为 timeseries，SampleTime=dt，Decimation=1，样本上限 inf。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:713",
+      "name": "Save UDC",
+      "description": "保存 log_UDC 为 timeseries，SampleTime=dt，Decimation=1，样本上限 inf。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:699",
+      "name": "Save id",
+      "description": "保存 log_id 为 timeseries，SampleTime=dt，Decimation=1，样本上限 inf。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:701",
+      "name": "Save iq",
+      "description": "保存 log_iq 为 timeseries，SampleTime=dt，Decimation=1，样本上限 inf。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:703",
+      "name": "Save iq_ref",
+      "description": "保存 log_iq_ref 为 timeseries，SampleTime=dt，Decimation=1，样本上限 inf。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:717",
+      "name": "Save nref",
+      "description": "保存 log_nref 为 timeseries，SampleTime=dt，Decimation=1，样本上限 inf。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:697",
+      "name": "Save speed",
+      "description": "保存 log_speed 为 timeseries，SampleTime=dt，Decimation=1，样本上限 inf。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:707",
+      "name": "Save v_alpha",
+      "description": "保存 log_v_alpha 为 timeseries，SampleTime=dt，Decimation=1，样本上限 inf。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:709",
+      "name": "Save v_beta",
+      "description": "保存 log_v_beta 为 timeseries，SampleTime=dt，Decimation=1，样本上限 inf。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:595",
+      "name": "Clarke matrix",
+      "description": "乘幅值不变 Clarke 矩阵，含零序；矩阵与公式见第 03 区。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:594",
+      "name": "abc",
+      "description": "输入 [ia ib ic]，A。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:596",
+      "name": "alpha_beta_zero",
+      "description": "输出 [iα iβ i0]，A。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:614",
+      "name": "alpha_beta_zero",
+      "description": "输出 [α β 0]。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:613",
+      "name": "axis_0",
+      "description": "原样取第三项零序分量。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:611",
+      "name": "axis_1",
+      "description": "计算 d·cosθe−q·sinθe，得到 α。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:612",
+      "name": "axis_2",
+      "description": "计算 d·sinθe+q·cosθe，得到 β。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:607",
+      "name": "dq0",
+      "description": "端口 1 输入 [d q 0]。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:609",
+      "name": "input_vector",
+      "description": "组合坐标三分量与 θe；第 4 项为角度。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:610",
+      "name": "result",
+      "description": "组合三个坐标分量，顺序由子系统输出约定。"
+    },
+    {
+      "sid": "PMSM_FOC_R2026a:608",
+      "name": "theta_e",
+      "description": "端口 2 输入电角度，rad。"
+    }
+  ],
+  "native_equation_count": 25,
+  "docx": "D:\\simulink\\review\\learning\\PMSM模型解读与STM32G474开发计划.docx",
+  "source_evidence": "D:\\simulink\\review\\learning\\current_model_evidence.json"
+}

@@ -1,0 +1,9 @@
+{
+  "kind": "native_scope_desktop_preview",
+  "duration_s": 0.2,
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "preview_mat_sha256": "30c25423e9970809b485c477897258643e50fc04ca0ef13f33beb8e745cdfea3",
+  "image_sha256": "687d1016150a056caed35e8ff742193b2e405b54fb77e82acba0468d047c843c",
+  "validation_file": "native_scope_validation.json",
+  "note": "原生Scope截图；当前模型200ms运行预览。两种20ms数值回归另见验收记录。"
+}

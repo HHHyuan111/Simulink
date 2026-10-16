@@ -1,0 +1,219 @@
+{
+  "passed": true,
+  "disabled_folder": "D:\\simulink\\modern\\startup\\runs\\20261015_121132_155_f74f8b5d-d73f-4c08-b8ee-161ebecffdc0",
+  "reference_folder": "D:/simulink/modern/framework/runs/20261015_111510_320_power_integration_3b82f3aa",
+  "signal_count": 35,
+  "checks": [
+    {
+      "signal": "log_speed",
+      "full_time_data_exact": true,
+      "same_grid_data_exact": false,
+      "time_difference_max_s": 0
+    },
+    {
+      "signal": "log_nref",
+      "full_time_data_exact": true,
+      "same_grid_data_exact": false,
+      "time_difference_max_s": 0
+    },
+    {
+      "signal": "log_id",
+      "full_time_data_exact": true,
+      "same_grid_data_exact": false,
+      "time_difference_max_s": 0
+    },
+    {
+      "signal": "log_iq",
+      "full_time_data_exact": true,
+      "same_grid_data_exact": false,
+      "time_difference_max_s": 0
+    },
+    {
+      "signal": "log_iq_ref",
+      "full_time_data_exact": true,
+      "same_grid_data_exact": false,
+      "time_difference_max_s": 0
+    },
+    {
+      "signal": "obs_id_ref",
+      "full_time_data_exact": true,
+      "same_grid_data_exact": false,
+      "time_difference_max_s": 0
+    },
+    {
+      "signal": "log_Te",
+      "full_time_data_exact": true,
+      "same_grid_data_exact": false,
+      "time_difference_max_s": 0
+    },
+    {
+      "signal": "log_TL",
+      "full_time_data_exact": true,
+      "same_grid_data_exact": false,
+      "time_difference_max_s": 0
+    },
+    {
+      "signal": "obs_state",
+      "full_time_data_exact": true,
+      "same_grid_data_exact": false,
+      "time_difference_max_s": 0
+    },
+    {
+      "signal": "log_iabc_true",
+      "full_time_data_exact": true,
+      "same_grid_data_exact": false,
+      "time_difference_max_s": 0
+    },
+    {
+      "signal": "log_iabc_meas",
+      "full_time_data_exact": true,
+      "same_grid_data_exact": false,
+      "time_difference_max_s": 0
+    },
+    {
+      "signal": "obs_voltage",
+      "full_time_data_exact": true,
+      "same_grid_data_exact": false,
+      "time_difference_max_s": 0
+    },
+    {
+      "signal": "obs_current_fast",
+      "full_time_data_exact": true,
+      "same_grid_data_exact": false,
+      "time_difference_max_s": 0
+    },
+    {
+      "signal": "log_theta_true",
+      "full_time_data_exact": true,
+      "same_grid_data_exact": false,
+      "time_difference_max_s": 0
+    },
+    {
+      "signal": "log_theta_meas",
+      "full_time_data_exact": true,
+      "same_grid_data_exact": false,
+      "time_difference_max_s": 0
+    },
+    {
+      "signal": "obs_dead_requested",
+      "full_time_data_exact": false,
+      "same_grid_data_exact": true,
+      "time_difference_max_s": 3.4694469519536142E-18
+    },
+    {
+      "signal": "obs_dead_gates",
+      "full_time_data_exact": false,
+      "same_grid_data_exact": true,
+      "time_difference_max_s": 3.4694469519536142E-18
+    },
+    {
+      "signal": "obs_dead_comp",
+      "full_time_data_exact": true,
+      "same_grid_data_exact": false,
+      "time_difference_max_s": 0
+    },
+    {
+      "signal": "obs_dead_bridge",
+      "full_time_data_exact": false,
+      "same_grid_data_exact": true,
+      "time_difference_max_s": 3.4694469519536142E-18
+    },
+    {
+      "signal": "obs_adc_timing",
+      "full_time_data_exact": true,
+      "same_grid_data_exact": false,
+      "time_difference_max_s": 0
+    },
+    {
+      "signal": "obs_pwm_timing",
+      "full_time_data_exact": false,
+      "same_grid_data_exact": true,
+      "time_difference_max_s": 3.4694469519536142E-18
+    },
+    {
+      "signal": "log_Tcm_applied",
+      "full_time_data_exact": false,
+      "same_grid_data_exact": true,
+      "time_difference_max_s": 3.4694469519536142E-18
+    },
+    {
+      "signal": "log_Tcm_requested",
+      "full_time_data_exact": true,
+      "same_grid_data_exact": false,
+      "time_difference_max_s": 0
+    },
+    {
+      "signal": "log_encoder",
+      "full_time_data_exact": true,
+      "same_grid_data_exact": false,
+      "time_difference_max_s": 0
+    },
+    {
+      "signal": "log_encoder_mechanical",
+      "full_time_data_exact": true,
+      "same_grid_data_exact": false,
+      "time_difference_max_s": 0
+    },
+    {
+      "signal": "log_encoder_control",
+      "full_time_data_exact": true,
+      "same_grid_data_exact": false,
+      "time_difference_max_s": 0
+    },
+    {
+      "signal": "log_speed_short",
+      "full_time_data_exact": true,
+      "same_grid_data_exact": false,
+      "time_difference_max_s": 0
+    },
+    {
+      "signal": "log_speed_window",
+      "full_time_data_exact": true,
+      "same_grid_data_exact": false,
+      "time_difference_max_s": 0
+    },
+    {
+      "signal": "log_speed_long",
+      "full_time_data_exact": true,
+      "same_grid_data_exact": false,
+      "time_difference_max_s": 0
+    },
+    {
+      "signal": "log_speed_control",
+      "full_time_data_exact": true,
+      "same_grid_data_exact": false,
+      "time_difference_max_s": 0
+    },
+    {
+      "signal": "log_speed_feedback",
+      "full_time_data_exact": true,
+      "same_grid_data_exact": false,
+      "time_difference_max_s": 0
+    },
+    {
+      "signal": "log_speed_filter",
+      "full_time_data_exact": true,
+      "same_grid_data_exact": false,
+      "time_difference_max_s": 0
+    },
+    {
+      "signal": "obs_pi_speed",
+      "full_time_data_exact": true,
+      "same_grid_data_exact": false,
+      "time_difference_max_s": 0
+    },
+    {
+      "signal": "obs_pi_d",
+      "full_time_data_exact": true,
+      "same_grid_data_exact": false,
+      "time_difference_max_s": 0
+    },
+    {
+      "signal": "obs_pi_q",
+      "full_time_data_exact": true,
+      "same_grid_data_exact": false,
+      "time_difference_max_s": 0
+    }
+  ],
+  "boundary": "Detailed bridge, real timing and encoder/filter feedback only; retained-tail comparisons use the same event grid and unchanged raw values."
+}

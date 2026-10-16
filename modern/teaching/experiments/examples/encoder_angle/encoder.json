@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "scope": "机械计数与同步读取的功能模型；不含ABZ边沿、输入滤波、Z相、自动对齐及位级等价。",
+  "contract": {
+    "kind": "mechanical_count_angle_three_cases",
+    "counts_per_mechanical_turn": 10000,
+    "pole_pairs": 5,
+    "sensor_direction": -1,
+    "software_direction": -1,
+    "electrical_zero_deg": 0,
+    "delay_cycles": 2,
+    "delay_s": 0.0001,
+    "read_period_s": 5E-5,
+    "read_offset_s": 2.8875E-5,
+    "event_step_s": 6.25E-8,
+    "quantization_rule": "raw=mod(floor(sensor_dir*theta_m*N/(2*pi)),N); corrected=mod(direction*raw,N)",
+    "initial_delayed_packet": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "speed_feedback": "沿用原速度路径；尚未使用计数测速",
+    "firmware_commit": "48d6e86814ac6657b1313b4c92ef24c88f492e07",
+    "parameter_sources": "10000计数及方向−1来自固件配置；零位默认手动对齐为0；两拍延迟为教学值，非实测",
+    "scope": "机械计数与同步读取的功能模型；不含ABZ边沿、输入滤波、Z相、自动对齐及位级等价。"
+  },
+  "cases": [
+    {
+      "id": "reference",
+      "sample_count": 1000,
+      "fresh_angle_max_error_rad": 0,
+      "actual_park_angle_max_error_rad": 0,
+      "park_inverse_max_error_rad": 0,
+      "park_formula_max_error_A": 3.5527136788005009E-15,
+      "invalid_initial_samples": 0,
+      "quantization_max_electrical_deg": 0.17990998077147508,
+      "angle_rms_electrical_deg": 0,
+      "angle_peak_electrical_deg": 0,
+      "source_age_us": 0,
+      "counts_integer_and_causal": true
+    },
+    {
+      "id": "factor",
+      "sample_count": 1000,
+      "fresh_angle_max_error_rad": 0,
+      "actual_park_angle_max_error_rad": 0,
+      "park_inverse_max_error_rad": 0,
+      "park_formula_max_error_A": 3.5527136788005009E-15,
+      "invalid_initial_samples": 0,
+      "quantization_max_electrical_deg": 0.17996012854421264,
+      "angle_rms_electrical_deg": 0.1080923466290708,
+      "angle_peak_electrical_deg": 0.17996012854421264,
+      "source_age_us": 0,
+      "counts_integer_and_causal": true
+    },
+    {
+      "id": "delayed",
+      "sample_count": 1000,
+      "fresh_angle_max_error_rad": 0,
+      "actual_park_angle_max_error_rad": 0,
+      "park_inverse_max_error_rad": 0,
+      "park_formula_max_error_A": 3.5527136788005009E-15,
+      "invalid_initial_samples": 2,
+      "quantization_max_electrical_deg": 0.17995282701928081,
+      "angle_rms_electrical_deg": 4.7328458217711766,
+      "angle_peak_electrical_deg": 5.9741698913899448,
+      "source_age_us": 100.00000000000287,
+      "counts_integer_and_causal": true
+    }
+  ]
+}

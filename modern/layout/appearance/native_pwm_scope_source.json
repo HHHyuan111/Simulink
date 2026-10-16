@@ -1,0 +1,10 @@
+{
+  "kind": "native_pwm_scope_desktop_preview",
+  "duration_s": 0.001,
+  "real_on_in_simulation_input": true,
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "preview_mat_sha256": "accdf125d9cfc46090b25e032dc4d26b36f1b69e32a286b007003eb8a058b29e",
+  "image_sha256": "1d534cc681e82094a570940c4f38f73decd8ce856b2ed428603ea9d93c45eab9",
+  "validation_file": "pwm_scope_validation.json",
+  "note": "真实时序仅本次SimulationInput启用；200μs窗口，状态栏偏移量800μs；绝对区间800至1000μs。固定参考开关未保存更改。"
+}

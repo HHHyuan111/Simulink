@@ -1,0 +1,28 @@
+{
+  "all_passed": true,
+  "source_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "comp": {
+    "timeseries": 52,
+    "max_abs_difference": 1.4633627642979263E-10
+  },
+  "off": {
+    "timeseries": 52,
+    "max_abs_difference": 0
+  },
+  "component": {
+    "all_passed": true,
+    "enable_freezes_state": true,
+    "zero_crossing_hysteresis_equivalent": true,
+    "negative_bus_clamp_equivalent": true
+  },
+  "pi_unchanged": true,
+  "root_geometry_preserved": true,
+  "regions_preserved": true,
+  "settings_preserved": true,
+  "saved_reload_preserved": true,
+  "model_sha256": "7dc335d8a533d5c0d51a2c96f019084f9c4968639e33f1b07a13b3c08f6fd795",
+  "total_blocks": 778,
+  "root_blocks": 188,
+  "publication_status": "verified_candidate",
+  "wire_geometry_only": true
+}

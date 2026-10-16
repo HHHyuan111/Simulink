@@ -1,0 +1,36 @@
+{
+  "source_run": "D:\\simulink\\modern\\teaching\\frequency\\speed_probe\\runs\\20261015_171610_598_c9d579bd",
+  "record_sha256": "2203105d02d0b2b46115acb30e78f3fa46ec8206b543f1b7dc169ae28978781e",
+  "files": [
+    {
+      "path": "record.json",
+      "sha256": "2203105d02d0b2b46115acb30e78f3fa46ec8206b543f1b7dc169ae28978781e"
+    },
+    {
+      "path": "response.png",
+      "sha256": "6f8c0fcf58a210fb17e34060d296f5b191946c1905f24179c354b678ba651740"
+    },
+    {
+      "path": "time_80Hz.png",
+      "sha256": "ec5c568e5dd5cdd3d9d5d5d09d7407c216911ea4e34c740085736baffe737312"
+    }
+  ],
+  "viewer_sources": [
+    {
+      "path": "open_pmsm_speed_probe.m",
+      "sha256": "160a0afb3ac9842c4b12a850e44f57e350d5bca11f2312639e080824919394f0"
+    },
+    {
+      "path": "open_pmsm_speed_probe_time.m",
+      "sha256": "e7e3f61b043d5e19ca176de5a4c6e02e0051c919568e3f32e952e43caae8813b"
+    },
+    {
+      "path": "verify_pmsm_speed_probe.m",
+      "sha256": "fc0b921a4d06871d718e258c63997c05ddb2f2753bc06db43a8e1e6db6311d4f"
+    },
+    {
+      "path": "repeat_pmsm_speed_probe.m",
+      "sha256": "683366d622f1f00fdf46affb2e8a73d33ae95d74faecc12abec374fdbb394a24"
+    }
+  ]
+}

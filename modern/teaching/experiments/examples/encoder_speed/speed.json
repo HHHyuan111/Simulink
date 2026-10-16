@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "contract": {
+    "kind": "same_run_three_speed_windows_shadow",
+    "counts_per_mechanical_turn": 10000,
+    "window_ticks": [
+      1,
+      2,
+      8
+    ],
+    "read_period_s": 5E-5,
+    "read_offset_s": 2.8875E-5,
+    "speed_period_s": 0.0001,
+    "event_step_s": 6.25E-8,
+    "rpm_per_count_step": [
+      120,
+      60,
+      15
+    ],
+    "firmware_commit": "48d6e86814ac6657b1313b4c92ef24c88f492e07",
+    "firmware_window_ticks": 2,
+    "firmware_history_depth": 8,
+    "source": "control_cycle_step在有效位置拍按foc_fs喂入speed_est_step；速度PI与测量宏不是该喂入频率",
+    "initialization": "本观测要求W+1个读取端点，前W个标无效并输出0；固件ready计数为W且历史初值0，不宣称启动逐位等价",
+    "scope": "同一物理轨迹的三路机械计数窗口差分，仅观测；不接速度PI、不加速度滤波、不模拟丢帧。8拍及更长为教学扩展，不能直接套用固件8槽历史缓存。"
+  },
+  "speed_control_input_max_error_rpm": 0,
+  "windows": [
+    {
+      "window_ticks": 1,
+      "window_s": 5E-5,
+      "rpm_per_count": 120,
+      "invalid_initial_samples": 1,
+      "valid_sample_count": 999,
+      "raw_speed_max_check_error_rpm": 0,
+      "quantization_rms_rpm": 49.680833688180321,
+      "window_error_rms_rpm": 1.0329460309431577,
+      "total_error_rms_rpm": 49.694407581545647,
+      "total_error_mean_rpm": -1.1707816081933811,
+      "decomposition_max_residual_rpm": 1.0658141036401503E-14,
+      "firmware_default_window": false
+    },
+    {
+      "window_ticks": 2,
+      "window_s": 0.0001,
+      "rpm_per_count": 60,
+      "invalid_initial_samples": 2,
+      "valid_sample_count": 998,
+      "raw_speed_max_check_error_rpm": 0,
+      "quantization_rms_rpm": 24.979261775132994,
+      "window_error_rms_rpm": 2.0558937441569896,
+      "total_error_rms_rpm": 25.064913226607313,
+      "total_error_mean_rpm": -2.0707816081933812,
+      "decomposition_max_residual_rpm": 3.5527136788005009E-15,
+      "firmware_default_window": true
+    },
+    {
+      "window_ticks": 8,
+      "window_s": 0.0004,
+      "rpm_per_count": 15,
+      "invalid_initial_samples": 8,
+      "valid_sample_count": 992,
+      "raw_speed_max_check_error_rpm": 0,
+      "quantization_rms_rpm": 6.01100196638918,
+      "window_error_rms_rpm": 8.1927768884982619,
+      "total_error_rms_rpm": 10.184585130790813,
+      "total_error_mean_rpm": -8.22078160819338,
+      "decomposition_max_residual_rpm": 0,
+      "firmware_default_window": false
+    }
+  ]
+}

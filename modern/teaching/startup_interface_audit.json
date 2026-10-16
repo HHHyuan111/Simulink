@@ -1,0 +1,174 @@
+{
+  "kind": "read_only_startup_interface_audit",
+  "generated_at": "2026-10-14 08:54:48",
+  "startup_implemented": false,
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "reference_manifest_sha256": "f977cfaa62d8722221573d9a648f28d8d7bc91f0f6a462c1e09e4488a70ef353",
+  "audit_script_sha256": "31dbf2969636b3c091c979ac21bd05b73a2f95d9c4c1a2b0a9e6f35d0be1d317",
+  "pi": {
+    "speed": {
+      "sid": "155",
+      "path": "PMSM_FOC_R2026a/PI Controller_w",
+      "inputs": 1,
+      "outputs": 1,
+      "enable_ports": 0,
+      "reset_ports": 0,
+      "integrator": "PMSM_FOC_R2026a/PI Controller_w/Discrete-Time\nIntegrator",
+      "external_reset": "none",
+      "initial_condition": "0",
+      "method": "Integration: Backward Euler",
+      "sample_time": "SampleTime"
+    },
+    "d_current": {
+      "sid": "439",
+      "path": "PMSM_FOC_R2026a/PI Controller_w1",
+      "inputs": 1,
+      "outputs": 1,
+      "enable_ports": 0,
+      "reset_ports": 0,
+      "integrator": "PMSM_FOC_R2026a/PI Controller_w1/Discrete-Time\nIntegrator",
+      "external_reset": "none",
+      "initial_condition": "0",
+      "method": "Integration: Backward Euler",
+      "sample_time": "timing_control_sample"
+    },
+    "q_current": {
+      "sid": "453",
+      "path": "PMSM_FOC_R2026a/PI Controller_w2",
+      "inputs": 1,
+      "outputs": 1,
+      "enable_ports": 0,
+      "reset_ports": 0,
+      "integrator": "PMSM_FOC_R2026a/PI Controller_w2/Discrete-Time\nIntegrator",
+      "external_reset": "none",
+      "initial_condition": "0",
+      "method": "Integration: Backward Euler",
+      "sample_time": "timing_control_sample"
+    }
+  },
+  "embedded_sources": [
+    {
+      "chart": "输出延迟/CCR预装载",
+      "file": "D:\\simulink\\modern\\timing\\timing_pwm.m",
+      "sha256": "27ce06a6e3091ad512bf4c8a25554d850cc2869d46f3a1c76597348d25d7d031",
+      "matches": true
+    },
+    {
+      "chart": "Universal Bridge/续流",
+      "file": "D:\\simulink\\modern\\deadtime\\bridge_freewheel.m",
+      "sha256": "b42eaf2a701d10124cb07c540de6628ce7671b550413b6c425dac25930236503",
+      "matches": true
+    },
+    {
+      "chart": "Universal Bridge/门极死区",
+      "file": "D:\\simulink\\modern\\deadtime\\gate_deadtime.m",
+      "sha256": "d42bba99ada3e367f4320a620f5e4638edc84bbeba185578a0c5239524c08b7f",
+      "matches": true
+    }
+  ],
+  "ideal_expressions": [
+    "u(7)*(2*(u(1)-u(2))-(u(3)-u(4))-(u(5)-u(6)))/6",
+    "u(7)*(2*(u(3)-u(4))-(u(1)-u(2))-(u(5)-u(6)))/6",
+    "u(7)*(2*(u(5)-u(6))-(u(1)-u(2))-(u(3)-u(4)))/6"
+  ],
+  "power": {
+    "ideal_all_off_phase_V": [
+      0,
+      0,
+      0
+    ],
+    "detailed_all_off_phase_V": [
+      -16,
+      8,
+      8
+    ],
+    "detailed_all_off_diode_paths": [
+      -1,
+      1,
+      1
+    ],
+    "open_circuit_emf_V": [
+      0,
+      2.4494897427831779,
+      -2.4494897427831779
+    ],
+    "all_off_is_not_zero_voltage": true,
+    "neutral_duty_is_not_power_off": true
+  },
+  "ccr": {
+    "stop_reset_input_present": false,
+    "write_diagnostic": [
+      2580,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      6.25E-6,
+      6.25E-6,
+      6.25E-6
+    ],
+    "next_uev_diagnostic": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      2.1125000000000005E-5,
+      6.25E-6,
+      6.25E-6,
+      6.25E-6
+    ],
+    "applied_threshold_s": [
+      6.25E-6,
+      6.25E-6,
+      6.25E-6
+    ],
+    "pending_write_survives_request_change": true
+  },
+  "gate_all_off_cancels_armed_rises": true,
+  "firmware_files": [
+    {
+      "file": "D:\\AxDr_L\\firmware\\AxDr_App\\User\\drive\\drive.c",
+      "sha256": "17f3bead175fe10098801d032b9ff7c2207c8e0ce7774bda713879d784bdc4db"
+    },
+    {
+      "file": "D:\\AxDr_L\\firmware\\AxDr_App\\User\\drive\\drive_reset.c",
+      "sha256": "749e286b20ea525d96c211f0995a531ceb9f167813dbf60aaef21dff65260f1e"
+    },
+    {
+      "file": "D:\\AxDr_L\\firmware\\AxDr_App\\User\\drive\\drive_pwm.c",
+      "sha256": "db2e6a886120215ad7df3b728afce33af19e45cdf252d996bb4173fbde939af6"
+    },
+    {
+      "file": "D:\\AxDr_L\\firmware\\AxDr_App\\User\\bsp\\target_pwm.c",
+      "sha256": "8a63c69bba2ab76b37b1a4ec6aa5bdc5c89cb511031e3b8da6bb47f1d0e63962"
+    },
+    {
+      "file": "D:\\AxDr_L\\firmware\\AxDr_App\\User\\algorithm\\control_pid.c",
+      "sha256": "84d29edfbaa0d1d57689902d1cf29ebbcaf7c295fdf8a7c13a8981bdb2fb6d86"
+    },
+    {
+      "file": "D:\\AxDr_L\\firmware\\AxDr_App\\User\\app\\control_cycle.c",
+      "sha256": "87e6671a6189934c25adeed6263a5679b4ebebb79c1e222663acfda9ed4a3f38"
+    },
+    {
+      "file": "D:\\AxDr_L\\firmware\\AxDr_App\\User\\motor\\foc_drv.c",
+      "sha256": "8d91917f355c46cb64cac7a1e02d6d0d19849173f4433a4dad2a717613a357b9"
+    }
+  ],
+  "firmware_head": "48d6e86814ac6657b1313b4c92ef24c88f492e07",
+  "source_files_preserved": true,
+  "interface_audit_passed": true,
+  "limitations": [
+    "No startup subsystem installed; no closed-loop startup simulation performed.",
+    "Bridge check uses the existing static non-salient PMSM freewheel approximation; no hardware power-off claim.",
+    "Firmware hashes record inspected local files; the simulator is not a cycle-exact firmware port."
+  ]
+}

@@ -1,0 +1,696 @@
+{
+  "kind": "minimum_startup_v1",
+  "folder": "D:\\simulink\\modern\\startup\\runs\\20261015_121123_288_dc9824d9-2fec-4d24-ad72-533b6ceb580c",
+  "status": "completed",
+  "times_ms": [
+    0,
+    2,
+    3,
+    6
+  ],
+  "enabled": true,
+  "window_on": true,
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "reference_sha256": "f977cfaa62d8722221573d9a648f28d8d7bc91f0f6a462c1e09e4488a70ef353",
+  "source_files": [
+    {
+      "path": "startup/analyse_pmsm_startup.m",
+      "sha256": "892e810760e6bceafd7a89a2e02ab5d4057ad730efd5e4414cde1a60a3ffe573"
+    },
+    {
+      "path": "startup/close_pmsm_startup.m",
+      "sha256": "80d3fdb1b68d2695830cf360c53e24a76f2644336f3e59978b3bd1125cc0e077"
+    },
+    {
+      "path": "startup/open_pmsm_startup.m",
+      "sha256": "9f01a1de444d2b85e5ac1246e03b1dec5e7d9a122cec8638d012f6ac28908fc4"
+    },
+    {
+      "path": "startup/pmsm_startup_mode.m",
+      "sha256": "6ff99552577cba6cf0d07b8ae56acf0ebb545103b8d15abbd79dbc291d7687b1"
+    },
+    {
+      "path": "startup/pmsm_startup_model.m",
+      "sha256": "aef15d40c309bdd3e4714d82058ff8194dc205ee132d0f0bf2722ac419877432"
+    },
+    {
+      "path": "startup/run_pmsm_startup.m",
+      "sha256": "0380e1186dadd1fd97115270f2e58e5f9af7ba891153413c58e33107d22efad9"
+    },
+    {
+      "path": "startup/startup_gate.m",
+      "sha256": "7e541244581088e45635e560d8709e041a5e8ef1c886c82115bf6a62cb828bde"
+    },
+    {
+      "path": "startup/startup_pwm.m",
+      "sha256": "cbfd75063ab3da27a01c2459f4cf7114434bf6e09060398171e21091f802a586"
+    },
+    {
+      "path": "startup/startup_step.m",
+      "sha256": "ed92b3eab10d3b1250f4e2ed34d1846c251e38d5d094e25b62d4086908546183"
+    },
+    {
+      "path": "startup/validate_pmsm_startup.m",
+      "sha256": "23c3f33b2bc0d6a8909623523810bd75b5c25375845241e57cb0871da842559e"
+    },
+    {
+      "path": "startup/validate_startup_components.m",
+      "sha256": "149d2e47a5bbcc8b2ecaed11e9bf6d6ca4fbeee6fa49a27e6509f575cbcb0065"
+    },
+    {
+      "path": "startup/validate_startup_legacy.m",
+      "sha256": "2fe14ad961fb3ce85b8c3ed47908f466d373cc50fd697196603ef1293b146fdb"
+    },
+    {
+      "path": "teaching/add_teaching_controls.m",
+      "sha256": "89641da68f73dd6144f573def31f0ff486198b4341bcd44a4248347048e69ed5"
+    },
+    {
+      "path": "teaching/audit_pmsm_startup_interfaces.m",
+      "sha256": "31dbf2969636b3c091c979ac21bd05b73a2f95d9c4c1a2b0a9e6f35d0be1d317"
+    },
+    {
+      "path": "teaching/diagnose_observation_rates.m",
+      "sha256": "126c152285f55e9b92188786f977101693832befe4d609a2594852aecc310a50"
+    },
+    {
+      "path": "teaching/export_pmsm_deadtime_spectrum.m",
+      "sha256": "eac7ecea2830006fd6d681e9e92f2ede2ada939b33d921a0874ed00021568382"
+    },
+    {
+      "path": "teaching/export_pmsm_experiment_examples.m",
+      "sha256": "cd5884b429fc9c5cd14e7318c7aefafdfdee31c3d2be3a4f90fbf90cd93a7967"
+    },
+    {
+      "path": "teaching/export_pmsm_experiment_examples_stage2.m",
+      "sha256": "90ad8063a1283f989092c05f7bd9029000cf56c8bfb52114fcb5f55587de898a"
+    },
+    {
+      "path": "teaching/export_pmsm_noise_spectrum.m",
+      "sha256": "74b01e808101c10e5b229e4878b5e67021ef10891fdf0cfb6b6bb56094f12490"
+    },
+    {
+      "path": "teaching/extend_observation_model.m",
+      "sha256": "639757893697ff487338798cc97a41efc914bdd8850c56d6dee16fcaafaf9092"
+    },
+    {
+      "path": "teaching/finalize_observation_record.m",
+      "sha256": "29359976a97837d109a75d1dc1a087bf6012f595c8c255c6b374f70ca6b1e1e8"
+    },
+    {
+      "path": "teaching/inspect_observation_stage.m",
+      "sha256": "a44ffa90ba0a493bee0020b3b807ff7ced1de3fd109b55066649b03651e41520"
+    },
+    {
+      "path": "teaching/observation_timing.m",
+      "sha256": "7ced660731e9bb223b1a991b2144b3e0e2c4e7fa142c89e7f4858e5794eec7f3"
+    },
+    {
+      "path": "teaching/open_pmsm_control_scope.m",
+      "sha256": "108554f84ed1fb2dd1bf4cb5fafc0517845996e2b9a5e92e49041bc3bed38f09"
+    },
+    {
+      "path": "teaching/open_pmsm_current_sampling_scope.m",
+      "sha256": "75bdf03891acc2a38cec8f168deb0ed540c2ce25a3e830ba4fa468b7022c54f1"
+    },
+    {
+      "path": "teaching/open_pmsm_electrical_scope.m",
+      "sha256": "d80e56f2ca08d885e7bc5a13bdd0de05360880730aacd6d479dfc03f1311b975"
+    },
+    {
+      "path": "teaching/open_pmsm_experiments.m",
+      "sha256": "21c6b9aaabbe0c93b92f27eed2a3731bb6c3c82b6e352ee02a6854df1f5cda81"
+    },
+    {
+      "path": "teaching/open_pmsm_noise_spectrum.m",
+      "sha256": "025adba737fcd5e9eb6171e8dcda11433e504ff38aad218c416793737b99ca8f"
+    },
+    {
+      "path": "teaching/open_pmsm_pwm_scope.m",
+      "sha256": "2adea786508fe14c8b5fe8243689e9560060732b4ff267d5a9672c8760ab3d16"
+    },
+    {
+      "path": "teaching/open_pmsm_sampling_metrics.m",
+      "sha256": "ee69686ba996d221186b74352a3b831127318b04df9da783f7e26574a252e91a"
+    },
+    {
+      "path": "teaching/open_pmsm_settings.m",
+      "sha256": "6259cce175d1103754a636010e1971ba6498bd9ea13260b88a1e0c18b343f300"
+    },
+    {
+      "path": "teaching/open_pmsm_spectrum.m",
+      "sha256": "a063690014138e315ec6069fc8d10db31e3df459b76d73a6ca687c84bde8a0b4"
+    },
+    {
+      "path": "teaching/open_pmsm_teaching.m",
+      "sha256": "929d90c80207d80f4b93e65f2ea80e08dec10afcc0c8edf4526956c53c2cc5b2"
+    },
+    {
+      "path": "teaching/open_pmsm_vector_lesson.m",
+      "sha256": "680c24d5100d7e5c4e029e6262f17f3ced8f018d67d7399a01c94e2a650f56c0"
+    },
+    {
+      "path": "teaching/plot_observation_report.m",
+      "sha256": "7158cb0e090cc8b99664a0f564c869b5fde3a8e2c1268181c17c158c2cd61f73"
+    },
+    {
+      "path": "teaching/plot_pmsm_deadtime_pair.m",
+      "sha256": "ecb5cba0c68654c83c83ac36a88cb144871ca88c98857f77cd851c1703ec5618"
+    },
+    {
+      "path": "teaching/plot_pmsm_encoder.m",
+      "sha256": "890806b74bc28efed0e64d4ef033dcfe69ebfe057f80fc9f77df8138227d4f35"
+    },
+    {
+      "path": "teaching/plot_pmsm_encoder_speed.m",
+      "sha256": "1882e83d11f0a057055e28a88bbef0a8f53e7f662e481652e7e6c8d055e235b7"
+    },
+    {
+      "path": "teaching/plot_pmsm_experiment.m",
+      "sha256": "3934519949c0177736895e2d45b956671e304dde3d08bb0cb09c81d00db03abb"
+    },
+    {
+      "path": "teaching/plot_pmsm_low_speed_comp.m",
+      "sha256": "178a58d362321b402e1c85642bda39c7cb67423fd5cddc741b4dd0fb5bc7e591"
+    },
+    {
+      "path": "teaching/plot_pmsm_measurement_lesson.m",
+      "sha256": "a1c71217b9770f4c286430a5b28eb9c3e64250901fd03528d8f6c70c0b327d90"
+    },
+    {
+      "path": "teaching/plot_pmsm_mechanism.m",
+      "sha256": "e8cb752637a98ced50c040f48905c970650cc45af8fdd3820c94a5db6ea323a9"
+    },
+    {
+      "path": "teaching/plot_pmsm_noise_filter.m",
+      "sha256": "ca97f345a6e53f80ebe019b1c006107c2b84f2e5cd59905b41e1e91cfc3d3ffb"
+    },
+    {
+      "path": "teaching/plot_pmsm_noise_spectrum.m",
+      "sha256": "a89bedf757ca0f5006faac693a0aee5555ca4d4ff1f876cfd612fba8849499f5"
+    },
+    {
+      "path": "teaching/plot_pmsm_sampling_window.m",
+      "sha256": "7a196db952b45f605182b2be32c4699cbf2c59a766ae0bdf8f8684c7450c2755"
+    },
+    {
+      "path": "teaching/plot_pmsm_spectrum.m",
+      "sha256": "526bf521bcd25245633fd0b99c7779f11fb5ccd49c06286422afd2a22b94c7c8"
+    },
+    {
+      "path": "teaching/plot_pmsm_speed_feedback.m",
+      "sha256": "ec30c08819596756309f33c0743c32efb4f3356342ddf4ff2e907c659e4a6e3f"
+    },
+    {
+      "path": "teaching/plot_pmsm_speed_filter.m",
+      "sha256": "03a53e2cde283ab6d1f861aaad28248e1df1a79a36c2a94e65101e8ab9e30938"
+    },
+    {
+      "path": "teaching/plot_pmsm_timing_deadline.m",
+      "sha256": "1e594b9974cc8dc323257d508678c062f2018ce17297a6edb9df70ef553def1a"
+    },
+    {
+      "path": "teaching/plot_pmsm_timing_events.m",
+      "sha256": "81bbf0d8464c945b270393932e0158735b00788646decae7540761548cafbdac"
+    },
+    {
+      "path": "teaching/pmsm_check_switches.m",
+      "sha256": "f250045abfc9b760bfc001988b47c08cc01f7c2c1733d9892c415d1cd6196bed"
+    },
+    {
+      "path": "teaching/pmsm_config.m",
+      "sha256": "c019b5322ce22ae5b663b025fc4edab8da881cdfe526750f65bf458a52124427"
+    },
+    {
+      "path": "teaching/pmsm_current_sampling_metrics.m",
+      "sha256": "f8fb1b737ea1a2e97668e8b67a536cc6ba6bf371f0dd6647472f4d0b1348a844"
+    },
+    {
+      "path": "teaching/pmsm_current_spectrum.m",
+      "sha256": "890fdd1f0b4ce0d50a2a7f762e688a4334c0a22fad39e2b7fd083129be91a027"
+    },
+    {
+      "path": "teaching/pmsm_deadtime_pair_alignment.m",
+      "sha256": "7fd141413d92268f83be6fb72a22e362762c48758872d1818873c48799f94e0a"
+    },
+    {
+      "path": "teaching/pmsm_encoder_analysis.m",
+      "sha256": "13eb1faf74e71b6ea022cf383548976d8fd1cdcb67320f0ff6e82a8bd39491ed"
+    },
+    {
+      "path": "teaching/pmsm_encoder_model.m",
+      "sha256": "d47ae238b06f56579136d2b1b147b5d12c43e2103fcc179fbf5369769f84dfd5"
+    },
+    {
+      "path": "teaching/pmsm_encoder_speed_analysis.m",
+      "sha256": "6a16b6f24e0d070c03812bbc5789aff7c4d2f5f5ce85cbeaaa9f5a42a6c3b8dd"
+    },
+    {
+      "path": "teaching/pmsm_encoder_speed_model.m",
+      "sha256": "8042c7e337d3ca80c36471bd2f7a5456c147b04c48a412fb08bbb3594cb9cad7"
+    },
+    {
+      "path": "teaching/pmsm_encoder_speed_view.m",
+      "sha256": "89854263b946c23c3c3ced394357a296114f38d6c09be5987aa08d8004eb37f8"
+    },
+    {
+      "path": "teaching/pmsm_encoder_view.m",
+      "sha256": "9a43fea9504c5081ebe31ffbf5273e53f8218fd42355c7a17bdee32dba9dd3bc"
+    },
+    {
+      "path": "teaching/pmsm_experiment_catalog.m",
+      "sha256": "e66e4c24d10cea8cad78f59305f263f09e5a84a3e6dd144f43a172a27c5ed463"
+    },
+    {
+      "path": "teaching/pmsm_experiment_plan.m",
+      "sha256": "13b330a4df48ab29c7864b2f8bd46a8522e4fdfcf5ed225ff23ca84a95911052"
+    },
+    {
+      "path": "teaching/pmsm_experiment_verify.m",
+      "sha256": "20c4f0910dd2ffceb31a92c2f00043eda8f2e434520170a7f827008861265629"
+    },
+    {
+      "path": "teaching/pmsm_noise_filter_analysis.m",
+      "sha256": "8e559064e8e046ff91afa146fbcbdd9c58e0617cd97bbda4b0601bec454c63c9"
+    },
+    {
+      "path": "teaching/pmsm_noise_psd.m",
+      "sha256": "e67670cad15d10cd076512bcc9d380008335942f33f88349c012d252f6a92934"
+    },
+    {
+      "path": "teaching/pmsm_parameter_info.m",
+      "sha256": "e19694ec5f47fb5cb1917c537a2314b2fcb8fa393674af5fe1d107ae04d96088"
+    },
+    {
+      "path": "teaching/pmsm_plot_style.m",
+      "sha256": "60619d54cc27fa1b9e495816877cec3ed6a12f024bf9f35da6dba5652d58ccfc"
+    },
+    {
+      "path": "teaching/pmsm_reference.m",
+      "sha256": "f2bd66d3eb7fa0c999957412cf33e5f1d6fa680a288e58bb54071f939175e2fd"
+    },
+    {
+      "path": "teaching/pmsm_render_encoder_run.m",
+      "sha256": "1e2f90080e1fa4754f31592a84fc095db0ef7592c593efed135fdf1a8ebc87ec"
+    },
+    {
+      "path": "teaching/pmsm_render_encoder_speed_run.m",
+      "sha256": "99fad19d9ddda2271c1f61265217a16caa17af3b7d49c01c22bff107ea1072f1"
+    },
+    {
+      "path": "teaching/pmsm_render_noise_filter_run.m",
+      "sha256": "9dbdb6a26930a91c2b5736617799f5a0ea645b9e37516c30aa7971b59d6dabc6"
+    },
+    {
+      "path": "teaching/pmsm_render_sampling_window_run.m",
+      "sha256": "ddb4122f42b4d21aedcc7c840d600adb21ae80c9c25304195b39abb0b681ba9b"
+    },
+    {
+      "path": "teaching/pmsm_render_speed_feedback_run.m",
+      "sha256": "e4c17a8686b3bedf09fa058b79435c165129ad4467e9bdd39bffd279ac468a23"
+    },
+    {
+      "path": "teaching/pmsm_render_speed_filter_run.m",
+      "sha256": "87e4c2ce80013b0519b6295aa88e2975b28066f3cfd3c216e98153ac8aa3788f"
+    },
+    {
+      "path": "teaching/pmsm_render_timing_deadline_run.m",
+      "sha256": "b151f5a7c1ff7147b054ebc6804fcbc2729f87436ae1327a81df139bbe89e43e"
+    },
+    {
+      "path": "teaching/pmsm_render_timing_events_run.m",
+      "sha256": "551a6d2652d75cad985020dcc316211d1e582e23a948ec0b2b5595b13c881780"
+    },
+    {
+      "path": "teaching/pmsm_sampling_window_analysis.m",
+      "sha256": "d54c4b8186eaa4a4bc6fce9bfeaf1937ff3e969fde9d1a631293600446e0b8c6"
+    },
+    {
+      "path": "teaching/pmsm_speed_feedback_analysis.m",
+      "sha256": "89e3ae84fb9a5746d4bba54707cf79e77944fa081ccf554ca1f770c985a203cd"
+    },
+    {
+      "path": "teaching/pmsm_speed_feedback_model.m",
+      "sha256": "ed508a884e86741aef2cf296276a91c8da4ef5a05159bc62c001b1082aacdded"
+    },
+    {
+      "path": "teaching/pmsm_speed_feedback_view.m",
+      "sha256": "af49254650d9f9f73763b3419ee78f5aadb8aacd0af67e2ef21a3848694ee517"
+    },
+    {
+      "path": "teaching/pmsm_speed_filter_analysis.m",
+      "sha256": "bdab01efaf331b034b244f6359e4a7e280cde1db2dc59655d886a4325cdd9877"
+    },
+    {
+      "path": "teaching/pmsm_speed_filter_model.m",
+      "sha256": "bebb595989da44db22be36b383a8eff386c67c7a3a6abc3328975b270b125f95"
+    },
+    {
+      "path": "teaching/pmsm_speed_filter_view.m",
+      "sha256": "627ab7b352829364c807cc8817a5115a3949c3e0edb1fb38aeb59cd9b6c87e4e"
+    },
+    {
+      "path": "teaching/pmsm_switch_catalog.m",
+      "sha256": "fc829609bdfaeab089a8698010ad3e73a278283aa53a319c8e1e4ab5073f4cbe"
+    },
+    {
+      "path": "teaching/pmsm_timing_deadline_analysis.m",
+      "sha256": "67ce76116e7d3fb82ad32121034d848d96b385a2f898cfe3e89dc38d6b0653dd"
+    },
+    {
+      "path": "teaching/pmsm_timing_events_analysis.m",
+      "sha256": "f5617baeef752f8cc84a9981f1975da2be429aebff34cf555a6054f328c4c701"
+    },
+    {
+      "path": "teaching/preview_pmsm_current_sampling.m",
+      "sha256": "d70ed815f8aebd86821aff4ec55bd7c7c5624fe1a5f717973e6cdd03928089b1"
+    },
+    {
+      "path": "teaching/refresh_observation_gui.m",
+      "sha256": "65a2d0ab21de64ed2d9304dfcfd88eb445711a9821c31f38d290d90f4e35ccff"
+    },
+    {
+      "path": "teaching/repeat_pmsm_experiment.m",
+      "sha256": "e6093547a726b354861d14e78fe0d347e1c411b6ec29d1e3fc7ac7d7d32758a6"
+    },
+    {
+      "path": "teaching/run_observation_demo.m",
+      "sha256": "e80b7ab2a2ed5a6981e7bc2c43d9ec0d118b9b9dbd0f88198f41ba60296f1741"
+    },
+    {
+      "path": "teaching/run_pmsm_experiment.m",
+      "sha256": "ebab26ae55bfb4d9a55e492b534cccba3d6731dbfb46b04894e637adeff6b6d3"
+    },
+    {
+      "path": "teaching/run_teaching_demo.m",
+      "sha256": "29486e27b307b1e0eada294dfcaf09bb2fac8aa7434122aaa9d5257d5e32914a"
+    },
+    {
+      "path": "teaching/teach_hash.m",
+      "sha256": "5896fb748f5833b59c438c079f0922f321882587bea343dcaf76299aca30b666"
+    },
+    {
+      "path": "teaching/teach_settings.m",
+      "sha256": "c6fddf33bf1c1d1b1a011e3d3597a976863b46c1bf3452a349b8b47be83d4cc7"
+    },
+    {
+      "path": "teaching/teach_snapshot.m",
+      "sha256": "adfec0bdb37762e6f42710d55d8c16dbc1c5381d4d683a29a32d93ad3e894a9e"
+    },
+    {
+      "path": "teaching/teach_values.m",
+      "sha256": "1bf38186e90d1cd49e8cee71a3168674490ffd8aed8a1192b6f58a2399deb6f1"
+    },
+    {
+      "path": "teaching/teach_writejson.m",
+      "sha256": "9e61b1f3f47c599a5b676b6a27884aa7bb65273bb708ae4b684778cadf489951"
+    },
+    {
+      "path": "teaching/teaching_model_init.m",
+      "sha256": "97a1f949b8aaa18ca7b859692d8cb692236b236ee9ea436654d64fdf6a7d3cc3"
+    },
+    {
+      "path": "teaching/validate_observation_model.m",
+      "sha256": "9788364b702a7d292b28f415d4ce6c771a6cda69ffd9dcea0a99e0d53875d04a"
+    },
+    {
+      "path": "teaching/validate_parameter_settings.m",
+      "sha256": "20f76c99b80a498cc817c434298c5df69a271fe8975a05e148e37f72cb720c16"
+    },
+    {
+      "path": "teaching/validate_pmsm_current_sampling_metrics.m",
+      "sha256": "e5997fffbeec2c506e7e6d9fa24d2ebbc503a0ea7934d0699d289f600e5e3dd6"
+    },
+    {
+      "path": "teaching/validate_pmsm_deadtime_pair.m",
+      "sha256": "0f6c53ec230f5907ee731cabccbe1b02a2129decf336dcc62cedd2b853fea9f4"
+    },
+    {
+      "path": "teaching/validate_pmsm_encoder.m",
+      "sha256": "9ef8713cd3a1e4258a43e0aaff4195f696da581fdfbda360654963fe52106289"
+    },
+    {
+      "path": "teaching/validate_pmsm_encoder_speed.m",
+      "sha256": "85fb0c006a83bf6d72082e9c4d91371c59542ef5f23e96c2f53912887d852e6a"
+    },
+    {
+      "path": "teaching/validate_pmsm_experiment_reproducibility.m",
+      "sha256": "2953d2ddd80b587b0ecae68c52c6ad6788ce3d1c4bfa4f55bc277a51e96b5ec7"
+    },
+    {
+      "path": "teaching/validate_pmsm_experiments.m",
+      "sha256": "d991a8c763de33f009eb013ed61d1083ca3cd31795f5228c9b1c1bd9300cd4c1"
+    },
+    {
+      "path": "teaching/validate_pmsm_experiments_stage2.m",
+      "sha256": "c8ab881ff266f589dfe0808b631b72ed7d851b07af0f89d77c494fcadaf7eb93"
+    },
+    {
+      "path": "teaching/validate_pmsm_low_speed_comp.m",
+      "sha256": "0098db6ed34ddc47b95cf2b765abece1fe10111e6678dcdcaa30ffc7bf49d40f"
+    },
+    {
+      "path": "teaching/validate_pmsm_noise_filter.m",
+      "sha256": "1f1ec8b836c8c90b16e260dc443e3ebef713005eb52cd8710fb06a9f5d0ed6ac"
+    },
+    {
+      "path": "teaching/validate_pmsm_noise_spectrum.m",
+      "sha256": "499296cec4989a3a6df644af99982c48b1847d43306f5b230a1c312a6373c0fd"
+    },
+    {
+      "path": "teaching/validate_pmsm_reference.m",
+      "sha256": "db6e8a2a6cd3826709c318d02b34f4746aa199c2db56500f7e21e5d4e4c1910b"
+    },
+    {
+      "path": "teaching/validate_pmsm_sampling_window.m",
+      "sha256": "7cf3279bc4419cf374011a574fd6984baf2a41672b3e4b926772cfd99053341f"
+    },
+    {
+      "path": "teaching/validate_pmsm_spectrum.m",
+      "sha256": "c231f7069f6724cca10f4ddb1ffb40385de993c60705888d41555d5588e0afae"
+    },
+    {
+      "path": "teaching/validate_pmsm_speed_feedback.m",
+      "sha256": "c8c0ab0e367fc287f8420c800c93d0cabc330dece1069891c9576e485031420b"
+    },
+    {
+      "path": "teaching/validate_pmsm_speed_filter.m",
+      "sha256": "ae08599a6e1e8f06929d968fe8cff10c434f2dd3129bb94b443b002a2a2e9182"
+    },
+    {
+      "path": "teaching/validate_pmsm_timing_deadline.m",
+      "sha256": "197a62961193586d53d37d7e45d5c3c81ccca00e7fffec02c8d6627ed41db5bd"
+    },
+    {
+      "path": "teaching/validate_pmsm_timing_events.m",
+      "sha256": "5e8357bb455682bcee99d60ab2e7b6cb6b73c5c8465f8de1554a1449f38c0c85"
+    },
+    {
+      "path": "teaching/validate_teaching_controls.m",
+      "sha256": "48dad442ae09da95f983ea514b713b9a4969adaef2f4dec55044218f8dd0a048"
+    },
+    {
+      "path": "teaching/verify_observation_saved.m",
+      "sha256": "3770b9e25ff3aa4f985825c46b8a4e068a01922fce1834462f9e7605a5125232"
+    },
+    {
+      "path": "teaching/verify_saved_teaching_controls.m",
+      "sha256": "aeb8deab41c90741b5ead2d4661668543b46cbae1340c9c7e534f16975b2a188"
+    },
+    {
+      "path": "timing/build_timing_stage3.m",
+      "sha256": "cbbf06fa7280dcd20c92ff4499701b84581380936d0a82454fd6ed80a918d610"
+    },
+    {
+      "path": "timing/diagnose_timing.m",
+      "sha256": "772604fe775e1d7f23464abc5a22df18e981e4f269fe9a7fa798f774cd2b4fdf"
+    },
+    {
+      "path": "timing/finalize_timing_stage3.m",
+      "sha256": "2f99107b7381e55cfc99eef06a932b82e12d83a2e47ea99a999cda888fafe031"
+    },
+    {
+      "path": "timing/inspect_timing_source.m",
+      "sha256": "fefbf438a8162be9e0da03ade518ea34d23bd9d74b16e30ece5e0f3d7a360658"
+    },
+    {
+      "path": "timing/plot_timing_report.m",
+      "sha256": "4ddff5aa102d39ed4384de55005cc70480d031d270885035a25abfd974671c7b"
+    },
+    {
+      "path": "timing/publish_timing_stage3.m",
+      "sha256": "35b47a5b57126c387247a6d9d912b5588da7da0054c7085ccbfe50a02b0050d1"
+    },
+    {
+      "path": "timing/refresh_timing_gui.m",
+      "sha256": "585bd503c64b514a692f78e816b06dd0d7449a3cde8ecb4ab9c9dce686b198e8"
+    },
+    {
+      "path": "timing/release_timing_gui.m",
+      "sha256": "4cc5003bc6848d29fc26e972e802442f32b445db948e0a0a785dd869ac605e87"
+    },
+    {
+      "path": "timing/timing_adc.m",
+      "sha256": "33dfe477ba07c979db92d5700b61d8ddb6661b6553b22dbc6fc25215549fd5a4"
+    },
+    {
+      "path": "timing/timing_model_init.m",
+      "sha256": "68339d6f3e1212ec7c8ae7587814299da36a1f0b6749733a23b6803eb18bef9f"
+    },
+    {
+      "path": "timing/timing_pwm.m",
+      "sha256": "27ce06a6e3091ad512bf4c8a25554d850cc2869d46f3a1c76597348d25d7d031"
+    },
+    {
+      "path": "timing/validate_timing_stage3.m",
+      "sha256": "e582dfbc537203180719032e0b57ab78f37d4ed1dd31268df2954fb422c4c6b1"
+    },
+    {
+      "path": "deadtime/bound_deadtime_logs.m",
+      "sha256": "758205b8d76a8fa7b7c21d4688e151fbe8b772c642f89a327c8d4d8d109b3a8c"
+    },
+    {
+      "path": "deadtime/bridge_freewheel.m",
+      "sha256": "b42eaf2a701d10124cb07c540de6628ce7671b550413b6c425dac25930236503"
+    },
+    {
+      "path": "deadtime/build_deadtime_stage4.m",
+      "sha256": "4d25f7e9663ca02a503115393c847969743b600d8de538f8bcfd80e92da6b309"
+    },
+    {
+      "path": "deadtime/build_readable_compensation.m",
+      "sha256": "dece7eb0b4bbd1cb276523f51bb0ec8a3f3e1e6d674675de0a19f5430a273ba3"
+    },
+    {
+      "path": "deadtime/build_teaching_reports.m",
+      "sha256": "80687fdde827cf8937b59f270c4e1823496c54144b687bf097e72b49e0b9aca8"
+    },
+    {
+      "path": "deadtime/check_low_deadtime_reference.m",
+      "sha256": "d12d21804bc176e2a1e605c15a7e6017bbe64e24ee1d52742291d5a99522bee0"
+    },
+    {
+      "path": "deadtime/compare_deadtime_amplitude.m",
+      "sha256": "17975f0b4a9439ac1bd83daf3b11818597cdbfec6b6669d90f3c0d835551109b"
+    },
+    {
+      "path": "deadtime/compare_deadtime_hysteresis.m",
+      "sha256": "93ff0ae72a494d1835376b321cdd9b185790a50f30a84591e57585024a7d2f7f"
+    },
+    {
+      "path": "deadtime/deadtime_comp.m",
+      "sha256": "96c8b1c32fa159425a88218adb044c510a81a0592a528b9eafa80adeceaba3f7"
+    },
+    {
+      "path": "deadtime/deadtime_metrics.m",
+      "sha256": "3077b5d1d759d7bac5859e91da507d568361081a2cee33351b26bdb1571260bd"
+    },
+    {
+      "path": "deadtime/deadtime_model_init.m",
+      "sha256": "d3f24a848ceb4dc709bfcffd838fba708fc5e326e5db8f25ff3502dcc8ec59bf"
+    },
+    {
+      "path": "deadtime/diagnose_deadtime_zero.m",
+      "sha256": "ffddc69f40afbb28055b1a3104d67acedc9777d04a7b76fee4a78679ce4c64b4"
+    },
+    {
+      "path": "deadtime/finalize_deadtime_stage4.m",
+      "sha256": "021873bb03e82a9771282c433edff21daa3607640d32bf6d85f2c776f080f555"
+    },
+    {
+      "path": "deadtime/finalize_teaching_reports.m",
+      "sha256": "a6835a6fe9172a8d4daf64e7b1a38be645983ad0f1154e5f8d94a3a7f7ecaf20"
+    },
+    {
+      "path": "deadtime/gate_deadtime.m",
+      "sha256": "d42bba99ada3e367f4320a620f5e4638edc84bbeba185578a0c5239524c08b7f"
+    },
+    {
+      "path": "deadtime/inspect_deadtime_source.m",
+      "sha256": "4c31fe16f6f4e14e9feae457239bf0b621556ee4037b8b2f8c6514f592e8b96b"
+    },
+    {
+      "path": "deadtime/plot_deadtime_report.m",
+      "sha256": "0b49a6bbd564bfa117ac7e365b33b6eade6f14498725d5a40cb6562a8537c293"
+    },
+    {
+      "path": "deadtime/plot_three_phase_lesson.m",
+      "sha256": "e048e206e7e31b77b617f671d9fd9c2737c0614b0c87b8af7d4f511ebfbf0561"
+    },
+    {
+      "path": "deadtime/publish_deadtime_stage4.m",
+      "sha256": "78582717de3d3f640bccb8f0eb38b779939c3b5ea710ad4dc66acd43cc272e7e"
+    },
+    {
+      "path": "deadtime/publish_readable_compensation.m",
+      "sha256": "b4a754c3b3d1414818b0cb885114d57df5f16dd41b3aa4b2e2d2d5929c0d97f0"
+    },
+    {
+      "path": "deadtime/run_deadtime_case.m",
+      "sha256": "27340b05d48c53fb196ab6c7587fb08f7c9c05734a648654bcbdf682f0745bc2"
+    },
+    {
+      "path": "deadtime/run_deadtime_demo.m",
+      "sha256": "2e7d3c2d226e629caedf4e078c9fb9ad05427b577b177d876adb72ee188210f4"
+    },
+    {
+      "path": "deadtime/test_deadtime_components.m",
+      "sha256": "37f77c6c8414864052cb012df091b9985892d6564601fd5d8da7a259bae4f918"
+    },
+    {
+      "path": "deadtime/validate_deadtime_probes.m",
+      "sha256": "1135f1381cf36098a0fbd98d27a0772ab59eb6ef4cc4562334ba4775bcd13e78"
+    },
+    {
+      "path": "deadtime/validate_deadtime_stage4.m",
+      "sha256": "74c524ee0eaca07043fdc8ab457eef54a0b4c9983e99d09d26f8638dd82a764d"
+    },
+    {
+      "path": "control/build_algorithm_stage2.m",
+      "sha256": "434acf83463f70e3fb2aad93c7e26e582bc70a964e175a5b818a8df11c6c8f36"
+    },
+    {
+      "path": "control/finalize_algorithm_stage2.m",
+      "sha256": "906f993bd2e03c54fda1ef4fd9b618ed918efce73b2db887173527dac56ca2bc"
+    },
+    {
+      "path": "control/refresh_algorithm_gui.m",
+      "sha256": "cf4879022984fc965e457000b01a804437082f48e1cd787b1b5cc740dc258778"
+    },
+    {
+      "path": "control/release_algorithm_gui.m",
+      "sha256": "b1830221e03942cf60c721bea84ae2e02ae954d9394dd7591504cdad2b9a6662"
+    },
+    {
+      "path": "control/repair_speed_loop_stage1.m",
+      "sha256": "38ca05d77f3c94d2d5ae07b9b8ae27e1c1d753c5dfffdde35cae4b8c576d67d7"
+    },
+    {
+      "path": "control/svpwm_checked.m",
+      "sha256": "607685173087aa8b3bfd2a14e62c1341b0fe1ef94f08262ef1cc0c018085f4ca"
+    },
+    {
+      "path": "control/validate_algorithm_stage2.m",
+      "sha256": "4babe8b77dc209399a7345c9087915622e96d8d7905b6f6945120958cc7accbd"
+    },
+    {
+      "path": "control/validate_speed_loop_stage1.m",
+      "sha256": "2f51a702ac8f4a2961034f2551049a73ae22a9fa30443adec59d37f614661656"
+    },
+    {
+      "path": "control/verify_saved_speed_loop_stage1.m",
+      "sha256": "e61604f537e1133fccb7cc49a18b02d4fe11f5a1c3f25e377589f6eee2ef2922"
+    },
+    {
+      "path": "framework/pmsm_system_plan.m",
+      "sha256": "ce25ba9bb662d0aaeb1504d6677b6587f7827156bf42b8f89d92d35821c454b3"
+    },
+    {
+      "path": "framework/pmsm_system_inputs.m",
+      "sha256": "71e4dc61b0f253a4f1ce1568daae76e563456cdc821933d3186e5935c277b506"
+    }
+  ],
+  "reference_restored": true,
+  "structure_preserved": true,
+  "signals_sha256": "4af04a7fd889ac1fad0a7e92c1f62a9edaba9e0d9d8f8b394385bf799be5ccbc"
+}

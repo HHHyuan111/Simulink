@@ -1,0 +1,106 @@
+{
+  "passed": true,
+  "kind": "minimum_startup_delivery_v1",
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "reference_sha256": "f977cfaa62d8722221573d9a648f28d8d7bc91f0f6a462c1e09e4488a70ef353",
+  "strict_replay_signals": 62,
+  "legacy_strict_signals": 66,
+  "full_gate_samples": 480001,
+  "bypass_signals": 35,
+  "bypass_full_time_data_exact": 30,
+  "bypass_grid_and_data_exact": 5,
+  "native_scope_white_blue_red_visually_checked": true,
+  "files": [
+    {
+      "path": "startup_validation.json",
+      "sha256": "346896746a86228062413fd2189f1390a2e77f0f3b348300448e68dfe5300413"
+    },
+    {
+      "path": "legacy_validation.json",
+      "sha256": "b120c6c8398b1ac374ce0a20ff611bf8c64c4074f91a688ce0d78f3056fc8cb2"
+    },
+    {
+      "path": "window_validation.json",
+      "sha256": "92b835f42f0e8865901801aed89b5f35876af7e3b0dd751b52f48351d39b6d6e"
+    },
+    {
+      "path": "bypass_validation.json",
+      "sha256": "c5ef0d0a98abffb33640746e021088337cf1630df63a3f8a852915f3515f04ad"
+    },
+    {
+      "path": "component_validation.json",
+      "sha256": "b09c0b0a2aeafdf662821f0001309a2fee06ba6bb6d836574d0e9320c2319b8d"
+    },
+    {
+      "path": "priority_validation.json",
+      "sha256": "62ddfd1a9e3c1041b4c1ffc6aca7bfd97a690394027daf1255ffbf34960e7708"
+    },
+    {
+      "path": "ui_validation.json",
+      "sha256": "9298641dc75bf4275f75499c7288be4e6f61ff2066488b6fa74398a203de1a21"
+    },
+    {
+      "path": "native_startup_scope.jpg",
+      "sha256": "c37d2215cea804e1180352faa1bfac338798eb2acfe2646742b87e4326b71543"
+    }
+  ],
+  "sources": [
+    {
+      "path": "analyse_pmsm_startup.m",
+      "sha256": "892e810760e6bceafd7a89a2e02ab5d4057ad730efd5e4414cde1a60a3ffe573"
+    },
+    {
+      "path": "close_pmsm_startup.m",
+      "sha256": "1e69019a8554822a9390d2a850d0caa1e4a995149ceb5bffd0c3fed31cd864cd"
+    },
+    {
+      "path": "open_pmsm_startup.m",
+      "sha256": "1447811167d5f67025b437a6c2ed0ac8e6cd307ee7458ba99159d041f9f23d9f"
+    },
+    {
+      "path": "pmsm_startup_mode.m",
+      "sha256": "6ff99552577cba6cf0d07b8ae56acf0ebb545103b8d15abbd79dbc291d7687b1"
+    },
+    {
+      "path": "pmsm_startup_model.m",
+      "sha256": "aef15d40c309bdd3e4714d82058ff8194dc205ee132d0f0bf2722ac419877432"
+    },
+    {
+      "path": "pmsm_startup_scope_style.m",
+      "sha256": "d154dd7c107c7075120f3503afb0e85682f27c3769f1eaa185e5e6fc4e458898"
+    },
+    {
+      "path": "run_pmsm_startup.m",
+      "sha256": "0380e1186dadd1fd97115270f2e58e5f9af7ba891153413c58e33107d22efad9"
+    },
+    {
+      "path": "startup_gate.m",
+      "sha256": "7e541244581088e45635e560d8709e041a5e8ef1c886c82115bf6a62cb828bde"
+    },
+    {
+      "path": "startup_pwm.m",
+      "sha256": "cbfd75063ab3da27a01c2459f4cf7114434bf6e09060398171e21091f802a586"
+    },
+    {
+      "path": "startup_step.m",
+      "sha256": "ed92b3eab10d3b1250f4e2ed34d1846c251e38d5d094e25b62d4086908546183"
+    },
+    {
+      "path": "validate_pmsm_startup.m",
+      "sha256": "23c3f33b2bc0d6a8909623523810bd75b5c25375845241e57cb0871da842559e"
+    },
+    {
+      "path": "validate_startup_components.m",
+      "sha256": "149d2e47a5bbcc8b2ecaed11e9bf6d6ca4fbeee6fa49a27e6509f575cbcb0065"
+    },
+    {
+      "path": "validate_startup_legacy.m",
+      "sha256": "2fe14ad961fb3ce85b8c3ed47908f466d373cc50fd697196603ef1293b146fdb"
+    }
+  ],
+  "boundaries": [
+    "Known electrical zero; no automatic alignment or complete protection.",
+    "30ms startup and 6ms window preparation are not a long-duration or full operating-range acceptance.",
+    "35-signal bypass includes same-grid tail comparisons, without interpolation; legacy 66 and new 62 replay use strict Time/Data."
+  ]
+}

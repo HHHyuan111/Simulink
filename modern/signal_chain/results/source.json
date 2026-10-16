@@ -1,0 +1,30 @@
+{
+  "source": "已完成的20组各2ms仿真，本次只整理显示",
+  "raw_mat_sha256": "d7dee1e39d35c24940176168627d91f9a37fe69ffbf546e1259d917faee72923",
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "sampling_cases": [
+    "noise_small",
+    "noise_large",
+    "filter500",
+    "filter2000",
+    "delay1",
+    "delay2"
+  ],
+  "timing_cases": [
+    "early_fast",
+    "early_slow"
+  ],
+  "first_write_latch_jeos_delay_us": [
+    [
+      19.5,
+      24.999999999999996,
+      10.499999999999998
+    ],
+    [
+      29.5,
+      49.999999999999993,
+      35.499999999999993
+    ]
+  ],
+  "definition": "A相；每组自己的实际记录。滤波输出减自身输入；延迟前后来自同组。噪声固定同种子。时序两组触发10us、JEOS14.5us、峰谷双更新。无插值或平滑。"
+}
