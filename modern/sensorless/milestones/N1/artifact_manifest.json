@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "node": "N1",
+  "user_acceptance": "pending",
+  "source_and_artifacts": [
+    {
+      "path": "milestones/N1/component_validation.json",
+      "sha256": "f8623f917f134dde5b663d3ef125aa83599ab9e5ea9ebada240ac944e67b289e"
+    },
+    {
+      "path": "milestones/N1/delivery.json",
+      "sha256": "39c952053327b81ecf87fb89a4e5d9e2f3feff0a428db622da6d6e8e9c35d272"
+    },
+    {
+      "path": "milestones/N1/development_failures.json",
+      "sha256": "abded9bb0b55a231a8dcb5177450e381e2e870860d5ff7d6eed3019033da86fc"
+    },
+    {
+      "path": "milestones/N1/effective_parameters.json",
+      "sha256": "e06a591134c854516dcfd4a6e2f46a2d163190fa02f1a5d8408d2bc95be1f814"
+    },
+    {
+      "path": "milestones/N1/figure_provenance.json",
+      "sha256": "4ee963ef560c5e08e36ddc5a9e76fe6801d7cc440e58886537d86f8bfdb61db1"
+    },
+    {
+      "path": "milestones/N1/metrics.json",
+      "sha256": "89ba810ba15084af45ce84618475fa860921df7dff2154ea735b0a53f1e9378e"
+    },
+    {
+      "path": "milestones/N1/pll_cases.csv",
+      "sha256": "faba4deb2bcb17eabac433208812e004eba4f9da6c7b7640ff22fb435b37e3e0"
+    },
+    {
+      "path": "milestones/N1/pll_component.png",
+      "sha256": "36f4a177de6c98b7e56581b5f4f7a3c4fab4b445210f37f086c2f2879e31a208"
+    },
+    {
+      "path": "milestones/N1/replay_validation.json",
+      "sha256": "691f348f27c7dcdec77597ad9307e19bee31842fc0f4b06f5d59363aafee8704"
+    },
+    {
+      "path": "milestones/N1/state_semantics.png",
+      "sha256": "474ae728600468b789f2c3ec0ffe733291d5697c9bd8c16e950179604be39f10"
+    },
+    {
+      "path": "milestones/N1/synthetic_cases.csv",
+      "sha256": "396d0378745dcff781191570d920355a9b427bc794d2d00e1649e3dcb923a609"
+    },
+    {
+      "path": "milestones/N1.md",
+      "sha256": "23c63e7cfa4ac61af4d38df0150c5a7b5a12305a70b8768fb40ec4f3714c6d75"
+    },
+    {
+      "path": "README.md",
+      "sha256": "8d1206eb4d724964356b40ac061b4481d166173cb903c1de006779d02054b5a1"
+    },
+    {
+      "path": "render_sensorless_n1.m",
+      "sha256": "393018c510da20f6f638dbf9f869a3fcf66fa1ca6ee8b2262955ce776c15d126"
+    },
+    {
+      "path": "repeat_sensorless_n1.m",
+      "sha256": "ef374b30007dd7ff54e3f5c37f24115be917bf540d7ba2bfb02b5d2ab1845216"
+    },
+    {
+      "path": "sensorless_emf_step.m",
+      "sha256": "6be57dd81cd118962def67a7450d9513c8d0fa077d4839b552be452762ce4259"
+    },
+    {
+      "path": "sensorless_n0_inventory.m",
+      "sha256": "c1e59ca7b7aa66b9a5edd446b11a53070b08640181c725b2b25928249e8cfbbf"
+    },
+    {
+      "path": "sensorless_n1_pll_tests.m",
+      "sha256": "4e0ac9d86cb2ee479f57e174884984ed316268bf83296e9ba32acc1b861ea8f7"
+    },
+    {
+      "path": "sensorless_observer_step.m",
+      "sha256": "d687b72aca52e53c0eeb8679978f68412a442f465e0d9710f69c36fc8af4418b"
+    },
+    {
+      "path": "sensorless_parameters.m",
+      "sha256": "bd164983ed74d3a3ce6d5c8ad0eace939e49f9399ee27ed846f465db9d7ef51e"
+    },
+    {
+      "path": "sensorless_pll_step.m",
+      "sha256": "1d16dc17b1b50f157dbe25e14a91ec06bf5073d393b1d816645f80a036d5c328"
+    },
+    {
+      "path": "sensorless_smo_step.m",
+      "sha256": "19e2d581dabddcac1dab014baa4b082c6465afd01fac01eaf1f8ad962052f033"
+    },
+    {
+      "path": "sensorless_state.m",
+      "sha256": "193d39a8cff13b51637ff783d1bf42b7a4753e23db22fa45b1afc09723e72206"
+    },
+    {
+      "path": "validate_sensorless_n1.m",
+      "sha256": "902467d0d6feb2d5b6d4ea106b5266c7d8dfe95a0873690c3f35a0f70786ca75"
+    }
+  ]
+}

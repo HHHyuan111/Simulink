@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "failures": [
+    {
+      "run_id": "N1_20261016_130331_632_9b59dce3-45c7-479a-ab2e-cbe20ad2bfe5",
+      "status": "failed_external_matlab_access_violation",
+      "error": "MATLAB process exit 0xc0000005 after parameter and SMO checks, before PLL completion; no successful result claimed",
+      "record_sha256": "6cb8e8104a635a8f62eb4dc9115fff3ceb8f7da07071f2184412d95b367e46cb",
+      "source_snapshot_relative": "modern\\sensorless\\runs\\N1_20261016_130331_632_9b59dce3-45c7-479a-ab2e-cbe20ad2bfe5\\source"
+    }
+  ],
+  "resolution": "PLL test matrix moved into an independent function file; production PLL unchanged; same frozen cases passed twice; low-level MATLAB crash root cause not confirmed"
+}

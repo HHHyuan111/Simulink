@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "node": "N1",
+  "original_folder": "D:/simulink/dev/modern/sensorless/runs/N1_20261016_130522_705_39be6b94-7cf9-4197-941e-65c4ab5bc740",
+  "replay_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N1_20261016_130701_224_dcbb0cfe-1d20-4e9d-826b-0bd2a0a620e6",
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "new_process_requirement": "caller starts a separate MATLAB -batch process",
+  "driver_sha256": "ef374b30007dd7ff54e3f5c37f24115be917bf540d7ba2bfb02b5d2ab1845216",
+  "groups": [
+    {
+      "group": "parameters",
+      "identical": true,
+      "numeric_elements": 33
+    },
+    {
+      "group": "smo",
+      "identical": true,
+      "numeric_elements": 17607
+    },
+    {
+      "group": "pll",
+      "identical": true,
+      "numeric_elements": 3.024504E+6
+    },
+    {
+      "group": "phase",
+      "identical": true,
+      "numeric_elements": 432072
+    },
+    {
+      "group": "synthetic",
+      "identical": true,
+      "numeric_elements": 480080
+    },
+    {
+      "group": "state",
+      "identical": true,
+      "numeric_elements": 60004
+    }
+  ],
+  "metrics_identical": true,
+  "all_passed": true
+}

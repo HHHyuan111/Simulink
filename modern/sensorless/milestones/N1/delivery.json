@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "node": "N1",
+  "status": "waiting_user_acceptance",
+  "n0_accepted_by_user_message": "开始吧",
+  "component_all_passed": true,
+  "independent_replay_all_passed": true,
+  "raw_numeric_elements_compared": 4014300.0,
+  "model_loaded": false,
+  "model_feedback_connected": false,
+  "original_run_id": "N1_20261016_130522_705_39be6b94-7cf9-4197-941e-65c4ab5bc740",
+  "replay_run_id": "N1_20261016_130701_224_dcbb0cfe-1d20-4e9d-826b-0bd2a0a620e6",
+  "contract_sha256": "dc9951b4920f5e24c1da42933e737c168b97410e510c302ddc94798896364ad4",
+  "plan_sha256": "717598811b3e2225c4606483dd205c76b2a50865d79af3fdba63531703373296",
+  "test_counts": {
+    "pll_cases": 72,
+    "smo_axis_cases": 900,
+    "multistep_samples": 2001,
+    "phase_cases": 12,
+    "synthetic_cases": 5
+  },
+  "pll_max_capture_s": 0.046150000000000004,
+  "smo_max_oracle_error_A": 3.552713678800501e-15,
+  "raw_data_local_only": true,
+  "scope": "N1组件与解析信号验证；尚非本地PMSM闭环精度或界面验收"
+}

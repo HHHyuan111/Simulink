@@ -1,0 +1,15 @@
+{
+  "source_folder": "D:/simulink/dev/modern/sensorless/runs/N1_20261016_130701_224_dcbb0cfe-1d20-4e9d-826b-0bd2a0a620e6",
+  "raw_sha256": "8c4f964ddbdc2701a2be54d1f7c6a659095e3b7fe690c7feec369be1fc797be1",
+  "pll_case": {
+    "frequency_Hz": 250,
+    "amplitude": 0.5,
+    "initial_error_deg": -120,
+    "angle_rms_deg": 1.7708269181697351E-12,
+    "speed_mean_relative": 5.7900231001220291E-16,
+    "capture_s": 0.046150000000000004,
+    "passed": true
+  },
+  "plot_source_sha256": "393018c510da20f6f638dbf9f869a3fcf66fa1ca6ee8b2262955ce776c15d126",
+  "data_modified": false
+}

@@ -1,0 +1,807 @@
+{
+  "parameters": {
+    "all_passed": true,
+    "max_absolute_error": 3.3306690738754696E-16,
+    "invalid_cases_rejected": 10,
+    "observer_pole": 0.028048810878037296,
+    "pll_spectral_radius": 0.9865833608605733
+  },
+  "smo": {
+    "all_passed": true,
+    "axis_cases": 900,
+    "max_equation_residual_A": 2.6645352591003757E-15,
+    "max_oracle_error_A": 3.5527136788005009E-15,
+    "multistep_oracle_error_A": 4.4408920985006262E-16
+  },
+  "pll": [
+    {
+      "frequency_Hz": 83.333333333333329,
+      "amplitude": 0.5,
+      "initial_error_deg": -120,
+      "angle_rms_deg": 6.6293770476223054E-13,
+      "speed_mean_relative": 1.5198810637820325E-15,
+      "capture_s": 0.01745,
+      "passed": true
+    },
+    {
+      "frequency_Hz": 83.333333333333329,
+      "amplitude": 0.5,
+      "initial_error_deg": -30,
+      "angle_rms_deg": 6.6293770476223054E-13,
+      "speed_mean_relative": 1.5198810637820325E-15,
+      "capture_s": 0.01705,
+      "passed": true
+    },
+    {
+      "frequency_Hz": 83.333333333333329,
+      "amplitude": 0.5,
+      "initial_error_deg": 30,
+      "angle_rms_deg": 6.6293770476223054E-13,
+      "speed_mean_relative": 1.5198810637820325E-15,
+      "capture_s": 0.01895,
+      "passed": true
+    },
+    {
+      "frequency_Hz": 83.333333333333329,
+      "amplitude": 0.5,
+      "initial_error_deg": 120,
+      "angle_rms_deg": 6.6293770476223054E-13,
+      "speed_mean_relative": 1.5198810637820325E-15,
+      "capture_s": 0.02125,
+      "passed": true
+    },
+    {
+      "frequency_Hz": 83.333333333333329,
+      "amplitude": 1,
+      "initial_error_deg": -120,
+      "angle_rms_deg": 6.6293770476223054E-13,
+      "speed_mean_relative": 1.5198810637820325E-15,
+      "capture_s": 0.01745,
+      "passed": true
+    },
+    {
+      "frequency_Hz": 83.333333333333329,
+      "amplitude": 1,
+      "initial_error_deg": -30,
+      "angle_rms_deg": 6.6293770476223054E-13,
+      "speed_mean_relative": 1.5198810637820325E-15,
+      "capture_s": 0.01705,
+      "passed": true
+    },
+    {
+      "frequency_Hz": 83.333333333333329,
+      "amplitude": 1,
+      "initial_error_deg": 30,
+      "angle_rms_deg": 6.6293770476223054E-13,
+      "speed_mean_relative": 1.5198810637820325E-15,
+      "capture_s": 0.01895,
+      "passed": true
+    },
+    {
+      "frequency_Hz": 83.333333333333329,
+      "amplitude": 1,
+      "initial_error_deg": 120,
+      "angle_rms_deg": 6.6293770476223054E-13,
+      "speed_mean_relative": 1.5198810637820325E-15,
+      "capture_s": 0.02125,
+      "passed": true
+    },
+    {
+      "frequency_Hz": 83.333333333333329,
+      "amplitude": 2,
+      "initial_error_deg": -120,
+      "angle_rms_deg": 6.6293770476223054E-13,
+      "speed_mean_relative": 1.5198810637820325E-15,
+      "capture_s": 0.01745,
+      "passed": true
+    },
+    {
+      "frequency_Hz": 83.333333333333329,
+      "amplitude": 2,
+      "initial_error_deg": -30,
+      "angle_rms_deg": 6.6293770476223054E-13,
+      "speed_mean_relative": 1.5198810637820325E-15,
+      "capture_s": 0.01705,
+      "passed": true
+    },
+    {
+      "frequency_Hz": 83.333333333333329,
+      "amplitude": 2,
+      "initial_error_deg": 30,
+      "angle_rms_deg": 6.6293770476223054E-13,
+      "speed_mean_relative": 1.5198810637820325E-15,
+      "capture_s": 0.01895,
+      "passed": true
+    },
+    {
+      "frequency_Hz": 83.333333333333329,
+      "amplitude": 2,
+      "initial_error_deg": 120,
+      "angle_rms_deg": 6.6293770476223054E-13,
+      "speed_mean_relative": 1.5198810637820325E-15,
+      "capture_s": 0.02125,
+      "passed": true
+    },
+    {
+      "frequency_Hz": 166.66666666666666,
+      "amplitude": 0.5,
+      "initial_error_deg": -120,
+      "angle_rms_deg": 1.3568766047052231E-12,
+      "speed_mean_relative": 2.388384528800337E-15,
+      "capture_s": 0.026350000000000002,
+      "passed": true
+    },
+    {
+      "frequency_Hz": 166.66666666666666,
+      "amplitude": 0.5,
+      "initial_error_deg": -30,
+      "angle_rms_deg": 1.3568766047052231E-12,
+      "speed_mean_relative": 2.388384528800337E-15,
+      "capture_s": 0.02075,
+      "passed": true
+    },
+    {
+      "frequency_Hz": 166.66666666666666,
+      "amplitude": 0.5,
+      "initial_error_deg": 30,
+      "angle_rms_deg": 1.3568766047052231E-12,
+      "speed_mean_relative": 2.388384528800337E-15,
+      "capture_s": 0.0217,
+      "passed": true
+    },
+    {
+      "frequency_Hz": 166.66666666666666,
+      "amplitude": 0.5,
+      "initial_error_deg": 120,
+      "angle_rms_deg": 1.3568766047052231E-12,
+      "speed_mean_relative": 2.388384528800337E-15,
+      "capture_s": 0.031100000000000003,
+      "passed": true
+    },
+    {
+      "frequency_Hz": 166.66666666666666,
+      "amplitude": 1,
+      "initial_error_deg": -120,
+      "angle_rms_deg": 1.3568766047052231E-12,
+      "speed_mean_relative": 2.388384528800337E-15,
+      "capture_s": 0.026350000000000002,
+      "passed": true
+    },
+    {
+      "frequency_Hz": 166.66666666666666,
+      "amplitude": 1,
+      "initial_error_deg": -30,
+      "angle_rms_deg": 1.3568766047052231E-12,
+      "speed_mean_relative": 2.388384528800337E-15,
+      "capture_s": 0.02075,
+      "passed": true
+    },
+    {
+      "frequency_Hz": 166.66666666666666,
+      "amplitude": 1,
+      "initial_error_deg": 30,
+      "angle_rms_deg": 1.3568766047052231E-12,
+      "speed_mean_relative": 2.388384528800337E-15,
+      "capture_s": 0.0217,
+      "passed": true
+    },
+    {
+      "frequency_Hz": 166.66666666666666,
+      "amplitude": 1,
+      "initial_error_deg": 120,
+      "angle_rms_deg": 1.3568766047052231E-12,
+      "speed_mean_relative": 2.388384528800337E-15,
+      "capture_s": 0.031100000000000003,
+      "passed": true
+    },
+    {
+      "frequency_Hz": 166.66666666666666,
+      "amplitude": 2,
+      "initial_error_deg": -120,
+      "angle_rms_deg": 1.3568766047052231E-12,
+      "speed_mean_relative": 2.388384528800337E-15,
+      "capture_s": 0.026350000000000002,
+      "passed": true
+    },
+    {
+      "frequency_Hz": 166.66666666666666,
+      "amplitude": 2,
+      "initial_error_deg": -30,
+      "angle_rms_deg": 1.3568766047052231E-12,
+      "speed_mean_relative": 2.388384528800337E-15,
+      "capture_s": 0.02075,
+      "passed": true
+    },
+    {
+      "frequency_Hz": 166.66666666666666,
+      "amplitude": 2,
+      "initial_error_deg": 30,
+      "angle_rms_deg": 1.3568766047052231E-12,
+      "speed_mean_relative": 2.388384528800337E-15,
+      "capture_s": 0.0217,
+      "passed": true
+    },
+    {
+      "frequency_Hz": 166.66666666666666,
+      "amplitude": 2,
+      "initial_error_deg": 120,
+      "angle_rms_deg": 1.3568766047052231E-12,
+      "speed_mean_relative": 2.388384528800337E-15,
+      "capture_s": 0.031100000000000003,
+      "passed": true
+    },
+    {
+      "frequency_Hz": 250,
+      "amplitude": 0.5,
+      "initial_error_deg": -120,
+      "angle_rms_deg": 1.7708269181697351E-12,
+      "speed_mean_relative": 5.7900231001220291E-16,
+      "capture_s": 0.046150000000000004,
+      "passed": true
+    },
+    {
+      "frequency_Hz": 250,
+      "amplitude": 0.5,
+      "initial_error_deg": -30,
+      "angle_rms_deg": 1.7708269181697351E-12,
+      "speed_mean_relative": 5.7900231001220291E-16,
+      "capture_s": 0.03815,
+      "passed": true
+    },
+    {
+      "frequency_Hz": 250,
+      "amplitude": 0.5,
+      "initial_error_deg": 30,
+      "angle_rms_deg": 1.7708269181697351E-12,
+      "speed_mean_relative": 5.7900231001220291E-16,
+      "capture_s": 0.0388,
+      "passed": true
+    },
+    {
+      "frequency_Hz": 250,
+      "amplitude": 0.5,
+      "initial_error_deg": 120,
+      "angle_rms_deg": 1.7708269181697351E-12,
+      "speed_mean_relative": 5.7900231001220291E-16,
+      "capture_s": 0.04395,
+      "passed": true
+    },
+    {
+      "frequency_Hz": 250,
+      "amplitude": 1,
+      "initial_error_deg": -120,
+      "angle_rms_deg": 1.7708269181697351E-12,
+      "speed_mean_relative": 5.7900231001220291E-16,
+      "capture_s": 0.046150000000000004,
+      "passed": true
+    },
+    {
+      "frequency_Hz": 250,
+      "amplitude": 1,
+      "initial_error_deg": -30,
+      "angle_rms_deg": 1.7708269181697351E-12,
+      "speed_mean_relative": 5.7900231001220291E-16,
+      "capture_s": 0.03815,
+      "passed": true
+    },
+    {
+      "frequency_Hz": 250,
+      "amplitude": 1,
+      "initial_error_deg": 30,
+      "angle_rms_deg": 1.7708269181697351E-12,
+      "speed_mean_relative": 5.7900231001220291E-16,
+      "capture_s": 0.0388,
+      "passed": true
+    },
+    {
+      "frequency_Hz": 250,
+      "amplitude": 1,
+      "initial_error_deg": 120,
+      "angle_rms_deg": 1.7708269181697351E-12,
+      "speed_mean_relative": 5.7900231001220291E-16,
+      "capture_s": 0.04395,
+      "passed": true
+    },
+    {
+      "frequency_Hz": 250,
+      "amplitude": 2,
+      "initial_error_deg": -120,
+      "angle_rms_deg": 1.7708269181697351E-12,
+      "speed_mean_relative": 5.7900231001220291E-16,
+      "capture_s": 0.046150000000000004,
+      "passed": true
+    },
+    {
+      "frequency_Hz": 250,
+      "amplitude": 2,
+      "initial_error_deg": -30,
+      "angle_rms_deg": 1.7708269181697351E-12,
+      "speed_mean_relative": 5.7900231001220291E-16,
+      "capture_s": 0.03815,
+      "passed": true
+    },
+    {
+      "frequency_Hz": 250,
+      "amplitude": 2,
+      "initial_error_deg": 30,
+      "angle_rms_deg": 1.7708269181697351E-12,
+      "speed_mean_relative": 5.7900231001220291E-16,
+      "capture_s": 0.0388,
+      "passed": true
+    },
+    {
+      "frequency_Hz": 250,
+      "amplitude": 2,
+      "initial_error_deg": 120,
+      "angle_rms_deg": 1.7708269181697351E-12,
+      "speed_mean_relative": 5.7900231001220291E-16,
+      "capture_s": 0.04395,
+      "passed": true
+    },
+    {
+      "frequency_Hz": -83.333333333333329,
+      "amplitude": 0.5,
+      "initial_error_deg": -120,
+      "angle_rms_deg": 6.6436433221958218E-13,
+      "speed_mean_relative": 1.3027551975274565E-15,
+      "capture_s": 0.02125,
+      "passed": true
+    },
+    {
+      "frequency_Hz": -83.333333333333329,
+      "amplitude": 0.5,
+      "initial_error_deg": -30,
+      "angle_rms_deg": 6.6436433221958218E-13,
+      "speed_mean_relative": 1.3027551975274565E-15,
+      "capture_s": 0.01895,
+      "passed": true
+    },
+    {
+      "frequency_Hz": -83.333333333333329,
+      "amplitude": 0.5,
+      "initial_error_deg": 30,
+      "angle_rms_deg": 6.6436433221958218E-13,
+      "speed_mean_relative": 1.3027551975274565E-15,
+      "capture_s": 0.01705,
+      "passed": true
+    },
+    {
+      "frequency_Hz": -83.333333333333329,
+      "amplitude": 0.5,
+      "initial_error_deg": 120,
+      "angle_rms_deg": 6.6436433221958218E-13,
+      "speed_mean_relative": 1.3027551975274565E-15,
+      "capture_s": 0.01745,
+      "passed": true
+    },
+    {
+      "frequency_Hz": -83.333333333333329,
+      "amplitude": 1,
+      "initial_error_deg": -120,
+      "angle_rms_deg": 6.6436433221958218E-13,
+      "speed_mean_relative": 1.3027551975274565E-15,
+      "capture_s": 0.02125,
+      "passed": true
+    },
+    {
+      "frequency_Hz": -83.333333333333329,
+      "amplitude": 1,
+      "initial_error_deg": -30,
+      "angle_rms_deg": 6.6436433221958218E-13,
+      "speed_mean_relative": 1.3027551975274565E-15,
+      "capture_s": 0.01895,
+      "passed": true
+    },
+    {
+      "frequency_Hz": -83.333333333333329,
+      "amplitude": 1,
+      "initial_error_deg": 30,
+      "angle_rms_deg": 6.6436433221958218E-13,
+      "speed_mean_relative": 1.3027551975274565E-15,
+      "capture_s": 0.01705,
+      "passed": true
+    },
+    {
+      "frequency_Hz": -83.333333333333329,
+      "amplitude": 1,
+      "initial_error_deg": 120,
+      "angle_rms_deg": 6.6436433221958218E-13,
+      "speed_mean_relative": 1.3027551975274565E-15,
+      "capture_s": 0.01745,
+      "passed": true
+    },
+    {
+      "frequency_Hz": -83.333333333333329,
+      "amplitude": 2,
+      "initial_error_deg": -120,
+      "angle_rms_deg": 6.6436433221958218E-13,
+      "speed_mean_relative": 1.3027551975274565E-15,
+      "capture_s": 0.02125,
+      "passed": true
+    },
+    {
+      "frequency_Hz": -83.333333333333329,
+      "amplitude": 2,
+      "initial_error_deg": -30,
+      "angle_rms_deg": 6.6436433221958218E-13,
+      "speed_mean_relative": 1.3027551975274565E-15,
+      "capture_s": 0.01895,
+      "passed": true
+    },
+    {
+      "frequency_Hz": -83.333333333333329,
+      "amplitude": 2,
+      "initial_error_deg": 30,
+      "angle_rms_deg": 6.6436433221958218E-13,
+      "speed_mean_relative": 1.3027551975274565E-15,
+      "capture_s": 0.01705,
+      "passed": true
+    },
+    {
+      "frequency_Hz": -83.333333333333329,
+      "amplitude": 2,
+      "initial_error_deg": 120,
+      "angle_rms_deg": 6.6436433221958218E-13,
+      "speed_mean_relative": 1.3027551975274565E-15,
+      "capture_s": 0.01745,
+      "passed": true
+    },
+    {
+      "frequency_Hz": -166.66666666666666,
+      "amplitude": 0.5,
+      "initial_error_deg": -120,
+      "angle_rms_deg": 1.3593292891993285E-12,
+      "speed_mean_relative": 2.388384528800337E-15,
+      "capture_s": 0.031100000000000003,
+      "passed": true
+    },
+    {
+      "frequency_Hz": -166.66666666666666,
+      "amplitude": 0.5,
+      "initial_error_deg": -30,
+      "angle_rms_deg": 1.3593292891993285E-12,
+      "speed_mean_relative": 2.388384528800337E-15,
+      "capture_s": 0.0217,
+      "passed": true
+    },
+    {
+      "frequency_Hz": -166.66666666666666,
+      "amplitude": 0.5,
+      "initial_error_deg": 30,
+      "angle_rms_deg": 1.3593292891993285E-12,
+      "speed_mean_relative": 2.388384528800337E-15,
+      "capture_s": 0.02075,
+      "passed": true
+    },
+    {
+      "frequency_Hz": -166.66666666666666,
+      "amplitude": 0.5,
+      "initial_error_deg": 120,
+      "angle_rms_deg": 1.3593292891993285E-12,
+      "speed_mean_relative": 2.388384528800337E-15,
+      "capture_s": 0.026350000000000002,
+      "passed": true
+    },
+    {
+      "frequency_Hz": -166.66666666666666,
+      "amplitude": 1,
+      "initial_error_deg": -120,
+      "angle_rms_deg": 1.3593292891993285E-12,
+      "speed_mean_relative": 2.388384528800337E-15,
+      "capture_s": 0.031100000000000003,
+      "passed": true
+    },
+    {
+      "frequency_Hz": -166.66666666666666,
+      "amplitude": 1,
+      "initial_error_deg": -30,
+      "angle_rms_deg": 1.3593292891993285E-12,
+      "speed_mean_relative": 2.388384528800337E-15,
+      "capture_s": 0.0217,
+      "passed": true
+    },
+    {
+      "frequency_Hz": -166.66666666666666,
+      "amplitude": 1,
+      "initial_error_deg": 30,
+      "angle_rms_deg": 1.3593292891993285E-12,
+      "speed_mean_relative": 2.388384528800337E-15,
+      "capture_s": 0.02075,
+      "passed": true
+    },
+    {
+      "frequency_Hz": -166.66666666666666,
+      "amplitude": 1,
+      "initial_error_deg": 120,
+      "angle_rms_deg": 1.3593292891993285E-12,
+      "speed_mean_relative": 2.388384528800337E-15,
+      "capture_s": 0.026350000000000002,
+      "passed": true
+    },
+    {
+      "frequency_Hz": -166.66666666666666,
+      "amplitude": 2,
+      "initial_error_deg": -120,
+      "angle_rms_deg": 1.3593292891993285E-12,
+      "speed_mean_relative": 2.388384528800337E-15,
+      "capture_s": 0.031100000000000003,
+      "passed": true
+    },
+    {
+      "frequency_Hz": -166.66666666666666,
+      "amplitude": 2,
+      "initial_error_deg": -30,
+      "angle_rms_deg": 1.3593292891993285E-12,
+      "speed_mean_relative": 2.388384528800337E-15,
+      "capture_s": 0.0217,
+      "passed": true
+    },
+    {
+      "frequency_Hz": -166.66666666666666,
+      "amplitude": 2,
+      "initial_error_deg": 30,
+      "angle_rms_deg": 1.3593292891993285E-12,
+      "speed_mean_relative": 2.388384528800337E-15,
+      "capture_s": 0.02075,
+      "passed": true
+    },
+    {
+      "frequency_Hz": -166.66666666666666,
+      "amplitude": 2,
+      "initial_error_deg": 120,
+      "angle_rms_deg": 1.3593292891993285E-12,
+      "speed_mean_relative": 2.388384528800337E-15,
+      "capture_s": 0.026350000000000002,
+      "passed": true
+    },
+    {
+      "frequency_Hz": -250,
+      "amplitude": 0.5,
+      "initial_error_deg": -120,
+      "angle_rms_deg": 1.7876119876930944E-12,
+      "speed_mean_relative": 5.7900231001220291E-16,
+      "capture_s": 0.04395,
+      "passed": true
+    },
+    {
+      "frequency_Hz": -250,
+      "amplitude": 0.5,
+      "initial_error_deg": -30,
+      "angle_rms_deg": 1.7876119876930944E-12,
+      "speed_mean_relative": 5.7900231001220291E-16,
+      "capture_s": 0.0388,
+      "passed": true
+    },
+    {
+      "frequency_Hz": -250,
+      "amplitude": 0.5,
+      "initial_error_deg": 30,
+      "angle_rms_deg": 1.7876119876930944E-12,
+      "speed_mean_relative": 5.7900231001220291E-16,
+      "capture_s": 0.03815,
+      "passed": true
+    },
+    {
+      "frequency_Hz": -250,
+      "amplitude": 0.5,
+      "initial_error_deg": 120,
+      "angle_rms_deg": 1.7876119876930944E-12,
+      "speed_mean_relative": 5.7900231001220291E-16,
+      "capture_s": 0.046150000000000004,
+      "passed": true
+    },
+    {
+      "frequency_Hz": -250,
+      "amplitude": 1,
+      "initial_error_deg": -120,
+      "angle_rms_deg": 1.7876119876930944E-12,
+      "speed_mean_relative": 5.7900231001220291E-16,
+      "capture_s": 0.04395,
+      "passed": true
+    },
+    {
+      "frequency_Hz": -250,
+      "amplitude": 1,
+      "initial_error_deg": -30,
+      "angle_rms_deg": 1.7876119876930944E-12,
+      "speed_mean_relative": 5.7900231001220291E-16,
+      "capture_s": 0.0388,
+      "passed": true
+    },
+    {
+      "frequency_Hz": -250,
+      "amplitude": 1,
+      "initial_error_deg": 30,
+      "angle_rms_deg": 1.7876119876930944E-12,
+      "speed_mean_relative": 5.7900231001220291E-16,
+      "capture_s": 0.03815,
+      "passed": true
+    },
+    {
+      "frequency_Hz": -250,
+      "amplitude": 1,
+      "initial_error_deg": 120,
+      "angle_rms_deg": 1.7876119876930944E-12,
+      "speed_mean_relative": 5.7900231001220291E-16,
+      "capture_s": 0.046150000000000004,
+      "passed": true
+    },
+    {
+      "frequency_Hz": -250,
+      "amplitude": 2,
+      "initial_error_deg": -120,
+      "angle_rms_deg": 1.7876119876930944E-12,
+      "speed_mean_relative": 5.7900231001220291E-16,
+      "capture_s": 0.04395,
+      "passed": true
+    },
+    {
+      "frequency_Hz": -250,
+      "amplitude": 2,
+      "initial_error_deg": -30,
+      "angle_rms_deg": 1.7876119876930944E-12,
+      "speed_mean_relative": 5.7900231001220291E-16,
+      "capture_s": 0.0388,
+      "passed": true
+    },
+    {
+      "frequency_Hz": -250,
+      "amplitude": 2,
+      "initial_error_deg": 30,
+      "angle_rms_deg": 1.7876119876930944E-12,
+      "speed_mean_relative": 5.7900231001220291E-16,
+      "capture_s": 0.03815,
+      "passed": true
+    },
+    {
+      "frequency_Hz": -250,
+      "amplitude": 2,
+      "initial_error_deg": 120,
+      "angle_rms_deg": 1.7876119876930944E-12,
+      "speed_mean_relative": 5.7900231001220291E-16,
+      "capture_s": 0.046150000000000004,
+      "passed": true
+    }
+  ],
+  "phase": [
+    {
+      "frequency_Hz": -250,
+      "interval": "left_zoh",
+      "relative_complex_error": 4.2464590373747271E-15,
+      "corrected_phase_abs_deg": 5.0994242526106209E-12,
+      "passed": true
+    },
+    {
+      "frequency_Hz": -166.66666666666666,
+      "interval": "left_zoh",
+      "relative_complex_error": 8.8042710448172947E-15,
+      "corrected_phase_abs_deg": 3.8401361059609543E-12,
+      "passed": true
+    },
+    {
+      "frequency_Hz": -83.333333333333329,
+      "interval": "left_zoh",
+      "relative_complex_error": 2.1962975248268433E-15,
+      "corrected_phase_abs_deg": 1.9202576613604238E-12,
+      "passed": true
+    },
+    {
+      "frequency_Hz": 83.333333333333329,
+      "interval": "left_zoh",
+      "relative_complex_error": 2.1962975248268433E-15,
+      "corrected_phase_abs_deg": 1.9202576613604234E-12,
+      "passed": true
+    },
+    {
+      "frequency_Hz": 166.66666666666666,
+      "interval": "left_zoh",
+      "relative_complex_error": 8.8042710448172947E-15,
+      "corrected_phase_abs_deg": 3.8390376688597067E-12,
+      "passed": true
+    },
+    {
+      "frequency_Hz": 250,
+      "interval": "left_zoh",
+      "relative_complex_error": 4.2715426477185231E-15,
+      "corrected_phase_abs_deg": 5.095669153750082E-12,
+      "passed": true
+    },
+    {
+      "frequency_Hz": -250,
+      "interval": "rl_weighted_rotating",
+      "relative_complex_error": 7.0143789408553425E-15,
+      "corrected_phase_abs_deg": 5.0932228509786884E-12,
+      "passed": true
+    },
+    {
+      "frequency_Hz": -166.66666666666666,
+      "interval": "rl_weighted_rotating",
+      "relative_complex_error": 9.2476594835161773E-15,
+      "corrected_phase_abs_deg": 3.7362113051050149E-12,
+      "passed": true
+    },
+    {
+      "frequency_Hz": -83.333333333333329,
+      "interval": "rl_weighted_rotating",
+      "relative_complex_error": 1.1084453626596967E-14,
+      "corrected_phase_abs_deg": 1.7646114808946E-12,
+      "passed": true
+    },
+    {
+      "frequency_Hz": 83.333333333333329,
+      "interval": "rl_weighted_rotating",
+      "relative_complex_error": 1.1078814835120987E-14,
+      "corrected_phase_abs_deg": 2.214414407397144E-12,
+      "passed": true
+    },
+    {
+      "frequency_Hz": 166.66666666666666,
+      "interval": "rl_weighted_rotating",
+      "relative_complex_error": 9.2845104345266E-15,
+      "corrected_phase_abs_deg": 4.1899176470657147E-12,
+      "passed": true
+    },
+    {
+      "frequency_Hz": 250,
+      "interval": "rl_weighted_rotating",
+      "relative_complex_error": 7.0512887266744579E-15,
+      "corrected_phase_abs_deg": 5.4868583633551979E-12,
+      "passed": true
+    }
+  ],
+  "synthetic": [
+    {
+      "speed_rpm": 1000,
+      "angle_rms_deg": 6.6868713755154E-13,
+      "angle_abs_max_deg": 2.1339307862284465E-12,
+      "speed_mean_relative": 1.1368683772161603E-15,
+      "valid_fraction": 1,
+      "passed": true
+    },
+    {
+      "speed_rpm": 2000,
+      "angle_rms_deg": 1.34973136255088E-12,
+      "angle_abs_max_deg": 4.6048054786988745E-12,
+      "speed_mean_relative": 0,
+      "valid_fraction": 1,
+      "passed": true
+    },
+    {
+      "speed_rpm": 3000,
+      "angle_rms_deg": 1.7704065085000011E-12,
+      "angle_abs_max_deg": 5.0534492940681849E-12,
+      "speed_mean_relative": 0,
+      "valid_fraction": 1,
+      "passed": true
+    },
+    {
+      "speed_rpm": -1000,
+      "angle_rms_deg": 6.8912224995295479E-13,
+      "angle_abs_max_deg": 2.5270083668587071E-12,
+      "speed_mean_relative": 6.8212102632969619E-16,
+      "valid_fraction": 1,
+      "passed": true
+    },
+    {
+      "speed_rpm": -3000,
+      "angle_rms_deg": 1.7711777913880252E-12,
+      "angle_abs_max_deg": 5.1664259424062791E-12,
+      "speed_mean_relative": 0,
+      "valid_fraction": 1,
+      "passed": true
+    }
+  ],
+  "state": {
+    "all_passed": true,
+    "saturation_antiwindup": true,
+    "disabled_prediction": true,
+    "pll_reset": true,
+    "missing_sample_prediction": true,
+    "immediate_invalid": true,
+    "full_reset_priority": true,
+    "zero_direction_invalid": true,
+    "reacquire_not_early": true,
+    "finite": true,
+    "first_valid_s": 0.039400000000000004
+  }
+}
