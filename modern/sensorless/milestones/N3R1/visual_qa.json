@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "node": "N3R1",
+  "checked_at": "2026-10-17T00:03:01.5646958+08:00",
+  "figures": [
+    "integration_review.png",
+    "publication_review.png",
+    "recovery_component_review.png",
+    "local_layer_diagram.png"
+  ],
+  "all_visually_inspected": true,
+  "units_and_scopes_marked": true,
+  "CSV_fingerprints_checked": true,
+  "presentation_tags": 47,
+  "presentation_executable_graph_unchanged": true,
+  "all_passed": true
+}

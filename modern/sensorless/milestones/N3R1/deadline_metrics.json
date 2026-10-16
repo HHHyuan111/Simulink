@@ -1,0 +1,18 @@
+{
+  "calibration_alignment_max_A": 1.3877787807814457E-17,
+  "native_samples": 320001,
+  "bridge_unambiguous_max_V": 7.1054273576010019E-15,
+  "native_filter_max_V": 0,
+  "voltage_interval_max_V": 2.546407529280259E-12,
+  "maximum_path_uncertainty_V": 0.20640625070016103,
+  "ambiguous_native_fraction": 0.0027562413867456663,
+  "ccr_write_max_time_error_s": 6.9388939039072284E-18,
+  "available_max_time_error_s": 3.4694469519536142E-18,
+  "rail_frames": 0,
+  "invalid_window_frames": 0,
+  "invalid_timing_frames": 400,
+  "control_permit_fraction": 0,
+  "observer_packets": 400,
+  "all_passed": true,
+  "scope": "R1 causal integration only; 20ms startup does not establish lock or steady accuracy"
+}

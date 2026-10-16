@@ -31,6 +31,10 @@ publication列：1样本序号，2JEOS参考s，3计算完成s，4当前数据�
 
 Scope继续使用本地原生观测格式；角速度Scope比较相同JEOS参考的估计/真值，原始内部数值不会冒充延后可用控制输出。真值只能进入“观测”评价区。新增发布和故障诊断为完整原生timeseries；R1审阅图从归档日志生成。
 
+62.5ns原生计算是仿真参考网格，并非目标MCU观测中断周期。上板迁移需采用PWM边沿分段积分/事件执行，并实测整个观测链最坏耗时；3μs观测与5μs FOC预算目前只用于仿真调度，不证明这些MATLAB函数可在实板预算内执行。
+
 查看入口：独立MATLAB会话中添加`sensorless`、`sensorless/robust`和本目录，执行`open_pmsm_sensorless_v2`；执行`close_pmsm_sensorless_v2`恢复。入口拒绝覆盖已经打开的用户模型。
+
+排版后的查看入口为添加`sensorless/review`后执行`pmsm_sensorless_v2_review('open')`。该独立展示脚本只调整位置和字体，保留冻结的运行代码；对除位置外的执行图及工作区作一致性检查。
 
 数学与Simulink语义参考：[MathWorks Discrete Transfer Fcn](https://www.mathworks.com/help/simulink/slref/discretetransferfcn.html)、[SMO输入与内部滤波接口](https://www.mathworks.com/help/mcb/ref/slidingmodeobserver.html)。本层使用本地实现和独立公式验证，并未导入这些示例模型。

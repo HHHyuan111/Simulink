@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "node": "N3R1",
+  "N0_checks": 651,
+  "old_sources": 617,
+  "v1_contracts": 4,
+  "R0_core_sources_unchanged": 9,
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "all_layer_and_stimulus_restorations_passed": true,
+  "user_gui_commands_sent": false,
+  "user_gui_original_pid": 35868,
+  "old_N3_all_passed": false,
+  "hardware_validated": false,
+  "all_passed": true
+}

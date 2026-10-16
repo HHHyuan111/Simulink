@@ -1,0 +1,369 @@
+{
+  "schema": 1,
+  "node": "N3R1",
+  "candidate_commit": "75f03bc",
+  "candidate_sha256": "d3841d7c0936bf4a03c0ee9ed83454eca6f07de093164364a3e86ebaea414623",
+  "files": [
+    {
+      "path": "analyse_sensorless_n2.m",
+      "matches": true
+    },
+    {
+      "path": "analyse_sensorless_n3_case.m",
+      "matches": true
+    },
+    {
+      "path": "archive_sensorless_n2.m",
+      "matches": true
+    },
+    {
+      "path": "audit_sensorless_n3_archives.m",
+      "matches": true
+    },
+    {
+      "path": "blocks/sless_emf_block.m",
+      "matches": true
+    },
+    {
+      "path": "blocks/sless_input_block.m",
+      "matches": true
+    },
+    {
+      "path": "blocks/sless_pll_block.m",
+      "matches": true
+    },
+    {
+      "path": "blocks/sless_reset_block.m",
+      "matches": true
+    },
+    {
+      "path": "blocks/sless_smo_block.m",
+      "matches": true
+    },
+    {
+      "path": "blocks/sless_validity_block.m",
+      "matches": true
+    },
+    {
+      "path": "blocks/sless_voltage_block.m",
+      "matches": true
+    },
+    {
+      "path": "check_sensorless_graph.m",
+      "matches": true
+    },
+    {
+      "path": "close_pmsm_sensorless.m",
+      "matches": true
+    },
+    {
+      "path": "compare_sensorless_n3_raw.m",
+      "matches": true
+    },
+    {
+      "path": "contracts/nonideal_r1_test_plan.json",
+      "matches": true
+    },
+    {
+      "path": "contracts/nonideal_r1_window_addendum.json",
+      "matches": true
+    },
+    {
+      "path": "contracts/nonideal_v2.json",
+      "matches": true
+    },
+    {
+      "path": "correct_sensorless_n3_reports.m",
+      "matches": true
+    },
+    {
+      "path": "export_sensorless_n2_review.m",
+      "matches": true
+    },
+    {
+      "path": "export_sensorless_n3.m",
+      "matches": true
+    },
+    {
+      "path": "export_sensorless_robust_r0.m",
+      "matches": true
+    },
+    {
+      "path": "open_pmsm_sensorless.m",
+      "matches": true
+    },
+    {
+      "path": "pmsm_sensorless_init_n3.m",
+      "matches": true
+    },
+    {
+      "path": "pmsm_sensorless_init.m",
+      "matches": true
+    },
+    {
+      "path": "pmsm_sensorless_model.m",
+      "matches": true
+    },
+    {
+      "path": "pmsm_sensorless_scope.m",
+      "matches": true
+    },
+    {
+      "path": "render_sensorless_n1.m",
+      "matches": true
+    },
+    {
+      "path": "render_sensorless_n2.m",
+      "matches": true
+    },
+    {
+      "path": "repeat_sensorless_n1.m",
+      "matches": true
+    },
+    {
+      "path": "repeat_sensorless_n2.m",
+      "matches": true
+    },
+    {
+      "path": "robust/integration/audit_sensorless_v2_case.m",
+      "matches": true
+    },
+    {
+      "path": "robust/integration/blocks/sless_v2_emf_block.m",
+      "matches": true
+    },
+    {
+      "path": "robust/integration/blocks/sless_v2_measure_block.m",
+      "matches": true
+    },
+    {
+      "path": "robust/integration/blocks/sless_v2_queue_block.m",
+      "matches": true
+    },
+    {
+      "path": "robust/integration/blocks/sless_v2_voltage_block.m",
+      "matches": true
+    },
+    {
+      "path": "robust/integration/check_sensorless_v2_graph.m",
+      "matches": true
+    },
+    {
+      "path": "robust/integration/close_pmsm_sensorless_v2.m",
+      "matches": true
+    },
+    {
+      "path": "robust/integration/export_sensorless_v2_r1.m",
+      "matches": true
+    },
+    {
+      "path": "robust/integration/open_pmsm_sensorless_v2.m",
+      "matches": true
+    },
+    {
+      "path": "robust/integration/pmsm_sensorless_v2_init.m",
+      "matches": true
+    },
+    {
+      "path": "robust/integration/pmsm_sensorless_v2_model.m",
+      "matches": true
+    },
+    {
+      "path": "robust/integration/render_sensorless_v2_r1.py",
+      "matches": true
+    },
+    {
+      "path": "robust/integration/sensorless_v2_component_tests.m",
+      "matches": true
+    },
+    {
+      "path": "robust/integration/sensorless_v2_config_rt.m",
+      "matches": true
+    },
+    {
+      "path": "robust/integration/sensorless_v2_config_values.m",
+      "matches": true
+    },
+    {
+      "path": "robust/integration/sensorless_v2_front_phase.m",
+      "matches": true
+    },
+    {
+      "path": "robust/integration/sensorless_v2_guard_sources.m",
+      "matches": true
+    },
+    {
+      "path": "robust/integration/sensorless_v2_measure_state.m",
+      "matches": true
+    },
+    {
+      "path": "robust/integration/sensorless_v2_measure_step.m",
+      "matches": true
+    },
+    {
+      "path": "robust/integration/sensorless_v2_queue_state.m",
+      "matches": true
+    },
+    {
+      "path": "robust/integration/sensorless_v2_queue_step.m",
+      "matches": true
+    },
+    {
+      "path": "robust/integration/sensorless_v2_snapshot_sources.m",
+      "matches": true
+    },
+    {
+      "path": "robust/integration/sensorless_v2_stimulus.m",
+      "matches": true
+    },
+    {
+      "path": "robust/integration/sensorless_v2_voltage_state.m",
+      "matches": true
+    },
+    {
+      "path": "robust/integration/sensorless_v2_voltage_step.m",
+      "matches": true
+    },
+    {
+      "path": "robust/integration/validate_sensorless_v2_case.m",
+      "matches": true
+    },
+    {
+      "path": "robust/integration/validate_sensorless_v2_components.m",
+      "matches": true
+    },
+    {
+      "path": "robust/integration/verify_sensorless_v2_campaign.m",
+      "matches": true
+    },
+    {
+      "path": "robust/sensorless_bridge_estimate.m",
+      "matches": true
+    },
+    {
+      "path": "robust/sensorless_deadtime_estimate_step.m",
+      "matches": true
+    },
+    {
+      "path": "robust/sensorless_event_plan.m",
+      "matches": true
+    },
+    {
+      "path": "robust/sensorless_publish_step.m",
+      "matches": true
+    },
+    {
+      "path": "robust/sensorless_robust_config.m",
+      "matches": true
+    },
+    {
+      "path": "robust/sensorless_robust_r0_tests.m",
+      "matches": true
+    },
+    {
+      "path": "robust/sensorless_robust_state.m",
+      "matches": true
+    },
+    {
+      "path": "robust/validate_sensorless_robust_r0.m",
+      "matches": true
+    },
+    {
+      "path": "robust/verify_sensorless_robust_r0.m",
+      "matches": true
+    },
+    {
+      "path": "run_sensorless_v2_r1.ps1",
+      "matches": true
+    },
+    {
+      "path": "sensorless_emf_step.m",
+      "matches": true
+    },
+    {
+      "path": "sensorless_n0_inventory.m",
+      "matches": true
+    },
+    {
+      "path": "sensorless_n1_pll_tests.m",
+      "matches": true
+    },
+    {
+      "path": "sensorless_n2_isolated.m",
+      "matches": true
+    },
+    {
+      "path": "sensorless_n3_faults.m",
+      "matches": true
+    },
+    {
+      "path": "sensorless_n3_restore.m",
+      "matches": true
+    },
+    {
+      "path": "sensorless_n3_stimulus.m",
+      "matches": true
+    },
+    {
+      "path": "sensorless_observer_step.m",
+      "matches": true
+    },
+    {
+      "path": "sensorless_parameters.m",
+      "matches": true
+    },
+    {
+      "path": "sensorless_pll_step.m",
+      "matches": true
+    },
+    {
+      "path": "sensorless_rt_config.m",
+      "matches": true
+    },
+    {
+      "path": "sensorless_smo_step.m",
+      "matches": true
+    },
+    {
+      "path": "sensorless_state.m",
+      "matches": true
+    },
+    {
+      "path": "sensorless_validity_step.m",
+      "matches": true
+    },
+    {
+      "path": "sensorless_voltage_step.m",
+      "matches": true
+    },
+    {
+      "path": "validate_sensorless_n1.m",
+      "matches": true
+    },
+    {
+      "path": "validate_sensorless_n2_case.m",
+      "matches": true
+    },
+    {
+      "path": "validate_sensorless_n2.m",
+      "matches": true
+    },
+    {
+      "path": "validate_sensorless_n3_case.m",
+      "matches": true
+    },
+    {
+      "path": "validate_sensorless_n3_comparison.m",
+      "matches": true
+    },
+    {
+      "path": "verify_sensorless_n2_archives.m",
+      "matches": true
+    },
+    {
+      "path": "verify_sensorless_n3_replay.m",
+      "matches": true
+    }
+  ],
+  "all_passed": true
+}

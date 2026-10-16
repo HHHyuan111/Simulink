@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "node": "N3R1",
+  "campaign": "D:/simulink/dev/modern/sensorless/runs/N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803",
+  "model_loaded": false,
+  "component_raw_identical": true,
+  "cases": [
+    {
+      "id": "combined",
+      "replay_all_logs": true,
+      "replay_elements": 2.9025324E+7,
+      "original_52_formal": true,
+      "original_52_replay": true,
+      "regression_elements": 2.022573E+7
+    },
+    {
+      "id": "rail",
+      "replay_all_logs": true,
+      "replay_elements": 2.9025324E+7,
+      "original_52_formal": true,
+      "original_52_replay": true,
+      "regression_elements": 2.022573E+7
+    },
+    {
+      "id": "window",
+      "replay_all_logs": true,
+      "replay_elements": 2.9025324E+7,
+      "original_52_formal": true,
+      "original_52_replay": true,
+      "regression_elements": 2.022573E+7
+    },
+    {
+      "id": "deadline",
+      "replay_all_logs": true,
+      "replay_elements": 2.9025324E+7,
+      "original_52_formal": true,
+      "original_52_replay": true,
+      "regression_elements": 2.022573E+7
+    }
+  ],
+  "all_passed": true,
+  "verification_process_id": 37008,
+  "driver_sha256": "5701f941337bd0d069e715052dec37ba36d4f20fa5fe823b8d8d987934d9707e"
+}

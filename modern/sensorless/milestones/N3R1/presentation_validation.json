@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "node": "N3R1",
+  "kind": "presentation_only",
+  "modules": 9,
+  "scoped_visibility_tags": 47,
+  "executable_graph_unchanged": true,
+  "workspace_unchanged": true,
+  "source_sha256": "240dff21ee8e9f6c1aae26956685991fa06df668ebfbc4423f535347071e464e",
+  "layer_restoration_passed": true,
+  "diagram_sha256": "27e1debfa859c9532c40b956ad928b9958d37ab088a0d8e3d586ee10e9e447eb"
+}

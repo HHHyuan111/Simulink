@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "campaign": "D:/simulink/dev/modern/sensorless/runs/N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803",
+  "verification_sha256": "f80a5cf323be5207074b37196569bf963408cd89192c0308c461c06dc9f50cfe",
+  "exports": [
+    {
+      "path": "combined_control.csv",
+      "sha256": "c101e83e057ff1a8dc8e067b92449c9f20b09f2cf69e80197cb0965bae7ab6cf",
+      "raw_sha256": "a30553713d696449f8b024ccdc9575a61f7c7a226dd39cb4574ef6c7578fd74b"
+    },
+    {
+      "path": "combined_publication_excerpt.csv",
+      "sha256": "13d9404166857cc0f559adcc2d44e2ba140608577a8a685137c349c62e6bbd8c",
+      "raw_sha256": "a30553713d696449f8b024ccdc9575a61f7c7a226dd39cb4574ef6c7578fd74b"
+    },
+    {
+      "path": "rail_control.csv",
+      "sha256": "3095eff819658a2b16dc96d54857f49fcebe8ce24f6c04a0e6fe000dd21c9576",
+      "raw_sha256": "ce7d1eabb03055127de21b0c271b12aa5239bbf2fe57453f9de11326cfb18544"
+    },
+    {
+      "path": "rail_publication_excerpt.csv",
+      "sha256": "13d9404166857cc0f559adcc2d44e2ba140608577a8a685137c349c62e6bbd8c",
+      "raw_sha256": "ce7d1eabb03055127de21b0c271b12aa5239bbf2fe57453f9de11326cfb18544"
+    },
+    {
+      "path": "window_control.csv",
+      "sha256": "390aaef8abad3bb903bf105e87e28a09031a6c59069573bd22a992fdbf95c0dd",
+      "raw_sha256": "b9412762eeaabe6e37944b7ba30234ce49b9ae1ef84119ed29874793eabb1ee2"
+    },
+    {
+      "path": "window_publication_excerpt.csv",
+      "sha256": "9e89339447cf1f7d69133f63226fd4ebf6018adcee207df329991afd897894c7",
+      "raw_sha256": "b9412762eeaabe6e37944b7ba30234ce49b9ae1ef84119ed29874793eabb1ee2"
+    },
+    {
+      "path": "deadline_control.csv",
+      "sha256": "ad3aa198e46a667f43ac4aca819d42a5a38bde755f55959e0b8d3440007b6f43",
+      "raw_sha256": "0fbcd9759fb62e42e7a712e6a08912fe764e9787c5ded8a3a1fc53abf76ee232"
+    },
+    {
+      "path": "deadline_publication_excerpt.csv",
+      "sha256": "531bbb86199e7240086209e1d6a860b3eca97e3c247c9406f4c8b27ddc69b8fe",
+      "raw_sha256": "0fbcd9759fb62e42e7a712e6a08912fe764e9787c5ded8a3a1fc53abf76ee232"
+    },
+    {
+      "path": "component_recovery.csv",
+      "sha256": "a7903754e167173b03671c6e6b955226d015b285ded3fb403acb2b38d9ce51cc",
+      "raw_sha256": "e0b779b9c01407fb59cd272d43db275cf3736be819425de7b11f0b9b7fabeaf9"
+    }
+  ]
+}

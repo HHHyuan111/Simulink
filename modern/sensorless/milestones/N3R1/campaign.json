@@ -1,0 +1,269 @@
+{
+  "schema": 1,
+  "node": "N3R1",
+  "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803",
+  "status": "passed",
+  "candidate_sha256": "d3841d7c0936bf4a03c0ee9ed83454eca6f07de093164364a3e86ebaea414623",
+  "driver_sha256": "c41f8e756a042f5be415d3d056bd4ee55865d157ab38d0b60211462b0c222310",
+  "startup_options": [
+    "-singleCompThread",
+    "-batch"
+  ],
+  "jobs": [
+    {
+      "label": "component_first",
+      "case_id": "",
+      "observer": true,
+      "status": "passed",
+      "attempts": [
+        {
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\component_first_attempt_1_console.log",
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\component_first_attempt_1",
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\component_first_attempt_1_launcher.log",
+          "exit_code": 0,
+          "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/integration');validate_sensorless_v2_components('D:/simulink/dev/modern/sensorless/runs/N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803/component_first_attempt_1');",
+          "native_failure": false
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\component_first_attempt_1"
+    },
+    {
+      "label": "component_replay",
+      "case_id": "",
+      "observer": true,
+      "status": "passed",
+      "attempts": [
+        {
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\component_replay_attempt_1_console.log",
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\component_replay_attempt_1",
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\component_replay_attempt_1_launcher.log",
+          "exit_code": 0,
+          "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/integration');validate_sensorless_v2_components('D:/simulink/dev/modern/sensorless/runs/N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803/component_replay_attempt_1');",
+          "native_failure": false
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\component_replay_attempt_1"
+    },
+    {
+      "label": "combined_formal",
+      "case_id": "combined",
+      "observer": true,
+      "status": "passed",
+      "attempts": [
+        {
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\combined_formal_attempt_1_console.log",
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\combined_formal_attempt_1",
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\combined_formal_attempt_1_launcher.log",
+          "exit_code": 0,
+          "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/integration');validate_sensorless_v2_case('combined','D:/simulink/dev/modern/sensorless/runs/N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803/combined_formal_attempt_1',true);",
+          "native_failure": false
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\combined_formal_attempt_1"
+    },
+    {
+      "label": "combined_replay",
+      "case_id": "combined",
+      "observer": true,
+      "status": "passed",
+      "attempts": [
+        {
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\combined_replay_attempt_1_console.log",
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\combined_replay_attempt_1",
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\combined_replay_attempt_1_launcher.log",
+          "exit_code": 0,
+          "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/integration');validate_sensorless_v2_case('combined','D:/simulink/dev/modern/sensorless/runs/N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803/combined_replay_attempt_1',true);",
+          "native_failure": false
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\combined_replay_attempt_1"
+    },
+    {
+      "label": "combined_baseline",
+      "case_id": "combined",
+      "observer": false,
+      "status": "passed",
+      "attempts": [
+        {
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\combined_baseline_attempt_1_console.log",
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\combined_baseline_attempt_1",
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\combined_baseline_attempt_1_launcher.log",
+          "exit_code": 0,
+          "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/integration');validate_sensorless_v2_case('combined','D:/simulink/dev/modern/sensorless/runs/N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803/combined_baseline_attempt_1',false);",
+          "native_failure": false
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\combined_baseline_attempt_1"
+    },
+    {
+      "label": "rail_formal",
+      "case_id": "rail",
+      "observer": true,
+      "status": "passed",
+      "attempts": [
+        {
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\rail_formal_attempt_1_console.log",
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\rail_formal_attempt_1",
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\rail_formal_attempt_1_launcher.log",
+          "exit_code": 0,
+          "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/integration');validate_sensorless_v2_case('rail','D:/simulink/dev/modern/sensorless/runs/N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803/rail_formal_attempt_1',true);",
+          "native_failure": false
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\rail_formal_attempt_1"
+    },
+    {
+      "label": "rail_replay",
+      "case_id": "rail",
+      "observer": true,
+      "status": "passed",
+      "attempts": [
+        {
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\rail_replay_attempt_1_console.log",
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\rail_replay_attempt_1",
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\rail_replay_attempt_1_launcher.log",
+          "exit_code": 0,
+          "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/integration');validate_sensorless_v2_case('rail','D:/simulink/dev/modern/sensorless/runs/N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803/rail_replay_attempt_1',true);",
+          "native_failure": false
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\rail_replay_attempt_1"
+    },
+    {
+      "label": "rail_baseline",
+      "case_id": "rail",
+      "observer": false,
+      "status": "passed",
+      "attempts": [
+        {
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\rail_baseline_attempt_1_console.log",
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\rail_baseline_attempt_1",
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\rail_baseline_attempt_1_launcher.log",
+          "exit_code": 0,
+          "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/integration');validate_sensorless_v2_case('rail','D:/simulink/dev/modern/sensorless/runs/N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803/rail_baseline_attempt_1',false);",
+          "native_failure": false
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\rail_baseline_attempt_1"
+    },
+    {
+      "label": "window_formal",
+      "case_id": "window",
+      "observer": true,
+      "status": "passed",
+      "attempts": [
+        {
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\window_formal_attempt_1_console.log",
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\window_formal_attempt_1",
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\window_formal_attempt_1_launcher.log",
+          "exit_code": 0,
+          "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/integration');validate_sensorless_v2_case('window','D:/simulink/dev/modern/sensorless/runs/N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803/window_formal_attempt_1',true);",
+          "native_failure": false
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\window_formal_attempt_1"
+    },
+    {
+      "label": "window_replay",
+      "case_id": "window",
+      "observer": true,
+      "status": "passed",
+      "attempts": [
+        {
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\window_replay_attempt_1_console.log",
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\window_replay_attempt_1",
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\window_replay_attempt_1_launcher.log",
+          "exit_code": 0,
+          "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/integration');validate_sensorless_v2_case('window','D:/simulink/dev/modern/sensorless/runs/N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803/window_replay_attempt_1',true);",
+          "native_failure": false
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\window_replay_attempt_1"
+    },
+    {
+      "label": "window_baseline",
+      "case_id": "window",
+      "observer": false,
+      "status": "passed",
+      "attempts": [
+        {
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\window_baseline_attempt_1_console.log",
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\window_baseline_attempt_1",
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\window_baseline_attempt_1_launcher.log",
+          "exit_code": 0,
+          "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/integration');validate_sensorless_v2_case('window','D:/simulink/dev/modern/sensorless/runs/N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803/window_baseline_attempt_1',false);",
+          "native_failure": false
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\window_baseline_attempt_1"
+    },
+    {
+      "label": "deadline_formal",
+      "case_id": "deadline",
+      "observer": true,
+      "status": "passed",
+      "attempts": [
+        {
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\deadline_formal_attempt_1_console.log",
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\deadline_formal_attempt_1",
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\deadline_formal_attempt_1_launcher.log",
+          "exit_code": 0,
+          "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/integration');validate_sensorless_v2_case('deadline','D:/simulink/dev/modern/sensorless/runs/N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803/deadline_formal_attempt_1',true);",
+          "native_failure": false
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\deadline_formal_attempt_1"
+    },
+    {
+      "label": "deadline_replay",
+      "case_id": "deadline",
+      "observer": true,
+      "status": "passed",
+      "attempts": [
+        {
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\deadline_replay_attempt_1_console.log",
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\deadline_replay_attempt_1",
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\deadline_replay_attempt_1_launcher.log",
+          "exit_code": 0,
+          "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/integration');validate_sensorless_v2_case('deadline','D:/simulink/dev/modern/sensorless/runs/N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803/deadline_replay_attempt_1',true);",
+          "native_failure": false
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\deadline_replay_attempt_1"
+    },
+    {
+      "label": "deadline_baseline",
+      "case_id": "deadline",
+      "observer": false,
+      "status": "passed",
+      "attempts": [
+        {
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\deadline_baseline_attempt_1_console.log",
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\deadline_baseline_attempt_1",
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\deadline_baseline_attempt_1_launcher.log",
+          "exit_code": 0,
+          "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/integration');validate_sensorless_v2_case('deadline','D:/simulink/dev/modern/sensorless/runs/N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803/deadline_baseline_attempt_1',false);",
+          "native_failure": false
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\deadline_baseline_attempt_1"
+    },
+    {
+      "label": "verification",
+      "case_id": "",
+      "observer": true,
+      "status": "passed",
+      "attempts": [
+        {
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\verification_attempt_1_console.log",
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\verification_attempt_1",
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\verification_attempt_1_launcher.log",
+          "exit_code": 0,
+          "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/integration');verify_sensorless_v2_campaign('D:/simulink/dev/modern/sensorless/runs/N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803');",
+          "native_failure": false
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803"
+    }
+  ]
+}

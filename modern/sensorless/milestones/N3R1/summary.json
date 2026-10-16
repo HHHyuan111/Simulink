@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "node": "N3R1",
+  "status": "passed_awaiting_user_review",
+  "candidate_commit": "75f03bc",
+  "formal_jobs": 15,
+  "case_count": 4,
+  "log_count_each": 87,
+  "native_samples_each": 320001,
+  "observer_packets_each": 400,
+  "source_files_each": 85,
+  "contracts_and_inputs_each": 9,
+  "raw_replay_elements": 116101296,
+  "original52_regression_elements": 80902920,
+  "all_first_attempt": true,
+  "original_model_restored": true,
+  "scope": "causal nonideal short integration; not R2 precision acceptance",
+  "feedback_takeover": false,
+  "hardware_validated": false,
+  "old_N3_all_passed": false,
+  "native_root_cause_resolved": false,
+  "next_node": "N3R2 only after user accepts R1"
+}

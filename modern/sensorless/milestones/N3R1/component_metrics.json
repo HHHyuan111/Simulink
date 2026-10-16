@@ -1,0 +1,16 @@
+{
+  "calibration_max_A": 4.4408920985006262E-16,
+  "sine_alignment_max_A": 0.0010890835908350383,
+  "ramp_alignment_max_A": 1.3877787807814457E-17,
+  "phase_max_rad": 5.6247945731040743E-17,
+  "native_filter_max_V": 0,
+  "interval_max_V": 2.7791102752416919E-12,
+  "calibration_frames": 300,
+  "alignment_frames": 6000,
+  "phase_cases": 41,
+  "native_samples": 4801,
+  "rail_cases": 6,
+  "queue_samples": 1601,
+  "recovery_samples": 1500,
+  "all_passed": true
+}

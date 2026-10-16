@@ -2,7 +2,7 @@
 
 基于远端 `main` 的 `8676342ad23f2d980bd4ff9fff0aeb5641a2f540`，开发分支 `dev`，工作树 `D:/simulink/dev`。
 
-当前节点：用户要求在真实节拍与非理想条件下继续实现，并授权先按工程假设推进。N3R0的电压/节拍/控制许可组件与独立复现通过，等待本节点验收；尚未接入主模型做组合性能测试。旧N3保持15/16复现未通过，0 μs详细桥原生异常缺项不改判。N0/N1/N2已由用户确认，观测角度尚未接入控制反馈。
+当前节点：用户已接受N3R0并授权按工程假设接入。N3R1本地非理想适配、组件复现、四组20ms完整复现及原52路同配置回归通过，停在R1验收点；R2长时组合精度尚未开始。旧N3保持15/16复现未通过，0 μs详细桥原生异常缺项不改判。N0/N1/N2已确认，观测角度尚未接入控制反馈。
 
 - `contracts/acceptance_v1.json`：验收阈值与判定规则。
 - `contracts/test_plan_v1.json`：固定场景、事件、窗口及复跑要求。
@@ -21,6 +21,9 @@
 - `contracts/nonideal_v2.json`：独立于v1的非理想工程假设、正常/故障工况及更严格的有效性目标。
 - `milestones/N3R0.md`：非理想适配前置节点的实现、组件验证和未完成项。
 - `robust/INTERFACE.md`：独立电压、节拍和发布许可核心；未自动装入当前GUI模型。
+- `milestones/N3R1.md`：非理想本地接入、完整短时复现/回归、故障入口与待验收记录。
+- `robust/integration/INTERFACE.md`：三相标定/对齐、滤波匹配、延后发布、47个作用域Goto及v2日志单位。
+- `contracts/nonideal_r1_test_plan.json`与`nonideal_r1_window_addendum.json`：实施前标准及故障窗口补充刺激，历史计划均保留。
 - `INTERFACE.md`：模块、Goto作用域、参数单位、时间及日志约定。
 
 原有主模型、固定参考和PI保持；后续算法在当前模型中做可撤销旁路接入。每个节点提交记录后停在验收点，不自动进入下一节点。
@@ -54,4 +57,6 @@ N2科学检查入口为 `validate_sensorless_n2`。复跑与原始数据核验�
 
 N3完整矩阵入口为 `run_sensorless_n3.ps1 -Label formal -IncludeBaselines`，复跑用 `-Label replay -ReplayOf 正式轮目录`。每个工况独立MATLAB进程，只有明确原生异常才允许一次重试，不以重复运行选优。
 
-`verify_sensorless_n3_replay`要求完整16工况；本次缺项另用 `audit_sensorless_n3_archives` 出具不完整报告，整体 `all_passed=false`。审阅当前成果不等于批准接管，N3缺项解决前不进入下一节点。
+`verify_sensorless_n3_replay`要求完整16工况；旧N3缺项另用 `audit_sensorless_n3_archives` 出具不完整报告，整体 `all_passed=false`。后续由用户另行授权的v2非理想轨道单独验证，不以v2短时结果填补旧N3缺项，仍未批准接管。
+
+R1正式入口为`run_sensorless_v2_r1.ps1`；要求冻结候选指纹一致，15个作业均使用独立MATLAB进程。新版本查看请在独立MATLAB会话中添加`sensorless/review`后执行`pmsm_sensorless_v2_review('open')`；`close_pmsm_sensorless_v2`恢复。此入口实际开启非理想工程配置，原先N2查看入口仍是其历史配置。62.5ns用于仿真事件核对；固件边沿分段计算和实测总耗时尚待上板阶段验证。

@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "node": "N3R1",
+  "development_is_not_formal_evidence": true,
+  "entries": [
+    {
+      "id": "component_development_1",
+      "cause": "Local queue fixture variable angle shadowed the MATLAB angle function; corrected variable name before next execution",
+      "log": ".build/R1_components_development_1.log",
+      "status": "script_failure"
+    },
+    {
+      "retry_log": ".build/R1_components_development_native_retry.log",
+      "id": "component_development_2",
+      "root_cause": "unconfirmed",
+      "native_retry_count": 1,
+      "log": ".build/R1_components_development_2.log",
+      "native_code": "0xc0000005",
+      "status": "native_failure",
+      "retry_status": "passed"
+    },
+    {
+      "id": "development_combined_1",
+      "folder": "runs/N3R1_development_combined_1",
+      "source": "Initial adapter before uncertainty filter memory and expanded-band correction",
+      "status": "passed_development_only"
+    },
+    {
+      "cause": "Circuit oracle exposed inconsistent phase zeroing/zero-sequence handling; corrected by preserving predicted phases and expanding bridge ambiguity band",
+      "id": "development_window_1",
+      "folder": "runs/N3R1_development_window_1",
+      "source_caveat": "Audit script was edited before late load during this development run; its initial source snapshot is not a frozen executed-audit capsule. This failed development run is excluded from acceptance evidence.",
+      "status": "failed_audit"
+    },
+    {
+      "cause": "Window enabled but zero invalid windows during 20ms; frozen original plan retained and deterministic fault stimulus preregistered in window addendum",
+      "id": "development_screen_v2_window",
+      "folder": "runs/N3R1_development_screen_v2_window",
+      "status": "failed_coverage"
+    },
+    {
+      "id": "development_screen_v3",
+      "folders": [
+        "runs/N3R1_development_screen_v3_window",
+        "runs/N3R1_development_screen_v3_rail",
+        "runs/N3R1_development_screen_v3_deadline"
+      ],
+      "status": "passed_development_only"
+    },
+    {
+      "observer": "runs/N3R1_development_final_ui_combined",
+      "baseline": "runs/N3R1_development_combined_baseline",
+      "id": "final_ui_and_original52",
+      "status": "passed_development_only",
+      "all_identical": true,
+      "original52_elements": 10112865
+    }
+  ],
+  "formal_candidate": "75f03bc",
+  "formal_campaign": "runs/N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803",
+  "old_N3_status": "not_passed; zero-us detailed-bridge replay missing; unchanged",
+  "postprocessing": [
+    {
+      "status": "CSV_exports_complete_then_inline_driver_path_error",
+      "step": "export_driver_1",
+      "correction": "Added sensorless base path for named SMO/PLL configuration export; no numeric simulation rerun or change",
+      "log": ".build/R1_export_attempt_1.log"
+    },
+    {
+      "status": "passed",
+      "step": "parameters_and_diagram",
+      "log": ".build/R1_parameters_diagram_attempt_1.log"
+    },
+    {
+      "status": "visual_QA_found_missing_tag_relayout",
+      "cause": "Masked root excluded by default find_system behavior; zero visibility tags formatted",
+      "step": "presentation_1",
+      "log": ".build/R1_presentation_attempt_1.log",
+      "retained": ".build/presentation_validation_initial.json"
+    },
+    {
+      "status": "passed_semantic_and_restoration_checks",
+      "step": "presentation_2",
+      "correction": "LookUnderMasks all plus explicit 47-tag assertion in presentation-only script",
+      "log": ".build/R1_presentation_attempt_2.log"
+    }
+  ],
+  "formal_result": {
+    "native_retries": 0,
+    "warning": "Arrow exec plan destruction diagnostic in deadline baseline, process completed and exact regression passed; raw logs retained",
+    "jobs": 15,
+    "original52_regression_elements": 80902920,
+    "all_first_attempt": true,
+    "status": "passed",
+    "raw_replay_elements": 116101296
+  }
+}
