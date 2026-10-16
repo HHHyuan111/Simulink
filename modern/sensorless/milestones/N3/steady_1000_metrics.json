@@ -1,0 +1,55 @@
+{
+  "case_id": "steady_1000",
+  "kind": "base_precision",
+  "samples": 16001,
+  "finite_states": true,
+  "first_valid_s": 0.0465,
+  "false_valid_samples": 0,
+  "false_valid_fraction_of_valid": 0,
+  "false_valid_longest_s": 0,
+  "whole_run_peak_angle_abs_deg": 100.72188183708582,
+  "whole_run_peak_speed_error_rpm": 858.8513966890132,
+  "windows": {
+    "begin_s": 0.5,
+    "end_s": 0.8,
+    "samples": 6001,
+    "target_rpm": 1000,
+    "true_speed_mean_rpm": 999.99363081727108,
+    "true_speed_slope_rpm_s": 0.12851903246199764,
+    "electrical_cycles": 24.999578765430687,
+    "angle_rms_deg": 0.030411697271302593,
+    "angle_abs_max_deg": 0.090363163980066066,
+    "speed_mean_signed_error_rpm": -0.0075293181379200678,
+    "speed_error_rms_rpm": 1.3713023124203598,
+    "speed_mean_error_relative": 7.5293181379200676E-6,
+    "speed_error_rms_relative": 0.0013713023124203598,
+    "valid_fraction": 1,
+    "plant_settled": true,
+    "precision_passed": true
+  },
+  "events": [],
+  "stimulus": {
+    "speed_request_schedule_identical": true,
+    "load_schedule_identical": true,
+    "passed": true
+  },
+  "validity": {
+    "valid_samples_identical": true,
+    "state_samples_identical": true,
+    "history_samples_identical": true,
+    "invalid_sample_immediate": true,
+    "passed": true
+  },
+  "faults": {
+    "required": false,
+    "injected_samples": 0,
+    "correct_count": true,
+    "state_semantics": true,
+    "reacquire_s": null,
+    "passed": true
+  },
+  "correct_sign": true,
+  "precision_required": true,
+  "dynamic_required": false,
+  "passed": true
+}

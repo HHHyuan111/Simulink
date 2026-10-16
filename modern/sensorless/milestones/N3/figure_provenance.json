@@ -1,0 +1,89 @@
+{
+  "source_folder": "D:/simulink/dev/modern/sensorless/runs/N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f",
+  "sources": [
+    {
+      "case_id": "steady_1000",
+      "raw_sha256": "e707a39543b3e8df417a58d76373261b910b5846410d248bb26b816a3e0b8731",
+      "csv_sha256": "9d7d4e6f5a733ed17256ee3384805677f730f734ef19a537b609758cde22e2b6"
+    },
+    {
+      "case_id": "steady_2000",
+      "raw_sha256": "0f0440be657fff689d8014633a7caa93449f9a773bb2796e099da234aac497f5",
+      "csv_sha256": "c96e4ccc57c48a40e09e8f07ea92a5de8eeb2426887e043065ddafb5880cc904"
+    },
+    {
+      "case_id": "steady_3000",
+      "raw_sha256": "6f83657b515e212a005e9322d5f60e9e50964eb2312e720a209422f59b7112d3",
+      "csv_sha256": "1d5ead852e4dca99d61f451b06aa5b789a540a1d7a98ea0c717da7e58697ccbd"
+    },
+    {
+      "case_id": "dynamic_speed_load",
+      "raw_sha256": "926abbd5b22034c074b56f8b7091f209edd0904e4d1f1f76eef508c4ef834bcf",
+      "csv_sha256": "60b7d8bb148910d34f092f19e613128ca9990f2f6cb2872f2efa8d11c5f0dd22"
+    },
+    {
+      "case_id": "reverse_1000",
+      "raw_sha256": "e1dc879bf4d12a7de39f181176ca85041dd83474d6f7fde02e501c07c50e473e",
+      "csv_sha256": "05e771a1afdf892c0f44e0b6b4df416b7e2fd7c1f2addcb203927bbb295441aa"
+    },
+    {
+      "case_id": "reverse_3000",
+      "raw_sha256": "748ffdbc1666ae29f479b4042349869aed9229e3db65de01068ca5c0161b81b4",
+      "csv_sha256": "76815f6bfb814cf1a2b7d3b93bafd3a6c94d65a2bb2b018d2493e45178c41217"
+    },
+    {
+      "case_id": "mismatch_Rs_0.8",
+      "raw_sha256": "98873a3c47ac524265140e6ab16d903e417356c9da4d2da5dfd94d2e68151689",
+      "csv_sha256": "7a776d504c455ddb9acb3d3007cb3bf00c4afa2d93c7a30bdd4efcfb3f3ec29e"
+    },
+    {
+      "case_id": "mismatch_Rs_1.2",
+      "raw_sha256": "37c587e421eb3fed3a753d939030e36bfc719a61685d0ec76542fd7ec11de46f",
+      "csv_sha256": "a46aa53c3d64062e1e07dc3b19d62819432605dd962b987239c0840cc6820c8a"
+    },
+    {
+      "case_id": "mismatch_L_0.8",
+      "raw_sha256": "bdaf9d380c0303243b67eafaebaf02e984f089737d5ca2a932b6fb5a1969f0ba",
+      "csv_sha256": "38e0920b965757c9d02bb8a6f3e229409d33d7ac80bf287fe54180d221d1ebfd"
+    },
+    {
+      "case_id": "mismatch_L_1.2",
+      "raw_sha256": "ba10c15351d5c248014265dd27b951516c798bbd57fa4f15c2e83985f967883c",
+      "csv_sha256": "7c699d8e0c441b0f4f5e0e231bae1f07dfafc851fdce2b2b755b2540ec0e0a08"
+    },
+    {
+      "case_id": "noise_002A",
+      "raw_sha256": "5e73c030625917a19079fdcedf1e32782d1ba8c1a5712e8fa306cfe467079b2c",
+      "csv_sha256": "5512d085ae3f5d14b39aaf11889c3c09e00f132136aabb76faec9fecf36e18cb"
+    },
+    {
+      "case_id": "detailed_bridge_0us",
+      "raw_sha256": "911160429e34a1e80caea552ac9db8fef4188273f1f4420cb7a2c47a9b370470",
+      "csv_sha256": "b18197f527eead1b738479e41a0cdae1da7d881fd9039014d8749bace2d7f424"
+    },
+    {
+      "case_id": "detailed_bridge_2us",
+      "raw_sha256": "ec70787c7924dbdb0085e3562f09d0225e106594e2fb174ef6a5409bd43fa8ed",
+      "csv_sha256": "6ca68d542eba61f6fb9cfeb334dfcc748940a4d069e541689a48e2b4d7d5eb32"
+    },
+    {
+      "case_id": "low_speed_stop",
+      "raw_sha256": "2db8cb394fdaf77d50dc028f22f0d4bbfc8de14db22f8cb5d36e57a2ef0566d2",
+      "csv_sha256": "fa1df21aedc522121f6491fdf9dd0c92b02991e7c72559f029dea1b94fafbe94"
+    },
+    {
+      "case_id": "missing_5_samples",
+      "raw_sha256": "c64bb81aae3ff06d9c6f80ef0958e989812ffcb90fce5a48f7234312b639e4b8",
+      "csv_sha256": "756782eab3eb1d80fde52b51c43628cf1377f1f697278d0ce4b58b28183cf8b3"
+    },
+    {
+      "case_id": "observer_reset",
+      "raw_sha256": "394f4ee8237d4f361128584316d81e6e5db410e7184794cad880b748284489e8",
+      "csv_sha256": "904651aad11a7dcf908b36b640312ae5ff4308898b4f2040d5c1e03097696390"
+    }
+  ],
+  "full_control_rate": true,
+  "exporter_sha256": "b76e8593df9b4f38535f2aa59717d28fdd477735f41e952d3d75d098a46f502c",
+  "renderer_sha256": "2e23373cba088a4e9a7f7a224c5e94b82d6365a8b2067cd9d404b898a3ce4ec2",
+  "renderer": "matplotlib 3.11.2, numpy 2.5.4"
+}

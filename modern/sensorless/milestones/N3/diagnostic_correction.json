@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "node": "N3",
+  "scope": "postprocessing_only_no_simulation_or_acceptance_change",
+  "reason": "Fault-window target was NaN instead of 3000 rpm; zero-target relative errors now N/A.",
+  "executed_analyzer_sha256": "1f6076a53ce2808594f670a00ad92334ab23e8f6687cb6a37c2193b8e1c885e0",
+  "corrected_analyzer_sha256": "5f43a679eed4b53105cc04fa450c73dc4812296bce93457ba5e68d0dfe6fe482",
+  "correction_driver_sha256": "340aee075ef2fee7296844aa0d9461c2234cbc41b911d0c1a79c87b20c3001a3",
+  "cases": [
+    {
+      "case_id": "low_speed_stop",
+      "group": "original",
+      "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\observer\\low_speed_stop\\attempt_1",
+      "raw_sha256": "2db8cb394fdaf77d50dc028f22f0d4bbfc8de14db22f8cb5d36e57a2ef0566d2",
+      "raw_unchanged": true,
+      "required_flags_identical": true,
+      "diagnostic_fields_allowed": [
+        "target_rpm",
+        "speed_mean_error_relative",
+        "speed_error_rms_relative",
+        "plant_settled",
+        "precision_passed"
+      ]
+    },
+    {
+      "case_id": "low_speed_stop",
+      "group": "replay",
+      "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_remaining_20261016_182823_ed9d8d01-68ab-4448-8db5-0a0d504e6074\\observer\\low_speed_stop\\attempt_1",
+      "raw_sha256": "496211765b1e01ffd7bd2e73fbcba04532d9e5a51f595f9007a5bcb206e2c83d",
+      "raw_unchanged": true,
+      "required_flags_identical": true,
+      "diagnostic_fields_allowed": [
+        "target_rpm",
+        "speed_mean_error_relative",
+        "speed_error_rms_relative",
+        "plant_settled",
+        "precision_passed"
+      ]
+    },
+    {
+      "case_id": "missing_5_samples",
+      "group": "original",
+      "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\observer\\missing_5_samples\\attempt_1",
+      "raw_sha256": "c64bb81aae3ff06d9c6f80ef0958e989812ffcb90fce5a48f7234312b639e4b8",
+      "raw_unchanged": true,
+      "required_flags_identical": true,
+      "diagnostic_fields_allowed": [
+        "target_rpm",
+        "speed_mean_error_relative",
+        "speed_error_rms_relative",
+        "plant_settled",
+        "precision_passed"
+      ]
+    },
+    {
+      "case_id": "missing_5_samples",
+      "group": "replay",
+      "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_remaining_20261016_182823_ed9d8d01-68ab-4448-8db5-0a0d504e6074\\observer\\missing_5_samples\\attempt_1",
+      "raw_sha256": "5ad7fb511396c25d1df60a549b2628902fdb9303333f9556b8b8ea6d0fc1541b",
+      "raw_unchanged": true,
+      "required_flags_identical": true,
+      "diagnostic_fields_allowed": [
+        "target_rpm",
+        "speed_mean_error_relative",
+        "speed_error_rms_relative",
+        "plant_settled",
+        "precision_passed"
+      ]
+    },
+    {
+      "case_id": "observer_reset",
+      "group": "original",
+      "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\observer\\observer_reset\\attempt_1",
+      "raw_sha256": "394f4ee8237d4f361128584316d81e6e5db410e7184794cad880b748284489e8",
+      "raw_unchanged": true,
+      "required_flags_identical": true,
+      "diagnostic_fields_allowed": [
+        "target_rpm",
+        "speed_mean_error_relative",
+        "speed_error_rms_relative",
+        "plant_settled",
+        "precision_passed"
+      ]
+    },
+    {
+      "case_id": "observer_reset",
+      "group": "replay",
+      "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_remaining_20261016_182823_ed9d8d01-68ab-4448-8db5-0a0d504e6074\\observer\\observer_reset\\attempt_2",
+      "raw_sha256": "42d3b76d6388d67b32036e1e5c2811a1c3a5e3fdd4bd61e123854a9ad59bfd91",
+      "raw_unchanged": true,
+      "required_flags_identical": true,
+      "diagnostic_fields_allowed": [
+        "target_rpm",
+        "speed_mean_error_relative",
+        "speed_error_rms_relative",
+        "plant_settled",
+        "precision_passed"
+      ]
+    }
+  ],
+  "corrected_replay_metrics_identical": true,
+  "all_required_flags_identical": true
+}

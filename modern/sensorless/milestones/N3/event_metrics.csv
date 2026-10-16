@@ -1,0 +1,5 @@
+﻿case_id,type,request_time_s,source_first_logged_time_s,accepted_task_time_s,first_observer_task_s,recovery_interval_start_s,recovery_hold_end_s,recovery_delay_s,peak_angle_abs_deg,peak_speed_error_rpm,passed
+dynamic_speed_load,speed,0.3,0.3,0.3,0.3,0.32775000000000004,0.34775000000000006,0.027750000000000052,8.600595946837553,48.78861302463474,True
+dynamic_speed_load,load,0.6,0.6,0.6,0.6,0.6,0.62,0,1.2618752998085314,12.47624408724596,True
+low_speed_stop,speed,0.3,0.3,0.3,0.3,,,,179.93709195873726,537.4369312882977,False
+low_speed_stop,speed,0.6,0.6,0.6,0.6,,,,179.98609680239545,642.3083078826949,False

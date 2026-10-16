@@ -1,0 +1,307 @@
+{
+  "schema": 1,
+  "node": "N3",
+  "case_id": "mismatch_Rs_0.8",
+  "label": "formal2",
+  "folder": "D:/simulink/dev/modern/sensorless/runs/N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f/observer/mismatch_Rs_0.8/attempt_1",
+  "status": "passed",
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "process_id": 59504,
+  "phase": "completed",
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "source_files": [
+    {
+      "path": "analyse_sensorless_n2.m",
+      "sha256": "02fd41aee60edea2ccfbbee2c4294b37a4143506f4e04e964b2c4fd3425baaeb"
+    },
+    {
+      "path": "analyse_sensorless_n3_case.m",
+      "sha256": "1f6076a53ce2808594f670a00ad92334ab23e8f6687cb6a37c2193b8e1c885e0"
+    },
+    {
+      "path": "archive_sensorless_n2.m",
+      "sha256": "4289edeece780f8468cce5890abde6adf25217b9d58eb4142ccb7bfd239cb2c6"
+    },
+    {
+      "path": "check_sensorless_graph.m",
+      "sha256": "099bad4b83a39e612c73315a88fed33bc055646abf37cd6bdeafb5faec0af3b8"
+    },
+    {
+      "path": "close_pmsm_sensorless.m",
+      "sha256": "486fb9431ae5626ed8e520c1bd4b56a44a67cf8a566513c15239963e6868905f"
+    },
+    {
+      "path": "export_sensorless_n2_review.m",
+      "sha256": "b40203c25f997224097aa649f747a188fedb34b2183b8732c7f0d574ba6c86e2"
+    },
+    {
+      "path": "export_sensorless_n3.m",
+      "sha256": "b76e8593df9b4f38535f2aa59717d28fdd477735f41e952d3d75d098a46f502c"
+    },
+    {
+      "path": "open_pmsm_sensorless.m",
+      "sha256": "5be4911b729927157f459c14ae75d7f249447af5780c02aac29ea0f32692c0b0"
+    },
+    {
+      "path": "pmsm_sensorless_init.m",
+      "sha256": "6f1b0aa5e09fdd2a2ccd12311e383c697d7938a0f32ec771a7da789e271aa18a"
+    },
+    {
+      "path": "pmsm_sensorless_init_n3.m",
+      "sha256": "8f616fd82aa1d6e0c85315f35907d319a8c249bf5692f0574bec3831e123ca0b"
+    },
+    {
+      "path": "pmsm_sensorless_model.m",
+      "sha256": "171eba2375d8524f1a57c7702c4366bb43915a9b6228332b46518aa1f3188e4c"
+    },
+    {
+      "path": "pmsm_sensorless_scope.m",
+      "sha256": "e1b58fb1c02d62ba98823877aa8e11056e71d074e675f412eee62182edee82bf"
+    },
+    {
+      "path": "render_sensorless_n1.m",
+      "sha256": "393018c510da20f6f638dbf9f869a3fcf66fa1ca6ee8b2262955ce776c15d126"
+    },
+    {
+      "path": "render_sensorless_n2.m",
+      "sha256": "520acd46f171bdfffdc6815417930405d4a5e700d64612ce956dac95e8d9b86e"
+    },
+    {
+      "path": "repeat_sensorless_n1.m",
+      "sha256": "ef374b30007dd7ff54e3f5c37f24115be917bf540d7ba2bfb02b5d2ab1845216"
+    },
+    {
+      "path": "repeat_sensorless_n2.m",
+      "sha256": "5e25d3a4cbbe7f6f8dc9c00dae290da66b3f86ab9f357300e3fbb70a758fd49f"
+    },
+    {
+      "path": "sensorless_emf_step.m",
+      "sha256": "6be57dd81cd118962def67a7450d9513c8d0fa077d4839b552be452762ce4259"
+    },
+    {
+      "path": "sensorless_n0_inventory.m",
+      "sha256": "c1e59ca7b7aa66b9a5edd446b11a53070b08640181c725b2b25928249e8cfbbf"
+    },
+    {
+      "path": "sensorless_n1_pll_tests.m",
+      "sha256": "4e0ac9d86cb2ee479f57e174884984ed316268bf83296e9ba32acc1b861ea8f7"
+    },
+    {
+      "path": "sensorless_n2_isolated.m",
+      "sha256": "f6db6d9de42c3c6d85bd659e5f6c0ea899444efe68d5d11a0dfda6ea4a6b02a4"
+    },
+    {
+      "path": "sensorless_n3_faults.m",
+      "sha256": "5a47baee800afbce185baafd4cf2aad3564cea5bbe9f9f731973b9c295a66e65"
+    },
+    {
+      "path": "sensorless_n3_restore.m",
+      "sha256": "384d0b1a39f8afe0396908e20b1e1be9e636b32ddcb70ef4c379340cc4c4da39"
+    },
+    {
+      "path": "sensorless_n3_stimulus.m",
+      "sha256": "2f89b0415c78a8f92511226e3de02ef0d4d85f4d153a4cfc98386d0eeccc396f"
+    },
+    {
+      "path": "sensorless_observer_step.m",
+      "sha256": "d687b72aca52e53c0eeb8679978f68412a442f465e0d9710f69c36fc8af4418b"
+    },
+    {
+      "path": "sensorless_parameters.m",
+      "sha256": "bd164983ed74d3a3ce6d5c8ad0eace939e49f9399ee27ed846f465db9d7ef51e"
+    },
+    {
+      "path": "sensorless_pll_step.m",
+      "sha256": "1d16dc17b1b50f157dbe25e14a91ec06bf5073d393b1d816645f80a036d5c328"
+    },
+    {
+      "path": "sensorless_rt_config.m",
+      "sha256": "d548b123f03f7483aaa3175f4be6dc4aeaab843cd74d71c79e70160075524a6f"
+    },
+    {
+      "path": "sensorless_smo_step.m",
+      "sha256": "19e2d581dabddcac1dab014baa4b082c6465afd01fac01eaf1f8ad962052f033"
+    },
+    {
+      "path": "sensorless_state.m",
+      "sha256": "193d39a8cff13b51637ff783d1bf42b7a4753e23db22fa45b1afc09723e72206"
+    },
+    {
+      "path": "sensorless_validity_step.m",
+      "sha256": "5772a44ca9911b3618279feeaf225177ea2fd74160b9716ddcb60a00a8d50272"
+    },
+    {
+      "path": "sensorless_voltage_step.m",
+      "sha256": "4815b5ddefbb61ef5300fa7813a28544d4734b0bfe1629186e741503b1c30e9b"
+    },
+    {
+      "path": "validate_sensorless_n1.m",
+      "sha256": "902467d0d6feb2d5b6d4ea106b5266c7d8dfe95a0873690c3f35a0f70786ca75"
+    },
+    {
+      "path": "validate_sensorless_n2.m",
+      "sha256": "31e3849cbe40bae1226c4e7f1c4bf4cdf29f16a1cd130da6fff28f8977208df5"
+    },
+    {
+      "path": "validate_sensorless_n2_case.m",
+      "sha256": "215b9390be013e1a2daee594a1a7c77a5e7e500b4f3b3daace2631185e7fb2c7"
+    },
+    {
+      "path": "validate_sensorless_n3_case.m",
+      "sha256": "3d8ac41c6d8525ca562775229c573d15e6faf90edfa052356ffcf1d02ab9a627"
+    },
+    {
+      "path": "verify_sensorless_n2_archives.m",
+      "sha256": "0ed571a788734d6cafad553ba3782d9a7d45ad0922d65ba54d53013590c5a592"
+    },
+    {
+      "path": "verify_sensorless_n3_replay.m",
+      "sha256": "59d03af9a6f27dde2332d8dba5176bdba3f289978ea4c792d4eae6aeff7f3e95"
+    },
+    {
+      "path": "blocks/sless_emf_block.m",
+      "sha256": "da0cfa47ea36fae7e4a8558d7695899457ef448bff93744a7d2f2ea25b019191"
+    },
+    {
+      "path": "blocks/sless_input_block.m",
+      "sha256": "de89b993dc6fb166399b418132d124b8ecbb39487a3fa7d3a9ea43342ab1ca4e"
+    },
+    {
+      "path": "blocks/sless_pll_block.m",
+      "sha256": "5ca50f6a0ac7173c5f5ad830f85e8b7b1d21e2eae46c33c8417745f01c079be8"
+    },
+    {
+      "path": "blocks/sless_reset_block.m",
+      "sha256": "38ad054da7b15aee31599590da01ceb9342620009fb39203a2ab326381388776"
+    },
+    {
+      "path": "blocks/sless_smo_block.m",
+      "sha256": "613827816e25143c7b4bf6b1939d3cf76254f6d071d8d19d3438cc80bc257041"
+    },
+    {
+      "path": "blocks/sless_validity_block.m",
+      "sha256": "124b851359dde22064d21a56d050652fae9067cbac902eaf9b86ab3ee45711ba"
+    },
+    {
+      "path": "blocks/sless_voltage_block.m",
+      "sha256": "36b1056912066ed4d838b6a79b6a8b42b4117ca75ca29d3e74b477f2e8445bfc"
+    }
+  ],
+  "contracts": [
+    {
+      "path": "contracts/acceptance_v1.json",
+      "sha256": "dc9951b4920f5e24c1da42933e737c168b97410e510c302ddc94798896364ad4"
+    },
+    {
+      "path": "contracts/test_plan_v1.json",
+      "sha256": "717598811b3e2225c4606483dd205c76b2a50865d79af3fdba63531703373296"
+    },
+    {
+      "path": "milestones/N3_test_plan.json",
+      "sha256": "8b409539050501d74dd1528e386fe9ef91537bfa62a234fcc7be948324c69a1e"
+    },
+    {
+      "path": "milestones/N3_final_parameters.json",
+      "sha256": "14d67ad1dcdce93112dc4fee2918bb893ee18cb5f966f8cc7174aecb2ea7fafd"
+    }
+  ],
+  "observer_present": true,
+  "raw_format": "top_level_timeseries_v1",
+  "fault_configuration": {
+    "noise_samples": 0,
+    "noise_empirical_rms_ABC_A": [],
+    "missing_ticks": [],
+    "reset_tick": []
+  },
+  "observer_config": {
+    "R_hat": 0.084100000000000008,
+    "L_hat": 0.0001037615,
+    "sample_s": 5E-5,
+    "a": 0.96028455355819575,
+    "b": 0.47224074247091824,
+    "g": 70,
+    "Kslide_V": 14,
+    "boundary_A": 0.2,
+    "observer_pole": 0.028196515471262847,
+    "filter_r": 0.777767679171789,
+    "pll_Kp": 533.065441461116,
+    "pll_Ki": 142122.30337568672,
+    "omega_limit_rad_s": 2000,
+    "pole_pairs": 5,
+    "interval_convention": "rl_weighted_rotating",
+    "window_samples": 200,
+    "lock_samples": 400,
+    "unlock_samples": 100,
+    "validity": {
+      "emf_on_min_V": 2,
+      "emf_off_below_V": 1.5,
+      "current_residual_vector_rms_max_A": 0.5,
+      "pll_phase_error_rms_max": 0.15
+    },
+    "evaluation_speed_sample": [
+      0.0001,
+      0
+    ]
+  },
+  "motor_pi": {
+    "Rs": 0.105125,
+    "Ld": 0.0001037615,
+    "Lq": 0.0001037615,
+    "phis": 0.00565685424949238,
+    "p": 5,
+    "J": 3.2E-5,
+    "F": 0,
+    "Vdc": 24,
+    "Iq_limit": 8,
+    "kp_w": 0.00069087230807625508,
+    "ki_w": 0.04340878735241975,
+    "ks_w": 0.98718608264211138,
+    "kp_id": 0.7539822368615503,
+    "ki_id": 879.645943005142,
+    "ks_id": 1.1309733552923253,
+    "kp_iq": 0.7539822368615503,
+    "ki_iq": 879.645943005142,
+    "ks_iq": 1.1309733552923253
+  },
+  "effective_case": {
+    "id": "mismatch_Rs_0.8",
+    "node": "N3",
+    "kind": "boundary",
+    "speed_rpm": 3000,
+    "duration_s": 0.8,
+    "window_s": [
+      0.5,
+      0.8
+    ],
+    "observer_parameter_multiplier": {
+      "Rs": 0.8
+    },
+    "plant_parameter_multiplier": 1,
+    "configuration": {
+      "bus_V": 24,
+      "load_Nm": 0.207,
+      "iq_reference_limit_A": 8,
+      "pi": "unchanged",
+      "motor": "loaded_model_nominal",
+      "bridge": "original_ideal",
+      "measurement": "ideal",
+      "extra_factors": "off",
+      "feedback": "original_reference",
+      "observer_feedback": "disconnected",
+      "initial_state": "fixed_reference_v1"
+    }
+  },
+  "speed_task_sample": [
+    0.0001,
+    0
+  ],
+  "speed_rate_evidence": "original masked SampleTime resolved with slResolve and checked against timing_speed_sample; N0/N2 compiled rate evidence retained; no extra legacy compile/term cycle",
+  "timing_h": 1E-6,
+  "control_sample": 5E-5,
+  "simulation_elapsed_s": 38.7109989,
+  "raw_sha256": "98873a3c47ac524265140e6ab16d903e417356c9da4d2da5dfd94d2e68151689",
+  "log_count": 80,
+  "layer_restored": true,
+  "reference_restored": true,
+  "all_passed": true
+}

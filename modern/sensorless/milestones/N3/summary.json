@@ -1,0 +1,139 @@
+{
+  "schema": 1,
+  "node": "N3",
+  "cases": [
+    {
+      "case_id": "steady_1000",
+      "kind": "base_precision",
+      "passed": true,
+      "first_valid_s": 0.0465,
+      "false_valid_samples": 0,
+      "false_valid_longest_s": 0
+    },
+    {
+      "case_id": "steady_2000",
+      "kind": "base_precision",
+      "passed": true,
+      "first_valid_s": 0.060250000000000005,
+      "false_valid_samples": 0,
+      "false_valid_longest_s": 0
+    },
+    {
+      "case_id": "steady_3000",
+      "kind": "base_precision",
+      "passed": true,
+      "first_valid_s": 0.060250000000000005,
+      "false_valid_samples": 373,
+      "false_valid_longest_s": 0.01865
+    },
+    {
+      "case_id": "dynamic_speed_load",
+      "kind": "base_dynamic",
+      "passed": true,
+      "first_valid_s": 0.060250000000000005,
+      "false_valid_samples": 396,
+      "false_valid_longest_s": 0.0198
+    },
+    {
+      "case_id": "reverse_1000",
+      "kind": "boundary",
+      "passed": true,
+      "first_valid_s": 0.041550000000000004,
+      "false_valid_samples": 0,
+      "false_valid_longest_s": 0
+    },
+    {
+      "case_id": "reverse_3000",
+      "kind": "boundary",
+      "passed": true,
+      "first_valid_s": 0.055,
+      "false_valid_samples": 0,
+      "false_valid_longest_s": 0
+    },
+    {
+      "case_id": "mismatch_Rs_0.8",
+      "kind": "boundary",
+      "passed": true,
+      "first_valid_s": 0.044500000000000005,
+      "false_valid_samples": 689,
+      "false_valid_longest_s": 0.03445
+    },
+    {
+      "case_id": "mismatch_Rs_1.2",
+      "kind": "boundary",
+      "passed": true,
+      "first_valid_s": 0.064,
+      "false_valid_samples": 298,
+      "false_valid_longest_s": 0.0149
+    },
+    {
+      "case_id": "mismatch_L_0.8",
+      "kind": "boundary",
+      "passed": true,
+      "first_valid_s": 0.06065,
+      "false_valid_samples": 0,
+      "false_valid_longest_s": 0
+    },
+    {
+      "case_id": "mismatch_L_1.2",
+      "kind": "boundary",
+      "passed": true,
+      "first_valid_s": 0.0596,
+      "false_valid_samples": 433,
+      "false_valid_longest_s": 0.021650000000000003
+    },
+    {
+      "case_id": "noise_002A",
+      "kind": "boundary",
+      "passed": true,
+      "first_valid_s": 0.0603,
+      "false_valid_samples": 373,
+      "false_valid_longest_s": 0.01865
+    },
+    {
+      "case_id": "detailed_bridge_0us",
+      "kind": "boundary",
+      "passed": true,
+      "first_valid_s": 0.098578875,
+      "false_valid_samples": 0,
+      "false_valid_longest_s": 0
+    },
+    {
+      "case_id": "detailed_bridge_2us",
+      "kind": "boundary",
+      "passed": true,
+      "first_valid_s": 0.098178875,
+      "false_valid_samples": 0,
+      "false_valid_longest_s": 0
+    },
+    {
+      "case_id": "low_speed_stop",
+      "kind": "boundary",
+      "passed": true,
+      "first_valid_s": 0.0465,
+      "false_valid_samples": 175,
+      "false_valid_longest_s": 0.00875
+    },
+    {
+      "case_id": "missing_5_samples",
+      "kind": "boundary",
+      "passed": true,
+      "first_valid_s": 0.060250000000000005,
+      "false_valid_samples": 373,
+      "false_valid_longest_s": 0.01865
+    },
+    {
+      "case_id": "observer_reset",
+      "kind": "state_semantics",
+      "passed": true,
+      "first_valid_s": 0.060250000000000005,
+      "false_valid_samples": 373,
+      "false_valid_longest_s": 0.01865
+    }
+  ],
+  "formal_case_checks_all_passed": true,
+  "required_replay_cases": 16,
+  "completed_replay_cases": 15,
+  "node_all_passed": false,
+  "status": "incomplete_replay_not_accepted"
+}

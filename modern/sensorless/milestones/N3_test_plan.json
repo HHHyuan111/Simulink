@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "node": "N3",
+  "frozen_before_N3_simulations": true,
+  "contracts": ["contracts/acceptance_v1.json", "contracts/test_plan_v1.json"],
+  "case_selection": "all 16 cases whose node is N3 in test_plan_v1; no shortening or moving windows",
+  "initial_design": {"Kslide_V":14,"boundary_A":0.2,"emf_filter_hz":800,"pll_fn_hz":60,"pll_zeta":0.707},
+  "tuning": "only if a measured failure supports a causal change from the frozen v1 tuning grid; retain all prior results and freeze final parameters before final full execution/replay",
+  "stimulus": {
+    "speed": "original speed_ref Constant sets initial request; temporary root Sum/Step sources add declared changes, never replace the original block",
+    "load": "original T_load1 Before/After/Time, restored after the case",
+    "noise": "dedicated RandStream mt19937ar seed 20261016; 3 ABC values per 50us sample including t=0; injected only into observer sampled ABC before Clarke",
+    "missing": "observer sample-valid AND NOT(12000 <= control tick < 12005); no plant/controller sample removed",
+    "reset": "observer reset OR(control tick == 12000); no plant/controller state reset",
+    "direction": "declared direction from contract; no true rotor direction used",
+    "detailed_bridge": "gate_on=on for both 0us and 2us, comp_on/dead_on/drop_on=off, real timing on and ADC window off; native grid 62.5ns for full 0.8s"
+  },
+  "metrics": {
+    "steady": "all samples in [0.5,0.8], including invalid; v1 plant settled criteria and all precision/valid thresholds",
+    "cycles": "absolute change of unwrapped true electrical angle / 2pi in declared window",
+    "speed_slope": "least squares true rpm slope in declared steady window",
+    "dynamic": "first full 20ms contiguous interval satisfying valid, absolute wrapped angle <=8deg, abs speed error <=3% of abs true speed; recovery measured at interval beginning, hold must finish before next event/end",
+    "event_time": "record request and first current-task acceptance independently; no interpolation; acceptance at first logged observer sample at/after request",
+    "boundary": "finite states, correct speed sign when target nonzero in steady window, full metrics and independently checked validity/reset/missing semantics; base precision not required",
+    "false_lock_diagnostic": "report samples with valid=true but abs true angle error>8deg or relative speed error>3%; report counts, fraction and longest duration; truth only evaluation",
+    "state_semantics": "independent v1 history/continuous-lock checker; missing 5 samples predict current and hold correction/filter/PLL integral; reset zeros observer states, valid false and full history/lock reacquisition",
+    "low_speed": "report all 3 declared windows, EMF and false-valid limits; no relative accuracy pass claim at zero rpm"
+  },
+  "logging": "unchanged full original timeseries, full control-rate observer logs and native voltage provenance; raw MAT v7.3 with hashes; no science decimation",
+  "execution": "fresh MATLAB process and independent cache per case; model never saved; all original motor/PI/reference files preserved; source snapshots and phase log before execution",
+  "native_failure_policy": "preserve each attempt; at most one retry per case only if launcher explicitly reports native 0xc0000005 or 0xc000001d, never retry a numerical failure as a pass; report interruption separately",
+  "replay": "full final 16-case set in fresh processes; exact raw Time/Data equality, no interpolation; hashes verify integrity rather than MAT container-byte equality",
+  "gate": "N2 accepted by user; stop for user acceptance at N3; no estimated feedback takeover"
+}

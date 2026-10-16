@@ -1,0 +1,227 @@
+{
+  "schema": 1,
+  "node": "N3",
+  "label": "full replay inventory assembled from disjoint groups; incomplete entries retained",
+  "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_assembled_20261016_202510_e9346db9-7986-412d-916b-625c48395c45",
+  "replay_of": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f",
+  "status": "has_failed_or_incomplete_cases",
+  "startup_options": [
+    "-singleCompThread"
+  ],
+  "driver_sha256": "88054dc9bca52d64df22a97e5b10d08973f64c903952f976ef407ae5c70bc276",
+  "group_manifests": [
+    {
+      "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_normal_20261016_172558_b16f78a3-d13e-4137-af4b-196aaa3374c8",
+      "campaign_sha256": "01ab291f66a20825ad8eeef6fa378bdc78a3985a62430f73aaf32c71ac69cf54"
+    },
+    {
+      "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_remaining_20261016_182823_ed9d8d01-68ab-4448-8db5-0a0d504e6074",
+      "campaign_sha256": "5a98183cdc90d6aea5cebe81b22da37099b399a3b6fcf8a3d8b64940fc94e084"
+    }
+  ],
+  "entries": [
+    {
+      "case_id": "steady_1000",
+      "kind": "observer",
+      "attempts": [
+        {
+          "exit_code": 0,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_normal_20261016_172558_b16f78a3-d13e-4137-af4b-196aaa3374c8\\observer\\steady_1000\\attempt_1"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_normal_20261016_172558_b16f78a3-d13e-4137-af4b-196aaa3374c8\\observer\\steady_1000\\attempt_1",
+      "status": "passed"
+    },
+    {
+      "case_id": "steady_2000",
+      "kind": "observer",
+      "attempts": [
+        {
+          "exit_code": 0,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_normal_20261016_172558_b16f78a3-d13e-4137-af4b-196aaa3374c8\\observer\\steady_2000\\attempt_1"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_normal_20261016_172558_b16f78a3-d13e-4137-af4b-196aaa3374c8\\observer\\steady_2000\\attempt_1",
+      "status": "passed"
+    },
+    {
+      "case_id": "steady_3000",
+      "kind": "observer",
+      "attempts": [
+        {
+          "exit_code": 0,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_normal_20261016_172558_b16f78a3-d13e-4137-af4b-196aaa3374c8\\observer\\steady_3000\\attempt_1"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_normal_20261016_172558_b16f78a3-d13e-4137-af4b-196aaa3374c8\\observer\\steady_3000\\attempt_1",
+      "status": "passed"
+    },
+    {
+      "case_id": "dynamic_speed_load",
+      "kind": "observer",
+      "attempts": [
+        {
+          "exit_code": 0,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_normal_20261016_172558_b16f78a3-d13e-4137-af4b-196aaa3374c8\\observer\\dynamic_speed_load\\attempt_1"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_normal_20261016_172558_b16f78a3-d13e-4137-af4b-196aaa3374c8\\observer\\dynamic_speed_load\\attempt_1",
+      "status": "passed"
+    },
+    {
+      "case_id": "reverse_1000",
+      "kind": "observer",
+      "attempts": [
+        {
+          "exit_code": 0,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_normal_20261016_172558_b16f78a3-d13e-4137-af4b-196aaa3374c8\\observer\\reverse_1000\\attempt_1"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_normal_20261016_172558_b16f78a3-d13e-4137-af4b-196aaa3374c8\\observer\\reverse_1000\\attempt_1",
+      "status": "passed"
+    },
+    {
+      "case_id": "reverse_3000",
+      "kind": "observer",
+      "attempts": [
+        {
+          "exit_code": 0,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_normal_20261016_172558_b16f78a3-d13e-4137-af4b-196aaa3374c8\\observer\\reverse_3000\\attempt_1"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_normal_20261016_172558_b16f78a3-d13e-4137-af4b-196aaa3374c8\\observer\\reverse_3000\\attempt_1",
+      "status": "passed"
+    },
+    {
+      "case_id": "mismatch_Rs_0.8",
+      "kind": "observer",
+      "attempts": [
+        {
+          "exit_code": 0,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_normal_20261016_172558_b16f78a3-d13e-4137-af4b-196aaa3374c8\\observer\\mismatch_Rs_0.8\\attempt_1"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_normal_20261016_172558_b16f78a3-d13e-4137-af4b-196aaa3374c8\\observer\\mismatch_Rs_0.8\\attempt_1",
+      "status": "passed"
+    },
+    {
+      "case_id": "mismatch_Rs_1.2",
+      "kind": "observer",
+      "attempts": [
+        {
+          "exit_code": 0,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_normal_20261016_172558_b16f78a3-d13e-4137-af4b-196aaa3374c8\\observer\\mismatch_Rs_1.2\\attempt_1"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_normal_20261016_172558_b16f78a3-d13e-4137-af4b-196aaa3374c8\\observer\\mismatch_Rs_1.2\\attempt_1",
+      "status": "passed"
+    },
+    {
+      "case_id": "mismatch_L_0.8",
+      "kind": "observer",
+      "attempts": [
+        {
+          "exit_code": 0,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_normal_20261016_172558_b16f78a3-d13e-4137-af4b-196aaa3374c8\\observer\\mismatch_L_0.8\\attempt_1"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_normal_20261016_172558_b16f78a3-d13e-4137-af4b-196aaa3374c8\\observer\\mismatch_L_0.8\\attempt_1",
+      "status": "passed"
+    },
+    {
+      "case_id": "mismatch_L_1.2",
+      "kind": "observer",
+      "attempts": [
+        {
+          "exit_code": 0,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_normal_20261016_172558_b16f78a3-d13e-4137-af4b-196aaa3374c8\\observer\\mismatch_L_1.2\\attempt_1"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_normal_20261016_172558_b16f78a3-d13e-4137-af4b-196aaa3374c8\\observer\\mismatch_L_1.2\\attempt_1",
+      "status": "passed"
+    },
+    {
+      "case_id": "noise_002A",
+      "kind": "observer",
+      "attempts": [
+        {
+          "exit_code": 0,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_normal_20261016_172558_b16f78a3-d13e-4137-af4b-196aaa3374c8\\observer\\noise_002A\\attempt_1"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_normal_20261016_172558_b16f78a3-d13e-4137-af4b-196aaa3374c8\\observer\\noise_002A\\attempt_1",
+      "status": "passed"
+    },
+    {
+      "case_id": "detailed_bridge_0us",
+      "kind": "observer",
+      "attempts": [
+        {
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_remaining_20261016_182823_ed9d8d01-68ab-4448-8db5-0a0d504e6074\\observer\\detailed_bridge_0us\\attempt_1",
+          "exit_code": -1073741795
+        },
+        {
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_remaining_20261016_182823_ed9d8d01-68ab-4448-8db5-0a0d504e6074\\observer\\detailed_bridge_0us\\attempt_2",
+          "exit_code": -1073741819
+        }
+      ],
+      "completed_folder": "",
+      "status": "incomplete"
+    },
+    {
+      "case_id": "detailed_bridge_2us",
+      "kind": "observer",
+      "attempts": [
+        {
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_remaining_20261016_182823_ed9d8d01-68ab-4448-8db5-0a0d504e6074\\observer\\detailed_bridge_2us\\attempt_1",
+          "exit_code": 0
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_remaining_20261016_182823_ed9d8d01-68ab-4448-8db5-0a0d504e6074\\observer\\detailed_bridge_2us\\attempt_1",
+      "status": "passed"
+    },
+    {
+      "case_id": "low_speed_stop",
+      "kind": "observer",
+      "attempts": [
+        {
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_remaining_20261016_182823_ed9d8d01-68ab-4448-8db5-0a0d504e6074\\observer\\low_speed_stop\\attempt_1",
+          "exit_code": 0
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_remaining_20261016_182823_ed9d8d01-68ab-4448-8db5-0a0d504e6074\\observer\\low_speed_stop\\attempt_1",
+      "status": "passed"
+    },
+    {
+      "case_id": "missing_5_samples",
+      "kind": "observer",
+      "attempts": [
+        {
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_remaining_20261016_182823_ed9d8d01-68ab-4448-8db5-0a0d504e6074\\observer\\missing_5_samples\\attempt_1",
+          "exit_code": 0
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_remaining_20261016_182823_ed9d8d01-68ab-4448-8db5-0a0d504e6074\\observer\\missing_5_samples\\attempt_1",
+      "status": "passed"
+    },
+    {
+      "case_id": "observer_reset",
+      "kind": "observer",
+      "attempts": [
+        {
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_remaining_20261016_182823_ed9d8d01-68ab-4448-8db5-0a0d504e6074\\observer\\observer_reset\\attempt_1",
+          "exit_code": -1073741819
+        },
+        {
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_remaining_20261016_182823_ed9d8d01-68ab-4448-8db5-0a0d504e6074\\observer\\observer_reset\\attempt_2",
+          "exit_code": 0
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_remaining_20261016_182823_ed9d8d01-68ab-4448-8db5-0a0d504e6074\\observer\\observer_reset\\attempt_2",
+      "status": "passed"
+    }
+  ],
+  "assembly_driver_sha256": "4dccb9918783f65dd774004494a9414618d1028a1259958e519381e57ee72b54",
+  "raw_data_copied_or_modified": false,
+  "duplicate_cases_permitted": false
+}

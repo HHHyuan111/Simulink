@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "node": "N3",
+  "whole_array_oracle": "MATLAB isequaln on original in-memory Time/Data",
+  "test_driver_sha256": "22f19fa0d50e3107b46140b95e1e9426cac26e07e68c9cc3788e5891a2dc22f0",
+  "comparison_driver_sha256": "ecc45f6a4f4cb323430f21b7ede461b084d5c46e76651a30b2d7bcc441adf0a9",
+  "cases": [
+    {
+      "variant": "equal",
+      "expected_equal": true,
+      "actual_equal": true,
+      "numeric_elements": 3.145749E+6,
+      "failures": [],
+      "passed": true
+    },
+    {
+      "variant": "time_change",
+      "expected_equal": false,
+      "actual_equal": false,
+      "numeric_elements": 3.145749E+6,
+      "failures": [
+        "primary"
+      ],
+      "passed": true
+    },
+    {
+      "variant": "first_value_change",
+      "expected_equal": false,
+      "actual_equal": false,
+      "numeric_elements": 3.145749E+6,
+      "failures": [
+        "primary"
+      ],
+      "passed": true
+    },
+    {
+      "variant": "after_chunk_change",
+      "expected_equal": false,
+      "actual_equal": false,
+      "numeric_elements": 3.145749E+6,
+      "failures": [
+        "primary"
+      ],
+      "passed": true
+    },
+    {
+      "variant": "flag_change",
+      "expected_equal": false,
+      "actual_equal": false,
+      "numeric_elements": 3.145749E+6,
+      "failures": [
+        "flag"
+      ],
+      "passed": true
+    },
+    {
+      "variant": "shape_change",
+      "expected_equal": false,
+      "actual_equal": false,
+      "numeric_elements": 3.145749E+6,
+      "failures": [
+        "primary"
+      ],
+      "passed": true
+    },
+    {
+      "variant": "nan_equal",
+      "expected_equal": true,
+      "actual_equal": true,
+      "numeric_elements": 3.145749E+6,
+      "failures": [],
+      "passed": true
+    },
+    {
+      "variant": "signed_zero_equal",
+      "expected_equal": true,
+      "actual_equal": true,
+      "numeric_elements": 3.145749E+6,
+      "failures": [],
+      "passed": true
+    }
+  ],
+  "all_passed": true
+}

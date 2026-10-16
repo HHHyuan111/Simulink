@@ -1,0 +1,17 @@
+case_id,kind,passed,first_valid_s,false_valid_samples,false_valid_longest_s
+steady_1000,base_precision,1,0.0465,0,0
+steady_2000,base_precision,1,0.06025,0,0
+steady_3000,base_precision,1,0.06025,373,0.01865
+dynamic_speed_load,base_dynamic,1,0.06025,396,0.0198
+reverse_1000,boundary,1,0.04155,0,0
+reverse_3000,boundary,1,0.055,0,0
+mismatch_Rs_0.8,boundary,1,0.0445,689,0.03445
+mismatch_Rs_1.2,boundary,1,0.064,298,0.0149
+mismatch_L_0.8,boundary,1,0.06065,0,0
+mismatch_L_1.2,boundary,1,0.0596,433,0.02165
+noise_002A,boundary,1,0.0603,373,0.01865
+detailed_bridge_0us,boundary,1,0.098578875,0,0
+detailed_bridge_2us,boundary,1,0.098178875,0,0
+low_speed_stop,boundary,1,0.0465,175,0.00875
+missing_5_samples,boundary,1,0.06025,373,0.01865
+observer_reset,state_semantics,1,0.06025,373,0.01865

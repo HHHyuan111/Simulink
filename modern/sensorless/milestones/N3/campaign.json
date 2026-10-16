@@ -1,0 +1,314 @@
+{
+  "schema": 1,
+  "node": "N3",
+  "label": "formal2",
+  "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f",
+  "replay_of": "",
+  "status": "completed",
+  "startup_options": [
+    "-singleCompThread"
+  ],
+  "driver_sha256": "88054dc9bca52d64df22a97e5b10d08973f64c903952f976ef407ae5c70bc276",
+  "entries": [
+    {
+      "case_id": "steady_1000",
+      "kind": "observer",
+      "attempts": [
+        {
+          "exit_code": 0,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\observer\\steady_1000\\attempt_1"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\observer\\steady_1000\\attempt_1",
+      "status": "passed"
+    },
+    {
+      "case_id": "steady_2000",
+      "kind": "observer",
+      "attempts": [
+        {
+          "exit_code": 0,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\observer\\steady_2000\\attempt_1"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\observer\\steady_2000\\attempt_1",
+      "status": "passed"
+    },
+    {
+      "case_id": "steady_3000",
+      "kind": "observer",
+      "attempts": [
+        {
+          "exit_code": 0,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\observer\\steady_3000\\attempt_1"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\observer\\steady_3000\\attempt_1",
+      "status": "passed"
+    },
+    {
+      "case_id": "dynamic_speed_load",
+      "kind": "observer",
+      "attempts": [
+        {
+          "exit_code": 0,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\observer\\dynamic_speed_load\\attempt_1"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\observer\\dynamic_speed_load\\attempt_1",
+      "status": "passed"
+    },
+    {
+      "case_id": "reverse_1000",
+      "kind": "observer",
+      "attempts": [
+        {
+          "exit_code": 0,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\observer\\reverse_1000\\attempt_1"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\observer\\reverse_1000\\attempt_1",
+      "status": "passed"
+    },
+    {
+      "case_id": "reverse_3000",
+      "kind": "observer",
+      "attempts": [
+        {
+          "exit_code": 0,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\observer\\reverse_3000\\attempt_1"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\observer\\reverse_3000\\attempt_1",
+      "status": "passed"
+    },
+    {
+      "case_id": "mismatch_Rs_0.8",
+      "kind": "observer",
+      "attempts": [
+        {
+          "exit_code": 0,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\observer\\mismatch_Rs_0.8\\attempt_1"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\observer\\mismatch_Rs_0.8\\attempt_1",
+      "status": "passed"
+    },
+    {
+      "case_id": "mismatch_Rs_1.2",
+      "kind": "observer",
+      "attempts": [
+        {
+          "exit_code": 0,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\observer\\mismatch_Rs_1.2\\attempt_1"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\observer\\mismatch_Rs_1.2\\attempt_1",
+      "status": "passed"
+    },
+    {
+      "case_id": "mismatch_L_0.8",
+      "kind": "observer",
+      "attempts": [
+        {
+          "exit_code": 0,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\observer\\mismatch_L_0.8\\attempt_1"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\observer\\mismatch_L_0.8\\attempt_1",
+      "status": "passed"
+    },
+    {
+      "case_id": "mismatch_L_1.2",
+      "kind": "observer",
+      "attempts": [
+        {
+          "exit_code": 0,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\observer\\mismatch_L_1.2\\attempt_1"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\observer\\mismatch_L_1.2\\attempt_1",
+      "status": "passed"
+    },
+    {
+      "case_id": "noise_002A",
+      "kind": "observer",
+      "attempts": [
+        {
+          "exit_code": 0,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\observer\\noise_002A\\attempt_1"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\observer\\noise_002A\\attempt_1",
+      "status": "passed"
+    },
+    {
+      "case_id": "detailed_bridge_0us",
+      "kind": "observer",
+      "attempts": [
+        {
+          "exit_code": 0,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\observer\\detailed_bridge_0us\\attempt_1"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\observer\\detailed_bridge_0us\\attempt_1",
+      "status": "passed"
+    },
+    {
+      "case_id": "detailed_bridge_2us",
+      "kind": "observer",
+      "attempts": [
+        {
+          "exit_code": 0,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\observer\\detailed_bridge_2us\\attempt_1"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\observer\\detailed_bridge_2us\\attempt_1",
+      "status": "passed"
+    },
+    {
+      "case_id": "low_speed_stop",
+      "kind": "observer",
+      "attempts": [
+        {
+          "exit_code": 0,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\observer\\low_speed_stop\\attempt_1"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\observer\\low_speed_stop\\attempt_1",
+      "status": "passed"
+    },
+    {
+      "case_id": "missing_5_samples",
+      "kind": "observer",
+      "attempts": [
+        {
+          "exit_code": 0,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\observer\\missing_5_samples\\attempt_1"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\observer\\missing_5_samples\\attempt_1",
+      "status": "passed"
+    },
+    {
+      "case_id": "observer_reset",
+      "kind": "observer",
+      "attempts": [
+        {
+          "exit_code": 0,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\observer\\observer_reset\\attempt_1"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\observer\\observer_reset\\attempt_1",
+      "status": "passed"
+    },
+    {
+      "case_id": "steady_1000",
+      "kind": "plant_reference",
+      "attempts": [
+        {
+          "exit_code": 0,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\plant_reference\\steady_1000\\attempt_1"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\plant_reference\\steady_1000\\attempt_1",
+      "status": "passed"
+    },
+    {
+      "case_id": "steady_2000",
+      "kind": "plant_reference",
+      "attempts": [
+        {
+          "exit_code": 0,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\plant_reference\\steady_2000\\attempt_1"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\plant_reference\\steady_2000\\attempt_1",
+      "status": "passed"
+    },
+    {
+      "case_id": "steady_3000",
+      "kind": "plant_reference",
+      "attempts": [
+        {
+          "exit_code": 0,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\plant_reference\\steady_3000\\attempt_1"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\plant_reference\\steady_3000\\attempt_1",
+      "status": "passed"
+    },
+    {
+      "case_id": "dynamic_speed_load",
+      "kind": "plant_reference",
+      "attempts": [
+        {
+          "exit_code": 0,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\plant_reference\\dynamic_speed_load\\attempt_1"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\plant_reference\\dynamic_speed_load\\attempt_1",
+      "status": "passed"
+    },
+    {
+      "case_id": "reverse_1000",
+      "kind": "plant_reference",
+      "attempts": [
+        {
+          "exit_code": 0,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\plant_reference\\reverse_1000\\attempt_1"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\plant_reference\\reverse_1000\\attempt_1",
+      "status": "passed"
+    },
+    {
+      "case_id": "reverse_3000",
+      "kind": "plant_reference",
+      "attempts": [
+        {
+          "exit_code": 0,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\plant_reference\\reverse_3000\\attempt_1"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\plant_reference\\reverse_3000\\attempt_1",
+      "status": "passed"
+    },
+    {
+      "case_id": "detailed_bridge_0us",
+      "kind": "plant_reference",
+      "attempts": [
+        {
+          "exit_code": 0,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\plant_reference\\detailed_bridge_0us\\attempt_1"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\plant_reference\\detailed_bridge_0us\\attempt_1",
+      "status": "passed"
+    },
+    {
+      "case_id": "detailed_bridge_2us",
+      "kind": "plant_reference",
+      "attempts": [
+        {
+          "exit_code": 0,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\plant_reference\\detailed_bridge_2us\\attempt_1"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\plant_reference\\detailed_bridge_2us\\attempt_1",
+      "status": "passed"
+    },
+    {
+      "case_id": "low_speed_stop",
+      "kind": "plant_reference",
+      "attempts": [
+        {
+          "exit_code": 0,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\plant_reference\\low_speed_stop\\attempt_1"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f\\plant_reference\\low_speed_stop\\attempt_1",
+      "status": "passed"
+    }
+  ]
+}

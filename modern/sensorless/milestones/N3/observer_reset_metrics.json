@@ -1,0 +1,75 @@
+{
+  "case_id": "observer_reset",
+  "kind": "state_semantics",
+  "samples": 16001,
+  "finite_states": true,
+  "first_valid_s": 0.060250000000000005,
+  "false_valid_samples": 373,
+  "false_valid_fraction_of_valid": 0.027730280276559365,
+  "false_valid_longest_s": 0.01865,
+  "whole_run_peak_angle_abs_deg": 179.78221173823343,
+  "whole_run_peak_speed_error_rpm": 4163.4041331540811,
+  "windows": [
+    {
+      "begin_s": 0.59,
+      "end_s": 0.61,
+      "samples": 401,
+      "target_rpm": 3000,
+      "true_speed_mean_rpm": 3000.0151909683177,
+      "true_speed_slope_rpm_s": 10.129548988839884,
+      "electrical_cycles": 4.9999978328242092,
+      "angle_rms_deg": 75.116034188920423,
+      "angle_abs_max_deg": 178.87797031902409,
+      "speed_mean_signed_error_rpm": -1440.6355013565417,
+      "speed_error_rms_rpm": 2105.76243544914,
+      "speed_mean_error_relative": 0.48021183378551391,
+      "speed_error_rms_relative": 0.70192081181638,
+      "valid_fraction": 0.49875311720698257,
+      "plant_settled": true,
+      "precision_passed": false
+    },
+    {
+      "begin_s": 0.61,
+      "end_s": 0.65,
+      "samples": 801,
+      "target_rpm": 3000,
+      "true_speed_mean_rpm": 2999.9909165851404,
+      "true_speed_slope_rpm_s": 2.3188302909759586,
+      "electrical_cycles": 9.9999124564010078,
+      "angle_rms_deg": 82.683469561278315,
+      "angle_abs_max_deg": 179.78221173823343,
+      "speed_mean_signed_error_rpm": -896.00969666569722,
+      "speed_error_rms_rpm": 1446.6004595441218,
+      "speed_mean_error_relative": 0.29866989888856577,
+      "speed_error_rms_relative": 0.48220015318137394,
+      "valid_fraction": 0,
+      "plant_settled": true,
+      "precision_passed": false
+    }
+  ],
+  "events": [],
+  "stimulus": {
+    "speed_request_schedule_identical": true,
+    "load_schedule_identical": true,
+    "passed": true
+  },
+  "validity": {
+    "valid_samples_identical": true,
+    "state_samples_identical": true,
+    "history_samples_identical": true,
+    "invalid_sample_immediate": true,
+    "passed": true
+  },
+  "faults": {
+    "required": true,
+    "injected_samples": 1,
+    "correct_count": true,
+    "state_semantics": true,
+    "reacquire_s": 0.66725,
+    "passed": true
+  },
+  "correct_sign": true,
+  "precision_required": false,
+  "dynamic_required": false,
+  "passed": true
+}

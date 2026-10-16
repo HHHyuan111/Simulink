@@ -1,0 +1,65 @@
+{
+  "case_id": "dynamic_speed_load",
+  "kind": "base_dynamic",
+  "samples": 18001,
+  "finite_states": true,
+  "first_valid_s": 0.060250000000000005,
+  "false_valid_samples": 396,
+  "false_valid_fraction_of_valid": 0.023577042152893544,
+  "false_valid_longest_s": 0.0198,
+  "whole_run_peak_angle_abs_deg": 100.72188183708582,
+  "whole_run_peak_speed_error_rpm": 858.8513966890132,
+  "windows": [],
+  "events": [
+    {
+      "type": "speed",
+      "request_time_s": 0.3,
+      "source_first_logged_time_s": 0.3,
+      "accepted_task_time_s": 0.3,
+      "first_observer_task_s": 0.3,
+      "recovery_interval_start_s": 0.32775000000000004,
+      "recovery_hold_end_s": 0.34775000000000006,
+      "recovery_delay_s": 0.027750000000000052,
+      "peak_angle_abs_deg": 8.6005959468375526,
+      "peak_speed_error_rpm": 48.788613024634742,
+      "passed": true
+    },
+    {
+      "type": "load",
+      "request_time_s": 0.6,
+      "source_first_logged_time_s": 0.6,
+      "accepted_task_time_s": 0.6,
+      "first_observer_task_s": 0.6,
+      "recovery_interval_start_s": 0.6,
+      "recovery_hold_end_s": 0.62,
+      "recovery_delay_s": 0,
+      "peak_angle_abs_deg": 1.2618752998085314,
+      "peak_speed_error_rpm": 12.476244087245959,
+      "passed": true
+    }
+  ],
+  "stimulus": {
+    "speed_request_schedule_identical": true,
+    "load_schedule_identical": true,
+    "passed": true
+  },
+  "validity": {
+    "valid_samples_identical": true,
+    "state_samples_identical": true,
+    "history_samples_identical": true,
+    "invalid_sample_immediate": true,
+    "passed": true
+  },
+  "faults": {
+    "required": false,
+    "injected_samples": 0,
+    "correct_count": true,
+    "state_semantics": true,
+    "reacquire_s": null,
+    "passed": true
+  },
+  "correct_sign": true,
+  "precision_required": false,
+  "dynamic_required": true,
+  "passed": true
+}

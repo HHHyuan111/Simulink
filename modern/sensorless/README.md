@@ -2,7 +2,7 @@
 
 基于远端 `main` 的 `8676342ad23f2d980bd4ff9fff0aeb5641a2f540`，开发分支 `dev`，工作树 `D:/simulink/dev`。
 
-当前节点：N2本地模型旁路接入完成，数值/结构检查与跨进程完整数据对比通过，等待用户验收。MATLAB R2026a Update 5 仍有原生崩溃记录，运行稳定性问题未解决。N0/N1已由用户确认；观测角度尚未接入控制反馈，N3性能验收尚未执行。
+当前节点：N3正式16工况及9个原模型对照完成必选检查，完整复现未通过，尚未验收。详细桥0 μs复跑连续两次MATLAB原生退出，达到预定重试上限；其余15个工况复跑已完成。N0/N1/N2已由用户确认；观测角度尚未接入控制反馈。运行稳定性和低速退出/误有效边界见N3记录。
 
 - `contracts/acceptance_v1.json`：验收阈值与判定规则。
 - `contracts/test_plan_v1.json`：固定场景、事件、窗口及复跑要求。
@@ -16,6 +16,8 @@
 - `milestones/N1/`：组件指标、两张观测图和来源指纹。
 - `milestones/N2.md`：本地接入、严格回归、跨进程核验、运行限制与查看入口。
 - `milestones/N2/`：完整报告、参数、结构图、归档波形和首末区间明细。
+- `milestones/N3.md`：性能结果、完整复现缺项、有效标志局限及下一步。
+- `milestones/N3/`：完整固定窗口指标、事件指标、误有效区间、波形、源码和数据指纹。
 - `INTERFACE.md`：模块、Goto作用域、参数单位、时间及日志约定。
 
 原有主模型、固定参考和PI保持；后续算法在当前模型中做可撤销旁路接入。每个节点提交记录后停在验收点，不自动进入下一节点。
@@ -46,3 +48,7 @@ open_pmsm_sensorless;
 ```
 
 N2科学检查入口为 `validate_sensorless_n2`。复跑与原始数据核验方法见 N2 记录；波形采用 `export_sensorless_n2_review` 导出全控制速率 CSV，再由 `render_sensorless_n2.py` 绘制，绘图依赖 numpy/matplotlib。已交付图片是归档数据图，不是原生 Scope 截屏。
+
+N3完整矩阵入口为 `run_sensorless_n3.ps1 -Label formal -IncludeBaselines`，复跑用 `-Label replay -ReplayOf 正式轮目录`。每个工况独立MATLAB进程，只有明确原生异常才允许一次重试，不以重复运行选优。
+
+`verify_sensorless_n3_replay`要求完整16工况；本次缺项另用 `audit_sensorless_n3_archives` 出具不完整报告，整体 `all_passed=false`。审阅当前成果不等于批准接管，N3缺项解决前不进入下一节点。

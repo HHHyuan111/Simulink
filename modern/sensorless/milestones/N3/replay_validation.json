@@ -1,0 +1,385 @@
+{
+  "schema": 1,
+  "node": "N3",
+  "status": "incomplete_replay_not_accepted",
+  "original_folder": "D:/simulink/dev/modern/sensorless/runs/N3_formal2_20261016_165149_0bd4b757-62f0-47a4-9424-16d949c30a6f",
+  "replay_folder": "D:/simulink/dev/modern/sensorless/runs/N3_replay_assembled_20261016_202510_e9346db9-7986-412d-916b-625c48395c45",
+  "executed_source_folder": "D:/simulink/dev/modern/sensorless/runs/N3_source_capsule_142d8a87-3355-45cb-9e5d-18af4708ed9e/source",
+  "audit_driver_sha256": "6614adfadfbd452639fec9812bcb772b4a52129c4ae6636415f39aa696a400fd",
+  "comparison_driver_sha256": "ecc45f6a4f4cb323430f21b7ede461b084d5c46e76651a30b2d7bcc441adf0a9",
+  "required_replay_cases": 16,
+  "completed_replay_cases": 15,
+  "cases": [
+    {
+      "case_id": "steady_1000",
+      "replay_completed": true,
+      "raw_Time_Data_identical": true,
+      "numeric_elements": 6.5736283E+7,
+      "metrics_identical": true,
+      "case_required_passed": true,
+      "failures": [],
+      "attempts": {
+        "exit_code": 0,
+        "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_normal_20261016_172558_b16f78a3-d13e-4137-af4b-196aaa3374c8\\observer\\steady_1000\\attempt_1"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "steady_2000",
+      "replay_completed": true,
+      "raw_Time_Data_identical": true,
+      "numeric_elements": 6.5736283E+7,
+      "metrics_identical": true,
+      "case_required_passed": true,
+      "failures": [],
+      "attempts": {
+        "exit_code": 0,
+        "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_normal_20261016_172558_b16f78a3-d13e-4137-af4b-196aaa3374c8\\observer\\steady_2000\\attempt_1"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "steady_3000",
+      "replay_completed": true,
+      "raw_Time_Data_identical": true,
+      "numeric_elements": 6.5736283E+7,
+      "metrics_identical": true,
+      "case_required_passed": true,
+      "failures": [],
+      "attempts": {
+        "exit_code": 0,
+        "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_normal_20261016_172558_b16f78a3-d13e-4137-af4b-196aaa3374c8\\observer\\steady_3000\\attempt_1"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "dynamic_speed_load",
+      "replay_completed": true,
+      "raw_Time_Data_identical": true,
+      "numeric_elements": 7.3946283E+7,
+      "metrics_identical": true,
+      "case_required_passed": true,
+      "failures": [],
+      "attempts": {
+        "exit_code": 0,
+        "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_normal_20261016_172558_b16f78a3-d13e-4137-af4b-196aaa3374c8\\observer\\dynamic_speed_load\\attempt_1"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "reverse_1000",
+      "replay_completed": true,
+      "raw_Time_Data_identical": true,
+      "numeric_elements": 6.5736283E+7,
+      "metrics_identical": true,
+      "case_required_passed": true,
+      "failures": [],
+      "attempts": {
+        "exit_code": 0,
+        "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_normal_20261016_172558_b16f78a3-d13e-4137-af4b-196aaa3374c8\\observer\\reverse_1000\\attempt_1"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "reverse_3000",
+      "replay_completed": true,
+      "raw_Time_Data_identical": true,
+      "numeric_elements": 6.5736283E+7,
+      "metrics_identical": true,
+      "case_required_passed": true,
+      "failures": [],
+      "attempts": {
+        "exit_code": 0,
+        "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_normal_20261016_172558_b16f78a3-d13e-4137-af4b-196aaa3374c8\\observer\\reverse_3000\\attempt_1"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "mismatch_Rs_0.8",
+      "replay_completed": true,
+      "raw_Time_Data_identical": true,
+      "numeric_elements": 6.5736283E+7,
+      "metrics_identical": true,
+      "case_required_passed": true,
+      "failures": [],
+      "attempts": {
+        "exit_code": 0,
+        "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_normal_20261016_172558_b16f78a3-d13e-4137-af4b-196aaa3374c8\\observer\\mismatch_Rs_0.8\\attempt_1"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "mismatch_Rs_1.2",
+      "replay_completed": true,
+      "raw_Time_Data_identical": true,
+      "numeric_elements": 6.5736283E+7,
+      "metrics_identical": true,
+      "case_required_passed": true,
+      "failures": [],
+      "attempts": {
+        "exit_code": 0,
+        "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_normal_20261016_172558_b16f78a3-d13e-4137-af4b-196aaa3374c8\\observer\\mismatch_Rs_1.2\\attempt_1"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "mismatch_L_0.8",
+      "replay_completed": true,
+      "raw_Time_Data_identical": true,
+      "numeric_elements": 6.5736283E+7,
+      "metrics_identical": true,
+      "case_required_passed": true,
+      "failures": [],
+      "attempts": {
+        "exit_code": 0,
+        "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_normal_20261016_172558_b16f78a3-d13e-4137-af4b-196aaa3374c8\\observer\\mismatch_L_0.8\\attempt_1"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "mismatch_L_1.2",
+      "replay_completed": true,
+      "raw_Time_Data_identical": true,
+      "numeric_elements": 6.5736283E+7,
+      "metrics_identical": true,
+      "case_required_passed": true,
+      "failures": [],
+      "attempts": {
+        "exit_code": 0,
+        "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_normal_20261016_172558_b16f78a3-d13e-4137-af4b-196aaa3374c8\\observer\\mismatch_L_1.2\\attempt_1"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "noise_002A",
+      "replay_completed": true,
+      "raw_Time_Data_identical": true,
+      "numeric_elements": 6.5800287E+7,
+      "metrics_identical": true,
+      "case_required_passed": true,
+      "failures": [],
+      "attempts": {
+        "exit_code": 0,
+        "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_normal_20261016_172558_b16f78a3-d13e-4137-af4b-196aaa3374c8\\observer\\noise_002A\\attempt_1"
+      },
+      "passed": true
+    },
+    {
+      "case_id": "detailed_bridge_0us",
+      "replay_completed": false,
+      "raw_Time_Data_identical": false,
+      "numeric_elements": 0,
+      "metrics_identical": false,
+      "case_required_passed": false,
+      "failures": [
+        "no_complete_replay_after_two_native_failures"
+      ],
+      "attempts": [
+        {
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_remaining_20261016_182823_ed9d8d01-68ab-4448-8db5-0a0d504e6074\\observer\\detailed_bridge_0us\\attempt_1",
+          "exit_code": -1.073741795E+9
+        },
+        {
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_remaining_20261016_182823_ed9d8d01-68ab-4448-8db5-0a0d504e6074\\observer\\detailed_bridge_0us\\attempt_2",
+          "exit_code": -1.073741819E+9
+        }
+      ],
+      "passed": false
+    },
+    {
+      "case_id": "detailed_bridge_2us",
+      "replay_completed": true,
+      "raw_Time_Data_identical": true,
+      "numeric_elements": 5.69736078E+8,
+      "metrics_identical": true,
+      "case_required_passed": true,
+      "failures": [],
+      "attempts": {
+        "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_remaining_20261016_182823_ed9d8d01-68ab-4448-8db5-0a0d504e6074\\observer\\detailed_bridge_2us\\attempt_1",
+        "exit_code": 0
+      },
+      "passed": true
+    },
+    {
+      "case_id": "low_speed_stop",
+      "replay_completed": true,
+      "raw_Time_Data_identical": true,
+      "numeric_elements": 7.3946283E+7,
+      "metrics_identical": true,
+      "case_required_passed": true,
+      "failures": [],
+      "attempts": {
+        "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_remaining_20261016_182823_ed9d8d01-68ab-4448-8db5-0a0d504e6074\\observer\\low_speed_stop\\attempt_1",
+        "exit_code": 0
+      },
+      "passed": true
+    },
+    {
+      "case_id": "missing_5_samples",
+      "replay_completed": true,
+      "raw_Time_Data_identical": true,
+      "numeric_elements": 6.5736283E+7,
+      "metrics_identical": true,
+      "case_required_passed": true,
+      "failures": [],
+      "attempts": {
+        "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_remaining_20261016_182823_ed9d8d01-68ab-4448-8db5-0a0d504e6074\\observer\\missing_5_samples\\attempt_1",
+        "exit_code": 0
+      },
+      "passed": true
+    },
+    {
+      "case_id": "observer_reset",
+      "replay_completed": true,
+      "raw_Time_Data_identical": true,
+      "numeric_elements": 6.5736283E+7,
+      "metrics_identical": true,
+      "case_required_passed": true,
+      "failures": [],
+      "attempts": [
+        {
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_remaining_20261016_182823_ed9d8d01-68ab-4448-8db5-0a0d504e6074\\observer\\observer_reset\\attempt_1",
+          "exit_code": -1.073741819E+9
+        },
+        {
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3_replay_remaining_20261016_182823_ed9d8d01-68ab-4448-8db5-0a0d504e6074\\observer\\observer_reset\\attempt_2",
+          "exit_code": 0
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "old_log_regressions": [
+    {
+      "case_id": "steady_1000",
+      "baseline_case_id": "steady_1000",
+      "old_logs": 52,
+      "identical": true,
+      "numeric_elements": 5.4328207E+7,
+      "failures": []
+    },
+    {
+      "case_id": "steady_2000",
+      "baseline_case_id": "steady_2000",
+      "old_logs": 52,
+      "identical": true,
+      "numeric_elements": 5.4328207E+7,
+      "failures": []
+    },
+    {
+      "case_id": "steady_3000",
+      "baseline_case_id": "steady_3000",
+      "old_logs": 52,
+      "identical": true,
+      "numeric_elements": 5.4328207E+7,
+      "failures": []
+    },
+    {
+      "case_id": "dynamic_speed_load",
+      "baseline_case_id": "dynamic_speed_load",
+      "old_logs": 52,
+      "identical": true,
+      "numeric_elements": 6.1112207E+7,
+      "failures": []
+    },
+    {
+      "case_id": "reverse_1000",
+      "baseline_case_id": "reverse_1000",
+      "old_logs": 52,
+      "identical": true,
+      "numeric_elements": 5.4328207E+7,
+      "failures": []
+    },
+    {
+      "case_id": "reverse_3000",
+      "baseline_case_id": "reverse_3000",
+      "old_logs": 52,
+      "identical": true,
+      "numeric_elements": 5.4328207E+7,
+      "failures": []
+    },
+    {
+      "case_id": "mismatch_Rs_0.8",
+      "baseline_case_id": "steady_3000",
+      "old_logs": 52,
+      "identical": true,
+      "numeric_elements": 5.4328207E+7,
+      "failures": []
+    },
+    {
+      "case_id": "mismatch_Rs_1.2",
+      "baseline_case_id": "steady_3000",
+      "old_logs": 52,
+      "identical": true,
+      "numeric_elements": 5.4328207E+7,
+      "failures": []
+    },
+    {
+      "case_id": "mismatch_L_0.8",
+      "baseline_case_id": "steady_3000",
+      "old_logs": 52,
+      "identical": true,
+      "numeric_elements": 5.4328207E+7,
+      "failures": []
+    },
+    {
+      "case_id": "mismatch_L_1.2",
+      "baseline_case_id": "steady_3000",
+      "old_logs": 52,
+      "identical": true,
+      "numeric_elements": 5.4328207E+7,
+      "failures": []
+    },
+    {
+      "case_id": "noise_002A",
+      "baseline_case_id": "steady_3000",
+      "old_logs": 52,
+      "identical": true,
+      "numeric_elements": 5.4328207E+7,
+      "failures": []
+    },
+    {
+      "case_id": "detailed_bridge_0us",
+      "baseline_case_id": "detailed_bridge_0us",
+      "old_logs": 52,
+      "identical": true,
+      "numeric_elements": 4.02328065E+8,
+      "failures": []
+    },
+    {
+      "case_id": "detailed_bridge_2us",
+      "baseline_case_id": "detailed_bridge_2us",
+      "old_logs": 52,
+      "identical": true,
+      "numeric_elements": 4.02328065E+8,
+      "failures": []
+    },
+    {
+      "case_id": "low_speed_stop",
+      "baseline_case_id": "low_speed_stop",
+      "old_logs": 52,
+      "identical": true,
+      "numeric_elements": 6.1112207E+7,
+      "failures": []
+    },
+    {
+      "case_id": "missing_5_samples",
+      "baseline_case_id": "steady_3000",
+      "old_logs": 52,
+      "identical": true,
+      "numeric_elements": 5.4328207E+7,
+      "failures": []
+    },
+    {
+      "case_id": "observer_reset",
+      "baseline_case_id": "steady_3000",
+      "old_logs": 52,
+      "identical": true,
+      "numeric_elements": 5.4328207E+7,
+      "failures": []
+    }
+  ],
+  "completed_replays_identical": true,
+  "old52_all_identical": true,
+  "all_passed": false
+}

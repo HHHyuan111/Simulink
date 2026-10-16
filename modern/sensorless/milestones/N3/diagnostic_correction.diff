@@ -1,0 +1,22 @@
+--- executed/analyse_sensorless_n3_case.m
++++ corrected/analyse_sensorless_n3_case.m
+@@ -18,7 +18,8 @@
+ elseif isfield(testcase,'windows_s')
+  windows=testcase.windows_s;
+  for k=1:size(windows,1)
+-  target=NaN;if strcmp(testcase.id,'low_speed_stop'),targets=[1000 200 0];target=targets(k);end
++  target=NaN;if isfield(testcase,'speed_rpm'),target=testcase.speed_rpm;end
++  if strcmp(testcase.id,'low_speed_stop'),targets=[1000 200 0];target=targets(k);end
+   w=window_metrics(t,truth,trueSpeed,speed,angle,valid,windows(k,:),target,c,accept.steady);
+   if k==1,m.windows=w;else,m.windows(k)=w;end
+  end
+@@ -81,7 +82,8 @@
+ 
+ function w=window_metrics(t,truth,trueSpeed,speed,angle,valid,range,target,c,criteria)
+ use=t>=range(1)-1e-12&t<=range(2)+1e-12;assert(sum(use)>1);
+-x=t(use);y=trueSpeed(use);estimate=speed(use);a=angle(use);v=valid(use);den=max(abs(target),1);
++x=t(use);y=trueSpeed(use);estimate=speed(use);a=angle(use);v=valid(use);den=NaN;
++if isfinite(target)&&target~=0,den=abs(target);end
+ slope=sum((x-mean(x)).*(y-mean(y)))/sum((x-mean(x)).^2);
+ unwrapped=unwrap(truth(use));cycles=abs(unwrapped(end)-unwrapped(1))/(2*pi);
+ err=estimate-y;

@@ -1,0 +1,278 @@
+{
+  "schema": 1,
+  "node": "N3",
+  "failures": [
+    {
+      "folder": "runs/N3_formal_20261016_163302_f9cea788-8857-43fa-b847-5ee9ed6ea95a/observer/steady_1000/attempt_1",
+      "status": "running",
+      "last_phase": "simulate",
+      "error": null,
+      "record_sha256": "93a4ba9d91dd5c83d510d8a337e5c76e59e8ad186f4a0d0829766b2de3f67f62",
+      "launcher": {
+        "native_failure": true,
+        "exit_code": -1073741819,
+        "status": "failed_launcher",
+        "case_id": "steady_1000",
+        "attempt": 1
+      },
+      "classification": "preserved_failed_attempt",
+      "source_snapshot_retained": true,
+      "raw_data_retained": false
+    },
+    {
+      "folder": "runs/N3_formal_20261016_163302_f9cea788-8857-43fa-b847-5ee9ed6ea95a/observer/steady_2000/attempt_1",
+      "status": "running",
+      "last_phase": "compiled_rate",
+      "error": null,
+      "record_sha256": "65bf729e54717367cee3f941c62f479388f495dd1e5bc98502c0a9d742a94700",
+      "launcher": {
+        "native_failure": true,
+        "exit_code": -1073741819,
+        "status": "failed_launcher",
+        "case_id": "steady_2000",
+        "attempt": 1
+      },
+      "classification": "preserved_failed_attempt",
+      "source_snapshot_retained": true,
+      "raw_data_retained": false
+    },
+    {
+      "folder": "runs/N3_formal_20261016_163302_f9cea788-8857-43fa-b847-5ee9ed6ea95a/observer/steady_2000/attempt_2",
+      "status": "running",
+      "last_phase": "simulate",
+      "error": null,
+      "record_sha256": "e6e036b09aea74f425415b1ec8891dc6d93513f1cbd1fefa9670c93d579825c0",
+      "launcher": {
+        "native_failure": true,
+        "exit_code": -1073741819,
+        "status": "failed_launcher",
+        "case_id": "steady_2000",
+        "attempt": 2
+      },
+      "classification": "preserved_failed_attempt",
+      "source_snapshot_retained": true,
+      "raw_data_retained": false
+    },
+    {
+      "folder": "runs/N3_formal_20261016_163302_f9cea788-8857-43fa-b847-5ee9ed6ea95a/observer/steady_3000/attempt_1",
+      "status": "running",
+      "last_phase": "simulate",
+      "error": null,
+      "record_sha256": "48b15b0f80326659ab0962b6a0c8710c44d814a30a19e71d276197fd80416075",
+      "launcher": null,
+      "classification": "agent_interrupted_for_execution_diagnosis",
+      "source_snapshot_retained": true,
+      "raw_data_retained": false
+    },
+    {
+      "folder": "runs/N3_init_probe_20261016_164332_eb5cbeb5-5416-4d04-9aa6-d1a4e3003f88/observer/steady_2000/attempt_1",
+      "status": "failed_execution",
+      "last_phase": "compile",
+      "error": "断言失败。",
+      "record_sha256": "e6b29a650f9424a70638ff6e4e15c2f88118bd41505dd84a832ada1f44047e4c",
+      "launcher": {
+        "exit_code": 1,
+        "status": "failed_launcher",
+        "attempt": 1,
+        "case_id": "steady_2000",
+        "native_failure": false
+      },
+      "classification": "preserved_failed_attempt",
+      "source_snapshot_retained": true,
+      "raw_data_retained": false
+    },
+    {
+      "folder": "runs/N3_replay_remaining_20261016_182823_ed9d8d01-68ab-4448-8db5-0a0d504e6074/observer/detailed_bridge_0us/attempt_1",
+      "status": "running",
+      "last_phase": "simulate",
+      "error": null,
+      "record_sha256": "ebdbfcedcecb40ecc2b78d48af154fed70bbcf2963b674f8e8abc8e6d01dbde8",
+      "launcher": {
+        "status": "failed_launcher",
+        "exit_code": -1073741795,
+        "native_failure": true,
+        "case_id": "detailed_bridge_0us",
+        "attempt": 1
+      },
+      "classification": "preserved_failed_attempt",
+      "source_snapshot_retained": true,
+      "raw_data_retained": false
+    },
+    {
+      "folder": "runs/N3_replay_remaining_20261016_182823_ed9d8d01-68ab-4448-8db5-0a0d504e6074/observer/detailed_bridge_0us/attempt_2",
+      "status": "running",
+      "last_phase": "simulate",
+      "error": null,
+      "record_sha256": "71eddd4df1805af750470b5a4617b21211425d42e5b4874d3baf2c7a3bfb778f",
+      "launcher": {
+        "status": "failed_launcher",
+        "exit_code": -1073741819,
+        "native_failure": true,
+        "case_id": "detailed_bridge_0us",
+        "attempt": 2
+      },
+      "classification": "preserved_failed_attempt",
+      "source_snapshot_retained": true,
+      "raw_data_retained": false
+    },
+    {
+      "folder": "runs/N3_replay_remaining_20261016_182823_ed9d8d01-68ab-4448-8db5-0a0d504e6074/observer/observer_reset/attempt_1",
+      "status": "running",
+      "last_phase": "simulate",
+      "error": null,
+      "record_sha256": "8b510b0078b01402e62c5458798643a915b1a3752db478bc0003f90d8097c5d7",
+      "launcher": {
+        "status": "failed_launcher",
+        "exit_code": -1073741819,
+        "native_failure": true,
+        "case_id": "observer_reset",
+        "attempt": 1
+      },
+      "classification": "preserved_failed_attempt",
+      "source_snapshot_retained": true,
+      "raw_data_retained": false
+    },
+    {
+      "folder": "runs/N3_screening_20261016_161406_2e45c1a8-0555-49db-bf5e-5c6918c57f30/observer/dynamic_speed_load/attempt_1",
+      "status": "failed_execution",
+      "last_phase": "restore",
+      "error": "目标端口已有信号线连接",
+      "record_sha256": "70bcd431fbcd031716e9bb116bd890366c2b4c428b4c7b9ba1dc3d87b99b7c82",
+      "launcher": {
+        "attempt": 1,
+        "case_id": "dynamic_speed_load",
+        "native_failure": false,
+        "exit_code": 1,
+        "status": "failed_launcher"
+      },
+      "classification": "preserved_failed_attempt",
+      "source_snapshot_retained": true,
+      "raw_data_retained": true
+    },
+    {
+      "folder": "runs/N3_screening_20261016_161641_2acf46d6-5fb1-4da1-81b5-4e9a7964a8c1/observer/dynamic_speed_load/attempt_1",
+      "status": "running",
+      "last_phase": "install",
+      "error": null,
+      "record_sha256": "879aa89ac11dd790358e681027f305e15b06ee903c8be39c7abf43503d0a6f17",
+      "launcher": {
+        "attempt": 1,
+        "case_id": "dynamic_speed_load",
+        "native_failure": false,
+        "exit_code": -1073741819,
+        "status": "failed_launcher"
+      },
+      "classification": "preserved_failed_attempt",
+      "source_snapshot_retained": true,
+      "raw_data_retained": false
+    },
+    {
+      "folder": "runs/N3_screening_20261016_161915_88fb9a88-5348-4627-ad6e-ed21e6d26e01/observer/missing_5_samples/attempt_1",
+      "status": "failed_execution",
+      "last_phase": "compile",
+      "error": "'PMSM_FOC_R2026a/无感观测/采样输入/N3_故障窗口' 中的表达式: ~(floor(u/0.00005+0.5)>=12000 && floor(u/0.00005+0.5)<12005)\n有语法错误",
+      "record_sha256": "13dd91bd309b275a58722e8a731ddd7b4b824e92ce3f2760143385a445638b57",
+      "launcher": {
+        "status": "failed_launcher",
+        "native_failure": false,
+        "case_id": "missing_5_samples",
+        "attempt": 1,
+        "exit_code": 1
+      },
+      "classification": "preserved_failed_attempt",
+      "source_snapshot_retained": true,
+      "raw_data_retained": false
+    }
+  ],
+  "native_root_cause": "unconfirmed",
+  "thresholds_changed": false,
+  "records_deleted": false,
+  "postprocessing": [
+    {
+      "action": "plot before CSV export finished",
+      "status": "failed_missing_provenance",
+      "resolution": "wait for exporter completion; rerun renderer after corrected reports"
+    },
+    {
+      "action": "diagnostic fault/zero-speed relative metrics",
+      "status": "corrected_from_same_raw_data",
+      "evidence": "diagnostic_correction.json",
+      "format_fix": "Canonical JSON comparison is temporary only; preserve NaN as null instead of converting N/A to an empty array on export."
+    },
+    {
+      "action": "data-only chunk verifier preparation",
+      "status": "fixed_before_final_audit",
+      "issues": [
+        "R2026a fopen all unsupported in cleanup; use direct owned-handle fclose",
+        "synthetic 3D timeseries shape incompatible with default time axis; use valid different column count"
+      ],
+      "evidence": "comparison_oracle.json"
+    },
+    {
+      "action": "data-only validation launcher v3",
+      "status": "native_0xc000001d",
+      "model_loaded": false,
+      "root_cause": "unconfirmed",
+      "retained_log": ".build/n3_archive_audit_chunked_v3.log"
+    },
+    {
+      "action": "initial data-only audit",
+      "status": "agent_interrupted_for_io_optimization",
+      "completed_before_interrupt": [
+        "steady_1000",
+        "steady_2000"
+      ],
+      "retained_log": ".build/n3_archive_audit.log"
+    }
+  ],
+  "postprocessing_log_hashes": [
+    {
+      "path": ".build/n3_archive_audit.log",
+      "sha256": "e6672b0843f27305abb217b6088d381b0070abe4d77a85d8cf55031eecee2f6b"
+    },
+    {
+      "path": ".build/n3_archive_audit_chunked.log",
+      "sha256": "a74c08cd60de5cbb5b6847f5554d55060c90e9637066e8ac056dedd4d546efe7"
+    },
+    {
+      "path": ".build/n3_archive_audit_chunked_v2.log",
+      "sha256": "6e08f77bbd9c833c3e93939c1754892fdb6d5a59a93132eb561f57b554da21a5"
+    },
+    {
+      "path": ".build/n3_archive_audit_chunked_v3.log",
+      "sha256": "dd89e41a0af96f894fb06592ff410c8f2394bb0dda1b1d90c35bf2e6c6051cd4"
+    },
+    {
+      "path": ".build/n3_archive_audit_chunked_v4.log",
+      "sha256": "0c3259ba1c2d1d2f01aa94aaeba1ee29baf0fb12cabb795519600bf6626f6dbd"
+    },
+    {
+      "path": ".build/n3_diagnostic_correction.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".build/n3_diagnostic_correction_v2.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".build/n3_export.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".build/n3_real_speed_integrity.log",
+      "sha256": "a4cd46ea28ec7de1a433ba9bf8faf2f6031a8f4052010e237db0e15c3c206012"
+    },
+    {
+      "path": ".build/n3_screen_1000.log",
+      "sha256": "d67132be76ebaf9c9c11b1f50ebb38d380a108656dbd49fe4f94bd1b6da9fa16"
+    },
+    {
+      "path": ".build/n3_stimulus_check.log",
+      "sha256": "01d9991ea779aaa9ef51367b8e88c902b219ae1538d16c4b3ce8089bdc386c1d"
+    },
+    {
+      "path": ".build/n3_stimulus_check_2.log",
+      "sha256": "8f864549ee9a2ef16d2d1559e0b242dea141e570dcf30a59238c320d751826b9"
+    }
+  ]
+}

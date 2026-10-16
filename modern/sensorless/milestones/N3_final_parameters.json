@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "node": "N3",
+  "status": "frozen_before_formal_campaign",
+  "observer_design": {
+    "R_hat": 0.105125,
+    "L_hat": 0.0001037615,
+    "Kslide_V": 14,
+    "boundary_A": 0.2,
+    "emf_filter_hz": 800,
+    "pll_fn_hz": 60,
+    "pll_zeta": 0.707,
+    "omega_limit_rad_s": 2000
+  },
+  "tuning_performed": false,
+  "selection_reason": "N2 nominal design retained; 1000 rpm, dynamic, noise, missing and reset screening passed. No threshold or window changed.",
+  "startup_options": [
+    "-singleCompThread"
+  ],
+  "required_observer_cases": 16,
+  "additional_plant_baselines": [
+    "steady_1000",
+    "steady_2000",
+    "steady_3000",
+    "dynamic_speed_load",
+    "reverse_1000",
+    "reverse_3000",
+    "detailed_bridge_0us",
+    "detailed_bridge_2us",
+    "low_speed_stop"
+  ],
+  "additional_baseline_purpose": "same plant stimulus with observer absent, exact 52-log regression; shared 3000 rpm baseline for observer-only parameter/noise/missing/reset cases",
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "acceptance_sha256": "dc9951b4920f5e24c1da42933e737c168b97410e510c302ddc94798896364ad4",
+  "test_plan_sha256": "717598811b3e2225c4606483dd205c76b2a50865d79af3fdba63531703373296",
+  "N3_execution_plan_sha256": "8b409539050501d74dd1528e386fe9ef91537bfa62a234fcc7be948324c69a1e"
+}

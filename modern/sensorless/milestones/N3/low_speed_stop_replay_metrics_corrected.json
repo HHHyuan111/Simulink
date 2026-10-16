@@ -1,0 +1,120 @@
+{
+  "case_id": "low_speed_stop",
+  "kind": "boundary",
+  "samples": 18001,
+  "finite_states": true,
+  "first_valid_s": 0.0465,
+  "false_valid_samples": 175,
+  "false_valid_fraction_of_valid": 0.03332698533612645,
+  "false_valid_longest_s": 0.00875,
+  "whole_run_peak_angle_abs_deg": 179.98609680239545,
+  "whole_run_peak_speed_error_rpm": 858.8513966890132,
+  "windows": [
+    {
+      "begin_s": 0.2,
+      "end_s": 0.3,
+      "samples": 2001,
+      "target_rpm": 1000,
+      "true_speed_mean_rpm": 1000.0347086957366,
+      "true_speed_slope_rpm_s": 2.7683908550717908,
+      "electrical_cycles": 8.3335253052223877,
+      "angle_rms_deg": 0.03269545804274062,
+      "angle_abs_max_deg": 0.08828705276256725,
+      "speed_mean_signed_error_rpm": -0.014073381334801188,
+      "speed_error_rms_rpm": 1.429108807125423,
+      "speed_mean_error_relative": 1.4073381334801188E-5,
+      "speed_error_rms_relative": 0.001429108807125423,
+      "valid_fraction": 1,
+      "plant_settled": true,
+      "precision_passed": false
+    },
+    {
+      "begin_s": 0.5,
+      "end_s": 0.6,
+      "samples": 2001,
+      "target_rpm": 200,
+      "true_speed_mean_rpm": 199.99740890943403,
+      "true_speed_slope_rpm_s": 0.701114226088972,
+      "electrical_cycles": 1.6666135712690469,
+      "angle_rms_deg": 100.81755335765955,
+      "angle_abs_max_deg": 179.93250190707829,
+      "speed_mean_signed_error_rpm": 411.99433363847481,
+      "speed_error_rms_rpm": 411.99485198050547,
+      "speed_mean_error_relative": 2.0599716681923739,
+      "speed_error_rms_relative": 2.0599742599025275,
+      "valid_fraction": 0,
+      "plant_settled": true,
+      "precision_passed": false
+    },
+    {
+      "begin_s": 0.8,
+      "end_s": 0.9,
+      "samples": 2001,
+      "target_rpm": 0,
+      "true_speed_mean_rpm": -0.0013363498570218247,
+      "true_speed_slope_rpm_s": 0.013344709144939352,
+      "electrical_cycles": 2.5021645984296341E-5,
+      "angle_rms_deg": 104.54208388720203,
+      "angle_abs_max_deg": 179.83709613743545,
+      "speed_mean_signed_error_rpm": 611.99307889776594,
+      "speed_error_rms_rpm": 611.99308972727215,
+      "speed_mean_error_relative": null,
+      "speed_error_rms_relative": null,
+      "valid_fraction": 0,
+      "plant_settled": false,
+      "precision_passed": false
+    }
+  ],
+  "events": [
+    {
+      "type": "speed",
+      "request_time_s": 0.3,
+      "source_first_logged_time_s": 0.3,
+      "accepted_task_time_s": 0.3,
+      "first_observer_task_s": 0.3,
+      "recovery_interval_start_s": null,
+      "recovery_hold_end_s": null,
+      "recovery_delay_s": null,
+      "peak_angle_abs_deg": 179.93709195873726,
+      "peak_speed_error_rpm": 537.43693128829773,
+      "passed": false
+    },
+    {
+      "type": "speed",
+      "request_time_s": 0.6,
+      "source_first_logged_time_s": 0.6,
+      "accepted_task_time_s": 0.6,
+      "first_observer_task_s": 0.6,
+      "recovery_interval_start_s": null,
+      "recovery_hold_end_s": null,
+      "recovery_delay_s": null,
+      "peak_angle_abs_deg": 179.98609680239545,
+      "peak_speed_error_rpm": 642.30830788269486,
+      "passed": false
+    }
+  ],
+  "stimulus": {
+    "speed_request_schedule_identical": true,
+    "load_schedule_identical": true,
+    "passed": true
+  },
+  "validity": {
+    "valid_samples_identical": true,
+    "state_samples_identical": true,
+    "history_samples_identical": true,
+    "invalid_sample_immediate": true,
+    "passed": true
+  },
+  "faults": {
+    "required": false,
+    "injected_samples": 0,
+    "correct_count": true,
+    "state_semantics": true,
+    "reacquire_s": null,
+    "passed": true
+  },
+  "correct_sign": true,
+  "precision_required": false,
+  "dynamic_required": false,
+  "passed": true
+}
