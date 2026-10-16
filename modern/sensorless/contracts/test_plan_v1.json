@@ -1,0 +1,561 @@
+{
+  "schema": 1,
+  "id": "sensorless_test_plan_v1",
+  "contract": "acceptance_v1.json",
+  "smo_nominal_seed": {
+    "Kslide_V": 14,
+    "boundary_A": 0.2,
+    "emf_filter_hz": 800,
+    "pll_fn_hz": 60,
+    "pll_zeta": 0.707
+  },
+  "tuning_grid": {
+    "Kslide_V": [
+      12,
+      14,
+      16
+    ],
+    "boundary_A": [
+      0.1,
+      0.2,
+      0.4
+    ],
+    "emf_filter_hz": [
+      500,
+      800,
+      1200
+    ],
+    "pll_fn_hz": [
+      40,
+      60,
+      80
+    ],
+    "policy": "逐项有因果选择，不默认执行全排列；最终参数在正式验收前冻结，完整记录试调与失败"
+  },
+  "pll_component": {
+    "sample_period_s": 0.00005,
+    "duration_s": 0.3,
+    "window_s": [
+      0.2,
+      0.3
+    ],
+    "electrical_frequency_Hz": [
+      83.33333333333333,
+      166.66666666666666,
+      250,
+      -83.33333333333333,
+      -166.66666666666666,
+      -250
+    ],
+    "amplitudes": [
+      0.5,
+      1,
+      2
+    ],
+    "initial_phase_error_deg": [
+      -120,
+      -30,
+      30,
+      120
+    ],
+    "input": "known unit rotor direction vector; sign-corrected for declared rotation; no SMO/filter included"
+  },
+  "cases": [
+    {
+      "id": "N0_reference_smoke",
+      "node": "N0",
+      "kind": "baseline_inventory",
+      "duration_s": 0.1,
+      "configuration": {
+        "bus_V": 24,
+        "load_Nm": 0.207,
+        "iq_reference_limit_A": 8,
+        "pi": "unchanged",
+        "motor": "loaded_model_nominal",
+        "bridge": "original_ideal",
+        "measurement": "ideal",
+        "extra_factors": "off",
+        "feedback": "original_reference",
+        "observer_feedback": "disconnected",
+        "initial_state": "fixed_reference_v1"
+      },
+      "not_smo_performance_test": true
+    },
+    {
+      "id": "steady_1000",
+      "node": "N3",
+      "kind": "base_precision",
+      "speed_rpm": 1000,
+      "duration_s": 0.8,
+      "window_s": [
+        0.5,
+        0.8
+      ],
+      "configuration": {
+        "bus_V": 24,
+        "load_Nm": 0.207,
+        "iq_reference_limit_A": 8,
+        "pi": "unchanged",
+        "motor": "loaded_model_nominal",
+        "bridge": "original_ideal",
+        "measurement": "ideal",
+        "extra_factors": "off",
+        "feedback": "original_reference",
+        "observer_feedback": "disconnected",
+        "initial_state": "fixed_reference_v1"
+      }
+    },
+    {
+      "id": "steady_2000",
+      "node": "N3",
+      "kind": "base_precision",
+      "speed_rpm": 2000,
+      "duration_s": 0.8,
+      "window_s": [
+        0.5,
+        0.8
+      ],
+      "configuration": {
+        "bus_V": 24,
+        "load_Nm": 0.207,
+        "iq_reference_limit_A": 8,
+        "pi": "unchanged",
+        "motor": "loaded_model_nominal",
+        "bridge": "original_ideal",
+        "measurement": "ideal",
+        "extra_factors": "off",
+        "feedback": "original_reference",
+        "observer_feedback": "disconnected",
+        "initial_state": "fixed_reference_v1"
+      }
+    },
+    {
+      "id": "steady_3000",
+      "node": "N3",
+      "kind": "base_precision",
+      "speed_rpm": 3000,
+      "duration_s": 0.8,
+      "window_s": [
+        0.5,
+        0.8
+      ],
+      "configuration": {
+        "bus_V": 24,
+        "load_Nm": 0.207,
+        "iq_reference_limit_A": 8,
+        "pi": "unchanged",
+        "motor": "loaded_model_nominal",
+        "bridge": "original_ideal",
+        "measurement": "ideal",
+        "extra_factors": "off",
+        "feedback": "original_reference",
+        "observer_feedback": "disconnected",
+        "initial_state": "fixed_reference_v1"
+      }
+    },
+    {
+      "id": "dynamic_speed_load",
+      "node": "N3",
+      "kind": "base_dynamic",
+      "duration_s": 0.9,
+      "speed_initial_rpm": 2000,
+      "events": [
+        {
+          "time_s": 0.3,
+          "type": "speed",
+          "value_rpm": 3000
+        },
+        {
+          "time_s": 0.6,
+          "type": "load",
+          "value_Nm": 0.25
+        }
+      ],
+      "configuration": {
+        "bus_V": 24,
+        "load_Nm": 0.207,
+        "iq_reference_limit_A": 8,
+        "pi": "unchanged",
+        "motor": "loaded_model_nominal",
+        "bridge": "original_ideal",
+        "measurement": "ideal",
+        "extra_factors": "off",
+        "feedback": "original_reference",
+        "observer_feedback": "disconnected",
+        "initial_state": "fixed_reference_v1"
+      }
+    },
+    {
+      "id": "reverse_1000",
+      "node": "N3",
+      "kind": "boundary",
+      "speed_rpm": -1000,
+      "direction": -1,
+      "duration_s": 0.8,
+      "window_s": [
+        0.5,
+        0.8
+      ],
+      "configuration": {
+        "bus_V": 24,
+        "load_Nm": 0.207,
+        "iq_reference_limit_A": 8,
+        "pi": "unchanged",
+        "motor": "loaded_model_nominal",
+        "bridge": "original_ideal",
+        "measurement": "ideal",
+        "extra_factors": "off",
+        "feedback": "original_reference",
+        "observer_feedback": "disconnected",
+        "initial_state": "fixed_reference_v1"
+      }
+    },
+    {
+      "id": "reverse_3000",
+      "node": "N3",
+      "kind": "boundary",
+      "speed_rpm": -3000,
+      "direction": -1,
+      "duration_s": 0.8,
+      "window_s": [
+        0.5,
+        0.8
+      ],
+      "configuration": {
+        "bus_V": 24,
+        "load_Nm": 0.207,
+        "iq_reference_limit_A": 8,
+        "pi": "unchanged",
+        "motor": "loaded_model_nominal",
+        "bridge": "original_ideal",
+        "measurement": "ideal",
+        "extra_factors": "off",
+        "feedback": "original_reference",
+        "observer_feedback": "disconnected",
+        "initial_state": "fixed_reference_v1"
+      }
+    },
+    {
+      "id": "mismatch_Rs_0.8",
+      "node": "N3",
+      "kind": "boundary",
+      "speed_rpm": 3000,
+      "duration_s": 0.8,
+      "window_s": [
+        0.5,
+        0.8
+      ],
+      "observer_parameter_multiplier": {
+        "Rs": 0.8
+      },
+      "plant_parameter_multiplier": 1,
+      "configuration": {
+        "bus_V": 24,
+        "load_Nm": 0.207,
+        "iq_reference_limit_A": 8,
+        "pi": "unchanged",
+        "motor": "loaded_model_nominal",
+        "bridge": "original_ideal",
+        "measurement": "ideal",
+        "extra_factors": "off",
+        "feedback": "original_reference",
+        "observer_feedback": "disconnected",
+        "initial_state": "fixed_reference_v1"
+      }
+    },
+    {
+      "id": "mismatch_Rs_1.2",
+      "node": "N3",
+      "kind": "boundary",
+      "speed_rpm": 3000,
+      "duration_s": 0.8,
+      "window_s": [
+        0.5,
+        0.8
+      ],
+      "observer_parameter_multiplier": {
+        "Rs": 1.2
+      },
+      "plant_parameter_multiplier": 1,
+      "configuration": {
+        "bus_V": 24,
+        "load_Nm": 0.207,
+        "iq_reference_limit_A": 8,
+        "pi": "unchanged",
+        "motor": "loaded_model_nominal",
+        "bridge": "original_ideal",
+        "measurement": "ideal",
+        "extra_factors": "off",
+        "feedback": "original_reference",
+        "observer_feedback": "disconnected",
+        "initial_state": "fixed_reference_v1"
+      }
+    },
+    {
+      "id": "mismatch_L_0.8",
+      "node": "N3",
+      "kind": "boundary",
+      "speed_rpm": 3000,
+      "duration_s": 0.8,
+      "window_s": [
+        0.5,
+        0.8
+      ],
+      "observer_parameter_multiplier": {
+        "L": 0.8
+      },
+      "plant_parameter_multiplier": 1,
+      "configuration": {
+        "bus_V": 24,
+        "load_Nm": 0.207,
+        "iq_reference_limit_A": 8,
+        "pi": "unchanged",
+        "motor": "loaded_model_nominal",
+        "bridge": "original_ideal",
+        "measurement": "ideal",
+        "extra_factors": "off",
+        "feedback": "original_reference",
+        "observer_feedback": "disconnected",
+        "initial_state": "fixed_reference_v1"
+      }
+    },
+    {
+      "id": "mismatch_L_1.2",
+      "node": "N3",
+      "kind": "boundary",
+      "speed_rpm": 3000,
+      "duration_s": 0.8,
+      "window_s": [
+        0.5,
+        0.8
+      ],
+      "observer_parameter_multiplier": {
+        "L": 1.2
+      },
+      "plant_parameter_multiplier": 1,
+      "configuration": {
+        "bus_V": 24,
+        "load_Nm": 0.207,
+        "iq_reference_limit_A": 8,
+        "pi": "unchanged",
+        "motor": "loaded_model_nominal",
+        "bridge": "original_ideal",
+        "measurement": "ideal",
+        "extra_factors": "off",
+        "feedback": "original_reference",
+        "observer_feedback": "disconnected",
+        "initial_state": "fixed_reference_v1"
+      }
+    },
+    {
+      "id": "noise_002A",
+      "node": "N3",
+      "kind": "boundary",
+      "speed_rpm": 3000,
+      "duration_s": 0.8,
+      "window_s": [
+        0.5,
+        0.8
+      ],
+      "noise": {
+        "type": "independent_ABC_zero_mean_gaussian",
+        "rms_A": 0.02,
+        "seed": 20261016,
+        "period_s": 0.00005,
+        "generator": "dedicated mt19937ar stream; draw 3 values per control sample incl initial sample; do not reuse plant RNG",
+        "application": "sampled ABC current before Clarke"
+      },
+      "configuration": {
+        "bus_V": 24,
+        "load_Nm": 0.207,
+        "iq_reference_limit_A": 8,
+        "pi": "unchanged",
+        "motor": "loaded_model_nominal",
+        "bridge": "original_ideal",
+        "measurement": "ideal",
+        "extra_factors": "off",
+        "feedback": "original_reference",
+        "observer_feedback": "disconnected",
+        "initial_state": "fixed_reference_v1"
+      }
+    },
+    {
+      "id": "detailed_bridge_0us",
+      "node": "N3",
+      "kind": "boundary",
+      "speed_rpm": 3000,
+      "duration_s": 0.8,
+      "window_s": [
+        0.5,
+        0.8
+      ],
+      "configuration": {
+        "bus_V": 24,
+        "load_Nm": 0.207,
+        "iq_reference_limit_A": 8,
+        "pi": "unchanged",
+        "motor": "loaded_model_nominal",
+        "bridge": "same_detailed_freewheel",
+        "measurement": "ideal",
+        "extra_factors": "off",
+        "feedback": "original_reference",
+        "observer_feedback": "disconnected",
+        "initial_state": "fixed_reference_v1",
+        "gate_deadtime_us": 0,
+        "deadtime_compensation": false,
+        "real_timing": true,
+        "event_grid_s": 6.25e-8,
+        "adc_window": false,
+        "analog_and_digital_filters": false
+      }
+    },
+    {
+      "id": "detailed_bridge_2us",
+      "node": "N3",
+      "kind": "boundary",
+      "speed_rpm": 3000,
+      "duration_s": 0.8,
+      "window_s": [
+        0.5,
+        0.8
+      ],
+      "configuration": {
+        "bus_V": 24,
+        "load_Nm": 0.207,
+        "iq_reference_limit_A": 8,
+        "pi": "unchanged",
+        "motor": "loaded_model_nominal",
+        "bridge": "same_detailed_freewheel",
+        "measurement": "ideal",
+        "extra_factors": "off",
+        "feedback": "original_reference",
+        "observer_feedback": "disconnected",
+        "initial_state": "fixed_reference_v1",
+        "gate_deadtime_us": 2,
+        "deadtime_compensation": false,
+        "real_timing": true,
+        "event_grid_s": 6.25e-8,
+        "adc_window": false,
+        "analog_and_digital_filters": false
+      }
+    },
+    {
+      "id": "low_speed_stop",
+      "node": "N3",
+      "kind": "boundary",
+      "duration_s": 0.9,
+      "speed_initial_rpm": 1000,
+      "events": [
+        {
+          "time_s": 0.3,
+          "type": "speed",
+          "value_rpm": 200
+        },
+        {
+          "time_s": 0.6,
+          "type": "speed",
+          "value_rpm": 0
+        }
+      ],
+      "windows_s": [
+        [
+          0.2,
+          0.3
+        ],
+        [
+          0.5,
+          0.6
+        ],
+        [
+          0.8,
+          0.9
+        ]
+      ],
+      "configuration": {
+        "bus_V": 24,
+        "load_Nm": 0.207,
+        "iq_reference_limit_A": 8,
+        "pi": "unchanged",
+        "motor": "loaded_model_nominal",
+        "bridge": "original_ideal",
+        "measurement": "ideal",
+        "extra_factors": "off",
+        "feedback": "original_reference",
+        "observer_feedback": "disconnected",
+        "initial_state": "fixed_reference_v1"
+      }
+    },
+    {
+      "id": "missing_5_samples",
+      "node": "N3",
+      "kind": "boundary",
+      "speed_rpm": 3000,
+      "duration_s": 0.8,
+      "invalid_interval_s": [
+        0.6,
+        0.60025
+      ],
+      "invalid_sample_count": 5,
+      "invalid_index_rule": "samples with t>=0.6 and t<0.60025",
+      "windows_s": [
+        [
+          0.59,
+          0.61
+        ],
+        [
+          0.61,
+          0.65
+        ]
+      ],
+      "configuration": {
+        "bus_V": 24,
+        "load_Nm": 0.207,
+        "iq_reference_limit_A": 8,
+        "pi": "unchanged",
+        "motor": "loaded_model_nominal",
+        "bridge": "original_ideal",
+        "measurement": "ideal",
+        "extra_factors": "off",
+        "feedback": "original_reference",
+        "observer_feedback": "disconnected",
+        "initial_state": "fixed_reference_v1"
+      }
+    },
+    {
+      "id": "observer_reset",
+      "node": "N3",
+      "kind": "state_semantics",
+      "speed_rpm": 3000,
+      "duration_s": 0.8,
+      "reset_time_s": 0.6,
+      "reset_duration_samples": 1,
+      "windows_s": [
+        [
+          0.59,
+          0.61
+        ],
+        [
+          0.61,
+          0.65
+        ]
+      ],
+      "configuration": {
+        "bus_V": 24,
+        "load_Nm": 0.207,
+        "iq_reference_limit_A": 8,
+        "pi": "unchanged",
+        "motor": "loaded_model_nominal",
+        "bridge": "original_ideal",
+        "measurement": "ideal",
+        "extra_factors": "off",
+        "feedback": "original_reference",
+        "observer_feedback": "disconnected",
+        "initial_state": "fixed_reference_v1"
+      }
+    }
+  ],
+  "events_policy": "请求时间固定，实际控制任务接受时间另记，不插值；主精度案例从固定参考恢复并使用原模型求解设置",
+  "phase_policy": "Gobs*H及输入物理时间戳共同定义；参数由估计速度与因果信号生成，禁止用真实角度拟合补偿",
+  "recording": "raw timeseries MAT; config/metrics/provenance JSON; case metrics CSV; no failure deletion",
+  "detailed_bridge_runtime": "固定0.8s不缩短为通过；若耗时不可接受则标未完成并提交范围变更，不挪窗"
+}

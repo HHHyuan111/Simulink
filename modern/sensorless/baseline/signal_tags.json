@@ -1,0 +1,957 @@
+[
+  {
+    "path": "PMSM_FOC_R2026a/Electrical Rotation Angle",
+    "type": "Goto",
+    "tag": "theta_e"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From",
+    "type": "From",
+    "tag": "speed"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From1",
+    "type": "From",
+    "tag": "theta_meas"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From10",
+    "type": "From",
+    "tag": "vq"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From11",
+    "type": "From",
+    "tag": "theta_meas"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From12",
+    "type": "From",
+    "tag": "v_beta"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From13",
+    "type": "From",
+    "tag": "SW"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From14",
+    "type": "From",
+    "tag": "speed"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From15",
+    "type": "From",
+    "tag": "id"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From16",
+    "type": "From",
+    "tag": "Te"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From17",
+    "type": "From",
+    "tag": "SW"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From18",
+    "type": "From",
+    "tag": "Iabc"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From19",
+    "type": "From",
+    "tag": "Uabc"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From2",
+    "type": "From",
+    "tag": "id"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From20",
+    "type": "From",
+    "tag": "v_alpha"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From21",
+    "type": "From",
+    "tag": "v_beta"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From22",
+    "type": "From",
+    "tag": "sector"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From23",
+    "type": "From",
+    "tag": "id"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From24",
+    "type": "From",
+    "tag": "iq"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From25",
+    "type": "From",
+    "tag": "v_alpha"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From26",
+    "type": "From",
+    "tag": "v_beta"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From27",
+    "type": "From",
+    "tag": "UDC"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From28",
+    "type": "From",
+    "tag": "speed"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From29",
+    "type": "From",
+    "tag": "Umod"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From3",
+    "type": "From",
+    "tag": "ws"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From30",
+    "type": "From",
+    "tag": "Vq_re"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From31",
+    "type": "From",
+    "tag": "Vd_re"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From32",
+    "type": "From",
+    "tag": "vd"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From33",
+    "type": "From",
+    "tag": "vq"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From35",
+    "type": "From",
+    "tag": "id"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From36",
+    "type": "From",
+    "tag": "nref2"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From37",
+    "type": "From",
+    "tag": "iq_ref"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From4",
+    "type": "From",
+    "tag": "Iabc_meas"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From5",
+    "type": "From",
+    "tag": "iq"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From6",
+    "type": "From",
+    "tag": "speed"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From7",
+    "type": "From",
+    "tag": "id_ref"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From8",
+    "type": "From",
+    "tag": "v_alpha"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From9",
+    "type": "From",
+    "tag": "vd"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto",
+    "type": "Goto",
+    "tag": "Iabc"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto1",
+    "type": "Goto",
+    "tag": "ws"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto10",
+    "type": "Goto",
+    "tag": "v_alpha"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto11",
+    "type": "Goto",
+    "tag": "v_beta"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto12",
+    "type": "Goto",
+    "tag": "SW"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto13",
+    "type": "Goto",
+    "tag": "sector"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto14",
+    "type": "Goto",
+    "tag": "Vq_re"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto15",
+    "type": "Goto",
+    "tag": "Vd_re"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto16",
+    "type": "Goto",
+    "tag": "UDC"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto17",
+    "type": "Goto",
+    "tag": "Umod"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto18",
+    "type": "Goto",
+    "tag": "TL"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto19",
+    "type": "Goto",
+    "tag": "nref"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto2",
+    "type": "Goto",
+    "tag": "id"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto20",
+    "type": "Goto",
+    "tag": "id_ref"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto21",
+    "type": "Goto",
+    "tag": "nref2"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto3",
+    "type": "Goto",
+    "tag": "iq"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto4",
+    "type": "Goto",
+    "tag": "Uabc"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto5",
+    "type": "Goto",
+    "tag": "Te"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto6",
+    "type": "Goto",
+    "tag": "speed"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto7",
+    "type": "Goto",
+    "tag": "vd_req"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto8",
+    "type": "Goto",
+    "tag": "vq_req"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto9",
+    "type": "Goto",
+    "tag": "iq_ref"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Measured phase currents",
+    "type": "Goto",
+    "tag": "Currentabc"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w/标签_obs_pi_speed",
+    "type": "Goto",
+    "tag": "ObsPI_speed"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w1/最终残差",
+    "type": "From",
+    "tag": "ObsResidual_d"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w1/标签_ObsCorrection_d",
+    "type": "Goto",
+    "tag": "ObsCorrection_d"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w1/标签_obs_pi_d",
+    "type": "Goto",
+    "tag": "ObsPI_d"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w2/最终残差",
+    "type": "From",
+    "tag": "ObsResidual_q"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w2/标签_ObsCorrection_q",
+    "type": "Goto",
+    "tag": "ObsCorrection_q"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w2/标签_obs_pi_q",
+    "type": "Goto",
+    "tag": "ObsPI_q"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/dq请求与输出 [V]_1",
+    "type": "From",
+    "tag": "vd_req"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/dq请求与输出 [V]_2",
+    "type": "From",
+    "tag": "vq_req"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/dq请求与输出 [V]_3",
+    "type": "From",
+    "tag": "vd"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/dq请求与输出 [V]_4",
+    "type": "From",
+    "tag": "vq"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/d轴PI_1",
+    "type": "From",
+    "tag": "ObsPI_d"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/q轴PI_1",
+    "type": "From",
+    "tag": "ObsPI_q"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/利用率_1",
+    "type": "From",
+    "tag": "ObsUtilization"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/前馈 [V]_1",
+    "type": "From",
+    "tag": "ObsFFd"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/前馈 [V]_2",
+    "type": "From",
+    "tag": "ObsFFq"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/可用电压 [V]_1",
+    "type": "From",
+    "tag": "ObsVmax"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/回算修正 [A]_1",
+    "type": "From",
+    "tag": "ObsCorrection_d"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/回算修正 [A]_2",
+    "type": "From",
+    "tag": "ObsCorrection_q"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/最终残差 [V]_1",
+    "type": "From",
+    "tag": "ObsResidual_d"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/最终残差 [V]_2",
+    "type": "From",
+    "tag": "ObsResidual_q"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/速度PI_1",
+    "type": "From",
+    "tag": "ObsPI_speed"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/饱和标志_1",
+    "type": "From",
+    "tag": "ObsSaturation"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PWM threshold tag",
+    "type": "Goto",
+    "tag": "Tcm"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/标签_DeadMotorState",
+    "type": "Goto",
+    "tag": "DeadMotorState"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/标签_ObsFreewheel",
+    "type": "Goto",
+    "tag": "ObsFreewheel"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/标签_SWact",
+    "type": "Goto",
+    "tag": "SWact"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/电机状态",
+    "type": "From",
+    "tag": "DeadMotorState"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/Log SW",
+    "type": "From",
+    "tag": "SW"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/Log TL",
+    "type": "From",
+    "tag": "TL"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/Log Te",
+    "type": "From",
+    "tag": "Te"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/Log UDC",
+    "type": "From",
+    "tag": "UDC"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/Log id",
+    "type": "From",
+    "tag": "id"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/Log iq",
+    "type": "From",
+    "tag": "iq"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/Log iq_ref",
+    "type": "From",
+    "tag": "iq_ref"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/Log nref",
+    "type": "From",
+    "tag": "nref"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/Log speed",
+    "type": "From",
+    "tag": "speed"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/Log v_alpha",
+    "type": "From",
+    "tag": "v_alpha"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/Log v_beta",
+    "type": "From",
+    "tag": "v_beta"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/PWM thresholds",
+    "type": "From",
+    "tag": "Tcm"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/真实电流",
+    "type": "From",
+    "tag": "Currentabc"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/观测_obs_analog_current",
+    "type": "From",
+    "tag": "ObsAnalog"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/观测_obs_id_ref",
+    "type": "From",
+    "tag": "ObsIdRef"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/观测_obs_sector",
+    "type": "From",
+    "tag": "sector"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/观测_obs_vd",
+    "type": "From",
+    "tag": "vd"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/观测_obs_vd_actual",
+    "type": "From",
+    "tag": "Vd_re"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/观测_obs_vq",
+    "type": "From",
+    "tag": "vq"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/观测_obs_vq_actual",
+    "type": "From",
+    "tag": "Vq_re"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/调制状态",
+    "type": "From",
+    "tag": "ObsMod"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/载波",
+    "type": "From",
+    "tag": "ObsCarrier"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/门极",
+    "type": "From",
+    "tag": "SW"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率压降/压降",
+    "type": "From",
+    "tag": "ObsPowerDrop"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率压降/开关",
+    "type": "From",
+    "tag": "ObsPowerOn"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率压降/标签_obs_phase_actual",
+    "type": "Goto",
+    "tag": "ObsPhaseActual"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率压降/标签_obs_phase_ideal",
+    "type": "Goto",
+    "tag": "ObsPhaseIdeal"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率观测/实际相电压_1",
+    "type": "From",
+    "tag": "ObsPhaseActual"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率观测/实际门极",
+    "type": "From",
+    "tag": "SWact"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率观测/平均压降_1",
+    "type": "From",
+    "tag": "ObsPowerDrop"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率观测/理想相电压_1",
+    "type": "From",
+    "tag": "ObsPhaseIdeal"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率观测/续流诊断",
+    "type": "From",
+    "tag": "ObsFreewheel"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率观测/补偿诊断",
+    "type": "From",
+    "tag": "ObsDeadComp"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率设置/开关",
+    "type": "Goto",
+    "tag": "ObsPowerOn"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率设置/标签_obs_power_drop",
+    "type": "Goto",
+    "tag": "ObsPowerDrop"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率设置/母线",
+    "type": "From",
+    "tag": "UDC"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率设置/电流",
+    "type": "From",
+    "tag": "Currentabc"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/ADC事件",
+    "type": "From",
+    "tag": "ObsADCTiming"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/PWM事件",
+    "type": "From",
+    "tag": "ObsPWMTiming"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/占空比_1",
+    "type": "From",
+    "tag": "ObsModGroup2"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/标签_1",
+    "type": "Goto",
+    "tag": "ObsModGroup1"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/标签_2",
+    "type": "Goto",
+    "tag": "ObsModGroup2"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/标签_3",
+    "type": "Goto",
+    "tag": "ObsModGroup3"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/测量电压_1",
+    "type": "From",
+    "tag": "Vd_re"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/测量电压_2",
+    "type": "From",
+    "tag": "Vq_re"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/电压指令_1",
+    "type": "From",
+    "tag": "vd"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/电压指令_2",
+    "type": "From",
+    "tag": "vq"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/矢量时间 [s]_1",
+    "type": "From",
+    "tag": "ObsModGroup1"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/调制状态",
+    "type": "From",
+    "tag": "ObsMod"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/调制边界标志_1",
+    "type": "From",
+    "tag": "ObsModGroup3"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/门极_1",
+    "type": "From",
+    "tag": "SW"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/标签_ObsFFdMagnitude",
+    "type": "Goto",
+    "tag": "ObsFFdMagnitude"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/标签_ObsFFq",
+    "type": "Goto",
+    "tag": "ObsFFq"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/标签_ObsMod",
+    "type": "Goto",
+    "tag": "ObsMod"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/标签_obs_carrier_fast",
+    "type": "Goto",
+    "tag": "ObsCarrier"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/标签_obs_id_ref",
+    "type": "Goto",
+    "tag": "ObsIdRef"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/测量观测/测量电流_1",
+    "type": "From",
+    "tag": "Iabc_meas"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/测量观测/电流误差_正",
+    "type": "From",
+    "tag": "Iabc_meas"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/测量观测/电流误差_负",
+    "type": "From",
+    "tag": "Currentabc"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/测量观测/电角度_1",
+    "type": "From",
+    "tag": "theta_e"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/测量观测/电角度_2",
+    "type": "From",
+    "tag": "theta_meas"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/测量观测/真实电流_1",
+    "type": "From",
+    "tag": "Currentabc"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/测量观测/角度误差_正",
+    "type": "From",
+    "tag": "theta_meas"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/测量观测/角度误差_负",
+    "type": "From",
+    "tag": "theta_e"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/角度设置/测量角度",
+    "type": "Goto",
+    "tag": "theta_meas"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/角度设置/真实角度",
+    "type": "From",
+    "tag": "theta_e"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/调制母线",
+    "type": "From",
+    "tag": "UDC"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/d轴_1",
+    "type": "From",
+    "tag": "ObsIdRef"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/d轴_2",
+    "type": "From",
+    "tag": "id"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/d轴误差_正",
+    "type": "From",
+    "tag": "ObsIdRef"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/d轴误差_负",
+    "type": "From",
+    "tag": "id"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/q轴_1",
+    "type": "From",
+    "tag": "iq_ref"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/q轴_2",
+    "type": "From",
+    "tag": "iq"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/q轴误差_正",
+    "type": "From",
+    "tag": "iq_ref"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/q轴误差_负",
+    "type": "From",
+    "tag": "iq"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/转矩_1",
+    "type": "From",
+    "tag": "Te"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/转矩_2",
+    "type": "From",
+    "tag": "TL"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/转速_1",
+    "type": "From",
+    "tag": "nref"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/转速_2",
+    "type": "From",
+    "tag": "speed"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/转速误差_正",
+    "type": "From",
+    "tag": "nref"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/转速误差_负",
+    "type": "From",
+    "tag": "speed"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/输出延迟/标签_ObsPWMTiming",
+    "type": "Goto",
+    "tag": "ObsPWMTiming"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/标签_ObsADCTiming",
+    "type": "Goto",
+    "tag": "ObsADCTiming"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/标签_obs_analog_current",
+    "type": "Goto",
+    "tag": "ObsAnalog"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/测量电流",
+    "type": "Goto",
+    "tag": "Iabc_meas"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/真实电流",
+    "type": "From",
+    "tag": "Currentabc"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/门极",
+    "type": "From",
+    "tag": "SWact"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/d",
+    "type": "From",
+    "tag": "vd_req"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/d前馈幅值",
+    "type": "From",
+    "tag": "ObsFFdMagnitude"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/q",
+    "type": "From",
+    "tag": "vq_req"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/标签_ObsDeadComp",
+    "type": "Goto",
+    "tag": "ObsDeadComp"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/标签_ObsFFd",
+    "type": "Goto",
+    "tag": "ObsFFd"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/标签_ObsResidual_d",
+    "type": "Goto",
+    "tag": "ObsResidual_d"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/标签_ObsResidual_q",
+    "type": "Goto",
+    "tag": "ObsResidual_q"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/标签_ObsSaturation",
+    "type": "Goto",
+    "tag": "ObsSaturation"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/标签_ObsUtilization",
+    "type": "Goto",
+    "tag": "ObsUtilization"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/标签_ObsVmax",
+    "type": "Goto",
+    "tag": "ObsVmax"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/标签_vd",
+    "type": "Goto",
+    "tag": "vd"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/标签_vq",
+    "type": "Goto",
+    "tag": "vq"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/母线",
+    "type": "From",
+    "tag": "UDC"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/补偿电流",
+    "type": "From",
+    "tag": "Iabc_meas"
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/补偿角度",
+    "type": "From",
+    "tag": "theta_meas"
+  }
+]

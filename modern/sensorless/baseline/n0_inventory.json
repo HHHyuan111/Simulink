@@ -1,0 +1,397 @@
+{
+  "schema": 1,
+  "node": "N0",
+  "status": "passed",
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "release": "2026a",
+  "computer": "PCWIN64",
+  "duration_s": 0.1,
+  "observer_installed": false,
+  "reference": {
+    "schema": 1,
+    "id": "pmsm_reference_v1",
+    "created_at": "2026-10-12 17:20:32 *",
+    "matlab_release": "2026a",
+    "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+    "model": "PMSM_FOC_R2026a.slx",
+    "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+    "scope": "教学与算法研究的固定理想参考；未完成实板校准",
+    "parameter_count": 62,
+    "switch_count": 19,
+    "files": [
+      {
+        "path": "state.json",
+        "sha256": "e3619ee8a372116f4b99016c7e3fdfbd11c63304df2217a95954a5d132e3d6d3"
+      },
+      {
+        "path": "configuration.json",
+        "sha256": "3f048e78dcbb15121a444fd271359f09a04a830c704dbcfcd845277f8b172bf2"
+      },
+      {
+        "path": "switches.json",
+        "sha256": "bf0e723b64e21668ee40d057a1457df3192a0aab11868ffc3ace64b6ad0598dd"
+      }
+    ],
+    "source_files": [
+      {
+        "path": "teaching/add_teaching_controls.m",
+        "sha256": "89641da68f73dd6144f573def31f0ff486198b4341bcd44a4248347048e69ed5"
+      },
+      {
+        "path": "teaching/diagnose_observation_rates.m",
+        "sha256": "126c152285f55e9b92188786f977101693832befe4d609a2594852aecc310a50"
+      },
+      {
+        "path": "teaching/extend_observation_model.m",
+        "sha256": "639757893697ff487338798cc97a41efc914bdd8850c56d6dee16fcaafaf9092"
+      },
+      {
+        "path": "teaching/finalize_observation_record.m",
+        "sha256": "29359976a97837d109a75d1dc1a087bf6012f595c8c255c6b374f70ca6b1e1e8"
+      },
+      {
+        "path": "teaching/inspect_observation_stage.m",
+        "sha256": "a44ffa90ba0a493bee0020b3b807ff7ced1de3fd109b55066649b03651e41520"
+      },
+      {
+        "path": "teaching/observation_timing.m",
+        "sha256": "7ced660731e9bb223b1a991b2144b3e0e2c4e7fa142c89e7f4858e5794eec7f3"
+      },
+      {
+        "path": "teaching/open_pmsm_settings.m",
+        "sha256": "6259cce175d1103754a636010e1971ba6498bd9ea13260b88a1e0c18b343f300"
+      },
+      {
+        "path": "teaching/plot_observation_report.m",
+        "sha256": "7158cb0e090cc8b99664a0f564c869b5fde3a8e2c1268181c17c158c2cd61f73"
+      },
+      {
+        "path": "teaching/pmsm_check_switches.m",
+        "sha256": "f250045abfc9b760bfc001988b47c08cc01f7c2c1733d9892c415d1cd6196bed"
+      },
+      {
+        "path": "teaching/pmsm_config.m",
+        "sha256": "c019b5322ce22ae5b663b025fc4edab8da881cdfe526750f65bf458a52124427"
+      },
+      {
+        "path": "teaching/pmsm_parameter_info.m",
+        "sha256": "e19694ec5f47fb5cb1917c537a2314b2fcb8fa393674af5fe1d107ae04d96088"
+      },
+      {
+        "path": "teaching/pmsm_reference.m",
+        "sha256": "f2bd66d3eb7fa0c999957412cf33e5f1d6fa680a288e58bb54071f939175e2fd"
+      },
+      {
+        "path": "teaching/pmsm_switch_catalog.m",
+        "sha256": "fc829609bdfaeab089a8698010ad3e73a278283aa53a319c8e1e4ab5073f4cbe"
+      },
+      {
+        "path": "teaching/refresh_observation_gui.m",
+        "sha256": "65a2d0ab21de64ed2d9304dfcfd88eb445711a9821c31f38d290d90f4e35ccff"
+      },
+      {
+        "path": "teaching/run_observation_demo.m",
+        "sha256": "e80b7ab2a2ed5a6981e7bc2c43d9ec0d118b9b9dbd0f88198f41ba60296f1741"
+      },
+      {
+        "path": "teaching/run_teaching_demo.m",
+        "sha256": "29486e27b307b1e0eada294dfcaf09bb2fac8aa7434122aaa9d5257d5e32914a"
+      },
+      {
+        "path": "teaching/teach_hash.m",
+        "sha256": "5896fb748f5833b59c438c079f0922f321882587bea343dcaf76299aca30b666"
+      },
+      {
+        "path": "teaching/teach_settings.m",
+        "sha256": "c6fddf33bf1c1d1b1a011e3d3597a976863b46c1bf3452a349b8b47be83d4cc7"
+      },
+      {
+        "path": "teaching/teach_snapshot.m",
+        "sha256": "adfec0bdb37762e6f42710d55d8c16dbc1c5381d4d683a29a32d93ad3e894a9e"
+      },
+      {
+        "path": "teaching/teach_values.m",
+        "sha256": "1bf38186e90d1cd49e8cee71a3168674490ffd8aed8a1192b6f58a2399deb6f1"
+      },
+      {
+        "path": "teaching/teach_writejson.m",
+        "sha256": "9e61b1f3f47c599a5b676b6a27884aa7bb65273bb708ae4b684778cadf489951"
+      },
+      {
+        "path": "teaching/teaching_model_init.m",
+        "sha256": "97a1f949b8aaa18ca7b859692d8cb692236b236ee9ea436654d64fdf6a7d3cc3"
+      },
+      {
+        "path": "teaching/validate_observation_model.m",
+        "sha256": "9788364b702a7d292b28f415d4ce6c771a6cda69ffd9dcea0a99e0d53875d04a"
+      },
+      {
+        "path": "teaching/validate_parameter_settings.m",
+        "sha256": "20f76c99b80a498cc817c434298c5df69a271fe8975a05e148e37f72cb720c16"
+      },
+      {
+        "path": "teaching/validate_pmsm_reference.m",
+        "sha256": "db6e8a2a6cd3826709c318d02b34f4746aa199c2db56500f7e21e5d4e4c1910b"
+      },
+      {
+        "path": "teaching/validate_teaching_controls.m",
+        "sha256": "48dad442ae09da95f983ea514b713b9a4969adaef2f4dec55044218f8dd0a048"
+      },
+      {
+        "path": "teaching/verify_observation_saved.m",
+        "sha256": "3770b9e25ff3aa4f985825c46b8a4e068a01922fce1834462f9e7605a5125232"
+      },
+      {
+        "path": "teaching/verify_saved_teaching_controls.m",
+        "sha256": "aeb8deab41c90741b5ead2d4661668543b46cbae1340c9c7e534f16975b2a188"
+      },
+      {
+        "path": "control/build_algorithm_stage2.m",
+        "sha256": "434acf83463f70e3fb2aad93c7e26e582bc70a964e175a5b818a8df11c6c8f36"
+      },
+      {
+        "path": "control/finalize_algorithm_stage2.m",
+        "sha256": "906f993bd2e03c54fda1ef4fd9b618ed918efce73b2db887173527dac56ca2bc"
+      },
+      {
+        "path": "control/refresh_algorithm_gui.m",
+        "sha256": "cf4879022984fc965e457000b01a804437082f48e1cd787b1b5cc740dc258778"
+      },
+      {
+        "path": "control/release_algorithm_gui.m",
+        "sha256": "b1830221e03942cf60c721bea84ae2e02ae954d9394dd7591504cdad2b9a6662"
+      },
+      {
+        "path": "control/repair_speed_loop_stage1.m",
+        "sha256": "38ca05d77f3c94d2d5ae07b9b8ae27e1c1d753c5dfffdde35cae4b8c576d67d7"
+      },
+      {
+        "path": "control/svpwm_checked.m",
+        "sha256": "607685173087aa8b3bfd2a14e62c1341b0fe1ef94f08262ef1cc0c018085f4ca"
+      },
+      {
+        "path": "control/validate_algorithm_stage2.m",
+        "sha256": "4babe8b77dc209399a7345c9087915622e96d8d7905b6f6945120958cc7accbd"
+      },
+      {
+        "path": "control/validate_speed_loop_stage1.m",
+        "sha256": "2f51a702ac8f4a2961034f2551049a73ae22a9fa30443adec59d37f614661656"
+      },
+      {
+        "path": "control/verify_saved_speed_loop_stage1.m",
+        "sha256": "e61604f537e1133fccb7cc49a18b02d4fe11f5a1c3f25e377589f6eee2ef2922"
+      },
+      {
+        "path": "timing/build_timing_stage3.m",
+        "sha256": "cbbf06fa7280dcd20c92ff4499701b84581380936d0a82454fd6ed80a918d610"
+      },
+      {
+        "path": "timing/diagnose_timing.m",
+        "sha256": "772604fe775e1d7f23464abc5a22df18e981e4f269fe9a7fa798f774cd2b4fdf"
+      },
+      {
+        "path": "timing/finalize_timing_stage3.m",
+        "sha256": "2f99107b7381e55cfc99eef06a932b82e12d83a2e47ea99a999cda888fafe031"
+      },
+      {
+        "path": "timing/inspect_timing_source.m",
+        "sha256": "fefbf438a8162be9e0da03ade518ea34d23bd9d74b16e30ece5e0f3d7a360658"
+      },
+      {
+        "path": "timing/plot_timing_report.m",
+        "sha256": "4ddff5aa102d39ed4384de55005cc70480d031d270885035a25abfd974671c7b"
+      },
+      {
+        "path": "timing/publish_timing_stage3.m",
+        "sha256": "35b47a5b57126c387247a6d9d912b5588da7da0054c7085ccbfe50a02b0050d1"
+      },
+      {
+        "path": "timing/refresh_timing_gui.m",
+        "sha256": "585bd503c64b514a692f78e816b06dd0d7449a3cde8ecb4ab9c9dce686b198e8"
+      },
+      {
+        "path": "timing/release_timing_gui.m",
+        "sha256": "4cc5003bc6848d29fc26e972e802442f32b445db948e0a0a785dd869ac605e87"
+      },
+      {
+        "path": "timing/timing_adc.m",
+        "sha256": "33dfe477ba07c979db92d5700b61d8ddb6661b6553b22dbc6fc25215549fd5a4"
+      },
+      {
+        "path": "timing/timing_model_init.m",
+        "sha256": "68339d6f3e1212ec7c8ae7587814299da36a1f0b6749733a23b6803eb18bef9f"
+      },
+      {
+        "path": "timing/timing_pwm.m",
+        "sha256": "27ce06a6e3091ad512bf4c8a25554d850cc2869d46f3a1c76597348d25d7d031"
+      },
+      {
+        "path": "timing/validate_timing_stage3.m",
+        "sha256": "e582dfbc537203180719032e0b57ab78f37d4ed1dd31268df2954fb422c4c6b1"
+      },
+      {
+        "path": "deadtime/bound_deadtime_logs.m",
+        "sha256": "758205b8d76a8fa7b7c21d4688e151fbe8b772c642f89a327c8d4d8d109b3a8c"
+      },
+      {
+        "path": "deadtime/bridge_freewheel.m",
+        "sha256": "b42eaf2a701d10124cb07c540de6628ce7671b550413b6c425dac25930236503"
+      },
+      {
+        "path": "deadtime/build_deadtime_stage4.m",
+        "sha256": "4d25f7e9663ca02a503115393c847969743b600d8de538f8bcfd80e92da6b309"
+      },
+      {
+        "path": "deadtime/build_readable_compensation.m",
+        "sha256": "dece7eb0b4bbd1cb276523f51bb0ec8a3f3e1e6d674675de0a19f5430a273ba3"
+      },
+      {
+        "path": "deadtime/build_teaching_reports.m",
+        "sha256": "80687fdde827cf8937b59f270c4e1823496c54144b687bf097e72b49e0b9aca8"
+      },
+      {
+        "path": "deadtime/check_low_deadtime_reference.m",
+        "sha256": "d12d21804bc176e2a1e605c15a7e6017bbe64e24ee1d52742291d5a99522bee0"
+      },
+      {
+        "path": "deadtime/compare_deadtime_amplitude.m",
+        "sha256": "17975f0b4a9439ac1bd83daf3b11818597cdbfec6b6669d90f3c0d835551109b"
+      },
+      {
+        "path": "deadtime/compare_deadtime_hysteresis.m",
+        "sha256": "93ff0ae72a494d1835376b321cdd9b185790a50f30a84591e57585024a7d2f7f"
+      },
+      {
+        "path": "deadtime/deadtime_comp.m",
+        "sha256": "96c8b1c32fa159425a88218adb044c510a81a0592a528b9eafa80adeceaba3f7"
+      },
+      {
+        "path": "deadtime/deadtime_metrics.m",
+        "sha256": "3077b5d1d759d7bac5859e91da507d568361081a2cee33351b26bdb1571260bd"
+      },
+      {
+        "path": "deadtime/deadtime_model_init.m",
+        "sha256": "d3f24a848ceb4dc709bfcffd838fba708fc5e326e5db8f25ff3502dcc8ec59bf"
+      },
+      {
+        "path": "deadtime/diagnose_deadtime_zero.m",
+        "sha256": "ffddc69f40afbb28055b1a3104d67acedc9777d04a7b76fee4a78679ce4c64b4"
+      },
+      {
+        "path": "deadtime/finalize_deadtime_stage4.m",
+        "sha256": "021873bb03e82a9771282c433edff21daa3607640d32bf6d85f2c776f080f555"
+      },
+      {
+        "path": "deadtime/finalize_teaching_reports.m",
+        "sha256": "a6835a6fe9172a8d4daf64e7b1a38be645983ad0f1154e5f8d94a3a7f7ecaf20"
+      },
+      {
+        "path": "deadtime/gate_deadtime.m",
+        "sha256": "d42bba99ada3e367f4320a620f5e4638edc84bbeba185578a0c5239524c08b7f"
+      },
+      {
+        "path": "deadtime/inspect_deadtime_source.m",
+        "sha256": "4c31fe16f6f4e14e9feae457239bf0b621556ee4037b8b2f8c6514f592e8b96b"
+      },
+      {
+        "path": "deadtime/plot_deadtime_report.m",
+        "sha256": "0b49a6bbd564bfa117ac7e365b33b6eade6f14498725d5a40cb6562a8537c293"
+      },
+      {
+        "path": "deadtime/plot_three_phase_lesson.m",
+        "sha256": "e048e206e7e31b77b617f671d9fd9c2737c0614b0c87b8af7d4f511ebfbf0561"
+      },
+      {
+        "path": "deadtime/publish_deadtime_stage4.m",
+        "sha256": "78582717de3d3f640bccb8f0eb38b779939c3b5ea710ad4dc66acd43cc272e7e"
+      },
+      {
+        "path": "deadtime/publish_readable_compensation.m",
+        "sha256": "b4a754c3b3d1414818b0cb885114d57df5f16dd41b3aa4b2e2d2d5929c0d97f0"
+      },
+      {
+        "path": "deadtime/run_deadtime_case.m",
+        "sha256": "27340b05d48c53fb196ab6c7587fb08f7c9c05734a648654bcbdf682f0745bc2"
+      },
+      {
+        "path": "deadtime/run_deadtime_demo.m",
+        "sha256": "2e7d3c2d226e629caedf4e078c9fb9ad05427b577b177d876adb72ee188210f4"
+      },
+      {
+        "path": "deadtime/test_deadtime_components.m",
+        "sha256": "37f77c6c8414864052cb012df091b9985892d6564601fd5d8da7a259bae4f918"
+      },
+      {
+        "path": "deadtime/validate_deadtime_probes.m",
+        "sha256": "1135f1381cf36098a0fbd98d27a0772ab59eb6ef4cc4562334ba4775bcd13e78"
+      },
+      {
+        "path": "deadtime/validate_deadtime_stage4.m",
+        "sha256": "74c524ee0eaca07043fdc8ab457eef54a0b4c9983e99d09d26f8638dd82a764d"
+      }
+    ],
+    "invariant_sha256": "897dc05b5f7046fdaa3849294b6a1bf350fb465d25a6ff5c486bd256695d629e"
+  },
+  "loaded_file": "D:\\simulink\\dev\\modern\\PMSM_FOC_R2026a.slx",
+  "solver": {
+    "StartTime": "0.0",
+    "StopTime": "1",
+    "SolverType": "Fixed-step",
+    "Solver": "ode4",
+    "FixedStep": "timing_h",
+    "RelTol": "1e-3",
+    "AbsTol": "auto",
+    "LoadInitialState": "off",
+    "InitialState": "xInitial",
+    "LoadExternalInput": "off",
+    "ExternalInput": "[t, u]",
+    "SaveFinalState": "off",
+    "SaveOperatingPoint": "off",
+    "FinalStateName": "xFinal",
+    "SaveState": "off",
+    "StateSaveName": "xout",
+    "SaveTime": "off",
+    "TimeSaveName": "tout",
+    "SaveOutput": "off",
+    "OutputSaveName": "yout",
+    "SignalLogging": "on",
+    "SignalLoggingName": "logsout",
+    "ReturnWorkspaceOutputs": "on",
+    "SimulationMode": "normal"
+  },
+  "motor_and_tasks": {
+    "Rs": 0.105125,
+    "Ld": 0.0001037615,
+    "Lq": 0.0001037615,
+    "p": 5,
+    "phis": 0.00565685424949238,
+    "Vdc": 24,
+    "dt": 5E-5,
+    "Ts": 5E-5,
+    "Ts_speed": 0.0001,
+    "Iq_limit": 8,
+    "timing_on": 0,
+    "timing_h": 1E-6
+  },
+  "pi_gains": {
+    "kp_w": 0.00069087230807625508,
+    "ki_w": 0.04340878735241975,
+    "ks_w": 0.98718608264211138,
+    "kp_id": 0.7539822368615503,
+    "ki_id": 879.645943005142,
+    "ks_id": 1.1309733552923253,
+    "kp_iq": 0.7539822368615503,
+    "ki_iq": 879.645943005142,
+    "ks_iq": 1.1309733552923253
+  },
+  "raw_data_sha256": "72217c335b3068883b4dcae7febd56cfd7bc5acae51f74304481d410b3ddc6e1",
+  "raw_data_relative": "runs/N0_baseline/signals.mat",
+  "log_count": 52,
+  "block_count": 729,
+  "compiled_rate_count": 729,
+  "reference_state_restored": true,
+  "structure_unchanged": true,
+  "model_sha256_before": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "model_sha256_after": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "scope": "100ms既有参考运行与接口盘点；不代表SMO/PLL实现或性能验收"
+}

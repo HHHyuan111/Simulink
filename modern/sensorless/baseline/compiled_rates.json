@@ -1,0 +1,6853 @@
+[
+  {
+    "path": "PMSM_FOC_R2026a/Abs",
+    "sid": "PMSM_FOC_R2026a:548",
+    "type": "Abs",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Abs1",
+    "sid": "PMSM_FOC_R2026a:558",
+    "type": "Abs",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Alpha-Beta-Zero\nto dq0",
+    "sid": "PMSM_FOC_R2026a:597",
+    "type": "SubSystem",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Alpha-Beta-Zero\nto dq0/alpha_beta_zero",
+    "sid": "PMSM_FOC_R2026a:598",
+    "type": "Inport",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Alpha-Beta-Zero\nto dq0/axis_0",
+    "sid": "PMSM_FOC_R2026a:604",
+    "type": "Fcn",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Alpha-Beta-Zero\nto dq0/axis_1",
+    "sid": "PMSM_FOC_R2026a:602",
+    "type": "Fcn",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Alpha-Beta-Zero\nto dq0/axis_2",
+    "sid": "PMSM_FOC_R2026a:603",
+    "type": "Fcn",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Alpha-Beta-Zero\nto dq0/dq0",
+    "sid": "PMSM_FOC_R2026a:605",
+    "type": "Outport",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Alpha-Beta-Zero\nto dq0/input_vector",
+    "sid": "PMSM_FOC_R2026a:600",
+    "type": "Mux",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Alpha-Beta-Zero\nto dq0/result",
+    "sid": "PMSM_FOC_R2026a:601",
+    "type": "Mux",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Alpha-Beta-Zero\nto dq0/theta_e",
+    "sid": "PMSM_FOC_R2026a:599",
+    "type": "Inport",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Bus\nSelector",
+    "sid": "PMSM_FOC_R2026a:649",
+    "type": "SubSystem",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Bus\nSelector/measurement_vector",
+    "sid": "PMSM_FOC_R2026a:650",
+    "type": "Inport",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Bus\nSelector/signal_1",
+    "sid": "PMSM_FOC_R2026a:652",
+    "type": "Outport",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Bus\nSelector/signal_2",
+    "sid": "PMSM_FOC_R2026a:653",
+    "type": "Outport",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Bus\nSelector/signal_3",
+    "sid": "PMSM_FOC_R2026a:654",
+    "type": "Outport",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Bus\nSelector/signal_4",
+    "sid": "PMSM_FOC_R2026a:655",
+    "type": "Outport",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Bus\nSelector/signal_5",
+    "sid": "PMSM_FOC_R2026a:656",
+    "type": "Outport",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Bus\nSelector/signal_6",
+    "sid": "PMSM_FOC_R2026a:657",
+    "type": "Outport",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Bus\nSelector/signals",
+    "sid": "PMSM_FOC_R2026a:651",
+    "type": "Demux",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Bus\nSelector/unused_7",
+    "sid": "PMSM_FOC_R2026a:658",
+    "type": "Terminator",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Bus\nSelector/unused_8",
+    "sid": "PMSM_FOC_R2026a:659",
+    "type": "Terminator",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Bus\nSelector1",
+    "sid": "PMSM_FOC_R2026a:660",
+    "type": "SubSystem",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Bus\nSelector1/measurement_vector",
+    "sid": "PMSM_FOC_R2026a:661",
+    "type": "Inport",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Bus\nSelector1/signal_7",
+    "sid": "PMSM_FOC_R2026a:663",
+    "type": "Outport",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Bus\nSelector1/signal_8",
+    "sid": "PMSM_FOC_R2026a:664",
+    "type": "Outport",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Bus\nSelector1/signals",
+    "sid": "PMSM_FOC_R2026a:662",
+    "type": "Demux",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Bus\nSelector1/unused_1",
+    "sid": "PMSM_FOC_R2026a:665",
+    "type": "Terminator",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Bus\nSelector1/unused_2",
+    "sid": "PMSM_FOC_R2026a:666",
+    "type": "Terminator",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Bus\nSelector1/unused_3",
+    "sid": "PMSM_FOC_R2026a:667",
+    "type": "Terminator",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Bus\nSelector1/unused_4",
+    "sid": "PMSM_FOC_R2026a:668",
+    "type": "Terminator",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Bus\nSelector1/unused_5",
+    "sid": "PMSM_FOC_R2026a:669",
+    "type": "Terminator",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Bus\nSelector1/unused_6",
+    "sid": "PMSM_FOC_R2026a:670",
+    "type": "Terminator",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Carrier Wave",
+    "sid": "PMSM_FOC_R2026a:324",
+    "type": "SubSystem",
+    "sample_time": [
+      [
+        0,
+        0
+      ],
+      [
+        null,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Chirp1",
+    "sid": "PMSM_FOC_R2026a:683",
+    "type": "SubSystem",
+    "sample_time": [
+      [
+        0,
+        0
+      ],
+      [
+        5E-5,
+        0
+      ],
+      [
+        null,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Chirp1/chirp",
+    "sid": "PMSM_FOC_R2026a:687",
+    "type": "Outport",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Chirp1/linear_chirp",
+    "sid": "PMSM_FOC_R2026a:685",
+    "type": "Fcn",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Chirp1/sample",
+    "sid": "PMSM_FOC_R2026a:686",
+    "type": "ZeroOrderHold",
+    "sample_time": [
+      [
+        0,
+        0
+      ],
+      [
+        5E-5,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Chirp1/sweep_time",
+    "sid": "PMSM_FOC_R2026a:684",
+    "type": "SubSystem",
+    "sample_time": [
+      [
+        0,
+        0
+      ],
+      [
+        null,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Chirp2",
+    "sid": "PMSM_FOC_R2026a:688",
+    "type": "SubSystem",
+    "sample_time": [
+      [
+        0,
+        0
+      ],
+      [
+        5E-5,
+        0
+      ],
+      [
+        null,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Chirp2/chirp",
+    "sid": "PMSM_FOC_R2026a:692",
+    "type": "Outport",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Chirp2/linear_chirp",
+    "sid": "PMSM_FOC_R2026a:690",
+    "type": "Fcn",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Chirp2/sample",
+    "sid": "PMSM_FOC_R2026a:691",
+    "type": "ZeroOrderHold",
+    "sample_time": [
+      [
+        0,
+        0
+      ],
+      [
+        5E-5,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Chirp2/sweep_time",
+    "sid": "PMSM_FOC_R2026a:689",
+    "type": "SubSystem",
+    "sample_time": [
+      [
+        0,
+        0
+      ],
+      [
+        null,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Constant",
+    "sid": "PMSM_FOC_R2026a:194",
+    "type": "Constant",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Constant1",
+    "sid": "PMSM_FOC_R2026a:195",
+    "type": "Constant",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Constant11",
+    "sid": "PMSM_FOC_R2026a:551",
+    "type": "Constant",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Constant13",
+    "sid": "PMSM_FOC_R2026a:559",
+    "type": "Constant",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Constant2",
+    "sid": "PMSM_FOC_R2026a:196",
+    "type": "Constant",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Constant3",
+    "sid": "PMSM_FOC_R2026a:216",
+    "type": "Constant",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Constant4",
+    "sid": "PMSM_FOC_R2026a:139",
+    "type": "Constant",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Constant5",
+    "sid": "PMSM_FOC_R2026a:232",
+    "type": "Constant",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Constant6",
+    "sid": "PMSM_FOC_R2026a:209",
+    "type": "Constant",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Constant7",
+    "sid": "PMSM_FOC_R2026a:212",
+    "type": "Constant",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Constant8",
+    "sid": "PMSM_FOC_R2026a:246",
+    "type": "Constant",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Constant9",
+    "sid": "PMSM_FOC_R2026a:247",
+    "type": "Constant",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/DC Voltage Source",
+    "sid": "PMSM_FOC_R2026a:681",
+    "type": "Constant",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Demux",
+    "sid": "PMSM_FOC_R2026a:62",
+    "type": "Demux",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Demux1",
+    "sid": "PMSM_FOC_R2026a:236",
+    "type": "Demux",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Demux2",
+    "sid": "PMSM_FOC_R2026a:295",
+    "type": "Demux",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Demux3",
+    "sid": "PMSM_FOC_R2026a:334",
+    "type": "Demux",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Demux5",
+    "sid": "PMSM_FOC_R2026a:352",
+    "type": "Demux",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Divide",
+    "sid": "PMSM_FOC_R2026a:193",
+    "type": "Product",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Divide1",
+    "sid": "PMSM_FOC_R2026a:550",
+    "type": "Product",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Divide2",
+    "sid": "PMSM_FOC_R2026a:560",
+    "type": "Product",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Electrical Rotation Angle",
+    "sid": "PMSM_FOC_R2026a:180",
+    "type": "Goto",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From",
+    "sid": "PMSM_FOC_R2026a:201",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From1",
+    "sid": "PMSM_FOC_R2026a:199",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From10",
+    "sid": "PMSM_FOC_R2026a:229",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From11",
+    "sid": "PMSM_FOC_R2026a:233",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From12",
+    "sid": "PMSM_FOC_R2026a:243",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From13",
+    "sid": "PMSM_FOC_R2026a:245",
+    "type": "From",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From14",
+    "sid": "PMSM_FOC_R2026a:259",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From15",
+    "sid": "PMSM_FOC_R2026a:586",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From16",
+    "sid": "PMSM_FOC_R2026a:271",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From17",
+    "sid": "PMSM_FOC_R2026a:269",
+    "type": "From",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From18",
+    "sid": "PMSM_FOC_R2026a:273",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From19",
+    "sid": "PMSM_FOC_R2026a:282",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From2",
+    "sid": "PMSM_FOC_R2026a:202",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From20",
+    "sid": "PMSM_FOC_R2026a:285",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From21",
+    "sid": "PMSM_FOC_R2026a:286",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From22",
+    "sid": "PMSM_FOC_R2026a:308",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From23",
+    "sid": "PMSM_FOC_R2026a:310",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From24",
+    "sid": "PMSM_FOC_R2026a:312",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From25",
+    "sid": "PMSM_FOC_R2026a:331",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From26",
+    "sid": "PMSM_FOC_R2026a:332",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From27",
+    "sid": "PMSM_FOC_R2026a:497",
+    "type": "From",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From28",
+    "sid": "PMSM_FOC_R2026a:501",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From29",
+    "sid": "PMSM_FOC_R2026a:350",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From3",
+    "sid": "PMSM_FOC_R2026a:206",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From30",
+    "sid": "PMSM_FOC_R2026a:360",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From31",
+    "sid": "PMSM_FOC_R2026a:361",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From32",
+    "sid": "PMSM_FOC_R2026a:362",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From33",
+    "sid": "PMSM_FOC_R2026a:363",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From35",
+    "sid": "PMSM_FOC_R2026a:578",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From36",
+    "sid": "PMSM_FOC_R2026a:589",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From37",
+    "sid": "PMSM_FOC_R2026a:579",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From4",
+    "sid": "PMSM_FOC_R2026a:200",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From5",
+    "sid": "PMSM_FOC_R2026a:203",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From6",
+    "sid": "PMSM_FOC_R2026a:498",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From7",
+    "sid": "PMSM_FOC_R2026a:576",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From8",
+    "sid": "PMSM_FOC_R2026a:242",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/From9",
+    "sid": "PMSM_FOC_R2026a:228",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Gain",
+    "sid": "PMSM_FOC_R2026a:171",
+    "type": "Gain",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Gain1",
+    "sid": "PMSM_FOC_R2026a:186",
+    "type": "Gain",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Gain2",
+    "sid": "PMSM_FOC_R2026a:573",
+    "type": "Gain",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Gain3",
+    "sid": "PMSM_FOC_R2026a:553",
+    "type": "Gain",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto",
+    "sid": "PMSM_FOC_R2026a:34",
+    "type": "Goto",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto1",
+    "sid": "PMSM_FOC_R2026a:188",
+    "type": "Goto",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto10",
+    "sid": "PMSM_FOC_R2026a:237",
+    "type": "Goto",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto11",
+    "sid": "PMSM_FOC_R2026a:238",
+    "type": "Goto",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto12",
+    "sid": "PMSM_FOC_R2026a:244",
+    "type": "Goto",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto13",
+    "sid": "PMSM_FOC_R2026a:307",
+    "type": "Goto",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto14",
+    "sid": "PMSM_FOC_R2026a:358",
+    "type": "Goto",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto15",
+    "sid": "PMSM_FOC_R2026a:359",
+    "type": "Goto",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto16",
+    "sid": "PMSM_FOC_R2026a:496",
+    "type": "Goto",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto17",
+    "sid": "PMSM_FOC_R2026a:372",
+    "type": "Goto",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto18",
+    "sid": "PMSM_FOC_R2026a:506",
+    "type": "Goto",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto19",
+    "sid": "PMSM_FOC_R2026a:509",
+    "type": "Goto",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto2",
+    "sid": "PMSM_FOC_R2026a:65",
+    "type": "Goto",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto20",
+    "sid": "PMSM_FOC_R2026a:575",
+    "type": "Goto",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto21",
+    "sid": "PMSM_FOC_R2026a:588",
+    "type": "Goto",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto3",
+    "sid": "PMSM_FOC_R2026a:66",
+    "type": "Goto",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto4",
+    "sid": "PMSM_FOC_R2026a:281",
+    "type": "Goto",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto5",
+    "sid": "PMSM_FOC_R2026a:189",
+    "type": "Goto",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto6",
+    "sid": "PMSM_FOC_R2026a:172",
+    "type": "Goto",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto7",
+    "sid": "PMSM_FOC_R2026a:220",
+    "type": "Goto",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto8",
+    "sid": "PMSM_FOC_R2026a:221",
+    "type": "Goto",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Goto9",
+    "sid": "PMSM_FOC_R2026a:222",
+    "type": "Goto",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Measured phase currents",
+    "sid": "PMSM_FOC_R2026a:693",
+    "type": "Goto",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Mux",
+    "sid": "PMSM_FOC_R2026a:32",
+    "type": "Mux",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Mux1",
+    "sid": "PMSM_FOC_R2026a:231",
+    "type": "Mux",
+    "sample_time": [
+      [
+        5E-5,
+        0
+      ],
+      [
+        null,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Mux2",
+    "sid": "PMSM_FOC_R2026a:298",
+    "type": "Mux",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Mux3",
+    "sid": "PMSM_FOC_R2026a:534",
+    "type": "Mux",
+    "sample_time": [
+      [
+        0,
+        0
+      ],
+      [
+        5E-5,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Mux4",
+    "sid": "PMSM_FOC_R2026a:563",
+    "type": "Mux",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/NOT",
+    "sid": "PMSM_FOC_R2026a:299",
+    "type": "Logic",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/NOT1",
+    "sid": "PMSM_FOC_R2026a:300",
+    "type": "Logic",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/NOT2",
+    "sid": "PMSM_FOC_R2026a:301",
+    "type": "Logic",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w",
+    "sid": "PMSM_FOC_R2026a:155",
+    "type": "SubSystem",
+    "sample_time": [
+      [
+        5E-5,
+        0
+      ],
+      [
+        0.0001,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w/Add",
+    "sid": "PMSM_FOC_R2026a:157",
+    "type": "Sum",
+    "sample_time": [
+      0.0001,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w/Discrete-Time\nIntegrator",
+    "sid": "PMSM_FOC_R2026a:438",
+    "type": "DiscreteIntegrator",
+    "sample_time": [
+      0.0001,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w/Gain",
+    "sid": "PMSM_FOC_R2026a:436",
+    "type": "Gain",
+    "sample_time": [
+      0.0001,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w/Gain1",
+    "sid": "PMSM_FOC_R2026a:486",
+    "type": "Gain",
+    "sample_time": [
+      0.0001,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w/Ki",
+    "sid": "PMSM_FOC_R2026a:159",
+    "type": "Gain",
+    "sample_time": [
+      0.0001,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w/Kp",
+    "sid": "PMSM_FOC_R2026a:160",
+    "type": "Gain",
+    "sample_time": [
+      0.0001,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w/Out",
+    "sid": "PMSM_FOC_R2026a:165",
+    "type": "Outport",
+    "sample_time": [
+      0.0001,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w/Saturation",
+    "sid": "PMSM_FOC_R2026a:161",
+    "type": "Saturate",
+    "sample_time": [
+      0.0001,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w/Scope2",
+    "sid": "PMSM_FOC_R2026a:162",
+    "type": "Scope",
+    "sample_time": [
+      0.0001,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w/Scope3",
+    "sid": "PMSM_FOC_R2026a:163",
+    "type": "Scope",
+    "sample_time": [
+      0.0001,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w/Sum",
+    "sid": "PMSM_FOC_R2026a:435",
+    "type": "Sum",
+    "sample_time": [
+      0.0001,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w/Sum1",
+    "sid": "PMSM_FOC_R2026a:437",
+    "type": "Sum",
+    "sample_time": [
+      0.0001,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w/Zero-Order\nHold",
+    "sid": "PMSM_FOC_R2026a:164",
+    "type": "ZeroOrderHold",
+    "sample_time": [
+      0.0001,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w/error",
+    "sid": "PMSM_FOC_R2026a:156",
+    "type": "Inport",
+    "sample_time": [
+      0.0001,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w/标签_obs_pi_speed",
+    "sid": "PMSM_FOC_R2026a:857",
+    "type": "Goto",
+    "sample_time": [
+      0.0001,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w/观测汇总",
+    "sid": "PMSM_FOC_R2026a:856",
+    "type": "Mux",
+    "sample_time": [
+      0.0001,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w/记录_obs_pi_speed",
+    "sid": "PMSM_FOC_R2026a:858",
+    "type": "ToWorkspace",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w1",
+    "sid": "PMSM_FOC_R2026a:439",
+    "type": "SubSystem",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w1/Add",
+    "sid": "PMSM_FOC_R2026a:441",
+    "type": "Sum",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w1/Discrete-Time\nIntegrator",
+    "sid": "PMSM_FOC_R2026a:442",
+    "type": "DiscreteIntegrator",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w1/Gain",
+    "sid": "PMSM_FOC_R2026a:443",
+    "type": "Gain",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w1/Ki",
+    "sid": "PMSM_FOC_R2026a:444",
+    "type": "Gain",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w1/Kp",
+    "sid": "PMSM_FOC_R2026a:445",
+    "type": "Gain",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w1/Out",
+    "sid": "PMSM_FOC_R2026a:452",
+    "type": "Outport",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w1/Saturation",
+    "sid": "PMSM_FOC_R2026a:446",
+    "type": "Saturate",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w1/Scope2",
+    "sid": "PMSM_FOC_R2026a:447",
+    "type": "Scope",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w1/Scope3",
+    "sid": "PMSM_FOC_R2026a:448",
+    "type": "Scope",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w1/Sum",
+    "sid": "PMSM_FOC_R2026a:449",
+    "type": "Sum",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w1/Sum1",
+    "sid": "PMSM_FOC_R2026a:450",
+    "type": "Sum",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w1/Zero-Order\nHold",
+    "sid": "PMSM_FOC_R2026a:451",
+    "type": "ZeroOrderHold",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w1/error",
+    "sid": "PMSM_FOC_R2026a:440",
+    "type": "Inport",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w1/回算修正",
+    "sid": "PMSM_FOC_R2026a:1028",
+    "type": "Gain",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w1/回算观测",
+    "sid": "PMSM_FOC_R2026a:1029",
+    "type": "Mux",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w1/最终残差",
+    "sid": "PMSM_FOC_R2026a:1027",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w1/标签_ObsCorrection_d",
+    "sid": "PMSM_FOC_R2026a:1032",
+    "type": "Goto",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w1/标签_obs_pi_d",
+    "sid": "PMSM_FOC_R2026a:860",
+    "type": "Goto",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w1/观测汇总",
+    "sid": "PMSM_FOC_R2026a:859",
+    "type": "Mux",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w1/记录_obs_aw_d",
+    "sid": "PMSM_FOC_R2026a:1031",
+    "type": "ToWorkspace",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w1/记录_obs_pi_d",
+    "sid": "PMSM_FOC_R2026a:861",
+    "type": "ToWorkspace",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w2",
+    "sid": "PMSM_FOC_R2026a:453",
+    "type": "SubSystem",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w2/Add",
+    "sid": "PMSM_FOC_R2026a:455",
+    "type": "Sum",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w2/Discrete-Time\nIntegrator",
+    "sid": "PMSM_FOC_R2026a:456",
+    "type": "DiscreteIntegrator",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w2/Gain",
+    "sid": "PMSM_FOC_R2026a:457",
+    "type": "Gain",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w2/Ki",
+    "sid": "PMSM_FOC_R2026a:458",
+    "type": "Gain",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w2/Kp",
+    "sid": "PMSM_FOC_R2026a:459",
+    "type": "Gain",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w2/Out",
+    "sid": "PMSM_FOC_R2026a:466",
+    "type": "Outport",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w2/Saturation",
+    "sid": "PMSM_FOC_R2026a:460",
+    "type": "Saturate",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w2/Scope2",
+    "sid": "PMSM_FOC_R2026a:461",
+    "type": "Scope",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w2/Scope3",
+    "sid": "PMSM_FOC_R2026a:462",
+    "type": "Scope",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w2/Sum",
+    "sid": "PMSM_FOC_R2026a:463",
+    "type": "Sum",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w2/Sum1",
+    "sid": "PMSM_FOC_R2026a:464",
+    "type": "Sum",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w2/Zero-Order\nHold",
+    "sid": "PMSM_FOC_R2026a:465",
+    "type": "ZeroOrderHold",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w2/error",
+    "sid": "PMSM_FOC_R2026a:454",
+    "type": "Inport",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w2/回算修正",
+    "sid": "PMSM_FOC_R2026a:1034",
+    "type": "Gain",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w2/回算观测",
+    "sid": "PMSM_FOC_R2026a:1035",
+    "type": "Mux",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w2/最终残差",
+    "sid": "PMSM_FOC_R2026a:1033",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w2/标签_ObsCorrection_q",
+    "sid": "PMSM_FOC_R2026a:1038",
+    "type": "Goto",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w2/标签_obs_pi_q",
+    "sid": "PMSM_FOC_R2026a:863",
+    "type": "Goto",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w2/观测汇总",
+    "sid": "PMSM_FOC_R2026a:862",
+    "type": "Mux",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w2/记录_obs_aw_q",
+    "sid": "PMSM_FOC_R2026a:1037",
+    "type": "ToWorkspace",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI Controller_w2/记录_obs_pi_q",
+    "sid": "PMSM_FOC_R2026a:864",
+    "type": "ToWorkspace",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测",
+    "sid": "PMSM_FOC_R2026a:923",
+    "type": "SubSystem",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/dq请求与输出 [V]",
+    "sid": "PMSM_FOC_R2026a:1053",
+    "type": "Mux",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/dq请求与输出 [V]_1",
+    "sid": "PMSM_FOC_R2026a:1054",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/dq请求与输出 [V]_2",
+    "sid": "PMSM_FOC_R2026a:1055",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/dq请求与输出 [V]_3",
+    "sid": "PMSM_FOC_R2026a:1056",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/dq请求与输出 [V]_4",
+    "sid": "PMSM_FOC_R2026a:1057",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/d轴PI",
+    "sid": "PMSM_FOC_R2026a:928",
+    "type": "Scope",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/d轴PI_1",
+    "sid": "PMSM_FOC_R2026a:927",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/q轴PI",
+    "sid": "PMSM_FOC_R2026a:931",
+    "type": "Scope",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/q轴PI_1",
+    "sid": "PMSM_FOC_R2026a:930",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/利用率",
+    "sid": "PMSM_FOC_R2026a:1060",
+    "type": "Mux",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/利用率_1",
+    "sid": "PMSM_FOC_R2026a:1061",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/前馈 [V]",
+    "sid": "PMSM_FOC_R2026a:1050",
+    "type": "Mux",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/前馈 [V]_1",
+    "sid": "PMSM_FOC_R2026a:1051",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/前馈 [V]_2",
+    "sid": "PMSM_FOC_R2026a:1052",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/可用电压 [V]",
+    "sid": "PMSM_FOC_R2026a:1058",
+    "type": "Mux",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/可用电压 [V]_1",
+    "sid": "PMSM_FOC_R2026a:1059",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/回算修正 [A]",
+    "sid": "PMSM_FOC_R2026a:1067",
+    "type": "Mux",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/回算修正 [A]_1",
+    "sid": "PMSM_FOC_R2026a:1068",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/回算修正 [A]_2",
+    "sid": "PMSM_FOC_R2026a:1069",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/总览",
+    "sid": "PMSM_FOC_R2026a:982",
+    "type": "Scope",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/最终残差 [V]",
+    "sid": "PMSM_FOC_R2026a:1064",
+    "type": "Mux",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/最终残差 [V]_1",
+    "sid": "PMSM_FOC_R2026a:1065",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/最终残差 [V]_2",
+    "sid": "PMSM_FOC_R2026a:1066",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/速度PI",
+    "sid": "PMSM_FOC_R2026a:925",
+    "type": "Scope",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/速度PI_1",
+    "sid": "PMSM_FOC_R2026a:924",
+    "type": "From",
+    "sample_time": [
+      0.0001,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/饱和标志",
+    "sid": "PMSM_FOC_R2026a:1062",
+    "type": "Mux",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PI观测/饱和标志_1",
+    "sid": "PMSM_FOC_R2026a:1063",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/PWM threshold tag",
+    "sid": "PMSM_FOC_R2026a:718",
+    "type": "Goto",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine",
+    "sid": "PMSM_FOC_R2026a:626",
+    "type": "SubSystem",
+    "sample_time": [
+      [
+        0,
+        0
+      ],
+      [
+        1E-6,
+        0
+      ],
+      [
+        5E-5,
+        0
+      ],
+      [
+        null,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/Iabc",
+    "sid": "PMSM_FOC_R2026a:647",
+    "type": "Outport",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/Te",
+    "sid": "PMSM_FOC_R2026a:642",
+    "type": "Fcn",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/Vabc",
+    "sid": "PMSM_FOC_R2026a:627",
+    "type": "Inport",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/current_vector",
+    "sid": "PMSM_FOC_R2026a:646",
+    "type": "Mux",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/derivatives",
+    "sid": "PMSM_FOC_R2026a:631",
+    "type": "Mux",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/did_dt",
+    "sid": "PMSM_FOC_R2026a:632",
+    "type": "Fcn",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/diq_dt",
+    "sid": "PMSM_FOC_R2026a:633",
+    "type": "Fcn",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/dtheta_dt",
+    "sid": "PMSM_FOC_R2026a:635",
+    "type": "Fcn",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/dwm_dt",
+    "sid": "PMSM_FOC_R2026a:634",
+    "type": "Fcn",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/ia",
+    "sid": "PMSM_FOC_R2026a:637",
+    "type": "Fcn",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/ib",
+    "sid": "PMSM_FOC_R2026a:638",
+    "type": "Fcn",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/ic",
+    "sid": "PMSM_FOC_R2026a:639",
+    "type": "Fcn",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/id_iq_wm_theta",
+    "sid": "PMSM_FOC_R2026a:629",
+    "type": "Integrator",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/load_torque",
+    "sid": "PMSM_FOC_R2026a:628",
+    "type": "Inport",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/measurement",
+    "sid": "PMSM_FOC_R2026a:636",
+    "type": "Mux",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/measurement_vector",
+    "sid": "PMSM_FOC_R2026a:645",
+    "type": "Outport",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/theta_m",
+    "sid": "PMSM_FOC_R2026a:641",
+    "type": "Fcn",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/v_state_load",
+    "sid": "PMSM_FOC_R2026a:630",
+    "type": "Mux",
+    "sample_time": [
+      [
+        0,
+        0
+      ],
+      [
+        5E-5,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/vd_actual",
+    "sid": "PMSM_FOC_R2026a:644",
+    "type": "Fcn",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/vq_actual",
+    "sid": "PMSM_FOC_R2026a:643",
+    "type": "Fcn",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/wm",
+    "sid": "PMSM_FOC_R2026a:640",
+    "type": "Fcn",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/标签_DeadMotorState",
+    "sid": "PMSM_FOC_R2026a:1111",
+    "type": "Goto",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/电压观测",
+    "sid": "PMSM_FOC_R2026a:867",
+    "type": "Mux",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/电流占位电压",
+    "sid": "PMSM_FOC_R2026a:1108",
+    "type": "Constant",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/电流占位转矩",
+    "sid": "PMSM_FOC_R2026a:1109",
+    "type": "Constant",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/电流状态",
+    "sid": "PMSM_FOC_R2026a:1110",
+    "type": "Mux",
+    "sample_time": [
+      [
+        0,
+        0
+      ],
+      [
+        null,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/记录_obs_state",
+    "sid": "PMSM_FOC_R2026a:865",
+    "type": "ToWorkspace",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/记录_obs_torque_fast",
+    "sid": "PMSM_FOC_R2026a:866",
+    "type": "ToWorkspace",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/记录_obs_vdq_fast",
+    "sid": "PMSM_FOC_R2026a:868",
+    "type": "ToWorkspace",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Product",
+    "sid": "PMSM_FOC_R2026a:197",
+    "type": "Product",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Product1",
+    "sid": "PMSM_FOC_R2026a:141",
+    "type": "Product",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Product2",
+    "sid": "PMSM_FOC_R2026a:214",
+    "type": "Product",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Product3",
+    "sid": "PMSM_FOC_R2026a:213",
+    "type": "Product",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Product4",
+    "sid": "PMSM_FOC_R2026a:217",
+    "type": "Product",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Rate Transition1",
+    "sid": "PMSM_FOC_R2026a:346",
+    "type": "RateTransition",
+    "sample_time": [
+      [
+        1E-6,
+        0
+      ],
+      [
+        5E-5,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Rate Transition2",
+    "sid": "PMSM_FOC_R2026a:347",
+    "type": "RateTransition",
+    "sample_time": [
+      [
+        1E-6,
+        0
+      ],
+      [
+        5E-5,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Rate Transition3",
+    "sid": "PMSM_FOC_R2026a:348",
+    "type": "RateTransition",
+    "sample_time": [
+      [
+        1E-6,
+        0
+      ],
+      [
+        5E-5,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Rate Transition4",
+    "sid": "PMSM_FOC_R2026a:426",
+    "type": "RateTransition",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Relational\nOperator",
+    "sid": "PMSM_FOC_R2026a:291",
+    "type": "RelationalOperator",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Relational\nOperator1",
+    "sid": "PMSM_FOC_R2026a:292",
+    "type": "RelationalOperator",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Relational\nOperator2",
+    "sid": "PMSM_FOC_R2026a:293",
+    "type": "RelationalOperator",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/SVPWM Function v1.0",
+    "sid": "PMSM_FOC_R2026a:240",
+    "type": "SubSystem",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/SVPWM Function v1.0/ Demux ",
+    "sid": "PMSM_FOC_R2026a:240::39",
+    "type": "Demux",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/SVPWM Function v1.0/ SFunction ",
+    "sid": "PMSM_FOC_R2026a:240::38",
+    "type": "S-Function",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/SVPWM Function v1.0/ Terminator ",
+    "sid": "PMSM_FOC_R2026a:240::40",
+    "type": "Terminator",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/SVPWM Function v1.0/Tcm",
+    "sid": "PMSM_FOC_R2026a:240::28",
+    "type": "Outport",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/SVPWM Function v1.0/Ts",
+    "sid": "PMSM_FOC_R2026a:240::27",
+    "type": "Inport",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/SVPWM Function v1.0/Vdc",
+    "sid": "PMSM_FOC_R2026a:240::26",
+    "type": "Inport",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/SVPWM Function v1.0/alpha",
+    "sid": "PMSM_FOC_R2026a:240::1",
+    "type": "Inport",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/SVPWM Function v1.0/beta",
+    "sid": "PMSM_FOC_R2026a:240::25",
+    "type": "Inport",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/SVPWM Function v1.0/diagnostic",
+    "sid": "PMSM_FOC_R2026a:240::41",
+    "type": "Outport",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/SVPWM Function v1.0/sector",
+    "sid": "PMSM_FOC_R2026a:240::37",
+    "type": "Outport",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Scope",
+    "sid": "PMSM_FOC_R2026a:28",
+    "type": "Scope",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Scope1",
+    "sid": "PMSM_FOC_R2026a:255",
+    "type": "Scope",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Scope10",
+    "sid": "PMSM_FOC_R2026a:504",
+    "type": "Scope",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Scope11",
+    "sid": "PMSM_FOC_R2026a:353",
+    "type": "Scope",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Scope12",
+    "sid": "PMSM_FOC_R2026a:549",
+    "type": "Scope",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Scope13",
+    "sid": "PMSM_FOC_R2026a:564",
+    "type": "Scope",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Scope14",
+    "sid": "PMSM_FOC_R2026a:365",
+    "type": "Scope",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Scope15",
+    "sid": "PMSM_FOC_R2026a:366",
+    "type": "Scope",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Scope16",
+    "sid": "PMSM_FOC_R2026a:565",
+    "type": "Scope",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Scope2",
+    "sid": "PMSM_FOC_R2026a:275",
+    "type": "Scope",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Scope3",
+    "sid": "PMSM_FOC_R2026a:274",
+    "type": "Scope",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Scope4",
+    "sid": "PMSM_FOC_R2026a:288",
+    "type": "Scope",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Scope5",
+    "sid": "PMSM_FOC_R2026a:287",
+    "type": "Scope",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Scope6",
+    "sid": "PMSM_FOC_R2026a:302",
+    "type": "Scope",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Scope7",
+    "sid": "PMSM_FOC_R2026a:309",
+    "type": "Scope",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Scope8",
+    "sid": "PMSM_FOC_R2026a:314",
+    "type": "Scope",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Scope9",
+    "sid": "PMSM_FOC_R2026a:499",
+    "type": "Scope",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Subsystem",
+    "sid": "PMSM_FOC_R2026a:177",
+    "type": "SubSystem",
+    "sample_time": [
+      [
+        0,
+        0
+      ],
+      [
+        1E-6,
+        0
+      ],
+      [
+        null,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Subsystem/Constant",
+    "sid": "PMSM_FOC_R2026a:176",
+    "type": "Constant",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Subsystem/Gain1",
+    "sid": "PMSM_FOC_R2026a:174",
+    "type": "Gain",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Subsystem/Mod",
+    "sid": "PMSM_FOC_R2026a:175",
+    "type": "Math",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Subsystem/Scope",
+    "sid": "PMSM_FOC_R2026a:484",
+    "type": "Scope",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Subsystem/theta_e",
+    "sid": "PMSM_FOC_R2026a:179",
+    "type": "Outport",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Subsystem/theta_m",
+    "sid": "PMSM_FOC_R2026a:178",
+    "type": "Inport",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Sum",
+    "sid": "PMSM_FOC_R2026a:40",
+    "type": "Sum",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Sum1",
+    "sid": "PMSM_FOC_R2026a:133",
+    "type": "Sum",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Sum2",
+    "sid": "PMSM_FOC_R2026a:144",
+    "type": "Sum",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Sum3",
+    "sid": "PMSM_FOC_R2026a:152",
+    "type": "Sum",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Sum4",
+    "sid": "PMSM_FOC_R2026a:169",
+    "type": "Sum",
+    "sample_time": [
+      0.0001,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Sum5",
+    "sid": "PMSM_FOC_R2026a:546",
+    "type": "Sum",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Sum6",
+    "sid": "PMSM_FOC_R2026a:215",
+    "type": "Sum",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Sum7",
+    "sid": "PMSM_FOC_R2026a:566",
+    "type": "Sum",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/T_load1",
+    "sid": "PMSM_FOC_R2026a:523",
+    "type": "Step",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Terminator",
+    "sid": "PMSM_FOC_R2026a:265",
+    "type": "Terminator",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Terminator1",
+    "sid": "PMSM_FOC_R2026a:266",
+    "type": "Terminator",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Terminator2",
+    "sid": "PMSM_FOC_R2026a:468",
+    "type": "Terminator",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Three-Phase\nV-I Measurement",
+    "sid": "PMSM_FOC_R2026a:671",
+    "type": "SubSystem",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Three-Phase\nV-I Measurement/Iabc",
+    "sid": "PMSM_FOC_R2026a:673",
+    "type": "Inport",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Three-Phase\nV-I Measurement/Iabc_measured",
+    "sid": "PMSM_FOC_R2026a:679",
+    "type": "Outport",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Three-Phase\nV-I Measurement/Vab",
+    "sid": "PMSM_FOC_R2026a:675",
+    "type": "Fcn",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Three-Phase\nV-I Measurement/Vab_Vbc_Vca",
+    "sid": "PMSM_FOC_R2026a:678",
+    "type": "Outport",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Three-Phase\nV-I Measurement/Vabc",
+    "sid": "PMSM_FOC_R2026a:672",
+    "type": "Inport",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Three-Phase\nV-I Measurement/Vabc_to_motor",
+    "sid": "PMSM_FOC_R2026a:680",
+    "type": "Outport",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Three-Phase\nV-I Measurement/Vbc",
+    "sid": "PMSM_FOC_R2026a:676",
+    "type": "Fcn",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Three-Phase\nV-I Measurement/Vca",
+    "sid": "PMSM_FOC_R2026a:677",
+    "type": "Fcn",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Three-Phase\nV-I Measurement/line_voltage",
+    "sid": "PMSM_FOC_R2026a:674",
+    "type": "Mux",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge",
+    "sid": "PMSM_FOC_R2026a:615",
+    "type": "SubSystem",
+    "sample_time": [
+      [
+        0,
+        0
+      ],
+      [
+        1E-6,
+        0
+      ],
+      [
+        null,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/Vabc",
+    "sid": "PMSM_FOC_R2026a:624",
+    "type": "Outport",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/Vdc",
+    "sid": "PMSM_FOC_R2026a:617",
+    "type": "Inport",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/double gates",
+    "sid": "PMSM_FOC_R2026a:618",
+    "type": "DataTypeConversion",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/gates_and_bus",
+    "sid": "PMSM_FOC_R2026a:619",
+    "type": "Mux",
+    "sample_time": [
+      [
+        1E-6,
+        0
+      ],
+      [
+        null,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/phase_A",
+    "sid": "PMSM_FOC_R2026a:621",
+    "type": "Fcn",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/phase_B",
+    "sid": "PMSM_FOC_R2026a:622",
+    "type": "Fcn",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/phase_C",
+    "sid": "PMSM_FOC_R2026a:623",
+    "type": "Fcn",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/phase_voltage",
+    "sid": "PMSM_FOC_R2026a:620",
+    "type": "Mux",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/six_gates",
+    "sid": "PMSM_FOC_R2026a:616",
+    "type": "Inport",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/事件时钟",
+    "sid": "PMSM_FOC_R2026a:1112",
+    "type": "DigitalClock",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/标签_ObsFreewheel",
+    "sid": "PMSM_FOC_R2026a:1126",
+    "type": "Goto",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/标签_SWact",
+    "sid": "PMSM_FOC_R2026a:1119",
+    "type": "Goto",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/桥选择",
+    "sid": "PMSM_FOC_R2026a:1125",
+    "type": "VariantSource",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/电机状态",
+    "sid": "PMSM_FOC_R2026a:1121",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/相电压向量",
+    "sid": "PMSM_FOC_R2026a:1124",
+    "type": "Reshape",
+    "sample_time": [
+      -1,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/空白保留",
+    "sid": "PMSM_FOC_R2026a:1115",
+    "type": "Terminator",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/续流",
+    "sid": "PMSM_FOC_R2026a:1123",
+    "type": "SubSystem",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/续流/ Demux ",
+    "sid": "PMSM_FOC_R2026a:1123::26",
+    "type": "Demux",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/续流/ SFunction ",
+    "sid": "PMSM_FOC_R2026a:1123::25",
+    "type": "S-Function",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/续流/ Terminator ",
+    "sid": "PMSM_FOC_R2026a:1123::27",
+    "type": "Terminator",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/续流/Vdc",
+    "sid": "PMSM_FOC_R2026a:1123::29",
+    "type": "Inport",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/续流/cfg",
+    "sid": "PMSM_FOC_R2026a:1123::30",
+    "type": "Inport",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/续流/diagnostic",
+    "sid": "PMSM_FOC_R2026a:1123::31",
+    "type": "Outport",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/续流/gates",
+    "sid": "PMSM_FOC_R2026a:1123::1",
+    "type": "Inport",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/续流/phase",
+    "sid": "PMSM_FOC_R2026a:1123::5",
+    "type": "Outport",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/续流/state",
+    "sid": "PMSM_FOC_R2026a:1123::28",
+    "type": "Inport",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/续流参数",
+    "sid": "PMSM_FOC_R2026a:1122",
+    "type": "Constant",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/记录_obs_dead_bridge",
+    "sid": "PMSM_FOC_R2026a:1127",
+    "type": "ToWorkspace",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/记录_obs_dead_gates",
+    "sid": "PMSM_FOC_R2026a:1120",
+    "type": "ToWorkspace",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/记录_obs_dead_requested",
+    "sid": "PMSM_FOC_R2026a:1116",
+    "type": "ToWorkspace",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/门极参数",
+    "sid": "PMSM_FOC_R2026a:1113",
+    "type": "Constant",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/门极向量",
+    "sid": "PMSM_FOC_R2026a:1117",
+    "type": "Reshape",
+    "sample_time": [
+      -1,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/门极死区",
+    "sid": "PMSM_FOC_R2026a:1114",
+    "type": "SubSystem",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/门极死区/ Demux ",
+    "sid": "PMSM_FOC_R2026a:1114::26",
+    "type": "Demux",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/门极死区/ SFunction ",
+    "sid": "PMSM_FOC_R2026a:1114::25",
+    "type": "S-Function",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/门极死区/ Terminator ",
+    "sid": "PMSM_FOC_R2026a:1114::27",
+    "type": "Terminator",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/门极死区/blank",
+    "sid": "PMSM_FOC_R2026a:1114::30",
+    "type": "Outport",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/门极死区/cfg",
+    "sid": "PMSM_FOC_R2026a:1114::29",
+    "type": "Inport",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/门极死区/gates",
+    "sid": "PMSM_FOC_R2026a:1114::5",
+    "type": "Outport",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/门极死区/request",
+    "sid": "PMSM_FOC_R2026a:1114::28",
+    "type": "Inport",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/门极死区/t",
+    "sid": "PMSM_FOC_R2026a:1114::1",
+    "type": "Inport",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Universal Bridge/门极选择",
+    "sid": "PMSM_FOC_R2026a:1118",
+    "type": "VariantSource",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging",
+    "sid": "PMSM_FOC_R2026a:695",
+    "type": "SubSystem",
+    "sample_time": [
+      [
+        1E-6,
+        0
+      ],
+      [
+        5E-5,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/Log SW",
+    "sid": "PMSM_FOC_R2026a:710",
+    "type": "From",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/Log TL",
+    "sid": "PMSM_FOC_R2026a:714",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/Log Te",
+    "sid": "PMSM_FOC_R2026a:704",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/Log UDC",
+    "sid": "PMSM_FOC_R2026a:712",
+    "type": "From",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/Log id",
+    "sid": "PMSM_FOC_R2026a:698",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/Log iq",
+    "sid": "PMSM_FOC_R2026a:700",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/Log iq_ref",
+    "sid": "PMSM_FOC_R2026a:702",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/Log nref",
+    "sid": "PMSM_FOC_R2026a:716",
+    "type": "From",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/Log speed",
+    "sid": "PMSM_FOC_R2026a:696",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/Log v_alpha",
+    "sid": "PMSM_FOC_R2026a:706",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/Log v_beta",
+    "sid": "PMSM_FOC_R2026a:708",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/PWM thresholds",
+    "sid": "PMSM_FOC_R2026a:719",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/Save PWM thresholds",
+    "sid": "PMSM_FOC_R2026a:720",
+    "type": "ToWorkspace",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/Save SW",
+    "sid": "PMSM_FOC_R2026a:711",
+    "type": "ToWorkspace",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/Save TL",
+    "sid": "PMSM_FOC_R2026a:715",
+    "type": "ToWorkspace",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/Save Te",
+    "sid": "PMSM_FOC_R2026a:705",
+    "type": "ToWorkspace",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/Save UDC",
+    "sid": "PMSM_FOC_R2026a:713",
+    "type": "ToWorkspace",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/Save id",
+    "sid": "PMSM_FOC_R2026a:699",
+    "type": "ToWorkspace",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/Save iq",
+    "sid": "PMSM_FOC_R2026a:701",
+    "type": "ToWorkspace",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/Save iq_ref",
+    "sid": "PMSM_FOC_R2026a:703",
+    "type": "ToWorkspace",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/Save nref",
+    "sid": "PMSM_FOC_R2026a:717",
+    "type": "ToWorkspace",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/Save speed",
+    "sid": "PMSM_FOC_R2026a:697",
+    "type": "ToWorkspace",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/Save v_alpha",
+    "sid": "PMSM_FOC_R2026a:707",
+    "type": "ToWorkspace",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/Save v_beta",
+    "sid": "PMSM_FOC_R2026a:709",
+    "type": "ToWorkspace",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/真实电流",
+    "sid": "PMSM_FOC_R2026a:889",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/观测_obs_analog_current",
+    "sid": "PMSM_FOC_R2026a:880",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/观测_obs_id_ref",
+    "sid": "PMSM_FOC_R2026a:882",
+    "type": "From",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/观测_obs_sector",
+    "sid": "PMSM_FOC_R2026a:878",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/观测_obs_vd",
+    "sid": "PMSM_FOC_R2026a:870",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/观测_obs_vd_actual",
+    "sid": "PMSM_FOC_R2026a:874",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/观测_obs_vq",
+    "sid": "PMSM_FOC_R2026a:872",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/观测_obs_vq_actual",
+    "sid": "PMSM_FOC_R2026a:876",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_analog_current",
+    "sid": "PMSM_FOC_R2026a:881",
+    "type": "ToWorkspace",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_carrier_fast",
+    "sid": "PMSM_FOC_R2026a:888",
+    "type": "ToWorkspace",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_current_fast",
+    "sid": "PMSM_FOC_R2026a:890",
+    "type": "ToWorkspace",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_gates_fast",
+    "sid": "PMSM_FOC_R2026a:885",
+    "type": "ToWorkspace",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_id_ref",
+    "sid": "PMSM_FOC_R2026a:883",
+    "type": "ToWorkspace",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_mod",
+    "sid": "PMSM_FOC_R2026a:1044",
+    "type": "ToWorkspace",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_sector",
+    "sid": "PMSM_FOC_R2026a:879",
+    "type": "ToWorkspace",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_vd",
+    "sid": "PMSM_FOC_R2026a:871",
+    "type": "ToWorkspace",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_vd_actual",
+    "sid": "PMSM_FOC_R2026a:875",
+    "type": "ToWorkspace",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_vq",
+    "sid": "PMSM_FOC_R2026a:873",
+    "type": "ToWorkspace",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/记录_obs_vq_actual",
+    "sid": "PMSM_FOC_R2026a:877",
+    "type": "ToWorkspace",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/调制状态",
+    "sid": "PMSM_FOC_R2026a:1043",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/载波",
+    "sid": "PMSM_FOC_R2026a:887",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Validation logging/门极",
+    "sid": "PMSM_FOC_R2026a:884",
+    "type": "From",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Voltage Measurement",
+    "sid": "PMSM_FOC_R2026a:682",
+    "type": "Gain",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/XY Graph1",
+    "sid": "PMSM_FOC_R2026a:330",
+    "type": "Record",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Zero-Order\nHold1",
+    "sid": "PMSM_FOC_R2026a:183",
+    "type": "ZeroOrderHold",
+    "sample_time": [
+      [
+        0,
+        0
+      ],
+      [
+        5E-5,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Zero-Order\nHold2",
+    "sid": "PMSM_FOC_R2026a:190",
+    "type": "ZeroOrderHold",
+    "sample_time": [
+      [
+        0,
+        0
+      ],
+      [
+        0.0001,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Zero-Order\nHold3",
+    "sid": "PMSM_FOC_R2026a:191",
+    "type": "ZeroOrderHold",
+    "sample_time": [
+      [
+        0,
+        0
+      ],
+      [
+        5E-5,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Zero-Order\nHold4",
+    "sid": "PMSM_FOC_R2026a:235",
+    "type": "ZeroOrderHold",
+    "sample_time": [
+      [
+        0,
+        0
+      ],
+      [
+        5E-5,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/Zero-Order\nHold5",
+    "sid": "PMSM_FOC_R2026a:210",
+    "type": "ZeroOrderHold",
+    "sample_time": [
+      [
+        0,
+        0
+      ],
+      [
+        5E-5,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/abc to\nAlpha-Beta-Zero",
+    "sid": "PMSM_FOC_R2026a:593",
+    "type": "SubSystem",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/abc to\nAlpha-Beta-Zero/Clarke matrix",
+    "sid": "PMSM_FOC_R2026a:595",
+    "type": "Gain",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/abc to\nAlpha-Beta-Zero/abc",
+    "sid": "PMSM_FOC_R2026a:594",
+    "type": "Inport",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/abc to\nAlpha-Beta-Zero/alpha_beta_zero",
+    "sid": "PMSM_FOC_R2026a:596",
+    "type": "Outport",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/dq0 to\nAlpha-Beta-Zero",
+    "sid": "PMSM_FOC_R2026a:606",
+    "type": "SubSystem",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/dq0 to\nAlpha-Beta-Zero/alpha_beta_zero",
+    "sid": "PMSM_FOC_R2026a:614",
+    "type": "Outport",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/dq0 to\nAlpha-Beta-Zero/axis_0",
+    "sid": "PMSM_FOC_R2026a:613",
+    "type": "Fcn",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/dq0 to\nAlpha-Beta-Zero/axis_1",
+    "sid": "PMSM_FOC_R2026a:611",
+    "type": "Fcn",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/dq0 to\nAlpha-Beta-Zero/axis_2",
+    "sid": "PMSM_FOC_R2026a:612",
+    "type": "Fcn",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/dq0 to\nAlpha-Beta-Zero/dq0",
+    "sid": "PMSM_FOC_R2026a:607",
+    "type": "Inport",
+    "sample_time": [
+      [
+        5E-5,
+        0
+      ],
+      [
+        null,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/dq0 to\nAlpha-Beta-Zero/input_vector",
+    "sid": "PMSM_FOC_R2026a:609",
+    "type": "Mux",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/dq0 to\nAlpha-Beta-Zero/result",
+    "sid": "PMSM_FOC_R2026a:610",
+    "type": "Mux",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/dq0 to\nAlpha-Beta-Zero/theta_e",
+    "sid": "PMSM_FOC_R2026a:608",
+    "type": "Inport",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/id_ref",
+    "sid": "PMSM_FOC_R2026a:590",
+    "type": "Constant",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/speed_ref",
+    "sid": "PMSM_FOC_R2026a:592",
+    "type": "Constant",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率压降",
+    "sid": "PMSM_FOC_R2026a:845",
+    "type": "SubSystem",
+    "sample_time": [
+      [
+        0,
+        0
+      ],
+      [
+        1E-6,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率压降/压降",
+    "sid": "PMSM_FOC_R2026a:847",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率压降/实际",
+    "sid": "PMSM_FOC_R2026a:851",
+    "type": "Outport",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率压降/开关",
+    "sid": "PMSM_FOC_R2026a:848",
+    "type": "From",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率压降/扣除",
+    "sid": "PMSM_FOC_R2026a:849",
+    "type": "Sum",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率压降/旁路",
+    "sid": "PMSM_FOC_R2026a:850",
+    "type": "Switch",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率压降/标签_obs_phase_actual",
+    "sid": "PMSM_FOC_R2026a:853",
+    "type": "Goto",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率压降/标签_obs_phase_ideal",
+    "sid": "PMSM_FOC_R2026a:852",
+    "type": "Goto",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率压降/理想",
+    "sid": "PMSM_FOC_R2026a:846",
+    "type": "Inport",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率压降/记录_obs_phase_actual",
+    "sid": "PMSM_FOC_R2026a:855",
+    "type": "ToWorkspace",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率压降/记录_obs_phase_ideal",
+    "sid": "PMSM_FOC_R2026a:854",
+    "type": "ToWorkspace",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率观测",
+    "sid": "PMSM_FOC_R2026a:967",
+    "type": "SubSystem",
+    "sample_time": [
+      [
+        1E-6,
+        0
+      ],
+      [
+        5E-5,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率观测/实际相电压",
+    "sid": "PMSM_FOC_R2026a:972",
+    "type": "Scope",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率观测/实际相电压_1",
+    "sid": "PMSM_FOC_R2026a:971",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率观测/实际门极",
+    "sid": "PMSM_FOC_R2026a:1137",
+    "type": "From",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率观测/平均压降",
+    "sid": "PMSM_FOC_R2026a:975",
+    "type": "Scope",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率观测/平均压降_1",
+    "sid": "PMSM_FOC_R2026a:974",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率观测/总览",
+    "sid": "PMSM_FOC_R2026a:988",
+    "type": "Scope",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率观测/极性保留",
+    "sid": "PMSM_FOC_R2026a:1143",
+    "type": "Terminator",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率观测/理想相电压",
+    "sid": "PMSM_FOC_R2026a:969",
+    "type": "Scope",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率观测/理想相电压_1",
+    "sid": "PMSM_FOC_R2026a:968",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率观测/真实电流保留",
+    "sid": "PMSM_FOC_R2026a:1141",
+    "type": "Terminator",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率观测/续流分组",
+    "sid": "PMSM_FOC_R2026a:1140",
+    "type": "Demux",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率观测/续流诊断",
+    "sid": "PMSM_FOC_R2026a:1138",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率观测/补偿分组",
+    "sid": "PMSM_FOC_R2026a:1142",
+    "type": "Demux",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率观测/补偿诊断",
+    "sid": "PMSM_FOC_R2026a:1139",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率设置",
+    "sid": "PMSM_FOC_R2026a:831",
+    "type": "SubSystem",
+    "sample_time": [
+      [
+        0,
+        0
+      ],
+      [
+        5E-5,
+        0
+      ],
+      [
+        null,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率设置/三相压降",
+    "sid": "PMSM_FOC_R2026a:836",
+    "type": "Mux",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率设置/压降1",
+    "sid": "PMSM_FOC_R2026a:837",
+    "type": "Fcn",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率设置/压降2",
+    "sid": "PMSM_FOC_R2026a:838",
+    "type": "Fcn",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率设置/压降3",
+    "sid": "PMSM_FOC_R2026a:839",
+    "type": "Fcn",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率设置/去共模",
+    "sid": "PMSM_FOC_R2026a:840",
+    "type": "Gain",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率设置/启用",
+    "sid": "PMSM_FOC_R2026a:842",
+    "type": "Constant",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率设置/周期电流",
+    "sid": "PMSM_FOC_R2026a:833",
+    "type": "ZeroOrderHold",
+    "sample_time": [
+      [
+        0,
+        0
+      ],
+      [
+        5E-5,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率设置/开关",
+    "sid": "PMSM_FOC_R2026a:843",
+    "type": "Goto",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率设置/标签_obs_power_drop",
+    "sid": "PMSM_FOC_R2026a:841",
+    "type": "Goto",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率设置/母线",
+    "sid": "PMSM_FOC_R2026a:834",
+    "type": "From",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率设置/电流",
+    "sid": "PMSM_FOC_R2026a:832",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率设置/记录_obs_power_drop",
+    "sid": "PMSM_FOC_R2026a:844",
+    "type": "ToWorkspace",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/功率设置/输入",
+    "sid": "PMSM_FOC_R2026a:835",
+    "type": "Mux",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测",
+    "sid": "PMSM_FOC_R2026a:933",
+    "type": "SubSystem",
+    "sample_time": [
+      [
+        1E-6,
+        0
+      ],
+      [
+        5E-5,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/ADC事件",
+    "sid": "PMSM_FOC_R2026a:1100",
+    "type": "From",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/ADC事件_保留1",
+    "sid": "PMSM_FOC_R2026a:1103",
+    "type": "Terminator",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/ADC事件_保留5",
+    "sid": "PMSM_FOC_R2026a:1104",
+    "type": "Terminator",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/ADC事件分组",
+    "sid": "PMSM_FOC_R2026a:1102",
+    "type": "Demux",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/PWM事件",
+    "sid": "PMSM_FOC_R2026a:1101",
+    "type": "From",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/PWM事件_保留1",
+    "sid": "PMSM_FOC_R2026a:1106",
+    "type": "Terminator",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/PWM事件_保留5",
+    "sid": "PMSM_FOC_R2026a:1107",
+    "type": "Terminator",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/PWM事件分组",
+    "sid": "PMSM_FOC_R2026a:1105",
+    "type": "Demux",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/占空比",
+    "sid": "PMSM_FOC_R2026a:1077",
+    "type": "Mux",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/占空比_1",
+    "sid": "PMSM_FOC_R2026a:1078",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/总览",
+    "sid": "PMSM_FOC_R2026a:983",
+    "type": "Scope",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/标签_1",
+    "sid": "PMSM_FOC_R2026a:1072",
+    "type": "Goto",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/标签_2",
+    "sid": "PMSM_FOC_R2026a:1073",
+    "type": "Goto",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/标签_3",
+    "sid": "PMSM_FOC_R2026a:1074",
+    "type": "Goto",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/汇总_测量电压",
+    "sid": "PMSM_FOC_R2026a:985",
+    "type": "Mux",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/汇总_电压指令",
+    "sid": "PMSM_FOC_R2026a:984",
+    "type": "Mux",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/测量电压",
+    "sid": "PMSM_FOC_R2026a:943",
+    "type": "Scope",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/测量电压_1",
+    "sid": "PMSM_FOC_R2026a:941",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/测量电压_2",
+    "sid": "PMSM_FOC_R2026a:942",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/电压指令",
+    "sid": "PMSM_FOC_R2026a:939",
+    "type": "Scope",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/电压指令_1",
+    "sid": "PMSM_FOC_R2026a:937",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/电压指令_2",
+    "sid": "PMSM_FOC_R2026a:938",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/矢量时间 [s]",
+    "sid": "PMSM_FOC_R2026a:1075",
+    "type": "Mux",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/矢量时间 [s]_1",
+    "sid": "PMSM_FOC_R2026a:1076",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/调制分组",
+    "sid": "PMSM_FOC_R2026a:1071",
+    "type": "Demux",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/调制状态",
+    "sid": "PMSM_FOC_R2026a:1070",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/调制边界标志",
+    "sid": "PMSM_FOC_R2026a:1079",
+    "type": "Mux",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/调制边界标志_1",
+    "sid": "PMSM_FOC_R2026a:1080",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/门极",
+    "sid": "PMSM_FOC_R2026a:935",
+    "type": "Scope",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序观测/门极_1",
+    "sid": "PMSM_FOC_R2026a:934",
+    "type": "From",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/时序设置",
+    "sid": "PMSM_FOC_R2026a:765",
+    "type": "SubSystem",
+    "sample_time": [
+      null,
+      null
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/标签_ObsFFdMagnitude",
+    "sid": "PMSM_FOC_R2026a:1048",
+    "type": "Goto",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/标签_ObsFFq",
+    "sid": "PMSM_FOC_R2026a:1049",
+    "type": "Goto",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/标签_ObsMod",
+    "sid": "PMSM_FOC_R2026a:1042",
+    "type": "Goto",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/标签_obs_carrier_fast",
+    "sid": "PMSM_FOC_R2026a:886",
+    "type": "Goto",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/标签_obs_id_ref",
+    "sid": "PMSM_FOC_R2026a:869",
+    "type": "Goto",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/母线常量保留",
+    "sid": "PMSM_FOC_R2026a:1041",
+    "type": "Terminator",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/母线采样",
+    "sid": "PMSM_FOC_R2026a:1040",
+    "type": "ZeroOrderHold",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/测量观测",
+    "sid": "PMSM_FOC_R2026a:945",
+    "type": "SubSystem",
+    "sample_time": [
+      [
+        0,
+        0
+      ],
+      [
+        5E-5,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/测量观测/总览",
+    "sid": "PMSM_FOC_R2026a:986",
+    "type": "Scope",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/测量观测/汇总_电角度",
+    "sid": "PMSM_FOC_R2026a:987",
+    "type": "Mux",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/测量观测/测量电流",
+    "sid": "PMSM_FOC_R2026a:950",
+    "type": "Scope",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/测量观测/测量电流_1",
+    "sid": "PMSM_FOC_R2026a:949",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/测量观测/电流误差",
+    "sid": "PMSM_FOC_R2026a:959",
+    "type": "Scope",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/测量观测/电流误差_差",
+    "sid": "PMSM_FOC_R2026a:958",
+    "type": "Sum",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/测量观测/电流误差_正",
+    "sid": "PMSM_FOC_R2026a:956",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/测量观测/电流误差_负",
+    "sid": "PMSM_FOC_R2026a:957",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/测量观测/电角度",
+    "sid": "PMSM_FOC_R2026a:954",
+    "type": "Scope",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/测量观测/电角度_1",
+    "sid": "PMSM_FOC_R2026a:952",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/测量观测/电角度_2",
+    "sid": "PMSM_FOC_R2026a:953",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/测量观测/真实电流",
+    "sid": "PMSM_FOC_R2026a:947",
+    "type": "Scope",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/测量观测/真实电流_1",
+    "sid": "PMSM_FOC_R2026a:946",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/测量观测/角度误差",
+    "sid": "PMSM_FOC_R2026a:965",
+    "type": "Scope",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/测量观测/角度误差_差",
+    "sid": "PMSM_FOC_R2026a:963",
+    "type": "Sum",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/测量观测/角度误差_正",
+    "sid": "PMSM_FOC_R2026a:961",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/测量观测/角度误差_环绕",
+    "sid": "PMSM_FOC_R2026a:964",
+    "type": "Fcn",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/测量观测/角度误差_负",
+    "sid": "PMSM_FOC_R2026a:962",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/磁链",
+    "sid": "PMSM_FOC_R2026a:990",
+    "type": "Sum",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/角度设置",
+    "sid": "PMSM_FOC_R2026a:793",
+    "type": "SubSystem",
+    "sample_time": [
+      [
+        0,
+        0
+      ],
+      [
+        5E-5,
+        0
+      ],
+      [
+        null,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/角度设置/传递延迟",
+    "sid": "PMSM_FOC_R2026a:801",
+    "type": "Delay",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/角度设置/偏置",
+    "sid": "PMSM_FOC_R2026a:795",
+    "type": "Constant",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/角度设置/偏置求和",
+    "sid": "PMSM_FOC_R2026a:796",
+    "type": "Sum",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/角度设置/启用",
+    "sid": "PMSM_FOC_R2026a:804",
+    "type": "Constant",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/角度设置/延迟开关",
+    "sid": "PMSM_FOC_R2026a:802",
+    "type": "Constant",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/角度设置/延迟选择",
+    "sid": "PMSM_FOC_R2026a:803",
+    "type": "Switch",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/角度设置/总选择",
+    "sid": "PMSM_FOC_R2026a:805",
+    "type": "Switch",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/角度设置/最短角差",
+    "sid": "PMSM_FOC_R2026a:808",
+    "type": "Fcn",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/角度设置/测量角度",
+    "sid": "PMSM_FOC_R2026a:806",
+    "type": "Goto",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/角度设置/真实角度",
+    "sid": "PMSM_FOC_R2026a:794",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/角度设置/角度差",
+    "sid": "PMSM_FOC_R2026a:807",
+    "type": "Sum",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/角度设置/角度环绕",
+    "sid": "PMSM_FOC_R2026a:800",
+    "type": "Fcn",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/角度设置/记录_log_theta_error",
+    "sid": "PMSM_FOC_R2026a:811",
+    "type": "ToWorkspace",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/角度设置/记录_log_theta_meas",
+    "sid": "PMSM_FOC_R2026a:810",
+    "type": "ToWorkspace",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/角度设置/记录_log_theta_true",
+    "sid": "PMSM_FOC_R2026a:809",
+    "type": "ToWorkspace",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/角度设置/量化",
+    "sid": "PMSM_FOC_R2026a:797",
+    "type": "Quantizer",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/角度设置/量化开关",
+    "sid": "PMSM_FOC_R2026a:798",
+    "type": "Constant",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/角度设置/量化选择",
+    "sid": "PMSM_FOC_R2026a:799",
+    "type": "Switch",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/解耦",
+    "sid": "PMSM_FOC_R2026a:989",
+    "type": "SubSystem",
+    "sample_time": [
+      null,
+      null
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/解耦_d",
+    "sid": "PMSM_FOC_R2026a:991",
+    "type": "Gain",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/解耦_q",
+    "sid": "PMSM_FOC_R2026a:992",
+    "type": "Gain",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/调制母线",
+    "sid": "PMSM_FOC_R2026a:1039",
+    "type": "From",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测",
+    "sid": "PMSM_FOC_R2026a:891",
+    "type": "SubSystem",
+    "sample_time": [
+      [
+        0,
+        0
+      ],
+      [
+        5E-5,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/d轴",
+    "sid": "PMSM_FOC_R2026a:898",
+    "type": "Scope",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/d轴_1",
+    "sid": "PMSM_FOC_R2026a:896",
+    "type": "From",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/d轴_2",
+    "sid": "PMSM_FOC_R2026a:897",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/d轴误差",
+    "sid": "PMSM_FOC_R2026a:916",
+    "type": "Scope",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/d轴误差_差",
+    "sid": "PMSM_FOC_R2026a:915",
+    "type": "Sum",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/d轴误差_正",
+    "sid": "PMSM_FOC_R2026a:913",
+    "type": "From",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/d轴误差_负",
+    "sid": "PMSM_FOC_R2026a:914",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/q轴",
+    "sid": "PMSM_FOC_R2026a:902",
+    "type": "Scope",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/q轴_1",
+    "sid": "PMSM_FOC_R2026a:900",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/q轴_2",
+    "sid": "PMSM_FOC_R2026a:901",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/q轴误差",
+    "sid": "PMSM_FOC_R2026a:921",
+    "type": "Scope",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/q轴误差_差",
+    "sid": "PMSM_FOC_R2026a:920",
+    "type": "Sum",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/q轴误差_正",
+    "sid": "PMSM_FOC_R2026a:918",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/q轴误差_负",
+    "sid": "PMSM_FOC_R2026a:919",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/总览",
+    "sid": "PMSM_FOC_R2026a:977",
+    "type": "Scope",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/汇总_d轴",
+    "sid": "PMSM_FOC_R2026a:980",
+    "type": "Mux",
+    "sample_time": [
+      [
+        5E-5,
+        0
+      ],
+      [
+        null,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/汇总_q轴",
+    "sid": "PMSM_FOC_R2026a:981",
+    "type": "Mux",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/汇总_转矩",
+    "sid": "PMSM_FOC_R2026a:979",
+    "type": "Mux",
+    "sample_time": [
+      [
+        0,
+        0
+      ],
+      [
+        5E-5,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/汇总_转速",
+    "sid": "PMSM_FOC_R2026a:978",
+    "type": "Mux",
+    "sample_time": [
+      [
+        0,
+        0
+      ],
+      [
+        null,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/转矩",
+    "sid": "PMSM_FOC_R2026a:906",
+    "type": "Scope",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/转矩_1",
+    "sid": "PMSM_FOC_R2026a:904",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/转矩_2",
+    "sid": "PMSM_FOC_R2026a:905",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/转速",
+    "sid": "PMSM_FOC_R2026a:894",
+    "type": "Scope",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/转速_1",
+    "sid": "PMSM_FOC_R2026a:892",
+    "type": "From",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/转速_2",
+    "sid": "PMSM_FOC_R2026a:893",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/转速误差",
+    "sid": "PMSM_FOC_R2026a:911",
+    "type": "Scope",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/转速误差_差",
+    "sid": "PMSM_FOC_R2026a:910",
+    "type": "Sum",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/转速误差_正",
+    "sid": "PMSM_FOC_R2026a:908",
+    "type": "From",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/跟踪观测/转速误差_负",
+    "sid": "PMSM_FOC_R2026a:909",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/输出延迟",
+    "sid": "PMSM_FOC_R2026a:812",
+    "type": "SubSystem",
+    "sample_time": [
+      [
+        1E-6,
+        0
+      ],
+      [
+        5E-5,
+        0
+      ],
+      [
+        null,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/输出延迟/CCR预装载",
+    "sid": "PMSM_FOC_R2026a:1094",
+    "type": "SubSystem",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/输出延迟/CCR预装载/ Demux ",
+    "sid": "PMSM_FOC_R2026a:1094::26",
+    "type": "Demux",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/输出延迟/CCR预装载/ SFunction ",
+    "sid": "PMSM_FOC_R2026a:1094::25",
+    "type": "S-Function",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/输出延迟/CCR预装载/ Terminator ",
+    "sid": "PMSM_FOC_R2026a:1094::27",
+    "type": "Terminator",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/输出延迟/CCR预装载/applied",
+    "sid": "PMSM_FOC_R2026a:1094::5",
+    "type": "Outport",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/输出延迟/CCR预装载/cfg",
+    "sid": "PMSM_FOC_R2026a:1094::29",
+    "type": "Inport",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/输出延迟/CCR预装载/diag",
+    "sid": "PMSM_FOC_R2026a:1094::30",
+    "type": "Outport",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/输出延迟/CCR预装载/request",
+    "sid": "PMSM_FOC_R2026a:1094::28",
+    "type": "Inport",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/输出延迟/CCR预装载/t",
+    "sid": "PMSM_FOC_R2026a:1094::1",
+    "type": "Inport",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/输出延迟/事件时钟",
+    "sid": "PMSM_FOC_R2026a:1092",
+    "type": "DigitalClock",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/输出延迟/启用",
+    "sid": "PMSM_FOC_R2026a:815",
+    "type": "Constant",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/输出延迟/周期延迟",
+    "sid": "PMSM_FOC_R2026a:814",
+    "type": "Delay",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/输出延迟/指令",
+    "sid": "PMSM_FOC_R2026a:813",
+    "type": "Inport",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/输出延迟/指令缓存",
+    "sid": "PMSM_FOC_R2026a:1095",
+    "type": "UnitDelay",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/输出延迟/时序参数",
+    "sid": "PMSM_FOC_R2026a:1093",
+    "type": "Constant",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/输出延迟/标签_ObsPWMTiming",
+    "sid": "PMSM_FOC_R2026a:1099",
+    "type": "Goto",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/输出延迟/生效",
+    "sid": "PMSM_FOC_R2026a:817",
+    "type": "Outport",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/输出延迟/记录_log_Tcm_applied",
+    "sid": "PMSM_FOC_R2026a:819",
+    "type": "ToWorkspace",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/输出延迟/记录_log_Tcm_requested",
+    "sid": "PMSM_FOC_R2026a:818",
+    "type": "ToWorkspace",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/输出延迟/记录_obs_pwm_timing",
+    "sid": "PMSM_FOC_R2026a:1098",
+    "type": "ToWorkspace",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/输出延迟/输出方式",
+    "sid": "PMSM_FOC_R2026a:1096",
+    "type": "VariantSource",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/输出延迟/选择",
+    "sid": "PMSM_FOC_R2026a:816",
+    "type": "Switch",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/输出延迟/阈值向量",
+    "sid": "PMSM_FOC_R2026a:1097",
+    "type": "Reshape",
+    "sample_time": [
+      -1,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置",
+    "sid": "PMSM_FOC_R2026a:766",
+    "type": "SubSystem",
+    "sample_time": [
+      [
+        0,
+        0
+      ],
+      [
+        1E-6,
+        0
+      ],
+      [
+        5E-5,
+        0
+      ],
+      [
+        null,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/ADC开关",
+    "sid": "PMSM_FOC_R2026a:777",
+    "type": "Constant",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/ADC选择",
+    "sid": "PMSM_FOC_R2026a:778",
+    "type": "Switch",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/事件时钟",
+    "sid": "PMSM_FOC_R2026a:1083",
+    "type": "DigitalClock",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/传递延迟",
+    "sid": "PMSM_FOC_R2026a:782",
+    "type": "Delay",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/偏置求和",
+    "sid": "PMSM_FOC_R2026a:770",
+    "type": "Sum",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/列向量",
+    "sid": "PMSM_FOC_R2026a:1088",
+    "type": "Reshape",
+    "sample_time": [
+      -1,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/启用",
+    "sid": "PMSM_FOC_R2026a:785",
+    "type": "Constant",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/噪声开关",
+    "sid": "PMSM_FOC_R2026a:772",
+    "type": "Gain",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/噪声源",
+    "sid": "PMSM_FOC_R2026a:771",
+    "type": "RandomNumber",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/增益",
+    "sid": "PMSM_FOC_R2026a:768",
+    "type": "Gain",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/延迟开关",
+    "sid": "PMSM_FOC_R2026a:783",
+    "type": "Constant",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/延迟选择",
+    "sid": "PMSM_FOC_R2026a:784",
+    "type": "Switch",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/总选择",
+    "sid": "PMSM_FOC_R2026a:786",
+    "type": "Switch",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/捕获",
+    "sid": "PMSM_FOC_R2026a:774",
+    "type": "ZeroOrderHold",
+    "sample_time": [
+      [
+        0,
+        0
+      ],
+      [
+        5E-5,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/数字低通",
+    "sid": "PMSM_FOC_R2026a:779",
+    "type": "DiscreteTransferFcn",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/时序参数",
+    "sid": "PMSM_FOC_R2026a:1084",
+    "type": "Constant",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/标签_ObsADCTiming",
+    "sid": "PMSM_FOC_R2026a:1091",
+    "type": "Goto",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/标签_obs_analog_current",
+    "sid": "PMSM_FOC_R2026a:830",
+    "type": "Goto",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/模拟低通",
+    "sid": "PMSM_FOC_R2026a:820",
+    "type": "SubSystem",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/模拟低通/RC1",
+    "sid": "PMSM_FOC_R2026a:825",
+    "type": "TransferFcn",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/模拟低通/RC2",
+    "sid": "PMSM_FOC_R2026a:826",
+    "type": "TransferFcn",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/模拟低通/RC3",
+    "sid": "PMSM_FOC_R2026a:827",
+    "type": "TransferFcn",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/模拟低通/分相",
+    "sid": "PMSM_FOC_R2026a:822",
+    "type": "Demux",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/模拟低通/合相",
+    "sid": "PMSM_FOC_R2026a:823",
+    "type": "Mux",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/模拟低通/输入",
+    "sid": "PMSM_FOC_R2026a:821",
+    "type": "Inport",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/模拟低通/输出",
+    "sid": "PMSM_FOC_R2026a:824",
+    "type": "Outport",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/模拟开关",
+    "sid": "PMSM_FOC_R2026a:828",
+    "type": "Constant",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/模拟测量",
+    "sid": "PMSM_FOC_R2026a:773",
+    "type": "Sum",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/模拟缓存",
+    "sid": "PMSM_FOC_R2026a:1086",
+    "type": "UnitDelay",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/模拟选择",
+    "sid": "PMSM_FOC_R2026a:829",
+    "type": "Switch",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/测量电流",
+    "sid": "PMSM_FOC_R2026a:787",
+    "type": "Goto",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/滤波开关",
+    "sid": "PMSM_FOC_R2026a:780",
+    "type": "Constant",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/滤波选择",
+    "sid": "PMSM_FOC_R2026a:781",
+    "type": "Switch",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/真实电流",
+    "sid": "PMSM_FOC_R2026a:767",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_adc",
+    "sid": "PMSM_FOC_R2026a:791",
+    "type": "ToWorkspace",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_filter",
+    "sid": "PMSM_FOC_R2026a:792",
+    "type": "ToWorkspace",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_meas",
+    "sid": "PMSM_FOC_R2026a:789",
+    "type": "ToWorkspace",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_noise",
+    "sid": "PMSM_FOC_R2026a:790",
+    "type": "ToWorkspace",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/记录_log_iabc_true",
+    "sid": "PMSM_FOC_R2026a:788",
+    "type": "ToWorkspace",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/记录_obs_adc_codes",
+    "sid": "PMSM_FOC_R2026a:1090",
+    "type": "ToWorkspace",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/记录_obs_adc_timing",
+    "sid": "PMSM_FOC_R2026a:1089",
+    "type": "ToWorkspace",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/采样方式",
+    "sid": "PMSM_FOC_R2026a:1087",
+    "type": "VariantSource",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/量化",
+    "sid": "PMSM_FOC_R2026a:775",
+    "type": "Quantizer",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/量程",
+    "sid": "PMSM_FOC_R2026a:776",
+    "type": "Saturate",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/门极",
+    "sid": "PMSM_FOC_R2026a:1081",
+    "type": "From",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/门极历史",
+    "sid": "PMSM_FOC_R2026a:1082",
+    "type": "UnitDelay",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/零偏",
+    "sid": "PMSM_FOC_R2026a:769",
+    "type": "Constant",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/顺序采样",
+    "sid": "PMSM_FOC_R2026a:1085",
+    "type": "SubSystem",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/顺序采样/ Demux ",
+    "sid": "PMSM_FOC_R2026a:1085::26",
+    "type": "Demux",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/顺序采样/ SFunction ",
+    "sid": "PMSM_FOC_R2026a:1085::25",
+    "type": "S-Function",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/顺序采样/ Terminator ",
+    "sid": "PMSM_FOC_R2026a:1085::27",
+    "type": "Terminator",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/顺序采样/cfg",
+    "sid": "PMSM_FOC_R2026a:1085::30",
+    "type": "Inport",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/顺序采样/codes",
+    "sid": "PMSM_FOC_R2026a:1085::32",
+    "type": "Outport",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/顺序采样/current",
+    "sid": "PMSM_FOC_R2026a:1085::28",
+    "type": "Inport",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/顺序采样/diag",
+    "sid": "PMSM_FOC_R2026a:1085::31",
+    "type": "Outport",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/顺序采样/gates",
+    "sid": "PMSM_FOC_R2026a:1085::29",
+    "type": "Inport",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/顺序采样/sample",
+    "sid": "PMSM_FOC_R2026a:1085::5",
+    "type": "Outport",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/采样设置/顺序采样/t",
+    "sid": "PMSM_FOC_R2026a:1085::1",
+    "type": "Inport",
+    "sample_time": [
+      1E-6,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压",
+    "sid": "PMSM_FOC_R2026a:993",
+    "type": "SubSystem",
+    "sample_time": [
+      [
+        5E-5,
+        0
+      ],
+      [
+        null,
+        0
+      ]
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/d",
+    "sid": "PMSM_FOC_R2026a:994",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/d前馈幅值",
+    "sid": "PMSM_FOC_R2026a:1046",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/d前馈符号",
+    "sid": "PMSM_FOC_R2026a:1045",
+    "type": "Gain",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/q",
+    "sid": "PMSM_FOC_R2026a:995",
+    "type": "From",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/利用率",
+    "sid": "PMSM_FOC_R2026a:1025",
+    "type": "Mux",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/可用电压",
+    "sid": "PMSM_FOC_R2026a:1001",
+    "type": "Saturate",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/幅值分母",
+    "sid": "PMSM_FOC_R2026a:1003",
+    "type": "MinMax",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/最终利用率",
+    "sid": "PMSM_FOC_R2026a:1018",
+    "type": "Product",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/最终幅值",
+    "sid": "PMSM_FOC_R2026a:1017",
+    "type": "Product",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/标志数值",
+    "sid": "PMSM_FOC_R2026a:1020",
+    "type": "DataTypeConversion",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/标签_ObsDeadComp",
+    "sid": "PMSM_FOC_R2026a:1135",
+    "type": "Goto",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/标签_ObsFFd",
+    "sid": "PMSM_FOC_R2026a:1047",
+    "type": "Goto",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/标签_ObsResidual_d",
+    "sid": "PMSM_FOC_R2026a:1010",
+    "type": "Goto",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/标签_ObsResidual_q",
+    "sid": "PMSM_FOC_R2026a:1014",
+    "type": "Goto",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/标签_ObsSaturation",
+    "sid": "PMSM_FOC_R2026a:1024",
+    "type": "Goto",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/标签_ObsUtilization",
+    "sid": "PMSM_FOC_R2026a:1026",
+    "type": "Goto",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/标签_ObsVmax",
+    "sid": "PMSM_FOC_R2026a:1023",
+    "type": "Goto",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/标签_vd",
+    "sid": "PMSM_FOC_R2026a:1008",
+    "type": "Goto",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/标签_vq",
+    "sid": "PMSM_FOC_R2026a:1012",
+    "type": "Goto",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/死区补偿",
+    "sid": "PMSM_FOC_R2026a:1131",
+    "type": "SubSystem",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/死区补偿/ Demux ",
+    "sid": "PMSM_FOC_R2026a:1131::26",
+    "type": "Demux",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/死区补偿/ SFunction ",
+    "sid": "PMSM_FOC_R2026a:1131::25",
+    "type": "S-Function",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/死区补偿/ Terminator ",
+    "sid": "PMSM_FOC_R2026a:1131::27",
+    "type": "Terminator",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/死区补偿/Vdc",
+    "sid": "PMSM_FOC_R2026a:1131::29",
+    "type": "Inport",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/死区补偿/cfg",
+    "sid": "PMSM_FOC_R2026a:1131::30",
+    "type": "Inport",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/死区补偿/current",
+    "sid": "PMSM_FOC_R2026a:1131::1",
+    "type": "Inport",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/死区补偿/diagnostic",
+    "sid": "PMSM_FOC_R2026a:1131::31",
+    "type": "Outport",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/死区补偿/dq",
+    "sid": "PMSM_FOC_R2026a:1131::5",
+    "type": "Outport",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/死区补偿/theta",
+    "sid": "PMSM_FOC_R2026a:1131::28",
+    "type": "Inport",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/残差_d",
+    "sid": "PMSM_FOC_R2026a:1009",
+    "type": "Sum",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/残差_q",
+    "sid": "PMSM_FOC_R2026a:1013",
+    "type": "Sum",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/母线",
+    "sid": "PMSM_FOC_R2026a:996",
+    "type": "From",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/母线裕量",
+    "sid": "PMSM_FOC_R2026a:1000",
+    "type": "Gain",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/母线采样",
+    "sid": "PMSM_FOC_R2026a:998",
+    "type": "ZeroOrderHold",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/比例",
+    "sid": "PMSM_FOC_R2026a:1005",
+    "type": "Product",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/比例限幅",
+    "sid": "PMSM_FOC_R2026a:1006",
+    "type": "Saturate",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/电压分母",
+    "sid": "PMSM_FOC_R2026a:1004",
+    "type": "MinMax",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/补偿_d",
+    "sid": "PMSM_FOC_R2026a:1133",
+    "type": "Sum",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/补偿_q",
+    "sid": "PMSM_FOC_R2026a:1134",
+    "type": "Sum",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/补偿分轴",
+    "sid": "PMSM_FOC_R2026a:1132",
+    "type": "Demux",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/补偿参数",
+    "sid": "PMSM_FOC_R2026a:1130",
+    "type": "Constant",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/补偿电流",
+    "sid": "PMSM_FOC_R2026a:1128",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/补偿角度",
+    "sid": "PMSM_FOC_R2026a:1129",
+    "type": "From",
+    "sample_time": [
+      0,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/记录_obs_dead_comp",
+    "sid": "PMSM_FOC_R2026a:1136",
+    "type": "ToWorkspace",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/记录_obs_voltage",
+    "sid": "PMSM_FOC_R2026a:1022",
+    "type": "ToWorkspace",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/诊断",
+    "sid": "PMSM_FOC_R2026a:1015",
+    "type": "Mux",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/请求利用率",
+    "sid": "PMSM_FOC_R2026a:1016",
+    "type": "Product",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/请求幅值",
+    "sid": "PMSM_FOC_R2026a:999",
+    "type": "Fcn",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/输入",
+    "sid": "PMSM_FOC_R2026a:997",
+    "type": "Mux",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/输出_d",
+    "sid": "PMSM_FOC_R2026a:1007",
+    "type": "Product",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/输出_q",
+    "sid": "PMSM_FOC_R2026a:1011",
+    "type": "Product",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/除零保护",
+    "sid": "PMSM_FOC_R2026a:1002",
+    "type": "Constant",
+    "sample_time": [
+      null,
+      0
+    ]
+  },
+  {
+    "path": "PMSM_FOC_R2026a/限压/饱和",
+    "sid": "PMSM_FOC_R2026a:1019",
+    "type": "RelationalOperator",
+    "sample_time": [
+      5E-5,
+      0
+    ]
+  }
+]

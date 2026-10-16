@@ -1,0 +1,258 @@
+{
+  "schema": 1,
+  "namespace": "obs_sless_",
+  "new_log_period_s": 0.00005,
+  "logging_policy": "full control samples, no decimation in science data; separate native voltage provenance events",
+  "fields": [
+    {
+      "name": "obs_sless_input_i",
+      "unit": "A",
+      "width": 2,
+      "meaning": "sampled alpha beta current",
+      "source": "controller_measurement",
+      "timestamp": "current JEOS sample time",
+      "role": "input"
+    },
+    {
+      "name": "obs_sless_input_v",
+      "unit": "V",
+      "width": 2,
+      "meaning": "previous-interval alpha beta applied voltage reconstruction",
+      "source": "applied_CCR_and_controller_bus",
+      "timestamp": "previous interval; explicit begin/end",
+      "role": "input"
+    },
+    {
+      "name": "obs_sless_voltage_interval",
+      "unit": "s",
+      "width": 2,
+      "meaning": "interval begin end",
+      "source": "event_grid",
+      "timestamp": "native physical event time",
+      "role": "input"
+    },
+    {
+      "name": "obs_sless_applied_sequence",
+      "unit": "1",
+      "width": 1,
+      "meaning": "applied command sequence",
+      "source": "CCR_queue",
+      "timestamp": "native UEV then aggregated to control task",
+      "role": "input"
+    },
+    {
+      "name": "obs_sless_i_hat",
+      "unit": "A",
+      "width": 2,
+      "meaning": "alpha beta estimates",
+      "source": "SMO",
+      "timestamp": "current sample time",
+      "role": "state"
+    },
+    {
+      "name": "obs_sless_i_residual",
+      "unit": "A",
+      "width": 2,
+      "meaning": "estimate minus measured",
+      "source": "SMO",
+      "timestamp": "current sample time",
+      "role": "state"
+    },
+    {
+      "name": "obs_sless_injection",
+      "unit": "V",
+      "width": 2,
+      "meaning": "alpha beta sliding correction",
+      "source": "SMO",
+      "timestamp": "previous-interval estimate published current sample",
+      "role": "state"
+    },
+    {
+      "name": "obs_sless_emf",
+      "unit": "V",
+      "width": 2,
+      "meaning": "filtered alpha beta emf",
+      "source": "filter",
+      "timestamp": "current publication; defined estimate age",
+      "role": "state"
+    },
+    {
+      "name": "obs_sless_emf_magnitude",
+      "unit": "V",
+      "width": 1,
+      "meaning": "alpha beta vector magnitude",
+      "source": "filter",
+      "timestamp": "same as emf",
+      "role": "state"
+    },
+    {
+      "name": "obs_sless_theta_raw",
+      "unit": "electrical_rad",
+      "width": 1,
+      "meaning": "uncompensated estimated angle",
+      "source": "PLL_or_EMF diagnostic",
+      "timestamp": "current publication",
+      "role": "state"
+    },
+    {
+      "name": "obs_sless_phase_correction",
+      "unit": "electrical_rad",
+      "width": 1,
+      "meaning": "full-chain phase correction",
+      "source": "causal_estimated_speed",
+      "timestamp": "current publication",
+      "role": "state"
+    },
+    {
+      "name": "obs_sless_theta",
+      "unit": "electrical_rad",
+      "width": 1,
+      "meaning": "corrected estimated angle",
+      "source": "PLL",
+      "timestamp": "current publication",
+      "role": "output"
+    },
+    {
+      "name": "obs_sless_omega_e",
+      "unit": "electrical_rad/s",
+      "width": 1,
+      "meaning": "PLL electrical speed",
+      "source": "PLL",
+      "timestamp": "current publication",
+      "role": "output"
+    },
+    {
+      "name": "obs_sless_speed",
+      "unit": "rpm",
+      "width": 1,
+      "meaning": "mechanical estimated speed",
+      "source": "omega_e/p*60/(2*pi)",
+      "timestamp": "current publication",
+      "role": "output"
+    },
+    {
+      "name": "obs_sless_pll_error",
+      "unit": "1",
+      "width": 1,
+      "meaning": "normalized phase detector error",
+      "source": "PLL",
+      "timestamp": "current sample",
+      "role": "state"
+    },
+    {
+      "name": "obs_sless_pll_integral",
+      "unit": "electrical_rad/s",
+      "width": 1,
+      "meaning": "PLL integral state",
+      "source": "PLL",
+      "timestamp": "declared postupdate sample",
+      "role": "state"
+    },
+    {
+      "name": "obs_sless_pll_saturated",
+      "unit": "bool",
+      "width": 1,
+      "meaning": "PLL speed limited",
+      "source": "PLL",
+      "timestamp": "current sample",
+      "role": "state"
+    },
+    {
+      "name": "obs_sless_valid",
+      "unit": "bool",
+      "width": 1,
+      "meaning": "observer valid",
+      "source": "causal_validity_logic",
+      "timestamp": "current sample",
+      "role": "output"
+    },
+    {
+      "name": "obs_sless_state",
+      "unit": "enum",
+      "width": 1,
+      "meaning": "0 reset/1 acquiring/2 valid/3 invalid",
+      "source": "validity_logic",
+      "timestamp": "current sample",
+      "role": "output"
+    },
+    {
+      "name": "obs_sless_truth_theta",
+      "unit": "electrical_rad",
+      "width": 1,
+      "meaning": "true rotor angle",
+      "source": "motor",
+      "timestamp": "evaluation only control-grid samples",
+      "role": "evaluation"
+    },
+    {
+      "name": "obs_sless_truth_speed",
+      "unit": "rpm",
+      "width": 1,
+      "meaning": "true mechanical speed",
+      "source": "motor",
+      "timestamp": "evaluation only control-grid samples",
+      "role": "evaluation"
+    },
+    {
+      "name": "obs_sless_angle_error",
+      "unit": "electrical_rad",
+      "width": 1,
+      "meaning": "wrapped corrected angle error",
+      "source": "offline_analysis",
+      "timestamp": "matched physical time; no fitting",
+      "role": "evaluation"
+    },
+    {
+      "name": "obs_sless_speed_error",
+      "unit": "rpm",
+      "width": 1,
+      "meaning": "estimated minus true",
+      "source": "offline_analysis",
+      "timestamp": "matched physical time",
+      "role": "evaluation"
+    }
+  ],
+  "presentation": {
+    "background": "white",
+    "baseline": "gray dashed",
+    "estimate": "blue solid",
+    "error": "red solid",
+    "angle_display_unit": "electrical_deg",
+    "speed_display_unit": "rpm",
+    "time_display_unit": "ms",
+    "event_zoom_unit": "us",
+    "show_raw_and_compensated_in_archive": true,
+    "figure_prose": false,
+    "entry": "one native observation entry with two pages; same menus as local scopes",
+    "pages": [
+      {
+        "title": "角度与速度",
+        "layout": [
+          2,
+          2
+        ],
+        "panels": [
+          "电角度真值/估计",
+          "环绕角误差",
+          "转速真值/估计",
+          "有效与锁定状态"
+        ]
+      },
+      {
+        "title": "观测器内部",
+        "layout": [
+          3,
+          2
+        ],
+        "panels": [
+          "alpha电流测量/估计",
+          "beta电流测量/估计",
+          "alpha beta反电动势",
+          "PLL相位误差",
+          "积分与限幅状态",
+          "相位校正角"
+        ]
+      }
+    ]
+  }
+}

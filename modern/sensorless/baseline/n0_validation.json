@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "node": "N0",
+  "all_passed": true,
+  "check_count": 651,
+  "failures": [],
+  "source_file_count": 617,
+  "contract_count": 4,
+  "scenario_count": 17,
+  "baseline_log_count": 52,
+  "scope": "N0指纹、冻结契约、实际编译速率及100ms原模型运行证据；未验收SMO/PLL"
+}

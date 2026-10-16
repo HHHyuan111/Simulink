@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "node": "N0",
+  "status": "waiting_user_acceptance",
+  "files": [
+    {
+      "path": "baseline/compiled_rates.json",
+      "sha256": "861b721aee5e9aee91a4802790181f0f6d5fb68ccb60f9628d37e7ce1e120460"
+    },
+    {
+      "path": "baseline/log_schema.json",
+      "sha256": "d0afb56fa1e947ef28c376b92722771958aa5c6dafc0d398362bfac2d5a12c6d"
+    },
+    {
+      "path": "baseline/n0_inventory.json",
+      "sha256": "293c268e825dcf4d008ad1a979c7f8c7ff7a62835df6c6dc24881972d106e99e"
+    },
+    {
+      "path": "baseline/n0_validation.json",
+      "sha256": "779f7c47b5c6da66add4c1404c7cbd1cf62f051dcd490680399e1837c4299417"
+    },
+    {
+      "path": "baseline/reference_state.json",
+      "sha256": "e3619ee8a372116f4b99016c7e3fdfbd11c63304df2217a95954a5d132e3d6d3"
+    },
+    {
+      "path": "baseline/signal_tags.json",
+      "sha256": "6f5f8fd7f9654de1c893a3fdb6629c5379b61e52c1d82e81ab3df9c2184ffe45"
+    },
+    {
+      "path": "baseline/source_manifest.json",
+      "sha256": "f432cf712c4324fc2f94cf86d9ef07f4638e042b3c884e707f6597c52d73f731"
+    },
+    {
+      "path": "contracts/acceptance_v1.json",
+      "sha256": "dc9951b4920f5e24c1da42933e737c168b97410e510c302ddc94798896364ad4"
+    },
+    {
+      "path": "contracts/parameters_v1.json",
+      "sha256": "1e6d012ee2790264b724dbd4da7a75eae5f459c38d1f7d8200e03e640af4ce4f"
+    },
+    {
+      "path": "contracts/signals_v1.json",
+      "sha256": "b9fb53de07d724514e3ff8277a8313c0f18ee9914769612200deacf3dda1ef2c"
+    },
+    {
+      "path": "contracts/test_plan_v1.json",
+      "sha256": "717598811b3e2225c4606483dd205c76b2a50865d79af3fdba63531703373296"
+    },
+    {
+      "path": "milestones/N0.md",
+      "sha256": "ac7218db6c7506176aa3e565be0627a0ff9cacfadbba71a6873d4ad2da690c68"
+    },
+    {
+      "path": "README.md",
+      "sha256": "d69770079bfa2672cd1df99e39db611e89de0239d1b465b7bb29c22de055a5ba"
+    },
+    {
+      "path": "sensorless_n0_inventory.m",
+      "sha256": "c1e59ca7b7aa66b9a5edd446b11a53070b08640181c725b2b25928249e8cfbbf"
+    },
+    {
+      "path": "verify_n0.py",
+      "sha256": "d17ce5d047d0e6500130d93e0a9236a37f7fe6248925c43af098890c957b8df6"
+    }
+  ]
+}

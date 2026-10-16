@@ -1,0 +1,171 @@
+{
+  "schema": 1,
+  "namespace": "sensorless",
+  "value_sources_resolved_in_n0_inventory": true,
+  "truth_plant_parameters_not_overwritten": true,
+  "apply_policy": "stopped only; validate before apply; freeze effective configuration per run",
+  "fields": [
+    {
+      "key": "R_hat",
+      "label": "观测相电阻",
+      "unit": "ohm",
+      "seed": 0.105125,
+      "source": "current_model.Rs",
+      "status": "标称初值；可独立失配",
+      "group": "design",
+      "range": ">0"
+    },
+    {
+      "key": "L_hat",
+      "label": "观测电感",
+      "unit": "H",
+      "seed": 0.0001037615,
+      "source": "current_model.Ld/Lq",
+      "status": "SPMSM标称初值",
+      "group": "design",
+      "range": ">0 and Ld=Lq"
+    },
+    {
+      "key": "pole_pairs",
+      "label": "极对数",
+      "unit": "1",
+      "seed": 5,
+      "source": "current_model.p",
+      "status": "当前配置",
+      "group": "motor",
+      "range": "positive integer"
+    },
+    {
+      "key": "flux_hat",
+      "label": "永磁磁链",
+      "unit": "Wb",
+      "seed": 0.00565685424949238,
+      "source": "current_model.phis",
+      "status": "转矩常数折算",
+      "group": "motor",
+      "range": ">0"
+    },
+    {
+      "key": "sample_s",
+      "label": "观测周期",
+      "unit": "s",
+      "seed": 0.00005,
+      "source": "compiled_current_task",
+      "status": "实际任务核对",
+      "group": "readonly",
+      "range": "exactly 50e-6"
+    },
+    {
+      "key": "Kslide_V",
+      "label": "滑模注入幅值",
+      "unit": "V",
+      "seed": 14,
+      "source": "design_seed",
+      "status": "待验证设计值",
+      "group": "design",
+      "range": ">0"
+    },
+    {
+      "key": "boundary_A",
+      "label": "滑模边界层",
+      "unit": "A",
+      "seed": 0.2,
+      "source": "design_seed",
+      "status": "待验证设计值",
+      "group": "design",
+      "range": ">0"
+    },
+    {
+      "key": "emf_filter_hz",
+      "label": "反电动势滤波频率",
+      "unit": "Hz",
+      "seed": 800,
+      "source": "design_seed",
+      "status": "待验证设计值",
+      "group": "design",
+      "range": "0<fc<0.5/sample_s"
+    },
+    {
+      "key": "pll_fn_hz",
+      "label": "PLL自然频率",
+      "unit": "Hz",
+      "seed": 60,
+      "source": "design_seed",
+      "status": "非-3dB带宽",
+      "group": "design",
+      "range": "0<fn<0.5/sample_s"
+    },
+    {
+      "key": "pll_zeta",
+      "label": "PLL阻尼比",
+      "unit": "1",
+      "seed": 0.707,
+      "source": "design_seed",
+      "status": "设计值",
+      "group": "design",
+      "range": ">0"
+    },
+    {
+      "key": "direction",
+      "label": "试验旋转方向",
+      "unit": "enum",
+      "seed": 1,
+      "source": "declared_case",
+      "status": "不取真值，0无效",
+      "group": "design",
+      "range": "-1,0,1"
+    },
+    {
+      "key": "omega_limit_rad_s",
+      "label": "PLL速度限值",
+      "unit": "electrical_rad/s",
+      "seed": 2000,
+      "source": "design_seed",
+      "status": "约3819.7机械rpm；饱和判无效",
+      "group": "design",
+      "range": ">0"
+    },
+    {
+      "key": "a",
+      "label": "RL状态系数",
+      "unit": "1",
+      "seed": null,
+      "source": "exp(-R_hat*sample_s/L_hat)",
+      "status": "推导",
+      "group": "readonly",
+      "range": "0<a<1"
+    },
+    {
+      "key": "b",
+      "label": "RL电压系数",
+      "unit": "A/V",
+      "seed": null,
+      "source": "(1-a)/R_hat",
+      "status": "推导",
+      "group": "readonly",
+      "range": ">0"
+    },
+    {
+      "key": "pll_Kp",
+      "label": "PLL比例增益",
+      "unit": "1/s",
+      "seed": null,
+      "source": "2*pll_zeta*2*pi*pll_fn_hz",
+      "status": "归一化鉴相",
+      "group": "readonly",
+      "range": ">0"
+    },
+    {
+      "key": "pll_Ki",
+      "label": "PLL积分增益",
+      "unit": "1/s^2",
+      "seed": null,
+      "source": "(2*pi*pll_fn_hz)^2",
+      "status": "归一化鉴相",
+      "group": "readonly",
+      "range": ">0"
+    }
+  ],
+  "validity_thresholds": "acceptance_v1.json/validity",
+  "reset_policy": "reset all observer/filter/PLL/valid history; no reset of motor; publish invalid until reacquired"
+}

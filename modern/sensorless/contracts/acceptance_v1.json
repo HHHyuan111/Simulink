@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "sensorless_acceptance_v1",
+  "node": "N0",
+  "frozen_before_algorithm_implementation": true,
+  "scope": "20kHz SPMSM离散隐式饱和校正SMO＋归一化PLL旁路观测；不含接管和无感启动",
+  "approval_gate": "每节点完成后等待用户验收，未验收不进入下一节点",
+  "correctness": {
+    "parameter_absolute_tolerance": 1e-12,
+    "parameter_relative_tolerance": 1e-10,
+    "smo_equation_residual_absolute_A": 1e-10,
+    "smo_equation_residual_relative": 1e-9,
+    "pll_settle_angle_rms_deg": 0.1,
+    "pll_speed_mean_relative_max": 0.001,
+    "pll_capture_deadline_s": 0.15,
+    "pll_capture_angle_abs_deg": 1,
+    "pll_capture_hold_s": 0.02,
+    "oracle": "独立公式/数值求根/积分；不得复用被测函数作为答案"
+  },
+  "steady": {
+    "duration_s": 0.8,
+    "window_s": [
+      0.5,
+      0.8
+    ],
+    "minimum_electrical_cycles": 20,
+    "plant_speed_mean_target_relative_max": 0.01,
+    "plant_speed_slope_abs_max_rpm_s": 50,
+    "angle_rms_max_electrical_deg": 3,
+    "angle_abs_max_electrical_deg": 8,
+    "speed_mean_error_relative_max": 0.01,
+    "speed_error_rms_relative_max": 0.02,
+    "valid_fraction_min": 0.99,
+    "statistics_include_invalid_samples": true
+  },
+  "dynamic": {
+    "recovery_deadline_after_event_s": 0.15,
+    "hold_s": 0.02,
+    "angle_abs_max_electrical_deg": 8,
+    "speed_error_relative_max": 0.03,
+    "require_valid": true,
+    "peak_transient_reported_separately": true
+  },
+  "validity": {
+    "emf_on_min_V": 2,
+    "emf_off_below_V": 1.5,
+    "current_residual_vector_rms_max_A": 0.5,
+    "current_residual_definition": "sqrt(mean((s_alpha^2+s_beta^2)/2)) over preceding 10ms including current sample",
+    "pll_phase_error_rms_max": 0.15,
+    "window_s": 0.01,
+    "lock_continuous_s": 0.02,
+    "unlock_continuous_s": 0.005,
+    "invalid_adc_immediate": true,
+    "history_insufficient_invalid": true,
+    "zero_direction_invalid": true,
+    "speed_saturation_invalid": true,
+    "ground_truth_prohibited": true,
+    "reacquire_requires_complete_lock_duration": true,
+    "invalid_sample_action": "模型预测推进；跳过测量校正；valid=false"
+  },
+  "invariants": {
+    "observer_period_s": 0.00005,
+    "speed_task_period_s": 0.0001,
+    "unchanged_original_time_data": "逐元素isequaln；不插值、不改时间戳、不放宽容差",
+    "model_file_unchanged": true,
+    "fixed_reference_files_unchanged": true,
+    "pi_gains_unchanged": true,
+    "structure_and_positions_restored": true,
+    "truth_only_for_evaluation": true,
+    "voltage_input": "previous physical interval from applied CCR and controller bus; split UEV pieces"
+  },
+  "replay": {
+    "new_matlab_process": true,
+    "same_host_and_release": true,
+    "all_final_required_cases": true,
+    "comparison": "raw Time/Data elementwise identical",
+    "container_file_hash_equality_required": false,
+    "raw_files_hashed_for_integrity": true
+  },
+  "boundaries": {
+    "required_execution_and_replay": true,
+    "base_precision_thresholds_apply": false,
+    "required": [
+      "correct_sign",
+      "finite_states",
+      "declared_invalid_sample_and_reset_semantics",
+      "complete_metrics",
+      "known_false_lock_limits_reported"
+    ],
+    "pass_is_not_feedback_takeover_approval": true
+  },
+  "change_policy": "任何范围/阈值/窗口变化必须先记录原因并经用户确认，新增契约版本；保留旧版失败，禁止追溯改判"
+}
