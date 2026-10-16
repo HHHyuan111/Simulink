@@ -1,0 +1,108 @@
+{
+  "schema": 1,
+  "node": "N2",
+  "frozen_before_integration_runs": true,
+  "acceptance_contract": "contracts/acceptance_v1.json",
+  "scope": {
+    "overview_layout": [
+      2,
+      2
+    ],
+    "internal_layout": [
+      3,
+      2
+    ],
+    "colors": "gray baseline, blue estimate, red error",
+    "logging": "full native provenance plus full 20kHz observer logs; no scientific decimation"
+  },
+  "cases": [
+    {
+      "id": "reference_absent",
+      "timing": "original",
+      "duration_s": 0.1,
+      "observer": "absent"
+    },
+    {
+      "id": "reference_disabled",
+      "timing": "original",
+      "duration_s": 0.1,
+      "observer": "disabled"
+    },
+    {
+      "id": "reference_enabled",
+      "timing": "original",
+      "duration_s": 0.1,
+      "observer": "enabled"
+    },
+    {
+      "id": "events_absent",
+      "timing": "real",
+      "duration_s": 0.01,
+      "observer": "absent"
+    },
+    {
+      "id": "events_enabled",
+      "timing": "real",
+      "duration_s": 0.01,
+      "observer": "enabled"
+    }
+  ],
+  "old_log_count": 52,
+  "old_log_comparison": "Time/Data exact isequaln, same configuration; reference_absent also compare N0 100ms baseline",
+  "new_signal_comparison": "split generated blocks vs N1 pure composition on identical archived current/voltage inputs; tolerance absolute 1e-10 + relative 1e-9, no time interpolation",
+  "voltage_reconstruction": {
+    "input": "applied Tcm, actual ObsCarrier and controller UDC; no requested voltage or true rotor state",
+    "weighted_interval": "sum of exact RL weights on each native-grid held-voltage piece; first partial interval invalid",
+    "independent_oracle": "direct analytic exponential weights across complete interval plus independent gate/Clarke reconstruction",
+    "absolute_tolerance_V": 1e-10,
+    "relative_tolerance": 1e-9,
+    "provenance_fields": [
+      "native_time",
+      "alpha_voltage",
+      "beta_voltage",
+      "threshold_A",
+      "threshold_B",
+      "threshold_C",
+      "actual_carrier",
+      "controller_bus",
+      "active_sequence_or_minus_one",
+      "interval_boundary",
+      "interval_ready",
+      "piece_counter"
+    ],
+    "sequence_original_mode": "-1 sentinel; original mode has direct thresholds and no active CCR queue",
+    "sequence_real_mode": "ObsPWMTiming column7 exact active command sequence",
+    "truth_voltage_diagnostic": "existing obs_phase_ideal at native grid; no actual terminal voltage used as formal observer input",
+    "minor_solver_stages": "native-grid ZOH reconstruction; does not claim exact voltage integration at continuous ode4 intermediate stages"
+  },
+  "compiled_rates": {
+    "observer": "timing_control_sample",
+    "voltage_accumulator": "timing_h",
+    "real_period_s": 0.00005,
+    "real_offset_s": 0.000028875,
+    "real_native_grid_s": 6.25e-8,
+    "reference_offset_s": 0,
+    "reference_native_grid_s": 0.000001
+  },
+  "inspection": {
+    "first_complete_intervals": 20,
+    "last_complete_intervals": 20,
+    "all_intervals_automatic_checks": true
+  },
+  "graph": {
+    "new_root_blocks": 1,
+    "original_blocks_positions_preserved": true,
+    "internal_goto_visibility": "scoped",
+    "prefix": "SLess_",
+    "truth_imports_only_under": "无感观测/观测",
+    "feedback_disconnected": true,
+    "removal_restores_state_and_callbacks": true,
+    "main_slx_not_saved": true
+  },
+  "replay": {
+    "required": true,
+    "new_matlab_process": true,
+    "raw_Time_Data_exact": true
+  },
+  "failure_policy": "失败包保留；不改变v1阈值；必选项未通过不进入N3"
+}

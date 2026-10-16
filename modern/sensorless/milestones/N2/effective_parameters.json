@@ -1,0 +1,63 @@
+{
+  "Kslide_V": 14,
+  "boundary_A": 0.2,
+  "emf_filter_hz": 800,
+  "pll_fn_hz": 60,
+  "pll_zeta": 0.707,
+  "R_hat": 0.105125,
+  "L_hat": 0.0001037615,
+  "pole_pairs": 5,
+  "flux_hat": 0.00565685424949238,
+  "sample_s": 5E-5,
+  "omega_limit_rad_s": 2000,
+  "interval_convention": "rl_weighted_rotating",
+  "a": 0.95060463817554253,
+  "b": 0.46987264517914396,
+  "g": 70,
+  "observer_pole": 0.028048810878037296,
+  "filter_r": 0.777767679171789,
+  "pll_Kp": 533.065441461116,
+  "pll_Ki": 142122.30337568672,
+  "pll_error_matrix": [
+    [
+      0.972991422168505,
+      -5E-5
+    ],
+    [
+      7.1061151687843367,
+      1
+    ]
+  ],
+  "pll_poles_real_imag": [
+    [
+      0.98649571108425249,
+      0.013150663075268743
+    ],
+    [
+      0.98649571108425249,
+      -0.013150663075268743
+    ]
+  ],
+  "pll_spectral_radius": 0.9865833608605733,
+  "validity": {
+    "emf_on_min_V": 2,
+    "emf_off_below_V": 1.5,
+    "current_residual_vector_rms_max_A": 0.5,
+    "current_residual_definition": "sqrt(mean((s_alpha^2+s_beta^2)/2)) over preceding 10ms including current sample",
+    "pll_phase_error_rms_max": 0.15,
+    "window_s": 0.01,
+    "lock_continuous_s": 0.02,
+    "unlock_continuous_s": 0.005,
+    "invalid_adc_immediate": true,
+    "history_insufficient_invalid": true,
+    "zero_direction_invalid": true,
+    "speed_saturation_invalid": true,
+    "ground_truth_prohibited": true,
+    "reacquire_requires_complete_lock_duration": true,
+    "invalid_sample_action": "模型预测推进；跳过测量校正；valid=false"
+  },
+  "window_samples": 200,
+  "lock_samples": 400,
+  "unlock_samples": 100,
+  "emf_at_3000rpm_V": 8.8857658763167322
+}

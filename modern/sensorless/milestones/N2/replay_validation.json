@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "node": "N2",
+  "original_folder": "D:/simulink/dev/modern/sensorless/runs/N2_20261016_152554_170_631b43d5-4719-46c5-b9de-1451ac6d1110",
+  "replay_folder": "D:/simulink/dev/modern/sensorless/runs/N2_20261016_152804_679_f5ee835c-7135-4728-b908-ac286082afa6",
+  "comparison_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N2_archive_verification_20261016_154421_862b8af8-6b1d-4fa0-961c-6cb04e3bc550",
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "process_policy": "two separate complete five-case MATLAB batch simulations; archived data compared in a third process",
+  "earlier_run_original_status": "failed",
+  "earlier_error": "在不同结构体之间进行下标赋值。",
+  "original_failure_record_preserved": true,
+  "production_sources_identical": true,
+  "only_common_source_change": "analyse_sensorless_n2.m",
+  "analysis_change": "initialize empty report struct before append; no numerical comparison changed",
+  "added_nonexecuted_package_helper": "archive_sensorless_n2.m",
+  "driver_sha256": "0ed571a788734d6cafad553ba3782d9a7d45ad0922d65ba54d53013590c5a592",
+  "cases": [
+    {
+      "case_id": "reference_absent",
+      "logs": 52,
+      "numeric_elements": 6.840207E+6,
+      "identical": true,
+      "failures": []
+    },
+    {
+      "case_id": "reference_disabled",
+      "logs": 80,
+      "numeric_elements": 8.266283E+6,
+      "identical": true,
+      "failures": []
+    },
+    {
+      "case_id": "reference_enabled",
+      "logs": 80,
+      "numeric_elements": 8.266283E+6,
+      "identical": true,
+      "failures": []
+    },
+    {
+      "case_id": "events_absent",
+      "logs": 52,
+      "numeric_elements": 5.084465E+6,
+      "identical": true,
+      "failures": []
+    },
+    {
+      "case_id": "events_enabled",
+      "logs": 80,
+      "numeric_elements": 7.177078E+6,
+      "identical": true,
+      "failures": []
+    }
+  ],
+  "analysis_identical": true,
+  "all_passed": true
+}

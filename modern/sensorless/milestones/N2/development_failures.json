@@ -1,0 +1,273 @@
+{
+  "schema": 1,
+  "node": "N2",
+  "formal_failures": [
+    {
+      "folder": "runs/N2_20261016_152055_014_65dc527d-8d01-4f12-aeed-55ffb7831700",
+      "record_sha256": "1f0aa6efa701de8e3ee5ce803a6871aa160252433c69ac30d093c727b0153fdd",
+      "error": {
+        "exit_code": "0xc000001d",
+        "message": "MATLAB native Illegal instruction; no MATLAB exception captured",
+        "last_completed_case": "reference_absent",
+        "last_console_phase": "N2_SIM_DONE reference_absent",
+        "source": "launcher output, session 4501"
+      },
+      "source_snapshot_retained": true,
+      "raw_files": [
+        {
+          "path": "reference_absent.mat",
+          "sha256": "25dfbf4d44216c3deba7f6bd135e92da01edc4368d77bc2e8299d50d5778bd9b"
+        }
+      ]
+    },
+    {
+      "folder": "runs/N2_20261016_152440_709_48c9cd07-ceee-48f6-a7b0-b63e138d86dc",
+      "record_sha256": "c475e26c7290eb69314c8559b60505ca0808125192412c71e88e99786b6295ff",
+      "error": "Observer removal did not restore original state.",
+      "source_snapshot_retained": true,
+      "raw_files": [
+        {
+          "path": "reference_absent.mat",
+          "sha256": "54424b386fee3fb410404c3f457636f392a3bc951c0282c320fa0daf4620fb6c"
+        }
+      ]
+    },
+    {
+      "folder": "runs/N2_20261016_152554_170_631b43d5-4719-46c5-b9de-1451ac6d1110",
+      "record_sha256": "8fd88343a5099edc46c63aa3fa190f8f3ffcee7b778a2307053ac363d6407c69",
+      "error": "在不同结构体之间进行下标赋值。",
+      "source_snapshot_retained": true,
+      "raw_files": [
+        {
+          "path": "events_absent.mat",
+          "sha256": "6252339f806dd0ac536f2d1f21fe9f4080797fb0acb670b463af024bc817b868"
+        },
+        {
+          "path": "events_absent_restoration.mat",
+          "sha256": "0631b91d04c7ef901312ecc1b35cf71921182ad3d956ed88de635277c82e7a9a"
+        },
+        {
+          "path": "events_enabled.mat",
+          "sha256": "b1de24da6d866e78832b653c040cc2bfdfb32bd88d1d5bb25b2bc20a03827c50"
+        },
+        {
+          "path": "events_enabled_restoration.mat",
+          "sha256": "d3ea93632dccbb4c3b99b6c99f46285d446c7a93fdeb1ef65e7b849dec6aad10"
+        },
+        {
+          "path": "reference_absent.mat",
+          "sha256": "2c80c47f6b96656bb1c3867c74f7afd2f35a1ac353bfeb90fbb7295312510602"
+        },
+        {
+          "path": "reference_absent_restoration.mat",
+          "sha256": "298a2af62f5dc1a35651a22f5751b2e4f44562942586837b20f9bdc5c142a157"
+        },
+        {
+          "path": "reference_disabled.mat",
+          "sha256": "91ab75dae827a9d95d064305882fabb10e1b340c7ad1c193b4d1ca7f536dd3f7"
+        },
+        {
+          "path": "reference_disabled_restoration.mat",
+          "sha256": "b662db000a31ee9b251622dc0ed81b6d1964f101a7e8418ba006cb3ee1fd1c86"
+        },
+        {
+          "path": "reference_enabled.mat",
+          "sha256": "8b56661885b61ede346194ae000c06f88c87e78bfa627353e122027d0693b23c"
+        },
+        {
+          "path": "reference_enabled_restoration.mat",
+          "sha256": "9244e92cb9930c94b863636f89ce63a8bc23c66184bec754f5f30d113351da60"
+        }
+      ]
+    },
+    {
+      "folder": "runs/N2_20261016_152952_133_2e88effb-116c-4df2-827f-a7582b6ee831",
+      "record_sha256": "ccf89f7eeb930edda640f904d6040224955ed66f7bb200814ce0c1b59c2c33f4",
+      "error": {
+        "exit_code": "0xc0000005",
+        "message": "MATLAB native Access violation during multi-case replay",
+        "last_console_phase": "N2_SIM_BEGIN events_absent",
+        "source": "launcher output session 98777; cases 1-3 archived"
+      },
+      "source_snapshot_retained": true,
+      "raw_files": [
+        {
+          "path": "reference_absent.mat",
+          "sha256": "bfb8303ef08b571729679ff66f9cc3d0e2d5d78f3e277f47df465c0e9fcffe42"
+        },
+        {
+          "path": "reference_absent_restoration.mat",
+          "sha256": "664158745606462d79aefc4004fbe8fb1c02b5619801eae9eb57c59aa7ad56ef"
+        },
+        {
+          "path": "reference_disabled.mat",
+          "sha256": "fc1370e21179f07fef11f9593669ebb47ce46bca625d49e3d264ccf7fb63c75c"
+        },
+        {
+          "path": "reference_disabled_restoration.mat",
+          "sha256": "032d204af0c5eda867f3c3ed5bab7414174b20d765eff1fb7184301aa1222f2f"
+        },
+        {
+          "path": "reference_enabled.mat",
+          "sha256": "ca3551c6bc69b5de0cd3c7e06128739f986487749ec17e9266b0aa75b5668354"
+        },
+        {
+          "path": "reference_enabled_restoration.mat",
+          "sha256": "b5a4fb7c15927d0815f990bc10721b74187f8167f9f5ddbf396e7fa5cca26f58"
+        }
+      ]
+    },
+    {
+      "kind": "standalone plot export",
+      "exit_code": "0xc0000005",
+      "log_path": ".build/n2_render_console.log",
+      "log_sha256": "ffd04613cfcb49dc6ff81daa46445be17204a90b94fe35c4399bd3975a9486ca",
+      "message": "MATLAB Access violation during exportgraphics; numerical acceptance run remains intact",
+      "crash_dump": "C:/Users/lenovo/AppData/Local/Temp/matlab_crash_dump.47676-1"
+    }
+  ],
+  "prototype_log_fingerprints": [
+    {
+      "path": "n2_compile.log",
+      "sha256": "1feb72ffc0c603d6d04da5dfa4a06a0f75ee0966442ccb47af3dcc6ddb3e838b"
+    },
+    {
+      "path": "n2_compile_2.log",
+      "sha256": "ee09de85c9b1176d0ddddcd5e5bda9099653eaf8a323dcbd023e32aea2306f13"
+    },
+    {
+      "path": "n2_compile_3.log",
+      "sha256": "5f724d2f058ed1e92c8a1a67660f3fdb4dd96e437e39314335c7984d109d7bcd"
+    },
+    {
+      "path": "n2_compile_4.log",
+      "sha256": "ffe1a5a9ad94da14e42ee297f41955772f148b2f9f1dc5253ff4fd8ee0ea4b41"
+    },
+    {
+      "path": "n2_compile_5.log",
+      "sha256": "50f1dad5e02d740ef02d6030af243f86e7ac89a315a6962ff2e7811444901ccb"
+    },
+    {
+      "path": "n2_compile_6.log",
+      "sha256": "1e520def41e13eaa1732bbf5a4540868b5db5b8594566c99e64a2985272697f6"
+    },
+    {
+      "path": "n2_diagnostics.log",
+      "sha256": "f28cccca0b6ce71a652bfa9d0df14a407b67ba1f45828590d747b15e0537d4de"
+    },
+    {
+      "path": "n2_full_diagnostics.log",
+      "sha256": "d658b2c0b0209098a0c9f51ce74aab2d55a94ac7dbe93b5bd082405588680d61"
+    },
+    {
+      "path": "n2_voltage_probe.log",
+      "sha256": "3ec64f18ad48692c35b908d961384228a1b1733d36117bb20c7bb323dca68ebd"
+    },
+    {
+      "path": "n2_voltage_probe_2.log",
+      "sha256": "986b4b30628a9c6740c78aa638264e65bf84af6cdfafb876693aaa21adc28dea"
+    },
+    {
+      "path": "n2_voltage_probe_3.log",
+      "sha256": "611e945aa924ac21ec0b98914c6f199f7ba0f0363b8752a55fd6ec7d6528242a"
+    }
+  ],
+  "prototype_fixes": [
+    "use native existing Scope template",
+    "preserve original compiled port dimensions",
+    "ASCII generated assertion text",
+    "use applied threshold source rather than request Goto"
+  ],
+  "native_crash_root_cause": "unconfirmed",
+  "acceptance_thresholds_changed": false,
+  "failure_packages_deleted": false,
+  "failed_isolated_launches": [
+    {
+      "folder": "runs/N2_isolated_20261016_153345_e3258ac1-149b-466e-9f7a-c6236ebdfeb8",
+      "failure_record_sha256": "219ab7d279b5acb4c25aacd504483a049000a473bf2e5b4b2fbfafcbf39c6350",
+      "status": "failed",
+      "failed_case_index": 5,
+      "exit_code": "0xc0000005",
+      "cache_policy": "shared cache, separate processes",
+      "logs": [
+        {
+          "path": "case_1.log",
+          "sha256": "28d8c7556275a3b0b40d8a8d5937e7973f111af693b6829f120e098485744712"
+        },
+        {
+          "path": "case_2.log",
+          "sha256": "ecee374ac4908e9ac1d54d23fccd4cec3be2c15c5f149291493b89d961babd78"
+        },
+        {
+          "path": "case_3.log",
+          "sha256": "1d5d04fcd0b313815f3c2f7602891b37c32f8052fc31e6d6476e6a1ad307c787"
+        },
+        {
+          "path": "case_4.log",
+          "sha256": "7cd0df5602657df241cd3ef2a9277a3559dba1bb714738e9943a430b629161ac"
+        },
+        {
+          "path": "case_5.log",
+          "sha256": "527bac9105b1169aa104d8fa75fa52c58d12d8323e4d8f5cdd2702429d869497"
+        },
+        {
+          "path": "events_absent_diagnostics.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "events_enabled_diagnostics.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "reference_absent_diagnostics.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "reference_disabled_diagnostics.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "reference_enabled_diagnostics.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "root_cause": "unconfirmed"
+    },
+    {
+      "folder": "runs/N2_isolated_20261016_153749_06f60210-b8ab-4cd9-ad16-13aaa649b129",
+      "failure_record_sha256": "819469d951a8165caaa110da9fd3be8cdf4581184dc98243d1f7cbee91bd4abf",
+      "status": "failed",
+      "failed_case_index": 3,
+      "exit_code": "0xc0000005",
+      "cache_policy": "separate cache and process per case",
+      "logs": [
+        {
+          "path": "case_1.log",
+          "sha256": "9ff685c920949e5394760c319a449ff48dd3e95074eeebb4d67822cfdee42549"
+        },
+        {
+          "path": "case_2.log",
+          "sha256": "923b85ee65095a29a5bd48c755d9b1054b1c3d3d4821b26c693215a649471207"
+        },
+        {
+          "path": "case_3.log",
+          "sha256": "f27a94d6f4c1f0b1663b9a06d0bb7a76bbf3594dc53a5e05a2d20c6b437178d9"
+        },
+        {
+          "path": "reference_absent_diagnostics.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "reference_disabled_diagnostics.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "reference_enabled_diagnostics.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "root_cause": "unconfirmed"
+    }
+  ],
+  "resolution_scope": "Numerical reproducibility established from two complete batch data sets; native runtime stability remains unresolved. Earlier failed record was not reclassified."
+}

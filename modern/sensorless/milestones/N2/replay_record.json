@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "node": "N2",
+  "kind": "verification of preserved cross-process archives",
+  "status": "passed",
+  "all_passed": true,
+  "source_records": [
+    "D:\\simulink\\dev\\modern\\sensorless\\runs\\N2_20261016_152554_170_631b43d5-4719-46c5-b9de-1451ac6d1110\\record.json",
+    "D:\\simulink\\dev\\modern\\sensorless\\runs\\N2_20261016_152804_679_f5ee835c-7135-4728-b908-ac286082afa6\\record.json"
+  ],
+  "source_record_sha256": [
+    "8fd88343a5099edc46c63aa3fa190f8f3ffcee7b778a2307053ac363d6407c69",
+    "0bec1b74748d648d5af1dc6b10a1f944e1c62e51cae22313753bc0542953c067"
+  ],
+  "earlier_status_is_still_failed": true,
+  "driver_sha256": "0ed571a788734d6cafad553ba3782d9a7d45ad0922d65ba54d53013590c5a592"
+}

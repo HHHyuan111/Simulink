@@ -1,0 +1,26 @@
+{
+  "source_folder": "D:/simulink/dev/modern/sensorless/runs/N2_20261016_152804_679_f5ee835c-7135-4728-b908-ac286082afa6",
+  "sources": [
+    {
+      "case_id": "reference_disabled",
+      "raw_sha256": "4551d832c55688de98f950b442802dca6d360e0ba3bfdf84497eb4c5d5a51eb3",
+      "csv_sha256": "ad775bc051bc99bb41178ac627bd1d49c8df33149e53050ff478e89cb71e423d"
+    },
+    {
+      "case_id": "reference_enabled",
+      "raw_sha256": "fc4f2ec801c3a9b4c0fbdf3fc0936bec3ed9b5a89ed6852b16546b41c79b5ab1",
+      "csv_sha256": "efc603c0a1dae27c4418de2f303b5284755fbef28d59d06578f82bc197391f07"
+    },
+    {
+      "case_id": "events_enabled",
+      "raw_sha256": "1b79eef098800938156a26e41e59ebe524fe94ed0a9c1a1a7d0369120a11c013",
+      "csv_sha256": "467f5a5ab8e078468259211256ac7023cf5311344aeccae29ebd8c46d16d0f63"
+    }
+  ],
+  "exporter_sha256": "b40203c25f997224097aa649f747a188fedb34b2183b8732c7f0d574ba6c86e2",
+  "data_modified": false,
+  "decimation": false,
+  "csv_purpose": "plotting only; raw MAT remains acceptance authority",
+  "renderer_sha256": "bfeaea0c8cb3e71b5052ee07d7e97b058008b28bd22e92573bd93c095b267927",
+  "renderer": "matplotlib 3.11.2, numpy 2.5.4"
+}

@@ -1,0 +1,36 @@
+{
+  "original_blocks_preserved_while_installed": true,
+  "original_regions_preserved": true,
+  "original_algorithms_preserved": true,
+  "original_block_count": 729,
+  "new_block_count": 368,
+  "only_one_new_root_block": true,
+  "goto_count": 35,
+  "all_tags_scoped": true,
+  "tags_unique": true,
+  "truth_imports_only_evaluation": true,
+  "scopes": [
+    {
+      "path": "PMSM_FOC_R2026a/无感观测/观测/角度与速度",
+      "layout": [
+        2,
+        2
+      ],
+      "inputs": 4,
+      "frame_based": false,
+      "data_logging": false
+    },
+    {
+      "path": "PMSM_FOC_R2026a/无感观测/观测/观测器内部",
+      "layout": [
+        3,
+        2
+      ],
+      "inputs": 6,
+      "frame_based": false,
+      "data_logging": false
+    }
+  ],
+  "scope_configuration_passed": true,
+  "passed": true
+}
