@@ -1,0 +1,29 @@
+{
+  "node": "N3R0",
+  "first_folder": "D:/simulink/dev/modern/sensorless/runs/N3R0_pipeline_20261016_221816_29bc5655-ef9d-4b19-a5dc-8106271f4db9/first_attempt_1",
+  "second_folder": "D:/simulink/dev/modern/sensorless/runs/N3R0_pipeline_20261016_221816_29bc5655-ef9d-4b19-a5dc-8106271f4db9/replay_attempt_1",
+  "raw_sha256_first": "68d207e3593152e220c802e80d373c0ff8fb9f96fd87a004fd7e8c85dd596823",
+  "raw_sha256_second": "e6a86e2baf6441659a977cd24e0a22c9a5fd273b0f10a5c7d5e10ad7c7af0671",
+  "science_decimation": false,
+  "csv_sources": [
+    {
+      "path": "bridge_cases.csv",
+      "sha256": "f23ba91c1e53f4a3d9faae6bfee130c0004c0ab66cc5e8479f8f97581834eecd"
+    },
+    {
+      "path": "deadtime_edges.csv",
+      "sha256": "ff87188e007f535c795caeb8f7b2624aefc738de71089aaf476db8d834c246a0"
+    },
+    {
+      "path": "event_schedule.csv",
+      "sha256": "cba4c9a9a835bc14907cce5775ed96702a34a10916ba10713379a2c8111fea9d"
+    },
+    {
+      "path": "publication_cases.csv",
+      "sha256": "238818145ab78a624faf23e887ce9f4689b79e65234592c1b9ccb25befe29247"
+    }
+  ],
+  "exporter_sha256": "7952e241cad86b86e60d4c3b019b63693b13bafb5a900baa1c51fc29d07588b8",
+  "renderer_sha256": "e06a9766cedf5f89ae48d78718ba7486490bdef2f36212bbe2cfe4b1030237a0",
+  "renderer": "matplotlib 3.11.2, numpy 2.5.4"
+}

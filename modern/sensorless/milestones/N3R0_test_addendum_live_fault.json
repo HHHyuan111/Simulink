@@ -1,0 +1,10 @@
+{
+  "schema":1,"node":"N3R0","revision":"live_fault_guard_before_integration",
+  "created_before_revised_source_execution":true,
+  "discovery":"Post-test interface review found that packet-carried validity alone cannot represent an ADC/deadline fault that is already known while the next estimator packet is still computing.",
+  "change":"Add independent live_input_valid and live_timing_valid inputs. They revoke control permission immediately at the supervisor call even if a previously valid packet is still within its age budget.",
+  "original_evidence":"Initial 18 publication fixtures and both passed raw archives retained unchanged; no retroactive pass or failure relabeling.",
+  "publication_cases":["live_adc_fault_while_packet_pending","live_deadline_fault_without_packet","live_both_faults"],
+  "expected_reason_masks":[2,8,10],
+  "unchanged":"original 18 fixtures, all numeric performance thresholds, original circuit/deadtime/schedule tests and historical N3 failure policy"
+}

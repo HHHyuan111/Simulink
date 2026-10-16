@@ -1,0 +1,65 @@
+{
+  "schema": 2,
+  "id": "sensorless_nonideal_v2",
+  "authorization": "2026-10-16: user requires implementation under nonideal conditions and selects engineering assumptions pending measurements",
+  "supersedes_v1": false,
+  "historical_N3_status": "incomplete_replay_not_accepted; detailed_bridge_0us two failed native attempts retained; no blind third retry",
+  "scope": "SPMSM sensorless observer adaptation under declared nonideal inputs; no feedback takeover or sensorless zero-speed startup",
+  "evidence_level": "engineering stress model, not board calibration or measured WCET",
+  "stages": [
+    {"id":"N3R0","deliverable":"frozen assumptions and tests; causal bridge-voltage and event/publication core; independent component oracle and replay","gate":"stop for user review; not integrated performance acceptance"},
+    {"id":"N3R1","deliverable":"local removable integration, measurement calibration/time alignment, signal-chain phase accounting, fast fault permission and explicit logs","gate":"stop for user review"},
+    {"id":"N3R2","deliverable":"single-factor diagnosis, combined nonideal performance, deadline/ADC/low-EMF fault behavior","gate":"stop for user review"},
+    {"id":"N3R3","deliverable":"freeze candidate; complete independent replay and same-configuration original-model regression","gate":"stop for user review; any incomplete case means not passed"}
+  ],
+  "engineering_profile": {
+    "clock": {"h_s":6.25e-8,"period_s":0.00005,"speed_period_s":0.0001,"adc_trigger_s":0.000024375,"adc_aperture_s":0.0000011875,"adc_rank_s":0.0000015,"adc_sync_s":0,"update_mode":0},
+    "execution": {"observer_s":0.000003,"foc_s":0.000005,"guard_s":0.000002,"normal_release_jitter_s_max":0.000001,"maximum_state_age_s":0.00006,"maximum_apply_prediction_s":0.000075,"source":"unmeasured allocations: observer then FOC; guard is reserved slack, not additional execution"},
+    "plant_injection": {"bus_V":24,"deadtime_s":0.0000005,"Ron_ohm":0.01,"Vf_V":0.7,"zero_current_band_A":0.01,"gain_ABC":[1.01,0.99,1],"bias_ABC_A":[0.05,-0.03,0],"noise_rms_A":0.02,"noise_seed":20261016,"adc_bits":12,"adc_span_each_side_A":20,"analog_filter_hz":5000,"digital_filter_hz":2000},
+    "observer_estimates": {"deadtime_s":0.0000004375,"Ron_ohm":0.012,"Vf_V":0.6,"zero_current_band_A":0.05,"zero_sequence_max_A":0.05,"gain_ABC":[1.008,0.994,1.002],"bias_ABC_A":[0.04,-0.02,0.005],"analog_filter_hz":4500,"digital_filter_hz":2000,"pole_pairs":5,"omega_limit_rad_s":2000},
+    "separation": "Plant parameters and observer estimates are independent fields. No truth angle, speed, motor state or true terminal voltage enters estimation. No perfect inverse of ADC clipping or lost samples."
+  },
+  "time_semantics": {
+    "reference_time":"JEOS; three aperture times remain distinct; alignment must be causal and implemented in N3R1",
+    "adc_aperture_end_ABC_us":[28.5625,27.0625,25.5625],
+    "jeos_us":28.875,
+    "observer_available_us_nominal":31.875,
+    "ccr_write_us_nominal":36.875,
+    "pwm_apply_us_nominal":50,
+    "UEV_write_tie":"UEV wins; a coincident new write waits for the next allowed UEV",
+    "durations":"ceil to native ticks, never shorten programmed deadtime/execution; recorded effective values",
+    "guard":"write strictly before intended UEV minus guard; equality fails admission",
+    "angle_outputs":"sample-reference angle, publication/query-time angle, and PWM-apply angle are separate; no one extra omega*Ts correction for all paths",
+    "phase_policy":"causal estimated frequency and declared filter models only; no truth fitting; observer filter and measurement-chain delay counted separately once"
+  },
+  "performance_requirements": {
+    "normal_speed_abs_rpm":[1000,3000],"steady_duration_s":0.8,"steady_window_s":[0.5,0.8],"minimum_electrical_cycles":20,
+    "plant_mean_target_relative_max":0.01,"plant_speed_slope_abs_max_rpm_s":50,
+    "angle_rms_max_electrical_deg":3,"angle_abs_max_electrical_deg":8,
+    "speed_mean_error_relative_max":0.01,"speed_error_rms_relative_max":0.02,"valid_fraction_min":0.99,
+    "include_invalid_samples":true,"dynamic_recovery_deadline_s":0.15,"dynamic_hold_s":0.02,"dynamic_speed_relative_max":0.03,
+    "false_valid_longest_s_max_normal_cases":0.002,
+    "false_valid_target_basis":"new engineering acceptance target, not measured plant limit; failure stays failure and cannot be relaxed after observing results",
+    "hard_fault_control_permission":"ADC invalid/rail, failed timing admission, inconsistent timestamp/sequence, or stale packet revokes permission at the first supervisor call; raw values may remain diagnostic only",
+    "low_speed_200rpm_and_stop":"not an accuracy target; deny control permission, report raw values and loss/recovery; separate startup/low-speed method required",
+    "saturation_and_bus_profile":"no arbitrary magnetic curve or calibrated bus-error claim; absent measurements remain explicit unvalidated items"
+  },
+  "integrated_matrix": [
+    {"id":"v2_combined_1000","kind":"normal_precision","speed_rpm":1000},
+    {"id":"v2_combined_2000","kind":"normal_precision","speed_rpm":2000},
+    {"id":"v2_combined_3000","kind":"normal_precision","speed_rpm":3000},
+    {"id":"v2_combined_reverse_1000","kind":"normal_precision","speed_rpm":-1000},
+    {"id":"v2_combined_reverse_3000","kind":"normal_precision","speed_rpm":-3000},
+    {"id":"v2_combined_dynamic","kind":"normal_dynamic","duration_s":0.9,"speed_initial_rpm":2000,"events":[{"time_s":0.3,"speed_rpm":3000},{"time_s":0.6,"load_Nm":0.25}]},
+    {"id":"v2_combined_hot_R1p2_L0p8","kind":"normal_precision","speed_rpm":3000,"plant_R_multiplier":1.2,"plant_L_multiplier":0.8},
+    {"id":"v2_combined_cold_R0p8_L1p2","kind":"normal_precision","speed_rpm":3000,"plant_R_multiplier":0.8,"plant_L_multiplier":1.2},
+    {"id":"v2_deadtime_2us","kind":"boundary","speed_rpm":3000,"plant_deadtime_s":0.000002},
+    {"id":"v2_adc_clipping","kind":"hard_fault","speed_rpm":3000,"adc_span_each_side_A":2},
+    {"id":"v2_deadline_and_jitter","kind":"hard_fault","speed_rpm":3000,"interference_s":[0,0.00001,0.000013125,0.00003]},
+    {"id":"v2_low_speed_stop_missing_reset","kind":"boundary_state","requirements":"separate 200rpm/stop, missing-five and one-reset traces; do not merge events to hide a failure"}
+  ],
+  "replay_and_regression":"every final integrated trace independently rerun in a fresh process; complete raw Time/Data isequaln; original52 compared with observer-absent same plant/measurement/timing configuration; v1 evidence remains separate",
+  "failure_policy":"preserve attempts and source; at most one retry per new-version case for explicit native 0xc0000005/0xc000001d; never retry numerical failures into a pass",
+  "model_preservation":"original SLX, motor/PI reference and four v1 contracts remain byte-identical; injection/adapters live in dev sensorless and are removable; user-open GUI session is not modified",
+  "unvalidated_hardware_items":["measured WCET/interrupt scheduling","measured ADC/frontend transfer and noise","actual deadtime/device variation","flux/inductance versus current and temperature","fixed-point/target floating precision","real bus ripple and bus measurement error"]
+}

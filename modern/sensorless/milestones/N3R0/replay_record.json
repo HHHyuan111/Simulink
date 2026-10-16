@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "node": "N3R0",
+  "folder": "D:/simulink/dev/modern/sensorless/runs/N3R0_pipeline_20261016_221816_29bc5655-ef9d-4b19-a5dc-8106271f4db9/replay_attempt_1",
+  "status": "passed",
+  "phase": "completed",
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "process_id": 59496,
+  "model_loaded": false,
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "source_files": [
+    {
+      "path": "sensorless_bridge_estimate.m",
+      "sha256": "f20d998c94a6195c08e3207494aff90e26242c3bc9e518569dd6836add53eaf3"
+    },
+    {
+      "path": "sensorless_deadtime_estimate_step.m",
+      "sha256": "8956b849540d67ae7709b1dfdebc1dc94f83089a1c5c5bef8da480e2b02fba59"
+    },
+    {
+      "path": "sensorless_event_plan.m",
+      "sha256": "af7ecc4ade15b912dd0cb84774708ff890dc30b638d86f22fd3370201c88bd0f"
+    },
+    {
+      "path": "sensorless_publish_step.m",
+      "sha256": "c67145ec5ff84b2ef54d5b1dc1cfb7a849ed50680a7e9d4e23acc3e6308c46a3"
+    },
+    {
+      "path": "sensorless_robust_config.m",
+      "sha256": "403fab2c002e0c1f6ab38fa880daa1ab81a9ca8a18bcb3434600c105fca12799"
+    },
+    {
+      "path": "sensorless_robust_r0_tests.m",
+      "sha256": "416a7caa938a2d7b8876ed81292ca38dc67fca86bd725fb99ac56b4db6575005"
+    },
+    {
+      "path": "sensorless_robust_state.m",
+      "sha256": "01a38ecd05d190c2d9306ed7d07310f18a41cfff0a4f1852506d5082e565276e"
+    },
+    {
+      "path": "validate_sensorless_robust_r0.m",
+      "sha256": "5347e958576afbdaa3289773a9330777bd28330a8a201a233c0bb7280c2f0570"
+    },
+    {
+      "path": "verify_sensorless_robust_r0.m",
+      "sha256": "277fcb63cfb2c0a78a53f42e8a654df5fceeac9fb7a84e2bf52e40e5d8d546b1"
+    }
+  ],
+  "contracts": [
+    {
+      "path": "contracts/nonideal_v2.json",
+      "sha256": "39e098c166484e029936585cff24ed90d5dddcb60deae30c325b01a79d9930ab"
+    },
+    {
+      "path": "milestones/N3R0_test_plan.json",
+      "sha256": "83f87d462e9dd0bf56908a60cc04b23eca0416a89ef8a3a834b843e5d0d10ba9"
+    },
+    {
+      "path": "milestones/N3R0_test_addendum.json",
+      "sha256": "b02ab3ab4c336239e0f2d2bdb3eb4f339cbbf3139036be56d687d2cffe797482"
+    },
+    {
+      "path": "milestones/N3R0_test_addendum_live_fault.json",
+      "sha256": "dc4866126416da0e8d5d0091eeffe957f3c26883751c669bb2e986d794450935"
+    }
+  ],
+  "raw_sha256": "e6a86e2baf6441659a977cd24e0a22c9a5fd273b0f10a5c7d5e10ad7c7af0671",
+  "raw_numeric_elements": 252407,
+  "all_passed": true
+}

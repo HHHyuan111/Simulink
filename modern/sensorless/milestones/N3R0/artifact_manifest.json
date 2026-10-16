@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "node": "N3R0",
+  "files": [
+    {
+      "path": "bridge_cases.csv",
+      "sha256": "f23ba91c1e53f4a3d9faae6bfee130c0004c0ab66cc5e8479f8f97581834eecd"
+    },
+    {
+      "path": "campaign.json",
+      "sha256": "f955281509f3b97385dfc9a860cfdf33bc68f34402456ee4e241928f7ddb2285"
+    },
+    {
+      "path": "component_metrics.json",
+      "sha256": "a2b6135e505c13b18c4ddc1a1674e94a268445f4ce8a594c186a6a9d0b2fb411"
+    },
+    {
+      "path": "deadtime_edges.csv",
+      "sha256": "ff87188e007f535c795caeb8f7b2624aefc738de71089aaf476db8d834c246a0"
+    },
+    {
+      "path": "deadtime_edges.png",
+      "sha256": "f36809aa6bb48fd415608f6d357c2f7043e6f029de00f3d8a27c3852faa921fa"
+    },
+    {
+      "path": "effective_parameters.json",
+      "sha256": "2c4079f7f54b8c1edaeb15a7b75658c07d7d743858e461104596c7a0867bfc11"
+    },
+    {
+      "path": "event_schedule.csv",
+      "sha256": "cba4c9a9a835bc14907cce5775ed96702a34a10916ba10713379a2c8111fea9d"
+    },
+    {
+      "path": "event_schedule.png",
+      "sha256": "d90c7387706dbcf156f22a33eed4058cbdf0923cfce78d1918a81b44047033ef"
+    },
+    {
+      "path": "execution_history.json",
+      "sha256": "976be85e423bf9c4a1b1d58a3017b36c568f6e80989aa57a8ea205eea1c2f85a"
+    },
+    {
+      "path": "figure_provenance.json",
+      "sha256": "f00044036372866f8e23700204ac0b1d3ebb93cfab41f0058f464d1297579240"
+    },
+    {
+      "path": "first_launcher.json",
+      "sha256": "52a724e3b122861b2dd758ecb9cd175e81bd2713095647441ba518ddb075b7b6"
+    },
+    {
+      "path": "first_record.json",
+      "sha256": "9aa1422639b154be0973ef6aa72bf8579cf131155b5b156d8474f8259ae23b29"
+    },
+    {
+      "path": "preservation.json",
+      "sha256": "2933ba6695bb01a1b33d64286ccc49b21c5066e81bbb4b351fd3647c8f60fea3"
+    },
+    {
+      "path": "publication_cases.csv",
+      "sha256": "238818145ab78a624faf23e887ce9f4689b79e65234592c1b9ccb25befe29247"
+    },
+    {
+      "path": "replay_launcher.json",
+      "sha256": "b241c8923c89f7ee99114460d99a6aefb29febee805e21f7919118cb3d47f1ed"
+    },
+    {
+      "path": "replay_record.json",
+      "sha256": "e52cd36a8257d0ba7e11965b05e5e6e8791a2fae58940e193ad6054cb85e7af9"
+    },
+    {
+      "path": "replay_validation.json",
+      "sha256": "edde2c75ca288d376f66e647c4c597313a77ebc015c89414f557d88d755c17db"
+    },
+    {
+      "path": "source_consistency.json",
+      "sha256": "cb7c0b3bc3c5c59b81cc577da47861867110eb2c9d3fe7746d39e058e5a27f98"
+    },
+    {
+      "path": "summary.json",
+      "sha256": "583891fc3583fd0917cc2f4524027d720414d8cf9d9d5af8d88394a155beb2af"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "node": "N3R0",
+  "first_folder": "D:/simulink/dev/modern/sensorless/runs/N3R0_pipeline_20261016_221816_29bc5655-ef9d-4b19-a5dc-8106271f4db9/first_attempt_1",
+  "second_folder": "D:/simulink/dev/modern/sensorless/runs/N3R0_pipeline_20261016_221816_29bc5655-ef9d-4b19-a5dc-8106271f4db9/replay_attempt_1",
+  "raw_numeric_elements": 252407,
+  "complete_raw_identical": true,
+  "metrics_identical": true,
+  "model_loaded": false,
+  "verification_driver_sha256": "277fcb63cfb2c0a78a53f42e8a654df5fceeac9fb7a84e2bf52e40e5d8d546b1",
+  "all_passed": true
+}

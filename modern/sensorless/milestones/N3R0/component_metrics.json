@@ -1,0 +1,38 @@
+{
+  "bridge": {
+    "cases": 4536,
+    "maximum_voltage_error_V": 7.1054273576010019E-15,
+    "excess_zero_sequence_untrusted": true,
+    "all_passed": true
+  },
+  "deadtime": {
+    "profiles": 5,
+    "native_samples": 4005,
+    "identical_repeat_ticks": 405,
+    "all_passed": true
+  },
+  "schedule": {
+    "frozen_grid_cases": 252,
+    "supplemental_overrun_cases": 1,
+    "total_cases": 253,
+    "nominal_physical_times_s": [
+      2.85625E-5,
+      2.7062499999999997E-5,
+      2.5562499999999998E-5,
+      2.8874999999999997E-5,
+      3.1874999999999996E-5,
+      3.6874999999999995E-5,
+      4.9999999999999996E-5
+    ],
+    "all_passed": true
+  },
+  "publication": {
+    "cases": 21,
+    "maximum_angle_error_rad": 0,
+    "all_passed": true
+  },
+  "rejected_inputs": {
+    "cases": 25,
+    "all_passed": true
+  }
+}

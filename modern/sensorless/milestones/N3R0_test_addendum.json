@@ -1,0 +1,6 @@
+{
+  "schema":1,"node":"N3R0","created_before_first_test_execution":true,
+  "reason":"The frozen schedule grid covers missed UEVs but its 30us interference does not cross the next JEOS. Add one explicit next-frame overrun probe to fulfill the already declared overrun check.",
+  "unchanged":"original 252 cases, thresholds and time windows unchanged; no execution results existed when adding this probe",
+  "supplemental_case":{"cycle":0,"release_jitter_s":0,"interference_s":0.00005,"expected_next_frame_overrun":true,"expected_timing_valid":false}
+}

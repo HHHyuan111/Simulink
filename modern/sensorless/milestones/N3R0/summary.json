@@ -1,0 +1,12 @@
+{
+  "node": "N3R0",
+  "status": "component_passed_awaiting_user_review",
+  "component_checks_passed": true,
+  "complete_replay_identical": true,
+  "raw_numeric_elements": 252407,
+  "main_model_integrated": false,
+  "nonideal_integrated_performance_passed": false,
+  "hardware_validated": false,
+  "historical_N3_all_passed": false,
+  "original_model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d"
+}

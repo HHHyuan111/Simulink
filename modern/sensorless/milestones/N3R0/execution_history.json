@@ -1,0 +1,32 @@
+{
+  "node": "N3R0",
+  "preliminary_runs": [
+    {
+      "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R0_initial_20261016_2155_attempt1",
+      "status": "passed",
+      "raw_numeric_elements": 252227,
+      "record_sha256": "26b266cd259b62b6a39bb19a02cb8a8323f696a6b5131946619bcc14b340779c",
+      "raw_sha256": "f3159aadc243bc01f23be3299db19952ff639c4f4e6ff5ca30606af16478633c",
+      "scope": "initial 18 packet-only publication fixtures; no independent live-fault inputs",
+      "source_snapshot_retained": true
+    },
+    {
+      "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R0_replay_20261016_2158_attempt1",
+      "status": "passed",
+      "raw_numeric_elements": 252227,
+      "record_sha256": "d64bb472b32996e0cb19be61c92604eb9f95fa41afca76bedc8dbe2d189173c8",
+      "raw_sha256": "9a019603e0f506cfc16bef3e410d5e5721d071a28e109aa7ab75a3ceceb44470",
+      "scope": "initial 18 packet-only publication fixtures; no independent live-fault inputs",
+      "source_snapshot_retained": true
+    }
+  ],
+  "current_campaign": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R0_pipeline_20261016_221816_29bc5655-ef9d-4b19-a5dc-8106271f4db9",
+  "current_campaign_sha256": "f955281509f3b97385dfc9a860cfdf33bc68f34402456ee4e241928f7ddb2285",
+  "revision_reason": "Post-test interface review added independent current input/timing guard and three asynchronous fault cases.",
+  "current_publication_cases": 21,
+  "current_raw_numeric_elements": 252407,
+  "current_all_jobs_first_attempt_passed": true,
+  "records_reclassified_or_deleted": false,
+  "old_N3_full_replay_passed": false,
+  "native_root_cause_resolved": false
+}

@@ -1,0 +1,12 @@
+{
+  "exit_code": 0,
+  "native_failure": false,
+  "matlab_exe": "D:\\DevTools\\MATLAB\\R2026a\\bin\\matlab.exe",
+  "startup_options": [
+    "-singleCompThread",
+    "-batch"
+  ],
+  "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R0_pipeline_20261016_221816_29bc5655-ef9d-4b19-a5dc-8106271f4db9\\replay_attempt_1_console.log",
+  "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R0_pipeline_20261016_221816_29bc5655-ef9d-4b19-a5dc-8106271f4db9\\replay_attempt_1_launcher.log",
+  "expression": "addpath('D:/simulink/dev/modern/sensorless/robust');validate_sensorless_robust_r0('D:/simulink/dev/modern/sensorless/runs/N3R0_pipeline_20261016_221816_29bc5655-ef9d-4b19-a5dc-8106271f4db9/replay_attempt_1');"
+}

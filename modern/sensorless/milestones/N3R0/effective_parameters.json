@@ -1,0 +1,22 @@
+{
+  "h_s": 6.25E-8,
+  "period_s": 5E-5,
+  "speed_period_s": 0.0001,
+  "adc_trigger_s": 2.4375E-5,
+  "adc_aperture_s": 1.1875E-6,
+  "adc_rank_s": 1.5E-6,
+  "adc_sync_s": 0,
+  "update_mode": 0,
+  "observer_exec_s": 3E-6,
+  "foc_exec_s": 5E-6,
+  "guard_s": 2E-6,
+  "maximum_state_age_s": 6E-5,
+  "maximum_apply_prediction_s": 7.5E-5,
+  "deadtime_hat_s": 4.375E-7,
+  "Ron_hat_ohm": 0.012,
+  "Vf_hat_V": 0.6,
+  "zero_current_A": 0.05,
+  "zero_sequence_max_A": 0.05,
+  "pole_pairs": 5,
+  "omega_limit_rad_s": 2000
+}

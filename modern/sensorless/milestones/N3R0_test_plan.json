@@ -1,0 +1,38 @@
+{
+  "schema":1,"node":"N3R0","frozen_before_implementation_and_execution":true,
+  "contract":"contracts/nonideal_v2.json",
+  "scope":"causal voltage estimate, event plan and permission/publication core only; no PMSM load or integrated SMO performance claim",
+  "bridge":{
+    "gate_states_each_phase":["upper_on","lower_on","both_off"],"gate_combinations":27,
+    "current_ABC_A":[[5,-2,-3],[-5,2,3],[0,0,0],[0.005,-0.002,-0.003],[-0.005,0.002,0.003],[1,-1,0],[-1,1,0]],
+    "estimated_emf_ABC_V":[[0,0,0],[2,-1,-1],[-2,1,1],[40,-20,-20]],
+    "voltage_profiles":[{"Ron_ohm":0,"Vf_V":0},{"Ron_ohm":0.012,"Vf_V":0.6}],
+    "bus_V":[12,24,30],"cases":4536,
+    "oracle":"independent enumeration of open/lower-diode/upper-diode paths, floating-star KCL and diode complementarity; no plant rotor state or DUT answer reuse",
+    "absolute_voltage_tolerance_V":1e-10,
+    "ambiguity":"any both-OFF phase inside estimated zero-current band, or excessive measured zero sequence, must mark voltage untrusted"
+  },
+  "deadtime":{
+    "h_s":6.25e-8,"ticks":[0,800],"delays_us":[0,0.4375,0.5,0.51,2],
+    "phase_A_upper_intervals_inclusive_ticks":[[10,12],[30,36],[50,57],[80,100],[200,399],[405,406],[600,799]],
+    "phase_B_C_circular_shift_ticks":[3,7],
+    "oracle":"run-length intervals computed before DUT execution; rising effective at start+ceil(deadtime/h), falling immediate; shorter pulses suppressed",
+    "check":"all6 gates, no shoot-through, native-grid alignment, repeated-tick idempotence, rejected skipped/reversed ticks"
+  },
+  "schedule":{
+    "cycles":[0,1,7],"modes":[0,1],"release_jitter_us":[0,0.5,2],
+    "interference_us":[0,10,11.125,13.0625,13.125,13.1875,30],"guard_us":[0,2],"cases":252,
+    "oracle":"explicit enumeration of timer UEV ticks; independently find first allowed UEV strictly after write and first UEV after JEOS; compare every physical time and permission",
+    "check":"ABC aperture times, JEOS, release, observer ready, FOC write, intended/actual UEV, reserved margin, equal-time priority, next-frame overrun"
+  },
+  "publication":{
+    "cases":["no_packet","normal","future_packet","observer_invalid","adc_invalid","deadline_invalid","age_equal_limit","age_one_tick_over","apply_horizon_equal","apply_horizon_one_tick_over","apply_time_in_past","backward_sequence","mutated_duplicate","identical_duplicate","new_invalid_replaces_valid","omega_over_limit","sequence_gap","explicit_state_reset"],
+    "oracle":"predeclared expected permission/fault masks; analytic constant-speed angles at three distinct timestamps; invalid control outputs zero plus false permission, raw diagnostics retained",
+    "angular_tolerance_rad":1e-12,
+    "no_truth":"packet fields are declared synthetic estimated state, not motor truth used as a correction"
+  },
+  "reject_invalid_inputs":"nonfinite/negative durations, non-grid physical timestamps, incompatible ADC slots, invalid gate combinations, negative bus/drop parameters, malformed packet sequence/time",
+  "replay":"two independent fresh MATLAB processes, same source/contract hashes and MATLAB release; all raw numeric/logical arrays and metrics isequaln; MAT container hashes only integrity",
+  "guard":"source/contract snapshots and phase record before execution; no source changes while either test executes; preserve all failures",
+  "gate":"R0 completion is component evidence only; main-model integration and v2 combined performance remain R1/R2/R3"
+}
