@@ -1,0 +1,25 @@
+function report=audit_sensorless_r2_log_coverage(folder)
+% Confirm full original52 time grids despite background logging diagnostics.
+% This checks coverage, not baseline numerical equivalence (reserved for R3).
+here=fileparts(mfilename('fullpath'));base=fileparts(fileparts(here));addpath(fullfile(fileparts(base),'teaching'));
+record=jsondecode(fileread(fullfile(folder,'record.json')));assert(strcmp(record.phase,'completed'));
+raw=fullfile(folder,'signals.mat');assert(strcmp(record.raw_sha256,teach_hash(raw)));
+reference=fullfile(base,'runs/N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803/combined_formal_attempt_1/signals.mat');
+schema=jsondecode(fileread(fullfile(base,'baseline/log_schema.json')));old=matfile(reference);current=matfile(raw);
+report=struct('kind','original52_complete_time_grid_coverage','is_baseline_regression',false,'all_passed',false,...
+ 'source_raw_sha256',record.raw_sha256,'auditor_sha256',teach_hash([mfilename('fullpath') '.m']));
+for k=1:numel(schema)
+ name=schema(k).name;a=old.(name);b=current.(name);assert(isa(a,'timeseries')&&isa(b,'timeseries'));
+ ta=a.Time(:);t=b.Time(:);assert(numel(ta)>1);period=ta(2)-ta(1);first=ta(1);
+ expected=floor((record.effective_case.duration_s-first)/period+1e-7)+1;
+ assert(numel(t)==expected&&all(isfinite(t))&&all(diff(t)>0),'Incomplete original trace: %s',name);
+ error=max(abs(t-(first+(0:expected-1)'*period)));assert(error<1e-12,'Unexpected time grid: %s',name);
+ asz=size(a.Data);bsz=size(b.Data);axis=ndims(a.Data);if a.IsTimeFirst,axis=1;end
+ asz(axis)=1;bsz(axis)=1;assert(isequaln(asz,bsz)&&a.IsTimeFirst==b.IsTimeFirst);
+ report.logs(k)=struct('name',name,'samples',numel(t),'first_s',t(1),'last_s',t(end),...
+  'sample_period_s',period,'max_time_grid_error_s',error);
+ clear a b ta t;
+end
+assert(numel(schema)==52);report.all_passed=true;teach_writejson(fullfile(folder,'log_coverage.json'),report);
+fprintf('R2_ORIGINAL52_LOG_COVERAGE_PASSED count=52\n');
+end
