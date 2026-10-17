@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "kind": "offline_core_isolation_diagnostic",
+  "registered_before_implementation": "2026-10-17; after bounded v9 diagnostic stopped, no new full-model execution version",
+  "reference_folder": "runs/N3R2_packet_phase_guard_v4_20261017_112427_9e735b46-7a5c-4647-9ded-1039e323d9ef/diagnostic_combined_3000_attempt_1",
+  "reference_raw_sha256": "6ee976231b6cd7aeb866bb5d863126b2f818b381bb1f93b01af209a447a00b4a",
+  "method": "Load only archived JEOS streams and configs. Replay unchanged pure SMO, EMF/front-phase, PLL, validity and phase-guard functions at all16000 samples. No Simulink model load/compile/step, plant simulation, production parameter or source change. Use own prior PLL output for the explicit one-sample omega delay; do not import intermediate states or truth into computation.",
+  "baseline_standard": "First require exact Time and complete numeric output equality to every archived observable core stream; also report first differing sample and max absolute differences. If exact equality fails, retain failure and diagnose representation/order before any fault mutation. No tolerance relaxation, selective window, state overwrite or gain fitting.",
+  "fault_diagnostics_after_baseline": "Using the same frozen physical inputs, invalidate exactly five samples at the parent reference interval, or apply one50us software reset at the parent reference time. Check reset states/history, no new correction on unavailable current, rejection and at least599 good opportunities before packet requalification. Report time and errors only as control-rate core diagnostic, not native permission or whole-model performance.",
+  "limits": "The recorded voltage is frozen at the healthy observer trajectory; this excludes voltage-predictor/frontend recoupling, native packet queue, PWM/FOC deadlines and real missing-frame acquisition. Do not mark missing_five/reset_one R2 cases passed from this probe. Existing long-case attempt caps and failures remain unchanged.",
+  "execution": "One fresh MATLAB process for the baseline probe; no automatic native retry. Record runtime, startup/path resolution and process status in private files, publish only bounded redacted evidence. A scripting/analysis defect may be repaired with original failed records retained; no electric-plant physics is rerun. Source-check all reused functions against the recorded source caps before and after.",
+  "gate": "R2 remains incomplete. No new nominal full-case version, final matrix, feedback takeover or hardware/WCET claim."
+}
