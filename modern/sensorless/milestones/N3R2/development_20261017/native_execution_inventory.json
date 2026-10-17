@@ -1,6 +1,6 @@
 {
   "analysis_only": true,
-  "captured_at": "2026-10-17T17:08:49.650634+08:00",
+  "captured_at": "2026-10-17T17:14:28.883927+08:00",
   "generator_sha256": "454417523d28882804c0aab8969501cdf5403d7be0ed036974438805b4252307",
   "native_root_cause_confirmed": false,
   "algorithm_verdict_from_native_exit": false,
@@ -964,6 +964,106 @@
       "original_record_sha256": "ebce48971c81deef142631c81605d608643da8ecc945f8e9d39218fc158569e6",
       "private_launcher_sha256": "8f3cfb94228eae6e0059ab3e0988b97d28cf83cde8f61911bbd25917dfa6c594",
       "redacted_frames": []
+    },
+    {
+      "campaign": "N3R2_v9_remaining_reset_one_20261017_165813_772ed45a-2996-4e71-b38b-69e18e0f4de9",
+      "version": "block_reduction_off_v9",
+      "case_id": "reset_one",
+      "attempt": "reset_one_attempt_1",
+      "exit_code": -1073741819,
+      "exit_code_hex": "0xc0000005",
+      "recognized_windows_native_exception": true,
+      "retryable_native_code": true,
+      "driver_retryable_classification": true,
+      "last_persisted_phase": "advance_same_initialized_graph",
+      "last_recorded_next_major_time_s": 0.73,
+      "completed_physics_archived": false,
+      "original_record_sha256": "a8be85b410d6b6c8658d5f1817fb727d5f8d23dbb4e3b95976ab1a938177edeb",
+      "private_launcher_sha256": "b1a373f02525973b137d218bb3e8dc2fc5100400445a4f6580cfd03b6d2f594d",
+      "redacted_frames": [
+        {
+          "module": "SimulinkBlock.dll",
+          "symbol": "SLRootBlock::getGrPrmDesc"
+        },
+        {
+          "module": "libmwsl_elem_blocks.dll",
+          "symbol": "mwboost::serialization::singleton_module::unlock"
+        },
+        {
+          "module": "libmwsl_exec_cf.dll",
+          "symbol": "sl::exec::cf::elist::ExecSystem::InitExecSystemScheme"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::list::TypedExecBlocks::mergeJacobianBlocks"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::method::ModelMethods::zeroCrossing"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::method::ModelMethods::output"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::task::Task::runModelOutput"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::task::Task::validateTask"
+        }
+      ]
+    },
+    {
+      "campaign": "N3R2_v9_remaining_reset_one_20261017_165813_772ed45a-2996-4e71-b38b-69e18e0f4de9",
+      "version": "block_reduction_off_v9",
+      "case_id": "reset_one",
+      "attempt": "reset_one_attempt_2",
+      "exit_code": -1073741819,
+      "exit_code_hex": "0xc0000005",
+      "recognized_windows_native_exception": true,
+      "retryable_native_code": true,
+      "driver_retryable_classification": true,
+      "last_persisted_phase": "advance_same_initialized_graph",
+      "last_recorded_next_major_time_s": 0.65,
+      "completed_physics_archived": false,
+      "original_record_sha256": "b4078601d5629e3159b8ed1650c7d6de9fa7baafb11451fe8388243843831cf0",
+      "private_launcher_sha256": "41e3831392b35128a8366b323e5e6736f869194a4cde667bc5376168c1910515",
+      "redacted_frames": [
+        {
+          "module": "SimulinkBlock.dll",
+          "symbol": "SLRootBlock::getGrPrmDesc"
+        },
+        {
+          "module": "libmwsl_elem_blocks.dll",
+          "symbol": "mwboost::serialization::singleton_module::unlock"
+        },
+        {
+          "module": "libmwsl_exec_cf.dll",
+          "symbol": "sl::exec::cf::elist::ExecSystem::InitExecSystemScheme"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::list::TypedExecBlocks::mergeJacobianBlocks"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::method::ModelMethods::zeroCrossing"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::method::ModelMethods::output"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::task::Task::runModelOutput"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::task::Task::validateTask"
+        }
+      ]
     }
   ]
 }

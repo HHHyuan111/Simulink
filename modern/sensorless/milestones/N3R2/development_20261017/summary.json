@@ -2,7 +2,7 @@
   "node": "N3R2",
   "all_passed": false,
   "formal_final_matrix_passed": false,
-  "captured_at": "2026-10-17T17:08:49.514742+08:00",
+  "captured_at": "2026-10-17T17:14:28.722834+08:00",
   "scope": "Development progress only. Running/failed attempts retain their original statuses; probes do not establish long-case performance.",
   "r1_frozen_files_preserved": 90,
   "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
@@ -499,7 +499,7 @@
     {
       "folder": "N3R2_v9_remaining_reset_one_20261017_165813_772ed45a-2996-4e71-b38b-69e18e0f4de9",
       "version": "block_reduction_off_v9",
-      "status": "running",
+      "status": "native_attempts_exhausted",
       "attempts": [
         {
           "folder": "reset_one_attempt_1",
@@ -509,10 +509,10 @@
           "raw_sha256": null,
           "metrics_passed": false,
           "record_status_is_last_persisted_not_process_liveness": true,
-          "execution_finalized": false,
-          "exit_code": null,
-          "exit_code_hex": null,
-          "allowed_native_retry_classification": null
+          "execution_finalized": true,
+          "exit_code": -1073741819,
+          "exit_code_hex": "0xc0000005",
+          "allowed_native_retry_classification": true
         },
         {
           "folder": "reset_one_attempt_2",
@@ -522,10 +522,10 @@
           "raw_sha256": null,
           "metrics_passed": false,
           "record_status_is_last_persisted_not_process_liveness": true,
-          "execution_finalized": false,
-          "exit_code": null,
-          "exit_code_hex": null,
-          "allowed_native_retry_classification": null
+          "execution_finalized": true,
+          "exit_code": -1073741819,
+          "exit_code_hex": "0xc0000005",
+          "allowed_native_retry_classification": true
         }
       ]
     },
@@ -989,7 +989,7 @@
     {
       "source": "runs/N3R2_v9_remaining_reset_one_20261017_165813_772ed45a-2996-4e71-b38b-69e18e0f4de9/campaign.json",
       "published": "N3R2_v9_remaining_reset_one_20261017_165813_772ed45a-2996-4e71-b38b-69e18e0f4de9/campaign.json",
-      "sha256": "b88579383ba8fb1580445c0160378a73e11a9e8e4dc1a3f0684936d2e82781f0"
+      "sha256": "2a876866e38164f5fc1af226c5c941c85b24fb8d12d51317b37396d7bb2ee0c6"
     },
     {
       "source": "runs/N3R2_v9_remaining_reset_one_20261017_165813_772ed45a-2996-4e71-b38b-69e18e0f4de9/reset_one_attempt_1/record.json",
@@ -1019,7 +1019,7 @@
     {
       "source": "runs/N3R2_v9_remaining_reset_one_20261017_165813_772ed45a-2996-4e71-b38b-69e18e0f4de9/reset_one_attempt_2/execution_progress.json",
       "published": "N3R2_v9_remaining_reset_one_20261017_165813_772ed45a-2996-4e71-b38b-69e18e0f4de9/reset_one_attempt_2/execution_progress.json",
-      "sha256": "51adf819b8eaa2d539e740f52ab53bb910c371d33398c1743c699c34bb9afea8"
+      "sha256": "1d56e9d8a9f708713d9f5dea4feb3c961ee3bd8a9701c6e169b9ea9f2bb153fe"
     },
     {
       "source": "runs/N3R2_v9_short_20261017_165230_3f10afc8-7e32-4d6c-bde0-63087e0ea06a/campaign.json",
