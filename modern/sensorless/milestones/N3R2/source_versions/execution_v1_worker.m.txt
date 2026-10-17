@@ -1,0 +1,48 @@
+function record=validate_sensorless_r2_case(id,folder)
+% First diagnostic execution uses accepted R1 numerical source unchanged.
+here=fileparts(mfilename('fullpath'));base=fileparts(fileparts(here));modern=fileparts(base);mdl='PMSM_FOC_R2026a';
+for directory={'','sensorless','sensorless/robust','sensorless/robust/integration','sensorless/robust/performance','teaching','control','timing','deadtime','framework','layout/appearance'},addpath(fullfile(modern,directory{1}));end
+assert(~bdIsLoaded(mdl));record=sensorless_r2_snapshot_sources(folder);record.case_id=id;record.numerical_version='accepted_R1_dc0ac26';
+plan=jsondecode(fileread(fullfile(base,'contracts','nonideal_r2_test_plan.json')));cases=plan.cases;if ~iscell(cases),cases=num2cell(cases);end
+i=find(cellfun(@(x)strcmp(x.id,id),cases));assert(isscalar(i));testcase=cases{i};record.effective_case=testcase;
+assert(~isfield(testcase,'plant_R_multiplier')&&~isfield(testcase,'plant_deadtime_s')&&~isfield(testcase,'schedule')&&~isfield(testcase,'missing_reference_interval_s')&&~isfield(testcase,'reset_reference_s'),...
+ 'R2 first diagnostic worker has no fault/plant-variation adapter yet.');
+Simulink.fileGenControl('set','CacheFolder',fullfile(folder,'.build','cache'),'CodeGenFolder',fullfile(folder,'.build','codegen'),'createDir',true);
+sldiagviewer.diary(fullfile(folder,'diagnostics.log'),'UTF-8');cleanup=onCleanup(@()close_private(mdl));
+try
+ phase('load');load_system(fullfile(modern,[mdl '.slx']));pmsm_reference('restore');original=teach_snapshot(mdl);fixed=pmsm_reference('capture');
+ phase('configure');backup=sensorless_v2_stimulus(mdl,testcase);
+ if isfield(testcase,'speed_rpm'),set_param([mdl '/speed_ref'],'Value',num2str(testcase.speed_rpm,17));else,error('Dynamic adapter pending.');end
+ set_param(mdl,'SimulationCommand','update');configured=teach_snapshot(mdl);ws=get_param(mdl,'ModelWorkspace');
+ record.control_sample=getVariable(ws,'timing_control_sample');record.speed_sample=getVariable(ws,'timing_speed_sample');record.configuration=teach_settings(mdl);
+ phase('install');pmsm_sensorless_v2_model('install',mdl,testcase.interference_s);
+ if testcase.speed_rpm<0,set_param([mdl '/无感观测'],'direction','-1');pmsm_sensorless_v2_init(mdl);end
+ record.logging=sensorless_r2_logging(mdl);phase('compile');set_param(mdl,'SimulationCommand','update');
+ graph=check_sensorless_v2_graph(mdl,configured);teach_writejson(fullfile(folder,'graph.json'),graph);assert(graph.passed);
+ record.config_vector=getVariable(ws,'sless_v2_cfg');record.observer_config=getVariable(ws,'sless_cfg');
+ phase('simulate');started=tic;out=sim(mdl,'StopTime',num2str(testcase.duration_s,17));record.elapsed_s=toc(started);
+ phase('archive');signals=struct;
+ for key=out.who'
+  series=out.get(key{1});if ~isa(series,'timeseries'),continue;end
+  assert(all(isfinite(series.Time),'all')&&all(isfinite(series.Data),'all'),'Nonfinite log: %s',key{1});signals.(key{1})=series;
+ end
+ save(fullfile(folder,'signals.mat'),'-struct','signals','-v7.3');record.raw_sha256=teach_hash(fullfile(folder,'signals.mat'));record.log_count=numel(fieldnames(signals));
+ phase('metrics');metrics=analyse_sensorless_r2_case(signals,testcase);teach_writejson(fullfile(folder,'metrics.json'),metrics);
+ clear out signals;
+ phase('restore');pmsm_sensorless_v2_model('remove',mdl);afterLayer=teach_snapshot(mdl);record.layer_restored=isequaln(configured,afterLayer);
+ sensorless_n3_restore(mdl,backup);after=teach_snapshot(mdl);afterFixed=pmsm_reference('capture');
+ record.reference_restored=isequaln(original,after)&&isequaln(fixed,afterFixed);assert(record.layer_restored&&record.reference_restored);
+ save(fullfile(folder,'restoration.mat'),'original','configured','afterLayer','after','fixed','afterFixed');sensorless_v2_guard_sources(record);
+ record.phase='completed';record.metrics_passed=metrics.all_passed;record.status='completed_performance_failed';
+ if metrics.all_passed,record.status='passed';end
+ teach_writejson(fullfile(folder,'record.json'),record);fprintf('R2_CASE_COMPLETED %s passed=%d elapsed=%g folder=%s\n',id,metrics.all_passed,record.elapsed_s,folder);
+catch err
+ record.status='failed_execution';record.error=getReport(err,'extended','hyperlinks','off');teach_writejson(fullfile(folder,'record.json'),record);rethrow(err);
+end
+ function phase(value)
+  record.phase=value;teach_writejson(fullfile(folder,'record.json'),record);fprintf('R2_PHASE %s %s\n',id,value);
+ end
+end
+function close_private(mdl)
+if bdIsLoaded(mdl),close_system(mdl,0);end
+end

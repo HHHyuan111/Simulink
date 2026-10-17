@@ -1,0 +1,247 @@
+{
+  "kind": "configuration_probe_only",
+  "acceptance_evidence": false,
+  "compile_called": false,
+  "simulation_called": false,
+  "observer_installed": false,
+  "process_id": 63968,
+  "status": "diagnostic_completed",
+  "phase": "restored",
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "probe_source_sha256": "d3768c0e81aceea00e3737d496aadc2efd49b26202968a486133c05fe20874c7",
+  "effective_case": {
+    "id": "r1_short_logging_check",
+    "kind": "logging_validation",
+    "duration_s": 0.02,
+    "speed_rpm": 3000,
+    "adc_span_A": 20,
+    "window_on": false,
+    "interference_s": 0
+  },
+  "settings": [
+    {
+      "block": "时序设置",
+      "parameters": [
+        {
+          "name": "speed_on",
+          "value": "off"
+        },
+        {
+          "name": "speed_divider",
+          "value": "20"
+        },
+        {
+          "name": "pwm_on",
+          "value": "off"
+        },
+        {
+          "name": "pwm_cycles",
+          "value": "1"
+        },
+        {
+          "name": "real_on",
+          "value": "on"
+        },
+        {
+          "name": "window_on",
+          "value": "off"
+        },
+        {
+          "name": "invalid_hold_on",
+          "value": "off"
+        },
+        {
+          "name": "trigger_us",
+          "value": "24.375"
+        },
+        {
+          "name": "sync_us",
+          "value": "0"
+        },
+        {
+          "name": "compute_us",
+          "value": "8"
+        },
+        {
+          "name": "settle_us",
+          "value": "0.5"
+        },
+        {
+          "name": "update_mode",
+          "value": "峰谷双更新（RCR=0）"
+        },
+        {
+          "name": "grid_divider",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "block": "采样设置",
+      "parameters": [
+        {
+          "name": "bias_on",
+          "value": "on"
+        },
+        {
+          "name": "bias_A",
+          "value": "[0.050000000000000003;-0.029999999999999999;0]"
+        },
+        {
+          "name": "gain_on",
+          "value": "on"
+        },
+        {
+          "name": "phase_gain",
+          "value": "[1.01;0.98999999999999999;1]"
+        },
+        {
+          "name": "noise_on",
+          "value": "on"
+        },
+        {
+          "name": "noise_rms",
+          "value": "0.02"
+        },
+        {
+          "name": "noise_seed",
+          "value": "20261016"
+        },
+        {
+          "name": "adc_on",
+          "value": "on"
+        },
+        {
+          "name": "adc_bits",
+          "value": "12"
+        },
+        {
+          "name": "adc_span",
+          "value": "20"
+        },
+        {
+          "name": "filter_on",
+          "value": "on"
+        },
+        {
+          "name": "filter_hz",
+          "value": "2000"
+        },
+        {
+          "name": "delay_on",
+          "value": "off"
+        },
+        {
+          "name": "delay_cycles",
+          "value": "1"
+        },
+        {
+          "name": "control_period",
+          "value": "dt"
+        },
+        {
+          "name": "analog_on",
+          "value": "on"
+        },
+        {
+          "name": "analog_hz",
+          "value": "5000"
+        },
+        {
+          "name": "numerical_step",
+          "value": "T"
+        },
+        {
+          "name": "real_mode",
+          "value": "strcmp(get_param([bdroot '/时序设置'],'real_on'),'on')"
+        }
+      ]
+    },
+    {
+      "block": "角度设置",
+      "parameters": [
+        {
+          "name": "bias_on",
+          "value": "off"
+        },
+        {
+          "name": "bias_deg",
+          "value": "2"
+        },
+        {
+          "name": "quant_on",
+          "value": "off"
+        },
+        {
+          "name": "step_deg",
+          "value": "0.18"
+        },
+        {
+          "name": "delay_on",
+          "value": "off"
+        },
+        {
+          "name": "delay_cycles",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "block": "功率设置",
+      "parameters": [
+        {
+          "name": "dead_on",
+          "value": "off"
+        },
+        {
+          "name": "dead_us",
+          "value": "0.5"
+        },
+        {
+          "name": "drop_on",
+          "value": "on"
+        },
+        {
+          "name": "ron",
+          "value": "0.01"
+        },
+        {
+          "name": "vf",
+          "value": "0.69999999999999996"
+        },
+        {
+          "name": "blend_A",
+          "value": "0.1"
+        },
+        {
+          "name": "pwm_period",
+          "value": "Ts"
+        },
+        {
+          "name": "gate_on",
+          "value": "on"
+        },
+        {
+          "name": "comp_on",
+          "value": "off"
+        },
+        {
+          "name": "gate_us",
+          "value": "0.5"
+        },
+        {
+          "name": "comp_us",
+          "value": "0.5"
+        },
+        {
+          "name": "hysteresis_A",
+          "value": "0.05"
+        },
+        {
+          "name": "zero_A",
+          "value": "0.01"
+        }
+      ]
+    }
+  ]
+}

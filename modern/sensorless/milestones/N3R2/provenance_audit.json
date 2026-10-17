@@ -1,0 +1,164 @@
+{
+  "node": "N3R2",
+  "status": "incomplete_native_compilation_failure",
+  "audit_integrity_passed": true,
+  "r2_performance_passed": false,
+  "formal_candidate_frozen": false,
+  "independent_full_replay_completed": false,
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "r1_frozen_files_preserved": 90,
+  "r2_plan_sha256": "6cedde9bcf37926542541d286d6d4167d2c596969998c5a20893a5063d60c439",
+  "attempts": [
+    {
+      "case_id": "r1_short_logging_check",
+      "folder": "runs/N3R2_R1_numerical_diagnosis_20261017_080647_bd9f1982-91f2-4ec8-88d7-01d2bf06ed66/r1_short_logging_check_attempt_1",
+      "execution_version": "initial_v1",
+      "last_phase": "configure",
+      "exit_code": -1073741819,
+      "native_failure": true,
+      "record_sha256": "3e186f2eae032df92e233e9622e93560a0ee30db888e79b2a3b88d46cd1eb5ce"
+    },
+    {
+      "case_id": "r1_short_logging_check",
+      "folder": "runs/N3R2_R1_numerical_diagnosis_20261017_080647_bd9f1982-91f2-4ec8-88d7-01d2bf06ed66/r1_short_logging_check_attempt_2",
+      "execution_version": "initial_v1",
+      "last_phase": "configure",
+      "exit_code": -1073741819,
+      "native_failure": true,
+      "record_sha256": "c635952c57b7eb10b530ef130414207e194fb47341d9b76a2ba522afa7fcc958"
+    },
+    {
+      "case_id": "r1_short_logging_check",
+      "folder": "runs/N3R2_safe_init_v2_20261017_081750_e4be6165-1fc2-46ff-91c1-ca86e179e494/r1_short_logging_check_attempt_1",
+      "execution_version": "r2_safe_init_v2_explicit_state_no_nested_phase",
+      "last_phase": "observer_compile",
+      "exit_code": -1073741819,
+      "native_failure": true,
+      "record_sha256": "d5a399356d9eaa5cb063d2b8153b60b091949175c1b143c41721f9d6d7378ebe"
+    },
+    {
+      "case_id": "r1_short_logging_check",
+      "folder": "runs/N3R2_safe_init_v2_20261017_081750_e4be6165-1fc2-46ff-91c1-ca86e179e494/r1_short_logging_check_attempt_2",
+      "execution_version": "r2_safe_init_v2_explicit_state_no_nested_phase",
+      "last_phase": "completed",
+      "exit_code": 0,
+      "native_failure": false,
+      "record_sha256": "3f9ef432ab76c570fe66c2940c62e733d1b333ddb5376172c9fdfb3335c2a48c"
+    },
+    {
+      "case_id": "diagnostic_combined_3000",
+      "folder": "runs/N3R2_safe_init_v2_20261017_081750_e4be6165-1fc2-46ff-91c1-ca86e179e494/diagnostic_combined_3000_attempt_1",
+      "execution_version": "r2_safe_init_v2_explicit_state_no_nested_phase",
+      "last_phase": "observer_compile",
+      "exit_code": -1073741819,
+      "native_failure": true,
+      "record_sha256": "fab11ff93b4fa697c7b46ef566b126452e6ca5eabee8b9dad89a6f01b822b0f7"
+    },
+    {
+      "case_id": "diagnostic_combined_3000",
+      "folder": "runs/N3R2_safe_init_v2_20261017_081750_e4be6165-1fc2-46ff-91c1-ca86e179e494/diagnostic_combined_3000_attempt_2",
+      "execution_version": "r2_safe_init_v2_explicit_state_no_nested_phase",
+      "last_phase": "observer_compile",
+      "exit_code": -1073741819,
+      "native_failure": true,
+      "record_sha256": "353757dfc89cc21bc02d5f0c60b174718fc26de0fd1770460be4989d4b2d9a54"
+    }
+  ],
+  "archived_capsules": [
+    {
+      "folder": "runs/N3R2_R1_numerical_diagnosis_20261017_080647_bd9f1982-91f2-4ec8-88d7-01d2bf06ed66/r1_short_logging_check_attempt_1",
+      "source_files_verified": 95,
+      "contracts_verified": 10
+    },
+    {
+      "folder": "runs/N3R2_R1_numerical_diagnosis_20261017_080647_bd9f1982-91f2-4ec8-88d7-01d2bf06ed66/r1_short_logging_check_attempt_2",
+      "source_files_verified": 95,
+      "contracts_verified": 10
+    },
+    {
+      "folder": "runs/N3R2_safe_init_v2_20261017_081750_e4be6165-1fc2-46ff-91c1-ca86e179e494/r1_short_logging_check_attempt_1",
+      "source_files_verified": 96,
+      "contracts_verified": 10
+    },
+    {
+      "folder": "runs/N3R2_safe_init_v2_20261017_081750_e4be6165-1fc2-46ff-91c1-ca86e179e494/r1_short_logging_check_attempt_2",
+      "source_files_verified": 96,
+      "contracts_verified": 10
+    },
+    {
+      "folder": "runs/N3R2_safe_init_v2_20261017_081750_e4be6165-1fc2-46ff-91c1-ca86e179e494/diagnostic_combined_3000_attempt_1",
+      "source_files_verified": 96,
+      "contracts_verified": 10
+    },
+    {
+      "folder": "runs/N3R2_safe_init_v2_20261017_081750_e4be6165-1fc2-46ff-91c1-ca86e179e494/diagnostic_combined_3000_attempt_2",
+      "source_files_verified": 96,
+      "contracts_verified": 10
+    }
+  ],
+  "curated_records": [
+    {
+      "path": "runs/N3R2_R1_numerical_diagnosis_20261017_080647_bd9f1982-91f2-4ec8-88d7-01d2bf06ed66/campaign.json",
+      "sha256": "96f831580776f4fe5c0f910b631160b1ceba1b60c51204d4c05d13430ae44c37",
+      "published": "campaign_execution_v1.json"
+    },
+    {
+      "path": "runs/N3R2_safe_init_v2_20261017_081750_e4be6165-1fc2-46ff-91c1-ca86e179e494/campaign.json",
+      "sha256": "eb6b509b8cdf9cc9ab12e214c907b92c7dc940bc5d1c085c0b035c73c1c62311",
+      "published": "campaign_execution_v2.json"
+    },
+    {
+      "path": "runs/N3R2_safe_init_v2_20261017_081750_e4be6165-1fc2-46ff-91c1-ca86e179e494/r1_short_logging_check_attempt_2/record.json",
+      "sha256": "3f9ef432ab76c570fe66c2940c62e733d1b333ddb5376172c9fdfb3335c2a48c",
+      "published": "short_record.json"
+    },
+    {
+      "path": "runs/N3R2_safe_init_v2_20261017_081750_e4be6165-1fc2-46ff-91c1-ca86e179e494/r1_short_logging_check_attempt_2/metrics.json",
+      "sha256": "35d1d1c76d25a8989844f9594e5865f0eb0a8b2a3172dc09545839f0668f6630",
+      "published": "short_metrics.json"
+    },
+    {
+      "path": "runs/N3R2_safe_init_v2_20261017_081750_e4be6165-1fc2-46ff-91c1-ca86e179e494/r1_short_logging_check_attempt_2/logging_validation.json",
+      "sha256": "99d72d3f0b67197acd15179e79fe0fbcf57974baaebd1ea517e0ebd92cf0e384",
+      "published": "short_logging_validation.json"
+    },
+    {
+      "path": "runs/N3R2_safe_init_v2_20261017_081750_e4be6165-1fc2-46ff-91c1-ca86e179e494/r1_short_logging_check_attempt_2/graph.json",
+      "sha256": "3f3a5d891faecad1bbf074cdc80d94df15e02602d6931962778dcc13fe72f7aa",
+      "published": "short_graph.json"
+    },
+    {
+      "path": "runs/N3R2_monitor_development_1/record.json",
+      "sha256": "62f04fe8c496358a25b6b095331bc207df8a92496e1215733edfe413eaa6c1e9",
+      "published": "monitor_component_record.json"
+    },
+    {
+      "path": "runs/N3R2_monitor_development_1/metrics.json",
+      "sha256": "0555f39208c21ac4ee167f548cfee853f5977b0f42163056fb6fb31ac24f228f",
+      "published": "monitor_component_metrics.json"
+    },
+    {
+      "path": "runs/N3R2_compiled_monitor_probe_once/record.json",
+      "sha256": "0b40720235b698b579fd4c70581d4b030dd628e5b3963c1d1eadaf57fad3697d",
+      "published": "compiled_monitor_probe_record.json"
+    },
+    {
+      "path": "runs/N3R2_configuration_probe_once/record.json",
+      "sha256": "a762aebb758da40f66b95c387a768d72a2d25582f70b1cbfe6d8a573b0e85650",
+      "published": "configuration_probe_record.json"
+    },
+    {
+      "path": "runs/N3R2_unsupported_case_rejections_once/report.json",
+      "sha256": "189b3d31d064983e88aa54e02ba0126e1506dd080dd021708acf96c3c4f17021",
+      "published": "unsupported_case_rejections.json"
+    }
+  ],
+  "post_test_source_changes": [
+    "robust/performance/validate_sensorless_r2_case.m"
+  ],
+  "post_test_change_reason": "Fail fast for unsupported dynamic/fault kinds, checked without model load; driver additionally rejects exhausted attempts across campaign labels. No new main-model execution after these guard changes.",
+  "short_worker_source_preserved": "source_versions/execution_v2_worker.m.txt",
+  "raw_archives_local_only": true,
+  "native_root_cause_confirmed": false,
+  "no_third_same_version_long_attempt": true
+}

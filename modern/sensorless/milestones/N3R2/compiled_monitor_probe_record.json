@@ -1,0 +1,41 @@
+{
+  "kind": "isolated_compiled_monitor_probe",
+  "acceptance_evidence": false,
+  "pmsm_loaded": false,
+  "attempt_limit": 1,
+  "process_id": 58444,
+  "status": "diagnostic_passed",
+  "phase": "completed",
+  "source_sha256": "795d1094da52880ac3813b212b8a1effbad577eb69641c210a8e0322e896625b",
+  "core_sources": [
+    {
+      "path": "sensorless_r2_monitor_state.m",
+      "sha256": "a4b84f412f724e99af98864be80a676ce8d9410e729a5d08b42f87fada90110e"
+    },
+    {
+      "path": "sensorless_r2_monitor_step.m",
+      "sha256": "8da9b890980215e81b1be5169f5a79d609759c2a1d9750d1f4819bec12c824a1"
+    },
+    {
+      "path": "blocks/sless_r2_monitor_block.m",
+      "sha256": "c8b151e99f247d920951236f2e7f6ff6318c5f3d5b7db2200e7288ace05e0488"
+    },
+    {
+      "path": "sensorless_r2_event_audit.m",
+      "sha256": "b2b45f240ffc8d4fe3ca3ced573d9ede26102df82bfa1f426682ce40c9bf34c6"
+    }
+  ],
+  "native_samples": 40001,
+  "false_valid_longest_s": 0.0020000625,
+  "exact_elements": 1.120028E+6,
+  "raw_sha256": "1c0565a0418948c209d71b54322154e29b8813f364c90cf308a6a75c9948af19",
+  "event_audit": {
+    "events": 40001,
+    "false_valid_longest_s": 0.0020000625,
+    "false_valid_total_s": 0.0020000625,
+    "permit_total_s": 0.0020000625,
+    "native_counters_equal_event_oracle": true,
+    "event_error_formula_equal": true,
+    "all_passed": true
+  }
+}

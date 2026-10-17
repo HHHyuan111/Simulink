@@ -1,0 +1,10 @@
+{
+  "kind": "native_retry_preflight_guard",
+  "execution_version": "safe_init_v2_explicit_state",
+  "case_id": "diagnostic_combined_3000",
+  "matlab_started": false,
+  "new_campaign_created": false,
+  "existing_campaigns": 6,
+  "all_passed": true,
+  "driver_sha256": "4894b9326e10380ca1fe3ca018338e72ad3abeec14f8d3b6ceb06218b9f3a6fa"
+}

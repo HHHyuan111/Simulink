@@ -2,7 +2,7 @@
 
 基于远端 `main` 的 `8676342ad23f2d980bd4ff9fff0aeb5641a2f540`，开发分支 `dev`，工作树 `D:/simulink/dev`。
 
-当前节点：用户已接受N3R0并授权按工程假设接入。N3R1本地非理想适配、组件复现、四组20ms完整复现及原52路同配置回归通过，停在R1验收点；R2长时组合精度尚未开始。旧N3保持15/16复现未通过，0 μs详细桥原生异常缺项不改判。N0/N1/N2已确认，观测角度尚未接入控制反馈。
+当前节点：用户已接受N3R1并授权R2。R2标准已冻结，原生误有效统计器、独立编译探针及20ms记录预检通过；3000rpm长工况两次编译原生异常退出，R2尚未完成，没有长时精度结论。旧N3保持15/16复现未通过，0 μs详细桥原生异常缺项不改判。N0/N1/N2已确认，观测角度尚未接入控制反馈。
 
 - `contracts/acceptance_v1.json`：验收阈值与判定规则。
 - `contracts/test_plan_v1.json`：固定场景、事件、窗口及复跑要求。
@@ -22,6 +22,9 @@
 - `milestones/N3R0.md`：非理想适配前置节点的实现、组件验证和未完成项。
 - `robust/INTERFACE.md`：独立电压、节拍和发布许可核心；未自动装入当前GUI模型。
 - `milestones/N3R1.md`：非理想本地接入、完整短时复现/回归、故障入口与待验收记录。
+- `milestones/N3R2.md`：已完成的评价/记录检查、两版执行历史、长工况编译异常与剩余工作；R2未通过。
+- `contracts/nonideal_r2_test_plan.json`：实施前冻结的长时精度、动态、原生误有效及故障标准。
+- `robust/performance/INTERFACE.md`：R2仅评价信号、单位、原生计数/事件区间及执行器支持范围。
 - `robust/integration/INTERFACE.md`：三相标定/对齐、滤波匹配、延后发布、47个作用域Goto及v2日志单位。
 - `contracts/nonideal_r1_test_plan.json`与`nonideal_r1_window_addendum.json`：实施前标准及故障窗口补充刺激，历史计划均保留。
 - `INTERFACE.md`：模块、Goto作用域、参数单位、时间及日志约定。

@@ -1,0 +1,49 @@
+{
+  "kind": "unsupported_case_rejection_check",
+  "pmsm_loaded": false,
+  "simulation_called": false,
+  "all_passed": true,
+  "source_sha256": "71661aeba17affb8722baf78c2aebd3822440d9f4ff295acf92901dc55a7e2d5",
+  "cases": [
+    {
+      "id": "adc_clipping",
+      "rejected_before_load": true,
+      "message": "R2 diagnostic worker only supports static-speed logging/precision cases; fault and dynamic acceptance is not implemented."
+    },
+    {
+      "id": "combined_dynamic",
+      "rejected_before_load": true,
+      "message": "R2 diagnostic worker only supports static-speed logging/precision cases; fault and dynamic acceptance is not implemented."
+    },
+    {
+      "id": "hot_R1p2_L0p8",
+      "rejected_before_load": true,
+      "message": "R2 first diagnostic worker has no fault/plant-variation adapter yet."
+    },
+    {
+      "id": "deadtime_2us",
+      "rejected_before_load": true,
+      "message": "R2 diagnostic worker only supports static-speed logging/precision cases; fault and dynamic acceptance is not implemented."
+    },
+    {
+      "id": "missing_five",
+      "rejected_before_load": true,
+      "message": "R2 diagnostic worker only supports static-speed logging/precision cases; fault and dynamic acceptance is not implemented."
+    },
+    {
+      "id": "reset_one",
+      "rejected_before_load": true,
+      "message": "R2 diagnostic worker only supports static-speed logging/precision cases; fault and dynamic acceptance is not implemented."
+    },
+    {
+      "id": "deadline_jitter",
+      "rejected_before_load": true,
+      "message": "R2 diagnostic worker only supports static-speed logging/precision cases; fault and dynamic acceptance is not implemented."
+    },
+    {
+      "id": "low_speed_stop",
+      "rejected_before_load": true,
+      "message": "R2 diagnostic worker only supports static-speed logging/precision cases; fault and dynamic acceptance is not implemented."
+    }
+  ]
+}
