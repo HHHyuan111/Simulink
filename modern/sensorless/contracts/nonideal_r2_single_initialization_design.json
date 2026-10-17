@@ -1,0 +1,14 @@
+{
+ "schema":1,
+ "registered_before_implementation":"2026-10-17; after v5/v7 native limits; thresholds and observer gains unchanged",
+ "version":"single_initialization_v8",
+ "reason":"Prior workers explicitly update the observer graph, tear down that compilation, then call sim which initializes again. Native failures occur after entering simulate; one missing-frame attempt reports SimulinkBlock.dll SLBlock::getCompInputPortWidth and0xc0000096. A compiled-width lifecycle issue is a hypothesis only, not a confirmed cause.",
+ "execution_change":"Use the R2026a Simulation object: set StopTime on the object, initialize once, inspect the graph/workspace read-only while initialized, then step the same initialized simulation in chunks of160000 major steps. No additional SimulationCommand=update or sim call after observer installation. No fast restart, solver/sample-time change, startup-state import, or selective restart.",
+ "completion":"Fixed-step duration/h+1 major steps must include time0 and the final stop tick. Require finalstep, final object time, inactive status after stop, full native counters/event oracle and original log coverage. Chunk boundaries only permit progress recording, never tuning, graph edits or numerical-state edits.",
+ "DUT":"Reuse unchanged v7 fault/phase cores. Low-speed v5 command sources are adapted to that same v7 normal program, including unavailable-current anchor admission; record this composition explicitly. No SMO/PLL gain/quality-threshold changes. Existing v5/v7 failures remain failed/incomplete; no third attempt on those paths.",
+ "prerequisites":"Toy discrete+continuous model must match direct sim full Time/Data, callback counts, endpoint inclusion and parameter restoration. Then a20ms main-model precheck must match all96 v7 timeseries exactly and the81 R1 common logs including original52. Graph and workspace preserved, removable layer restored, model SHA and R1 frozen90 unchanged.",
+ "eligible_long_cases":["low_speed_stop","missing_five","reset_one","deadline_jitter"],
+ "rerun_policy":"Only previously unarchived long physics is eligible, after its prior path is exhausted or stopped for native failure. Never rerun completed physics to select a passing result. Per case/version at most2 starts, with the second allowed only after explicit0xc0000005 or0xc000001d;0xc0000096 and other errors stop without retry. Count all starts across labels. Native or numerical failures do not establish algorithm performance.",
+ "sources":["https://www.mathworks.com/help/releases/R2026a/simulink/slref/simulink.simulation.html","https://www.mathworks.com/help/releases/R2026a/simulink/slref/simulink.simulation.step.html"],
+ "gate":"R2 remains incomplete until final candidate freezing/full matrix and node review; no R3, feedback takeover or hardware/WCET claim"
+}
