@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "node": "N3R2",
+  "registered_before_guard_implementation": "2026-10-17, after accepted-R1 0.8s diagnostic; no acceptance thresholds changed",
+  "diagnostic_source_sha256": "5fc1343cbe4cf1b507c3cb7a24b3a4eccd3124f48ecf0597bda8c3cdd7e635cf",
+  "problem": "Accepted R1 startup permits 19.422375ms of angle error above 8deg. Corrected EMF angle error is about +-0.22deg in this interval, while PLL lags about 8deg. Steady precision passes; do not retune SMO to hide a permission defect.",
+  "design": {
+    "phase_limit_electrical_deg": 5,
+    "engineering_emf_angle_allowance_deg": 3,
+    "rationale": "Wrapped-angle triangle inequality: 5deg PLL-to-corrected-EMF budget plus 3deg model budget equals existing 8deg target. The 3deg allowance is an engineering assumption, not a truth bound or hardware guarantee; independently evaluate all required physical cases.",
+    "packet_valid": "existing_quality AND sample_valid AND not_reset AND finite_inputs AND norm(corrected_vector)>=existing_emf_off_threshold AND dot>0 AND abs(cross)<=sin(5deg)*norm(vector)+8*eps*norm(vector)",
+    "quadrant": "positive dot product explicitly excludes the 180deg false-lock ambiguity",
+    "time": "computed with current JEOS theta/vector, captured as packet quality and unavailable to control until the existing JEOS+3us publication. Live ADC/timing veto remains independent.",
+    "truth_separation": "no true theta, speed, motor injection or future samples in guard; existing R1 SMO/PLL/voltage/current states remain unchanged",
+    "scope": "normal packet quality only; this alone does not satisfy pending reset/missing/schedule injection requirements"
+  },
+  "component_tests": "both directions and wrap, exactly 5deg and 5deg+1e-6deg, 90/180deg aliases, scale changes, zero/nonfinite vector, old-quality/sample/reset veto; verify observed pre-fix trace as diagnostic only",
+  "physical_tests": "new-version 20ms original52/common81 exact precheck, then unchanged 3000rpm 0.8s test including full-run native false-valid <=2ms; retain the failed R1 numerical diagnostic; subsequent full 14-case matrix remains mandatory",
+  "failure_policy": "max one explicit native retry per case/version across labels; no numerical failure rerun or third same-version retry",
+  "measurement": "native evaluator unchanged; cumulative logging every50us, all state transitions/publications logged at native62.5ns; old52 configured retention remains unchanged, bounded logs are disclosed"
+}
