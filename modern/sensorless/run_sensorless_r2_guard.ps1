@@ -1,5 +1,5 @@
 param(
- [ValidateSet('r1_short_logging_check','diagnostic_combined_3000')]
+ [ValidateSet('r1_short_logging_check','diagnostic_combined_3000','combined_1000','combined_2000','combined_reverse_1000','combined_reverse_3000')]
  [string[]]$CaseIds=@('r1_short_logging_check','diagnostic_combined_3000'),
  [string]$Label='packet_phase_guard_v4',
  [string]$MatlabExe='D:\DevTools\MATLAB\R2026a\bin\matlab.exe'

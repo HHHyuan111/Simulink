@@ -54,6 +54,12 @@ def main(folder):
                                    for i,j,n in zip(starts,stops,runs)],
               'raw_source_sha256': source['source_raw_sha256'], 'export_csv_sha256': source['files'],
               'renderer_sha256': digest(Path(__file__))}
+    result['packet_phase_guard_used'] = 'packet_valid' in c.dtype.names
+    if result['packet_phase_guard_used']:
+        permitted = c['permit_at_available'] > .5
+        result['emf_angle_peak_during_permission_deg'] = float(np.max(np.abs(emf_angle[permitted]))) if np.any(permitted) else None
+        result['packet_phase_peak_during_permission_deg'] = float(np.max(np.abs(np.rad2deg(c['packet_phase_error_rad'][permitted])))) if np.any(permitted) else None
+        assert not np.any(permitted & (np.abs(c['packet_phase_error_rad']) > np.deg2rad(5)+1e-12))
     (folder/'independent_metrics.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')
     fig,axes=plt.subplots(3,2,figsize=(13,9),layout='constrained')
     ax=axes.flat[0];ax.plot(t,c['speed_true_rpm'],label='Plant');ax.plot(t,c['speed_est_rpm'],label='Estimate',alpha=.75);ax.set_ylabel('Mechanical speed [rpm]');ax.legend()
@@ -64,7 +70,8 @@ def main(folder):
     ax=axes.flat[5];ax.plot(t,c['pll_error']);ax.set_ylabel('Normalized PLL innovation')
     for ax in axes.flat:
         ax.axvspan(.5,.8,color='grey',alpha=.12);ax.set_xlim(0,.8);ax.set_xlabel('Time [s]');ax.grid(alpha=.25)
-    fig.suptitle('R1 numerics under combined engineering nonidealities — R2 diagnosis\nAll JEOS samples and native state events retained; grey: fixed evaluation window')
+    title = 'R1 estimates + instantaneous packet phase guard' if result['packet_phase_guard_used'] else 'Accepted R1 estimates and packet quality'
+    fig.suptitle(title+' — combined engineering nonidealities\nAll JEOS samples and native state events retained; grey: fixed evaluation window')
     fig.savefig(folder/'diagnosis.png',dpi=160);plt.close(fig)
     print(json.dumps({k:v for k,v in result.items() if k not in ('false_valid_runs','export_csv_sha256')},indent=2))
 

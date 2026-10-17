@@ -19,6 +19,12 @@ columns={'time_s','theta_est_rad','theta_true_rad','speed_est_rpm','speed_true_r
  'i_alpha_A','i_beta_A','i_hat_alpha_A','i_hat_beta_A','residual_alpha_A','residual_beta_A',...
  'u_alpha_V','u_beta_V','conditional_bound_alpha_V','conditional_bound_beta_V','sequence','reference_s','available_s','permit_at_available'};
 assert(size(control,2)==numel(columns));destination=fullfile(folder,'review');if ~isfolder(destination),mkdir(destination);end
+inventory=whos('-file',raw);
+if ismember('obs_sless_r2_phase_guard',{inventory.name})
+ extra=load(raw,'obs_sless_r2_phase_guard');guard=teach_values(extra.obs_sless_r2_phase_guard);
+ assert(isequaln(extra.obs_sless_r2_phase_guard.Time,t));control=[control guard];
+ columns=[columns {'packet_phase_error_rad','packet_emf_V','packet_dot','packet_cross','packet_phase_ok','packet_emf_ok','quality_before_guard','packet_valid'}];
+end
 writetable(array2table(control,'VariableNames',columns),fullfile(destination,'control.csv'));
 event_columns={'time_s','false_valid','permit','deny_reason','adc_valid','timing_valid','age_s','angle_error_deg','speed_error_relative',...
  'theta_now_rad','theta_true_rad','speed_raw_rpm','speed_true_rpm','sequence','presented','reset'};
