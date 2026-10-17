@@ -1,0 +1,8 @@
+{
+ "schema":1,
+ "registered_before_implementation":"2026-10-17 after hot_R1p2_L0p8 exhausted its two alias-binding native attempts at install; no third alias attempt",
+ "change":"Alternative local plant parameter binding: substitute parenthesized17-significant-digit numeric literals for Rs/Ld/Lq in the same four motor Fcn expressions. Do not add any workspace alias or alter shared nominal values. The physical R/L multipliers remain exactly1.2/0.8 or0.8/1.2; no observer/PI parameter change or truth fitting.",
+ "reason":"Remove added ModelWorkspace symbol bindings and whole-workspace alias restoration from the compilation path. This is a distinct execution path, not a new campaign label. Native root cause remains unconfirmed.",
+ "prerequisites":"Before any physical rerun, verify exact double roundtrip of all literals and exact expression evaluation against true-parameter variables at100 deterministic state/input points. One configuration/compile-only hot probe, no simulation, including observer nominal separation and full restoration; at most one probe, no retry.",
+ "gate":"Only after the probe passes may a separately named literal-binding execution version run short and full physical tests with the original criteria and native retry cap. Preserve all failed alias attempts and do not classify the new probe as precision evidence."
+}
