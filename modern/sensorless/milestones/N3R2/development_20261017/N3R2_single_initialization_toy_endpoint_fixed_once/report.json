@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "all_passed": true,
+  "main_model_loaded": false,
+  "source_sha256": "9c8bb365ee35b376f1faad1c576f3ae8f24b6e7c83dfa5ffc32dadf2bb58ea8e",
+  "execution": {
+    "initialized_once": true,
+    "step_chunks": 6,
+    "requested_major_steps": 101,
+    "expected_major_steps": 101,
+    "last_step": true,
+    "status": "completed",
+    "next_major_time_s": null,
+    "status_before_stop": "inactive",
+    "api_time_finite_at_completion": false,
+    "elapsed_s": 0.2626405,
+    "status_after_stop": "inactive"
+  },
+  "callback_counts": [
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1
+    ]
+  ],
+  "elements": 424,
+  "parameter_restored": true,
+  "native_endpoint_included": true,
+  "raw_sha256": "5534ec26558350924b07b693adf359a035989e19e3a12fda0a941fb8d41b791e"
+}

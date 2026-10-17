@@ -1,0 +1,58 @@
+{
+  "node": "N3R2",
+  "id": "deadtime_2us",
+  "kind": "boundary",
+  "samples": 16000,
+  "event_audit": {
+    "events": 32003,
+    "false_valid_longest_s": 0,
+    "false_valid_total_s": 0,
+    "permit_total_s": 0.716718125,
+    "native_counters_equal_event_oracle": true,
+    "event_error_formula_equal": true,
+    "all_passed": true
+  },
+  "permission_violation_ticks": 0,
+  "low_speed_permit_ticks": 0,
+  "forbidden_control_values_ticks": 0,
+  "max_permitted_angle_error_deg": 3.8839837462851396,
+  "max_permitted_speed_relative": 0.013771229301574216,
+  "false_valid_longest_s": 0,
+  "false_valid_target_s": 0.002,
+  "first_permit_s": 0.083031875,
+  "whole_run_peak_angle_deg": 16.9511483652287,
+  "whole_run_peak_speed_error_rpm": 300.97362942252357,
+  "steady": {
+    "window_s": [
+      0.5,
+      0.8
+    ],
+    "samples": 6000,
+    "target_rpm": 3000,
+    "true_speed_mean_rpm": 2999.9995542522074,
+    "true_speed_slope_rpm_s": 0.10279707999929404,
+    "electrical_cycles": 74.987163001630023,
+    "angle_rms_deg": 1.0273037809431567,
+    "angle_abs_max_deg": 1.1016385067223551,
+    "speed_mean_error_relative": 3.7165666040189084E-6,
+    "speed_rms_error_relative": 0.0025199005102286907,
+    "permit_fraction": 1
+  },
+  "events": [],
+  "all_passed": true,
+  "failed_checks": [],
+  "checks": {
+    "event_audit": true,
+    "no_permission_violation": true,
+    "zero_forbidden_control_outputs": true,
+    "plant_settled": true,
+    "enough_cycles": true,
+    "angle_rms": true,
+    "angle_peak": true,
+    "speed_mean": true,
+    "speed_rms": true,
+    "permit_fraction": true,
+    "false_valid": true
+  },
+  "boundary_policy": "full_normal_precision_requirements"
+}

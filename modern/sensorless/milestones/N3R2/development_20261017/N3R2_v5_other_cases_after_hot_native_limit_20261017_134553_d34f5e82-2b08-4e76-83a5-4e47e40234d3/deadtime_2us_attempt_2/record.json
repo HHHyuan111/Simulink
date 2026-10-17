@@ -2,8 +2,8 @@
   "schema": 1,
   "node": "N3R2",
   "folder": "D:/simulink/dev/modern/sensorless/runs/N3R2_v5_other_cases_after_hot_native_limit_20261017_134553_d34f5e82-2b08-4e76-83a5-4e47e40234d3/deadtime_2us_attempt_2",
-  "status": "running",
-  "phase": "simulate",
+  "status": "passed",
+  "phase": "completed",
   "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
   "process_id": 23384,
   "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
@@ -878,5 +878,13 @@
       ]
     }
   ],
-  "workspace_unchanged_by_compile": true
+  "workspace_unchanged_by_compile": true,
+  "elapsed_s": 872.5495635,
+  "workspace_unchanged_by_simulation": true,
+  "raw_sha256": "be8e9df22b495fa61b3aca3651967ea5c031dc3cc44860eca2db7a0dc990b668",
+  "log_count": 90,
+  "layer_restored": true,
+  "callback_restored": true,
+  "reference_restored": true,
+  "metrics_passed": true
 }

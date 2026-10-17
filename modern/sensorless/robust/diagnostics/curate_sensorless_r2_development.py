@@ -7,7 +7,8 @@ import shutil
 
 BASE = Path(__file__).resolve().parents[2]
 DEST = BASE / 'milestones/N3R2/development_20261017'
-VERSIONS = {'basic_scenarios_v5', 'literal_binding_v6', 'fault_ingress_schedule_v7'}
+VERSIONS = {'basic_scenarios_v5', 'literal_binding_v6', 'fault_ingress_schedule_v7',
+            'single_initialization_v8', 'single_init_short_cache_v8r1'}
 
 
 def read(path):
@@ -35,6 +36,10 @@ def main():
         published.append({'source': source.relative_to(BASE).as_posix(), 'published': name, 'sha256': sha(target)})
 
     campaigns = []
+    prior = read(BASE / 'milestones/N3R2/followup_20261017/summary.json')
+    passed = {item['case_id'] for item in prior['case_metrics']
+              if item['version'] == 'packet_phase_guard_v4' and item['status'] == 'passed'
+              and item['case_id'] != 'r1_short_logging_check'}
     for folder in sorted((BASE / 'runs').glob('N3R2_*')):
         manifest_path = folder / 'campaign.json'
         if not manifest_path.exists():
@@ -49,6 +54,8 @@ def main():
             if not attempt_folder.is_dir() or not (attempt_folder / 'record.json').exists():
                 continue
             record = read(attempt_folder / 'record.json')
+            finalized = [attempt for job in manifest['jobs'] for attempt in job['attempts']
+                         if Path(attempt['folder']).name == attempt_folder.name]
             for entry in record['source_files']:
                 assert sha(attempt_folder / 'source' / entry['path']) == entry['sha256']
             for entry in record['contracts']:
@@ -59,9 +66,33 @@ def main():
             for file in ('record.json', 'metrics.json', 'graph.json', 'logging_validation.json'):
                 if (attempt_folder / file).exists():
                     publish(attempt_folder / file, name + '/' + file)
+            for file in ('execution_progress.json', 'v7_complete_log_comparison.json'):
+                if (attempt_folder / file).exists():
+                    publish(attempt_folder / file, name + '/' + file)
+            format_report = attempt_folder / 'log_format_recovery.json'
+            if format_report.exists():
+                normalization = read(format_report)
+                assert sha(attempt_folder / 'log_format/signals.mat') == normalization['canonical_sha256']
+                assert sha(attempt_folder / 'log_format/normalizer_source.m.txt') == normalization['adapter_sha256']
+                assert sha(attempt_folder / 'log_format/format_contract.json') == normalization['contract_sha256']
+                publish(format_report, name + '/log_format_recovery.json')
+                for file in ('logging_validation.json', 'v7_complete_log_comparison.json', 'format_contract.json'):
+                    if (attempt_folder / 'log_format' / file).exists():
+                        publish(attempt_folder / 'log_format' / file, name + '/log_format/' + file)
+            if (attempt_folder / 'bounded_log_diagnosis.json').exists():
+                publish(attempt_folder / 'bounded_log_diagnosis.json', name + '/bounded_log_diagnosis.json')
+            metrics_path = attempt_folder / 'metrics.json'
+            if record['status'] == 'passed' and record['case_id'] != 'r1_short_logging_check':
+                assert metrics_path.exists() and read(metrics_path)['all_passed']
+                passed.add(record['case_id'])
             attempts.append({'folder': attempt_folder.name, 'case_id': record['case_id'], 'status': record['status'],
                              'phase': record['phase'], 'raw_sha256': record.get('raw_sha256'),
-                             'metrics_passed': record.get('metrics_passed', False)})
+                             'metrics_passed': record.get('metrics_passed', False),
+                             'record_status_is_last_persisted_not_process_liveness': True,
+                             'execution_finalized': bool(finalized),
+                             'exit_code': finalized[0]['exit_code'] if finalized else None,
+                             'exit_code_hex': f"0x{finalized[0]['exit_code'] & 0xffffffff:08x}" if finalized else None,
+                             'allowed_native_retry_classification': finalized[0]['native_failure'] if finalized else None})
         campaigns.append({'folder': prefix, 'version': manifest['execution_version'], 'status': manifest['status'],
                           'attempts': attempts})
     probes = [
@@ -74,6 +105,8 @@ def main():
         ('N3R2_fault_timing_graph_probe_once', ('record.json', 'short_negative_control.json')),
         ('N3R2_pwm_restoration_diagnosis_once', ('report.json',)),
         ('N3R2_fault_timing_restoration_fixed_compile_once', ('record.json',)),
+        ('N3R2_single_initialization_toy_parse_fixed_once', ('report.json', 'execution_progress.json')),
+        ('N3R2_single_initialization_toy_endpoint_fixed_once', ('report.json', 'execution_progress.json')),
     ]
     for name, files in probes:
         probe_folder = BASE / 'runs' / name
@@ -90,6 +123,8 @@ def main():
                 publish(source, name + '/' + file)
     dynamic = read(BASE / 'runs/N3R2_dynamic_archive_reanalysis_once/report.json')
     restoration = read(BASE / 'runs/N3R2_dynamic_restoration_probe_once/report.json')
+    case_ids = [case['id'] for case in read(BASE / 'contracts/nonideal_r2_test_plan.json')['cases']
+                if case['kind'] != 'logging_validation']
     summary = {
         'node': 'N3R2', 'all_passed': False, 'formal_final_matrix_passed': False,
         'captured_at': datetime.now().astimezone().isoformat(),
@@ -100,6 +135,8 @@ def main():
         'dynamic_original_execution_failed_postprocessor': dynamic['original_status'] == 'failed_execution',
         'dynamic_original_restoration_executed': dynamic['original_restoration_executed'],
         'dynamic_independent_restoration_probe_passed': restoration['all_passed'],
+        'development_end_to_end_passed_case_ids': sorted(passed),
+        'development_not_end_to_end_passed_case_ids': [case for case in case_ids if case not in passed],
         'native_root_cause_confirmed': False, 'hardware_validated': False, 'feedback_takeover': False,
         'R3_independent_full_replay_done': False, 'campaigns': campaigns, 'published': published,
     }

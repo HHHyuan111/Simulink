@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "node": "N3R2",
+  "execution_version": "literal_binding_v6",
+  "label": "serial_followup_hot_R1p2_L0p8",
+  "status": "completed_passed",
+  "numerical_version": "R1 estimates plus packet phase guard",
+  "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_serial_followup_hot_R1p2_L0p8_20261017_144838_ff2b60de-1779-49bf-9c3c-a5373488349d",
+  "driver_sha256": "33c994b499db0ac2984512160b35e3b1af3f91c1fe2599bf7739b25ac59be24c",
+  "jobs": [
+    {
+      "case_id": "hot_R1p2_L0p8",
+      "status": "passed",
+      "attempts": [
+        {
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_serial_followup_hot_R1p2_L0p8_20261017_144838_ff2b60de-1779-49bf-9c3c-a5373488349d\\hot_R1p2_L0p8_attempt_1_launcher.log",
+          "native_failure": false,
+          "exit_code": 0,
+          "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/literal_plant');validate_sensorless_r2_literal_case('hot_R1p2_L0p8','D:/simulink/dev/modern/sensorless/runs/N3R2_serial_followup_hot_R1p2_L0p8_20261017_144838_ff2b60de-1779-49bf-9c3c-a5373488349d/hot_R1p2_L0p8_attempt_1');",
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_serial_followup_hot_R1p2_L0p8_20261017_144838_ff2b60de-1779-49bf-9c3c-a5373488349d\\hot_R1p2_L0p8_attempt_1",
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_serial_followup_hot_R1p2_L0p8_20261017_144838_ff2b60de-1779-49bf-9c3c-a5373488349d\\hot_R1p2_L0p8_attempt_1_console.log"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_serial_followup_hot_R1p2_L0p8_20261017_144838_ff2b60de-1779-49bf-9c3c-a5373488349d\\hot_R1p2_L0p8_attempt_1"
+    }
+  ]
+}

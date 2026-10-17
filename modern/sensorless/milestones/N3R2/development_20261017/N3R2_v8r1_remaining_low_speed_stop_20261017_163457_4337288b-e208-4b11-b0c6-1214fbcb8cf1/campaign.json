@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "node": "N3R2",
+  "execution_version": "single_init_short_cache_v8r1",
+  "label": "v8r1_remaining_low_speed_stop",
+  "status": "running",
+  "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_v8r1_remaining_low_speed_stop_20261017_163457_4337288b-e208-4b11-b0c6-1214fbcb8cf1",
+  "driver_sha256": "cdbb414939a383e4f2ad0c4d5e1239aff2655319a210a23b0da34afa50d8b914",
+  "jobs": [],
+  "log_format_contract_sha256": "131d92c0098fe4ea8908f67618c22935536706019acaa9a513bb93a308c027a6",
+  "analysis_recovered_precheck": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_v8r1_short_20261017_162814_c6e0244a-576c-4beb-9594-d644dfc04eec\\r1_short_logging_check_attempt_1"
+}

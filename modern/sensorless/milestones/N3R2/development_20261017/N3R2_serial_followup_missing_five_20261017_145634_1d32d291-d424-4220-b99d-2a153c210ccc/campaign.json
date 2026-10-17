@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "node": "N3R2",
+  "execution_version": "fault_ingress_schedule_v7",
+  "label": "serial_followup_missing_five",
+  "status": "failed_execution",
+  "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_serial_followup_missing_five_20261017_145634_1d32d291-d424-4220-b99d-2a153c210ccc",
+  "driver_sha256": "504d1cd92ee2708a860a44f2c642712816a350b22cec6d8300c0275de97e0ab3",
+  "jobs": [
+    {
+      "case_id": "missing_five",
+      "status": "incomplete",
+      "attempts": [
+        {
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_serial_followup_missing_five_20261017_145634_1d32d291-d424-4220-b99d-2a153c210ccc\\missing_five_attempt_1_launcher.log",
+          "native_failure": true,
+          "exit_code": -1073741819,
+          "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/faults');validate_sensorless_r2_fault_case('missing_five','D:/simulink/dev/modern/sensorless/runs/N3R2_serial_followup_missing_five_20261017_145634_1d32d291-d424-4220-b99d-2a153c210ccc/missing_five_attempt_1');",
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_serial_followup_missing_five_20261017_145634_1d32d291-d424-4220-b99d-2a153c210ccc\\missing_five_attempt_1",
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_serial_followup_missing_five_20261017_145634_1d32d291-d424-4220-b99d-2a153c210ccc\\missing_five_attempt_1_console.log"
+        },
+        {
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_serial_followup_missing_five_20261017_145634_1d32d291-d424-4220-b99d-2a153c210ccc\\missing_five_attempt_2_launcher.log",
+          "native_failure": false,
+          "exit_code": -1073741674,
+          "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/faults');validate_sensorless_r2_fault_case('missing_five','D:/simulink/dev/modern/sensorless/runs/N3R2_serial_followup_missing_five_20261017_145634_1d32d291-d424-4220-b99d-2a153c210ccc/missing_five_attempt_2');",
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_serial_followup_missing_five_20261017_145634_1d32d291-d424-4220-b99d-2a153c210ccc\\missing_five_attempt_2",
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_serial_followup_missing_five_20261017_145634_1d32d291-d424-4220-b99d-2a153c210ccc\\missing_five_attempt_2_console.log"
+        }
+      ],
+      "completed_folder": ""
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "initialized_once": true,
+  "step_chunks": 6,
+  "requested_major_steps": 101,
+  "expected_major_steps": 101,
+  "last_step": true,
+  "status": "running",
+  "next_major_time_s": null
+}

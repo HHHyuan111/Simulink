@@ -1,0 +1,13 @@
+{
+  "initialized_once": true,
+  "step_chunks": 3,
+  "requested_major_steps": 320001,
+  "expected_major_steps": 320001,
+  "last_step": true,
+  "status": "completed",
+  "next_major_time_s": null,
+  "status_before_stop": "inactive",
+  "api_time_finite_at_completion": false,
+  "elapsed_s": 11.8757777,
+  "status_after_stop": "inactive"
+}

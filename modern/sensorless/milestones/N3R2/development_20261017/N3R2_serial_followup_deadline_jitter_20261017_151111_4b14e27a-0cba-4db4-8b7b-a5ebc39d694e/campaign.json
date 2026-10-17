@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "node": "N3R2",
+  "execution_version": "fault_ingress_schedule_v7",
+  "label": "serial_followup_deadline_jitter",
+  "status": "completed_passed",
+  "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_serial_followup_deadline_jitter_20261017_151111_4b14e27a-0cba-4db4-8b7b-a5ebc39d694e",
+  "driver_sha256": "504d1cd92ee2708a860a44f2c642712816a350b22cec6d8300c0275de97e0ab3",
+  "jobs": [
+    {
+      "case_id": "deadline_jitter",
+      "status": "passed",
+      "attempts": [
+        {
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_serial_followup_deadline_jitter_20261017_151111_4b14e27a-0cba-4db4-8b7b-a5ebc39d694e\\deadline_jitter_attempt_1_launcher.log",
+          "native_failure": false,
+          "exit_code": 0,
+          "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/faults');validate_sensorless_r2_fault_case('deadline_jitter','D:/simulink/dev/modern/sensorless/runs/N3R2_serial_followup_deadline_jitter_20261017_151111_4b14e27a-0cba-4db4-8b7b-a5ebc39d694e/deadline_jitter_attempt_1');",
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_serial_followup_deadline_jitter_20261017_151111_4b14e27a-0cba-4db4-8b7b-a5ebc39d694e\\deadline_jitter_attempt_1",
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_serial_followup_deadline_jitter_20261017_151111_4b14e27a-0cba-4db4-8b7b-a5ebc39d694e\\deadline_jitter_attempt_1_console.log"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_serial_followup_deadline_jitter_20261017_151111_4b14e27a-0cba-4db4-8b7b-a5ebc39d694e\\deadline_jitter_attempt_1"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "analysis_only": true,
+  "ordinary_logs": 94,
+  "ordinary_elements": 1.0147729E+7,
+  "ordinary_equal": true,
+  "ordinary_failures": [],
+  "obs_dead_gates": {
+    "reference_samples": 4000,
+    "api_samples": 4000,
+    "api_first_time_s": 0.0197500625,
+    "api_last_time_s": 0.02,
+    "reference_first_time_s": 0.0197500625,
+    "reference_last_time_s": 0.019999999999999997,
+    "full_Time_equal": false,
+    "full_Data_equal": true,
+    "configured_tail_Time_equal": false,
+    "configured_tail_Data_equal": true,
+    "uniform_encoding_Time_equal": true,
+    "native_ticks_equal": true,
+    "max_time_difference_s": 3.4694469519536142E-18,
+    "reference_increment": 6.25E-8,
+    "api_increment": null
+  },
+  "obs_dead_requested": {
+    "reference_samples": 4000,
+    "api_samples": 4000,
+    "api_first_time_s": 0.0197500625,
+    "api_last_time_s": 0.02,
+    "reference_first_time_s": 0.0197500625,
+    "reference_last_time_s": 0.019999999999999997,
+    "full_Time_equal": false,
+    "full_Data_equal": true,
+    "configured_tail_Time_equal": false,
+    "configured_tail_Data_equal": true,
+    "uniform_encoding_Time_equal": true,
+    "native_ticks_equal": true,
+    "max_time_difference_s": 3.4694469519536142E-18,
+    "reference_increment": 6.25E-8,
+    "api_increment": null
+  }
+}
