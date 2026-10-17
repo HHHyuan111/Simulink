@@ -1,0 +1,10 @@
+{
+  "all_passed": true,
+  "geometry_cases": 572,
+  "veto_cases": 3,
+  "invalid_cases": 4,
+  "queue_native_samples": 1313,
+  "publication_delay_s": 3E-6,
+  "no_truth_input": true,
+  "phase_limit_deg": 5
+}

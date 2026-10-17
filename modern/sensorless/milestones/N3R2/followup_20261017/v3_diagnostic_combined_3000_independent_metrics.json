@@ -1,0 +1,29 @@
+{
+  "scope": "independent fixed-window CSV diagnosis, not full R2 acceptance",
+  "all_invalid_samples_included": true,
+  "steady_samples": 6000,
+  "angle_rms_deg": 0.07531944857061468,
+  "angle_peak_deg": 0.11785941473908892,
+  "emf_angle_rms_deg": 0.1003799807174966,
+  "speed_mean_error_relative": 2.6147983965018336e-06,
+  "speed_rms_error_relative": 0.0004435642970986672,
+  "true_speed_mean_rpm": 2999.9965577227117,
+  "permit_fraction": 1.0,
+  "false_valid_longest_s": 0.019422375,
+  "false_valid_total_s": 0.019422375,
+  "first_permit_s": 0.059181875,
+  "false_valid_runs": [
+    {
+      "start_s": 0.059181875,
+      "end_s": 0.07860425,
+      "duration_s": 0.019422375
+    }
+  ],
+  "raw_source_sha256": "5fc1343cbe4cf1b507c3cb7a24b3a4eccd3124f48ecf0597bda8c3cdd7e635cf",
+  "export_csv_sha256": {
+    "control": "a286d2f55c2378015037051f0f371736b018bc975c918bc501abd69d94733c29",
+    "events": "e597f0dbbf648e7a86c85be83b756ab2be1bdd30cf84c738ab70c93c52dffc25",
+    "counters": "d3c9f1f99c4c551cad2212067305eef3e06ef56a1b40a21b26e4bcf60a64163d"
+  },
+  "renderer_sha256": "63568b6eebbb4eb0e5193eb6358d86fb4dc718b32dc2b3c655c88ff2f68e0771"
+}

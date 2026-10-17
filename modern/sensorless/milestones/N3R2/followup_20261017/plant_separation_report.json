@@ -1,0 +1,43 @@
+{
+  "kind": "plant_only_parameter_configuration",
+  "simulation_called": false,
+  "compile_called": false,
+  "all_passed": true,
+  "nominal_R_Ld_Lq": [
+    0.105125,
+    0.0001037615,
+    0.0001037615
+  ],
+  "source_sha256": "ee84ddcba34b4aabc0f4c6cfac8584ad98b207a47978acea08d197d44213ee5b",
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "sources": {
+    "sensorless_r2_plant_parameters": "ee84ddcba34b4aabc0f4c6cfac8584ad98b207a47978acea08d197d44213ee5b",
+    "sensorless_r2_restore_plant": "c773a159ba2c6ec8d2f0e96628d3ba1df0071597db8f4ae347dac4b9d4357a1d",
+    "validate_sensorless_r2_plant_separation": "2b4cabbfa8f01a0c46792e74a322809a38137503fa39fc5a4de400ee21b54cad"
+  },
+  "contract_sha256": "1de6f52af8152eecda9e184faa39b96e3f26f826aa5a78b185d36b0a40d800b4",
+  "cases": [
+    {
+      "R_multiplier": 1.2,
+      "L_multiplier": 0.8,
+      "actual_R_Ld_Lq": [
+        0.12614999999999998,
+        8.30092E-5,
+        8.30092E-5
+      ],
+      "expressions": 4,
+      "restored": true
+    },
+    {
+      "R_multiplier": 0.8,
+      "L_multiplier": 1.2,
+      "actual_R_Ld_Lq": [
+        0.084100000000000008,
+        0.0001245138,
+        0.0001245138
+      ],
+      "expressions": 4,
+      "restored": true
+    }
+  ]
+}

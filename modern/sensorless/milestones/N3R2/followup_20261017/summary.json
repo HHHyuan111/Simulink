@@ -1,0 +1,799 @@
+{
+  "node": "N3R2",
+  "all_passed": false,
+  "status": "five_static_cases_passed_other_physical_cases_pending",
+  "accepted_static_cases": 5,
+  "remaining_case_ids": [
+    "combined_dynamic",
+    "hot_R1p2_L0p8",
+    "cold_R0p8_L1p2",
+    "deadtime_2us",
+    "adc_clipping",
+    "missing_five",
+    "reset_one",
+    "low_speed_stop",
+    "deadline_jitter"
+  ],
+  "r1_frozen_files_preserved": 90,
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "attempts": [
+    {
+      "case_id": "r1_short_logging_check",
+      "version": "stopped_init_v3",
+      "attempt": 1,
+      "native_failure": true,
+      "exit_code": -1073741819,
+      "last_phase": "observer_compile",
+      "source_record_sha256": "6af7ebb48543c9a98be479c3bdad336fb60eae90371ec74793722990f6aebadb"
+    },
+    {
+      "case_id": "r1_short_logging_check",
+      "version": "stopped_init_v3",
+      "attempt": 2,
+      "native_failure": false,
+      "exit_code": 0,
+      "last_phase": "completed",
+      "source_record_sha256": "f84db521a181ab6ed650e841426269022ec45f49de83014175ef19c70edbb241"
+    },
+    {
+      "case_id": "diagnostic_combined_3000",
+      "version": "stopped_init_v3",
+      "attempt": 1,
+      "native_failure": false,
+      "exit_code": 0,
+      "last_phase": "completed",
+      "source_record_sha256": "41c6dffa8085e81d24f11bcfe1b47bd61372670580cb176dbb982348c72eeb5f"
+    },
+    {
+      "case_id": "r1_short_logging_check",
+      "version": "packet_phase_guard_v4",
+      "attempt": 1,
+      "native_failure": false,
+      "exit_code": 0,
+      "last_phase": "completed",
+      "source_record_sha256": "adddce7c6197b1095e43c31d2fea58f3c6cb53655f631acc16b0d6b6d0e876be"
+    },
+    {
+      "case_id": "diagnostic_combined_3000",
+      "version": "packet_phase_guard_v4",
+      "attempt": 1,
+      "native_failure": false,
+      "exit_code": 0,
+      "last_phase": "completed",
+      "source_record_sha256": "72968d8faf08401eb372337ad7778ed2470289f1d2f6ea42d5b74cb1a77e3eeb"
+    },
+    {
+      "case_id": "combined_1000",
+      "version": "packet_phase_guard_v4",
+      "attempt": 1,
+      "native_failure": false,
+      "exit_code": 0,
+      "last_phase": "completed",
+      "source_record_sha256": "72454ad6672a543979709b2eb517ddfb8b39a76ac5c21e55b68d71fd1f839a92"
+    },
+    {
+      "case_id": "combined_2000",
+      "version": "packet_phase_guard_v4",
+      "attempt": 1,
+      "native_failure": false,
+      "exit_code": 0,
+      "last_phase": "completed",
+      "source_record_sha256": "11469636af5e4de9797d5d46a58fda37db7738d5eb0d746b9419a191a2339f10"
+    },
+    {
+      "case_id": "combined_reverse_1000",
+      "version": "packet_phase_guard_v4",
+      "attempt": 1,
+      "native_failure": false,
+      "exit_code": 0,
+      "last_phase": "completed",
+      "source_record_sha256": "5ef807e9dc479e53f5d74e773dd67c6cc5d256cce4f2d1476ce14332fe87a937"
+    },
+    {
+      "case_id": "combined_reverse_3000",
+      "version": "packet_phase_guard_v4",
+      "attempt": 1,
+      "native_failure": true,
+      "exit_code": -1073741819,
+      "last_phase": "simulate",
+      "source_record_sha256": "b5b3ad3c7eba4ee95ba666da65c7955d750e04da480d1ad007630d48fe5bf9a4"
+    },
+    {
+      "case_id": "combined_reverse_3000",
+      "version": "packet_phase_guard_v4",
+      "attempt": 2,
+      "native_failure": false,
+      "exit_code": 0,
+      "last_phase": "completed",
+      "source_record_sha256": "822fd3e0d03dac54f4afc9aade9c13ba7341bdbb5aae570e574335fb4c65c063"
+    }
+  ],
+  "case_metrics": [
+    {
+      "case_id": "r1_short_logging_check",
+      "version": "stopped_init_v3",
+      "status": "passed",
+      "metrics": {
+        "node": "N3R2",
+        "id": "r1_short_logging_check",
+        "kind": "logging_validation",
+        "samples": 400,
+        "event_audit": {
+          "events": 803,
+          "false_valid_longest_s": 0,
+          "false_valid_total_s": 0,
+          "permit_total_s": 0,
+          "native_counters_equal_event_oracle": true,
+          "event_error_formula_equal": true,
+          "all_passed": true
+        },
+        "permission_violation_ticks": 0,
+        "low_speed_permit_ticks": 0,
+        "forbidden_control_values_ticks": 0,
+        "max_permitted_angle_error_deg": 0,
+        "max_permitted_speed_relative": 0,
+        "false_valid_longest_s": 0,
+        "false_valid_target_s": 0.002,
+        "first_permit_s": null,
+        "whole_run_peak_angle_deg": 98.40021056011096,
+        "whole_run_peak_speed_error_rpm": 865.8361052029239,
+        "steady": {},
+        "events": [],
+        "all_passed": true,
+        "failed_checks": [],
+        "checks": {
+          "event_audit": true,
+          "no_permission_violation": true,
+          "zero_forbidden_control_outputs": true,
+          "packet_count": true,
+          "native_count": true
+        }
+      },
+      "raw_sha256": "bde15ab881815c99d4180f65cf558794bcfa7f6a87666c0a8e7ebca4932d5319"
+    },
+    {
+      "case_id": "diagnostic_combined_3000",
+      "version": "stopped_init_v3",
+      "status": "completed_performance_failed",
+      "metrics": {
+        "node": "N3R2",
+        "id": "diagnostic_combined_3000",
+        "kind": "normal_precision",
+        "samples": 16000,
+        "event_audit": {
+          "events": 32004,
+          "false_valid_longest_s": 0.019422375,
+          "false_valid_total_s": 0.019422375,
+          "permit_total_s": 0.740818125,
+          "native_counters_equal_event_oracle": true,
+          "event_error_formula_equal": true,
+          "all_passed": true
+        },
+        "permission_violation_ticks": 0,
+        "low_speed_permit_ticks": 0,
+        "forbidden_control_values_ticks": 0,
+        "max_permitted_angle_error_deg": 8.27670733235425,
+        "max_permitted_speed_relative": 0.010770071132476038,
+        "false_valid_longest_s": 0.019422375,
+        "false_valid_target_s": 0.002,
+        "first_permit_s": 0.059181875,
+        "whole_run_peak_angle_deg": 98.40021056011096,
+        "whole_run_peak_speed_error_rpm": 865.8361052029239,
+        "steady": {
+          "window_s": [
+            0.5,
+            0.8
+          ],
+          "samples": 6000,
+          "target_rpm": 3000,
+          "true_speed_mean_rpm": 2999.9965577227113,
+          "true_speed_slope_rpm_s": 0.0983436697251195,
+          "electrical_cycles": 74.98715648788921,
+          "angle_rms_deg": 0.07531944857061731,
+          "angle_abs_max_deg": 0.11785941473903803,
+          "speed_mean_error_relative": 2.6147983964986246e-06,
+          "speed_rms_error_relative": 0.00044356429709865966,
+          "permit_fraction": 1
+        },
+        "events": [],
+        "all_passed": false,
+        "failed_checks": [
+          "false_valid"
+        ],
+        "checks": {
+          "event_audit": true,
+          "no_permission_violation": true,
+          "zero_forbidden_control_outputs": true,
+          "plant_settled": true,
+          "enough_cycles": true,
+          "angle_rms": true,
+          "angle_peak": true,
+          "speed_mean": true,
+          "speed_rms": true,
+          "permit_fraction": true,
+          "false_valid": false
+        }
+      },
+      "raw_sha256": "5fc1343cbe4cf1b507c3cb7a24b3a4eccd3124f48ecf0597bda8c3cdd7e635cf"
+    },
+    {
+      "case_id": "r1_short_logging_check",
+      "version": "packet_phase_guard_v4",
+      "status": "passed",
+      "metrics": {
+        "node": "N3R2",
+        "id": "r1_short_logging_check",
+        "kind": "logging_validation",
+        "samples": 400,
+        "event_audit": {
+          "events": 803,
+          "false_valid_longest_s": 0,
+          "false_valid_total_s": 0,
+          "permit_total_s": 0,
+          "native_counters_equal_event_oracle": true,
+          "event_error_formula_equal": true,
+          "all_passed": true
+        },
+        "permission_violation_ticks": 0,
+        "low_speed_permit_ticks": 0,
+        "forbidden_control_values_ticks": 0,
+        "max_permitted_angle_error_deg": 0,
+        "max_permitted_speed_relative": 0,
+        "false_valid_longest_s": 0,
+        "false_valid_target_s": 0.002,
+        "first_permit_s": null,
+        "whole_run_peak_angle_deg": 98.40021056011096,
+        "whole_run_peak_speed_error_rpm": 865.8361052029239,
+        "steady": {},
+        "events": [],
+        "all_passed": true,
+        "failed_checks": [],
+        "checks": {
+          "event_audit": true,
+          "no_permission_violation": true,
+          "zero_forbidden_control_outputs": true,
+          "packet_count": true,
+          "native_count": true
+        }
+      },
+      "raw_sha256": "b2438a1a9027ea17e8282e2d2f3d9c4bce691004a4891e1a15038c619654ffa2"
+    },
+    {
+      "case_id": "diagnostic_combined_3000",
+      "version": "packet_phase_guard_v4",
+      "status": "passed",
+      "metrics": {
+        "node": "N3R2",
+        "id": "diagnostic_combined_3000",
+        "kind": "normal_precision",
+        "samples": 16000,
+        "event_audit": {
+          "events": 32003,
+          "false_valid_longest_s": 0,
+          "false_valid_total_s": 0,
+          "permit_total_s": 0.7171681249999999,
+          "native_counters_equal_event_oracle": true,
+          "event_error_formula_equal": true,
+          "all_passed": true
+        },
+        "permission_violation_ticks": 0,
+        "low_speed_permit_ticks": 0,
+        "forbidden_control_values_ticks": 0,
+        "max_permitted_angle_error_deg": 4.845944228143003,
+        "max_permitted_speed_relative": 0.010770071132476038,
+        "false_valid_longest_s": 0,
+        "false_valid_target_s": 0.002,
+        "first_permit_s": 0.082831875,
+        "whole_run_peak_angle_deg": 98.40021056011096,
+        "whole_run_peak_speed_error_rpm": 865.8361052029239,
+        "steady": {
+          "window_s": [
+            0.5,
+            0.8
+          ],
+          "samples": 6000,
+          "target_rpm": 3000,
+          "true_speed_mean_rpm": 2999.9965577227113,
+          "true_speed_slope_rpm_s": 0.0983436697251195,
+          "electrical_cycles": 74.98715648788921,
+          "angle_rms_deg": 0.07531944857061731,
+          "angle_abs_max_deg": 0.11785941473903803,
+          "speed_mean_error_relative": 2.6147983964986246e-06,
+          "speed_rms_error_relative": 0.00044356429709865966,
+          "permit_fraction": 1
+        },
+        "events": [],
+        "all_passed": true,
+        "failed_checks": [],
+        "checks": {
+          "event_audit": true,
+          "no_permission_violation": true,
+          "zero_forbidden_control_outputs": true,
+          "plant_settled": true,
+          "enough_cycles": true,
+          "angle_rms": true,
+          "angle_peak": true,
+          "speed_mean": true,
+          "speed_rms": true,
+          "permit_fraction": true,
+          "false_valid": true
+        }
+      },
+      "raw_sha256": "6ee976231b6cd7aeb866bb5d863126b2f818b381bb1f93b01af209a447a00b4a"
+    },
+    {
+      "case_id": "combined_1000",
+      "version": "packet_phase_guard_v4",
+      "status": "passed",
+      "metrics": {
+        "node": "N3R2",
+        "id": "combined_1000",
+        "kind": "normal_precision",
+        "samples": 16000,
+        "event_audit": {
+          "events": 32003,
+          "false_valid_longest_s": 0,
+          "false_valid_total_s": 0,
+          "permit_total_s": 0.753818125,
+          "native_counters_equal_event_oracle": true,
+          "event_error_formula_equal": true,
+          "all_passed": true
+        },
+        "permission_violation_ticks": 0,
+        "low_speed_permit_ticks": 0,
+        "forbidden_control_values_ticks": 0,
+        "max_permitted_angle_error_deg": 1.4662825065297098,
+        "max_permitted_speed_relative": 0.020143636083933682,
+        "false_valid_longest_s": 0,
+        "false_valid_target_s": 0.002,
+        "first_permit_s": 0.046181875000000004,
+        "whole_run_peak_angle_deg": 98.40021056011096,
+        "whole_run_peak_speed_error_rpm": 865.8361052029239,
+        "steady": {
+          "window_s": [
+            0.5,
+            0.8
+          ],
+          "samples": 6000,
+          "target_rpm": 1000,
+          "true_speed_mean_rpm": 999.9950547027131,
+          "true_speed_slope_rpm_s": 0.026245420610269306,
+          "electrical_cycles": 24.99552167295677,
+          "angle_rms_deg": 0.08891976893197874,
+          "angle_abs_max_deg": 0.242777946192371,
+          "speed_mean_error_relative": 7.949011868678989e-06,
+          "speed_rms_error_relative": 0.006397479168584453,
+          "permit_fraction": 1
+        },
+        "events": [],
+        "all_passed": true,
+        "failed_checks": [],
+        "checks": {
+          "event_audit": true,
+          "no_permission_violation": true,
+          "zero_forbidden_control_outputs": true,
+          "plant_settled": true,
+          "enough_cycles": true,
+          "angle_rms": true,
+          "angle_peak": true,
+          "speed_mean": true,
+          "speed_rms": true,
+          "permit_fraction": true,
+          "false_valid": true
+        }
+      },
+      "raw_sha256": "7ba4502c5eb465f7e9592ccb5105cfb39adb58d3fc0b52cce5312d53c40db5cd"
+    },
+    {
+      "case_id": "combined_2000",
+      "version": "packet_phase_guard_v4",
+      "status": "passed",
+      "metrics": {
+        "node": "N3R2",
+        "id": "combined_2000",
+        "kind": "normal_precision",
+        "samples": 16000,
+        "event_audit": {
+          "events": 32003,
+          "false_valid_longest_s": 0,
+          "false_valid_total_s": 0,
+          "permit_total_s": 0.740818125,
+          "native_counters_equal_event_oracle": true,
+          "event_error_formula_equal": true,
+          "all_passed": true
+        },
+        "permission_violation_ticks": 0,
+        "low_speed_permit_ticks": 0,
+        "forbidden_control_values_ticks": 0,
+        "max_permitted_angle_error_deg": 3.094339491166233,
+        "max_permitted_speed_relative": 0.014525572629720488,
+        "false_valid_longest_s": 0,
+        "false_valid_target_s": 0.002,
+        "first_permit_s": 0.059181875,
+        "whole_run_peak_angle_deg": 98.40021056011096,
+        "whole_run_peak_speed_error_rpm": 865.8361052029239,
+        "steady": {
+          "window_s": [
+            0.5,
+            0.8
+          ],
+          "samples": 6000,
+          "target_rpm": 2000,
+          "true_speed_mean_rpm": 1999.9944280750026,
+          "true_speed_slope_rpm_s": -0.1503533703051857,
+          "electrical_cycles": 49.99124076254073,
+          "angle_rms_deg": 0.05070031439057755,
+          "angle_abs_max_deg": 0.09820536768448251,
+          "speed_mean_error_relative": 5.9731815898703076e-06,
+          "speed_rms_error_relative": 0.0008211741883786405,
+          "permit_fraction": 1
+        },
+        "events": [],
+        "all_passed": true,
+        "failed_checks": [],
+        "checks": {
+          "event_audit": true,
+          "no_permission_violation": true,
+          "zero_forbidden_control_outputs": true,
+          "plant_settled": true,
+          "enough_cycles": true,
+          "angle_rms": true,
+          "angle_peak": true,
+          "speed_mean": true,
+          "speed_rms": true,
+          "permit_fraction": true,
+          "false_valid": true
+        }
+      },
+      "raw_sha256": "774f5bc3c3baa521075d461a4b2cf95b00a520e9a8ca2fb9e1f59b0c501fe8c0"
+    },
+    {
+      "case_id": "combined_reverse_1000",
+      "version": "packet_phase_guard_v4",
+      "status": "passed",
+      "metrics": {
+        "node": "N3R2",
+        "id": "combined_reverse_1000",
+        "kind": "normal_precision",
+        "samples": 16000,
+        "event_audit": {
+          "events": 32003,
+          "false_valid_longest_s": 0,
+          "false_valid_total_s": 0,
+          "permit_total_s": 0.7584681249999999,
+          "native_counters_equal_event_oracle": true,
+          "event_error_formula_equal": true,
+          "all_passed": true
+        },
+        "permission_violation_ticks": 0,
+        "low_speed_permit_ticks": 0,
+        "forbidden_control_values_ticks": 0,
+        "max_permitted_angle_error_deg": 1.669372750320306,
+        "max_permitted_speed_relative": 0.02367136918710793,
+        "false_valid_longest_s": 0,
+        "false_valid_target_s": 0.002,
+        "first_permit_s": 0.041531875,
+        "whole_run_peak_angle_deg": 32.72661502166586,
+        "whole_run_peak_speed_error_rpm": 543.3166016099707,
+        "steady": {
+          "window_s": [
+            0.5,
+            0.8
+          ],
+          "samples": 6000,
+          "target_rpm": -1000,
+          "true_speed_mean_rpm": -1000.0032155830488,
+          "true_speed_slope_rpm_s": 0.006011525491824868,
+          "electrical_cycles": 24.99578123981441,
+          "angle_rms_deg": 0.1278468898259063,
+          "angle_abs_max_deg": 0.2927387028936986,
+          "speed_mean_error_relative": 6.774284702076064e-06,
+          "speed_rms_error_relative": 0.008379665632896362,
+          "permit_fraction": 1
+        },
+        "events": [],
+        "all_passed": true,
+        "failed_checks": [],
+        "checks": {
+          "event_audit": true,
+          "no_permission_violation": true,
+          "zero_forbidden_control_outputs": true,
+          "plant_settled": true,
+          "enough_cycles": true,
+          "angle_rms": true,
+          "angle_peak": true,
+          "speed_mean": true,
+          "speed_rms": true,
+          "permit_fraction": true,
+          "false_valid": true
+        }
+      },
+      "raw_sha256": "87fa1e792aa5c4d08b345f5a872e07187572a74dba4cd06291416d2680f93e07"
+    },
+    {
+      "case_id": "combined_reverse_3000",
+      "version": "packet_phase_guard_v4",
+      "status": "passed",
+      "metrics": {
+        "node": "N3R2",
+        "id": "combined_reverse_3000",
+        "kind": "normal_precision",
+        "samples": 16000,
+        "event_audit": {
+          "events": 32003,
+          "false_valid_longest_s": 0,
+          "false_valid_total_s": 0,
+          "permit_total_s": 0.745018125,
+          "native_counters_equal_event_oracle": true,
+          "event_error_formula_equal": true,
+          "all_passed": true
+        },
+        "permission_violation_ticks": 0,
+        "low_speed_permit_ticks": 0,
+        "forbidden_control_values_ticks": 0,
+        "max_permitted_angle_error_deg": 2.3677651242623856,
+        "max_permitted_speed_relative": 0.0031443227645513855,
+        "false_valid_longest_s": 0,
+        "false_valid_target_s": 0.002,
+        "first_permit_s": 0.054981875000000006,
+        "whole_run_peak_angle_deg": 37.40369759425396,
+        "whole_run_peak_speed_error_rpm": 543.3166016099707,
+        "steady": {
+          "window_s": [
+            0.5,
+            0.8
+          ],
+          "samples": 6000,
+          "target_rpm": -3000,
+          "true_speed_mean_rpm": -3000.001926881314,
+          "true_speed_slope_rpm_s": -0.11093103794642016,
+          "electrical_cycles": 74.98726264188109,
+          "angle_rms_deg": 0.07644249477215471,
+          "angle_abs_max_deg": 0.11308837960534858,
+          "speed_mean_error_relative": 3.2457851735514394e-06,
+          "speed_rms_error_relative": 0.00044570770681529563,
+          "permit_fraction": 1
+        },
+        "events": [],
+        "all_passed": true,
+        "failed_checks": [],
+        "checks": {
+          "event_audit": true,
+          "no_permission_violation": true,
+          "zero_forbidden_control_outputs": true,
+          "plant_settled": true,
+          "enough_cycles": true,
+          "angle_rms": true,
+          "angle_peak": true,
+          "speed_mean": true,
+          "speed_rms": true,
+          "permit_fraction": true,
+          "false_valid": true
+        }
+      },
+      "raw_sha256": "92c79d8afd74bfe5f6d6b7ffe6c91376596435a6a887cf601bbef28598b43f9a"
+    }
+  ],
+  "published": [
+    {
+      "source": "runs/N3R2_stopped_init_v3_20261017_105619_277b3c70-cdf0-4542-b35d-d320753c4b82/campaign.json",
+      "published": "campaign_3.json",
+      "sha256": "6a076d989a0035d7ddabed7c03302e51674e3bedc794b7f2271e104064abe09a"
+    },
+    {
+      "source": "runs/N3R2_stopped_init_v3_20261017_105619_277b3c70-cdf0-4542-b35d-d320753c4b82/r1_short_logging_check_attempt_2/record.json",
+      "published": "v3_r1_short_logging_check_record.json",
+      "sha256": "f84db521a181ab6ed650e841426269022ec45f49de83014175ef19c70edbb241"
+    },
+    {
+      "source": "runs/N3R2_stopped_init_v3_20261017_105619_277b3c70-cdf0-4542-b35d-d320753c4b82/r1_short_logging_check_attempt_2/metrics.json",
+      "published": "v3_r1_short_logging_check_metrics.json",
+      "sha256": "35d1d1c76d25a8989844f9594e5865f0eb0a8b2a3172dc09545839f0668f6630"
+    },
+    {
+      "source": "runs/N3R2_stopped_init_v3_20261017_105619_277b3c70-cdf0-4542-b35d-d320753c4b82/r1_short_logging_check_attempt_2/logging_validation.json",
+      "published": "v3_r1_short_logging_check_logging_validation.json",
+      "sha256": "443e0b2e718b5e0fe4130faa5d9d2c2e8c5a761e5701ba521b6de3721aab99c8"
+    },
+    {
+      "source": "runs/N3R2_stopped_init_v3_20261017_105619_277b3c70-cdf0-4542-b35d-d320753c4b82/r1_short_logging_check_attempt_2/graph.json",
+      "published": "v3_r1_short_logging_check_graph.json",
+      "sha256": "3f3a5d891faecad1bbf074cdc80d94df15e02602d6931962778dcc13fe72f7aa"
+    },
+    {
+      "source": "runs/N3R2_stopped_init_v3_20261017_105619_277b3c70-cdf0-4542-b35d-d320753c4b82/diagnostic_combined_3000_attempt_1/record.json",
+      "published": "v3_diagnostic_combined_3000_record.json",
+      "sha256": "41c6dffa8085e81d24f11bcfe1b47bd61372670580cb176dbb982348c72eeb5f"
+    },
+    {
+      "source": "runs/N3R2_stopped_init_v3_20261017_105619_277b3c70-cdf0-4542-b35d-d320753c4b82/diagnostic_combined_3000_attempt_1/metrics.json",
+      "published": "v3_diagnostic_combined_3000_metrics.json",
+      "sha256": "804828bcc70fd4b946cc1b3955cbaa99a442eee45b4839393423d3b6be02f3a7"
+    },
+    {
+      "source": "runs/N3R2_stopped_init_v3_20261017_105619_277b3c70-cdf0-4542-b35d-d320753c4b82/diagnostic_combined_3000_attempt_1/graph.json",
+      "published": "v3_diagnostic_combined_3000_graph.json",
+      "sha256": "3f3a5d891faecad1bbf074cdc80d94df15e02602d6931962778dcc13fe72f7aa"
+    },
+    {
+      "source": "runs/N3R2_stopped_init_v3_20261017_105619_277b3c70-cdf0-4542-b35d-d320753c4b82/diagnostic_combined_3000_attempt_1/log_coverage.json",
+      "published": "v3_diagnostic_combined_3000_log_coverage.json",
+      "sha256": "197f70e2d572e3f654522c002a932c8c22bf9dfb83ec18781fdee158be586786"
+    },
+    {
+      "source": "runs/N3R2_stopped_init_v3_20261017_105619_277b3c70-cdf0-4542-b35d-d320753c4b82/diagnostic_combined_3000_attempt_1/review/diagnosis.png",
+      "published": "v3_diagnostic_combined_3000_diagnosis.png",
+      "sha256": "d3ed13a31d7c3c375755700068423d3cf69bf118af4fd8587a3cd2d1b63a81d9"
+    },
+    {
+      "source": "runs/N3R2_stopped_init_v3_20261017_105619_277b3c70-cdf0-4542-b35d-d320753c4b82/diagnostic_combined_3000_attempt_1/review/independent_metrics.json",
+      "published": "v3_diagnostic_combined_3000_independent_metrics.json",
+      "sha256": "e9988ce87346e041adb19f56e41b315a1ad209ba93c1728dfe85207416de3eac"
+    },
+    {
+      "source": "runs/N3R2_stopped_init_v3_20261017_105619_277b3c70-cdf0-4542-b35d-d320753c4b82/diagnostic_combined_3000_attempt_1/review/provenance.json",
+      "published": "v3_diagnostic_combined_3000_provenance.json",
+      "sha256": "01d891ea294e1ff9b5e62ec22eff81c40d43de4269e15f126921920a846ada82"
+    },
+    {
+      "source": "runs/N3R2_packet_phase_guard_v4_20261017_112427_9e735b46-7a5c-4647-9ded-1039e323d9ef/campaign.json",
+      "published": "campaign_4.json",
+      "sha256": "26949f7f3148ec66225005d6c0d96b99cf97b0a907e8f9c1e1f4351fb2c349a6"
+    },
+    {
+      "source": "runs/N3R2_packet_phase_guard_v4_20261017_112427_9e735b46-7a5c-4647-9ded-1039e323d9ef/r1_short_logging_check_attempt_1/record.json",
+      "published": "v4_r1_short_logging_check_record.json",
+      "sha256": "adddce7c6197b1095e43c31d2fea58f3c6cb53655f631acc16b0d6b6d0e876be"
+    },
+    {
+      "source": "runs/N3R2_packet_phase_guard_v4_20261017_112427_9e735b46-7a5c-4647-9ded-1039e323d9ef/r1_short_logging_check_attempt_1/metrics.json",
+      "published": "v4_r1_short_logging_check_metrics.json",
+      "sha256": "35d1d1c76d25a8989844f9594e5865f0eb0a8b2a3172dc09545839f0668f6630"
+    },
+    {
+      "source": "runs/N3R2_packet_phase_guard_v4_20261017_112427_9e735b46-7a5c-4647-9ded-1039e323d9ef/r1_short_logging_check_attempt_1/logging_validation.json",
+      "published": "v4_r1_short_logging_check_logging_validation.json",
+      "sha256": "4b056c8a9ed961f4dcf6451d461f44273c661ebaf396b01e75b76f4eb763dad6"
+    },
+    {
+      "source": "runs/N3R2_packet_phase_guard_v4_20261017_112427_9e735b46-7a5c-4647-9ded-1039e323d9ef/r1_short_logging_check_attempt_1/graph.json",
+      "published": "v4_r1_short_logging_check_graph.json",
+      "sha256": "56147549bc719fa5573f96bcce8030412fafb6ef74d28a2daa486948281050cd"
+    },
+    {
+      "source": "runs/N3R2_packet_phase_guard_v4_20261017_112427_9e735b46-7a5c-4647-9ded-1039e323d9ef/diagnostic_combined_3000_attempt_1/record.json",
+      "published": "v4_diagnostic_combined_3000_record.json",
+      "sha256": "72968d8faf08401eb372337ad7778ed2470289f1d2f6ea42d5b74cb1a77e3eeb"
+    },
+    {
+      "source": "runs/N3R2_packet_phase_guard_v4_20261017_112427_9e735b46-7a5c-4647-9ded-1039e323d9ef/diagnostic_combined_3000_attempt_1/metrics.json",
+      "published": "v4_diagnostic_combined_3000_metrics.json",
+      "sha256": "f7e4d8804283a3d3d71651daf1469e6b9ca96ee059027defc27ea42b3550ded0"
+    },
+    {
+      "source": "runs/N3R2_packet_phase_guard_v4_20261017_112427_9e735b46-7a5c-4647-9ded-1039e323d9ef/diagnostic_combined_3000_attempt_1/graph.json",
+      "published": "v4_diagnostic_combined_3000_graph.json",
+      "sha256": "56147549bc719fa5573f96bcce8030412fafb6ef74d28a2daa486948281050cd"
+    },
+    {
+      "source": "runs/N3R2_packet_phase_guard_v4_20261017_112427_9e735b46-7a5c-4647-9ded-1039e323d9ef/diagnostic_combined_3000_attempt_1/estimator_state_comparison.json",
+      "published": "v4_diagnostic_combined_3000_estimator_state_comparison.json",
+      "sha256": "96839c165fb8a5642c9148f136f9f3a81b56c5f8ca042073cb7d154f8a0ac66e"
+    },
+    {
+      "source": "runs/N3R2_packet_phase_guard_v4_20261017_112427_9e735b46-7a5c-4647-9ded-1039e323d9ef/diagnostic_combined_3000_attempt_1/review/diagnosis.png",
+      "published": "v4_diagnostic_combined_3000_diagnosis.png",
+      "sha256": "edf7221e5745b634df59df0a19d021d36c5ba37995810045daeaaf8fee20b30a"
+    },
+    {
+      "source": "runs/N3R2_packet_phase_guard_v4_20261017_112427_9e735b46-7a5c-4647-9ded-1039e323d9ef/diagnostic_combined_3000_attempt_1/review/independent_metrics.json",
+      "published": "v4_diagnostic_combined_3000_independent_metrics.json",
+      "sha256": "0e0d6103991c5fc6fa9f4838df4505fd6a7a7fc09a6927a7a93015c8a3de8c99"
+    },
+    {
+      "source": "runs/N3R2_packet_phase_guard_v4_20261017_112427_9e735b46-7a5c-4647-9ded-1039e323d9ef/diagnostic_combined_3000_attempt_1/review/provenance.json",
+      "published": "v4_diagnostic_combined_3000_provenance.json",
+      "sha256": "28cca288f1a12d22d45b6f0a14002713403196ad5fd275c1c2b403fe12b4215a"
+    },
+    {
+      "source": "runs/N3R2_guard_static_matrix_20261017_113855_f2397e8f-45aa-4262-b709-eeb01805f5c9/campaign.json",
+      "published": "campaign_5.json",
+      "sha256": "031d8d43c2b414097343e3ef47d204843d3dae784735e953cbcf6a46ae0ab1d0"
+    },
+    {
+      "source": "runs/N3R2_guard_static_matrix_20261017_113855_f2397e8f-45aa-4262-b709-eeb01805f5c9/combined_1000_attempt_1/record.json",
+      "published": "v4_combined_1000_record.json",
+      "sha256": "72454ad6672a543979709b2eb517ddfb8b39a76ac5c21e55b68d71fd1f839a92"
+    },
+    {
+      "source": "runs/N3R2_guard_static_matrix_20261017_113855_f2397e8f-45aa-4262-b709-eeb01805f5c9/combined_1000_attempt_1/metrics.json",
+      "published": "v4_combined_1000_metrics.json",
+      "sha256": "169eead0aa9ebb12b8bc8ffc62ce479c315cef11a7396517db862b35d250e724"
+    },
+    {
+      "source": "runs/N3R2_guard_static_matrix_20261017_113855_f2397e8f-45aa-4262-b709-eeb01805f5c9/combined_1000_attempt_1/graph.json",
+      "published": "v4_combined_1000_graph.json",
+      "sha256": "56147549bc719fa5573f96bcce8030412fafb6ef74d28a2daa486948281050cd"
+    },
+    {
+      "source": "runs/N3R2_guard_static_matrix_20261017_113855_f2397e8f-45aa-4262-b709-eeb01805f5c9/combined_2000_attempt_1/record.json",
+      "published": "v4_combined_2000_record.json",
+      "sha256": "11469636af5e4de9797d5d46a58fda37db7738d5eb0d746b9419a191a2339f10"
+    },
+    {
+      "source": "runs/N3R2_guard_static_matrix_20261017_113855_f2397e8f-45aa-4262-b709-eeb01805f5c9/combined_2000_attempt_1/metrics.json",
+      "published": "v4_combined_2000_metrics.json",
+      "sha256": "cd88a0ae0dda24045157dffb4d8ade678ddd7480d5389d4498d7c072b491b14b"
+    },
+    {
+      "source": "runs/N3R2_guard_static_matrix_20261017_113855_f2397e8f-45aa-4262-b709-eeb01805f5c9/combined_2000_attempt_1/graph.json",
+      "published": "v4_combined_2000_graph.json",
+      "sha256": "56147549bc719fa5573f96bcce8030412fafb6ef74d28a2daa486948281050cd"
+    },
+    {
+      "source": "runs/N3R2_guard_static_matrix_20261017_113855_f2397e8f-45aa-4262-b709-eeb01805f5c9/combined_reverse_1000_attempt_1/record.json",
+      "published": "v4_combined_reverse_1000_record.json",
+      "sha256": "5ef807e9dc479e53f5d74e773dd67c6cc5d256cce4f2d1476ce14332fe87a937"
+    },
+    {
+      "source": "runs/N3R2_guard_static_matrix_20261017_113855_f2397e8f-45aa-4262-b709-eeb01805f5c9/combined_reverse_1000_attempt_1/metrics.json",
+      "published": "v4_combined_reverse_1000_metrics.json",
+      "sha256": "b393853bf11e07b693b25c03409774415b10c8e0c0bf3c7979466e843d0a21d8"
+    },
+    {
+      "source": "runs/N3R2_guard_static_matrix_20261017_113855_f2397e8f-45aa-4262-b709-eeb01805f5c9/combined_reverse_1000_attempt_1/graph.json",
+      "published": "v4_combined_reverse_1000_graph.json",
+      "sha256": "56147549bc719fa5573f96bcce8030412fafb6ef74d28a2daa486948281050cd"
+    },
+    {
+      "source": "runs/N3R2_guard_static_matrix_20261017_113855_f2397e8f-45aa-4262-b709-eeb01805f5c9/combined_reverse_3000_attempt_2/record.json",
+      "published": "v4_combined_reverse_3000_record.json",
+      "sha256": "822fd3e0d03dac54f4afc9aade9c13ba7341bdbb5aae570e574335fb4c65c063"
+    },
+    {
+      "source": "runs/N3R2_guard_static_matrix_20261017_113855_f2397e8f-45aa-4262-b709-eeb01805f5c9/combined_reverse_3000_attempt_2/metrics.json",
+      "published": "v4_combined_reverse_3000_metrics.json",
+      "sha256": "0b577cbe8fa139e07d81e466beb8ea9d3fe73d54900074310407fadbabdea585"
+    },
+    {
+      "source": "runs/N3R2_guard_static_matrix_20261017_113855_f2397e8f-45aa-4262-b709-eeb01805f5c9/combined_reverse_3000_attempt_2/graph.json",
+      "published": "v4_combined_reverse_3000_graph.json",
+      "sha256": "56147549bc719fa5573f96bcce8030412fafb6ef74d28a2daa486948281050cd"
+    },
+    {
+      "source": "runs/N3R2_stopped_init_compile_probe_once/record.json",
+      "published": "stopped_init_record.json",
+      "sha256": "5beab7acce7dc66553195a95b65390576865bdf64ecc3171962d43d5df46f0e6"
+    },
+    {
+      "source": "runs/N3R2_phase_guard_components_once/record.json",
+      "published": "phase_guard_components_record.json",
+      "sha256": "28a7041805250e23b0d765bbdd879ba49e9e2dfa8b5dc95ea068f5bc4289bdc4"
+    },
+    {
+      "source": "runs/N3R2_phase_guard_components_once/metrics.json",
+      "published": "phase_guard_components_metrics.json",
+      "sha256": "21cfdc75f4b62a09a5d93bb6450e158dcb5965abc5c025e74eaccafb1ae6d89f"
+    },
+    {
+      "source": "runs/N3R2_plant_separation_configuration_once/report.json",
+      "published": "plant_separation_report.json",
+      "sha256": "0d769d058b1b94339bb4616fabc33b5cf6435f6c945b4bd60e000593755b1fa8"
+    },
+    {
+      "source": ".build/R2_windows_exception_metadata.json",
+      "published": "windows_exception_metadata.json",
+      "sha256": "d711d5a68faf901aa1a393abead4baed5be539bc83b32ef76fb943f9e8bd47a1"
+    }
+  ],
+  "native_root_cause_confirmed": false,
+  "full_independent_replay_done": false,
+  "original52_full_long_baseline_regression_done": false,
+  "feedback_takeover": false,
+  "original_bounded_logs": [
+    "obs_dead_gates",
+    "obs_dead_requested"
+  ],
+  "bounded_original_logs_max_points": 4000,
+  "coverage_checker_history": "Initial checker assumed unbounded logs and failed; original SLX caps confirmed and configured-retention audit passed without model/log changes."
+}

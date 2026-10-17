@@ -1,0 +1,14 @@
+{
+  "source_raw_sha256": "5fc1343cbe4cf1b507c3cb7a24b3a4eccd3124f48ecf0597bda8c3cdd7e635cf",
+  "exporter_sha256": "dbcd69b5f8f2707cff7fbce8b640cfb8bf43b1ec8385645219c01280a10ef0e2",
+  "control_rows": 16000,
+  "event_rows": 32004,
+  "counter_rows": 16001,
+  "no_model_loaded": true,
+  "no_downsampling": true,
+  "files": {
+    "control": "a286d2f55c2378015037051f0f371736b018bc975c918bc501abd69d94733c29",
+    "events": "e597f0dbbf648e7a86c85be83b756ab2be1bdd30cf84c738ab70c93c52dffc25",
+    "counters": "d3c9f1f99c4c551cad2212067305eef3e06ef56a1b40a21b26e4bcf60a64163d"
+  }
+}

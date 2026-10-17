@@ -1,0 +1,36 @@
+{
+  "node": "N3R2",
+  "id": "r1_short_logging_check",
+  "kind": "logging_validation",
+  "samples": 400,
+  "event_audit": {
+    "events": 803,
+    "false_valid_longest_s": 0,
+    "false_valid_total_s": 0,
+    "permit_total_s": 0,
+    "native_counters_equal_event_oracle": true,
+    "event_error_formula_equal": true,
+    "all_passed": true
+  },
+  "permission_violation_ticks": 0,
+  "low_speed_permit_ticks": 0,
+  "forbidden_control_values_ticks": 0,
+  "max_permitted_angle_error_deg": 0,
+  "max_permitted_speed_relative": 0,
+  "false_valid_longest_s": 0,
+  "false_valid_target_s": 0.002,
+  "first_permit_s": null,
+  "whole_run_peak_angle_deg": 98.400210560110963,
+  "whole_run_peak_speed_error_rpm": 865.83610520292393,
+  "steady": {},
+  "events": [],
+  "all_passed": true,
+  "failed_checks": [],
+  "checks": {
+    "event_audit": true,
+    "no_permission_violation": true,
+    "zero_forbidden_control_outputs": true,
+    "packet_count": true,
+    "native_count": true
+  }
+}

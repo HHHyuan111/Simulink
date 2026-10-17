@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "node": "N3R2",
+  "execution_version": "packet_phase_guard_v4",
+  "label": "guard_static_matrix",
+  "status": "completed_passed",
+  "numerical_version": "R1 estimates plus packet phase guard",
+  "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_guard_static_matrix_20261017_113855_f2397e8f-45aa-4262-b709-eeb01805f5c9",
+  "driver_sha256": "dad60fc93d61b7415cc96bd6f26051735333c465cd5d777bc9657fc81749281e",
+  "jobs": [
+    {
+      "case_id": "combined_1000",
+      "status": "passed",
+      "attempts": [
+        {
+          "native_failure": false,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_guard_static_matrix_20261017_113855_f2397e8f-45aa-4262-b709-eeb01805f5c9\\combined_1000_attempt_1",
+          "exit_code": 0,
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_guard_static_matrix_20261017_113855_f2397e8f-45aa-4262-b709-eeb01805f5c9\\combined_1000_attempt_1_launcher.log",
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_guard_static_matrix_20261017_113855_f2397e8f-45aa-4262-b709-eeb01805f5c9\\combined_1000_attempt_1_console.log",
+          "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/phase_guard');validate_sensorless_r2_guard_case('combined_1000','D:/simulink/dev/modern/sensorless/runs/N3R2_guard_static_matrix_20261017_113855_f2397e8f-45aa-4262-b709-eeb01805f5c9/combined_1000_attempt_1');"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_guard_static_matrix_20261017_113855_f2397e8f-45aa-4262-b709-eeb01805f5c9\\combined_1000_attempt_1"
+    },
+    {
+      "case_id": "combined_2000",
+      "status": "passed",
+      "attempts": [
+        {
+          "native_failure": false,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_guard_static_matrix_20261017_113855_f2397e8f-45aa-4262-b709-eeb01805f5c9\\combined_2000_attempt_1",
+          "exit_code": 0,
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_guard_static_matrix_20261017_113855_f2397e8f-45aa-4262-b709-eeb01805f5c9\\combined_2000_attempt_1_launcher.log",
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_guard_static_matrix_20261017_113855_f2397e8f-45aa-4262-b709-eeb01805f5c9\\combined_2000_attempt_1_console.log",
+          "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/phase_guard');validate_sensorless_r2_guard_case('combined_2000','D:/simulink/dev/modern/sensorless/runs/N3R2_guard_static_matrix_20261017_113855_f2397e8f-45aa-4262-b709-eeb01805f5c9/combined_2000_attempt_1');"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_guard_static_matrix_20261017_113855_f2397e8f-45aa-4262-b709-eeb01805f5c9\\combined_2000_attempt_1"
+    },
+    {
+      "case_id": "combined_reverse_1000",
+      "status": "passed",
+      "attempts": [
+        {
+          "native_failure": false,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_guard_static_matrix_20261017_113855_f2397e8f-45aa-4262-b709-eeb01805f5c9\\combined_reverse_1000_attempt_1",
+          "exit_code": 0,
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_guard_static_matrix_20261017_113855_f2397e8f-45aa-4262-b709-eeb01805f5c9\\combined_reverse_1000_attempt_1_launcher.log",
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_guard_static_matrix_20261017_113855_f2397e8f-45aa-4262-b709-eeb01805f5c9\\combined_reverse_1000_attempt_1_console.log",
+          "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/phase_guard');validate_sensorless_r2_guard_case('combined_reverse_1000','D:/simulink/dev/modern/sensorless/runs/N3R2_guard_static_matrix_20261017_113855_f2397e8f-45aa-4262-b709-eeb01805f5c9/combined_reverse_1000_attempt_1');"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_guard_static_matrix_20261017_113855_f2397e8f-45aa-4262-b709-eeb01805f5c9\\combined_reverse_1000_attempt_1"
+    },
+    {
+      "case_id": "combined_reverse_3000",
+      "status": "passed",
+      "attempts": [
+        {
+          "native_failure": true,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_guard_static_matrix_20261017_113855_f2397e8f-45aa-4262-b709-eeb01805f5c9\\combined_reverse_3000_attempt_1",
+          "exit_code": -1073741819,
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_guard_static_matrix_20261017_113855_f2397e8f-45aa-4262-b709-eeb01805f5c9\\combined_reverse_3000_attempt_1_launcher.log",
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_guard_static_matrix_20261017_113855_f2397e8f-45aa-4262-b709-eeb01805f5c9\\combined_reverse_3000_attempt_1_console.log",
+          "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/phase_guard');validate_sensorless_r2_guard_case('combined_reverse_3000','D:/simulink/dev/modern/sensorless/runs/N3R2_guard_static_matrix_20261017_113855_f2397e8f-45aa-4262-b709-eeb01805f5c9/combined_reverse_3000_attempt_1');"
+        },
+        {
+          "native_failure": false,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_guard_static_matrix_20261017_113855_f2397e8f-45aa-4262-b709-eeb01805f5c9\\combined_reverse_3000_attempt_2",
+          "exit_code": 0,
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_guard_static_matrix_20261017_113855_f2397e8f-45aa-4262-b709-eeb01805f5c9\\combined_reverse_3000_attempt_2_launcher.log",
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_guard_static_matrix_20261017_113855_f2397e8f-45aa-4262-b709-eeb01805f5c9\\combined_reverse_3000_attempt_2_console.log",
+          "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/phase_guard');validate_sensorless_r2_guard_case('combined_reverse_3000','D:/simulink/dev/modern/sensorless/runs/N3R2_guard_static_matrix_20261017_113855_f2397e8f-45aa-4262-b709-eeb01805f5c9/combined_reverse_3000_attempt_2');"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_guard_static_matrix_20261017_113855_f2397e8f-45aa-4262-b709-eeb01805f5c9\\combined_reverse_3000_attempt_2"
+    }
+  ]
+}

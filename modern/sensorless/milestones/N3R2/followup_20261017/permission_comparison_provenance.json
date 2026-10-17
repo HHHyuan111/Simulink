@@ -1,0 +1,17 @@
+{
+  "renderer_sha256": "e6aeafa8042b4e071f093b51ae5a41916dd286644a954caba9ac54ea4992c624",
+  "original_control_csv_sha256": "a286d2f55c2378015037051f0f371736b018bc975c918bc501abd69d94733c29",
+  "guard_control_csv_sha256": "9ce6a9c38401c80035754b5be7268bcc5ef668b0408b6e515bc5b9b4457f24e8",
+  "original_events_csv_sha256": "e597f0dbbf648e7a86c85be83b756ab2be1bdd30cf84c738ab70c93c52dffc25",
+  "guard_events_csv_sha256": "9ef2232956c47053b7d72227edd18c0f9565552943074da9ac355043366cdbb0",
+  "no_samples_discarded": true,
+  "display_window_s": [
+    0.045,
+    0.115
+  ],
+  "full_run_evaluation_window_s": [
+    0,
+    0.8
+  ],
+  "figure_sha256": "819eb2e6ea9a59c64590740811be13e3d4ec6a421275fd3dae423335887002c3"
+}

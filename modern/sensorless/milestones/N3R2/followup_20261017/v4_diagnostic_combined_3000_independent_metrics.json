@@ -1,0 +1,26 @@
+{
+  "scope": "independent fixed-window CSV diagnosis, not full R2 acceptance",
+  "all_invalid_samples_included": true,
+  "steady_samples": 6000,
+  "angle_rms_deg": 0.07531944857061468,
+  "angle_peak_deg": 0.11785941473908892,
+  "emf_angle_rms_deg": 0.1003799807174966,
+  "speed_mean_error_relative": 2.6147983965018336e-06,
+  "speed_rms_error_relative": 0.0004435642970986672,
+  "true_speed_mean_rpm": 2999.9965577227117,
+  "permit_fraction": 1.0,
+  "false_valid_longest_s": 0.0,
+  "false_valid_total_s": 0.0,
+  "first_permit_s": 0.082831875,
+  "false_valid_runs": [],
+  "raw_source_sha256": "6ee976231b6cd7aeb866bb5d863126b2f818b381bb1f93b01af209a447a00b4a",
+  "export_csv_sha256": {
+    "control": "9ce6a9c38401c80035754b5be7268bcc5ef668b0408b6e515bc5b9b4457f24e8",
+    "events": "9ef2232956c47053b7d72227edd18c0f9565552943074da9ac355043366cdbb0",
+    "counters": "2c4b7b2d49beab8a331e50eea79c1db06e95c3c2d1d3262c1094bdd14088b01d"
+  },
+  "renderer_sha256": "0918a3bcc927b13d52d03661adf1477907acedc06586fa943fe98f35365e92c5",
+  "packet_phase_guard_used": true,
+  "emf_angle_peak_during_permission_deg": 0.35831281407815624,
+  "packet_phase_peak_during_permission_deg": 4.951050229264567
+}

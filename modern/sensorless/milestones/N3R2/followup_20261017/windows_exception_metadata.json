@@ -1,0 +1,812 @@
+[
+  {
+    "dump_name": "MATLAB.exe.59840.dmp",
+    "exception_code": "0xc0000005",
+    "exception_flags": 0,
+    "exception_location": {
+      "module": "unknown/unmapped",
+      "address": "0xf"
+    },
+    "thread_id": 47840,
+    "module_hits_are_unwound_stack": false,
+    "raw_memory_exported": false,
+    "access_kind": "execute",
+    "access_target": {
+      "module": "unknown/unmapped",
+      "address": "0xf"
+    },
+    "context_instruction_matches_exception": true,
+    "raw_stack_module_hits": [
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x0",
+        "stack_offset_bytes": 56
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0xf5b75",
+        "stack_offset_bytes": 112
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0xf61c6",
+        "stack_offset_bytes": 208
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0xf3ba0",
+        "stack_offset_bytes": 240
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0xf46eb",
+        "stack_offset_bytes": 272
+      },
+      {
+        "module": "ucrtbase.dll",
+        "offset": "0x50d9",
+        "stack_offset_bytes": 352
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0xf5a35",
+        "stack_offset_bytes": 448
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0xf9a66",
+        "stack_offset_bytes": 512
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0xf534f",
+        "stack_offset_bytes": 576
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0xf78e3",
+        "stack_offset_bytes": 624
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x3ededa",
+        "stack_offset_bytes": 768
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x325ab4",
+        "stack_offset_bytes": 896
+      },
+      {
+        "module": "libmwlxemainservices.dll",
+        "offset": "0x41b6c8",
+        "stack_offset_bytes": 960
+      },
+      {
+        "module": "libmwlxemainservices.dll",
+        "offset": "0x3734e8",
+        "stack_offset_bytes": 968
+      },
+      {
+        "module": "libmwlxemainservices.dll",
+        "offset": "0x41b6c8",
+        "stack_offset_bytes": 1024
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x3296e8",
+        "stack_offset_bytes": 1296
+      },
+      {
+        "module": "libmwlxeutilities.dll",
+        "offset": "0x278df",
+        "stack_offset_bytes": 1328
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x418616",
+        "stack_offset_bytes": 1376
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x315d000",
+        "stack_offset_bytes": 1432
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x4f273c",
+        "stack_offset_bytes": 1504
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x243b130",
+        "stack_offset_bytes": 1520
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x406d7b",
+        "stack_offset_bytes": 1552
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x315d000",
+        "stack_offset_bytes": 1568
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x408073",
+        "stack_offset_bytes": 1616
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x315d000",
+        "stack_offset_bytes": 1648
+      },
+      {
+        "module": "libmwir.dll",
+        "offset": "0x202f9",
+        "stack_offset_bytes": 1680
+      },
+      {
+        "module": "ucrtbase.dll",
+        "offset": "0x12d7b",
+        "stack_offset_bytes": 1776
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x2434f50",
+        "stack_offset_bytes": 1784
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x2434f68",
+        "stack_offset_bytes": 1792
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x2434f50",
+        "stack_offset_bytes": 1840
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x2434f68",
+        "stack_offset_bytes": 1848
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x243b130",
+        "stack_offset_bytes": 1896
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x243b148",
+        "stack_offset_bytes": 1904
+      },
+      {
+        "module": "stateflow.dll",
+        "offset": "0x96a200",
+        "stack_offset_bytes": 1968
+      },
+      {
+        "module": "stateflow.dll",
+        "offset": "0x1396200",
+        "stack_offset_bytes": 2000
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x73bd2",
+        "stack_offset_bytes": 2336
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x42011b",
+        "stack_offset_bytes": 2352
+      },
+      {
+        "module": "libmwir.dll",
+        "offset": "0x5a83d",
+        "stack_offset_bytes": 2880
+      },
+      {
+        "module": "ntdll.dll",
+        "offset": "0x54e84",
+        "stack_offset_bytes": 2992
+      },
+      {
+        "module": "libmwlxeutilities.dll",
+        "offset": "0x276c9",
+        "stack_offset_bytes": 3056
+      },
+      {
+        "module": "ntdll.dll",
+        "offset": "0x54e84",
+        "stack_offset_bytes": 3168
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x2719ff",
+        "stack_offset_bytes": 3216
+      },
+      {
+        "module": "libmwlxetypes.dll",
+        "offset": "0x37def",
+        "stack_offset_bytes": 3248
+      },
+      {
+        "module": "ntdll.dll",
+        "offset": "0x3e732",
+        "stack_offset_bytes": 3312
+      },
+      {
+        "module": "libmx.dll",
+        "offset": "0xada8e",
+        "stack_offset_bytes": 3328
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x40b805",
+        "stack_offset_bytes": 3456
+      },
+      {
+        "module": "libmwlxemainservices.dll",
+        "offset": "0x379016",
+        "stack_offset_bytes": 3552
+      },
+      {
+        "module": "libmwlxemainservices.dll",
+        "offset": "0x361e56",
+        "stack_offset_bytes": 3600
+      },
+      {
+        "module": "libmwlxemainservices.dll",
+        "offset": "0xc613d",
+        "stack_offset_bytes": 3664
+      },
+      {
+        "module": "libmwlxetypes.dll",
+        "offset": "0x3100",
+        "stack_offset_bytes": 3704
+      }
+    ]
+  },
+  {
+    "dump_name": "MATLAB.exe.3868.dmp",
+    "exception_code": "0xc0000005",
+    "exception_flags": 0,
+    "exception_location": {
+      "module": "unknown/unmapped",
+      "address": "0x239fa922020"
+    },
+    "thread_id": 16468,
+    "module_hits_are_unwound_stack": false,
+    "raw_memory_exported": false,
+    "access_kind": "execute",
+    "access_target": {
+      "module": "unknown/unmapped",
+      "address": "0x239fa922020"
+    },
+    "context_instruction_matches_exception": true,
+    "raw_stack_module_hits": [
+      {
+        "module": "libmwlxeindexing.dll",
+        "offset": "0x11ee29",
+        "stack_offset_bytes": 40
+      },
+      {
+        "module": "libmx.dll",
+        "offset": "0x3bdac",
+        "stack_offset_bytes": 72
+      },
+      {
+        "module": "tbbmalloc.dll",
+        "offset": "0xaa3a",
+        "stack_offset_bytes": 152
+      },
+      {
+        "module": "tbbmalloc.dll",
+        "offset": "0xae6e",
+        "stack_offset_bytes": 168
+      },
+      {
+        "module": "libmwlxeindexing.dll",
+        "offset": "0x11f48f",
+        "stack_offset_bytes": 200
+      },
+      {
+        "module": "libmx.dll",
+        "offset": "0x2c4d3b",
+        "stack_offset_bytes": 264
+      },
+      {
+        "module": "libmx.dll",
+        "offset": "0xffc5a",
+        "stack_offset_bytes": 360
+      },
+      {
+        "module": "libmwlxeindexing.dll",
+        "offset": "0x103bfb",
+        "stack_offset_bytes": 376
+      },
+      {
+        "module": "libmx.dll",
+        "offset": "0x37101",
+        "stack_offset_bytes": 408
+      },
+      {
+        "module": "libmwlxetypes.dll",
+        "offset": "0x921d5",
+        "stack_offset_bytes": 440
+      },
+      {
+        "module": "libmwlxeindexing.dll",
+        "offset": "0x24e342",
+        "stack_offset_bytes": 504
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x570408",
+        "stack_offset_bytes": 632
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x57e659",
+        "stack_offset_bytes": 680
+      },
+      {
+        "module": "libmwlxetypes.dll",
+        "offset": "0x88327",
+        "stack_offset_bytes": 696
+      },
+      {
+        "module": "libmwlxetypes.dll",
+        "offset": "0x18711",
+        "stack_offset_bytes": 712
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x41e893",
+        "stack_offset_bytes": 744
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x57e620",
+        "stack_offset_bytes": 832
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x315d000",
+        "stack_offset_bytes": 880
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x408f1c",
+        "stack_offset_bytes": 1064
+      },
+      {
+        "module": "m_dispatcher.dll",
+        "offset": "0x1b5d00",
+        "stack_offset_bytes": 1128
+      },
+      {
+        "module": "ucrtbase.dll",
+        "offset": "0x12d7b",
+        "stack_offset_bytes": 1224
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x2434f50",
+        "stack_offset_bytes": 1232
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x2434f68",
+        "stack_offset_bytes": 1240
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x2434f50",
+        "stack_offset_bytes": 1288
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x2434f68",
+        "stack_offset_bytes": 1296
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x2434f50",
+        "stack_offset_bytes": 1344
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x2434f68",
+        "stack_offset_bytes": 1352
+      },
+      {
+        "module": "ntdll.dll",
+        "offset": "0x54e84",
+        "stack_offset_bytes": 1400
+      },
+      {
+        "module": "ntdll.dll",
+        "offset": "0x54e84",
+        "stack_offset_bytes": 1448
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x2434f50",
+        "stack_offset_bytes": 1456
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x2434f68",
+        "stack_offset_bytes": 1464
+      },
+      {
+        "module": "ntdll.dll",
+        "offset": "0x54e84",
+        "stack_offset_bytes": 1864
+      },
+      {
+        "module": "ntdll.dll",
+        "offset": "0x3e732",
+        "stack_offset_bytes": 2008
+      },
+      {
+        "module": "ntdll.dll",
+        "offset": "0x3e732",
+        "stack_offset_bytes": 2104
+      },
+      {
+        "module": "libmwir.dll",
+        "offset": "0x59f62",
+        "stack_offset_bytes": 2216
+      },
+      {
+        "module": "ntdll.dll",
+        "offset": "0x54e84",
+        "stack_offset_bytes": 2328
+      },
+      {
+        "module": "ucrtbase.dll",
+        "offset": "0x13000b",
+        "stack_offset_bytes": 2368
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x2417288",
+        "stack_offset_bytes": 2456
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x2384a13",
+        "stack_offset_bytes": 2504
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x2384a13",
+        "stack_offset_bytes": 2520
+      },
+      {
+        "module": "libmwlxemainservices.dll",
+        "offset": "0xe3621",
+        "stack_offset_bytes": 2536
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x40a6fa",
+        "stack_offset_bytes": 2552
+      },
+      {
+        "module": "libmwlxemainservices.dll",
+        "offset": "0x222665",
+        "stack_offset_bytes": 2584
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x796dad",
+        "stack_offset_bytes": 2600
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x40bc29",
+        "stack_offset_bytes": 2616
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x40ca0d",
+        "stack_offset_bytes": 2664
+      },
+      {
+        "module": "libmwlxemainservices.dll",
+        "offset": "0x224301",
+        "stack_offset_bytes": 2712
+      },
+      {
+        "module": "libmx.dll",
+        "offset": "0xada8e",
+        "stack_offset_bytes": 2776
+      },
+      {
+        "module": "m_lxe.dll",
+        "offset": "0x40b805",
+        "stack_offset_bytes": 2904
+      },
+      {
+        "module": "libmwlxemainservices.dll",
+        "offset": "0x379016",
+        "stack_offset_bytes": 3000
+      }
+    ]
+  },
+  {
+    "dump_name": "MATLAB.exe.58424.dmp",
+    "exception_code": "0xc0000005",
+    "exception_flags": 0,
+    "exception_location": {
+      "module": "ucrtbase.dll",
+      "offset": "0x1398b0"
+    },
+    "thread_id": 52472,
+    "module_hits_are_unwound_stack": false,
+    "raw_memory_exported": false,
+    "access_kind": "execute",
+    "access_target": {
+      "module": "ucrtbase.dll",
+      "offset": "0x1398b0"
+    },
+    "context_instruction_matches_exception": true,
+    "raw_stack_module_hits": [
+      {
+        "module": "sl_compile.dll",
+        "offset": "0x1ff9f1",
+        "stack_offset_bytes": 64
+      },
+      {
+        "module": "sl_compile.dll",
+        "offset": "0x517309",
+        "stack_offset_bytes": 112
+      },
+      {
+        "module": "sl_compile.dll",
+        "offset": "0x355f14",
+        "stack_offset_bytes": 144
+      },
+      {
+        "module": "sl_compile.dll",
+        "offset": "0x55de00",
+        "stack_offset_bytes": 208
+      },
+      {
+        "module": "sl_compile.dll",
+        "offset": "0x55ffe3",
+        "stack_offset_bytes": 496
+      },
+      {
+        "module": "ntdll.dll",
+        "offset": "0x3e732",
+        "stack_offset_bytes": 608
+      },
+      {
+        "module": "ntdll.dll",
+        "offset": "0x3e732",
+        "stack_offset_bytes": 656
+      },
+      {
+        "module": "ucrtbase.dll",
+        "offset": "0x1398b0",
+        "stack_offset_bytes": 744
+      },
+      {
+        "module": "ucrtbase.dll",
+        "offset": "0x1398b0",
+        "stack_offset_bytes": 840
+      },
+      {
+        "module": "ucrtbase.dll",
+        "offset": "0x50d9",
+        "stack_offset_bytes": 864
+      },
+      {
+        "module": "ucrtbase.dll",
+        "offset": "0x1398b0",
+        "stack_offset_bytes": 888
+      },
+      {
+        "module": "libmwSLExecutionGraph.dll",
+        "offset": "0x58b13",
+        "stack_offset_bytes": 912
+      },
+      {
+        "module": "ucrtbase.dll",
+        "offset": "0x1398b0",
+        "stack_offset_bytes": 968
+      },
+      {
+        "module": "ucrtbase.dll",
+        "offset": "0x50d9",
+        "stack_offset_bytes": 992
+      },
+      {
+        "module": "ucrtbase.dll",
+        "offset": "0x1398b0",
+        "stack_offset_bytes": 1016
+      },
+      {
+        "module": "sl_compile.dll",
+        "offset": "0x56303c",
+        "stack_offset_bytes": 1104
+      },
+      {
+        "module": "sl_compile.dll",
+        "offset": "0x5635ee",
+        "stack_offset_bytes": 1216
+      },
+      {
+        "module": "sl_compile.dll",
+        "offset": "0x10abe90",
+        "stack_offset_bytes": 1264
+      },
+      {
+        "module": "sl_compile.dll",
+        "offset": "0x10abe90",
+        "stack_offset_bytes": 1312
+      },
+      {
+        "module": "sl_compile.dll",
+        "offset": "0x10abe90",
+        "stack_offset_bytes": 1360
+      },
+      {
+        "module": "ucrtbase.dll",
+        "offset": "0x12d7b",
+        "stack_offset_bytes": 1408
+      },
+      {
+        "module": "sl_compile.dll",
+        "offset": "0x55ff0c",
+        "stack_offset_bytes": 1456
+      },
+      {
+        "module": "sl_compile.dll",
+        "offset": "0xcec908",
+        "stack_offset_bytes": 1504
+      },
+      {
+        "module": "ucrtbase.dll",
+        "offset": "0x1398b0",
+        "stack_offset_bytes": 1704
+      },
+      {
+        "module": "ucrtbase.dll",
+        "offset": "0x1398b0",
+        "stack_offset_bytes": 1800
+      },
+      {
+        "module": "sl_compile.dll",
+        "offset": "0xcec908",
+        "stack_offset_bytes": 2008
+      },
+      {
+        "module": "sl_compile.dll",
+        "offset": "0x56303c",
+        "stack_offset_bytes": 2064
+      },
+      {
+        "module": "sl_compile.dll",
+        "offset": "0x2c15f1",
+        "stack_offset_bytes": 2176
+      },
+      {
+        "module": "da_core_objects.dll",
+        "offset": "0x66f01",
+        "stack_offset_bytes": 2256
+      },
+      {
+        "module": "da_core_objects.dll",
+        "offset": "0x66f91",
+        "stack_offset_bytes": 2272
+      },
+      {
+        "module": "da_core_objects.dll",
+        "offset": "0x66e9a",
+        "stack_offset_bytes": 2320
+      },
+      {
+        "module": "sl_compile.dll",
+        "offset": "0x30a52f",
+        "stack_offset_bytes": 2384
+      },
+      {
+        "module": "msvcp140.dll",
+        "offset": "0x129cc",
+        "stack_offset_bytes": 2432
+      },
+      {
+        "module": "sl_compile.dll",
+        "offset": "0xac0373",
+        "stack_offset_bytes": 2448
+      },
+      {
+        "module": "msvcp140.dll",
+        "offset": "0x1285b",
+        "stack_offset_bytes": 2464
+      },
+      {
+        "module": "sl_compile.dll",
+        "offset": "0x3f3fc2",
+        "stack_offset_bytes": 2496
+      },
+      {
+        "module": "libmwfoundation_usm.dll",
+        "offset": "0x1aa9c",
+        "stack_offset_bytes": 2512
+      },
+      {
+        "module": "sl_compile.dll",
+        "offset": "0xcf2f48",
+        "stack_offset_bytes": 2536
+      },
+      {
+        "module": "sl_compile.dll",
+        "offset": "0x30a6b2",
+        "stack_offset_bytes": 2656
+      },
+      {
+        "module": "ucrtbase.dll",
+        "offset": "0x12d7b",
+        "stack_offset_bytes": 2784
+      },
+      {
+        "module": "sl_compile.dll",
+        "offset": "0xcf2fe0",
+        "stack_offset_bytes": 2792
+      },
+      {
+        "module": "sl_graphical_classes.dll",
+        "offset": "0x1a7a35",
+        "stack_offset_bytes": 2832
+      },
+      {
+        "module": "sl_compile.dll",
+        "offset": "0xcf2fa8",
+        "stack_offset_bytes": 2856
+      },
+      {
+        "module": "sl_compile.dll",
+        "offset": "0x2cee11",
+        "stack_offset_bytes": 2944
+      },
+      {
+        "module": "sl_engine_classes.dll",
+        "offset": "0x420919",
+        "stack_offset_bytes": 2992
+      },
+      {
+        "module": "sl_compile.dll",
+        "offset": "0x2ca6bd",
+        "stack_offset_bytes": 3392
+      },
+      {
+        "module": "VCRUNTIME140.dll",
+        "offset": "0x5600",
+        "stack_offset_bytes": 3440
+      },
+      {
+        "module": "sl_compile.dll",
+        "offset": "0xcee748",
+        "stack_offset_bytes": 3480
+      },
+      {
+        "module": "sl_graphical_classes.dll",
+        "offset": "0x13d73e8",
+        "stack_offset_bytes": 3544
+      },
+      {
+        "module": "sl_compile.dll",
+        "offset": "0xcee710",
+        "stack_offset_bytes": 3592
+      }
+    ]
+  }
+]

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "node": "N3R2",
+  "execution_version": "stopped_init_v3",
+  "label": "stopped_init_v3",
+  "status": "completed_performance_failed_needs_diagnosis",
+  "numerical_version": "accepted R1",
+  "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_stopped_init_v3_20261017_105619_277b3c70-cdf0-4542-b35d-d320753c4b82",
+  "driver_sha256": "1a80b2bc12597cac9e647e43362947b47cd1922fdb7318688283df600ad590cb",
+  "jobs": [
+    {
+      "case_id": "r1_short_logging_check",
+      "status": "passed",
+      "attempts": [
+        {
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_stopped_init_v3_20261017_105619_277b3c70-cdf0-4542-b35d-d320753c4b82\\r1_short_logging_check_attempt_1_launcher.log",
+          "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/execution_v3');validate_sensorless_r2_v3_case('r1_short_logging_check','D:/simulink/dev/modern/sensorless/runs/N3R2_stopped_init_v3_20261017_105619_277b3c70-cdf0-4542-b35d-d320753c4b82/r1_short_logging_check_attempt_1');verify_sensorless_r2_logging('D:/simulink/dev/modern/sensorless/runs/N3R2_stopped_init_v3_20261017_105619_277b3c70-cdf0-4542-b35d-d320753c4b82/r1_short_logging_check_attempt_1');",
+          "native_failure": true,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_stopped_init_v3_20261017_105619_277b3c70-cdf0-4542-b35d-d320753c4b82\\r1_short_logging_check_attempt_1",
+          "exit_code": -1073741819,
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_stopped_init_v3_20261017_105619_277b3c70-cdf0-4542-b35d-d320753c4b82\\r1_short_logging_check_attempt_1_console.log"
+        },
+        {
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_stopped_init_v3_20261017_105619_277b3c70-cdf0-4542-b35d-d320753c4b82\\r1_short_logging_check_attempt_2_launcher.log",
+          "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/execution_v3');validate_sensorless_r2_v3_case('r1_short_logging_check','D:/simulink/dev/modern/sensorless/runs/N3R2_stopped_init_v3_20261017_105619_277b3c70-cdf0-4542-b35d-d320753c4b82/r1_short_logging_check_attempt_2');verify_sensorless_r2_logging('D:/simulink/dev/modern/sensorless/runs/N3R2_stopped_init_v3_20261017_105619_277b3c70-cdf0-4542-b35d-d320753c4b82/r1_short_logging_check_attempt_2');",
+          "native_failure": false,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_stopped_init_v3_20261017_105619_277b3c70-cdf0-4542-b35d-d320753c4b82\\r1_short_logging_check_attempt_2",
+          "exit_code": 0,
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_stopped_init_v3_20261017_105619_277b3c70-cdf0-4542-b35d-d320753c4b82\\r1_short_logging_check_attempt_2_console.log"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_stopped_init_v3_20261017_105619_277b3c70-cdf0-4542-b35d-d320753c4b82\\r1_short_logging_check_attempt_2"
+    },
+    {
+      "case_id": "diagnostic_combined_3000",
+      "status": "completed_performance_failed",
+      "attempts": [
+        {
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_stopped_init_v3_20261017_105619_277b3c70-cdf0-4542-b35d-d320753c4b82\\diagnostic_combined_3000_attempt_1_launcher.log",
+          "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/execution_v3');validate_sensorless_r2_v3_case('diagnostic_combined_3000','D:/simulink/dev/modern/sensorless/runs/N3R2_stopped_init_v3_20261017_105619_277b3c70-cdf0-4542-b35d-d320753c4b82/diagnostic_combined_3000_attempt_1');",
+          "native_failure": false,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_stopped_init_v3_20261017_105619_277b3c70-cdf0-4542-b35d-d320753c4b82\\diagnostic_combined_3000_attempt_1",
+          "exit_code": 0,
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_stopped_init_v3_20261017_105619_277b3c70-cdf0-4542-b35d-d320753c4b82\\diagnostic_combined_3000_attempt_1_console.log"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_stopped_init_v3_20261017_105619_277b3c70-cdf0-4542-b35d-d320753c4b82\\diagnostic_combined_3000_attempt_1"
+    }
+  ]
+}

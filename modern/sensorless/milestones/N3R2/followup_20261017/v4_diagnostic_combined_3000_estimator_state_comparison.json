@@ -1,0 +1,10 @@
+{
+  "kind": "estimator_states_unchanged_by_packet_guard",
+  "all_passed": true,
+  "logs": 19,
+  "numeric_elements": 1.296E+6,
+  "reference_raw_sha256": "5fc1343cbe4cf1b507c3cb7a24b3a4eccd3124f48ecf0597bda8c3cdd7e635cf",
+  "guard_raw_sha256": "6ee976231b6cd7aeb866bb5d863126b2f818b381bb1f93b01af209a447a00b4a",
+  "comparison": "strict_isequaln_full_Time_Data",
+  "not_original52_long_baseline_regression": true
+}
