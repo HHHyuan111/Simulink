@@ -1,0 +1,59 @@
+{
+  "analysis_only": true,
+  "full_metrics_window_s": [
+    0.5,
+    0.8
+  ],
+  "renderer_sha256": "d5b09b7487af598204cbe3fea76d524e36500b0989253196f7bb7f2c81de966a",
+  "cases": [
+    {
+      "label": "Nominal plant",
+      "csv_source": {
+        "source_raw_sha256": "6ee976231b6cd7aeb866bb5d863126b2f818b381bb1f93b01af209a447a00b4a",
+        "exporter_sha256": "821af1e0040e5566255b6d06cb46a9c364ef66f310dd8d63003f15a5c2c2ec4c",
+        "control_rows": 16000,
+        "event_rows": 32003,
+        "counter_rows": 16001,
+        "no_model_loaded": true,
+        "no_downsampling": true,
+        "files": {
+          "control": "9ce6a9c38401c80035754b5be7268bcc5ef668b0408b6e515bc5b9b4457f24e8",
+          "events": "9ef2232956c47053b7d72227edd18c0f9565552943074da9ac355043366cdbb0",
+          "counters": "2c4b7b2d49beab8a331e50eea79c1db06e95c3c2d1d3262c1094bdd14088b01d"
+        }
+      },
+      "metrics": {
+        "angle_rms_deg": 0.07531944857061468,
+        "angle_peak_deg": 0.11785941473908892,
+        "speed_rms_relative": 0.0004435642970986672,
+        "samples": 6000,
+        "includes_invalid_samples": true
+      }
+    },
+    {
+      "label": "Plant R x0.8, L x1.2",
+      "csv_source": {
+        "source_raw_sha256": "9d05158b785be19d69a1e186b7b557c70ea39bf1c4a5abf902a83df21dc0a25b",
+        "exporter_sha256": "821af1e0040e5566255b6d06cb46a9c364ef66f310dd8d63003f15a5c2c2ec4c",
+        "control_rows": 16000,
+        "event_rows": 32003,
+        "counter_rows": 16001,
+        "no_model_loaded": true,
+        "no_downsampling": true,
+        "files": {
+          "control": "19a3602ea6291ebeba583d4d68ded1ba08f76f3f0c69338698db90c9513262da",
+          "events": "e74e9405e2ae211d26d3e1b103fd67a6fbf17adc17aa4fea9f2f0f856cec13aa",
+          "counters": "f96f5acf499993b5eb9e96fe14847bc8591b1ac37a0ab4f45070912648c6a8d5"
+        }
+      },
+      "metrics": {
+        "angle_rms_deg": 0.8733372375159426,
+        "angle_peak_deg": 0.9119196219961558,
+        "speed_rms_relative": 0.0005599246099137146,
+        "samples": 6000,
+        "includes_invalid_samples": true
+      }
+    }
+  ],
+  "figure_sha256": "35c4a3a1e1f3f2f2c10a6c7f63f4875231b67d90104e3d84ed4668fdb474b88d"
+}

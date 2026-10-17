@@ -76,19 +76,30 @@ def main():
         ('N3R2_fault_timing_restoration_fixed_compile_once', ('record.json',)),
     ]
     for name, files in probes:
+        probe_folder = BASE / 'runs' / name
+        probe_record_path = probe_folder / 'record.json'
+        if probe_record_path.exists():
+            probe_record = read(probe_record_path)
+            for entry in probe_record.get('source_files', []):
+                assert sha(probe_folder / 'source' / entry['path']) == entry['sha256']
+            if probe_record.get('raw_sha256') and (probe_folder / 'signals.mat').exists():
+                assert sha(probe_folder / 'signals.mat') == probe_record['raw_sha256']
         for file in files:
             source = BASE / 'runs' / name / file
             if source.exists():
                 publish(source, name + '/' + file)
+    dynamic = read(BASE / 'runs/N3R2_dynamic_archive_reanalysis_once/report.json')
+    restoration = read(BASE / 'runs/N3R2_dynamic_restoration_probe_once/report.json')
     summary = {
         'node': 'N3R2', 'all_passed': False, 'formal_final_matrix_passed': False,
         'captured_at': datetime.now().astimezone().isoformat(),
         'scope': 'Development progress only. Running/failed attempts retain their original statuses; probes do not establish long-case performance.',
         'r1_frozen_files_preserved': len(frozen['files']), 'model_sha256': frozen['model_sha256'],
         'previous_five_static_evidence': '../followup_20261017/summary.json',
-        'dynamic_raw_metrics_passed': True, 'dynamic_original_execution_failed_postprocessor': True,
-        'dynamic_original_restoration_executed': False,
-        'dynamic_independent_restoration_probe_passed': True,
+        'dynamic_raw_metrics_passed': dynamic['metrics_passed'],
+        'dynamic_original_execution_failed_postprocessor': dynamic['original_status'] == 'failed_execution',
+        'dynamic_original_restoration_executed': dynamic['original_restoration_executed'],
+        'dynamic_independent_restoration_probe_passed': restoration['all_passed'],
         'native_root_cause_confirmed': False, 'hardware_validated': False, 'feedback_takeover': False,
         'R3_independent_full_replay_done': False, 'campaigns': campaigns, 'published': published,
     }

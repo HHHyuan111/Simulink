@@ -2,7 +2,7 @@
   "node": "N3R2",
   "all_passed": false,
   "formal_final_matrix_passed": false,
-  "captured_at": "2026-10-17T14:12:55.614113+08:00",
+  "captured_at": "2026-10-17T14:23:18.754239+08:00",
   "scope": "Development progress only. Running/failed attempts retain their original statuses; probes do not establish long-case performance.",
   "r1_frozen_files_preserved": 90,
   "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
@@ -86,6 +86,22 @@
         {
           "folder": "cold_R0p8_L1p2_attempt_1",
           "case_id": "cold_R0p8_L1p2",
+          "status": "passed",
+          "phase": "completed",
+          "raw_sha256": "9d05158b785be19d69a1e186b7b557c70ea39bf1c4a5abf902a83df21dc0a25b",
+          "metrics_passed": true
+        },
+        {
+          "folder": "deadtime_2us_attempt_1",
+          "case_id": "deadtime_2us",
+          "status": "running",
+          "phase": "observer_compile",
+          "raw_sha256": null,
+          "metrics_passed": false
+        },
+        {
+          "folder": "deadtime_2us_attempt_2",
+          "case_id": "deadtime_2us",
           "status": "running",
           "phase": "simulate",
           "raw_sha256": null,
@@ -201,16 +217,36 @@
     {
       "source": "runs/N3R2_v5_other_cases_after_hot_native_limit_20261017_134553_d34f5e82-2b08-4e76-83a5-4e47e40234d3/campaign.json",
       "published": "N3R2_v5_other_cases_after_hot_native_limit_20261017_134553_d34f5e82-2b08-4e76-83a5-4e47e40234d3/campaign.json",
-      "sha256": "81f0de4751e457771d932b9c073925e0696ef681c9eb19180fdbacbb5bd03f8e"
+      "sha256": "c990884666671a4e4c844a78e23c5b2a8a753bf837152fdfc63c89a4459b3031"
     },
     {
       "source": "runs/N3R2_v5_other_cases_after_hot_native_limit_20261017_134553_d34f5e82-2b08-4e76-83a5-4e47e40234d3/cold_R0p8_L1p2_attempt_1/record.json",
       "published": "N3R2_v5_other_cases_after_hot_native_limit_20261017_134553_d34f5e82-2b08-4e76-83a5-4e47e40234d3/cold_R0p8_L1p2_attempt_1/record.json",
-      "sha256": "d1d81c494eee2bf318bc59a76d7a16081dc12f01d5da88a6a2ef8d0e9c4f28ec"
+      "sha256": "fc589eb9c7505856db1b15ba654cfc1e1610d6b525d0bef42bc6bebbfac7795a"
+    },
+    {
+      "source": "runs/N3R2_v5_other_cases_after_hot_native_limit_20261017_134553_d34f5e82-2b08-4e76-83a5-4e47e40234d3/cold_R0p8_L1p2_attempt_1/metrics.json",
+      "published": "N3R2_v5_other_cases_after_hot_native_limit_20261017_134553_d34f5e82-2b08-4e76-83a5-4e47e40234d3/cold_R0p8_L1p2_attempt_1/metrics.json",
+      "sha256": "70146ec681c6ecc60f69554e4aa114ffa089ffce685575cf695a9cd6d76a39d2"
     },
     {
       "source": "runs/N3R2_v5_other_cases_after_hot_native_limit_20261017_134553_d34f5e82-2b08-4e76-83a5-4e47e40234d3/cold_R0p8_L1p2_attempt_1/graph.json",
       "published": "N3R2_v5_other_cases_after_hot_native_limit_20261017_134553_d34f5e82-2b08-4e76-83a5-4e47e40234d3/cold_R0p8_L1p2_attempt_1/graph.json",
+      "sha256": "56147549bc719fa5573f96bcce8030412fafb6ef74d28a2daa486948281050cd"
+    },
+    {
+      "source": "runs/N3R2_v5_other_cases_after_hot_native_limit_20261017_134553_d34f5e82-2b08-4e76-83a5-4e47e40234d3/deadtime_2us_attempt_1/record.json",
+      "published": "N3R2_v5_other_cases_after_hot_native_limit_20261017_134553_d34f5e82-2b08-4e76-83a5-4e47e40234d3/deadtime_2us_attempt_1/record.json",
+      "sha256": "81565f24a3f8e5941b4d8588243e83b9bdca51aa80dd33dc89e01dc1c9beb624"
+    },
+    {
+      "source": "runs/N3R2_v5_other_cases_after_hot_native_limit_20261017_134553_d34f5e82-2b08-4e76-83a5-4e47e40234d3/deadtime_2us_attempt_2/record.json",
+      "published": "N3R2_v5_other_cases_after_hot_native_limit_20261017_134553_d34f5e82-2b08-4e76-83a5-4e47e40234d3/deadtime_2us_attempt_2/record.json",
+      "sha256": "b6b57878324ae45820acfd8eb54ce264ef8df8a6da1a1fbe476c9d2ef3d6702f"
+    },
+    {
+      "source": "runs/N3R2_v5_other_cases_after_hot_native_limit_20261017_134553_d34f5e82-2b08-4e76-83a5-4e47e40234d3/deadtime_2us_attempt_2/graph.json",
+      "published": "N3R2_v5_other_cases_after_hot_native_limit_20261017_134553_d34f5e82-2b08-4e76-83a5-4e47e40234d3/deadtime_2us_attempt_2/graph.json",
       "sha256": "56147549bc719fa5573f96bcce8030412fafb6ef74d28a2daa486948281050cd"
     },
     {

@@ -7,5 +7,21 @@
   "numerical_version": "R1 estimates plus packet phase guard",
   "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_v5_other_cases_after_hot_native_limit_20261017_134553_d34f5e82-2b08-4e76-83a5-4e47e40234d3",
   "driver_sha256": "b7d1dcef38a0d1a86ce002e8f75903bb5633e3c4fd333a74099b699ad93a6628",
-  "jobs": []
+  "jobs": [
+    {
+      "case_id": "cold_R0p8_L1p2",
+      "status": "passed",
+      "attempts": [
+        {
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_v5_other_cases_after_hot_native_limit_20261017_134553_d34f5e82-2b08-4e76-83a5-4e47e40234d3\\cold_R0p8_L1p2_attempt_1_console.log",
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_v5_other_cases_after_hot_native_limit_20261017_134553_d34f5e82-2b08-4e76-83a5-4e47e40234d3\\cold_R0p8_L1p2_attempt_1_launcher.log",
+          "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/scenarios');validate_sensorless_r2_scenario('cold_R0p8_L1p2','D:/simulink/dev/modern/sensorless/runs/N3R2_v5_other_cases_after_hot_native_limit_20261017_134553_d34f5e82-2b08-4e76-83a5-4e47e40234d3/cold_R0p8_L1p2_attempt_1');",
+          "exit_code": 0,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_v5_other_cases_after_hot_native_limit_20261017_134553_d34f5e82-2b08-4e76-83a5-4e47e40234d3\\cold_R0p8_L1p2_attempt_1",
+          "native_failure": false
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_v5_other_cases_after_hot_native_limit_20261017_134553_d34f5e82-2b08-4e76-83a5-4e47e40234d3\\cold_R0p8_L1p2_attempt_1"
+    }
+  ]
 }
