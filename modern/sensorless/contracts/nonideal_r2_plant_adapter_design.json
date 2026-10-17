@@ -1,0 +1,9 @@
+{
+ "schema":1,
+ "registered_before_implementation":"2026-10-17; separate plant-only R/L adaptation; parent R2 thresholds unchanged",
+ "cases":["hot_R1p2_L0p8","cold_R0p8_L1p2"],
+ "method":"Find the unique local motor did_dt Fcn and its parent. Replace only Rs/Ld/Lq tokens in the four existing motor Fcn expressions with new R2plant_Rs/R2plant_Ld/R2plant_Lq workspace symbols. No original block is deleted; original expressions and full workspace are saved and restored.",
+ "separation":"Original workspace Rs/Ld/Lq and all controller/observer parameters remain unchanged. No new plant symbol occurs outside the motor subsystem. Nominal observer configuration must equal the accepted configuration in each physical run.",
+ "component_checks":"Both specified multiplier pairs: all four expressions use plant aliases, nominal values unchanged, no outside reference, exact restoration of block graph/workspace and immutable SLX. No compile or simulation in this configuration-only component check.",
+ "physical_checks":"Use original R2 normal_precision criteria, fixed0.5-0.8s all samples, full-run native false-valid<=2ms and original52 same-configuration regression in R3. Component configuration checks cannot substitute for physical precision or replay."
+}
