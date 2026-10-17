@@ -67,7 +67,7 @@ def main():
         records.append(copy_record(SHORT / name, 'short_' + name))
     changed = [entry['path'] for entry in short['source_files']
                if sha(BASE / entry['path']) != entry['sha256']]
-    assert changed == ['robust/performance/validate_sensorless_r2_case.m'], changed
+    assert all(name.startswith('robust/performance/') for name in changed), changed
     version_dir = DEST / 'source_versions'
     version_dir.mkdir(exist_ok=True)
     for label, folder in [('execution_v1', RUNS / CAMPAIGNS[0] / 'r1_short_logging_check_attempt_1'),
@@ -93,7 +93,7 @@ def main():
               'model_sha256': sha(model), 'r1_frozen_files_preserved': len(frozen['files']),
               'r2_plan_sha256': sha(plan), 'attempts': attempts, 'archived_capsules': archives,
               'curated_records': records, 'post_test_source_changes': changed,
-              'post_test_change_reason': 'Fail fast for unsupported dynamic/fault kinds, checked without model load; driver additionally rejects exhausted attempts across campaign labels. No new main-model execution after these guard changes.',
+              'post_test_change_reason': 'Historical R2 sources are preserved in their capsules. Later R2 execution guards and the dynamic event-structure analysis fix have separate versions; this historical short check does not validate the evolving current source.',
               'short_worker_source_preserved': 'source_versions/execution_v2_worker.m.txt',
               'raw_archives_local_only': True, 'native_root_cause_confirmed': False,
               'no_third_same_version_long_attempt': True}

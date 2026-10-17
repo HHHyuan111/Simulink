@@ -11,7 +11,18 @@ foreach($id in $CaseIds) {
  foreach($prior in Get-ChildItem -LiteralPath (Join-Path $PSScriptRoot 'runs') -Directory -Filter 'N3R2_*') {
   $file=Join-Path $prior.FullName 'campaign.json';if(-not(Test-Path -LiteralPath $file)){continue}
   $data=Get-Content -LiteralPath $file -Raw | ConvertFrom-Json;if($data.execution_version -ne $version){continue}
-  foreach($job in @($data.jobs | Where-Object {$_.case_id -eq $id})) {$failures+=@($job.attempts | Where-Object {$_.native_failure}).Count}
+  foreach($job in @($data.jobs | Where-Object {$_.case_id -eq $id})) {
+   $failures+=@($job.attempts | Where-Object {$_.native_failure}).Count
+   foreach($priorAttempt in $job.attempts) {
+    $priorRecordFile=Join-Path $priorAttempt.folder 'record.json'
+    if(Test-Path -LiteralPath $priorRecordFile) {
+     $priorRun=Get-Content -LiteralPath $priorRecordFile -Raw | ConvertFrom-Json
+     if($priorRun.raw_sha256 -and (Test-Path -LiteralPath (Join-Path $priorAttempt.folder 'signals.mat'))) {
+      throw "R2 simulation already archived for $id ($version). Do not rerun completed physics; use analysis-only recovery or the later authorized R3 replay. No process started."
+     }
+    }
+   }
+  }
  }
  if($failures -ge 2){throw "R2 $version native limit exhausted for $id; no process started."}
  $remaining[$id]=2-$failures

@@ -41,6 +41,7 @@ if strcmp(testcase.kind,'normal_precision')
  checks.speed_rms=w.speed_rms_error_relative<=c.speed_rms_relative_max;checks.permit_fraction=w.permit_fraction>=c.permit_fraction_min;
  checks.false_valid=counters(end,2)<=plan.native_false_valid.normal_cases_longest_s_max+1e-12;
 elseif strcmp(testcase.kind,'normal_dynamic')
+ m.events=struct('request_s',{},'recovery_start_s',{},'recovery_delay_s',{},'passed',{});
  relative=abs(speedError)./max(abs(actual),1);good=permit&abs(angle)<=8&relative<=.03;
  es=testcase.events;if ~iscell(es),es=num2cell(es);end
  for j=1:numel(es)
