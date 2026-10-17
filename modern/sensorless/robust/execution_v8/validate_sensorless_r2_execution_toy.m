@@ -1,0 +1,38 @@
+function report=validate_sensorless_r2_execution_toy(folder)
+% Exact discrete/continuous/offset-rate and callback lifecycle oracle.
+here=fileparts(mfilename('fullpath'));base=fileparts(fileparts(here));modern=fileparts(base);addpath(fullfile(modern,'teaching'));
+assert(~isfolder(folder));mkdir(folder);mdl='R2V8PrivateLifecycle';assert(~bdIsLoaded(mdl));
+cleanup=onCleanup(@()close_private(mdl));new_system(mdl);h=1e-4;duration=.01;
+set_param(mdl,'SolverType','Fixed-step','Solver','ode3','FixedStep',num2str(h,17),'StopTime','10','ReturnWorkspaceOutputs','on');
+for key={'InitFcn','StartFcn','StopFcn'}
+ name=['R2V8_' key{1}];assignin('base',name,0);set_param(mdl,key{1},sprintf('assignin(''base'',''%s'',evalin(''base'',''%s'')+1);',name,name));
+end
+add_block('simulink/Sources/Constant',[mdl '/one'],'Value','1');add_block('simulink/Math Operations/Sum',[mdl '/sum'],'Inputs','++');
+add_block('simulink/Discrete/Unit Delay',[mdl '/counter'],'SampleTime',num2str(h,17),'InitialCondition','0');
+add_line(mdl,'one/1','sum/1');add_line(mdl,'counter/1','sum/2');add_line(mdl,'sum/1','counter/1');
+add_block('simulink/Sources/Clock',[mdl '/clock']);add_block('simulink/Continuous/Integrator',[mdl '/integral']);add_line(mdl,'clock/1','integral/1');
+add_block('simulink/Discrete/Zero-Order Hold',[mdl '/offset'],'SampleTime','[.001 .0003]');add_line(mdl,'counter/1','offset/1');
+for source={'counter','integral','offset'}
+ name=['log_' source{1}];rate=num2str(h,17);if strcmp(source{1},'offset'),rate='-1';end
+ add_block('simulink/Sinks/To Workspace',[mdl '/' name],'VariableName',name,'SampleTime',rate,'SaveFormat','Timeseries','MaxDataPoints','inf');
+ add_line(mdl,[source{1} '/1'],[name '/1']);
+end
+report=struct('status','running','all_passed',false,'main_model_loaded',false,'source_sha256',teach_hash(fullfile(here,'sensorless_r2_run_initialized.m')));
+teach_writejson(fullfile(folder,'report.json'),report);
+reference=sim(mdl,'StopTime',num2str(duration,17));counts=zeros(2,3);callbacks={'InitFcn','StartFcn','StopFcn'};
+for k=1:3,name=['R2V8_' callbacks{k}];counts(1,k)=evalin('base',name);assignin('base',name,0);end
+sm=simulation(mdl);sm=setModelParameter(sm,StopTime=num2str(duration,17));initialize(sm);assert(strcmp(sm.Status,'initialized'));
+[current,report.execution]=sensorless_r2_run_initialized(sm,h,duration,folder,17);
+for k=1:3,name=['R2V8_' callbacks{k}];counts(2,k)=evalin('base',name);end
+assert(isequal(counts,ones(2,3)));report.callback_counts=counts;report.elements=0;
+for source={'counter','integral','offset'}
+ name=['log_' source{1}];a=reference.get(name);b=current.get(name);assert(isequaln(a.Time,b.Time)&&isequaln(a.Data,b.Data));report.elements=report.elements+numel(a.Time)+numel(a.Data);
+end
+assert(numel(current.log_counter.Time)==101&&current.log_counter.Time(end)==duration&&current.log_counter.Data(end)==100);
+assert(strcmp(get_param(mdl,'StopTime'),'10'));report.parameter_restored=true;report.native_endpoint_included=true;report.status='passed';report.all_passed=true;
+save(fullfile(folder,'toy.mat'),'reference','current','-v7.3');report.raw_sha256=teach_hash(fullfile(folder,'toy.mat'));teach_writejson(fullfile(folder,'report.json'),report);
+end
+function close_private(mdl)
+if bdIsLoaded(mdl),close_system(mdl,0);end
+for key={'R2V8_InitFcn','R2V8_StartFcn','R2V8_StopFcn'},evalin('base',['clear ' key{1}]);end
+end
