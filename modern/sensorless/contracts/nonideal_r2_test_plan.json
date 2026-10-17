@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "node": "N3R2",
+  "frozen_before_implementation": "2026-10-17; user accepted R1 dc0ac26 and authorized R2",
+  "immutable_parent": "contracts/nonideal_v2.json; performance thresholds, original52 and motor/PI preservation unchanged",
+  "method": "First diagnose the accepted R1 numerical implementation; retain failed traces. Any algorithm change gets an explicit new source version and independent component tests before new physical execution. Select no lucky seed/run and do not relax criteria.",
+  "precision": {"duration_s":0.8,"window_s":[0.5,0.8],"angle_rms_deg_max":3,"angle_peak_deg_max":8,"speed_mean_relative_max":0.01,"speed_rms_relative_max":0.02,"permit_fraction_min":0.99,"minimum_electrical_cycles":20,"plant_mean_target_relative_max":0.01,"plant_speed_slope_rpm_s_max":50,"include_invalid_samples":true},
+  "dynamic": {"duration_s":0.9,"recovery_deadline_s":0.15,"hold_s":0.02,"angle_abs_deg_max":8,"speed_relative_max":0.03},
+  "native_false_valid": {"definition":"control_permit AND (abs(wrapped theta_now-true theta_now)>8 electrical degrees OR abs(raw estimated rpm-true rpm)/max(abs(true rpm),1)>0.03)","normal_cases_longest_s_max":0.002,"scope":"entire run including startup and transients; no truth enters any estimator or permission guard"},
+  "logging": {
+    "original52":"All original logs, classes and SampleTime unchanged; R3 exact same-configuration baseline comparison",
+    "observer_control":"All current/SMO/PLL/truth/interval logs retained at every JEOS",
+    "observer_publication":"Record every completed packet at JEOS+3us; never compare publication theta with mismatched truth epoch",
+    "observer_native_display":"Large voltage36 and held flags sampled at JEOS; native computation unchanged; observer Scopes disabled in headless runs",
+    "native_evaluation":"Truth-only evaluation inside 观测, every62.5ns. Integer counters for false-valid run/total, permission/timing/ADC/age violations, low-speed permission; record counters at every PWM period including final stop",
+    "native_event_trace":"Enabled logger records every false-valid/permit/reason/live flag transition, every publication and every PWM heartbeat. Fields include native time, booleans, errors, truth and estimate, age. Offline event durations must equal native counters",
+    "short_validation":"20ms normal engineering profile with compact logging: full original52 and common control outputs equal accepted R1 archive; native monitor component oracles and event/counter agreement required before long diagnostics"
+  },
+  "failure_policy":"Preserve every attempt/source/configuration. At most one retry only for explicit native 0xc0000005/0xc000001d. A completed performance failure remains failed; new source versions are clearly distinguished. No third same-version native retry.",
+  "cases": [
+    {"id":"r1_short_logging_check","kind":"logging_validation","duration_s":0.02,"speed_rpm":3000,"adc_span_A":20,"window_on":false,"interference_s":0},
+    {"id":"diagnostic_combined_3000","kind":"normal_precision","duration_s":0.8,"speed_rpm":3000,"adc_span_A":20,"window_on":false,"interference_s":0},
+    {"id":"combined_1000","kind":"normal_precision","duration_s":0.8,"speed_rpm":1000,"adc_span_A":20,"window_on":false,"interference_s":0},
+    {"id":"combined_2000","kind":"normal_precision","duration_s":0.8,"speed_rpm":2000,"adc_span_A":20,"window_on":false,"interference_s":0},
+    {"id":"combined_reverse_1000","kind":"normal_precision","duration_s":0.8,"speed_rpm":-1000,"adc_span_A":20,"window_on":false,"interference_s":0},
+    {"id":"combined_reverse_3000","kind":"normal_precision","duration_s":0.8,"speed_rpm":-3000,"adc_span_A":20,"window_on":false,"interference_s":0},
+    {"id":"combined_dynamic","kind":"normal_dynamic","duration_s":0.9,"speed_initial_rpm":2000,"adc_span_A":20,"window_on":false,"interference_s":0,"events":[{"type":"speed","time_s":0.3,"value_rpm":3000},{"type":"load","time_s":0.6,"value_Nm":0.25}]},
+    {"id":"hot_R1p2_L0p8","kind":"normal_precision","duration_s":0.8,"speed_rpm":3000,"adc_span_A":20,"window_on":false,"interference_s":0,"plant_R_multiplier":1.2,"plant_L_multiplier":0.8},
+    {"id":"cold_R0p8_L1p2","kind":"normal_precision","duration_s":0.8,"speed_rpm":3000,"adc_span_A":20,"window_on":false,"interference_s":0,"plant_R_multiplier":0.8,"plant_L_multiplier":1.2},
+    {"id":"deadtime_2us","kind":"boundary","duration_s":0.8,"speed_rpm":3000,"adc_span_A":20,"window_on":false,"interference_s":0,"plant_deadtime_s":0.000002},
+    {"id":"adc_clipping","kind":"hard_fault","duration_s":0.8,"speed_rpm":3000,"adc_span_A":2,"window_on":false,"interference_s":0},
+    {"id":"missing_five","kind":"hard_fault","duration_s":0.8,"speed_rpm":3000,"adc_span_A":20,"window_on":false,"interference_s":0,"missing_reference_interval_s":[0.600028875,0.600278875]},
+    {"id":"reset_one","kind":"hard_fault","duration_s":0.8,"speed_rpm":3000,"adc_span_A":20,"window_on":false,"interference_s":0,"reset_reference_s":0.600028875},
+    {"id":"low_speed_stop","kind":"boundary_state","duration_s":0.9,"speed_initial_rpm":1000,"adc_span_A":20,"window_on":false,"interference_s":0,"events":[{"type":"speed","time_s":0.3,"value_rpm":200},{"type":"speed","time_s":0.6,"value_rpm":0}]},
+    {"id":"deadline_jitter","kind":"hard_fault","duration_s":0.8,"speed_rpm":3000,"adc_span_A":20,"window_on":false,"interference_s":0,"schedule":[{"time_s":0.5,"release_jitter_s":0.000001,"interference_s":0},{"time_s":0.55,"release_jitter_s":0,"interference_s":0.00001},{"time_s":0.6,"release_jitter_s":0,"interference_s":0.000013125},{"time_s":0.65,"release_jitter_s":0,"interference_s":0.00003},{"time_s":0.7,"release_jitter_s":0,"interference_s":0}]}
+  ],
+  "single_factor_diagnosis":"If combined accuracy fails, use preregistered same-speed controls: matched estimated frontend only, matched estimated deadtime/device only, calibrated gain/bias only. Never fit angle to truth. Changes and configurations are recorded, all parent normal thresholds unchanged.",
+  "hard_fault_requirements":"First native supervisor call revokes permit. After missing/ADC/timing/reset, rebuild history and lock before repermission; quantify recovery on physical traces. Low 200rpm/stop evaluation windows deny permission; accuracy not claimed. R0 sequence/stale/time-integrity fixtures remain mandatory.",
+  "plant_separation":"Plant R/L modifications use plant-only symbols/blocks and restore originals. Controller/observer nominal motor and PI values do not receive injected truth. Dynamic sources are restored. No estimator truth import outside evaluation.",
+  "candidate_protocol":"Completed R2 candidate is frozen before full matrix. R3 independently replays final complete traces and compares all original52; R1 archives/85M-source/90-file fingerprints remain immutable.",
+  "gate":"Stop after the R2 node record for user review; report any failed/incomplete case as not passed. No feedback takeover or measured hardware claim."
+}
