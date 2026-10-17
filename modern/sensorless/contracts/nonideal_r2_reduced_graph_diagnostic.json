@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "kind": "reduced_simulink_core_graph_diagnostic",
+  "registered_before_implementation": "2026-10-17; pure core baseline exact496000 values, no main-model retry",
+  "purpose": "Separate pure arithmetic, MATLAB Function compilation/execution, and main-model native/frontend/queue integration. This is a reduced diagnostic model, not another full-case execution version.",
+  "inputs": "Source-bound archived current, RL-weighted voltage, validity and reset from the preregistered normal3000rpm archive. Use original SMO/EMF/PLL/validity/phase-guard wrapper scripts and unchanged parameter vectors. Own Unit Delay omega history; no archived internal-state injection.",
+  "clock": "The pure kernels are time-translation invariant. Rebase JEOS sample ordinal k onto probe time k*50us, k=0..15999; the original physical reference remains28.875us+k*50us. This model has only control-rate computation and no62.5ns plant/PWM/native queue. Never interpret its time axis as native supervision coverage.",
+  "baseline_standard": "Exactly16000 outputs, exact integer sample ordinals, all18 numeric output streams (496000 values) exactly equal the pure replay/archive. No interpolation, truncation, tolerance relaxation or imported intermediate states. All original sources/model remain unchanged.",
+  "fault_diagnostic_standard": "Only after baseline equality, build separate reduced missing-five and one-frame-reset input cases. Require all18 outputs exactly equal the already archived pure-core mutation outputs. Component recovery is descriptive and cannot change the R2 whole-model case verdict.",
+  "journal": "Persist before/after each wrapper installation and compilation/execution, with source hashes, configuration and last durable phase. Save only a new reduced diagnostic model under runs. Record exceptions; do not modify the main SLX or user GUI.",
+  "execution_limit": "One fresh process per reduced diagnostic case, no automatic native retry. No main-model simulation, no new nominal full-case version, no change to old attempt caps. A failure is retained and localized before further work.",
+  "gate": "Passing reduces the tested fault surface but does not prove native root cause, frontend feedback correctness, packet deadlines, whole-R2 acceptance or hardware/WCET performance."
+}
