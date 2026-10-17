@@ -1,0 +1,8 @@
+{
+ "schema":1,
+ "registered_before_endpoint_repair":"2026-10-17; no main-model v8 simulation started",
+ "parent":"contracts/nonideal_r2_single_initialization_design.json",
+ "observation":"Toy101 requested major steps returned finalstep=true, but Simulation.Time was NaN at completion; original endpoint assertion failed. Evidence stays in runs/N3R2_single_initialization_toy_parse_fixed_once/execution_progress.json, original helper source hash in report.json. No successful physical result is being reclassified.",
+ "repair":"Keep exact total major steps and finalstep. If already inactive, collect SimulationOutput without calling stop again; otherwise stop once. Treat API next-major-time as progress only. Confirm the final physical time/count using output logs: toy101 counter samples with last time0.01 and count100; main native counter last time=duration and evaluated ticks=duration/h+1. Exact full toy and96 main log comparisons remain mandatory.",
+ "unchanged":"No solver, numerical equation, state, sample time, logging time or acceptance-threshold change; all original failure artifacts retained. Parent final-object-time assumption is superseded by actual output endpoint evidence."
+}
