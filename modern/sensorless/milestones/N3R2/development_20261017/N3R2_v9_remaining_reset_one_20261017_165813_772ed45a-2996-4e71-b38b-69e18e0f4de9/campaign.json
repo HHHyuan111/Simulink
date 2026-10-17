@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "node": "N3R2",
+  "execution_version": "block_reduction_off_v9",
+  "label": "v9_remaining_reset_one",
+  "status": "running",
+  "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_v9_remaining_reset_one_20261017_165813_772ed45a-2996-4e71-b38b-69e18e0f4de9",
+  "driver_sha256": "446b347a857a3ecc80bc9ad0ce150aac134c3dd9db953da720a959df350bedc9",
+  "jobs": [],
+  "log_format_contract_sha256": "131d92c0098fe4ea8908f67618c22935536706019acaa9a513bb93a308c027a6",
+  "analysis_recovered_precheck": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_v9_short_20261017_165230_3f10afc8-7e32-4d6c-bde0-63087e0ea06a\\r1_short_logging_check_attempt_1"
+}

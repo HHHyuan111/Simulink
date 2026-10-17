@@ -3,10 +3,26 @@
   "node": "N3R2",
   "execution_version": "single_init_short_cache_v8r1",
   "label": "v8r1_remaining_low_speed_stop",
-  "status": "running",
+  "status": "completed_passed",
   "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_v8r1_remaining_low_speed_stop_20261017_163457_4337288b-e208-4b11-b0c6-1214fbcb8cf1",
   "driver_sha256": "cdbb414939a383e4f2ad0c4d5e1239aff2655319a210a23b0da34afa50d8b914",
-  "jobs": [],
+  "jobs": [
+    {
+      "case_id": "low_speed_stop",
+      "status": "passed",
+      "attempts": [
+        {
+          "native_failure": false,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_v8r1_remaining_low_speed_stop_20261017_163457_4337288b-e208-4b11-b0c6-1214fbcb8cf1\\low_speed_stop_attempt_1",
+          "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/execution_v8');validate_sensorless_r2_v8_case('low_speed_stop','D:/simulink/dev/modern/sensorless/runs/N3R2_v8r1_remaining_low_speed_stop_20261017_163457_4337288b-e208-4b11-b0c6-1214fbcb8cf1/low_speed_stop_attempt_1');normalize_sensorless_r2_v8_archive('D:/simulink/dev/modern/sensorless/runs/N3R2_v8r1_remaining_low_speed_stop_20261017_163457_4337288b-e208-4b11-b0c6-1214fbcb8cf1/low_speed_stop_attempt_1');",
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_v8r1_remaining_low_speed_stop_20261017_163457_4337288b-e208-4b11-b0c6-1214fbcb8cf1\\low_speed_stop_attempt_1_console.log",
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_v8r1_remaining_low_speed_stop_20261017_163457_4337288b-e208-4b11-b0c6-1214fbcb8cf1\\low_speed_stop_attempt_1_launcher.log",
+          "exit_code": 0
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_v8r1_remaining_low_speed_stop_20261017_163457_4337288b-e208-4b11-b0c6-1214fbcb8cf1\\low_speed_stop_attempt_1"
+    }
+  ],
   "log_format_contract_sha256": "131d92c0098fe4ea8908f67618c22935536706019acaa9a513bb93a308c027a6",
   "analysis_recovered_precheck": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_v8r1_short_20261017_162814_c6e0244a-576c-4beb-9594-d644dfc04eec\\r1_short_logging_check_attempt_1"
 }

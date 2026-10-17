@@ -1,0 +1,32 @@
+{
+  "kind": "analysis_only_uniform_timestamp_encoding",
+  "all_passed": true,
+  "simulation_reexecuted": false,
+  "raw_archive_unchanged": true,
+  "raw_sha256": "968b5dc1012179e787c34c9637685b103267001330a511cb179d0e43515560cf",
+  "source_folder": "D:/simulink/dev/modern/sensorless/runs/N3R2_v8r1_remaining_low_speed_stop_20261017_163457_4337288b-e208-4b11-b0c6-1214fbcb8cf1/low_speed_stop_attempt_1",
+  "destination": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_v8r1_remaining_low_speed_stop_20261017_163457_4337288b-e208-4b11-b0c6-1214fbcb8cf1\\low_speed_stop_attempt_1\\log_format",
+  "adapter_sha256": "da7bfbb0d707afce7cee3ec206ec64eb0ff6e431cf53e1efd8fb5c6778eb4d05",
+  "contract_sha256": "131d92c0098fe4ea8908f67618c22935536706019acaa9a513bb93a308c027a6",
+  "logs": [
+    {
+      "name": "obs_dead_gates",
+      "samples": 4000,
+      "native_ticks_unchanged": true,
+      "Data_unchanged": true,
+      "first_tick": 1.4396001E+7,
+      "last_tick": 1.44E+7,
+      "max_time_encoding_delta_s": 1.1102230246251565E-16
+    },
+    {
+      "name": "obs_dead_requested",
+      "samples": 4000,
+      "native_ticks_unchanged": true,
+      "Data_unchanged": true,
+      "first_tick": 1.4396001E+7,
+      "last_tick": 1.44E+7,
+      "max_time_encoding_delta_s": 1.1102230246251565E-16
+    }
+  ],
+  "canonical_sha256": "7ea1759c1c53453199f17ab12b310a6184d99f2a106763ae2710a2faf7a1035e"
+}

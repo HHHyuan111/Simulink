@@ -1,0 +1,33 @@
+{
+  "kind": "analysis_only_uniform_timestamp_encoding",
+  "all_passed": true,
+  "simulation_reexecuted": false,
+  "raw_archive_unchanged": true,
+  "raw_sha256": "bd37f8078574421203b37196447c96ff133d46946537fecbbdb3fe1b1b2f286a",
+  "source_folder": "D:/simulink/dev/modern/sensorless/runs/N3R2_v9_short_20261017_165230_3f10afc8-7e32-4d6c-bde0-63087e0ea06a/r1_short_logging_check_attempt_1",
+  "destination": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_v9_short_20261017_165230_3f10afc8-7e32-4d6c-bde0-63087e0ea06a\\r1_short_logging_check_attempt_1\\log_format",
+  "adapter_sha256": "da7bfbb0d707afce7cee3ec206ec64eb0ff6e431cf53e1efd8fb5c6778eb4d05",
+  "contract_sha256": "131d92c0098fe4ea8908f67618c22935536706019acaa9a513bb93a308c027a6",
+  "logs": [
+    {
+      "name": "obs_dead_gates",
+      "samples": 4000,
+      "native_ticks_unchanged": true,
+      "Data_unchanged": true,
+      "first_tick": 316001,
+      "last_tick": 320000,
+      "max_time_encoding_delta_s": 3.4694469519536142E-18
+    },
+    {
+      "name": "obs_dead_requested",
+      "samples": 4000,
+      "native_ticks_unchanged": true,
+      "Data_unchanged": true,
+      "first_tick": 316001,
+      "last_tick": 320000,
+      "max_time_encoding_delta_s": 3.4694469519536142E-18
+    }
+  ],
+  "canonical_sha256": "cab25aeb354233274127f1d5d968795851d70811156aeae7bce554538e255a6f",
+  "strict96_and_R1_81_comparisons_passed": true
+}

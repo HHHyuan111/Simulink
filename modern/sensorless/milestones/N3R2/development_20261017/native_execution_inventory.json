@@ -1,0 +1,969 @@
+{
+  "analysis_only": true,
+  "captured_at": "2026-10-17T17:08:49.650634+08:00",
+  "generator_sha256": "454417523d28882804c0aab8969501cdf5403d7be0ed036974438805b4252307",
+  "native_root_cause_confirmed": false,
+  "algorithm_verdict_from_native_exit": false,
+  "scope": "Finalized nonzero attempts only. Driver native_failure is retry eligibility, not a statement that other Windows exceptions are non-native. Progress is last durable observation, not exact crash time. Stack symbols may be nearest exported names and do not establish a cause. No raw console, addresses, tokens, licenses or crash dumps are published.",
+  "rows": [
+    {
+      "campaign": "N3R2_basic_scenarios_v5_20261017_124839_dca6c75a-229c-4f85-ab80-53d70b373bff",
+      "version": "basic_scenarios_v5",
+      "case_id": "r1_short_logging_check",
+      "attempt": "r1_short_logging_check_attempt_1",
+      "exit_code": -1073741819,
+      "exit_code_hex": "0xc0000005",
+      "recognized_windows_native_exception": true,
+      "retryable_native_code": true,
+      "driver_retryable_classification": true,
+      "last_persisted_phase": "load",
+      "last_recorded_next_major_time_s": null,
+      "completed_physics_archived": false,
+      "original_record_sha256": "8097490c15f45c0778a52bcfb73d0bd203a98bf0293f4cdbe1332fd9e4f8022b",
+      "private_launcher_sha256": "9c7c3b6d068d4957459a5abd064e2f0aa28efae9fd05f221173c1446ef8b07d5",
+      "redacted_frames": [
+        {
+          "module": "libmx.dll",
+          "symbol": "matrix::detail::noninlined::mx_array_api::mxSetUserBits"
+        },
+        {
+          "module": "libmx.dll",
+          "symbol": "matrix::lxe_access::mightBeShared"
+        },
+        {
+          "module": "libmx.dll",
+          "symbol": "matrix::serialize::getCurrentItem"
+        },
+        {
+          "module": "libmx.dll",
+          "symbol": "matrix::serialize::getItem"
+        },
+        {
+          "module": "libmx.dll",
+          "symbol": "matrix::detail::noninlined::mx_array_api::miGetItem"
+        },
+        {
+          "module": "libmx.dll",
+          "symbol": "matrix::detail::noninlined::mx_array_api::mxDeserializeWithTag"
+        },
+        {
+          "module": "libmx.dll",
+          "symbol": "matrix::detail::noninlined::mx_array_api::miGetStreamPtr"
+        },
+        {
+          "module": "libmat.dll",
+          "symbol": "MatFileMonitor::notifyOpenForWrite"
+        }
+      ]
+    },
+    {
+      "campaign": "N3R2_basic_scenarios_v5_20261017_124839_dca6c75a-229c-4f85-ab80-53d70b373bff",
+      "version": "basic_scenarios_v5",
+      "case_id": "combined_dynamic",
+      "attempt": "combined_dynamic_attempt_1",
+      "exit_code": -1073741819,
+      "exit_code_hex": "0xc0000005",
+      "recognized_windows_native_exception": true,
+      "retryable_native_code": true,
+      "driver_retryable_classification": true,
+      "last_persisted_phase": "simulate",
+      "last_recorded_next_major_time_s": null,
+      "completed_physics_archived": false,
+      "original_record_sha256": "ac87d93e7a0adbfc8c354ce75a6900d8edddb28761160ef885525c31977233a6",
+      "private_launcher_sha256": "3c6b297f8f97daef7e3d4f46ea0e30a0c66363c13c154a6aa4f931366b4ee09c",
+      "redacted_frames": [
+        {
+          "module": "SimulinkBlock.dll",
+          "symbol": "SLRootBlock::getGrPrmDesc"
+        },
+        {
+          "module": "libmwsl_elem_blocks.dll",
+          "symbol": "mwboost::serialization::singleton_module::unlock"
+        },
+        {
+          "module": "libmwsl_exec_cf.dll",
+          "symbol": "sl::exec::cf::elist::ExecSystem::InitExecSystemScheme"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::list::TypedExecBlocks::mergeJacobianBlocks"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::method::ModelMethods::zeroCrossing"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::method::ModelMethods::output"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::task::Task::runModelOutput"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::task::Task::validateTask"
+        }
+      ]
+    },
+    {
+      "campaign": "N3R2_basic_scenarios_v5_20261017_124839_dca6c75a-229c-4f85-ab80-53d70b373bff",
+      "version": "basic_scenarios_v5",
+      "case_id": "combined_dynamic",
+      "attempt": "combined_dynamic_attempt_2",
+      "exit_code": 1,
+      "exit_code_hex": "0x00000001",
+      "recognized_windows_native_exception": false,
+      "retryable_native_code": false,
+      "driver_retryable_classification": false,
+      "last_persisted_phase": "metrics",
+      "last_recorded_next_major_time_s": null,
+      "completed_physics_archived": true,
+      "original_record_sha256": "8ece86303351496f4d6f9028e722c8941501245875f98d653e19445da4b7eaef",
+      "private_launcher_sha256": "dd0a0c4fb0f55990cb2c38138a99552febd92aaa90badd25c72a32803a24f07b",
+      "redacted_frames": []
+    },
+    {
+      "campaign": "N3R2_fault_final_short_precheck_20261017_141116_c027734c-49b8-4ecd-8e60-81a403609cfc",
+      "version": "fault_ingress_schedule_v7",
+      "case_id": "r1_short_logging_check",
+      "attempt": "r1_short_logging_check_attempt_1",
+      "exit_code": -1073741819,
+      "exit_code_hex": "0xc0000005",
+      "recognized_windows_native_exception": true,
+      "retryable_native_code": true,
+      "driver_retryable_classification": true,
+      "last_persisted_phase": "install",
+      "last_recorded_next_major_time_s": null,
+      "completed_physics_archived": false,
+      "original_record_sha256": "264d76a6bb0b14255bcfe4175fb776bb7ec8afa8d077c1941a313a1652318530",
+      "private_launcher_sha256": "124852fbdd998d66517f9157fed7f3101376167de3775d042d7405f207c238af",
+      "redacted_frames": [
+        {
+          "module": "SimulinkBlock.dll",
+          "symbol": "SLRootBlock::getGrPrmDesc"
+        },
+        {
+          "module": "sl_lang_blocks.dll",
+          "symbol": "OutportBlock::CheckPrmsAndCreateDlgPrmCache"
+        },
+        {
+          "module": "libmwsimulink.dll",
+          "symbol": "openDefaultDialog"
+        },
+        {
+          "module": "SimulinkBlock.dll",
+          "symbol": "EvalDlgPrms"
+        },
+        {
+          "module": "libmwsimulink.dll",
+          "symbol": "BlockEvalParams"
+        },
+        {
+          "module": "libmwsimulink.dll",
+          "symbol": "EvalBlockParamsAndUpdateLink"
+        },
+        {
+          "module": "libmwsimulink.dll",
+          "symbol": "SLDialogData::isUpdatePending"
+        },
+        {
+          "module": "libmwsimulink.dll",
+          "symbol": "SLDialogData::addToParamChangeMap"
+        }
+      ]
+    },
+    {
+      "campaign": "N3R2_guard_static_matrix_20261017_113855_f2397e8f-45aa-4262-b709-eeb01805f5c9",
+      "version": "packet_phase_guard_v4",
+      "case_id": "combined_reverse_3000",
+      "attempt": "combined_reverse_3000_attempt_1",
+      "exit_code": -1073741819,
+      "exit_code_hex": "0xc0000005",
+      "recognized_windows_native_exception": true,
+      "retryable_native_code": true,
+      "driver_retryable_classification": true,
+      "last_persisted_phase": "simulate",
+      "last_recorded_next_major_time_s": null,
+      "completed_physics_archived": false,
+      "original_record_sha256": "b5b3ad3c7eba4ee95ba666da65c7955d750e04da480d1ad007630d48fe5bf9a4",
+      "private_launcher_sha256": "6d4c02dd302bb36105d6d6bb64609a74b7d314a70a4db9122fabc948055ca479",
+      "redacted_frames": [
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::clock::DiscreteBaseTimer::advance"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::clock::DiscreteTimer::advance"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::service::ExternalTimerService::timer"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::sim::ExternalTimerSet::serialize"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::engine::ExecutionEngine::step"
+        },
+        {
+          "module": "sl_sim.dll",
+          "symbol": "slsim::runtime::initializeExecutionEngine"
+        },
+        {
+          "module": "sl_sim.dll",
+          "symbol": "slsim::SimulationExecutionInterface::step"
+        },
+        {
+          "module": "sl_sim.dll",
+          "symbol": "slsim::SimulationInterfaceManager::erase"
+        }
+      ]
+    },
+    {
+      "campaign": "N3R2_R1_numerical_diagnosis_20261017_080647_bd9f1982-91f2-4ec8-88d7-01d2bf06ed66",
+      "version": null,
+      "case_id": "r1_short_logging_check",
+      "attempt": "r1_short_logging_check_attempt_1",
+      "exit_code": -1073741819,
+      "exit_code_hex": "0xc0000005",
+      "recognized_windows_native_exception": true,
+      "retryable_native_code": true,
+      "driver_retryable_classification": true,
+      "last_persisted_phase": "configure",
+      "last_recorded_next_major_time_s": null,
+      "completed_physics_archived": false,
+      "original_record_sha256": "3e186f2eae032df92e233e9622e93560a0ee30db888e79b2a3b88d46cd1eb5ce",
+      "private_launcher_sha256": "0e26b0be24f3daa11f7a61d09b43ffbea9392a7c4b917b3605be0631223f4273",
+      "redacted_frames": [
+        {
+          "module": "m_lxe.dll",
+          "symbol": "MathWorks::lxe::FakeLxeDispatcherProxyForIrGen::SetStaticImportsForMatlabFunction"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "RunSection::CorrectedFileInfo::getRemovedSections"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "MathWorks::lxe::ErrorStack::WillSuppressErrorsInCpp"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "MathWorks::lxe::SetEngineImplUnlinkFlagForAllCallsOnStack"
+        },
+        {
+          "module": "libmwlxemainservices.dll",
+          "symbol": "FeatureTestObservableWorkspace"
+        },
+        {
+          "module": "libmwlxemainservices.dll",
+          "symbol": "mwboost::serialization::singleton_module::unlock"
+        },
+        {
+          "module": "m_dispatcher.dll",
+          "symbol": "Mfh_error::lookup"
+        },
+        {
+          "module": "m_dispatcher.dll",
+          "symbol": "Mfh_file::dispatch_with_reuse"
+        }
+      ]
+    },
+    {
+      "campaign": "N3R2_R1_numerical_diagnosis_20261017_080647_bd9f1982-91f2-4ec8-88d7-01d2bf06ed66",
+      "version": null,
+      "case_id": "r1_short_logging_check",
+      "attempt": "r1_short_logging_check_attempt_2",
+      "exit_code": -1073741819,
+      "exit_code_hex": "0xc0000005",
+      "recognized_windows_native_exception": true,
+      "retryable_native_code": true,
+      "driver_retryable_classification": true,
+      "last_persisted_phase": "configure",
+      "last_recorded_next_major_time_s": null,
+      "completed_physics_archived": false,
+      "original_record_sha256": "c635952c57b7eb10b530ef130414207e194fb47341d9b76a2ba522afa7fcc958",
+      "private_launcher_sha256": "b92e9fc905c0ec67230d11e0b4c6eda5d1f6898fc79fd8b066092bcff8541473",
+      "redacted_frames": []
+    },
+    {
+      "campaign": "N3R2_safe_init_v2_20261017_081750_e4be6165-1fc2-46ff-91c1-ca86e179e494",
+      "version": "safe_init_v2_explicit_state",
+      "case_id": "r1_short_logging_check",
+      "attempt": "r1_short_logging_check_attempt_1",
+      "exit_code": -1073741819,
+      "exit_code_hex": "0xc0000005",
+      "recognized_windows_native_exception": true,
+      "retryable_native_code": true,
+      "driver_retryable_classification": true,
+      "last_persisted_phase": "observer_compile",
+      "last_recorded_next_major_time_s": null,
+      "completed_physics_archived": false,
+      "original_record_sha256": "d5a399356d9eaa5cb063d2b8153b60b091949175c1b143c41721f9d6d7378ebe",
+      "private_launcher_sha256": "6eeb344123100889567c74cd63fb299f551f6c87394774dd620c633ead1c454f",
+      "redacted_frames": []
+    },
+    {
+      "campaign": "N3R2_safe_init_v2_20261017_081750_e4be6165-1fc2-46ff-91c1-ca86e179e494",
+      "version": "safe_init_v2_explicit_state",
+      "case_id": "diagnostic_combined_3000",
+      "attempt": "diagnostic_combined_3000_attempt_1",
+      "exit_code": -1073741819,
+      "exit_code_hex": "0xc0000005",
+      "recognized_windows_native_exception": true,
+      "retryable_native_code": true,
+      "driver_retryable_classification": true,
+      "last_persisted_phase": "observer_compile",
+      "last_recorded_next_major_time_s": null,
+      "completed_physics_archived": false,
+      "original_record_sha256": "fab11ff93b4fa697c7b46ef566b126452e6ca5eabee8b9dad89a6f01b822b0f7",
+      "private_launcher_sha256": "f7263a27ce6c366864c85554f2cfc69b86430322a639e4271806d14615fdf226",
+      "redacted_frames": []
+    },
+    {
+      "campaign": "N3R2_safe_init_v2_20261017_081750_e4be6165-1fc2-46ff-91c1-ca86e179e494",
+      "version": "safe_init_v2_explicit_state",
+      "case_id": "diagnostic_combined_3000",
+      "attempt": "diagnostic_combined_3000_attempt_2",
+      "exit_code": -1073741819,
+      "exit_code_hex": "0xc0000005",
+      "recognized_windows_native_exception": true,
+      "retryable_native_code": true,
+      "driver_retryable_classification": true,
+      "last_persisted_phase": "observer_compile",
+      "last_recorded_next_major_time_s": null,
+      "completed_physics_archived": false,
+      "original_record_sha256": "353757dfc89cc21bc02d5f0c60b174718fc26de0fd1770460be4989d4b2d9a54",
+      "private_launcher_sha256": "3d6c4961818479c865744cb3158d00e437f82a5f9f41b26849667af949bde423",
+      "redacted_frames": []
+    },
+    {
+      "campaign": "N3R2_serial_followup_missing_five_20261017_145634_1d32d291-d424-4220-b99d-2a153c210ccc",
+      "version": "fault_ingress_schedule_v7",
+      "case_id": "missing_five",
+      "attempt": "missing_five_attempt_1",
+      "exit_code": -1073741819,
+      "exit_code_hex": "0xc0000005",
+      "recognized_windows_native_exception": true,
+      "retryable_native_code": true,
+      "driver_retryable_classification": true,
+      "last_persisted_phase": "simulate",
+      "last_recorded_next_major_time_s": null,
+      "completed_physics_archived": false,
+      "original_record_sha256": "dcc01d12d46b3ca5900da238a4437778152c7e8f4bd7a57347a89a4ad2c1551f",
+      "private_launcher_sha256": "218c0d419b26823826e6e404a56ecf656a0f4cd14b45031618692b088df4560d",
+      "redacted_frames": []
+    },
+    {
+      "campaign": "N3R2_serial_followup_missing_five_20261017_145634_1d32d291-d424-4220-b99d-2a153c210ccc",
+      "version": "fault_ingress_schedule_v7",
+      "case_id": "missing_five",
+      "attempt": "missing_five_attempt_2",
+      "exit_code": -1073741674,
+      "exit_code_hex": "0xc0000096",
+      "recognized_windows_native_exception": true,
+      "retryable_native_code": false,
+      "driver_retryable_classification": false,
+      "last_persisted_phase": "simulate",
+      "last_recorded_next_major_time_s": null,
+      "completed_physics_archived": false,
+      "original_record_sha256": "1444f0b2e9ec09ab408172ccfa09c7c5f2a11e0a1f697292279245f6af8c92f4",
+      "private_launcher_sha256": "0d8188305d99c6fddd16189f0eeffbd47c64bcd3ad8260ce3d4ebae5f6d2ad7b",
+      "redacted_frames": [
+        {
+          "module": "SimulinkBlock.dll",
+          "symbol": "SLBlock::getCompInputPortWidth"
+        }
+      ]
+    },
+    {
+      "campaign": "N3R2_serial_followup_reset_one_20261017_150104_fe04da7a-7ac5-4b39-be08-8c9255f58224",
+      "version": "fault_ingress_schedule_v7",
+      "case_id": "reset_one",
+      "attempt": "reset_one_attempt_1",
+      "exit_code": -1073741819,
+      "exit_code_hex": "0xc0000005",
+      "recognized_windows_native_exception": true,
+      "retryable_native_code": true,
+      "driver_retryable_classification": true,
+      "last_persisted_phase": "simulate",
+      "last_recorded_next_major_time_s": null,
+      "completed_physics_archived": false,
+      "original_record_sha256": "84b68bc307d2270c34f881ecab5bde46a7d6bcb6419e92d6e8ff0b4a815fe33e",
+      "private_launcher_sha256": "0699409b512182ebd2efd5330e44b622ec58ddf5e3841ee90c4ce56621fe3af6",
+      "redacted_frames": []
+    },
+    {
+      "campaign": "N3R2_serial_followup_reset_one_20261017_150104_fe04da7a-7ac5-4b39-be08-8c9255f58224",
+      "version": "fault_ingress_schedule_v7",
+      "case_id": "reset_one",
+      "attempt": "reset_one_attempt_2",
+      "exit_code": -1073741819,
+      "exit_code_hex": "0xc0000005",
+      "recognized_windows_native_exception": true,
+      "retryable_native_code": true,
+      "driver_retryable_classification": true,
+      "last_persisted_phase": "simulate",
+      "last_recorded_next_major_time_s": null,
+      "completed_physics_archived": false,
+      "original_record_sha256": "40094a48411de50e47f00789aeb82a1b0f80769a245bbe5779bc8236ee8c9488",
+      "private_launcher_sha256": "68fe6a6483c62dd106f9a1eda77a97d1bab91dd055d8509b4013619ce4fffa65",
+      "redacted_frames": [
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::clock::DiscreteBaseTimer::advance"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::clock::DiscreteTimer::advance"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::service::ExternalTimerService::timer"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::sim::ExternalTimerSet::serialize"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::engine::ExecutionEngine::step"
+        },
+        {
+          "module": "sl_sim.dll",
+          "symbol": "slsim::runtime::initializeExecutionEngine"
+        },
+        {
+          "module": "sl_sim.dll",
+          "symbol": "slsim::SimulationExecutionInterface::step"
+        },
+        {
+          "module": "sl_sim.dll",
+          "symbol": "slsim::SimulationInterfaceManager::erase"
+        }
+      ]
+    },
+    {
+      "campaign": "N3R2_single_initialization_short_precheck_20261017_162647_8c10ff7e-afe8-4654-82ba-48ef82374c7b",
+      "version": "single_initialization_v8",
+      "case_id": "r1_short_logging_check",
+      "attempt": "r1_short_logging_check_attempt_1",
+      "exit_code": 1,
+      "exit_code_hex": "0x00000001",
+      "recognized_windows_native_exception": false,
+      "retryable_native_code": false,
+      "driver_retryable_classification": false,
+      "last_persisted_phase": "install",
+      "last_recorded_next_major_time_s": null,
+      "completed_physics_archived": false,
+      "original_record_sha256": "0313cd51aa71785a82d336e3158294266e10d402466ff43105cd54ba70884e81",
+      "private_launcher_sha256": "f10f952e1a33f9fc459a7762ada0e1394e2bc42ff6229b22c5f79a984807bab5",
+      "redacted_frames": []
+    },
+    {
+      "campaign": "N3R2_stopped_init_v3_20261017_105619_277b3c70-cdf0-4542-b35d-d320753c4b82",
+      "version": "stopped_init_v3",
+      "case_id": "r1_short_logging_check",
+      "attempt": "r1_short_logging_check_attempt_1",
+      "exit_code": -1073741819,
+      "exit_code_hex": "0xc0000005",
+      "recognized_windows_native_exception": true,
+      "retryable_native_code": true,
+      "driver_retryable_classification": true,
+      "last_persisted_phase": "observer_compile",
+      "last_recorded_next_major_time_s": null,
+      "completed_physics_archived": false,
+      "original_record_sha256": "6af7ebb48543c9a98be479c3bdad336fb60eae90371ec74793722990f6aebadb",
+      "private_launcher_sha256": "7ffae7fbc2b33a7389f2bda68c1db0fbc7462a3ee520966602f89210c3d7e5d1",
+      "redacted_frames": [
+        {
+          "module": "libmwir.dll",
+          "symbol": null
+        },
+        {
+          "module": "libmwlxetypes.dll",
+          "symbol": null
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": null
+        },
+        {
+          "module": "libmwlxemainservices.dll",
+          "symbol": null
+        },
+        {
+          "module": "m_dispatcher.dll",
+          "symbol": null
+        },
+        {
+          "module": "m_interpreter.dll",
+          "symbol": null
+        },
+        {
+          "module": "libmwsl_services.dll",
+          "symbol": null
+        },
+        {
+          "module": "stateflow.dll",
+          "symbol": null
+        }
+      ]
+    },
+    {
+      "campaign": "N3R2_v5_other_cases_after_hot_native_limit_20261017_134553_d34f5e82-2b08-4e76-83a5-4e47e40234d3",
+      "version": "basic_scenarios_v5",
+      "case_id": "deadtime_2us",
+      "attempt": "deadtime_2us_attempt_1",
+      "exit_code": 3,
+      "exit_code_hex": "0x00000003",
+      "recognized_windows_native_exception": false,
+      "retryable_native_code": false,
+      "driver_retryable_classification": true,
+      "last_persisted_phase": "observer_compile",
+      "last_recorded_next_major_time_s": null,
+      "completed_physics_archived": false,
+      "original_record_sha256": "81565f24a3f8e5941b4d8588243e83b9bdca51aa80dd33dc89e01dc1c9beb624",
+      "private_launcher_sha256": "493d807f8a8c613655ad7b24cedb5e37d3445e42c751dfe8a28ec99e58cf78f1",
+      "redacted_frames": []
+    },
+    {
+      "campaign": "N3R2_v5_other_cases_after_hot_native_limit_20261017_134553_d34f5e82-2b08-4e76-83a5-4e47e40234d3",
+      "version": "basic_scenarios_v5",
+      "case_id": "low_speed_stop",
+      "attempt": "low_speed_stop_attempt_1",
+      "exit_code": -1073741819,
+      "exit_code_hex": "0xc0000005",
+      "recognized_windows_native_exception": true,
+      "retryable_native_code": true,
+      "driver_retryable_classification": true,
+      "last_persisted_phase": "simulate",
+      "last_recorded_next_major_time_s": null,
+      "completed_physics_archived": false,
+      "original_record_sha256": "09d5422e5aec077748fa7b034c35fc760c9d5f151e0c6efe0aa3c4891e998223",
+      "private_launcher_sha256": "1882c03f44dac4a80c22bc88f201cf3c99e19e6fec8be01e06e360eb84a56dff",
+      "redacted_frames": [
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::clock::DiscreteBaseTimer::advance"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::clock::DiscreteTimer::advance"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::service::ExternalTimerService::timer"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::sim::ExternalTimerSet::serialize"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::engine::ExecutionEngine::step"
+        },
+        {
+          "module": "sl_sim.dll",
+          "symbol": "slsim::runtime::initializeExecutionEngine"
+        },
+        {
+          "module": "sl_sim.dll",
+          "symbol": "slsim::SimulationExecutionInterface::step"
+        },
+        {
+          "module": "sl_sim.dll",
+          "symbol": "slsim::SimulationInterfaceManager::erase"
+        }
+      ]
+    },
+    {
+      "campaign": "N3R2_v5_other_cases_after_hot_native_limit_20261017_134553_d34f5e82-2b08-4e76-83a5-4e47e40234d3",
+      "version": "basic_scenarios_v5",
+      "case_id": "low_speed_stop",
+      "attempt": "low_speed_stop_attempt_2",
+      "exit_code": -1073741819,
+      "exit_code_hex": "0xc0000005",
+      "recognized_windows_native_exception": true,
+      "retryable_native_code": true,
+      "driver_retryable_classification": true,
+      "last_persisted_phase": "simulate",
+      "last_recorded_next_major_time_s": null,
+      "completed_physics_archived": false,
+      "original_record_sha256": "30d48b5c63418e7b7f9729a62feb819d48e54d32aca6d27e3709f62e001a4e49",
+      "private_launcher_sha256": "722ae2bdb462ce9e1cc6a7120b04ff7a04d02177176a6bccfee4a3596aaac495",
+      "redacted_frames": [
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::clock::DiscreteBaseTimer::advance"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::clock::DiscreteTimer::advance"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::service::ExternalTimerService::timer"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::sim::ExternalTimerSet::serialize"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::engine::ExecutionEngine::step"
+        },
+        {
+          "module": "sl_sim.dll",
+          "symbol": "slsim::runtime::initializeExecutionEngine"
+        },
+        {
+          "module": "sl_sim.dll",
+          "symbol": "slsim::SimulationExecutionInterface::step"
+        },
+        {
+          "module": "sl_sim.dll",
+          "symbol": "slsim::SimulationInterfaceManager::erase"
+        }
+      ]
+    },
+    {
+      "campaign": "N3R2_v5_remaining_after_analysis_fix_20261017_131701_217a6723-7a8f-4170-b7b3-a969f00efcf6",
+      "version": "basic_scenarios_v5",
+      "case_id": "hot_R1p2_L0p8",
+      "attempt": "hot_R1p2_L0p8_attempt_1",
+      "exit_code": -1073741819,
+      "exit_code_hex": "0xc0000005",
+      "recognized_windows_native_exception": true,
+      "retryable_native_code": true,
+      "driver_retryable_classification": true,
+      "last_persisted_phase": "observer_compile",
+      "last_recorded_next_major_time_s": null,
+      "completed_physics_archived": false,
+      "original_record_sha256": "95859fccc5572721a55506ae1b98fba743d199979681ed74d67a87eb711d1226",
+      "private_launcher_sha256": "e8325517514db196e6ebdc8c0d68ab8378abdd05a8fcd335a4bc83f9678c5005",
+      "redacted_frames": [
+        {
+          "module": "libmx.dll",
+          "symbol": "RootRecordPtr::~RootRecordPtr"
+        },
+        {
+          "module": "libmx.dll",
+          "symbol": "matrix::detail::noninlined::mx_array_api::mxAddRootContainer"
+        },
+        {
+          "module": "libmx.dll",
+          "symbol": "matrix::detail::noninlined::mx_array_api::mxSetCell"
+        },
+        {
+          "module": "libmwsimulink.dll",
+          "symbol": "BlockOpenPropertiesDialog"
+        },
+        {
+          "module": "libmwsimulink.dll",
+          "symbol": "BusAssignmentBlock::getDialogController"
+        },
+        {
+          "module": "sl_prm_engine.dll",
+          "symbol": "get_block_object_param"
+        },
+        {
+          "module": "sl_prm_engine.dll",
+          "symbol": "get_block_or_subsys_object_param"
+        },
+        {
+          "module": "sl_prm_engine.dll",
+          "symbol": "get_param_switchyard"
+        }
+      ]
+    },
+    {
+      "campaign": "N3R2_v5_remaining_after_analysis_fix_20261017_131701_217a6723-7a8f-4170-b7b3-a969f00efcf6",
+      "version": "basic_scenarios_v5",
+      "case_id": "hot_R1p2_L0p8",
+      "attempt": "hot_R1p2_L0p8_attempt_2",
+      "exit_code": -1073741819,
+      "exit_code_hex": "0xc0000005",
+      "recognized_windows_native_exception": true,
+      "retryable_native_code": true,
+      "driver_retryable_classification": true,
+      "last_persisted_phase": "install",
+      "last_recorded_next_major_time_s": null,
+      "completed_physics_archived": false,
+      "original_record_sha256": "fe2a2fb3fbef802cb9c3bc4c6c96d67ca6e502774299c4d8449f152de6a01e1d",
+      "private_launcher_sha256": "baeaaf0a5dce1ee82c84ae86ec8410a1cb1d67a83db6c9d9b9777a9e8b1d49f9",
+      "redacted_frames": [
+        {
+          "module": "mcos_impl.dll",
+          "symbol": "mwboost::archive::codecvt_null<wchar_t>::do_out"
+        },
+        {
+          "module": "mcos_impl.dll",
+          "symbol": "clearClasses"
+        },
+        {
+          "module": "mcos_impl.dll",
+          "symbol": "mwboost::serialization::singleton_module::unlock"
+        },
+        {
+          "module": "mcos_impl.dll",
+          "symbol": null
+        },
+        {
+          "module": "mcos_impl.dll",
+          "symbol": "mcos::impl::validation::createScalarDefaultPropValue"
+        },
+        {
+          "module": "mcos.dll",
+          "symbol": "omWrapData"
+        },
+        {
+          "module": "SimulinkBlock.dll",
+          "symbol": "SLRootBlock::createCOSI"
+        },
+        {
+          "module": "sl_mcos_api.dll",
+          "symbol": "sl_mcos_api::ModelReferenceRTPValueSetter::UseSetter"
+        }
+      ]
+    },
+    {
+      "campaign": "N3R2_v8r1_remaining_missing_five_20261017_164519_6a942c13-97ea-48e5-83fb-ec71f431090b",
+      "version": "single_init_short_cache_v8r1",
+      "case_id": "missing_five",
+      "attempt": "missing_five_attempt_1",
+      "exit_code": -1073741819,
+      "exit_code_hex": "0xc0000005",
+      "recognized_windows_native_exception": true,
+      "retryable_native_code": true,
+      "driver_retryable_classification": true,
+      "last_persisted_phase": "install",
+      "last_recorded_next_major_time_s": null,
+      "completed_physics_archived": false,
+      "original_record_sha256": "71499aad7469cfabc38226f50c14ef5c113a3a7cd528cc4a8c26b212f0ad0656",
+      "private_launcher_sha256": "078faea79fe220351b396cf327b480c731255791116070af562976f449ac6149",
+      "redacted_frames": [
+        {
+          "module": "libmwir.dll",
+          "symbol": "MathWorks::ts::TypeSubstitution::TypeSubstitution"
+        },
+        {
+          "module": "libmwlxetypes.dll",
+          "symbol": "MathWorks::lxe::LxeTypesBase::InstantiateFunctionTypeScheme"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "MathWorks::lxe::ClosedAbstraction::STUB_OFFSET"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "MathWorks::lxe::MatlabIrTreeList::offsetof_stale_flag"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "mwboost::archive::codecvt_null<wchar_t>::do_always_noconv"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "MathWorks::lxe::MatlabIrTreeList::TakeOwnershipOfAnonymousFunction"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "RunSection::CorrectedFileInfo::getRemovedSections"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "MathWorks::lxe::LXEConstants::IsY"
+        }
+      ]
+    },
+    {
+      "campaign": "N3R2_v8r1_remaining_missing_five_20261017_164519_6a942c13-97ea-48e5-83fb-ec71f431090b",
+      "version": "single_init_short_cache_v8r1",
+      "case_id": "missing_five",
+      "attempt": "missing_five_attempt_2",
+      "exit_code": -1073741819,
+      "exit_code_hex": "0xc0000005",
+      "recognized_windows_native_exception": true,
+      "retryable_native_code": true,
+      "driver_retryable_classification": true,
+      "last_persisted_phase": "advance_same_initialized_graph",
+      "last_recorded_next_major_time_s": 0.06999999999999999,
+      "completed_physics_archived": false,
+      "original_record_sha256": "d44ee7ac2bbcd997e5498a4f58b6047ea26cec2fe366d8d630ed163fd99c6d29",
+      "private_launcher_sha256": "0e0a4a1987000b90b3f1d13f8a719c1555b3b101a09379356c5b2c19b07ba527",
+      "redacted_frames": [
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::clock::DiscreteBaseTimer::advance"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::clock::DiscreteTimer::advance"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::service::ExternalTimerService::timer"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::sim::ExternalTimerSet::serialize"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::engine::ExecutionEngine::step"
+        },
+        {
+          "module": "sl_sim.dll",
+          "symbol": "slsim::runtime::initializeExecutionEngine"
+        },
+        {
+          "module": "sl_sim.dll",
+          "symbol": "slsim::SimulationExecutionInterface::step"
+        },
+        {
+          "module": "sl_sim.dll",
+          "symbol": "slsim::SimulationSnapshotManager::snapshotInterval"
+        }
+      ]
+    },
+    {
+      "campaign": "N3R2_v8r1_remaining_reset_one_20261017_164701_ae8aa825-0d31-4423-b871-eef102d57f09",
+      "version": "single_init_short_cache_v8r1",
+      "case_id": "reset_one",
+      "attempt": "reset_one_attempt_1",
+      "exit_code": -2147483645,
+      "exit_code_hex": "0x80000003",
+      "recognized_windows_native_exception": true,
+      "retryable_native_code": false,
+      "driver_retryable_classification": false,
+      "last_persisted_phase": "advance_same_initialized_graph",
+      "last_recorded_next_major_time_s": 0.06999999999999999,
+      "completed_physics_archived": false,
+      "original_record_sha256": "7240d653609f235c2b8663211a74f8602b8aed82412e4e5a5da9f7a72916f396",
+      "private_launcher_sha256": "1b30d50dfd764dfd48e48cca163125c024069d75c806fa50eba57d54b6aa726d",
+      "redacted_frames": [
+        {
+          "module": "libmwsl_elem_blocks.dll",
+          "symbol": "mwboost::serialization::singleton_module::unlock"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::list::TypedExecBlocks::setInitializeSetDimsFcnListForOutput"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::method::ModelMethods::zeroCrossing"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::task::Task::validateTask"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::sim::SimulatorExternalsTable::restart"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::dispatcher::TaskDispatcher::dispatchTasks"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::sim::ExternalTimerSet::serialize"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::engine::ExecutionEngine::step"
+        }
+      ]
+    },
+    {
+      "campaign": "N3R2_v8r1_short_20261017_162814_c6e0244a-576c-4beb-9594-d644dfc04eec",
+      "version": "single_init_short_cache_v8r1",
+      "case_id": "r1_short_logging_check",
+      "attempt": "r1_short_logging_check_attempt_1",
+      "exit_code": 1,
+      "exit_code_hex": "0x00000001",
+      "recognized_windows_native_exception": false,
+      "retryable_native_code": false,
+      "driver_retryable_classification": false,
+      "last_persisted_phase": "completed",
+      "last_recorded_next_major_time_s": null,
+      "completed_physics_archived": true,
+      "original_record_sha256": "d5aeda85143cb8be2d35e4115129bd433899aaddf4277b34d5699769cdc589f9",
+      "private_launcher_sha256": "cc1388f72d886427d8f42486e4f89164e1acf001aed3a1c4d1dd5039594a8e8c",
+      "redacted_frames": []
+    },
+    {
+      "campaign": "N3R2_v9_remaining_missing_five_20261017_165348_f89d83fa-5219-4a43-9dbc-6da41560a524",
+      "version": "block_reduction_off_v9",
+      "case_id": "missing_five",
+      "attempt": "missing_five_attempt_1",
+      "exit_code": -1073741819,
+      "exit_code_hex": "0xc0000005",
+      "recognized_windows_native_exception": true,
+      "retryable_native_code": true,
+      "driver_retryable_classification": true,
+      "last_persisted_phase": "install",
+      "last_recorded_next_major_time_s": null,
+      "completed_physics_archived": false,
+      "original_record_sha256": "a1fd8c1f70288be8a397d04437d17e78cff809b0e90437de8046f902611f1843",
+      "private_launcher_sha256": "80936bf05214ad21a1f3ad698d30657446689000d4fbb3fc870572e0cba47f5d",
+      "redacted_frames": [
+        {
+          "module": "m_lxe.dll",
+          "symbol": "MathWorks::lxe::FakeLxeDispatcherProxyForIrGen::SetStaticImportsForMatlabFunction"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "RunSection::CorrectedFileInfo::getRemovedSections"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "MathWorks::lxe::ErrorStack::WillSuppressErrorsInCpp"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "MathWorks::lxe::SetEngineImplUnlinkFlagForAllCallsOnStack"
+        },
+        {
+          "module": "libmwlxemainservices.dll",
+          "symbol": "FeatureTestObservableWorkspace"
+        },
+        {
+          "module": "libmwlxemainservices.dll",
+          "symbol": "mwboost::serialization::singleton_module::unlock"
+        },
+        {
+          "module": "m_dispatcher.dll",
+          "symbol": "Mfh_error::lookup"
+        },
+        {
+          "module": "m_dispatcher.dll",
+          "symbol": "Mfh_file::dispatch_with_reuse"
+        }
+      ]
+    },
+    {
+      "campaign": "N3R2_v9_remaining_missing_five_20261017_165348_f89d83fa-5219-4a43-9dbc-6da41560a524",
+      "version": "block_reduction_off_v9",
+      "case_id": "missing_five",
+      "attempt": "missing_five_attempt_2",
+      "exit_code": -1073741819,
+      "exit_code_hex": "0xc0000005",
+      "recognized_windows_native_exception": true,
+      "retryable_native_code": true,
+      "driver_retryable_classification": true,
+      "last_persisted_phase": "advance_same_initialized_graph",
+      "last_recorded_next_major_time_s": 0.13999999999999999,
+      "completed_physics_archived": false,
+      "original_record_sha256": "ebce48971c81deef142631c81605d608643da8ecc945f8e9d39218fc158569e6",
+      "private_launcher_sha256": "8f3cfb94228eae6e0059ab3e0988b97d28cf83cde8f61911bbd25917dfa6c594",
+      "redacted_frames": []
+    }
+  ]
+}

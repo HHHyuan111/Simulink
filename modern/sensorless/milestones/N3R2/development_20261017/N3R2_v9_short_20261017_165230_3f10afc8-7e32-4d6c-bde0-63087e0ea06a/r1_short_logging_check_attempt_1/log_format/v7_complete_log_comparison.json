@@ -1,0 +1,11 @@
+{
+  "all_passed": true,
+  "logs": 96,
+  "numeric_elements": 1.0203729E+7,
+  "failures": [],
+  "reference": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_fault_final_short_precheck_20261017_141116_c027734c-49b8-4ecd-8e60-81a403609cfc\\r1_short_logging_check_attempt_2",
+  "current": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_v9_short_20261017_165230_3f10afc8-7e32-4d6c-bde0-63087e0ea06a\\r1_short_logging_check_attempt_1\\log_format",
+  "all_Time_Data_equal": true,
+  "native_endpoint_included": true,
+  "no_second_observer_initialization": true
+}

@@ -8,7 +8,8 @@ import shutil
 BASE = Path(__file__).resolve().parents[2]
 DEST = BASE / 'milestones/N3R2/development_20261017'
 VERSIONS = {'basic_scenarios_v5', 'literal_binding_v6', 'fault_ingress_schedule_v7',
-            'single_initialization_v8', 'single_init_short_cache_v8r1'}
+            'single_initialization_v8', 'single_init_short_cache_v8r1',
+            'block_reduction_off_v9'}
 
 
 def read(path):
@@ -81,6 +82,14 @@ def main():
                         publish(attempt_folder / 'log_format' / file, name + '/log_format/' + file)
             if (attempt_folder / 'bounded_log_diagnosis.json').exists():
                 publish(attempt_folder / 'bounded_log_diagnosis.json', name + '/bounded_log_diagnosis.json')
+            low_review = attempt_folder / 'review/low_speed_diagnosis.json'
+            if low_review.exists():
+                review = read(low_review)
+                assert review['analysis_only'] and review['raw_source_sha256'] == record['raw_sha256']
+                assert sha(attempt_folder / 'review/low_speed_diagnosis.png') == review['figure_sha256']
+                assert sha(BASE / 'robust/diagnostics/render_sensorless_r2_low_speed.py') == review['renderer_sha256']
+                publish(low_review, name + '/review/low_speed_diagnosis.json')
+                publish(attempt_folder / 'review/low_speed_diagnosis.png', name + '/review/low_speed_diagnosis.png')
             metrics_path = attempt_folder / 'metrics.json'
             if record['status'] == 'passed' and record['case_id'] != 'r1_short_logging_check':
                 assert metrics_path.exists() and read(metrics_path)['all_passed']

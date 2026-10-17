@@ -1,0 +1,14 @@
+{
+  "original_blocks_preserved": true,
+  "original_algorithms_preserved": true,
+  "original_regions_preserved": true,
+  "single_root": true,
+  "goto_count": 58,
+  "all_gotos_scoped": true,
+  "unique_tags": true,
+  "truth_only_evaluation": true,
+  "external_inputs_whitelisted": true,
+  "new_blocks": 593,
+  "publication_scope_normalized": true,
+  "passed": true
+}

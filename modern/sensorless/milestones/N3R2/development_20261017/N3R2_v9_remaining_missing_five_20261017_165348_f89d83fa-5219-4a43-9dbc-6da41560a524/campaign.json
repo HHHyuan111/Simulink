@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "node": "N3R2",
+  "execution_version": "block_reduction_off_v9",
+  "label": "v9_remaining_missing_five",
+  "status": "native_attempts_exhausted",
+  "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_v9_remaining_missing_five_20261017_165348_f89d83fa-5219-4a43-9dbc-6da41560a524",
+  "driver_sha256": "446b347a857a3ecc80bc9ad0ce150aac134c3dd9db953da720a959df350bedc9",
+  "jobs": [
+    {
+      "case_id": "missing_five",
+      "status": "incomplete",
+      "attempts": [
+        {
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_v9_remaining_missing_five_20261017_165348_f89d83fa-5219-4a43-9dbc-6da41560a524\\missing_five_attempt_1_console.log",
+          "native_failure": true,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_v9_remaining_missing_five_20261017_165348_f89d83fa-5219-4a43-9dbc-6da41560a524\\missing_five_attempt_1",
+          "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/execution_v9','D:/simulink/dev/modern/sensorless/robust/execution_v8');validate_sensorless_r2_v9_case('missing_five','D:/simulink/dev/modern/sensorless/runs/N3R2_v9_remaining_missing_five_20261017_165348_f89d83fa-5219-4a43-9dbc-6da41560a524/missing_five_attempt_1');normalize_sensorless_r2_v8_archive('D:/simulink/dev/modern/sensorless/runs/N3R2_v9_remaining_missing_five_20261017_165348_f89d83fa-5219-4a43-9dbc-6da41560a524/missing_five_attempt_1');",
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_v9_remaining_missing_five_20261017_165348_f89d83fa-5219-4a43-9dbc-6da41560a524\\missing_five_attempt_1_launcher.log",
+          "exit_code": -1073741819
+        },
+        {
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_v9_remaining_missing_five_20261017_165348_f89d83fa-5219-4a43-9dbc-6da41560a524\\missing_five_attempt_2_console.log",
+          "native_failure": true,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_v9_remaining_missing_five_20261017_165348_f89d83fa-5219-4a43-9dbc-6da41560a524\\missing_five_attempt_2",
+          "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/execution_v9','D:/simulink/dev/modern/sensorless/robust/execution_v8');validate_sensorless_r2_v9_case('missing_five','D:/simulink/dev/modern/sensorless/runs/N3R2_v9_remaining_missing_five_20261017_165348_f89d83fa-5219-4a43-9dbc-6da41560a524/missing_five_attempt_2');normalize_sensorless_r2_v8_archive('D:/simulink/dev/modern/sensorless/runs/N3R2_v9_remaining_missing_five_20261017_165348_f89d83fa-5219-4a43-9dbc-6da41560a524/missing_five_attempt_2');",
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_v9_remaining_missing_five_20261017_165348_f89d83fa-5219-4a43-9dbc-6da41560a524\\missing_five_attempt_2_launcher.log",
+          "exit_code": -1073741819
+        }
+      ],
+      "completed_folder": ""
+    }
+  ],
+  "log_format_contract_sha256": "131d92c0098fe4ea8908f67618c22935536706019acaa9a513bb93a308c027a6",
+  "analysis_recovered_precheck": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_v9_short_20261017_165230_3f10afc8-7e32-4d6c-bde0-63087e0ea06a\\r1_short_logging_check_attempt_1"
+}

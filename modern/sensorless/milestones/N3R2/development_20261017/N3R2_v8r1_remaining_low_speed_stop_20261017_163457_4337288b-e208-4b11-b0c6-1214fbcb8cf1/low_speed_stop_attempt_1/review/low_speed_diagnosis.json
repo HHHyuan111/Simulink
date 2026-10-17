@@ -1,0 +1,19 @@
+{
+  "analysis_only": true,
+  "raw_source_sha256": "968b5dc1012179e787c34c9637685b103267001330a511cb179d0e43515560cf",
+  "csv_sha256": {
+    "control": "90d259e95f90f35f16f767bc9aa2198b089dacc91de1ca1514d43c58553666f8",
+    "events": "8658fc78afe7330d5a49f20f0cab5c59fa4f6f1574db3ef98767d9388b8d127c",
+    "counters": "e8a53b9b919767537a3712a47a97ef887921882ce9f826ac4c775ec104c1126e"
+  },
+  "renderer_sha256": "004e20984791e26d2929053f0ed11e73cdc039005443de94681842a33eeb5e97",
+  "low_speed_permit_native_points": 0,
+  "low_speed_permission_criterion_passed": true,
+  "first_logged_low_permission_s": null,
+  "last_logged_low_permission_s": null,
+  "logged_low_permission_rows": 0,
+  "event_scope": "All permit/false-valid/flag transitions plus50us heartbeats; low-speed crossings alone do not trigger an event. Native counter is authoritative; plotted event endpoints are sampled.",
+  "false_valid_longest_s": 0.001869875,
+  "low_speed_accuracy_claimed": false,
+  "figure_sha256": "a8de0ad6c2a4891fdd2340a53e75f5fa1e9669b721190ff34ec4a8912f9211da"
+}

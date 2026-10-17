@@ -2,7 +2,7 @@
   "node": "N3R2",
   "all_passed": false,
   "formal_final_matrix_passed": false,
-  "captured_at": "2026-10-17T16:36:10.961612+08:00",
+  "captured_at": "2026-10-17T17:08:49.514742+08:00",
   "scope": "Development progress only. Running/failed attempts retain their original statuses; probes do not establish long-case performance.",
   "r1_frozen_files_preserved": 90,
   "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
@@ -21,13 +21,13 @@
     "deadline_jitter",
     "deadtime_2us",
     "diagnostic_combined_3000",
-    "hot_R1p2_L0p8"
+    "hot_R1p2_L0p8",
+    "low_speed_stop"
   ],
   "development_not_end_to_end_passed_case_ids": [
     "combined_dynamic",
     "missing_five",
-    "reset_one",
-    "low_speed_stop"
+    "reset_one"
   ],
   "native_root_cause_confirmed": false,
   "hardware_validated": false,
@@ -373,20 +373,73 @@
     {
       "folder": "N3R2_v8r1_remaining_low_speed_stop_20261017_163457_4337288b-e208-4b11-b0c6-1214fbcb8cf1",
       "version": "single_init_short_cache_v8r1",
-      "status": "running",
+      "status": "completed_passed",
       "attempts": [
         {
           "folder": "low_speed_stop_attempt_1",
           "case_id": "low_speed_stop",
+          "status": "passed",
+          "phase": "completed",
+          "raw_sha256": "968b5dc1012179e787c34c9637685b103267001330a511cb179d0e43515560cf",
+          "metrics_passed": true,
+          "record_status_is_last_persisted_not_process_liveness": true,
+          "execution_finalized": true,
+          "exit_code": 0,
+          "exit_code_hex": "0x00000000",
+          "allowed_native_retry_classification": false
+        }
+      ]
+    },
+    {
+      "folder": "N3R2_v8r1_remaining_missing_five_20261017_164519_6a942c13-97ea-48e5-83fb-ec71f431090b",
+      "version": "single_init_short_cache_v8r1",
+      "status": "native_attempts_exhausted",
+      "attempts": [
+        {
+          "folder": "missing_five_attempt_1",
+          "case_id": "missing_five",
+          "status": "running",
+          "phase": "install",
+          "raw_sha256": null,
+          "metrics_passed": false,
+          "record_status_is_last_persisted_not_process_liveness": true,
+          "execution_finalized": true,
+          "exit_code": -1073741819,
+          "exit_code_hex": "0xc0000005",
+          "allowed_native_retry_classification": true
+        },
+        {
+          "folder": "missing_five_attempt_2",
+          "case_id": "missing_five",
           "status": "running",
           "phase": "advance_same_initialized_graph",
           "raw_sha256": null,
           "metrics_passed": false,
           "record_status_is_last_persisted_not_process_liveness": true,
-          "execution_finalized": false,
-          "exit_code": null,
-          "exit_code_hex": null,
-          "allowed_native_retry_classification": null
+          "execution_finalized": true,
+          "exit_code": -1073741819,
+          "exit_code_hex": "0xc0000005",
+          "allowed_native_retry_classification": true
+        }
+      ]
+    },
+    {
+      "folder": "N3R2_v8r1_remaining_reset_one_20261017_164701_ae8aa825-0d31-4423-b871-eef102d57f09",
+      "version": "single_init_short_cache_v8r1",
+      "status": "failed_execution",
+      "attempts": [
+        {
+          "folder": "reset_one_attempt_1",
+          "case_id": "reset_one",
+          "status": "running",
+          "phase": "advance_same_initialized_graph",
+          "raw_sha256": null,
+          "metrics_passed": false,
+          "record_status_is_last_persisted_not_process_liveness": true,
+          "execution_finalized": true,
+          "exit_code": -2147483645,
+          "exit_code_hex": "0x80000003",
+          "allowed_native_retry_classification": false
         }
       ]
     },
@@ -406,6 +459,92 @@
           "execution_finalized": true,
           "exit_code": 1,
           "exit_code_hex": "0x00000001",
+          "allowed_native_retry_classification": false
+        }
+      ]
+    },
+    {
+      "folder": "N3R2_v9_remaining_missing_five_20261017_165348_f89d83fa-5219-4a43-9dbc-6da41560a524",
+      "version": "block_reduction_off_v9",
+      "status": "native_attempts_exhausted",
+      "attempts": [
+        {
+          "folder": "missing_five_attempt_1",
+          "case_id": "missing_five",
+          "status": "running",
+          "phase": "install",
+          "raw_sha256": null,
+          "metrics_passed": false,
+          "record_status_is_last_persisted_not_process_liveness": true,
+          "execution_finalized": true,
+          "exit_code": -1073741819,
+          "exit_code_hex": "0xc0000005",
+          "allowed_native_retry_classification": true
+        },
+        {
+          "folder": "missing_five_attempt_2",
+          "case_id": "missing_five",
+          "status": "running",
+          "phase": "advance_same_initialized_graph",
+          "raw_sha256": null,
+          "metrics_passed": false,
+          "record_status_is_last_persisted_not_process_liveness": true,
+          "execution_finalized": true,
+          "exit_code": -1073741819,
+          "exit_code_hex": "0xc0000005",
+          "allowed_native_retry_classification": true
+        }
+      ]
+    },
+    {
+      "folder": "N3R2_v9_remaining_reset_one_20261017_165813_772ed45a-2996-4e71-b38b-69e18e0f4de9",
+      "version": "block_reduction_off_v9",
+      "status": "running",
+      "attempts": [
+        {
+          "folder": "reset_one_attempt_1",
+          "case_id": "reset_one",
+          "status": "running",
+          "phase": "advance_same_initialized_graph",
+          "raw_sha256": null,
+          "metrics_passed": false,
+          "record_status_is_last_persisted_not_process_liveness": true,
+          "execution_finalized": false,
+          "exit_code": null,
+          "exit_code_hex": null,
+          "allowed_native_retry_classification": null
+        },
+        {
+          "folder": "reset_one_attempt_2",
+          "case_id": "reset_one",
+          "status": "running",
+          "phase": "advance_same_initialized_graph",
+          "raw_sha256": null,
+          "metrics_passed": false,
+          "record_status_is_last_persisted_not_process_liveness": true,
+          "execution_finalized": false,
+          "exit_code": null,
+          "exit_code_hex": null,
+          "allowed_native_retry_classification": null
+        }
+      ]
+    },
+    {
+      "folder": "N3R2_v9_short_20261017_165230_3f10afc8-7e32-4d6c-bde0-63087e0ea06a",
+      "version": "block_reduction_off_v9",
+      "status": "completed_passed",
+      "attempts": [
+        {
+          "folder": "r1_short_logging_check_attempt_1",
+          "case_id": "r1_short_logging_check",
+          "status": "passed",
+          "phase": "completed",
+          "raw_sha256": "bd37f8078574421203b37196447c96ff133d46946537fecbbdb3fe1b1b2f286a",
+          "metrics_passed": true,
+          "record_status_is_last_persisted_not_process_liveness": true,
+          "execution_finalized": true,
+          "exit_code": 0,
+          "exit_code_hex": "0x00000000",
           "allowed_native_retry_classification": false
         }
       ]
@@ -685,12 +824,17 @@
     {
       "source": "runs/N3R2_v8r1_remaining_low_speed_stop_20261017_163457_4337288b-e208-4b11-b0c6-1214fbcb8cf1/campaign.json",
       "published": "N3R2_v8r1_remaining_low_speed_stop_20261017_163457_4337288b-e208-4b11-b0c6-1214fbcb8cf1/campaign.json",
-      "sha256": "0c9134f7b13e750718227b06533fb4265657f52183349b9e2750a921eeb720d8"
+      "sha256": "f54c402b1dcebf6311ee430266dc182cc8fba69a0ba0efbff833ff5019a59f08"
     },
     {
       "source": "runs/N3R2_v8r1_remaining_low_speed_stop_20261017_163457_4337288b-e208-4b11-b0c6-1214fbcb8cf1/low_speed_stop_attempt_1/record.json",
       "published": "N3R2_v8r1_remaining_low_speed_stop_20261017_163457_4337288b-e208-4b11-b0c6-1214fbcb8cf1/low_speed_stop_attempt_1/record.json",
-      "sha256": "90b994d48569f85ae68fa56f0a2b58fefb709e946cd25ae4ba0b74e83ed6df8d"
+      "sha256": "55ddc9ffdbdd450f8b54ce98e459e071dfac1d3f34c2b42a82e2441aa64c34a0"
+    },
+    {
+      "source": "runs/N3R2_v8r1_remaining_low_speed_stop_20261017_163457_4337288b-e208-4b11-b0c6-1214fbcb8cf1/low_speed_stop_attempt_1/metrics.json",
+      "published": "N3R2_v8r1_remaining_low_speed_stop_20261017_163457_4337288b-e208-4b11-b0c6-1214fbcb8cf1/low_speed_stop_attempt_1/metrics.json",
+      "sha256": "833b6daeaf7d5e68ee3aeab5a698f1cf0c932d02284d18717cf8add5088152ab"
     },
     {
       "source": "runs/N3R2_v8r1_remaining_low_speed_stop_20261017_163457_4337288b-e208-4b11-b0c6-1214fbcb8cf1/low_speed_stop_attempt_1/graph.json",
@@ -700,7 +844,72 @@
     {
       "source": "runs/N3R2_v8r1_remaining_low_speed_stop_20261017_163457_4337288b-e208-4b11-b0c6-1214fbcb8cf1/low_speed_stop_attempt_1/execution_progress.json",
       "published": "N3R2_v8r1_remaining_low_speed_stop_20261017_163457_4337288b-e208-4b11-b0c6-1214fbcb8cf1/low_speed_stop_attempt_1/execution_progress.json",
-      "sha256": "b313c18c023c63ebdba5b124233572a7d883ccd43f1d1368f4a92c562ee9a623"
+      "sha256": "117c80702161bd2fef681a7a9a343444b8e621f906551dc115d55b9ddb8768d4"
+    },
+    {
+      "source": "runs/N3R2_v8r1_remaining_low_speed_stop_20261017_163457_4337288b-e208-4b11-b0c6-1214fbcb8cf1/low_speed_stop_attempt_1/log_format_recovery.json",
+      "published": "N3R2_v8r1_remaining_low_speed_stop_20261017_163457_4337288b-e208-4b11-b0c6-1214fbcb8cf1/low_speed_stop_attempt_1/log_format_recovery.json",
+      "sha256": "175a2d1c647d558d1e2e43720312a1f3cb1535f644d7aa32da7e697004494374"
+    },
+    {
+      "source": "runs/N3R2_v8r1_remaining_low_speed_stop_20261017_163457_4337288b-e208-4b11-b0c6-1214fbcb8cf1/low_speed_stop_attempt_1/log_format/format_contract.json",
+      "published": "N3R2_v8r1_remaining_low_speed_stop_20261017_163457_4337288b-e208-4b11-b0c6-1214fbcb8cf1/low_speed_stop_attempt_1/log_format/format_contract.json",
+      "sha256": "131d92c0098fe4ea8908f67618c22935536706019acaa9a513bb93a308c027a6"
+    },
+    {
+      "source": "runs/N3R2_v8r1_remaining_low_speed_stop_20261017_163457_4337288b-e208-4b11-b0c6-1214fbcb8cf1/low_speed_stop_attempt_1/review/low_speed_diagnosis.json",
+      "published": "N3R2_v8r1_remaining_low_speed_stop_20261017_163457_4337288b-e208-4b11-b0c6-1214fbcb8cf1/low_speed_stop_attempt_1/review/low_speed_diagnosis.json",
+      "sha256": "731b49c0af1cd8e44a097de948889655689ab16263ac27d4ce297c551d52357d"
+    },
+    {
+      "source": "runs/N3R2_v8r1_remaining_low_speed_stop_20261017_163457_4337288b-e208-4b11-b0c6-1214fbcb8cf1/low_speed_stop_attempt_1/review/low_speed_diagnosis.png",
+      "published": "N3R2_v8r1_remaining_low_speed_stop_20261017_163457_4337288b-e208-4b11-b0c6-1214fbcb8cf1/low_speed_stop_attempt_1/review/low_speed_diagnosis.png",
+      "sha256": "a8de0ad6c2a4891fdd2340a53e75f5fa1e9669b721190ff34ec4a8912f9211da"
+    },
+    {
+      "source": "runs/N3R2_v8r1_remaining_missing_five_20261017_164519_6a942c13-97ea-48e5-83fb-ec71f431090b/campaign.json",
+      "published": "N3R2_v8r1_remaining_missing_five_20261017_164519_6a942c13-97ea-48e5-83fb-ec71f431090b/campaign.json",
+      "sha256": "bfb20eb010b6ab8a59b00635b74a85f3ff029963164b5bb054247309825e6adb"
+    },
+    {
+      "source": "runs/N3R2_v8r1_remaining_missing_five_20261017_164519_6a942c13-97ea-48e5-83fb-ec71f431090b/missing_five_attempt_1/record.json",
+      "published": "N3R2_v8r1_remaining_missing_five_20261017_164519_6a942c13-97ea-48e5-83fb-ec71f431090b/missing_five_attempt_1/record.json",
+      "sha256": "71499aad7469cfabc38226f50c14ef5c113a3a7cd528cc4a8c26b212f0ad0656"
+    },
+    {
+      "source": "runs/N3R2_v8r1_remaining_missing_five_20261017_164519_6a942c13-97ea-48e5-83fb-ec71f431090b/missing_five_attempt_2/record.json",
+      "published": "N3R2_v8r1_remaining_missing_five_20261017_164519_6a942c13-97ea-48e5-83fb-ec71f431090b/missing_five_attempt_2/record.json",
+      "sha256": "d44ee7ac2bbcd997e5498a4f58b6047ea26cec2fe366d8d630ed163fd99c6d29"
+    },
+    {
+      "source": "runs/N3R2_v8r1_remaining_missing_five_20261017_164519_6a942c13-97ea-48e5-83fb-ec71f431090b/missing_five_attempt_2/graph.json",
+      "published": "N3R2_v8r1_remaining_missing_five_20261017_164519_6a942c13-97ea-48e5-83fb-ec71f431090b/missing_five_attempt_2/graph.json",
+      "sha256": "f109e1f2fe9d5eaeddce88e84fbe88c041204f611aba70bcf580dadd3908d6b0"
+    },
+    {
+      "source": "runs/N3R2_v8r1_remaining_missing_five_20261017_164519_6a942c13-97ea-48e5-83fb-ec71f431090b/missing_five_attempt_2/execution_progress.json",
+      "published": "N3R2_v8r1_remaining_missing_five_20261017_164519_6a942c13-97ea-48e5-83fb-ec71f431090b/missing_five_attempt_2/execution_progress.json",
+      "sha256": "8158d4e80766c8eebbe1e0382a814309457d7b9ccd2052cc0afdccdf77ecffb7"
+    },
+    {
+      "source": "runs/N3R2_v8r1_remaining_reset_one_20261017_164701_ae8aa825-0d31-4423-b871-eef102d57f09/campaign.json",
+      "published": "N3R2_v8r1_remaining_reset_one_20261017_164701_ae8aa825-0d31-4423-b871-eef102d57f09/campaign.json",
+      "sha256": "0b1ce82a736cc1062482641963aaa64cb08ced4e4351db66e27068c805817e39"
+    },
+    {
+      "source": "runs/N3R2_v8r1_remaining_reset_one_20261017_164701_ae8aa825-0d31-4423-b871-eef102d57f09/reset_one_attempt_1/record.json",
+      "published": "N3R2_v8r1_remaining_reset_one_20261017_164701_ae8aa825-0d31-4423-b871-eef102d57f09/reset_one_attempt_1/record.json",
+      "sha256": "7240d653609f235c2b8663211a74f8602b8aed82412e4e5a5da9f7a72916f396"
+    },
+    {
+      "source": "runs/N3R2_v8r1_remaining_reset_one_20261017_164701_ae8aa825-0d31-4423-b871-eef102d57f09/reset_one_attempt_1/graph.json",
+      "published": "N3R2_v8r1_remaining_reset_one_20261017_164701_ae8aa825-0d31-4423-b871-eef102d57f09/reset_one_attempt_1/graph.json",
+      "sha256": "f109e1f2fe9d5eaeddce88e84fbe88c041204f611aba70bcf580dadd3908d6b0"
+    },
+    {
+      "source": "runs/N3R2_v8r1_remaining_reset_one_20261017_164701_ae8aa825-0d31-4423-b871-eef102d57f09/reset_one_attempt_1/execution_progress.json",
+      "published": "N3R2_v8r1_remaining_reset_one_20261017_164701_ae8aa825-0d31-4423-b871-eef102d57f09/reset_one_attempt_1/execution_progress.json",
+      "sha256": "8158d4e80766c8eebbe1e0382a814309457d7b9ccd2052cc0afdccdf77ecffb7"
     },
     {
       "source": "runs/N3R2_v8r1_short_20261017_162814_c6e0244a-576c-4beb-9594-d644dfc04eec/campaign.json",
@@ -751,6 +960,111 @@
       "source": "runs/N3R2_v8r1_short_20261017_162814_c6e0244a-576c-4beb-9594-d644dfc04eec/r1_short_logging_check_attempt_1/bounded_log_diagnosis.json",
       "published": "N3R2_v8r1_short_20261017_162814_c6e0244a-576c-4beb-9594-d644dfc04eec/r1_short_logging_check_attempt_1/bounded_log_diagnosis.json",
       "sha256": "7badfa551f2a44ee00d187ec60ba797b68ea949d5c291981f41ddabc07e5c37a"
+    },
+    {
+      "source": "runs/N3R2_v9_remaining_missing_five_20261017_165348_f89d83fa-5219-4a43-9dbc-6da41560a524/campaign.json",
+      "published": "N3R2_v9_remaining_missing_five_20261017_165348_f89d83fa-5219-4a43-9dbc-6da41560a524/campaign.json",
+      "sha256": "045211f813027e731d6227b0fd00d88ae25ff5cfce1079ba2a8c8164224cd3d0"
+    },
+    {
+      "source": "runs/N3R2_v9_remaining_missing_five_20261017_165348_f89d83fa-5219-4a43-9dbc-6da41560a524/missing_five_attempt_1/record.json",
+      "published": "N3R2_v9_remaining_missing_five_20261017_165348_f89d83fa-5219-4a43-9dbc-6da41560a524/missing_five_attempt_1/record.json",
+      "sha256": "a1fd8c1f70288be8a397d04437d17e78cff809b0e90437de8046f902611f1843"
+    },
+    {
+      "source": "runs/N3R2_v9_remaining_missing_five_20261017_165348_f89d83fa-5219-4a43-9dbc-6da41560a524/missing_five_attempt_2/record.json",
+      "published": "N3R2_v9_remaining_missing_five_20261017_165348_f89d83fa-5219-4a43-9dbc-6da41560a524/missing_five_attempt_2/record.json",
+      "sha256": "ebce48971c81deef142631c81605d608643da8ecc945f8e9d39218fc158569e6"
+    },
+    {
+      "source": "runs/N3R2_v9_remaining_missing_five_20261017_165348_f89d83fa-5219-4a43-9dbc-6da41560a524/missing_five_attempt_2/graph.json",
+      "published": "N3R2_v9_remaining_missing_five_20261017_165348_f89d83fa-5219-4a43-9dbc-6da41560a524/missing_five_attempt_2/graph.json",
+      "sha256": "f109e1f2fe9d5eaeddce88e84fbe88c041204f611aba70bcf580dadd3908d6b0"
+    },
+    {
+      "source": "runs/N3R2_v9_remaining_missing_five_20261017_165348_f89d83fa-5219-4a43-9dbc-6da41560a524/missing_five_attempt_2/execution_progress.json",
+      "published": "N3R2_v9_remaining_missing_five_20261017_165348_f89d83fa-5219-4a43-9dbc-6da41560a524/missing_five_attempt_2/execution_progress.json",
+      "sha256": "d79e2996554127c340e5b766c27c25c73424bc7fc27bd00819ab36658114151b"
+    },
+    {
+      "source": "runs/N3R2_v9_remaining_reset_one_20261017_165813_772ed45a-2996-4e71-b38b-69e18e0f4de9/campaign.json",
+      "published": "N3R2_v9_remaining_reset_one_20261017_165813_772ed45a-2996-4e71-b38b-69e18e0f4de9/campaign.json",
+      "sha256": "b88579383ba8fb1580445c0160378a73e11a9e8e4dc1a3f0684936d2e82781f0"
+    },
+    {
+      "source": "runs/N3R2_v9_remaining_reset_one_20261017_165813_772ed45a-2996-4e71-b38b-69e18e0f4de9/reset_one_attempt_1/record.json",
+      "published": "N3R2_v9_remaining_reset_one_20261017_165813_772ed45a-2996-4e71-b38b-69e18e0f4de9/reset_one_attempt_1/record.json",
+      "sha256": "a8be85b410d6b6c8658d5f1817fb727d5f8d23dbb4e3b95976ab1a938177edeb"
+    },
+    {
+      "source": "runs/N3R2_v9_remaining_reset_one_20261017_165813_772ed45a-2996-4e71-b38b-69e18e0f4de9/reset_one_attempt_1/graph.json",
+      "published": "N3R2_v9_remaining_reset_one_20261017_165813_772ed45a-2996-4e71-b38b-69e18e0f4de9/reset_one_attempt_1/graph.json",
+      "sha256": "f109e1f2fe9d5eaeddce88e84fbe88c041204f611aba70bcf580dadd3908d6b0"
+    },
+    {
+      "source": "runs/N3R2_v9_remaining_reset_one_20261017_165813_772ed45a-2996-4e71-b38b-69e18e0f4de9/reset_one_attempt_1/execution_progress.json",
+      "published": "N3R2_v9_remaining_reset_one_20261017_165813_772ed45a-2996-4e71-b38b-69e18e0f4de9/reset_one_attempt_1/execution_progress.json",
+      "sha256": "af4c8436c1ca067f8692296d1db7a3a459055a36f13d2a59f3e5d389f1efe829"
+    },
+    {
+      "source": "runs/N3R2_v9_remaining_reset_one_20261017_165813_772ed45a-2996-4e71-b38b-69e18e0f4de9/reset_one_attempt_2/record.json",
+      "published": "N3R2_v9_remaining_reset_one_20261017_165813_772ed45a-2996-4e71-b38b-69e18e0f4de9/reset_one_attempt_2/record.json",
+      "sha256": "b4078601d5629e3159b8ed1650c7d6de9fa7baafb11451fe8388243843831cf0"
+    },
+    {
+      "source": "runs/N3R2_v9_remaining_reset_one_20261017_165813_772ed45a-2996-4e71-b38b-69e18e0f4de9/reset_one_attempt_2/graph.json",
+      "published": "N3R2_v9_remaining_reset_one_20261017_165813_772ed45a-2996-4e71-b38b-69e18e0f4de9/reset_one_attempt_2/graph.json",
+      "sha256": "f109e1f2fe9d5eaeddce88e84fbe88c041204f611aba70bcf580dadd3908d6b0"
+    },
+    {
+      "source": "runs/N3R2_v9_remaining_reset_one_20261017_165813_772ed45a-2996-4e71-b38b-69e18e0f4de9/reset_one_attempt_2/execution_progress.json",
+      "published": "N3R2_v9_remaining_reset_one_20261017_165813_772ed45a-2996-4e71-b38b-69e18e0f4de9/reset_one_attempt_2/execution_progress.json",
+      "sha256": "51adf819b8eaa2d539e740f52ab53bb910c371d33398c1743c699c34bb9afea8"
+    },
+    {
+      "source": "runs/N3R2_v9_short_20261017_165230_3f10afc8-7e32-4d6c-bde0-63087e0ea06a/campaign.json",
+      "published": "N3R2_v9_short_20261017_165230_3f10afc8-7e32-4d6c-bde0-63087e0ea06a/campaign.json",
+      "sha256": "28cb90fb0f75d4389124e33ea7c825f05f295c46e0e6ed146a4c1beaee56ed8c"
+    },
+    {
+      "source": "runs/N3R2_v9_short_20261017_165230_3f10afc8-7e32-4d6c-bde0-63087e0ea06a/r1_short_logging_check_attempt_1/record.json",
+      "published": "N3R2_v9_short_20261017_165230_3f10afc8-7e32-4d6c-bde0-63087e0ea06a/r1_short_logging_check_attempt_1/record.json",
+      "sha256": "ddc7efd5dfd2d3ae5aab0190306d9c194b8429d001bdf79ab123f957ffb7f7ed"
+    },
+    {
+      "source": "runs/N3R2_v9_short_20261017_165230_3f10afc8-7e32-4d6c-bde0-63087e0ea06a/r1_short_logging_check_attempt_1/metrics.json",
+      "published": "N3R2_v9_short_20261017_165230_3f10afc8-7e32-4d6c-bde0-63087e0ea06a/r1_short_logging_check_attempt_1/metrics.json",
+      "sha256": "35d1d1c76d25a8989844f9594e5865f0eb0a8b2a3172dc09545839f0668f6630"
+    },
+    {
+      "source": "runs/N3R2_v9_short_20261017_165230_3f10afc8-7e32-4d6c-bde0-63087e0ea06a/r1_short_logging_check_attempt_1/graph.json",
+      "published": "N3R2_v9_short_20261017_165230_3f10afc8-7e32-4d6c-bde0-63087e0ea06a/r1_short_logging_check_attempt_1/graph.json",
+      "sha256": "f109e1f2fe9d5eaeddce88e84fbe88c041204f611aba70bcf580dadd3908d6b0"
+    },
+    {
+      "source": "runs/N3R2_v9_short_20261017_165230_3f10afc8-7e32-4d6c-bde0-63087e0ea06a/r1_short_logging_check_attempt_1/execution_progress.json",
+      "published": "N3R2_v9_short_20261017_165230_3f10afc8-7e32-4d6c-bde0-63087e0ea06a/r1_short_logging_check_attempt_1/execution_progress.json",
+      "sha256": "0a9545df92534376247b2b3478846a6501b7cf6d2acb0834470c410967cf227f"
+    },
+    {
+      "source": "runs/N3R2_v9_short_20261017_165230_3f10afc8-7e32-4d6c-bde0-63087e0ea06a/r1_short_logging_check_attempt_1/log_format_recovery.json",
+      "published": "N3R2_v9_short_20261017_165230_3f10afc8-7e32-4d6c-bde0-63087e0ea06a/r1_short_logging_check_attempt_1/log_format_recovery.json",
+      "sha256": "dec65e29460d69749f78c39e3c9d64a2820bedb59aaecc27093cd8f495dd36f6"
+    },
+    {
+      "source": "runs/N3R2_v9_short_20261017_165230_3f10afc8-7e32-4d6c-bde0-63087e0ea06a/r1_short_logging_check_attempt_1/log_format/logging_validation.json",
+      "published": "N3R2_v9_short_20261017_165230_3f10afc8-7e32-4d6c-bde0-63087e0ea06a/r1_short_logging_check_attempt_1/log_format/logging_validation.json",
+      "sha256": "e485ff8e27340a4587acb52bead12690c095032a0b1345b573829fd6e9588650"
+    },
+    {
+      "source": "runs/N3R2_v9_short_20261017_165230_3f10afc8-7e32-4d6c-bde0-63087e0ea06a/r1_short_logging_check_attempt_1/log_format/v7_complete_log_comparison.json",
+      "published": "N3R2_v9_short_20261017_165230_3f10afc8-7e32-4d6c-bde0-63087e0ea06a/r1_short_logging_check_attempt_1/log_format/v7_complete_log_comparison.json",
+      "sha256": "a4f0a7051fab250695e1037246c23b1c66842601542835a96b03cd9968256dda"
+    },
+    {
+      "source": "runs/N3R2_v9_short_20261017_165230_3f10afc8-7e32-4d6c-bde0-63087e0ea06a/r1_short_logging_check_attempt_1/log_format/format_contract.json",
+      "published": "N3R2_v9_short_20261017_165230_3f10afc8-7e32-4d6c-bde0-63087e0ea06a/r1_short_logging_check_attempt_1/log_format/format_contract.json",
+      "sha256": "131d92c0098fe4ea8908f67618c22935536706019acaa9a513bb93a308c027a6"
     },
     {
       "source": "runs/N3R2_dynamic_archive_reanalysis_once/report.json",

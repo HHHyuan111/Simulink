@@ -1,0 +1,54 @@
+{
+  "node": "N3R2",
+  "id": "low_speed_stop",
+  "kind": "boundary_state",
+  "samples": 18000,
+  "event_audit": {
+    "events": 36004,
+    "false_valid_longest_s": 0.001869875,
+    "false_valid_total_s": 0.001869875,
+    "permit_total_s": 0.256,
+    "native_counters_equal_event_oracle": true,
+    "event_error_formula_equal": true,
+    "all_passed": true
+  },
+  "permission_violation_ticks": 0,
+  "low_speed_permit_ticks": 0,
+  "forbidden_control_values_ticks": 0,
+  "max_permitted_angle_error_deg": 7.2580249989121581,
+  "max_permitted_speed_relative": 0.27692115386773491,
+  "false_valid_longest_s": 0.001869875,
+  "false_valid_target_s": 0.002,
+  "first_permit_s": 0.046181875000000004,
+  "whole_run_peak_angle_deg": 179.98999720547238,
+  "whole_run_peak_speed_error_rpm": 865.83610520292393,
+  "steady": {},
+  "events": [],
+  "all_passed": true,
+  "failed_checks": [],
+  "checks": {
+    "event_audit": true,
+    "no_permission_violation": true,
+    "zero_forbidden_control_outputs": true,
+    "low_speed_denied": true,
+    "low_region_observed": true,
+    "stop_region_observed": true,
+    "command_events_applied": true
+  },
+  "low_speed_frames": 11977,
+  "stop_hold_s": 0.2,
+  "stimulus_events": [
+    {
+      "type": "speed",
+      "requested_s": 0.3,
+      "expected": 200,
+      "applied": true
+    },
+    {
+      "type": "speed",
+      "requested_s": 0.6,
+      "expected": 0,
+      "applied": true
+    }
+  ]
+}
