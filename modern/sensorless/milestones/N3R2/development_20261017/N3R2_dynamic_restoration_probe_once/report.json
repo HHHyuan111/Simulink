@@ -1,0 +1,10 @@
+{
+  "kind": "independent_dynamic_setup_restoration_probe",
+  "all_passed": true,
+  "simulation_called": false,
+  "original_failed_attempt_restored": false,
+  "same_setup_restoration_path_verified": true,
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "probe_sha256": "19d42dc71e20760c6369f015518261a1de69d6baefc020fb02d39e80db2ec08d",
+  "raw_sha256": "d498a7f854393c67ec9163023e13e603ebeac8bb4561b1852fbed1e2e94c34b6"
+}

@@ -1,0 +1,65 @@
+{
+  "all_passed": true,
+  "analysis_only": true,
+  "negative_control": true,
+  "full_fault_claim_rejected": true,
+  "metrics": {
+    "id": "deadline_jitter",
+    "node": "N3R2",
+    "event_audit": {
+      "events": 43,
+      "false_valid_longest_s": 0,
+      "false_valid_total_s": 0,
+      "permit_total_s": 0,
+      "native_counters_equal_event_oracle": true,
+      "event_error_formula_equal": true,
+      "all_passed": true
+    },
+    "accepted_packets": 20,
+    "false_valid_longest_s": 0,
+    "max_permitted_angle_deg": 0,
+    "max_permitted_speed_relative": 0,
+    "checks": {
+      "event_counter_audit": true,
+      "no_permission_violation": true,
+      "zero_forbidden_control_values": true,
+      "native_false_valid": true,
+      "packet_reference_and_completion": true,
+      "all_frames_captured": true,
+      "timing_veto_region": true,
+      "jitter_applied": false,
+      "physical_pwm_writes_and_updates": false,
+      "first_native_veto": false,
+      "pre_fault_permission": false,
+      "no_early_repermission": true,
+      "recovered": false,
+      "native_recovery_hold": false
+    },
+    "all_passed": false,
+    "pwm": {
+      "checks": {
+        "exact_write_ticks": true,
+        "exact_update_ticks": true,
+        "all_uev_observed": true,
+        "tied_write_observed": false,
+        "late_write_observed": false
+      },
+      "writes": 20,
+      "updates": 20,
+      "all_passed": false
+    },
+    "fault_onset_s": 0.600028875,
+    "first_healthy_reference_s": 0.70002887500000011,
+    "recovery_reference_s": null,
+    "recovery_completion_s": null,
+    "recovery_delay_s": null,
+    "failed_checks": [
+      "jitter_applied",
+      "physical_pwm_writes_and_updates",
+      "first_native_veto",
+      "pre_fault_permission",
+      "recovered",
+      "native_recovery_hold"
+    ]
+  }
+}

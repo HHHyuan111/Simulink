@@ -1,0 +1,49 @@
+{
+  "kind": "literal_binding_compile_probe",
+  "status": "diagnostic_passed",
+  "phase": "completed",
+  "simulation_called": false,
+  "attempt_limit": 1,
+  "process_id": 36312,
+  "plant": {
+    "root": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine",
+    "nominal": [
+      0.105125,
+      0.0001037615,
+      0.0001037615
+    ],
+    "actual": [
+      0.12614999999999998,
+      8.30092E-5,
+      8.30092E-5
+    ],
+    "expressions": [
+      {
+        "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/Te",
+        "value": "1.5*p*(phis*u(5)+(Ld-Lq)*u(4)*u(5))"
+      },
+      {
+        "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/did_dt",
+        "value": "((2/3)*(u(1)*cos(p*u(7))+u(2)*cos(p*u(7)-2*pi/3)+u(3)*cos(p*u(7)+2*pi/3))-Rs*u(4)+p*u(6)*Lq*u(5))/Ld"
+      },
+      {
+        "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/diq_dt",
+        "value": "((-2/3)*(u(1)*sin(p*u(7))+u(2)*sin(p*u(7)-2*pi/3)+u(3)*sin(p*u(7)+2*pi/3))-Rs*u(5)-p*u(6)*(Ld*u(4)+phis))/Lq"
+      },
+      {
+        "path": "PMSM_FOC_R2026a/Permanent Magnet\nSynchronous Machine/dwm_dt",
+        "value": "(1.5*p*(phis*u(5)+(Ld-Lq)*u(4)*u(5))-u(8)-F*u(6))/J"
+      }
+    ],
+    "exact_evaluation_pairs": 400,
+    "literal_roundtrip_exact": true
+  },
+  "nominal_observer_preserved": true,
+  "restored": true,
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "sources": {
+    "probe_sensorless_r2_literal_binding": "98c5b3601a18a3d101f272e670d3b8696e8b05d97f2620e2e75fb67af2a51de7",
+    "sensorless_r2_plant_literals": "65c206744379a6a81d278f270aac6ccb448962efa89a898ad4886cdfb2203f80",
+    "sensorless_r2_restore_literals": "687766bca71af5819904fc26f71043e9e4f785bc57d6c016b584dc28de299519"
+  }
+}

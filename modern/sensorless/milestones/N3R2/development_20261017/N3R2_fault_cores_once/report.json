@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "all_passed": true,
+  "model_loaded": false,
+  "sources": {
+    "sensorless_r2_fault_profile": "8d412c6449dcb5b6d733359195de7f882a463a6cabcfc87ebf2f04ccda9e3b15",
+    "sensorless_r2_fault_program": "4d2a7de935fc3e2448ecbf81ae42ec289ae13e6d264ae35c9d37a7f8f818a7b0",
+    "sensorless_r2_fault_queue_state": "f7f2dc46aee1e87c70cba2ddd8b23758df985fb3e6d642e28f0847cd111ef4b8",
+    "sensorless_r2_fault_queue_step": "6e67681999bc2319e4c0ebe69ed4433c0eecef887e8d21e621c475d99c449e03",
+    "sensorless_r2_ingress_step": "5669a7a7ca7cbf869acd3511d75b848666bb3a44369df9124937dfd65ae3ac7d",
+    "sensorless_r2_pwm_state": "a3480a3dbd434b1c86d3dda80d4226d7e108fc291d509a07c77f46f42beead77",
+    "sensorless_r2_pwm_step": "83503136de798d3a4b8b9380ed9a5dcd18be0875dd4ebd6080af34fdc12f61e7",
+    "sensorless_r2_voltage_step": "fe285c5e1d484e1941999998c5444e77c624849a58175d1446b17cfa25370a54",
+    "validate_sensorless_r2_fault_cores": "29618651d7a3085f0ba75101795b3d320d2803000d48fbfe15bd20c2e80c3f04"
+  },
+  "recovery": [
+    {
+      "kind": 1,
+      "accepted_packets": 604,
+      "epoch": 1,
+      "first_healthy_s": 0.000328875,
+      "earliest_permit_s": 0.030231875
+    },
+    {
+      "kind": 2,
+      "accepted_packets": 609,
+      "epoch": 1,
+      "first_healthy_s": 0.000128875,
+      "earliest_permit_s": 0.030031875
+    }
+  ],
+  "nominal_queue_ticks": 2401,
+  "nominal_pwm_ticks": 2401,
+  "nominal_voltage_ticks": 2401,
+  "nominal_ingress_frames": 100,
+  "unavailable_data_independence": true,
+  "timing_boundary_cases": 3,
+  "overlap_rejected": true,
+  "integrity_latch_verified": true
+}

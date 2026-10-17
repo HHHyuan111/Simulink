@@ -24,6 +24,7 @@
 - `milestones/N3R1.md`：非理想本地接入、完整短时复现/回归、故障入口与待验收记录。
 - `milestones/N3R2.md`：已完成的评价/记录检查、两版执行历史、长工况编译异常与剩余工作；R2未通过。
 - `milestones/N3R2_followup.md`：启动许可修正、五组稳态结果、全部失败历史及尚余9项工况；R2整体仍未完成。
+- `milestones/N3R2_development.md`：后续动态归档复核、R/L绑定隔离、故障接口及串行长时测试进展；完整R2矩阵仍未通过。
 - `contracts/nonideal_r2_test_plan.json`：实施前冻结的长时精度、动态、原生误有效及故障标准。
 - `robust/performance/INTERFACE.md`：R2仅评价信号、单位、原生计数/事件区间及执行器支持范围。
 - `robust/integration/INTERFACE.md`：三相标定/对齐、滤波匹配、延后发布、47个作用域Goto及v2日志单位。

@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "node": "N3R2",
+  "execution_version": "basic_scenarios_v5",
+  "label": "v5_remaining_after_analysis_fix",
+  "status": "native_attempts_exhausted",
+  "numerical_version": "R1 estimates plus packet phase guard",
+  "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_v5_remaining_after_analysis_fix_20261017_131701_217a6723-7a8f-4170-b7b3-a969f00efcf6",
+  "driver_sha256": "b7d1dcef38a0d1a86ce002e8f75903bb5633e3c4fd333a74099b699ad93a6628",
+  "jobs": [
+    {
+      "case_id": "hot_R1p2_L0p8",
+      "status": "incomplete",
+      "attempts": [
+        {
+          "exit_code": -1073741819,
+          "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/scenarios');validate_sensorless_r2_scenario('hot_R1p2_L0p8','D:/simulink/dev/modern/sensorless/runs/N3R2_v5_remaining_after_analysis_fix_20261017_131701_217a6723-7a8f-4170-b7b3-a969f00efcf6/hot_R1p2_L0p8_attempt_1');",
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_v5_remaining_after_analysis_fix_20261017_131701_217a6723-7a8f-4170-b7b3-a969f00efcf6\\hot_R1p2_L0p8_attempt_1",
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_v5_remaining_after_analysis_fix_20261017_131701_217a6723-7a8f-4170-b7b3-a969f00efcf6\\hot_R1p2_L0p8_attempt_1_console.log",
+          "native_failure": true,
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_v5_remaining_after_analysis_fix_20261017_131701_217a6723-7a8f-4170-b7b3-a969f00efcf6\\hot_R1p2_L0p8_attempt_1_launcher.log"
+        },
+        {
+          "exit_code": -1073741819,
+          "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/scenarios');validate_sensorless_r2_scenario('hot_R1p2_L0p8','D:/simulink/dev/modern/sensorless/runs/N3R2_v5_remaining_after_analysis_fix_20261017_131701_217a6723-7a8f-4170-b7b3-a969f00efcf6/hot_R1p2_L0p8_attempt_2');",
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_v5_remaining_after_analysis_fix_20261017_131701_217a6723-7a8f-4170-b7b3-a969f00efcf6\\hot_R1p2_L0p8_attempt_2",
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_v5_remaining_after_analysis_fix_20261017_131701_217a6723-7a8f-4170-b7b3-a969f00efcf6\\hot_R1p2_L0p8_attempt_2_console.log",
+          "native_failure": true,
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_v5_remaining_after_analysis_fix_20261017_131701_217a6723-7a8f-4170-b7b3-a969f00efcf6\\hot_R1p2_L0p8_attempt_2_launcher.log"
+        }
+      ],
+      "completed_folder": ""
+    }
+  ]
+}

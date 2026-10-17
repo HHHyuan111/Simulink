@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "node": "N3R2",
+  "execution_version": "basic_scenarios_v5",
+  "label": "v5_other_cases_after_hot_native_limit",
+  "status": "running",
+  "numerical_version": "R1 estimates plus packet phase guard",
+  "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_v5_other_cases_after_hot_native_limit_20261017_134553_d34f5e82-2b08-4e76-83a5-4e47e40234d3",
+  "driver_sha256": "b7d1dcef38a0d1a86ce002e8f75903bb5633e3c4fd333a74099b699ad93a6628",
+  "jobs": []
+}

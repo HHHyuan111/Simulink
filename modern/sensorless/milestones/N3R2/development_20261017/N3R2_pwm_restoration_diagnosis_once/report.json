@@ -1,0 +1,24 @@
+{
+  "simulation_called": false,
+  "all_passed": false,
+  "differences": [
+    {
+      "path": "PMSM_FOC_R2026a/输出延迟/CCR预装载/ SFunction ",
+      "field": "position",
+      "before": [
+        180,
+        100,
+        230,
+        180
+      ],
+      "after": [
+        180,
+        105,
+        230,
+        185
+      ]
+    }
+  ],
+  "added_paths": [],
+  "scripts_equal": true
+}

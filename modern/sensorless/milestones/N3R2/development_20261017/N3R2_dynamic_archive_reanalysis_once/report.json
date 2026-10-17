@@ -1,0 +1,18 @@
+{
+  "kind": "analysis_only_reprocessing",
+  "original_folder": "D:/simulink/dev/modern/sensorless/runs/N3R2_basic_scenarios_v5_20261017_124839_dca6c75a-229c-4f85-ab80-53d70b373bff/combined_dynamic_attempt_2",
+  "original_status": "failed_execution",
+  "original_record_sha256": "8ece86303351496f4d6f9028e722c8941501245875f98d653e19445da4b7eaef",
+  "raw_sha256": "59afd6ec786fe5243fced1dbeec63521c44bd24f3e9844ee8e7b864fa94e2af8",
+  "simulation_reexecuted": false,
+  "model_loaded": false,
+  "original_attempt_overwritten": false,
+  "original_restoration_executed": false,
+  "metrics_passed": true,
+  "changed_sources": [
+    "robust/performance/analyse_sensorless_r2_case.m"
+  ],
+  "old_analysis_sha256": "ebd5fb4139881a29358bc1513241035e83eb5697ca091232163b7e1448b84201",
+  "new_analysis_sha256": "4e3e98cab19d4c198c2afb808070e7ee10fe75ef129faaee1d53970b879056d4",
+  "reprocessor_sha256": "299c09d310fcad8cce11e537c72401063a6397be74ef536655dce694bbed6a0b"
+}

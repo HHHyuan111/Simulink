@@ -1,0 +1,18 @@
+{
+  "node": "N3R2",
+  "reference": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R1_formal_20261016_233230_ef2a2a57-ee3e-451c-9850-e101d2101803\\combined_formal_attempt_1",
+  "compact": "D:/simulink/dev/modern/sensorless/runs/N3R2_basic_scenarios_v5_20261017_124839_dca6c75a-229c-4f85-ab80-53d70b373bff/r1_short_logging_check_attempt_2",
+  "compared_logs": 81,
+  "original52_included": true,
+  "numeric_elements": 1.0145265E+7,
+  "complete_common_logs_identical": true,
+  "changed_display_logs": [
+    "obs_sless_v2_voltage_native",
+    "obs_sless_v2_adc_valid",
+    "obs_sless_v2_control_permit",
+    "obs_sless_v2_deny_reason",
+    "obs_sless_v2_publication",
+    "obs_sless_v2_timing_valid"
+  ],
+  "all_passed": true
+}

@@ -1,0 +1,64 @@
+{
+  "node": "N3R2",
+  "id": "combined_dynamic",
+  "kind": "normal_dynamic",
+  "samples": 18000,
+  "event_audit": {
+    "events": 36003,
+    "false_valid_longest_s": 0,
+    "false_valid_total_s": 0,
+    "permit_total_s": 0.813218125,
+    "native_counters_equal_event_oracle": true,
+    "event_error_formula_equal": true,
+    "all_passed": true
+  },
+  "permission_violation_ticks": 0,
+  "low_speed_permit_ticks": 0,
+  "forbidden_control_values_ticks": 0,
+  "max_permitted_angle_error_deg": 5.4286376929039877,
+  "max_permitted_speed_relative": 0.026069774349060281,
+  "false_valid_longest_s": 0,
+  "false_valid_target_s": 0.002,
+  "first_permit_s": 0.059181875,
+  "whole_run_peak_angle_deg": 98.400210560110963,
+  "whole_run_peak_speed_error_rpm": 865.83610520292393,
+  "steady": {},
+  "events": [
+    {
+      "request_s": 0.3,
+      "recovery_start_s": 0.332128875,
+      "recovery_delay_s": 0.032128875,
+      "passed": true
+    },
+    {
+      "request_s": 0.6,
+      "recovery_start_s": 0.600028875,
+      "recovery_delay_s": 2.8875000000039286E-5,
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "failed_checks": [],
+  "checks": {
+    "event_audit": true,
+    "no_permission_violation": true,
+    "zero_forbidden_control_outputs": true,
+    "dynamic_recovery": true,
+    "false_valid": true,
+    "command_events_applied": true
+  },
+  "stimulus_events": [
+    {
+      "type": "speed",
+      "requested_s": 0.3,
+      "expected": 3000,
+      "applied": true
+    },
+    {
+      "type": "load",
+      "requested_s": 0.6,
+      "expected": 0.25,
+      "applied": true
+    }
+  ]
+}

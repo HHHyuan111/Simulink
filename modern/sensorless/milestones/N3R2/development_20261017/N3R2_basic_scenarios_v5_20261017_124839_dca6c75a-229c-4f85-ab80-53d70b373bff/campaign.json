@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "node": "N3R2",
+  "execution_version": "basic_scenarios_v5",
+  "label": "basic_scenarios_v5",
+  "status": "failed_execution",
+  "numerical_version": "R1 estimates plus packet phase guard",
+  "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_basic_scenarios_v5_20261017_124839_dca6c75a-229c-4f85-ab80-53d70b373bff",
+  "driver_sha256": "6b11004d4fee5c88f324f34d7680dfffc63f22798c7a43adb74bcfbd57769ac8",
+  "jobs": [
+    {
+      "case_id": "r1_short_logging_check",
+      "status": "passed",
+      "attempts": [
+        {
+          "native_failure": true,
+          "exit_code": -1073741819,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_basic_scenarios_v5_20261017_124839_dca6c75a-229c-4f85-ab80-53d70b373bff\\r1_short_logging_check_attempt_1",
+          "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/scenarios');validate_sensorless_r2_scenario('r1_short_logging_check','D:/simulink/dev/modern/sensorless/runs/N3R2_basic_scenarios_v5_20261017_124839_dca6c75a-229c-4f85-ab80-53d70b373bff/r1_short_logging_check_attempt_1');verify_sensorless_r2_logging('D:/simulink/dev/modern/sensorless/runs/N3R2_basic_scenarios_v5_20261017_124839_dca6c75a-229c-4f85-ab80-53d70b373bff/r1_short_logging_check_attempt_1');",
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_basic_scenarios_v5_20261017_124839_dca6c75a-229c-4f85-ab80-53d70b373bff\\r1_short_logging_check_attempt_1_launcher.log",
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_basic_scenarios_v5_20261017_124839_dca6c75a-229c-4f85-ab80-53d70b373bff\\r1_short_logging_check_attempt_1_console.log"
+        },
+        {
+          "native_failure": false,
+          "exit_code": 0,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_basic_scenarios_v5_20261017_124839_dca6c75a-229c-4f85-ab80-53d70b373bff\\r1_short_logging_check_attempt_2",
+          "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/scenarios');validate_sensorless_r2_scenario('r1_short_logging_check','D:/simulink/dev/modern/sensorless/runs/N3R2_basic_scenarios_v5_20261017_124839_dca6c75a-229c-4f85-ab80-53d70b373bff/r1_short_logging_check_attempt_2');verify_sensorless_r2_logging('D:/simulink/dev/modern/sensorless/runs/N3R2_basic_scenarios_v5_20261017_124839_dca6c75a-229c-4f85-ab80-53d70b373bff/r1_short_logging_check_attempt_2');",
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_basic_scenarios_v5_20261017_124839_dca6c75a-229c-4f85-ab80-53d70b373bff\\r1_short_logging_check_attempt_2_launcher.log",
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_basic_scenarios_v5_20261017_124839_dca6c75a-229c-4f85-ab80-53d70b373bff\\r1_short_logging_check_attempt_2_console.log"
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_basic_scenarios_v5_20261017_124839_dca6c75a-229c-4f85-ab80-53d70b373bff\\r1_short_logging_check_attempt_2"
+    },
+    {
+      "case_id": "combined_dynamic",
+      "status": "incomplete",
+      "attempts": [
+        {
+          "native_failure": true,
+          "exit_code": -1073741819,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_basic_scenarios_v5_20261017_124839_dca6c75a-229c-4f85-ab80-53d70b373bff\\combined_dynamic_attempt_1",
+          "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/scenarios');validate_sensorless_r2_scenario('combined_dynamic','D:/simulink/dev/modern/sensorless/runs/N3R2_basic_scenarios_v5_20261017_124839_dca6c75a-229c-4f85-ab80-53d70b373bff/combined_dynamic_attempt_1');",
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_basic_scenarios_v5_20261017_124839_dca6c75a-229c-4f85-ab80-53d70b373bff\\combined_dynamic_attempt_1_launcher.log",
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_basic_scenarios_v5_20261017_124839_dca6c75a-229c-4f85-ab80-53d70b373bff\\combined_dynamic_attempt_1_console.log"
+        },
+        {
+          "native_failure": false,
+          "exit_code": 1,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_basic_scenarios_v5_20261017_124839_dca6c75a-229c-4f85-ab80-53d70b373bff\\combined_dynamic_attempt_2",
+          "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/scenarios');validate_sensorless_r2_scenario('combined_dynamic','D:/simulink/dev/modern/sensorless/runs/N3R2_basic_scenarios_v5_20261017_124839_dca6c75a-229c-4f85-ab80-53d70b373bff/combined_dynamic_attempt_2');",
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_basic_scenarios_v5_20261017_124839_dca6c75a-229c-4f85-ab80-53d70b373bff\\combined_dynamic_attempt_2_launcher.log",
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_basic_scenarios_v5_20261017_124839_dca6c75a-229c-4f85-ab80-53d70b373bff\\combined_dynamic_attempt_2_console.log"
+        }
+      ],
+      "completed_folder": ""
+    }
+  ]
+}

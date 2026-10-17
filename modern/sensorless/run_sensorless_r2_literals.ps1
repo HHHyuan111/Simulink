@@ -7,6 +7,17 @@ param(
 $ErrorActionPreference='Stop'
 $version='literal_binding_v6';$remaining=@{}
 foreach($id in $CaseIds) {
+ if($id -ne 'r1_short_logging_check') {
+  foreach($prior in Get-ChildItem -LiteralPath (Join-Path $PSScriptRoot 'runs') -Directory -Filter 'N3R2_*') {
+   foreach($priorCase in Get-ChildItem -LiteralPath $prior.FullName -Directory -Filter ($id+'_attempt_*')) {
+    $recordPath=Join-Path $priorCase.FullName 'record.json'
+    if((Test-Path -LiteralPath $recordPath) -and (Test-Path -LiteralPath (Join-Path $priorCase.FullName 'signals.mat'))) {
+     $priorRecord=Get-Content -LiteralPath $recordPath -Raw | ConvertFrom-Json
+     if($priorRecord.raw_sha256){throw "Equivalent R/L physics already archived for $id. A literal binding must not rerun a completed numerical outcome. Use archive analysis or the later final-candidate replay. No process started."}
+    }
+   }
+  }
+ }
  $failures=0
  foreach($prior in Get-ChildItem -LiteralPath (Join-Path $PSScriptRoot 'runs') -Directory -Filter 'N3R2_*') {
   $file=Join-Path $prior.FullName 'campaign.json';if(-not(Test-Path -LiteralPath $file)){continue}
