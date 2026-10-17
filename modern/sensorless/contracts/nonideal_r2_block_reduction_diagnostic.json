@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "version": "block_reduction_off_v9",
+  "registered_before_implementation": "2026-10-17; after v8r1 remaining queue stopped",
+  "purpose": "Single-factor execution diagnostic, not a confirmed native-crash remedy or algorithm modification.",
+  "evidence": "v8r1 low_speed_stop completed. missing_five stopped twice with 0xc0000005 (install and initialized stepping). reset_one stopped at 0.07s with exit 0x80000003, which is not retryable. All stopped paths remain unchanged and closed.",
+  "hypothesis": "Block reduction changes executable block elimination/collapse and may expose an execution-graph issue. Native stacks do not establish this cause. Check the private model's original value first; this path is ineligible unless it is on.",
+  "single_factor": "Set only BlockReduction=off on the private in-memory model before installing the observer. Retain the v8r1 initialize-once helper, short isolated cache, solver, 62.5ns plant step, 50us control period, callbacks, all SMO/PLL parameters and nonideal/fault mathematics. Restore the exact original BlockReduction value explicitly and never save the SLX.",
+  "prerequisite": "Run a fresh20ms normal main-model precheck. Require native endpoint, all96 complete Time/Data logs exactly equal to the v7 reference after the already registered two-gate timestamp representation adapter, R1 common81 including original52 exact, workspace/graph/callback/config restoration, source fingerprints and unchanged model/R1 frozen90. A numerical or structural difference blocks long cases; do not relax tolerances or repair by tuning.",
+  "eligible_long_cases": ["missing_five", "reset_one"],
+  "success_criteria": "Unchanged parent R2 contracts. Missing: immediate veto for five unavailable frames with independent FOC continuing. Reset: one50us observer-state reset. Healthy recovery requires at least599 valid opportunities plus20ms native contiguous good status within150ms. Archive complete physics and restore before analysis. Neither short success nor reduced native failure frequency proves root cause or whole-R2 success.",
+  "execution_limit": "At most2 process starts per case/version across all labels, second only for explicit0xc0000005 or0xc000001d. Any other exit or completed physics stops that case. No rerun of completed physics or older exhausted paths. If this diagnostic is unproductive, retain the gap and investigate the environment without another nominal version increment.",
+  "reporting": "Preserve original raw output and all failure statuses. Canonical logs are derived format-only evidence. Publish the effective optimization value, original/restored value and prior execution gaps. Do not pool different execution configurations into a final frozen matrix.",
+  "sources": ["https://www.mathworks.com/help/releases/R2026a/simulink/gui/blockreduction.html"],
+  "gate": "R2 incomplete; final candidate freeze/full matrix and user node review remain required. No R3, feedback takeover or hardware/WCET claim."
+}
