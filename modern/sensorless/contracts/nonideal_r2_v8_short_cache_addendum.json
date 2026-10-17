@@ -1,0 +1,9 @@
+{
+ "schema":1,
+ "registered_before_build_repair":"2026-10-17; first v8 main precheck failed at install, before observer initialization or physical execution",
+ "execution_version":"single_init_short_cache_v8r1",
+ "parent":"contracts/nonideal_r2_single_initialization_design.json",
+ "failure":"Compiler explicitly rejected a generated file path exceeding Windows260 characters. Original run/source/error retained; no native or numerical outcome was produced.",
+ "repair":"Move each attempt's file-generation cache/codegen to a fresh unique directory below sensorless/.build/v8r1/<UUID>, instead of nesting it under the long campaign/case folder. Record both paths and check representative generated paths stay below240 characters before model load. Never reuse caches across attempts. Archive/config/source/physical outputs remain in the original run folder.",
+ "invariants":"Same initialize-once API, fixed-step solver, all v7 equations,96-log equality and parent performance requirements. No retry of the stopped original v8 path. New repaired source gets at most2 starts per case, second only after allowed explicit native failure. No completed physics rerun."
+}
