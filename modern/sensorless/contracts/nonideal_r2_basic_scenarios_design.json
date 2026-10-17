@@ -1,0 +1,14 @@
+{
+ "schema":1,
+ "registered_before_implementation":"2026-10-17; six physical scenarios after the five static cases; original R2 plan and thresholds remain immutable",
+ "supported_cases":["combined_dynamic","hot_R1p2_L0p8","cold_R0p8_L1p2","deadtime_2us","adc_clipping","low_speed_stop"],
+ "dynamic_adapter":"Reuse the local reversible sensorless_n3_stimulus command-source adapter, with bridge=preserve_nonideal_profile so the accepted R1 engineering measurement/power settings are not overwritten. Track nested backups and restore in reverse order; no original block deletion or Ref copying.",
+ "plant_adapter":"Use preregistered plant-only aliases in four local motor Fcn expressions. Shared nominal Rs/Ld/Lq and the observer configuration must remain unchanged.",
+ "deadtime_adapter":"Change only actual power Mask gate_us to2 before stopped initialization. Estimated deadtime stays0.4375us. Require the full normal_precision criteria as a conservative boundary check, including <=2ms native false-valid; no generic-check-only pass.",
+ "adc_fault_check":"Use original fixed +/-2A actual ADC and known configured observer span; require invalid ADC frames to occur in the physical trace, zero native permission violations and zero forbidden control outputs. No recovery claim for a permanently clipped scenario.",
+ "low_stop_check":"Original1000->200rpm at0.3s->0 at0.6s. Require actual low-speed samples, zero native permitted ticks when abs(true speed)<=250rpm, and at least20ms contiguous abs(true speed)<=10rpm in0.7-0.9s to confirm the stop stimulus. This is not observer accuracy acceptance at low speed.",
+ "event_check":"Confirm logged command references/load values100us after each requested transition; never accept a dynamic test whose stimulus did not change. Existing observer dynamic recovery <=150ms with20ms hold remains unchanged.",
+ "unsupported":"Missing/reset/schedule cases remain explicitly rejected until their own adapters and tests exist.",
+ "precheck":"Same-source20ms observer/common81 including original52 must equal accepted R1 archive before new physical cases. All estimator math and the5deg guard remain unchanged; source capsules include scenario helpers and both design contracts.",
+ "failure_policy":"One native retry at most per scenario version/case across campaign labels; completed numerical failures remain failures and are not rerun into passes."
+}
