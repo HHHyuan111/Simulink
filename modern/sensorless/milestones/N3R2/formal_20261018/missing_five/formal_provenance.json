@@ -1,0 +1,13 @@
+{
+  "all_passed": true,
+  "stage": "formal_frozen_candidate_matrix",
+  "case_id": "missing_five",
+  "candidate_sha256": "d1c33609f813351a3c6988f7dec25f925da91701907e7b9c4db90dd25c15df23",
+  "record_sha256": "de5a223e22444e5ad8b3d98bad5c18ac051309b2cca2ac42e3b23967d21606be",
+  "raw_sha256": "37120d0ad85f9c3b40c637e25a45c1af1362bcfa0961cd97e5804c5d42fc20c8",
+  "canonical_sha256": "25e34be200668c24314864daabfd2d4deeafe213d3d75c11fd35dd218162931a",
+  "original_record_unmodified": true,
+  "formal_retries": 0,
+  "formal_start_sha256": "d1f6e1f5283de163a6a4cd3df8d228fb3d19a69f73101c9c0325d3bfb557af64",
+  "validated_at": "2026-10-18T03:03:18.683930+00:00"
+}

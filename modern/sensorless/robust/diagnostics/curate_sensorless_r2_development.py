@@ -47,6 +47,8 @@ def main():
         if not manifest_path.exists():
             continue
         manifest = read(manifest_path)
+        if manifest.get('campaign_type') == 'formal_frozen_candidate_matrix':
+            continue  # Formal acceptance is published separately; never pool it with development.
         if manifest.get('execution_version') not in VERSIONS:
             continue
         prefix = folder.name
@@ -105,6 +107,18 @@ def main():
                 publish(reset_review, name + '/review/reset_diagnosis.json')
                 publish(attempt_folder / 'review/reset_diagnosis.png', name + '/review/reset_diagnosis.png')
             metrics_path = attempt_folder / 'metrics.json'
+            missing_review = attempt_folder / 'fault_review/missing_diagnosis.json'
+            if missing_review.exists():
+                review = read(missing_review)
+                assert review['analysis_only'] and not review['simulation_reexecuted']
+                assert review['source_raw_sha256'] == record['raw_sha256']
+                assert review['metrics_sha256'] == sha(metrics_path)
+                assert review['renderer_sha256'] == sha(BASE / 'robust/diagnostics/render_sensorless_r2_missing_review.py')
+                assert review['figure_sha256'] == sha(attempt_folder / 'fault_review/missing_diagnosis.png')
+                for stream, digest in review['csv_sha256'].items():
+                    assert sha(attempt_folder / 'fault_review' / (stream + '.csv')) == digest
+                publish(missing_review, name + '/fault_review/missing_diagnosis.json')
+                publish(attempt_folder / 'fault_review/missing_diagnosis.png', name + '/fault_review/missing_diagnosis.png')
             if record['status'] == 'passed' and record['case_id'] != 'r1_short_logging_check':
                 assert metrics_path.exists() and read(metrics_path)['all_passed']
                 passed.add(record['case_id'])

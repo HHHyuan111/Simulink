@@ -1,0 +1,42 @@
+{
+  "analysis_only": true,
+  "simulation_reexecuted": false,
+  "R2_passed": false,
+  "scope": "Small execution fixture only; no motor or observer physical rerun.",
+  "runs": [
+    {
+      "folder": "N3R2_rapid_toy_once",
+      "exit_code": 1,
+      "phase": "diagnostic_error",
+      "all_passed": false,
+      "normal_starts": 0,
+      "rapid_starts": 0,
+      "report_sha256": "0e4ee917945fffde8650ac2d4984a98e51af14bf3ecb41c0d9baf874391ab4d8",
+      "launch_sha256": "6c54870b88f9baf5591c82426f040aa70306a22b72c79be0e72e621bdd333945"
+    },
+    {
+      "folder": "N3R2_rapid_toy_compiler_once",
+      "exit_code": 1,
+      "phase": "diagnostic_error",
+      "all_passed": false,
+      "normal_starts": 1,
+      "rapid_starts": 0,
+      "report_sha256": "e7fb7f4e663b65631cdbbf0e2da59d91819dd6cdae95066d16521ff148fefd8b",
+      "launch_sha256": "c442c015aa6bb084c540ea2870212626c24f07f106819d1194780fd02ee8bdf6"
+    },
+    {
+      "folder": "N3R2_rapid_process_once",
+      "exit_code": 0,
+      "phase": "completed",
+      "all_passed": true,
+      "normal_starts": 1,
+      "rapid_starts": 1,
+      "report_sha256": "898c241846c71fcbf352b7b9913a7edddcd62c0dfbcb9a5db96d2f413b4250d8",
+      "launch_sha256": "374c1b87e2d7e4cf894b66bd772733db08a2b4a915ac143eef2eeabada2ea447"
+    }
+  ],
+  "all_passed": true,
+  "preflight_preserved": true,
+  "uninstrumented_fixture_remains_failed": true,
+  "preflight_exit_clarification": "The original MATLAB child exited1; its first PowerShell launcher returned0 after recording the child exit. Child outcome is not a passing fixture."
+}

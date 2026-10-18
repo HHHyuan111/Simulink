@@ -1,0 +1,13 @@
+{
+  "kind": "stopped_preamble_isolation",
+  "status": "exited",
+  "started_at": "2026-10-18T03:27:43.5742178Z",
+  "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_stopped_bootstrap_once",
+  "private_preferences": "D:\\simulink\\dev\\modern\\sensorless\\.build\\stopped_bootstrap_preferences",
+  "default_compiler_hashes_before": {},
+  "exit_code": 0,
+  "native_retries": 0,
+  "host_settings_changed": false,
+  "default_compiler_hashes_after": {},
+  "default_compiler_preferences_unchanged": true
+}

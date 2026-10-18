@@ -1,0 +1,24 @@
+{
+  "kind": "rapid_execution_feasibility",
+  "phase": "diagnostic_error",
+  "all_passed": false,
+  "process_id": 54620,
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "normal_starts": 0,
+  "rapid_starts": 0,
+  "native_retries": 0,
+  "plant_reexecuted": false,
+  "R2_passed": false,
+  "host_settings_changed": false,
+  "probe_sha256": "ed6542a535fbf44eae8f60e872aa5240822faae164e7dc06adcab5f10a1d2407",
+  "contract_sha256": "c696d4b3e1c86c4e6b2441cc7bfcb8ccfb3377505411ff359fbed7354fd2c871",
+  "compilers": {
+    "selected_C": [],
+    "installed_C": [],
+    "selected_CXX": [],
+    "installed_CXX": []
+  },
+  "phase_at_error": "compiler_inventory",
+  "error_identifier": "R2:NoSelectedCompiler",
+  "error": "错误使用 assert\nNo selected C compiler; no settings or installations changed.\n\n出错 probe_sensorless_r2_rapid_toy (第 15 行)\n assert(~isempty(report.compilers.selected_C),'R2:NoSelectedCompiler','No selected C compiler; no settings or installations changed.');\n ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+}

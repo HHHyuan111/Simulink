@@ -1,0 +1,99 @@
+{
+  "kind": "rapid_process_boundary",
+  "phase": "completed",
+  "all_passed": true,
+  "process_id": 16476,
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "normal_starts": 1,
+  "rapid_starts": 1,
+  "native_retries": 0,
+  "plant_reexecuted": false,
+  "R2_passed": false,
+  "host_settings_changed": false,
+  "probe_sha256": "15bab939b4fa6a66f73c07a29eb49f5ecd4ab6c7afc2eb6c575668ce73110ec9",
+  "contract_sha256": "5c66d791b2de5e0aad638b689290acfc5c51a850e6ff400efe5065f538e158c6",
+  "compilers": {
+    "selected_C": {
+      "name": "MinGW64 Compiler (C)",
+      "version": "8.1.0",
+      "manufacturer": "GNU"
+    },
+    "installed_C": {
+      "name": "MinGW64 Compiler (C)",
+      "version": "8.1.0",
+      "manufacturer": "GNU"
+    },
+    "selected_CXX": {
+      "name": "MinGW64 Compiler (C++)",
+      "version": "8.1.0",
+      "manufacturer": "GNU"
+    },
+    "installed_CXX": {
+      "name": "MinGW64 Compiler (C++)",
+      "version": "8.1.0",
+      "manufacturer": "GNU"
+    }
+  },
+  "generation_folder": "D:\\simulink\\dev\\modern\\sensorless\\.build\\rapid_toy\\4651f721-0a25-49e1-b630-f340d582177f",
+  "fixture_sha256": "ac83460699a9b32a6e496dddffa611b436644676ecf7eae8b1437f4f8d79341e",
+  "normal_raw_sha256": "0a7985921652a34c1d58aba57c6808c61fc516aa8cbddd51e98d36aa0936c4dc",
+  "normal_checks": {
+    "timeseries": true,
+    "finite": true,
+    "native_rows": true,
+    "native_ticks": true,
+    "native_data_ticks": true,
+    "JEOS_ticks": true,
+    "completion_ticks": true,
+    "workspace_value": true,
+    "pid_grid": true,
+    "pid_class": true
+  },
+  "normal_pid": 16476,
+  "normal_pid_matches_worker": true,
+  "generated_model_targets": {
+    "path": "D:\\simulink\\dev\\modern\\sensorless\\.build\\rapid_toy\\4651f721-0a25-49e1-b630-f340d582177f\\c\\slprj\\raccel\\sl_r2_rapid_pid\\sl_r2_rapid_pid.dll",
+    "sha256": "f76a8ac08d9e88ee36e7defa13b1a11d448c68cbbd8a5492c4fd2915ef1bc125"
+  },
+  "makefile_sha256": "e93a7b78cdd405a495000c3eb9d5d5f0230c32369a44240849136857c984b53f",
+  "rapid_raw_sha256": "81d157dc0c1eb63d424afc76b4240e19c7b36c5c4075b57ccbe34ef4beb778e8",
+  "rapid_checks": {
+    "timeseries": true,
+    "finite": true,
+    "native_rows": true,
+    "native_ticks": true,
+    "native_data_ticks": true,
+    "JEOS_ticks": true,
+    "completion_ticks": true,
+    "workspace_value": true,
+    "pid_grid": true,
+    "pid_class": true
+  },
+  "rapid_pid": 60520,
+  "rapid_pid_is_distinct": true,
+  "pid_Time_equal": true,
+  "pid_class_equal": true,
+  "comparison": {
+    "rapid_native": {
+      "class_equal": true,
+      "Time_equal": true,
+      "Data_equal": true,
+      "dimensions_equal": true
+    },
+    "rapid_jeos": {
+      "class_equal": true,
+      "Time_equal": true,
+      "Data_equal": true,
+      "dimensions_equal": true
+    },
+    "rapid_completion": {
+      "class_equal": true,
+      "Time_equal": true,
+      "Data_equal": true,
+      "dimensions_equal": true
+    }
+  },
+  "workspace_unchanged": true,
+  "fixture_file_unchanged": true,
+  "raw_sha256": "ab218bba1ab1aa6077f2d04cc399bc881b3ff0d6ce782a8c2490dc2e7c31da18"
+}

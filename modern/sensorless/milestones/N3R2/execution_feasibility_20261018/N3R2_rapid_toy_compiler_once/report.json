@@ -1,0 +1,52 @@
+{
+  "kind": "rapid_execution_feasibility",
+  "phase": "diagnostic_error",
+  "all_passed": false,
+  "process_id": 51780,
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "normal_starts": 1,
+  "rapid_starts": 0,
+  "native_retries": 0,
+  "plant_reexecuted": false,
+  "R2_passed": false,
+  "host_settings_changed": false,
+  "probe_sha256": "ed6542a535fbf44eae8f60e872aa5240822faae164e7dc06adcab5f10a1d2407",
+  "contract_sha256": "c696d4b3e1c86c4e6b2441cc7bfcb8ccfb3377505411ff359fbed7354fd2c871",
+  "compilers": {
+    "selected_C": {
+      "name": "MinGW64 Compiler (C)",
+      "version": "8.1.0",
+      "manufacturer": "GNU"
+    },
+    "installed_C": {
+      "name": "MinGW64 Compiler (C)",
+      "version": "8.1.0",
+      "manufacturer": "GNU"
+    },
+    "selected_CXX": {
+      "name": "MinGW64 Compiler (C++)",
+      "version": "8.1.0",
+      "manufacturer": "GNU"
+    },
+    "installed_CXX": {
+      "name": "MinGW64 Compiler (C++)",
+      "version": "8.1.0",
+      "manufacturer": "GNU"
+    }
+  },
+  "generation_folder": "D:\\simulink\\dev\\modern\\sensorless\\.build\\rapid_toy\\813ad957-39b1-437e-9376-30c30da94760",
+  "fixture_sha256": "e302b83541810a48abfec5cc75f4f6c369389e301ab035ccbcd19071a28aa112",
+  "normal_checks": {
+    "timeseries": true,
+    "finite": true,
+    "native_rows": true,
+    "native_ticks": true,
+    "native_data_ticks": true,
+    "JEOS_ticks": true,
+    "completion_ticks": true,
+    "workspace_value": true
+  },
+  "phase_at_error": "build_standalone_target",
+  "error_identifier": "",
+  "error": "错误使用 assert\nNo generated standalone executable found.\n\n出错 probe_sensorless_r2_rapid_toy (第 41 行)\n files=dir(fullfile(generation,'**','*.exe'));assert(~isempty(files),'No generated standalone executable found.');\n                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+}

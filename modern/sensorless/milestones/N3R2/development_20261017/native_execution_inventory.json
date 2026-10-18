@@ -1,7 +1,7 @@
 {
   "analysis_only": true,
-  "captured_at": "2026-10-18T09:49:38.646574+08:00",
-  "generator_sha256": "454417523d28882804c0aab8969501cdf5403d7be0ed036974438805b4252307",
+  "captured_at": "2026-10-18T11:26:20.651696+08:00",
+  "generator_sha256": "378b3faa50cf974de9d29c5c66910bf3fecfbec52bc4792dca290284fd4abfc5",
   "native_root_cause_confirmed": false,
   "algorithm_verdict_from_native_exit": false,
   "scope": "Finalized nonzero attempts only. Driver native_failure is retry eligibility, not a statement that other Windows exceptions are non-native. Progress is last durable observation, not exact crash time. Stack symbols may be nearest exported names and do not establish a cause. No raw console, addresses, tokens, licenses or crash dumps are published.",
@@ -9,6 +9,8 @@
     {
       "campaign": "N3R2_basic_scenarios_v5_20261017_124839_dca6c75a-229c-4f85-ab80-53d70b373bff",
       "version": "basic_scenarios_v5",
+      "campaign_type": "development",
+      "formal_retry_permitted": false,
       "case_id": "r1_short_logging_check",
       "attempt": "r1_short_logging_check_attempt_1",
       "exit_code": -1073741819,
@@ -59,6 +61,8 @@
     {
       "campaign": "N3R2_basic_scenarios_v5_20261017_124839_dca6c75a-229c-4f85-ab80-53d70b373bff",
       "version": "basic_scenarios_v5",
+      "campaign_type": "development",
+      "formal_retry_permitted": false,
       "case_id": "combined_dynamic",
       "attempt": "combined_dynamic_attempt_1",
       "exit_code": -1073741819,
@@ -109,6 +113,8 @@
     {
       "campaign": "N3R2_basic_scenarios_v5_20261017_124839_dca6c75a-229c-4f85-ab80-53d70b373bff",
       "version": "basic_scenarios_v5",
+      "campaign_type": "development",
+      "formal_retry_permitted": false,
       "case_id": "combined_dynamic",
       "attempt": "combined_dynamic_attempt_2",
       "exit_code": 1,
@@ -126,6 +132,8 @@
     {
       "campaign": "N3R2_constructor_missing_five_20261018_092154_14fc3e7f-2c3f-4e9c-873a-6f92023f8a47",
       "version": "geometry_bound_constructor",
+      "campaign_type": "development",
+      "formal_retry_permitted": false,
       "case_id": "missing_five",
       "attempt": "missing_five_attempt_1",
       "exit_code": -1073741819,
@@ -176,6 +184,8 @@
     {
       "campaign": "N3R2_constructor_missing_five_20261018_092154_14fc3e7f-2c3f-4e9c-873a-6f92023f8a47",
       "version": "geometry_bound_constructor",
+      "campaign_type": "development",
+      "formal_retry_permitted": false,
       "case_id": "missing_five",
       "attempt": "missing_five_attempt_2",
       "exit_code": -1073741795,
@@ -193,6 +203,8 @@
     {
       "campaign": "N3R2_fault_final_short_precheck_20261017_141116_c027734c-49b8-4ecd-8e60-81a403609cfc",
       "version": "fault_ingress_schedule_v7",
+      "campaign_type": "development",
+      "formal_retry_permitted": false,
       "case_id": "r1_short_logging_check",
       "attempt": "r1_short_logging_check_attempt_1",
       "exit_code": -1073741819,
@@ -241,8 +253,48 @@
       ]
     },
     {
+      "campaign": "N3R2_formal_d1c33609_20261018_105329_b3894845-92e5-4d63-b48a-172d490e2fb5",
+      "version": "normal_model_reference_adapter",
+      "campaign_type": "formal_frozen_candidate_matrix",
+      "formal_retry_permitted": false,
+      "case_id": "diagnostic_combined_3000",
+      "attempt": "diagnostic_combined_3000_attempt_1",
+      "exit_code": -1073740791,
+      "exit_code_hex": "0xc0000409",
+      "recognized_windows_native_exception": true,
+      "retryable_native_code": false,
+      "driver_retryable_classification": false,
+      "last_persisted_phase": "initialize_reference_once",
+      "last_recorded_next_major_time_s": null,
+      "completed_physics_archived": false,
+      "original_record_sha256": "e03c5e9f747b5e4e71bac058f9a02ce64b4097bb43713ef3151f1f6869ec9c4b",
+      "private_launcher_sha256": "2aad13233b12da59406b9970368d1464582f7182162e98f06efa605f9182e412",
+      "redacted_frames": []
+    },
+    {
+      "campaign": "N3R2_generated_backend_short_once",
+      "version": "generated_rapid_backend",
+      "campaign_type": "development_strict_generated_short",
+      "formal_retry_permitted": false,
+      "case_id": "r1_short_logging_check",
+      "attempt": "r1_short_logging_check_attempt_1",
+      "exit_code": -1073741819,
+      "exit_code_hex": "0xc0000005",
+      "recognized_windows_native_exception": true,
+      "retryable_native_code": true,
+      "driver_retryable_classification": false,
+      "last_persisted_phase": "load",
+      "last_recorded_next_major_time_s": null,
+      "completed_physics_archived": false,
+      "original_record_sha256": "51fee5e45d2a412535966acced5382ac819152630b3c59ed30b0b0194bca57f7",
+      "private_launcher_sha256": "85ff6b5da59b35fd02e9e044a18aeca679405b22321c12fad3ccc5232e3d0f36",
+      "redacted_frames": []
+    },
+    {
       "campaign": "N3R2_guard_static_matrix_20261017_113855_f2397e8f-45aa-4262-b709-eeb01805f5c9",
       "version": "packet_phase_guard_v4",
+      "campaign_type": "development",
+      "formal_retry_permitted": false,
       "case_id": "combined_reverse_3000",
       "attempt": "combined_reverse_3000_attempt_1",
       "exit_code": -1073741819,
@@ -293,6 +345,8 @@
     {
       "campaign": "N3R2_R1_numerical_diagnosis_20261017_080647_bd9f1982-91f2-4ec8-88d7-01d2bf06ed66",
       "version": null,
+      "campaign_type": "development",
+      "formal_retry_permitted": false,
       "case_id": "r1_short_logging_check",
       "attempt": "r1_short_logging_check_attempt_1",
       "exit_code": -1073741819,
@@ -343,6 +397,8 @@
     {
       "campaign": "N3R2_R1_numerical_diagnosis_20261017_080647_bd9f1982-91f2-4ec8-88d7-01d2bf06ed66",
       "version": null,
+      "campaign_type": "development",
+      "formal_retry_permitted": false,
       "case_id": "r1_short_logging_check",
       "attempt": "r1_short_logging_check_attempt_2",
       "exit_code": -1073741819,
@@ -358,8 +414,62 @@
       "redacted_frames": []
     },
     {
+      "campaign": "N3R2_reference_missing_five_20261018_102118_81346694-c8d6-4b4d-8bd4-6d623516a408",
+      "version": "normal_model_reference_adapter",
+      "campaign_type": "development",
+      "formal_retry_permitted": false,
+      "case_id": "missing_five",
+      "attempt": "missing_five_attempt_1",
+      "exit_code": -1073741819,
+      "exit_code_hex": "0xc0000005",
+      "recognized_windows_native_exception": true,
+      "retryable_native_code": true,
+      "driver_retryable_classification": true,
+      "last_persisted_phase": "advance_same_reference_graph",
+      "last_recorded_next_major_time_s": 0.25,
+      "completed_physics_archived": false,
+      "original_record_sha256": "311a364907d52c0240e8c618504fd9433cb06c5f3d49506eb2c51221fdaf600d",
+      "private_launcher_sha256": "016110bfc1ba94d700f27d2b260a32933327731b7442e4385007e88ecefb46bc",
+      "redacted_frames": [
+        {
+          "module": "SimulinkBlock.dll",
+          "symbol": "SLRootBlock::getGrPrmDesc"
+        },
+        {
+          "module": "libmwsl_elem_blocks.dll",
+          "symbol": "mwboost::serialization::singleton_module::unlock"
+        },
+        {
+          "module": "libmwsl_exec_cf.dll",
+          "symbol": "sl::exec::cf::elist::ExecSystem::InitExecSystemScheme"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::list::TypedExecBlocks::mergeJacobianBlocks"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::method::ModelMethods::zeroCrossing"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::method::ModelMethods::output"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::task::Task::runModelOutput"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::task::Task::validateTask"
+        }
+      ]
+    },
+    {
       "campaign": "N3R2_safe_init_v2_20261017_081750_e4be6165-1fc2-46ff-91c1-ca86e179e494",
       "version": "safe_init_v2_explicit_state",
+      "campaign_type": "development",
+      "formal_retry_permitted": false,
       "case_id": "r1_short_logging_check",
       "attempt": "r1_short_logging_check_attempt_1",
       "exit_code": -1073741819,
@@ -377,6 +487,8 @@
     {
       "campaign": "N3R2_safe_init_v2_20261017_081750_e4be6165-1fc2-46ff-91c1-ca86e179e494",
       "version": "safe_init_v2_explicit_state",
+      "campaign_type": "development",
+      "formal_retry_permitted": false,
       "case_id": "diagnostic_combined_3000",
       "attempt": "diagnostic_combined_3000_attempt_1",
       "exit_code": -1073741819,
@@ -394,6 +506,8 @@
     {
       "campaign": "N3R2_safe_init_v2_20261017_081750_e4be6165-1fc2-46ff-91c1-ca86e179e494",
       "version": "safe_init_v2_explicit_state",
+      "campaign_type": "development",
+      "formal_retry_permitted": false,
       "case_id": "diagnostic_combined_3000",
       "attempt": "diagnostic_combined_3000_attempt_2",
       "exit_code": -1073741819,
@@ -411,6 +525,8 @@
     {
       "campaign": "N3R2_serial_followup_missing_five_20261017_145634_1d32d291-d424-4220-b99d-2a153c210ccc",
       "version": "fault_ingress_schedule_v7",
+      "campaign_type": "development",
+      "formal_retry_permitted": false,
       "case_id": "missing_five",
       "attempt": "missing_five_attempt_1",
       "exit_code": -1073741819,
@@ -428,6 +544,8 @@
     {
       "campaign": "N3R2_serial_followup_missing_five_20261017_145634_1d32d291-d424-4220-b99d-2a153c210ccc",
       "version": "fault_ingress_schedule_v7",
+      "campaign_type": "development",
+      "formal_retry_permitted": false,
       "case_id": "missing_five",
       "attempt": "missing_five_attempt_2",
       "exit_code": -1073741674,
@@ -450,6 +568,8 @@
     {
       "campaign": "N3R2_serial_followup_reset_one_20261017_150104_fe04da7a-7ac5-4b39-be08-8c9255f58224",
       "version": "fault_ingress_schedule_v7",
+      "campaign_type": "development",
+      "formal_retry_permitted": false,
       "case_id": "reset_one",
       "attempt": "reset_one_attempt_1",
       "exit_code": -1073741819,
@@ -467,6 +587,8 @@
     {
       "campaign": "N3R2_serial_followup_reset_one_20261017_150104_fe04da7a-7ac5-4b39-be08-8c9255f58224",
       "version": "fault_ingress_schedule_v7",
+      "campaign_type": "development",
+      "formal_retry_permitted": false,
       "case_id": "reset_one",
       "attempt": "reset_one_attempt_2",
       "exit_code": -1073741819,
@@ -517,6 +639,8 @@
     {
       "campaign": "N3R2_single_initialization_short_precheck_20261017_162647_8c10ff7e-afe8-4654-82ba-48ef82374c7b",
       "version": "single_initialization_v8",
+      "campaign_type": "development",
+      "formal_retry_permitted": false,
       "case_id": "r1_short_logging_check",
       "attempt": "r1_short_logging_check_attempt_1",
       "exit_code": 1,
@@ -534,6 +658,8 @@
     {
       "campaign": "N3R2_stopped_init_v3_20261017_105619_277b3c70-cdf0-4542-b35d-d320753c4b82",
       "version": "stopped_init_v3",
+      "campaign_type": "development",
+      "formal_retry_permitted": false,
       "case_id": "r1_short_logging_check",
       "attempt": "r1_short_logging_check_attempt_1",
       "exit_code": -1073741819,
@@ -584,6 +710,8 @@
     {
       "campaign": "N3R2_v5_other_cases_after_hot_native_limit_20261017_134553_d34f5e82-2b08-4e76-83a5-4e47e40234d3",
       "version": "basic_scenarios_v5",
+      "campaign_type": "development",
+      "formal_retry_permitted": false,
       "case_id": "deadtime_2us",
       "attempt": "deadtime_2us_attempt_1",
       "exit_code": 3,
@@ -601,6 +729,8 @@
     {
       "campaign": "N3R2_v5_other_cases_after_hot_native_limit_20261017_134553_d34f5e82-2b08-4e76-83a5-4e47e40234d3",
       "version": "basic_scenarios_v5",
+      "campaign_type": "development",
+      "formal_retry_permitted": false,
       "case_id": "low_speed_stop",
       "attempt": "low_speed_stop_attempt_1",
       "exit_code": -1073741819,
@@ -651,6 +781,8 @@
     {
       "campaign": "N3R2_v5_other_cases_after_hot_native_limit_20261017_134553_d34f5e82-2b08-4e76-83a5-4e47e40234d3",
       "version": "basic_scenarios_v5",
+      "campaign_type": "development",
+      "formal_retry_permitted": false,
       "case_id": "low_speed_stop",
       "attempt": "low_speed_stop_attempt_2",
       "exit_code": -1073741819,
@@ -701,6 +833,8 @@
     {
       "campaign": "N3R2_v5_remaining_after_analysis_fix_20261017_131701_217a6723-7a8f-4170-b7b3-a969f00efcf6",
       "version": "basic_scenarios_v5",
+      "campaign_type": "development",
+      "formal_retry_permitted": false,
       "case_id": "hot_R1p2_L0p8",
       "attempt": "hot_R1p2_L0p8_attempt_1",
       "exit_code": -1073741819,
@@ -751,6 +885,8 @@
     {
       "campaign": "N3R2_v5_remaining_after_analysis_fix_20261017_131701_217a6723-7a8f-4170-b7b3-a969f00efcf6",
       "version": "basic_scenarios_v5",
+      "campaign_type": "development",
+      "formal_retry_permitted": false,
       "case_id": "hot_R1p2_L0p8",
       "attempt": "hot_R1p2_L0p8_attempt_2",
       "exit_code": -1073741819,
@@ -801,6 +937,8 @@
     {
       "campaign": "N3R2_v8r1_remaining_missing_five_20261017_164519_6a942c13-97ea-48e5-83fb-ec71f431090b",
       "version": "single_init_short_cache_v8r1",
+      "campaign_type": "development",
+      "formal_retry_permitted": false,
       "case_id": "missing_five",
       "attempt": "missing_five_attempt_1",
       "exit_code": -1073741819,
@@ -851,6 +989,8 @@
     {
       "campaign": "N3R2_v8r1_remaining_missing_five_20261017_164519_6a942c13-97ea-48e5-83fb-ec71f431090b",
       "version": "single_init_short_cache_v8r1",
+      "campaign_type": "development",
+      "formal_retry_permitted": false,
       "case_id": "missing_five",
       "attempt": "missing_five_attempt_2",
       "exit_code": -1073741819,
@@ -901,6 +1041,8 @@
     {
       "campaign": "N3R2_v8r1_remaining_reset_one_20261017_164701_ae8aa825-0d31-4423-b871-eef102d57f09",
       "version": "single_init_short_cache_v8r1",
+      "campaign_type": "development",
+      "formal_retry_permitted": false,
       "case_id": "reset_one",
       "attempt": "reset_one_attempt_1",
       "exit_code": -2147483645,
@@ -951,6 +1093,8 @@
     {
       "campaign": "N3R2_v8r1_short_20261017_162814_c6e0244a-576c-4beb-9594-d644dfc04eec",
       "version": "single_init_short_cache_v8r1",
+      "campaign_type": "development",
+      "formal_retry_permitted": false,
       "case_id": "r1_short_logging_check",
       "attempt": "r1_short_logging_check_attempt_1",
       "exit_code": 1,
@@ -968,6 +1112,8 @@
     {
       "campaign": "N3R2_v9_remaining_missing_five_20261017_165348_f89d83fa-5219-4a43-9dbc-6da41560a524",
       "version": "block_reduction_off_v9",
+      "campaign_type": "development",
+      "formal_retry_permitted": false,
       "case_id": "missing_five",
       "attempt": "missing_five_attempt_1",
       "exit_code": -1073741819,
@@ -1018,6 +1164,8 @@
     {
       "campaign": "N3R2_v9_remaining_missing_five_20261017_165348_f89d83fa-5219-4a43-9dbc-6da41560a524",
       "version": "block_reduction_off_v9",
+      "campaign_type": "development",
+      "formal_retry_permitted": false,
       "case_id": "missing_five",
       "attempt": "missing_five_attempt_2",
       "exit_code": -1073741819,
@@ -1035,6 +1183,8 @@
     {
       "campaign": "N3R2_v9_remaining_reset_one_20261017_165813_772ed45a-2996-4e71-b38b-69e18e0f4de9",
       "version": "block_reduction_off_v9",
+      "campaign_type": "development",
+      "formal_retry_permitted": false,
       "case_id": "reset_one",
       "attempt": "reset_one_attempt_1",
       "exit_code": -1073741819,
@@ -1085,6 +1235,8 @@
     {
       "campaign": "N3R2_v9_remaining_reset_one_20261017_165813_772ed45a-2996-4e71-b38b-69e18e0f4de9",
       "version": "block_reduction_off_v9",
+      "campaign_type": "development",
+      "formal_retry_permitted": false,
       "case_id": "reset_one",
       "attempt": "reset_one_attempt_2",
       "exit_code": -1073741819,

@@ -1,0 +1,188 @@
+{
+  "node": "N3R2",
+  "stage": "formal_frozen_candidate_matrix",
+  "captured_at": "2026-10-18T11:30:03.282293+08:00",
+  "campaign": "N3R2_formal_d1c33609_20261018_105329_b3894845-92e5-4d63-b48a-172d490e2fb5",
+  "campaign_status": "stopped_execution_failure",
+  "candidate_sha256": "d1c33609f813351a3c6988f7dec25f925da91701907e7b9c4db90dd25c15df23",
+  "frozen_files_verified": 820,
+  "formal_retries": 0,
+  "passed_cases": 1,
+  "total_cases": 14,
+  "all_passed": false,
+  "simulation_reexecuted_by_curator": false,
+  "development_results_used_as_formal_passes": false,
+  "user_R2_acceptance_pending": true,
+  "R3_started": false,
+  "feedback_takeover": false,
+  "hardware_validated": false,
+  "native_root_cause_confirmed": false,
+  "cases": [
+    {
+      "case_id": "missing_five",
+      "label": "观测输入连续缺 5 帧",
+      "status": "passed",
+      "exit_code": 0,
+      "all_passed": true,
+      "raw_sha256": "37120d0ad85f9c3b40c637e25a45c1af1362bcfa0961cd97e5804c5d42fc20c8",
+      "canonical_sha256": "25e34be200668c24314864daabfd2d4deeafe213d3d75c11fd35dd218162931a",
+      "false_valid_longest_s": 0,
+      "metrics": {
+        "id": "missing_five",
+        "node": "N3R2",
+        "event_audit": {
+          "events": 32000,
+          "false_valid_longest_s": 0,
+          "false_valid_total_s": 0,
+          "permit_total_s": 0.687015125,
+          "native_counters_equal_event_oracle": true,
+          "event_error_formula_equal": true,
+          "all_passed": true
+        },
+        "accepted_packets": 15995,
+        "false_valid_longest_s": 0,
+        "max_permitted_angle_deg": 4.845944228143003,
+        "max_permitted_speed_relative": 0.010770071132476038,
+        "checks": {
+          "event_counter_audit": true,
+          "no_permission_violation": true,
+          "zero_forbidden_control_values": true,
+          "native_false_valid": true,
+          "packet_reference_and_completion": true,
+          "physical_duration": true,
+          "exactly_five_dropped": true,
+          "missing_flags": true,
+          "first_native_veto": true,
+          "pre_fault_permission": true,
+          "no_early_repermission": true,
+          "recovered": true,
+          "native_recovery_hold": true
+        },
+        "all_passed": true,
+        "fault_onset_s": 0.600028875,
+        "first_healthy_reference_s": 0.600278875,
+        "recovery_reference_s": 0.630178875,
+        "recovery_completion_s": 0.630181875,
+        "recovery_delay_s": 0.029900000000000038,
+        "failed_checks": []
+      },
+      "restoration_passed": true
+    },
+    {
+      "case_id": "diagnostic_combined_3000",
+      "label": "+3000 rpm",
+      "status": "failed_execution",
+      "exit_code": -1073740791
+    },
+    {
+      "case_id": "combined_1000",
+      "label": "+1000 rpm",
+      "status": "not_started"
+    },
+    {
+      "case_id": "combined_2000",
+      "label": "+2000 rpm",
+      "status": "not_started"
+    },
+    {
+      "case_id": "combined_reverse_1000",
+      "label": "−1000 rpm",
+      "status": "not_started"
+    },
+    {
+      "case_id": "combined_reverse_3000",
+      "label": "−3000 rpm",
+      "status": "not_started"
+    },
+    {
+      "case_id": "combined_dynamic",
+      "label": "速度与负载阶跃",
+      "status": "not_started"
+    },
+    {
+      "case_id": "hot_R1p2_L0p8",
+      "label": "本体 R×1.2、L×0.8",
+      "status": "not_started"
+    },
+    {
+      "case_id": "cold_R0p8_L1p2",
+      "label": "本体 R×0.8、L×1.2",
+      "status": "not_started"
+    },
+    {
+      "case_id": "deadtime_2us",
+      "label": "本体死区 2 μs",
+      "status": "not_started"
+    },
+    {
+      "case_id": "adc_clipping",
+      "label": "ADC 持续削顶",
+      "status": "not_started"
+    },
+    {
+      "case_id": "reset_one",
+      "label": "观测器软件复位 1 帧",
+      "status": "not_started"
+    },
+    {
+      "case_id": "low_speed_stop",
+      "label": "1000→200→0 rpm",
+      "status": "not_started"
+    },
+    {
+      "case_id": "deadline_jitter",
+      "label": "发布抖动与 CCR 超期",
+      "status": "not_started"
+    }
+  ],
+  "published": [
+    {
+      "path": "frozen_candidate.json",
+      "sha256": "d1c33609f813351a3c6988f7dec25f925da91701907e7b9c4db90dd25c15df23"
+    },
+    {
+      "path": "missing_five/formal_start.json",
+      "sha256": "d1f6e1f5283de163a6a4cd3df8d228fb3d19a69f73101c9c0325d3bfb557af64"
+    },
+    {
+      "path": "missing_five/record.json",
+      "sha256": "de5a223e22444e5ad8b3d98bad5c18ac051309b2cca2ac42e3b23967d21606be"
+    },
+    {
+      "path": "missing_five/execution_progress.json",
+      "sha256": "1f59c1cdcc01b7fb593d7276bc349073a8d6dad071c331aa8ce08a892a5e03e7"
+    },
+    {
+      "path": "missing_five/formal_provenance.json",
+      "sha256": "e8d152f62b64c67ca5a837c65c2d221989302fba5de2932b88c9c2c085e0dd79"
+    },
+    {
+      "path": "missing_five/metrics.json",
+      "sha256": "7a434de442387d8c44dfc3c6a3d76a83697abf110d6ad427ec666a97904e4ba2"
+    },
+    {
+      "path": "missing_five/graph.json",
+      "sha256": "093a643771d52ead68bb3fca41770bc86c4886f2b3c0181b1123d59c8f69ac20"
+    },
+    {
+      "path": "missing_five/direct_graph.json",
+      "sha256": "f109e1f2fe9d5eaeddce88e84fbe88c041204f611aba70bcf580dadd3908d6b0"
+    },
+    {
+      "path": "missing_five/log_format_recovery.json",
+      "sha256": "f3cc5517de65b8ae9f3b4b2930eded21e0fde05a185cda66a3e657f8f1cc10c3"
+    },
+    {
+      "path": "missing_five/log_format/format_contract.json",
+      "sha256": "131d92c0098fe4ea8908f67618c22935536706019acaa9a513bb93a308c027a6"
+    },
+    {
+      "path": "diagnostic_combined_3000/formal_start.json",
+      "sha256": "0bebc26899f7ca69de3ac3428bba87d19df5c9610ade0339eaf767890b04fd30"
+    },
+    {
+      "path": "diagnostic_combined_3000/record.json",
+      "sha256": "e03c5e9f747b5e4e71bac058f9a02ce64b4097bb43713ef3151f1f6869ec9c4b"
+    }
+  ]
+}

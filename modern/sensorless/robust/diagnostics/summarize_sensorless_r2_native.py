@@ -55,6 +55,8 @@ def main():
                 unsigned = code & 0xffffffff
                 rows.append({
                     'campaign': path.parent.name, 'version': campaign.get('execution_version'),
+                    'campaign_type': campaign.get('campaign_type', 'development'),
+                    'formal_retry_permitted': False,
                     'case_id': job['case_id'], 'attempt': folder.name,
                     'exit_code': code, 'exit_code_hex': f'0x{unsigned:08x}',
                     'recognized_windows_native_exception': unsigned in KNOWN_NATIVE,

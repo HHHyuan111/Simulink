@@ -1,0 +1,18 @@
+{
+  "analysis_only": true,
+  "simulation_reexecuted": false,
+  "source_raw_sha256": "ae13e3a8f4953d0bc11765f7bce709e58c1d79b97488217cd077558cfda1b3ff",
+  "renderer_sha256": "ebe747459e48b02116761e9fb781e0025f89e30f2026d690d5f220f1dcc51d9d",
+  "metrics_sha256": "7a434de442387d8c44dfc3c6a3d76a83697abf110d6ad427ec666a97904e4ba2",
+  "figure_sha256": "224fe2ed831cfe59cf453a1aac94b186fb4b516f8412aab35383fba12000a648",
+  "csv_sha256": {
+    "control": "6b6bea6144a1ca1354c3e95396aa2840846fd545f22464937a97e633399ef316",
+    "publications": "86f203cc35f5104f666e028168ec77093d51c68e8a917fce002d2c3503d40d69",
+    "events": "8dab3700a1a439db80fc053b80e054256c6f5505f46e763f41512e7cafbecdb4",
+    "counters": "630272437c9005e8587b46527a0f81b94843dacd352e734e49b85d007d71ed2e"
+  },
+  "actual_publications": 15995,
+  "missing_reference_count": 5,
+  "recovery_delay_s": 0.029900000000000038,
+  "plot_scope": "Raw JEOS points and recorded native transitions; display lines only, no data resampling/smoothing or numerical alteration."
+}

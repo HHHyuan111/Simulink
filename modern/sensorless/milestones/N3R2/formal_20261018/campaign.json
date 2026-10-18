@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "node": "N3R2",
+  "campaign_type": "formal_frozen_candidate_matrix",
+  "execution_version": "normal_model_reference_adapter",
+  "candidate_sha256": "d1c33609f813351a3c6988f7dec25f925da91701907e7b9c4db90dd25c15df23",
+  "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_formal_d1c33609_20261018_105329_b3894845-92e5-4d63-b48a-172d490e2fb5",
+  "status": "stopped_execution_failure",
+  "formal_retries": 0,
+  "formal_case_order": [
+    "missing_five",
+    "diagnostic_combined_3000",
+    "combined_1000",
+    "combined_2000",
+    "combined_reverse_1000",
+    "combined_reverse_3000",
+    "combined_dynamic",
+    "hot_R1p2_L0p8",
+    "cold_R0p8_L1p2",
+    "deadtime_2us",
+    "adc_clipping",
+    "reset_one",
+    "low_speed_stop",
+    "deadline_jitter"
+  ],
+  "jobs": [
+    {
+      "case_id": "missing_five",
+      "status": "passed",
+      "started_at": "2026-10-18T02:53:29.3182932Z",
+      "attempts": [
+        {
+          "exit_code": 0,
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_formal_d1c33609_20261018_105329_b3894845-92e5-4d63-b48a-172d490e2fb5\\missing_five_launcher.log",
+          "status": "exited",
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_formal_d1c33609_20261018_105329_b3894845-92e5-4d63-b48a-172d490e2fb5\\missing_five_console.log",
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_formal_d1c33609_20261018_105329_b3894845-92e5-4d63-b48a-172d490e2fb5\\missing_five_attempt_1",
+          "native_failure": false
+        }
+      ],
+      "completed_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_formal_d1c33609_20261018_105329_b3894845-92e5-4d63-b48a-172d490e2fb5\\missing_five_attempt_1",
+      "formal_provenance": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_formal_d1c33609_20261018_105329_b3894845-92e5-4d63-b48a-172d490e2fb5\\missing_five_attempt_1\\formal_provenance.json"
+    },
+    {
+      "case_id": "diagnostic_combined_3000",
+      "status": "failed_execution",
+      "started_at": "2026-10-18T03:03:18.8887789Z",
+      "attempts": [
+        {
+          "exit_code": -1073740791,
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_formal_d1c33609_20261018_105329_b3894845-92e5-4d63-b48a-172d490e2fb5\\diagnostic_combined_3000_launcher.log",
+          "status": "exited",
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_formal_d1c33609_20261018_105329_b3894845-92e5-4d63-b48a-172d490e2fb5\\diagnostic_combined_3000_console.log",
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_formal_d1c33609_20261018_105329_b3894845-92e5-4d63-b48a-172d490e2fb5\\diagnostic_combined_3000_attempt_1",
+          "native_failure": false
+        }
+      ],
+      "completed_folder": "",
+      "formal_provenance": ""
+    }
+  ],
+  "remaining_cases": [
+    "diagnostic_combined_3000",
+    "combined_1000",
+    "combined_2000",
+    "combined_reverse_1000",
+    "combined_reverse_3000",
+    "combined_dynamic",
+    "hot_R1p2_L0p8",
+    "cold_R0p8_L1p2",
+    "deadtime_2us",
+    "adc_clipping",
+    "reset_one",
+    "low_speed_stop",
+    "deadline_jitter"
+  ],
+  "R2_passed": false,
+  "R3_started": false
+}

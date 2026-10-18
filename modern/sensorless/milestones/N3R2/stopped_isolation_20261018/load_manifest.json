@@ -1,0 +1,24 @@
+{
+  "kind": "load_only_isolation",
+  "status": "completed_passed",
+  "jobs": [
+    {
+      "id": "original_path",
+      "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_load_only_once\\original_path",
+      "status": "passed",
+      "exit_code": 0,
+      "started_at": "2026-10-18T03:25:34.3393014Z",
+      "private_preferences": "D:\\simulink\\dev\\modern\\sensorless\\.build\\load_only_preferences\\original_path"
+    },
+    {
+      "id": "identical_copy",
+      "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_load_only_once\\identical_copy",
+      "status": "passed",
+      "exit_code": 0,
+      "started_at": "2026-10-18T03:25:51.7572465Z",
+      "private_preferences": "D:\\simulink\\dev\\modern\\sensorless\\.build\\load_only_preferences\\identical_copy"
+    }
+  ],
+  "simulation_starts": 0,
+  "R2_passed": false
+}

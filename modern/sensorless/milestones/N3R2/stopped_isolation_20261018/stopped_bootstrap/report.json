@@ -1,0 +1,32 @@
+{
+  "kind": "stopped_preamble_isolation",
+  "phase": "completed",
+  "all_passed": true,
+  "process_id": 66108,
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "simulation_starts": 0,
+  "compile_requested": false,
+  "observer_constructed": false,
+  "model_saved": false,
+  "native_retries": 0,
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "probe_sha256": "0e7caab1ea9618fabebfe61682a50371039a2fb9cd15788981166a6d7b9f85ba",
+  "contract_sha256": "3e1a67f5b4f2c35fc6d2d51d7ec657a065abdc9c78a611612538e2cdacf43ccc",
+  "function_paths": {
+    "load_system": "D:\\DevTools\\MATLAB\\R2026a\\toolbox\\simulink\\slx\\m\\load_system.m",
+    "geometry_restore": "D:\\simulink\\dev\\modern\\sensorless\\robust\\constructor\\pmsm_reference_geometry.m",
+    "reference": "D:\\simulink\\dev\\modern\\teaching\\pmsm_reference.m",
+    "snapshot": "D:\\simulink\\dev\\modern\\teaching\\teach_snapshot.m",
+    "config": "D:\\simulink\\dev\\modern\\teaching\\pmsm_config.m"
+  },
+  "current_root_after_load": "PMSM_FOC_R2026a",
+  "current_system_after_load": "PMSM_FOC_R2026a",
+  "context_matches": true,
+  "callback_characters": 5980,
+  "original_blocks": 729,
+  "workspace_variables": 79,
+  "snapshot_sha256": "7d907fd29712145121934546643a5f05800fe543b7eed5465d100c31d1f0a148",
+  "closed": true,
+  "source_unchanged": true,
+  "copy_unchanged": true
+}

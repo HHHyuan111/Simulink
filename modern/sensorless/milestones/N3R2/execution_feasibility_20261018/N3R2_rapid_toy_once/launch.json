@@ -1,0 +1,9 @@
+{
+  "kind": "rapid_execution_feasibility",
+  "started_at": "2026-10-18T03:09:18.4259415Z",
+  "status": "exited",
+  "native_retries": 0,
+  "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_rapid_toy_once",
+  "exit_code": 1,
+  "host_settings_changed": false
+}

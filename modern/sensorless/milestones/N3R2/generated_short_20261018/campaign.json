@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "node": "N3R2",
+  "campaign_type": "development_strict_generated_short",
+  "execution_version": "generated_rapid_backend",
+  "status": "failed_execution",
+  "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_generated_backend_short_once",
+  "driver_sha256": "b5bceb98cefb1c837fbf1a90a13820415bbf8b42371f0e51bec1a04cd0021183",
+  "formal_retries": 0,
+  "started_at": "2026-10-18T03:22:29.1514339Z",
+  "private_preferences": "D:\\simulink\\dev\\modern\\sensorless\\.build\\generated_backend_preferences\\e4366fa6-fabe-4aee-910a-3bdc902ebe84",
+  "jobs": [
+    {
+      "case_id": "r1_short_logging_check",
+      "status": "failed_execution",
+      "completed_folder": "",
+      "attempts": [
+        {
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_generated_backend_short_once\\r1_short_logging_check_attempt_1",
+          "status": "exited",
+          "exit_code": -1073741819,
+          "native_failure": false,
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_generated_backend_short_once\\private_stdout.log",
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_generated_backend_short_once\\private_stderr.log"
+        }
+      ]
+    }
+  ]
+}

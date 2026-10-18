@@ -1,0 +1,10 @@
+{
+  "source": "Human user reply in this conversation on 2026-10-18",
+  "statement_zh": "没有手动降压或超频",
+  "manual_cpu_undervolt_reported": false,
+  "manual_cpu_overclock_reported": false,
+  "factory_firmware_settings_verified": false,
+  "host_settings_changed_by_agent": false,
+  "native_failure_causality_confirmed": false,
+  "interpretation": "The user's report rules out reported manual undervolt/overclock. It does not establish a cause for MATLAB failures or validate factory firmware stability."
+}

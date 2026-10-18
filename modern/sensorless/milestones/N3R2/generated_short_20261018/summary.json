@@ -1,0 +1,22 @@
+{
+  "captured_at": "2026-10-18T11:26:20.510210+08:00",
+  "analysis_only": true,
+  "simulation_reexecuted": false,
+  "source_archive_integrity_passed": true,
+  "all_passed": false,
+  "campaign_status": "failed_execution",
+  "exit_code": -1073741819,
+  "exit_code_hex": "0xc0000005",
+  "last_durable_phase": "load",
+  "record_last_persisted_status": "running",
+  "raw_physics_archived": false,
+  "physical_step_phase_reached": false,
+  "copied_parent_bytes_equal_original": true,
+  "record_unmodified": true,
+  "record_sha256": "51fee5e45d2a412535966acced5382ac819152630b3c59ed30b0b0194bca57f7",
+  "campaign_sha256": "3ab769da9967732740d2ed5ad354c056cfcdbbfc9ffabccea27dc4d7f1279274",
+  "formal_matrix_restarted": false,
+  "R2_passed": false,
+  "root_cause_confirmed": false,
+  "algorithm_verdict_from_native_exit": false
+}

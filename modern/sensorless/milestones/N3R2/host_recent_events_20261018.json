@@ -1,0 +1,23 @@
+{
+  "kind": "read_only_recent_host_events",
+  "captured_at": "2026-10-18T11:28:17.1647360+08:00",
+  "query_start": "2026-10-18T09:28:17.1647360+08:00",
+  "new_whea_count": 0,
+  "matlab_application1000": [
+    {
+      "time": "2026-10-18T11:03:42.7815717+08:00",
+      "app": "MATLAB.exe",
+      "module": "icuin74.dll",
+      "exception_code": "c0000409"
+    },
+    {
+      "time": "2026-10-18T09:29:58.3772091+08:00",
+      "app": "MATLAB.exe",
+      "module": "libmwfixedpointcore.dll",
+      "exception_code": "c000001d"
+    }
+  ],
+  "native_failure_causality_confirmed": false,
+  "host_settings_changed": false,
+  "manual_undervolt_overclock_user_report": "none"
+}

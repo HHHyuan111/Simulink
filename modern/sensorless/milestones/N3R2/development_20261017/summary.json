@@ -2,7 +2,7 @@
   "node": "N3R2",
   "all_passed": false,
   "formal_final_matrix_passed": false,
-  "captured_at": "2026-10-18T10:51:38.754418+08:00",
+  "captured_at": "2026-10-18T11:06:37.171477+08:00",
   "scope": "Development progress only. Running/failed attempts retain their original statuses; probes do not establish long-case performance.",
   "r1_frozen_files_preserved": 90,
   "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
@@ -931,6 +931,16 @@
       "source": "runs/N3R2_reference_missing_five_20261018_102118_81346694-c8d6-4b4d-8bd4-6d623516a408/missing_five_attempt_2/log_format/format_contract.json",
       "published": "N3R2_reference_missing_five_20261018_102118_81346694-c8d6-4b4d-8bd4-6d623516a408/missing_five_attempt_2/log_format/format_contract.json",
       "sha256": "131d92c0098fe4ea8908f67618c22935536706019acaa9a513bb93a308c027a6"
+    },
+    {
+      "source": "runs/N3R2_reference_missing_five_20261018_102118_81346694-c8d6-4b4d-8bd4-6d623516a408/missing_five_attempt_2/fault_review/missing_diagnosis.json",
+      "published": "N3R2_reference_missing_five_20261018_102118_81346694-c8d6-4b4d-8bd4-6d623516a408/missing_five_attempt_2/fault_review/missing_diagnosis.json",
+      "sha256": "97479cbee98b987035c1ea6d61e84ffc7f6dd4f36f30f1cb4f298ab0d12a138b"
+    },
+    {
+      "source": "runs/N3R2_reference_missing_five_20261018_102118_81346694-c8d6-4b4d-8bd4-6d623516a408/missing_five_attempt_2/fault_review/missing_diagnosis.png",
+      "published": "N3R2_reference_missing_five_20261018_102118_81346694-c8d6-4b4d-8bd4-6d623516a408/missing_five_attempt_2/fault_review/missing_diagnosis.png",
+      "sha256": "224fe2ed831cfe59cf453a1aac94b186fb4b516f8412aab35383fba12000a648"
     },
     {
       "source": "runs/N3R2_reference_short_20261018_101932_b3d22d61-b537-4024-9fef-165d60999703/campaign.json",

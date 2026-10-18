@@ -1,0 +1,33 @@
+{
+  "analysis_only": true,
+  "simulation_reexecuted": false,
+  "all_diagnostic_checks_passed": true,
+  "scope": "Read-only loads and stopped preamble only. No physical simulation, observer integration or qualification.",
+  "native_failure_reproduced": false,
+  "native_root_cause_confirmed": false,
+  "failed_short_or_formal_case_reopened": false,
+  "R2_passed": false,
+  "runs": [
+    {
+      "id": "original_path",
+      "all_passed": true,
+      "report_sha256": "8e2ae2cff4139414b5546b7dadd6dc47824800dd2c65c0113b66c02271d24a7c",
+      "simulation_starts": 0,
+      "native_retries": 0
+    },
+    {
+      "id": "identical_copy",
+      "all_passed": true,
+      "report_sha256": "dc8766bccd90971d78aa7494011360b3d4df38f4f030099200ffc402decf03f3",
+      "simulation_starts": 0,
+      "native_retries": 0
+    },
+    {
+      "id": "stopped_bootstrap",
+      "all_passed": true,
+      "report_sha256": "28b0f322cb397d4b226273a73db7943e9a1d88a36fe8f083704c1be9379f27d1",
+      "simulation_starts": 0,
+      "native_retries": 0
+    }
+  ]
+}

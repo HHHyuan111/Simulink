@@ -1,0 +1,20 @@
+{
+  "captured_at": "2026-10-18T11:13:09.118726+08:00",
+  "kind": "isolated_portable_compiler",
+  "source_url": "https://ssd.mathworks.com/supportfiles/downloads/SupportPackageThirdParty/R2023b/mingw_w64/win64/mingw81.zip",
+  "archive_bytes": 140343786,
+  "archive_sha256": "382a1f8499aba2b21940b67d88fc4413b0b93a3c21c207178f6102b3cadc3a2d",
+  "extraction_root": "D:/simulink/dev/modern/sensorless/.build/tools/mingw81",
+  "compiler_root": "D:/simulink/dev/modern/sensorless/.build/tools/mingw81",
+  "gcc_sha256": "c5f0953f7a71ddcdf0852e1e44a43cef9b8fe121beba4d4202bfe6d405de47c0",
+  "gxx_sha256": "59610c4c74a98d17fa23b53f12715f9456e7c5abbc364aa320abab33a9f6441e",
+  "gcc_version": "gcc.exe (x86_64-posix-seh-rev0, Built by MinGW-W64 project) 8.1.0",
+  "gxx_version": "g++.exe (x86_64-posix-seh-rev0, Built by MinGW-W64 project) 8.1.0",
+  "generator_sha256": "701bf6a0aee142371193d81543e278227a43d6f677ae13461ed3a1afca53e99a",
+  "archive_paths_confined": true,
+  "installer_run": false,
+  "system_environment_changed": false,
+  "user_environment_changed": false,
+  "existing_matlab_preferences_changed": false,
+  "R2_passed": false
+}

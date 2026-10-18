@@ -1,0 +1,13 @@
+{
+  "kind": "isolated_compiler_rapid_feasibility",
+  "status": "exited",
+  "started_at": "2026-10-18T03:13:10.5147751Z",
+  "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_rapid_toy_compiler_once",
+  "private_preferences": "D:\\simulink\\dev\\modern\\sensorless\\.build\\rapid_toy_compiler_preferences",
+  "default_compiler_hashes_before": {},
+  "exit_code": 1,
+  "native_retries": 0,
+  "host_settings_changed": false,
+  "default_compiler_hashes_after": {},
+  "default_compiler_preferences_unchanged": true
+}

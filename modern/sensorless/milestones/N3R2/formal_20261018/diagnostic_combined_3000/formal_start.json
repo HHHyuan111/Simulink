@@ -1,0 +1,9 @@
+{
+  "case_id": "diagnostic_combined_3000",
+  "started_at": "2026-10-18T03:03:18.8887789Z",
+  "formal_retries": 0,
+  "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_formal_d1c33609_20261018_105329_b3894845-92e5-4d63-b48a-172d490e2fb5\\diagnostic_combined_3000_attempt_1",
+  "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/model_reference','D:/simulink/dev/modern/sensorless/robust/execution_v8');validate_sensorless_r2_reference_case('diagnostic_combined_3000','D:/simulink/dev/modern/sensorless/runs/N3R2_formal_d1c33609_20261018_105329_b3894845-92e5-4d63-b48a-172d490e2fb5/diagnostic_combined_3000_attempt_1');normalize_sensorless_r2_v8_archive('D:/simulink/dev/modern/sensorless/runs/N3R2_formal_d1c33609_20261018_105329_b3894845-92e5-4d63-b48a-172d490e2fb5/diagnostic_combined_3000_attempt_1');",
+  "formal_starts": 1,
+  "candidate_sha256": "d1c33609f813351a3c6988f7dec25f925da91701907e7b9c4db90dd25c15df23"
+}
