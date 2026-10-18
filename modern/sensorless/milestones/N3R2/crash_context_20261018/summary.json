@@ -1,0 +1,1177 @@
+{
+  "analysis_only": true,
+  "captured_at": "2026-10-18T17:44:38.415967+08:00",
+  "generator_sha256": "6108dff3b2ce897348fe28ba496cfdf99608b52ad380f9fd971bb539a63030b7",
+  "input_inventory_sha256": "d67a137acff585317b2ad5a0df189ee5fe90cdc474c75a2eeae6d799d46df95f",
+  "rows": [
+    {
+      "campaign": "N3R2_basic_scenarios_v5_20261017_124839_dca6c75a-229c-4f85-ab80-53d70b373bff",
+      "case_id": "r1_short_logging_check",
+      "pid": 18060,
+      "exit_code_hex": "0xc0000005",
+      "last_durable_phase": "load",
+      "record_sha256": "8097490c15f45c0778a52bcfb73d0bd203a98bf0293f4cdbe1332fd9e4f8022b",
+      "dump_present": true,
+      "dump_minus_last_record_s": 6.072551250457764,
+      "pid_and_timestamp_proximity_match": true,
+      "private_dump_sha256": "0e29f69cd71635805f6dbbfaf9fc5f2ebbea0806fcd1592fb20e74c2d7a7b0ef",
+      "private_dump_bytes": 19414,
+      "redacted_top_frames": [
+        {
+          "module": "libmx.dll",
+          "symbol": "matrix::detail::noninlined::mx_array_api::mxSetUserBits"
+        },
+        {
+          "module": "libmx.dll",
+          "symbol": "matrix::lxe_access::mightBeShared"
+        },
+        {
+          "module": "libmx.dll",
+          "symbol": "matrix::lxe_access::mightBeShared"
+        },
+        {
+          "module": "libmx.dll",
+          "symbol": "matrix::lxe_access::mightBeShared"
+        },
+        {
+          "module": "libmx.dll",
+          "symbol": "matrix::lxe_access::mightBeShared"
+        },
+        {
+          "module": "libmx.dll",
+          "symbol": "matrix::lxe_access::mightBeShared"
+        },
+        {
+          "module": "libmx.dll",
+          "symbol": "matrix::serialize::getCurrentItem"
+        },
+        {
+          "module": "libmx.dll",
+          "symbol": "matrix::serialize::getItem"
+        }
+      ]
+    },
+    {
+      "campaign": "N3R2_basic_scenarios_v5_20261017_124839_dca6c75a-229c-4f85-ab80-53d70b373bff",
+      "case_id": "combined_dynamic",
+      "pid": 58224,
+      "exit_code_hex": "0xc0000005",
+      "last_durable_phase": "simulate",
+      "record_sha256": "ac87d93e7a0adbfc8c354ce75a6900d8edddb28761160ef885525c31977233a6",
+      "dump_present": true,
+      "dump_minus_last_record_s": 112.53878927230835,
+      "pid_and_timestamp_proximity_match": true,
+      "private_dump_sha256": "a8c6446ef344659982edea8025841ee94a0208f734cd9a04cb29c88b0f2105ba",
+      "private_dump_bytes": 14167,
+      "redacted_top_frames": [
+        {
+          "module": "SimulinkBlock.dll",
+          "symbol": "SLRootBlock::getGrPrmDesc"
+        },
+        {
+          "module": "libmwsl_elem_blocks.dll",
+          "symbol": "mwboost::serialization::singleton_module::unlock"
+        },
+        {
+          "module": "libmwsl_exec_cf.dll",
+          "symbol": "sl::exec::cf::elist::ExecSystem::InitExecSystemScheme"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::list::TypedExecBlocks::mergeJacobianBlocks"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::method::ModelMethods::zeroCrossing"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::method::ModelMethods::output"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::task::Task::runModelOutput"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::task::Task::validateTask"
+        }
+      ]
+    },
+    {
+      "campaign": "N3R2_basic_scenarios_v5_20261017_124839_dca6c75a-229c-4f85-ab80-53d70b373bff",
+      "case_id": "combined_dynamic",
+      "pid": 15936,
+      "exit_code_hex": "0x00000001",
+      "last_durable_phase": "metrics",
+      "record_sha256": "8ece86303351496f4d6f9028e722c8941501245875f98d653e19445da4b7eaef",
+      "dump_present": false
+    },
+    {
+      "campaign": "N3R2_constructor_missing_five_20261018_092154_14fc3e7f-2c3f-4e9c-873a-6f92023f8a47",
+      "case_id": "missing_five",
+      "pid": 28212,
+      "exit_code_hex": "0xc0000005",
+      "last_durable_phase": "advance_same_initialized_graph",
+      "record_sha256": "08ce6fab9d24eead565b459a93a1f494b429ef2cbd9d86a8da0689e2be7847d8",
+      "dump_present": true,
+      "dump_minus_last_record_s": 69.77091670036316,
+      "pid_and_timestamp_proximity_match": true,
+      "private_dump_sha256": "7c78efb7eed783b697665836e889a4155d6456c9d43bd5116cb20e56d9ffcf82",
+      "private_dump_bytes": 12665,
+      "redacted_top_frames": [
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::clock::DiscreteBaseTimer::advance"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::clock::DiscreteTimer::advance"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::service::ExternalTimerService::timer"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::sim::ExternalTimerSet::serialize"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::engine::ExecutionEngine::step"
+        },
+        {
+          "module": "sl_sim.dll",
+          "symbol": "slsim::runtime::initializeExecutionEngine"
+        },
+        {
+          "module": "sl_sim.dll",
+          "symbol": "slsim::SimulationExecutionInterface::step"
+        },
+        {
+          "module": "sl_sim.dll",
+          "symbol": "slsim::SimulationSnapshotManager::snapshotInterval"
+        }
+      ]
+    },
+    {
+      "campaign": "N3R2_constructor_missing_five_20261018_092154_14fc3e7f-2c3f-4e9c-873a-6f92023f8a47",
+      "case_id": "missing_five",
+      "pid": 20712,
+      "exit_code_hex": "0xc000001d",
+      "last_durable_phase": "advance_same_initialized_graph",
+      "record_sha256": "f6eb9c90bdda8eaa78ef062bc997966d6a83b6e2c50f7b251dc5090f4cc5087e",
+      "dump_present": false
+    },
+    {
+      "campaign": "N3R2_fault_final_short_precheck_20261017_141116_c027734c-49b8-4ecd-8e60-81a403609cfc",
+      "case_id": "r1_short_logging_check",
+      "pid": 28132,
+      "exit_code_hex": "0xc0000005",
+      "last_durable_phase": "install",
+      "record_sha256": "264d76a6bb0b14255bcfe4175fb776bb7ec8afa8d077c1941a313a1652318530",
+      "dump_present": true,
+      "dump_minus_last_record_s": 6.198333263397217,
+      "pid_and_timestamp_proximity_match": true,
+      "private_dump_sha256": "95411c3d8712307bc5e478da162607e556eb2beaba69fbd095efda51ea494ff1",
+      "private_dump_bytes": 19801,
+      "redacted_top_frames": [
+        {
+          "module": "SimulinkBlock.dll",
+          "symbol": "SLRootBlock::getGrPrmDesc"
+        },
+        {
+          "module": "sl_lang_blocks.dll",
+          "symbol": "OutportBlock::CheckPrmsAndCreateDlgPrmCache"
+        },
+        {
+          "module": "libmwsimulink.dll",
+          "symbol": "openDefaultDialog"
+        },
+        {
+          "module": "SimulinkBlock.dll",
+          "symbol": "EvalDlgPrms"
+        },
+        {
+          "module": "libmwsimulink.dll",
+          "symbol": "openDefaultDialog"
+        },
+        {
+          "module": "libmwsimulink.dll",
+          "symbol": "openDefaultDialog"
+        },
+        {
+          "module": "libmwsimulink.dll",
+          "symbol": "BlockEvalParams"
+        },
+        {
+          "module": "libmwsimulink.dll",
+          "symbol": "EvalBlockParamsAndUpdateLink"
+        }
+      ]
+    },
+    {
+      "campaign": "N3R2_formal_d1c33609_20261018_105329_b3894845-92e5-4d63-b48a-172d490e2fb5",
+      "case_id": "diagnostic_combined_3000",
+      "pid": 13244,
+      "exit_code_hex": "0xc0000409",
+      "last_durable_phase": "initialize_reference_once",
+      "record_sha256": "e03c5e9f747b5e4e71bac058f9a02ce64b4097bb43713ef3151f1f6869ec9c4b",
+      "dump_present": false
+    },
+    {
+      "campaign": "N3R2_generated_backend_short_once",
+      "case_id": "r1_short_logging_check",
+      "pid": 48288,
+      "exit_code_hex": "0xc0000005",
+      "last_durable_phase": "load",
+      "record_sha256": "51fee5e45d2a412535966acced5382ac819152630b3c59ed30b0b0194bca57f7",
+      "dump_present": true,
+      "dump_minus_last_record_s": 3.0797781944274902,
+      "pid_and_timestamp_proximity_match": true,
+      "private_dump_sha256": "eef3fdf0d4b7a5ff635a9f0eaef1705f40ec7da836846343737824fe161506d6",
+      "private_dump_bytes": 5031,
+      "redacted_top_frames": [
+        {
+          "module": "m_lxe.dll",
+          "symbol": "MathWorks::lxe::FrameOwnershipProxy::m_nullFOP"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "MathWorks::lxe::FrameOwnershipProxy::m_nullFOP"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "MathWorks::lxe::is_xvalue"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "MathWorks::lxe::LXEConstants::InitializeOverloadedFunction_9"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "MathWorks::lxe::LXEConstants::InitializeOverloadedFunction_9"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "MathWorks::lxe::LXEConstants::InitializeOverloadedFunction_9"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "MathWorks::lxe::LXEConstants::InitializeOverloadedFunction_9"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "MathWorks::lxe::LXEConstants::InitializeOverloadedFunction_9"
+        }
+      ]
+    },
+    {
+      "campaign": "N3R2_guard_static_matrix_20261017_113855_f2397e8f-45aa-4262-b709-eeb01805f5c9",
+      "case_id": "combined_reverse_3000",
+      "pid": 32288,
+      "exit_code_hex": "0xc0000005",
+      "last_durable_phase": "simulate",
+      "record_sha256": "b5b3ad3c7eba4ee95ba666da65c7955d750e04da480d1ad007630d48fe5bf9a4",
+      "dump_present": true,
+      "dump_minus_last_record_s": 132.82029366493225,
+      "pid_and_timestamp_proximity_match": true,
+      "private_dump_sha256": "3876719c023f1f4bf967ae7f83ae6bee8f4519168d899b430df035b20830a43b",
+      "private_dump_bytes": 13152,
+      "redacted_top_frames": [
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::clock::DiscreteBaseTimer::advance"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::clock::DiscreteTimer::advance"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::service::ExternalTimerService::timer"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::sim::ExternalTimerSet::serialize"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::engine::ExecutionEngine::step"
+        },
+        {
+          "module": "sl_sim.dll",
+          "symbol": "slsim::runtime::initializeExecutionEngine"
+        },
+        {
+          "module": "sl_sim.dll",
+          "symbol": "slsim::SimulationExecutionInterface::step"
+        },
+        {
+          "module": "sl_sim.dll",
+          "symbol": "slsim::SimulationInterfaceManager::erase"
+        }
+      ]
+    },
+    {
+      "campaign": "N3R2_R1_numerical_diagnosis_20261017_080647_bd9f1982-91f2-4ec8-88d7-01d2bf06ed66",
+      "case_id": "r1_short_logging_check",
+      "pid": 4056,
+      "exit_code_hex": "0xc0000005",
+      "last_durable_phase": "configure",
+      "record_sha256": "3e186f2eae032df92e233e9622e93560a0ee30db888e79b2a3b88d46cd1eb5ce",
+      "dump_present": true,
+      "dump_minus_last_record_s": 6.716736555099487,
+      "pid_and_timestamp_proximity_match": true,
+      "private_dump_sha256": "d48c258adbd33801b5be8c7af016c936c4558dd787ea01291988c95295b85af4",
+      "private_dump_bytes": 19293,
+      "redacted_top_frames": [
+        {
+          "module": "m_lxe.dll",
+          "symbol": "MathWorks::lxe::FakeLxeDispatcherProxyForIrGen::SetStaticImportsForMatlabFunction"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "MathWorks::lxe::FakeLxeDispatcherProxyForIrGen::SetStaticImportsForMatlabFunction"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "MathWorks::lxe::FakeLxeDispatcherProxyForIrGen::SetStaticImportsForMatlabFunction"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "MathWorks::lxe::FakeLxeDispatcherProxyForIrGen::SetStaticImportsForMatlabFunction"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "MathWorks::lxe::FakeLxeDispatcherProxyForIrGen::SetStaticImportsForMatlabFunction"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "MathWorks::lxe::FakeLxeDispatcherProxyForIrGen::SetStaticImportsForMatlabFunction"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "RunSection::CorrectedFileInfo::getRemovedSections"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "MathWorks::lxe::ErrorStack::WillSuppressErrorsInCpp"
+        }
+      ]
+    },
+    {
+      "campaign": "N3R2_R1_numerical_diagnosis_20261017_080647_bd9f1982-91f2-4ec8-88d7-01d2bf06ed66",
+      "case_id": "r1_short_logging_check",
+      "pid": 37460,
+      "exit_code_hex": "0xc0000005",
+      "last_durable_phase": "configure",
+      "record_sha256": "c635952c57b7eb10b530ef130414207e194fb47341d9b76a2ba522afa7fcc958",
+      "dump_present": true,
+      "dump_minus_last_record_s": 0.04717707633972168,
+      "pid_and_timestamp_proximity_match": true,
+      "private_dump_sha256": "1180a21d5b1bb23fdbb2dc9da08848a098ef8b9ac132ca52634e26d77d24f3f9",
+      "private_dump_bytes": 4385,
+      "redacted_top_frames": [
+        {
+          "module": "MSVCP140.dll",
+          "symbol": null
+        },
+        {
+          "module": "MSVCP140.dll",
+          "symbol": null
+        },
+        {
+          "module": "MSVCP140.dll",
+          "symbol": null
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "MathWorks::lxe::is_xvalue"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "MathWorks::lxe::is_xvalue"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "MathWorks::lxe::function_descriptor::get_C_state_key"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "MathWorks::lxe::function_descriptor::get_C_state_key"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "MathWorks::lxe::is_xvalue"
+        }
+      ]
+    },
+    {
+      "campaign": "N3R2_reference_missing_five_20261018_102118_81346694-c8d6-4b4d-8bd4-6d623516a408",
+      "case_id": "missing_five",
+      "pid": 40360,
+      "exit_code_hex": "0xc0000005",
+      "last_durable_phase": "advance_same_reference_graph",
+      "record_sha256": "311a364907d52c0240e8c618504fd9433cb06c5f3d49506eb2c51221fdaf600d",
+      "dump_present": true,
+      "dump_minus_last_record_s": 147.89918088912964,
+      "pid_and_timestamp_proximity_match": true,
+      "private_dump_sha256": "2674f4915dc03b88eeba65dc585c0f34c30f2ef52eeb25be5649f38e1a8486fd",
+      "private_dump_bytes": 13682,
+      "redacted_top_frames": [
+        {
+          "module": "SimulinkBlock.dll",
+          "symbol": "SLRootBlock::getGrPrmDesc"
+        },
+        {
+          "module": "libmwsl_elem_blocks.dll",
+          "symbol": "mwboost::serialization::singleton_module::unlock"
+        },
+        {
+          "module": "libmwsl_exec_cf.dll",
+          "symbol": "sl::exec::cf::elist::ExecSystem::InitExecSystemScheme"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::list::TypedExecBlocks::mergeJacobianBlocks"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::method::ModelMethods::zeroCrossing"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::method::ModelMethods::output"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::task::Task::runModelOutput"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::task::Task::validateTask"
+        }
+      ]
+    },
+    {
+      "campaign": "N3R2_safe_init_v2_20261017_081750_e4be6165-1fc2-46ff-91c1-ca86e179e494",
+      "case_id": "r1_short_logging_check",
+      "pid": 59840,
+      "exit_code_hex": "0xc0000005",
+      "last_durable_phase": "observer_compile",
+      "record_sha256": "d5a399356d9eaa5cb063d2b8153b60b091949175c1b143c41721f9d6d7378ebe",
+      "dump_present": false
+    },
+    {
+      "campaign": "N3R2_safe_init_v2_20261017_081750_e4be6165-1fc2-46ff-91c1-ca86e179e494",
+      "case_id": "diagnostic_combined_3000",
+      "pid": 3868,
+      "exit_code_hex": "0xc0000005",
+      "last_durable_phase": "observer_compile",
+      "record_sha256": "fab11ff93b4fa697c7b46ef566b126452e6ca5eabee8b9dad89a6f01b822b0f7",
+      "dump_present": false
+    },
+    {
+      "campaign": "N3R2_safe_init_v2_20261017_081750_e4be6165-1fc2-46ff-91c1-ca86e179e494",
+      "case_id": "diagnostic_combined_3000",
+      "pid": 58424,
+      "exit_code_hex": "0xc0000005",
+      "last_durable_phase": "observer_compile",
+      "record_sha256": "353757dfc89cc21bc02d5f0c60b174718fc26de0fd1770460be4989d4b2d9a54",
+      "dump_present": false
+    },
+    {
+      "campaign": "N3R2_serial_followup_missing_five_20261017_145634_1d32d291-d424-4220-b99d-2a153c210ccc",
+      "case_id": "missing_five",
+      "pid": 52152,
+      "exit_code_hex": "0xc0000005",
+      "last_durable_phase": "simulate",
+      "record_sha256": "dcc01d12d46b3ca5900da238a4437778152c7e8f4bd7a57347a89a4ad2c1551f",
+      "dump_present": false
+    },
+    {
+      "campaign": "N3R2_serial_followup_missing_five_20261017_145634_1d32d291-d424-4220-b99d-2a153c210ccc",
+      "case_id": "missing_five",
+      "pid": 5084,
+      "exit_code_hex": "0xc0000096",
+      "last_durable_phase": "simulate",
+      "record_sha256": "1444f0b2e9ec09ab408172ccfa09c7c5f2a11e0a1f697292279245f6af8c92f4",
+      "dump_present": true,
+      "dump_minus_last_record_s": 28.036357879638672,
+      "pid_and_timestamp_proximity_match": true,
+      "private_dump_sha256": "252a44629a83de2ddf2e1e53b3b1bfe7d84eee580106f8665a123f47f0334b76",
+      "private_dump_bytes": 2250,
+      "redacted_top_frames": [
+        {
+          "module": "SimulinkBlock.dll",
+          "symbol": "SLBlock::getCompInputPortWidth"
+        }
+      ]
+    },
+    {
+      "campaign": "N3R2_serial_followup_reset_one_20261017_150104_fe04da7a-7ac5-4b39-be08-8c9255f58224",
+      "case_id": "reset_one",
+      "pid": 22132,
+      "exit_code_hex": "0xc0000005",
+      "last_durable_phase": "simulate",
+      "record_sha256": "84b68bc307d2270c34f881ecab5bde46a7d6bcb6419e92d6e8ff0b4a815fe33e",
+      "dump_present": false
+    },
+    {
+      "campaign": "N3R2_serial_followup_reset_one_20261017_150104_fe04da7a-7ac5-4b39-be08-8c9255f58224",
+      "case_id": "reset_one",
+      "pid": 41096,
+      "exit_code_hex": "0xc0000005",
+      "last_durable_phase": "simulate",
+      "record_sha256": "40094a48411de50e47f00789aeb82a1b0f80769a245bbe5779bc8236ee8c9488",
+      "dump_present": true,
+      "dump_minus_last_record_s": 88.69764924049377,
+      "pid_and_timestamp_proximity_match": true,
+      "private_dump_sha256": "5889ed2f46d83f6c6d3f38b8c4a4522f17db4d1e4e807683f97b70a7493cd061",
+      "private_dump_bytes": 13152,
+      "redacted_top_frames": [
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::clock::DiscreteBaseTimer::advance"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::clock::DiscreteTimer::advance"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::service::ExternalTimerService::timer"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::sim::ExternalTimerSet::serialize"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::engine::ExecutionEngine::step"
+        },
+        {
+          "module": "sl_sim.dll",
+          "symbol": "slsim::runtime::initializeExecutionEngine"
+        },
+        {
+          "module": "sl_sim.dll",
+          "symbol": "slsim::SimulationExecutionInterface::step"
+        },
+        {
+          "module": "sl_sim.dll",
+          "symbol": "slsim::SimulationInterfaceManager::erase"
+        }
+      ]
+    },
+    {
+      "campaign": "N3R2_single_initialization_short_precheck_20261017_162647_8c10ff7e-afe8-4654-82ba-48ef82374c7b",
+      "case_id": "r1_short_logging_check",
+      "pid": 44276,
+      "exit_code_hex": "0x00000001",
+      "last_durable_phase": "install",
+      "record_sha256": "0313cd51aa71785a82d336e3158294266e10d402466ff43105cd54ba70884e81",
+      "dump_present": false
+    },
+    {
+      "campaign": "N3R2_stopped_init_v3_20261017_105619_277b3c70-cdf0-4542-b35d-d320753c4b82",
+      "case_id": "r1_short_logging_check",
+      "pid": 58444,
+      "exit_code_hex": "0xc0000005",
+      "last_durable_phase": "observer_compile",
+      "record_sha256": "6af7ebb48543c9a98be479c3bdad336fb60eae90371ec74793722990f6aebadb",
+      "dump_present": true,
+      "dump_minus_last_record_s": 0.3096010684967041,
+      "pid_and_timestamp_proximity_match": true,
+      "private_dump_sha256": "f45a5e733212924320d246b6a8240e1a8a5250648f5cf3b2da527b0c46fb3b79",
+      "private_dump_bytes": 13330,
+      "redacted_top_frames": [
+        {
+          "module": "libmwir.dll",
+          "symbol": null
+        },
+        {
+          "module": "libmwlxetypes.dll",
+          "symbol": null
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": null
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": null
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": null
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": null
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": null
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": null
+        }
+      ]
+    },
+    {
+      "campaign": "N3R2_v5_other_cases_after_hot_native_limit_20261017_134553_d34f5e82-2b08-4e76-83a5-4e47e40234d3",
+      "case_id": "deadtime_2us",
+      "pid": 61252,
+      "exit_code_hex": "0x00000003",
+      "last_durable_phase": "observer_compile",
+      "record_sha256": "81565f24a3f8e5941b4d8588243e83b9bdca51aa80dd33dc89e01dc1c9beb624",
+      "dump_present": true,
+      "dump_minus_last_record_s": 5.9556214809417725,
+      "pid_and_timestamp_proximity_match": true,
+      "private_dump_sha256": "7bb812ea0d2afe1f9ad3186f7dc5cd3a9cebdce17894666179a99bd5c609edea",
+      "private_dump_bytes": 5242,
+      "redacted_top_frames": [
+        {
+          "module": "libmwfl.dll",
+          "symbol": null
+        },
+        {
+          "module": "libmwfl.dll",
+          "symbol": null
+        },
+        {
+          "module": "libmwfl.dll",
+          "symbol": null
+        },
+        {
+          "module": "libmwfl.dll",
+          "symbol": null
+        },
+        {
+          "module": "libmwfl.dll",
+          "symbol": null
+        },
+        {
+          "module": "jmi.dll",
+          "symbol": null
+        },
+        {
+          "module": "jvm.dll",
+          "symbol": null
+        },
+        {
+          "module": "jvm.dll",
+          "symbol": null
+        }
+      ]
+    },
+    {
+      "campaign": "N3R2_v5_other_cases_after_hot_native_limit_20261017_134553_d34f5e82-2b08-4e76-83a5-4e47e40234d3",
+      "case_id": "low_speed_stop",
+      "pid": 31700,
+      "exit_code_hex": "0xc0000005",
+      "last_durable_phase": "simulate",
+      "record_sha256": "09d5422e5aec077748fa7b034c35fc760c9d5f151e0c6efe0aa3c4891e998223",
+      "dump_present": true,
+      "dump_minus_last_record_s": 175.04180598258972,
+      "pid_and_timestamp_proximity_match": true,
+      "private_dump_sha256": "b3ead6c8cf412bc44aff0012255854a2cabcf17c5f8a17e10d701a5a59dca0c0",
+      "private_dump_bytes": 13152,
+      "redacted_top_frames": [
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::clock::DiscreteBaseTimer::advance"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::clock::DiscreteTimer::advance"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::service::ExternalTimerService::timer"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::sim::ExternalTimerSet::serialize"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::engine::ExecutionEngine::step"
+        },
+        {
+          "module": "sl_sim.dll",
+          "symbol": "slsim::runtime::initializeExecutionEngine"
+        },
+        {
+          "module": "sl_sim.dll",
+          "symbol": "slsim::SimulationExecutionInterface::step"
+        },
+        {
+          "module": "sl_sim.dll",
+          "symbol": "slsim::SimulationInterfaceManager::erase"
+        }
+      ]
+    },
+    {
+      "campaign": "N3R2_v5_other_cases_after_hot_native_limit_20261017_134553_d34f5e82-2b08-4e76-83a5-4e47e40234d3",
+      "case_id": "low_speed_stop",
+      "pid": 47588,
+      "exit_code_hex": "0xc0000005",
+      "last_durable_phase": "simulate",
+      "record_sha256": "30d48b5c63418e7b7f9729a62feb819d48e54d32aca6d27e3709f62e001a4e49",
+      "dump_present": true,
+      "dump_minus_last_record_s": 251.43678951263428,
+      "pid_and_timestamp_proximity_match": true,
+      "private_dump_sha256": "64b1e79ff969bec8e7e4195a57300f5da3139dfbd36dc057d84b6035b0a95c39",
+      "private_dump_bytes": 13152,
+      "redacted_top_frames": [
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::clock::DiscreteBaseTimer::advance"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::clock::DiscreteTimer::advance"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::service::ExternalTimerService::timer"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::sim::ExternalTimerSet::serialize"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::engine::ExecutionEngine::step"
+        },
+        {
+          "module": "sl_sim.dll",
+          "symbol": "slsim::runtime::initializeExecutionEngine"
+        },
+        {
+          "module": "sl_sim.dll",
+          "symbol": "slsim::SimulationExecutionInterface::step"
+        },
+        {
+          "module": "sl_sim.dll",
+          "symbol": "slsim::SimulationInterfaceManager::erase"
+        }
+      ]
+    },
+    {
+      "campaign": "N3R2_v5_remaining_after_analysis_fix_20261017_131701_217a6723-7a8f-4170-b7b3-a969f00efcf6",
+      "case_id": "hot_R1p2_L0p8",
+      "pid": 51196,
+      "exit_code_hex": "0xc0000005",
+      "last_durable_phase": "observer_compile",
+      "record_sha256": "95859fccc5572721a55506ae1b98fba743d199979681ed74d67a87eb711d1226",
+      "dump_present": true,
+      "dump_minus_last_record_s": 12.198114156723022,
+      "pid_and_timestamp_proximity_match": true,
+      "private_dump_sha256": "dfb69b1858831e0884b63cf9dbf12b633f4edc62d51de661c1df4177cd4107ff",
+      "private_dump_bytes": 12034,
+      "redacted_top_frames": [
+        {
+          "module": "libmx.dll",
+          "symbol": "RootRecordPtr::~RootRecordPtr"
+        },
+        {
+          "module": "libmx.dll",
+          "symbol": "matrix::detail::noninlined::mx_array_api::mxAddRootContainer"
+        },
+        {
+          "module": "libmx.dll",
+          "symbol": "matrix::detail::noninlined::mx_array_api::mxSetCell"
+        },
+        {
+          "module": "libmwsimulink.dll",
+          "symbol": "BlockOpenPropertiesDialog"
+        },
+        {
+          "module": "libmwsimulink.dll",
+          "symbol": "BlockOpenPropertiesDialog"
+        },
+        {
+          "module": "libmwsimulink.dll",
+          "symbol": "BusAssignmentBlock::getDialogController"
+        },
+        {
+          "module": "sl_prm_engine.dll",
+          "symbol": "get_block_object_param"
+        },
+        {
+          "module": "sl_prm_engine.dll",
+          "symbol": "get_block_or_subsys_object_param"
+        }
+      ]
+    },
+    {
+      "campaign": "N3R2_v5_remaining_after_analysis_fix_20261017_131701_217a6723-7a8f-4170-b7b3-a969f00efcf6",
+      "case_id": "hot_R1p2_L0p8",
+      "pid": 67444,
+      "exit_code_hex": "0xc0000005",
+      "last_durable_phase": "install",
+      "record_sha256": "fe2a2fb3fbef802cb9c3bc4c6c96d67ca6e502774299c4d8449f152de6a01e1d",
+      "dump_present": true,
+      "dump_minus_last_record_s": 4.348927974700928,
+      "pid_and_timestamp_proximity_match": true,
+      "private_dump_sha256": "85281488d1387b84cfb7bb9d638e321fe856e5d070bada8e9ac6c2818fc1f831",
+      "private_dump_bytes": 19342,
+      "redacted_top_frames": [
+        {
+          "module": "mcos_impl.dll",
+          "symbol": "mwboost::archive::codecvt_null<wchar_t>::do_out"
+        },
+        {
+          "module": "mcos_impl.dll",
+          "symbol": "mwboost::archive::codecvt_null<wchar_t>::do_out"
+        },
+        {
+          "module": "mcos_impl.dll",
+          "symbol": "mwboost::archive::codecvt_null<wchar_t>::do_out"
+        },
+        {
+          "module": "mcos_impl.dll",
+          "symbol": "mwboost::archive::codecvt_null<wchar_t>::do_out"
+        },
+        {
+          "module": "mcos_impl.dll",
+          "symbol": "clearClasses"
+        },
+        {
+          "module": "mcos_impl.dll",
+          "symbol": "clearClasses"
+        },
+        {
+          "module": "mcos_impl.dll",
+          "symbol": "mwboost::serialization::singleton_module::unlock"
+        },
+        {
+          "module": "mcos_impl.dll",
+          "symbol": "clearClasses"
+        }
+      ]
+    },
+    {
+      "campaign": "N3R2_v8r1_remaining_missing_five_20261017_164519_6a942c13-97ea-48e5-83fb-ec71f431090b",
+      "case_id": "missing_five",
+      "pid": 44268,
+      "exit_code_hex": "0xc0000005",
+      "last_durable_phase": "install",
+      "record_sha256": "71499aad7469cfabc38226f50c14ef5c113a3a7cd528cc4a8c26b212f0ad0656",
+      "dump_present": true,
+      "dump_minus_last_record_s": 2.2647480964660645,
+      "pid_and_timestamp_proximity_match": true,
+      "private_dump_sha256": "0e38cc663e80edfd4e66d3eda2d3213d40eb6a93d4575076da155466765984cc",
+      "private_dump_bytes": 19666,
+      "redacted_top_frames": [
+        {
+          "module": "libmwir.dll",
+          "symbol": "MathWorks::ts::TypeSubstitution::TypeSubstitution"
+        },
+        {
+          "module": "libmwlxetypes.dll",
+          "symbol": "MathWorks::lxe::LxeTypesBase::InstantiateFunctionTypeScheme"
+        },
+        {
+          "module": "libmwlxetypes.dll",
+          "symbol": "MathWorks::lxe::LxeTypesBase::InstantiateFunctionTypeScheme"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "MathWorks::lxe::ClosedAbstraction::STUB_OFFSET"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "MathWorks::lxe::ClosedAbstraction::STUB_OFFSET"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "MathWorks::lxe::ClosedAbstraction::STUB_OFFSET"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "MathWorks::lxe::MatlabIrTreeList::offsetof_stale_flag"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "mwboost::archive::codecvt_null<wchar_t>::do_always_noconv"
+        }
+      ]
+    },
+    {
+      "campaign": "N3R2_v8r1_remaining_missing_five_20261017_164519_6a942c13-97ea-48e5-83fb-ec71f431090b",
+      "case_id": "missing_five",
+      "pid": 29096,
+      "exit_code_hex": "0xc0000005",
+      "last_durable_phase": "advance_same_initialized_graph",
+      "record_sha256": "d44ee7ac2bbcd997e5498a4f58b6047ea26cec2fe366d8d630ed163fd99c6d29",
+      "dump_present": true,
+      "dump_minus_last_record_s": 42.67294120788574,
+      "pid_and_timestamp_proximity_match": true,
+      "private_dump_sha256": "9a94dfbdf6432aaecf6f6a88d57a5340a6ae069cbc0b69efd1933ae39d263ce2",
+      "private_dump_bytes": 12666,
+      "redacted_top_frames": [
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::clock::DiscreteBaseTimer::advance"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::clock::DiscreteTimer::advance"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::service::ExternalTimerService::timer"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::sim::ExternalTimerSet::serialize"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::engine::ExecutionEngine::step"
+        },
+        {
+          "module": "sl_sim.dll",
+          "symbol": "slsim::runtime::initializeExecutionEngine"
+        },
+        {
+          "module": "sl_sim.dll",
+          "symbol": "slsim::SimulationExecutionInterface::step"
+        },
+        {
+          "module": "sl_sim.dll",
+          "symbol": "slsim::SimulationSnapshotManager::snapshotInterval"
+        }
+      ]
+    },
+    {
+      "campaign": "N3R2_v8r1_remaining_reset_one_20261017_164701_ae8aa825-0d31-4423-b871-eef102d57f09",
+      "case_id": "reset_one",
+      "pid": 51428,
+      "exit_code_hex": "0x80000003",
+      "last_durable_phase": "advance_same_initialized_graph",
+      "record_sha256": "7240d653609f235c2b8663211a74f8602b8aed82412e4e5a5da9f7a72916f396",
+      "dump_present": true,
+      "dump_minus_last_record_s": 39.6334011554718,
+      "pid_and_timestamp_proximity_match": true,
+      "private_dump_sha256": "02609bb9a24d43d3b90b829394508110c3a71a7b639a84943902a703684ed5e7",
+      "private_dump_bytes": 13130,
+      "redacted_top_frames": [
+        {
+          "module": "libmwsl_elem_blocks.dll",
+          "symbol": "mwboost::serialization::singleton_module::unlock"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::list::TypedExecBlocks::setInitializeSetDimsFcnListForOutput"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::method::ModelMethods::zeroCrossing"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::task::Task::validateTask"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::sim::SimulatorExternalsTable::restart"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::dispatcher::TaskDispatcher::dispatchTasks"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::sim::ExternalTimerSet::serialize"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::engine::ExecutionEngine::step"
+        }
+      ]
+    },
+    {
+      "campaign": "N3R2_v8r1_short_20261017_162814_c6e0244a-576c-4beb-9594-d644dfc04eec",
+      "case_id": "r1_short_logging_check",
+      "pid": 54040,
+      "exit_code_hex": "0x00000001",
+      "last_durable_phase": "completed",
+      "record_sha256": "d5aeda85143cb8be2d35e4115129bd433899aaddf4277b34d5699769cdc589f9",
+      "dump_present": false
+    },
+    {
+      "campaign": "N3R2_v9_remaining_missing_five_20261017_165348_f89d83fa-5219-4a43-9dbc-6da41560a524",
+      "case_id": "missing_five",
+      "pid": 52156,
+      "exit_code_hex": "0xc0000005",
+      "last_durable_phase": "install",
+      "record_sha256": "a1fd8c1f70288be8a397d04437d17e78cff809b0e90437de8046f902611f1843",
+      "dump_present": true,
+      "dump_minus_last_record_s": 0.897702693939209,
+      "pid_and_timestamp_proximity_match": true,
+      "private_dump_sha256": "b5c16ceb91566b0cae598f91fec66e846ed7a65f0623c4ec23deb78a9ea41084",
+      "private_dump_bytes": 19608,
+      "redacted_top_frames": [
+        {
+          "module": "m_lxe.dll",
+          "symbol": "MathWorks::lxe::FakeLxeDispatcherProxyForIrGen::SetStaticImportsForMatlabFunction"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "MathWorks::lxe::FakeLxeDispatcherProxyForIrGen::SetStaticImportsForMatlabFunction"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "MathWorks::lxe::FakeLxeDispatcherProxyForIrGen::SetStaticImportsForMatlabFunction"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "MathWorks::lxe::FakeLxeDispatcherProxyForIrGen::SetStaticImportsForMatlabFunction"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "MathWorks::lxe::FakeLxeDispatcherProxyForIrGen::SetStaticImportsForMatlabFunction"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "MathWorks::lxe::FakeLxeDispatcherProxyForIrGen::SetStaticImportsForMatlabFunction"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "RunSection::CorrectedFileInfo::getRemovedSections"
+        },
+        {
+          "module": "m_lxe.dll",
+          "symbol": "MathWorks::lxe::ErrorStack::WillSuppressErrorsInCpp"
+        }
+      ]
+    },
+    {
+      "campaign": "N3R2_v9_remaining_missing_five_20261017_165348_f89d83fa-5219-4a43-9dbc-6da41560a524",
+      "case_id": "missing_five",
+      "pid": 28504,
+      "exit_code_hex": "0xc0000005",
+      "last_durable_phase": "advance_same_initialized_graph",
+      "record_sha256": "ebce48971c81deef142631c81605d608643da8ecc945f8e9d39218fc158569e6",
+      "dump_present": false
+    },
+    {
+      "campaign": "N3R2_v9_remaining_reset_one_20261017_165813_772ed45a-2996-4e71-b38b-69e18e0f4de9",
+      "case_id": "reset_one",
+      "pid": 16424,
+      "exit_code_hex": "0xc0000005",
+      "last_durable_phase": "advance_same_initialized_graph",
+      "record_sha256": "a8be85b410d6b6c8658d5f1817fb727d5f8d23dbb4e3b95976ab1a938177edeb",
+      "dump_present": true,
+      "dump_minus_last_record_s": 413.1671211719513,
+      "pid_and_timestamp_proximity_match": true,
+      "private_dump_sha256": "1f429c25bcf80de630db7bce73014c50270c539a7e285f80d90ef3bc628d873a",
+      "private_dump_bytes": 13682,
+      "redacted_top_frames": [
+        {
+          "module": "SimulinkBlock.dll",
+          "symbol": "SLRootBlock::getGrPrmDesc"
+        },
+        {
+          "module": "libmwsl_elem_blocks.dll",
+          "symbol": "mwboost::serialization::singleton_module::unlock"
+        },
+        {
+          "module": "libmwsl_exec_cf.dll",
+          "symbol": "sl::exec::cf::elist::ExecSystem::InitExecSystemScheme"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::list::TypedExecBlocks::mergeJacobianBlocks"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::method::ModelMethods::zeroCrossing"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::method::ModelMethods::output"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::task::Task::runModelOutput"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::task::Task::validateTask"
+        }
+      ]
+    },
+    {
+      "campaign": "N3R2_v9_remaining_reset_one_20261017_165813_772ed45a-2996-4e71-b38b-69e18e0f4de9",
+      "case_id": "reset_one",
+      "pid": 20364,
+      "exit_code_hex": "0xc0000005",
+      "last_durable_phase": "advance_same_initialized_graph",
+      "record_sha256": "b4078601d5629e3159b8ed1650c7d6de9fa7baafb11451fe8388243843831cf0",
+      "dump_present": true,
+      "dump_minus_last_record_s": 366.5960443019867,
+      "pid_and_timestamp_proximity_match": true,
+      "private_dump_sha256": "e260543ac4b411cebd15be397d9696f0f9c3d5abe86bed65d31cc92dfa14b9db",
+      "private_dump_bytes": 13682,
+      "redacted_top_frames": [
+        {
+          "module": "SimulinkBlock.dll",
+          "symbol": "SLRootBlock::getGrPrmDesc"
+        },
+        {
+          "module": "libmwsl_elem_blocks.dll",
+          "symbol": "mwboost::serialization::singleton_module::unlock"
+        },
+        {
+          "module": "libmwsl_exec_cf.dll",
+          "symbol": "sl::exec::cf::elist::ExecSystem::InitExecSystemScheme"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::list::TypedExecBlocks::mergeJacobianBlocks"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::method::ModelMethods::zeroCrossing"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::method::ModelMethods::output"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::task::Task::runModelOutput"
+        },
+        {
+          "module": "libmwslexec_tldr.dll",
+          "symbol": "slexec::tldr::task::Task::validateTask"
+        }
+      ]
+    }
+  ],
+  "first_frame_modules": {
+    "libmx.dll": 2,
+    "SimulinkBlock.dll": 6,
+    "libmwslexec_runtime.dll": 6,
+    "m_lxe.dll": 3,
+    "MSVCP140.dll": 1,
+    "libmwir.dll": 2,
+    "libmwfl.dll": 1,
+    "mcos_impl.dll": 1,
+    "libmwsl_elem_blocks.dll": 1
+  },
+  "private_dump_matches_with_frames": 23,
+  "scope": "PID and timestamp proximity association of existing failures. No code/model run or original record modification. Whitelisted module basenames/C++ identifiers only; no raw dump text, addresses, license/session data, registers or console published. Exported symbols may be nearest names and cannot establish the exact failing source function.",
+  "native_root_cause_confirmed": false,
+  "hardware_failure_confirmed": false,
+  "R2_passed": false,
+  "formal_or_failed_short_restarted": false
+}

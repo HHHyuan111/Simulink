@@ -1,0 +1,270 @@
+{
+  "kind": "freewheel_continuous_inheritance",
+  "phase": "completed",
+  "all_passed": true,
+  "process_id": 23216,
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "normal_starts": 2,
+  "rapid_starts": 1,
+  "main_model_loaded": false,
+  "R2_passed": false,
+  "native_retries": 0,
+  "probe_sha256": "5397bf55eab485a4b2ce8b9cd854d58008c8abf86f253806e4ef67aec93655db",
+  "contract_sha256": "72ef7340393a9a91ac1ccd66c53e93c67382b59dc24eee29be5222e6851a3256",
+  "kernel_sha256": "b42eaf2a701d10124cb07c540de6628ce7671b550413b6c425dac25930236503",
+  "original_model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "embedded_kernel_exact": true,
+  "generation_folder": "D:\\simulink\\dev\\modern\\sensorless\\.build\\freewheel_inheritance\\f5fc694f-53e8-48a4-899f-68f5a24d67dd",
+  "compiled_sample_times": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "normal_comparison": {
+    "logs": 13,
+    "details": {
+      "fw_diagnostic1": {
+        "Time_equal": true,
+        "Data_equal": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "finite": true,
+        "native_rows": true
+      },
+      "fw_diagnostic2": {
+        "Time_equal": true,
+        "Data_equal": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "finite": true,
+        "native_rows": true
+      },
+      "fw_diagnostic3": {
+        "Time_equal": true,
+        "Data_equal": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "finite": true,
+        "native_rows": true
+      },
+      "fw_gates": {
+        "Time_equal": true,
+        "Data_equal": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "finite": true,
+        "native_rows": true
+      },
+      "fw_integral1": {
+        "Time_equal": true,
+        "Data_equal": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "finite": true,
+        "native_rows": true
+      },
+      "fw_integral2": {
+        "Time_equal": true,
+        "Data_equal": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "finite": true,
+        "native_rows": true
+      },
+      "fw_integral3": {
+        "Time_equal": true,
+        "Data_equal": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "finite": true,
+        "native_rows": true
+      },
+      "fw_phase1": {
+        "Time_equal": true,
+        "Data_equal": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "finite": true,
+        "native_rows": true
+      },
+      "fw_phase2": {
+        "Time_equal": true,
+        "Data_equal": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "finite": true,
+        "native_rows": true
+      },
+      "fw_phase3": {
+        "Time_equal": true,
+        "Data_equal": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "finite": true,
+        "native_rows": true
+      },
+      "fw_state1": {
+        "Time_equal": true,
+        "Data_equal": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "finite": true,
+        "native_rows": true
+      },
+      "fw_state2": {
+        "Time_equal": true,
+        "Data_equal": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "finite": true,
+        "native_rows": true
+      },
+      "fw_state3": {
+        "Time_equal": true,
+        "Data_equal": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "finite": true,
+        "native_rows": true
+      }
+    },
+    "all_passed": true
+  },
+  "rapid_comparison": {
+    "logs": 13,
+    "details": {
+      "fw_diagnostic1": {
+        "Time_equal": true,
+        "Data_equal": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "finite": true,
+        "native_rows": true
+      },
+      "fw_diagnostic2": {
+        "Time_equal": true,
+        "Data_equal": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "finite": true,
+        "native_rows": true
+      },
+      "fw_diagnostic3": {
+        "Time_equal": true,
+        "Data_equal": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "finite": true,
+        "native_rows": true
+      },
+      "fw_gates": {
+        "Time_equal": true,
+        "Data_equal": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "finite": true,
+        "native_rows": true
+      },
+      "fw_integral1": {
+        "Time_equal": true,
+        "Data_equal": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "finite": true,
+        "native_rows": true
+      },
+      "fw_integral2": {
+        "Time_equal": true,
+        "Data_equal": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "finite": true,
+        "native_rows": true
+      },
+      "fw_integral3": {
+        "Time_equal": true,
+        "Data_equal": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "finite": true,
+        "native_rows": true
+      },
+      "fw_phase1": {
+        "Time_equal": true,
+        "Data_equal": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "finite": true,
+        "native_rows": true
+      },
+      "fw_phase2": {
+        "Time_equal": true,
+        "Data_equal": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "finite": true,
+        "native_rows": true
+      },
+      "fw_phase3": {
+        "Time_equal": true,
+        "Data_equal": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "finite": true,
+        "native_rows": true
+      },
+      "fw_state1": {
+        "Time_equal": true,
+        "Data_equal": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "finite": true,
+        "native_rows": true
+      },
+      "fw_state2": {
+        "Time_equal": true,
+        "Data_equal": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "finite": true,
+        "native_rows": true
+      },
+      "fw_state3": {
+        "Time_equal": true,
+        "Data_equal": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "finite": true,
+        "native_rows": true
+      }
+    },
+    "all_passed": true
+  },
+  "files_unchanged": true,
+  "raw_files": {
+    "continuous_raw": "a6e989a8609cb56988f4c743928b850843415e6d2d72af41d864c1e659a34160",
+    "inherited_raw": "ef6d205eb8dc84dc007b79497cfd21c8db19b041e5c44246c53ef2a763a34c94",
+    "rapid_raw": "5c4877363b25e733071715e81e8896bb91de49d31d80ace572c72259023f2a64"
+  }
+}

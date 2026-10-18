@@ -1,0 +1,81 @@
+{
+  "original_blocks_preserved": true,
+  "original_algorithms_preserved": true,
+  "original_regions_preserved": true,
+  "declared_interface_not_runtime_compiled_port_query": true,
+  "normal_reference": true,
+  "nine_inputs_no_feedback_output": true,
+  "inputs": [
+    {
+      "tag": "SLessAppliedThreshold",
+      "dimensions": 3,
+      "data_type": "double",
+      "width_matches": true
+    },
+    {
+      "tag": "ObsCarrier",
+      "dimensions": 1,
+      "data_type": "double",
+      "width_matches": true
+    },
+    {
+      "tag": "UDC",
+      "dimensions": 1,
+      "data_type": "double",
+      "width_matches": true
+    },
+    {
+      "tag": "Iabc_meas",
+      "dimensions": [
+        3,
+        1
+      ],
+      "data_type": "double",
+      "width_matches": true
+    },
+    {
+      "tag": "SLessV2ADC",
+      "dimensions": [
+        3,
+        1
+      ],
+      "data_type": "double",
+      "width_matches": true
+    },
+    {
+      "tag": "ObsADCTiming",
+      "dimensions": [
+        1,
+        15
+      ],
+      "data_type": "double",
+      "width_matches": true
+    },
+    {
+      "tag": "ObsPWMTiming",
+      "dimensions": [
+        1,
+        12
+      ],
+      "data_type": "double",
+      "width_matches": true
+    },
+    {
+      "tag": "theta_e",
+      "dimensions": 1,
+      "data_type": "double",
+      "width_matches": true
+    },
+    {
+      "tag": "speed",
+      "dimensions": 1,
+      "data_type": "double",
+      "width_matches": true
+    }
+  ],
+  "truth_only_evaluation": true,
+  "clone_catalog_exact": true,
+  "clone_charts_exact": true,
+  "clone_workspace_exact": true,
+  "passed": true
+}

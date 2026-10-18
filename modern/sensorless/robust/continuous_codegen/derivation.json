@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "inputs_from_archived_builder": {
+    "build_sensorless_r2_staged.m": "c6ab33528c5aa66b5cec99795e260983c5de18cbd02eeaa6339192b1bd38ae12",
+    "execute_sensorless_r2_staged.m": "0b44159ee70721929d53821e5f02b7053110c7622697c7ec8782595e0c2b81d2"
+  },
+  "outputs_sha256": {
+    "build_sensorless_r2_continuous.m": "7753423e063ffcb3dab3158c2d688c77051970e2cbd88998f325cc80afae47e7",
+    "execute_sensorless_r2_continuous.m": "4f36b908b22ac0c3fe763ab372bc8e517d92ba85ffec6ade7e76569bc5f37830"
+  },
+  "contract": "contracts/nonideal_r2_continuous_codegen_adaptation.json",
+  "changes": [
+    "New entry names and snapshot/path/version binding.",
+    "Owned bridge activation adaptation, independent verification, explicit continuous-rate compile and actual metadata restoration.",
+    "Complete parent-directory creation and fresh execution-only flags before loading.",
+    "All existing case stimulus, observer/frontend/math, save/archive/endpoint/metric statements retained."
+  ]
+}

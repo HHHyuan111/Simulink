@@ -1,0 +1,52 @@
+{
+  "kind": "single_reference_logging",
+  "phase": "completed",
+  "all_passed": true,
+  "process_id": 52952,
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "normal_starts": 1,
+  "rapid_starts": 1,
+  "R2_passed": false,
+  "main_model_loaded": false,
+  "probe_sha256": "4f0aca883b9197a80abb1ffa5439555b14f97ab7a07f98d4ae68177736182178",
+  "contract_sha256": "8496d253dbb97276e66c5974f067c80c74c5a299b5a817625d9ef4f294bc41ad",
+  "generation_folder": "D:\\simulink\\dev\\modern\\sensorless\\.build\\single_reference_logging\\fd2a0d39-3d75-48f0-9477-927ce8d31bd3",
+  "child_file_sha256": "c0171bf5a201d48a669557ef07a53604536ea69b7edff5a3600d1dc33af02645",
+  "parent_file_sha256": "02be8fc249efd72d2eb8c539ad61647b7e1c986fd07fc8a1b2ec862e1e69c5d5",
+  "actual_references": 1,
+  "allowed_references": "Single",
+  "comparison": {
+    "logs": 3,
+    "details": {
+      "child_jeos": {
+        "Time_equal": true,
+        "Data_equal": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "finite": true
+      },
+      "child_native": {
+        "Time_equal": true,
+        "Data_equal": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "finite": true
+      },
+      "parent_integral": {
+        "Time_equal": true,
+        "Data_equal": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "finite": true
+      }
+    },
+    "native_rows": true,
+    "native_ticks": true,
+    "JEOS_rows": true,
+    "JEOS_ticks": true,
+    "gain_exact": true,
+    "all_passed": true
+  },
+  "normal_raw_sha256": "1488bde5757263380401b5988e1bab5532d6573cac2c8acc10313b5915fc7fd8",
+  "rapid_raw_sha256": "a88a7a41e2d93e8ea82a37ce1dbf729a25e734f30919f954fc1859b6dbb3ebe4"
+}

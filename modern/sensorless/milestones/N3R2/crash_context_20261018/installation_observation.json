@@ -1,0 +1,106 @@
+{
+  "kind": "read_only_targeted_installation_observation",
+  "captured_at": "2026-10-18T17:53:03.4036225+08:00",
+  "generator_sha256": "ff148aa76e42a0a8c53c7c0c102d0e4ecb7fa99919dfe1e020203b64ca524b43",
+  "version_info_sha256": "2655ee3278419cbc718332551040582fc5440ac37f701033a7bcb9e876e2e784",
+  "os_caption": "Microsoft Windows 11 家庭版 中文版",
+  "os_version": "10.0.26200",
+  "os_build": "26200",
+  "bios_version": "P5CN22WW",
+  "bios_release_date": "2024-05-13T08:00:00.0000000+08:00",
+  "binaries": [
+    {
+      "name": "m_lxe.dll",
+      "path": "D:\\DevTools\\MATLAB\\R2026a\\bin\\win64\\m_lxe.dll",
+      "observed_loaded_gui_path": "D:\\DevTools\\MATLAB\\R2026a\\bin\\win64\\m_lxe.dll",
+      "signature_status": "Valid",
+      "sha256": "07d94e886239685d9532f083edfedd71c912f0f7dbc7882dabc5664a578297d7",
+      "file_version": null
+    },
+    {
+      "name": "libmx.dll",
+      "path": "D:\\DevTools\\MATLAB\\R2026a\\bin\\win64\\libmx.dll",
+      "observed_loaded_gui_path": "D:\\DevTools\\MATLAB\\R2026a\\bin\\win64\\libmx.dll",
+      "signature_status": "Valid",
+      "sha256": "8f1fc8d6988c15f7f3389e2b39fcdacf3e056aa320d2b9307f6bb0a4ea3cd3fa",
+      "file_version": null
+    },
+    {
+      "name": "SimulinkBlock.dll",
+      "path": "D:\\DevTools\\MATLAB\\R2026a\\bin\\win64\\SimulinkBlock.dll",
+      "observed_loaded_gui_path": "D:\\DevTools\\MATLAB\\R2026a\\bin\\win64\\SimulinkBlock.dll",
+      "signature_status": "Valid",
+      "sha256": "1768a8632393c074375f0cc9e523100da69f2f853c98d78a2b1a13d66d971b7c",
+      "file_version": null
+    },
+    {
+      "name": "libmwslexec_runtime.dll",
+      "path": "D:\\DevTools\\MATLAB\\R2026a\\bin\\win64\\libmwslexec_runtime.dll",
+      "observed_loaded_gui_path": "D:\\DevTools\\MATLAB\\R2026a\\bin\\win64\\libmwslexec_runtime.dll",
+      "signature_status": "Valid",
+      "sha256": "c78f6722f65a3e103189f49c861679852c389722f1a7b89f3d56f01186828985",
+      "file_version": null
+    },
+    {
+      "name": "MSVCP140.dll",
+      "path": "D:\\DevTools\\MATLAB\\R2026a\\bin\\win64\\MSVCP140.dll",
+      "observed_loaded_gui_path": "D:\\DevTools\\MATLAB\\R2026a\\bin\\win64\\MSVCP140.dll",
+      "signature_status": "Valid",
+      "sha256": "846bffc3f668519a530749cf3dd90c24452e60bf455848bbd77c3b4ef492429d",
+      "file_version": "14.44.35211.0"
+    },
+    {
+      "name": "libmwir.dll",
+      "path": "D:\\DevTools\\MATLAB\\R2026a\\bin\\win64\\libmwir.dll",
+      "observed_loaded_gui_path": "D:\\DevTools\\MATLAB\\R2026a\\bin\\win64\\libmwir.dll",
+      "signature_status": "Valid",
+      "sha256": "ec15fb51c0769a32671ccdd22b95844049b754e1a24f84e8d5075565a4ccb657",
+      "file_version": null
+    },
+    {
+      "name": "libmwfl.dll",
+      "path": "D:\\DevTools\\MATLAB\\R2026a\\bin\\win64\\libmwfl.dll",
+      "observed_loaded_gui_path": "D:\\DevTools\\MATLAB\\R2026a\\bin\\win64\\libmwfl.dll",
+      "signature_status": "Valid",
+      "sha256": "d74010a06ac707e12cade03afd4075da052076d0a7fdcb91875553f5ea8cb904",
+      "file_version": null
+    },
+    {
+      "name": "mcos_impl.dll",
+      "path": "D:\\DevTools\\MATLAB\\R2026a\\bin\\win64\\mcos_impl.dll",
+      "observed_loaded_gui_path": "D:\\DevTools\\MATLAB\\R2026a\\bin\\win64\\mcos_impl.dll",
+      "signature_status": "Valid",
+      "sha256": "7dfa650ddf4aa7100f16d04b85b2f08a4018e1ddf1700fe651d7475428b78d89",
+      "file_version": null
+    },
+    {
+      "name": "libmwsl_elem_blocks.dll",
+      "path": "D:\\DevTools\\MATLAB\\R2026a\\bin\\win64\\libmwsl_elem_blocks.dll",
+      "observed_loaded_gui_path": "D:\\DevTools\\MATLAB\\R2026a\\bin\\win64\\libmwsl_elem_blocks.dll",
+      "signature_status": "Valid",
+      "sha256": "fe5fd6d23435e43838bb3f62f7002948181f1595f06e90df9322334a3e296166",
+      "file_version": null
+    },
+    {
+      "name": "icuin74.dll",
+      "path": "D:\\DevTools\\MATLAB\\R2026a\\bin\\win64\\icuin74.dll",
+      "observed_loaded_gui_path": "D:\\DevTools\\MATLAB\\R2026a\\bin\\win64\\icuin74.dll",
+      "signature_status": "Valid",
+      "sha256": "32e57b3c7e5c933849dcc36e3414440b69069febf0f253e782124bc0f308a5b3",
+      "file_version": "74, 2, 0, 0"
+    },
+    {
+      "name": "libmwfixedpointcore.dll",
+      "path": "D:\\DevTools\\MATLAB\\R2026a\\bin\\win64\\libmwfixedpointcore.dll",
+      "observed_loaded_gui_path": "D:\\DevTools\\MATLAB\\R2026a\\bin\\win64\\libmwfixedpointcore.dll",
+      "signature_status": "Valid",
+      "sha256": "6f2dfac095a7bb97fc022f571cff89e0e7bbccadc8935eee7f81f115ec0ba2b3",
+      "file_version": null
+    }
+  ],
+  "all_target_signatures_valid": true,
+  "host_settings_changed": false,
+  "gui_modified": false,
+  "root_cause_confirmed": false,
+  "interpretation": "Target file signatures/provenance only. Not a complete installation integrity or dependency-version audit, not a diagnosis of hardware or runtime correctness. No repair, reinstall, BIOS, registry or environment mutation."
+}

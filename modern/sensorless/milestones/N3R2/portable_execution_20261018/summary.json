@@ -1,0 +1,69 @@
+{
+  "captured_at": "2026-10-18T18:20:29.271526+08:00",
+  "analysis_only": true,
+  "simulation_reexecuted_by_curator": false,
+  "portable_reopen_passed": true,
+  "workspace_count_parent_and_child": 86,
+  "persistent_backup_verified": true,
+  "staged_builder": {
+    "process_id": 58472,
+    "record_sha256": "af4c738db12fbe4029e9be18ac30f1ceeee4b8ec7bce290c986ccee86feff7eb",
+    "handoff_sha256": "8f2acccc070a2bab63a131a02cd4f0ec5e492c3ed858ac500fca5ec9215b94e5",
+    "parent_file": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_staged_short_once\\build\\parent\\PMSM_FOC_R2026a.slx",
+    "parent_sha256": "b043e4fc5b0fa5261f20fe0ca35627e55c5efedf0636ec87f56432a379697d5d",
+    "child_file": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_staged_short_once\\build\\model\\sr2_4f36cb66.slx",
+    "child_sha256": "e423ee8d3e23ef921aa3070da5fd075f25f3dec94582e3347868c499dfe2c55c",
+    "simulation_starts": 0,
+    "restoration_passed": true
+  },
+  "retained_preload_failure_status": "stopped_execution_failure",
+  "corrected_executor_status": "stopped_execution_failure",
+  "last_durable_phase": "build_generated_target_once",
+  "simulation_starts_requested": 0,
+  "continuous_bridge_codegen_incompatibility_observed": true,
+  "build_incompatibility_block": "Universal Bridge/\u7eed\u6d41",
+  "strict96_short_passed": false,
+  "R2_passed": false,
+  "native_root_cause_confirmed": false,
+  "inherited_builder_flag_note": "record.callbacks_restored and saved_exports_unchanged belong to builder; executor proof uses report and record.callback_restored.",
+  "formal_candidate_still_closed_at_passed_cases": 1,
+  "formal_total_cases": 14,
+  "published": [
+    {
+      "path": "handoff/manifest.json",
+      "sha256": "cf94c74823f76d036c4f99d9188f8fac047b4adb1b09d98d640fd45fa60181b4"
+    },
+    {
+      "path": "handoff/reopen_report.json",
+      "sha256": "84f35c0a2521148e3839981a465b5a521dcd42174de3bdc050c803696b400786"
+    },
+    {
+      "path": "handoff/graph.json",
+      "sha256": "13e5d8ebbedc0af5c19d3e7fa795c8180a11df60cde2d2fb88fe3307bfd63b0d"
+    },
+    {
+      "path": "handoff/build_provenance.json",
+      "sha256": "18b45bd27cef6d3d969d5e893859e739461603d1d58be12da70e4cf5be910514"
+    },
+    {
+      "path": "staged/retained_preload_failure.json",
+      "sha256": "0cfbf11b8c94b421224714d5acc6af51b265c8053f38dd29a795f979cea80234"
+    },
+    {
+      "path": "staged/preload_repair_derivation.json",
+      "sha256": "31ce6228240426835887390fb2410895ce13ae0eb7b3bcca2cc1fc8c4390531e"
+    },
+    {
+      "path": "staged/corrected_campaign.json",
+      "sha256": "9b56dcfb7e3010f4bda4556459bd774ba92b6430f498b3ecb8769af993fef5b1"
+    },
+    {
+      "path": "staged/execution_report.json",
+      "sha256": "882b5dc5e72f4860dda7e0d084440346d5b1ea84e0c77872f3b3241588b201ed"
+    },
+    {
+      "path": "staged/graph.json",
+      "sha256": "13e5d8ebbedc0af5c19d3e7fa795c8180a11df60cde2d2fb88fe3307bfd63b0d"
+    }
+  ]
+}

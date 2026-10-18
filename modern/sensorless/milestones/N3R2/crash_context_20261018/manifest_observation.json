@@ -1,0 +1,144 @@
+{
+  "captured_at": "2026-10-18T17:54:18.134555+08:00",
+  "read_only": true,
+  "generator_sha256": "9b056b32c02f5bffd775f9c84b5e4f71b27cabc4aab36c6e3e8714e85d2282c3",
+  "matched_components": [
+    {
+      "manifest": "appdata/files/fixedpoint_core_win64 1785419085_manifest.json",
+      "manifest_sha256": "4e109e0919de5e690377035ed6552b996cd95b14c9267fd22dddef18f6c28798",
+      "target_entries": [
+        "bin\\win64\\libmwfixedpointcore.dll"
+      ],
+      "declared_entries": 12,
+      "missing_paths": [],
+      "outside_root_entries": []
+    },
+    {
+      "manifest": "appdata/files/mcos_impl_win64 1783557584_manifest.json",
+      "manifest_sha256": "a7148df7169d1a848167b17e27327ed0ffac69876ab796026d68024da0d8042d",
+      "target_entries": [
+        "bin\\win64\\mcos_impl.dll"
+      ],
+      "declared_entries": 12,
+      "missing_paths": [],
+      "outside_root_entries": []
+    },
+    {
+      "manifest": "appdata/files/msvc14x_runtime_core_win64 1763638701_manifest.json",
+      "manifest_sha256": "7d6c18adc23cb03d41e364b9056027ce8cfef3e875b8bbb4764f6216a00167a4",
+      "target_entries": [
+        "bin\\win64\\msvcp140.dll"
+      ],
+      "declared_entries": 12,
+      "missing_paths": [],
+      "outside_root_entries": []
+    },
+    {
+      "manifest": "appdata/files/shared_simulink_block_win64 1785424212_manifest.json",
+      "manifest_sha256": "80d0d2aaa29760d688da4e064baa465fd63de11949d07ae14af33caf6649f160",
+      "target_entries": [
+        "bin\\win64\\SimulinkBlock.dll"
+      ],
+      "declared_entries": 15,
+      "missing_paths": [],
+      "outside_root_entries": []
+    },
+    {
+      "manifest": "appdata/files/sl3d_core_win64 1785473205_manifest.json",
+      "manifest_sha256": "3cdb561f0e6d680564565fef9bb73c3884d195c4da21106c90a561806aa315a8",
+      "target_entries": [
+        "toolbox\\sl3d\\orbisnap\\bin\\win64\\msvcp140.dll",
+        "toolbox\\sl3d\\orbisnap\\bin\\win64\\icuin74.dll"
+      ],
+      "declared_entries": 32,
+      "missing_paths": [],
+      "outside_root_entries": []
+    },
+    {
+      "manifest": "appdata/files/slexec_runtime_win64 1777062824_manifest.json",
+      "manifest_sha256": "052c4bf307c748ad2d6803f143f368173184e21610dea0cdf17965fadd74f49f",
+      "target_entries": [
+        "bin\\win64\\libmwslexec_runtime.dll"
+      ],
+      "declared_entries": 3,
+      "missing_paths": [],
+      "outside_root_entries": []
+    },
+    {
+      "manifest": "appdata/files/sl_elem_blocks_win64 1784860235_manifest.json",
+      "manifest_sha256": "956ff0bff2e6a77681176bcff068e9008db3510b8d87bbc39927520795b39fc9",
+      "target_entries": [
+        "bin\\win64\\libmwsl_elem_blocks.dll"
+      ],
+      "declared_entries": 8,
+      "missing_paths": [],
+      "outside_root_entries": []
+    },
+    {
+      "manifest": "appdata/files/3p/icu_win64 1763638476_manifest.json",
+      "manifest_sha256": "dca9dd425278aedde75c8b446a7a885625897f3d5c15e3a15a6d38f359c1d1ec",
+      "target_entries": [
+        "bin\\win64\\icuin74.dll"
+      ],
+      "declared_entries": 7,
+      "missing_paths": [],
+      "outside_root_entries": []
+    },
+    {
+      "manifest": "appdata/files/3p/jre_win64 1763638134_manifest.json",
+      "manifest_sha256": "782a0e9345f1861bdeaae24d6e556980da6b64fcfafbcd813c652fc504d78fa7",
+      "target_entries": [
+        "sys\\java\\jre\\win64\\jre\\bin\\msvcp140.dll"
+      ],
+      "declared_entries": 242,
+      "missing_paths": [],
+      "outside_root_entries": []
+    },
+    {
+      "manifest": "appdata/files/foundation/core_win64 1783548905_manifest.json",
+      "manifest_sha256": "fd98f9f44a29ac7a35c35f578a0bb8fb6d34876d91a6cb1ec3fe12f883757011",
+      "target_entries": [
+        "bin\\win64\\libmwfl.dll"
+      ],
+      "declared_entries": 4,
+      "missing_paths": [],
+      "outside_root_entries": []
+    },
+    {
+      "manifest": "appdata/files/foundation/matrix_win64 1783552740_manifest.json",
+      "manifest_sha256": "e24039b3036a3e3987e088101580b3c8bcd01d2c6ea5317cf2685878181de604",
+      "target_entries": [
+        "bin\\win64\\libmx.dll"
+      ],
+      "declared_entries": 13,
+      "missing_paths": [],
+      "outside_root_entries": []
+    },
+    {
+      "manifest": "appdata/files/lxe/lxe_win64 1783562783_manifest.json",
+      "manifest_sha256": "072f8db2922b8e8ee524319f970082ba3a572f25c42d4add3282b2a294eddf78",
+      "target_entries": [
+        "bin\\win64\\m_lxe.dll",
+        "bin\\win64\\libmwir.dll"
+      ],
+      "declared_entries": 39,
+      "missing_paths": [],
+      "outside_root_entries": []
+    },
+    {
+      "manifest": "appdata/files/polyspace/packaging_wrappers_win64 1764823369_manifest.json",
+      "manifest_sha256": "a1931a1a2d5f22adcc8fade8b89efac690cfa79abfbc4800e4e2b251f53520b7",
+      "target_entries": [
+        "polyspace\\bin\\win64\\msvcp140.dll",
+        "polyspace\\bin\\msvcp140.dll"
+      ],
+      "declared_entries": 13,
+      "missing_paths": [],
+      "outside_root_entries": []
+    }
+  ],
+  "missing_path_count": 0,
+  "scope": "Selected component manifest paths present/absent only. Manifests contain path lists without expected file content hashes. This cannot prove a clean installation or rule out incompatible binaries, software defects or transient hardware/runtime issues.",
+  "settings_changed": false,
+  "root_cause_confirmed": false
+}

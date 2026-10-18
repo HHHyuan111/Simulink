@@ -1,0 +1,23 @@
+{
+  "prepared_at": "2026-10-18T09:40:41.109085+00:00",
+  "count": 65536,
+  "steps": 32,
+  "bytes": 262144,
+  "sha256": "d1661688ce4c53a8b319d703bcbe8e130a4be36b7b0960622899f6f0114afe7f",
+  "fnv1a32_hex": "2bb977b2",
+  "independent_closed_form_all_seeds_equal": true,
+  "closed_form_alpha": 666245249,
+  "closed_form_beta": 95141024,
+  "samples": {
+    "0": 95141024,
+    "1": 761386273,
+    "2": 1427631522,
+    "12345": 30368089,
+    "65535": 4134970399
+  },
+  "max_double_intermediate_less_than_2p53": true,
+  "generator_sha256": "2e157ae5643e7bf28efcb4f4f759c113a3428629842b067dda2c7ab2c67ce502",
+  "contract_sha256": "0830616b6e96ed3fcc01f4238952232b4ce868dbd495661a72b6368746076405",
+  "simulation_starts": 0,
+  "R2_passed": false
+}

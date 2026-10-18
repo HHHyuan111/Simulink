@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "node": "N3R2",
+  "execution_version": "continuous_inherited_codegen_adapter",
+  "campaign_type": "development_continuous_codegen_strict_short",
+  "status": "stopped_execution_failure",
+  "R2_passed": false,
+  "simulation_retries": 0,
+  "jobs": [
+    {
+      "stage": "build",
+      "case_id": "r1_short_logging_check",
+      "status": "passed",
+      "exit_code": 0,
+      "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_continuous_codegen_short_once\\build",
+      "attempts": [
+        {
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_continuous_codegen_short_once\\build_private_stderr.log",
+          "exit_code": 0,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_continuous_codegen_short_once\\build",
+          "native_failure": false,
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_continuous_codegen_short_once\\build_private_stdout.log"
+        }
+      ],
+      "started_at": "2026-10-18T10:23:57.9537673Z"
+    },
+    {
+      "stage": "execute",
+      "case_id": "r1_short_logging_check",
+      "status": "exited",
+      "exit_code": 1,
+      "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_continuous_codegen_short_once\\r1_short_logging_check_attempt_1",
+      "attempts": [
+        {
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_continuous_codegen_short_once\\execute_private_stderr.log",
+          "exit_code": 1,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_continuous_codegen_short_once\\r1_short_logging_check_attempt_1",
+          "native_failure": false,
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_continuous_codegen_short_once\\execute_private_stdout.log"
+        }
+      ],
+      "started_at": "2026-10-18T10:24:28.5821758Z"
+    }
+  ]
+}

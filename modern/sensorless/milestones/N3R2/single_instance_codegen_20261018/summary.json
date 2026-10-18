@@ -1,0 +1,33 @@
+{
+  "captured_at": "2026-10-18T18:29:59.358861+08:00",
+  "analysis_only": true,
+  "simulation_reexecuted_by_curator": false,
+  "component_continuous_normal_equals_inherited_normal": true,
+  "component_inherited_normal_equals_rapid": true,
+  "component_logs": 13,
+  "native_rows_each": 21601,
+  "both_compiled_bridge_rates_continuous": true,
+  "strict96_main_short_passed": false,
+  "R2_passed": false,
+  "native_root_cause_confirmed": false,
+  "main_qualification_published": false,
+  "single_reference_component_exact3_logs_passed": true,
+  "published": [
+    {
+      "path": "component/report.json",
+      "sha256": "8f459b4e284bfb7df2a5fc1976b7096547414dd19b4030cd6486706ab9d93b27"
+    },
+    {
+      "path": "component/launch.json",
+      "sha256": "08b030b3baca7c4bf5d96917f9ffff193f7c63b32b6398b223db749b81230d6d"
+    },
+    {
+      "path": "single_reference_component/report.json",
+      "sha256": "34e5adde87278830c7c6c02db5cc8197697359a56a88ad92339acd348915d5d4"
+    },
+    {
+      "path": "single_reference_component/launch.json",
+      "sha256": "6e5fb44205713f9d19c5844ed76351b37fb733d83e73a360c5f0281e2db1c0de"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "kind": "single_reference_logging",
+  "status": "completed_passed",
+  "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_single_reference_logging_once",
+  "started_at": "2026-10-18T10:27:09.2273279Z",
+  "exit_code": 0,
+  "native_retries": 0,
+  "probe_sha256": "4f0aca883b9197a80abb1ffa5439555b14f97ab7a07f98d4ae68177736182178",
+  "R2_passed": false
+}

@@ -1,0 +1,10 @@
+{
+  "kind": "component_continuous_inheritance",
+  "status": "completed_passed",
+  "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_freewheel_inheritance_once",
+  "started_at": "2026-10-18T10:19:52.3759394Z",
+  "exit_code": 0,
+  "native_retries": 0,
+  "probe_sha256": "5397bf55eab485a4b2ce8b9cd854d58008c8abf86f253806e4ef67aec93655db",
+  "R2_passed": false
+}

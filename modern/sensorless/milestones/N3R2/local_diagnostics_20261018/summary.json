@@ -1,0 +1,73 @@
+{
+  "captured_at": "2026-10-18T18:02:14.944384+08:00",
+  "analysis_only": true,
+  "simulation_reexecuted": false,
+  "native_runtime": {
+    "cycles": 100000,
+    "elapsed_s": 59.844,
+    "all_bytes_equal": true,
+    "duration_criterion_met": false,
+    "original_all_passed": false
+  },
+  "matlab_runtime": {
+    "cycles": 427,
+    "elapsed_s": 60.0868998,
+    "all_bytes_equal": true,
+    "first_process_passed": true
+  },
+  "original_two_stage_protocol_incomplete": true,
+  "stopped_lifecycle_completed_cycles": 20,
+  "stopped_lifecycle_native_failure_reproduced": false,
+  "workspace_persistence_gap_confirmed": true,
+  "model_file_storage_control_passed": true,
+  "native_root_cause_confirmed": false,
+  "hardware_health_established": false,
+  "R2_passed": false,
+  "formal_or_failed_short_restarted": false,
+  "published": [
+    {
+      "path": "runtime/oracle.json",
+      "sha256": "c472983bfe58fc19fd701d6619dd549d246564802bc1e7b65ddbb15efffbf04c"
+    },
+    {
+      "path": "runtime/launch.json",
+      "sha256": "a10bc08fcd06232e47c29c2e3f69d903ecba12d82ad7c7407d8117af53a94a4b"
+    },
+    {
+      "path": "runtime/native_result.json",
+      "sha256": "739b5f1c79cabf01ebd7fb73563ac5c2632454c100da1cdc0d5cf6059528b034"
+    },
+    {
+      "path": "runtime/native_processor_histogram.json",
+      "sha256": "730f60a43b9bca9368cf2f04cd815b017e15d4e0f2a8d4457e27544e00c13e64"
+    },
+    {
+      "path": "runtime/matlab_result.json",
+      "sha256": "0ca063f7ccbc8cc16861920a846aeab04bab0f35981bf5d6654c3e2778c4699c"
+    },
+    {
+      "path": "runtime/matlab_first_launch.json",
+      "sha256": "2077edff76c91cc88ec4fa769674915bfebd77b5f9fe04639c3425a42dafdb68"
+    },
+    {
+      "path": "stopped_lifecycle/report.json",
+      "sha256": "5065698062254d67b18f193a313a104a288eb19753452a9fcbd8371de8551a28"
+    },
+    {
+      "path": "stopped_lifecycle/edges.jsonl",
+      "sha256": "752d5f56cf1f3ca978ce2a43fb836e59b0504d12f8d8b59b4167d49e1c4efbb7"
+    },
+    {
+      "path": "stopped_lifecycle/launch.json",
+      "sha256": "ffdfc91b3d698071062351eb9381c1c96eee409471d34648cc88ec27cceaff16"
+    },
+    {
+      "path": "workspace_persistence/report.json",
+      "sha256": "3ce250b5e3f9120c3ffaf20370db3fd5b8744e58d9dc74b2afb4178f42f72909"
+    },
+    {
+      "path": "workspace_persistence/launch.json",
+      "sha256": "423c9b39e47a8cd6ba8b87e8503ca42ebbc65306446a00ba1aa94b6f07246ce8"
+    }
+  ]
+}

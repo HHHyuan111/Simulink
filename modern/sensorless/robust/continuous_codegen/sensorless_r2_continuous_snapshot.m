@@ -1,0 +1,18 @@
+function record=sensorless_r2_continuous_snapshot(folder)
+here=fileparts(mfilename('fullpath'));base=fileparts(fileparts(here));record=sensorless_r2_staged_snapshot(folder);
+record.execution_version='continuous_inherited_codegen_adapter';
+for file=dir(fullfile(here,'*.m'))'
+ relative=['robust/continuous_codegen/' file.name];target=fullfile(folder,'source',relative);
+ if ~isfolder(fileparts(target)),mkdir(fileparts(target));end
+ copyfile(fullfile(file.folder,file.name),target);record.source_files(end+1)=struct('path',relative,'sha256',teach_hash(fullfile(file.folder,file.name)));
+end
+for relative={'contracts/nonideal_r2_continuous_codegen_adaptation.json','robust/continuous_codegen/derivation.json'}
+ target=fullfile(folder,relative{1});if ~isfolder(fileparts(target)),mkdir(fileparts(target));end
+ copyfile(fullfile(base,relative{1}),target);record.contracts(end+1)=struct('path',relative{1},'sha256',teach_hash(fullfile(base,relative{1})));
+end
+probeFile=fullfile(base,'runs/N3R2_freewheel_inheritance_once/report.json');probe=jsondecode(fileread(probeFile));
+assert(probe.all_passed&&probe.normal_comparison.all_passed&&probe.rapid_comparison.all_passed);
+record.continuous_bridge_prerequisite=struct('report_sha256',teach_hash(probeFile),'probe_sha256',probe.probe_sha256,'contract_sha256',probe.contract_sha256);
+copyfile(probeFile,fullfile(folder,'continuous_bridge_prerequisite.json'));
+teach_writejson(fullfile(folder,'record.json'),record);
+end

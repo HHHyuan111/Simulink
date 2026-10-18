@@ -1,0 +1,42 @@
+{
+  "kind": "model_independent_exact_runtime_control",
+  "status": "stopped_failure",
+  "started_at": "2026-10-18T09:40:52.828061+00:00",
+  "simulation_starts": 0,
+  "native_retries": 0,
+  "R2_passed": false,
+  "jobs": [
+    {
+      "name": "compile",
+      "status": "exited",
+      "command": [
+        "D:\\simulink\\dev\\modern\\sensorless\\.build\\tools\\mingw81\\bin\\gcc.exe",
+        "-std=c11",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_runtime_oracle_once\\sensorless_r2_runtime_control.c",
+        "-o",
+        "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_runtime_oracle_once\\runtime_control.exe"
+      ],
+      "started_at": "2026-10-18T09:40:52.879708+00:00",
+      "exit_code": 0,
+      "launcher_pid": 65484
+    },
+    {
+      "name": "native",
+      "status": "exited",
+      "command": [
+        "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_runtime_oracle_once\\runtime_control.exe",
+        "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_runtime_oracle_once",
+        "2bb977b2"
+      ],
+      "started_at": "2026-10-18T09:40:58.230119+00:00",
+      "exit_code": 11,
+      "launcher_pid": 50000
+    }
+  ],
+  "native_source_sha256": "48d4027cda49719c43c791c9b0716ea590e0a0173de72367abe422bef71c3463",
+  "native_executable_sha256": "599eca51ab639a8e31fb6c4fe46ff91d2da8504a4866454cbd31a9964081e0f9",
+  "failure": "native failed with exit 11; no retry."
+}

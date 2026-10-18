@@ -1,0 +1,341 @@
+{
+  "kind": "saved_workspace_roundtrip",
+  "phase": "completed",
+  "all_passed": true,
+  "process_id": 43228,
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "simulation_starts": 0,
+  "compile_requested": false,
+  "original_model_loaded": false,
+  "probe_sha256": "180447125a460a4114d04e5b1b43235c200caec3b8e2614cdcaa9e4d1b78cfa3",
+  "contract_sha256": "211a2905e2fbb09d71ece95e6f4d96a3cc14d52a489a33459dcbe0b06959925f",
+  "frozen_candidate_sha256": "d1c33609f813351a3c6988f7dec25f925da91701907e7b9c4db90dd25c15df23",
+  "expected_sha256": "efe902f83ca3154b62cbda44a822dc6af4e4dd59f6d3ded35def9491916b515f",
+  "fixture": 2,
+  "negative_control": {
+    "file": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_workspace_persistence_once\\slr2_ws_code.slx",
+    "file_sha256": "89bbc4b8078784d3ade6694202b1eb91937ea6dc8b79e7c979a1c48840bdf847",
+    "data_source": "MATLAB Code",
+    "before": [
+      {
+        "name": "base",
+        "value": 2,
+        "class": "double",
+        "size": [
+          1,
+          1
+        ]
+      },
+      {
+        "name": "frontend_cfg",
+        "value": [
+          6.25E-8,
+          5E-5,
+          0.0001,
+          2.4375E-5,
+          1.1875E-6,
+          1.5E-6,
+          0,
+          0,
+          3E-6,
+          5E-6,
+          2E-6,
+          6E-5,
+          7.5E-5,
+          4.375E-7,
+          0.012,
+          0.6,
+          0.05,
+          0.05,
+          5,
+          2000,
+          0.105125,
+          0.0001037615,
+          4500,
+          2000,
+          1.008,
+          0.994,
+          1.002,
+          0.04,
+          -0.02,
+          0.005,
+          20,
+          12,
+          0,
+          0,
+          0.25
+        ],
+        "class": "double",
+        "size": [
+          1,
+          35
+        ]
+      },
+      {
+        "name": "observer_cfg",
+        "value": [
+          0.105125,
+          0.0001037615,
+          5E-5,
+          0.95060463817554253,
+          0.46987264517914396,
+          70,
+          14,
+          0.2,
+          0.028048810878037296,
+          0.777767679171789,
+          533.065441461116,
+          142122.30337568672,
+          2000,
+          5,
+          2,
+          1.5,
+          0.5,
+          0.15
+        ],
+        "class": "double",
+        "size": [
+          18,
+          1
+        ]
+      }
+    ],
+    "after": {
+      "name": "base",
+      "value": 1,
+      "class": "double",
+      "size": [
+        1,
+        1
+      ]
+    },
+    "backup": [],
+    "saved_file_unchanged": true,
+    "backup_equal": false,
+    "code_base_reset": true,
+    "runtime_configs_absent": true,
+    "transient_backup_absent": true,
+    "expected_loss_observed": true
+  },
+  "positive_control": {
+    "file": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_workspace_persistence_once\\slr2_ws_file.slx",
+    "file_sha256": "5947bcfee5b017fe28e1a6036cc6372f8b5b1573e84dc86ad9194df8bdd4366d",
+    "data_source": "Model File",
+    "before": [
+      {
+        "name": "base",
+        "value": 2,
+        "class": "double",
+        "size": [
+          1,
+          1
+        ]
+      },
+      {
+        "name": "frontend_cfg",
+        "value": [
+          6.25E-8,
+          5E-5,
+          0.0001,
+          2.4375E-5,
+          1.1875E-6,
+          1.5E-6,
+          0,
+          0,
+          3E-6,
+          5E-6,
+          2E-6,
+          6E-5,
+          7.5E-5,
+          4.375E-7,
+          0.012,
+          0.6,
+          0.05,
+          0.05,
+          5,
+          2000,
+          0.105125,
+          0.0001037615,
+          4500,
+          2000,
+          1.008,
+          0.994,
+          1.002,
+          0.04,
+          -0.02,
+          0.005,
+          20,
+          12,
+          0,
+          0,
+          0.25
+        ],
+        "class": "double",
+        "size": [
+          1,
+          35
+        ]
+      },
+      {
+        "name": "observer_cfg",
+        "value": [
+          0.105125,
+          0.0001037615,
+          5E-5,
+          0.95060463817554253,
+          0.46987264517914396,
+          70,
+          14,
+          0.2,
+          0.028048810878037296,
+          0.777767679171789,
+          533.065441461116,
+          142122.30337568672,
+          2000,
+          5,
+          2,
+          1.5,
+          0.5,
+          0.15
+        ],
+        "class": "double",
+        "size": [
+          18,
+          1
+        ]
+      }
+    ],
+    "after": [
+      {
+        "name": "base",
+        "value": 2,
+        "class": "double",
+        "size": [
+          1,
+          1
+        ]
+      },
+      {
+        "name": "frontend_cfg",
+        "value": [
+          6.25E-8,
+          5E-5,
+          0.0001,
+          2.4375E-5,
+          1.1875E-6,
+          1.5E-6,
+          0,
+          0,
+          3E-6,
+          5E-6,
+          2E-6,
+          6E-5,
+          7.5E-5,
+          4.375E-7,
+          0.012,
+          0.6,
+          0.05,
+          0.05,
+          5,
+          2000,
+          0.105125,
+          0.0001037615,
+          4500,
+          2000,
+          1.008,
+          0.994,
+          1.002,
+          0.04,
+          -0.02,
+          0.005,
+          20,
+          12,
+          0,
+          0,
+          0.25
+        ],
+        "class": "double",
+        "size": [
+          1,
+          35
+        ]
+      },
+      {
+        "name": "observer_cfg",
+        "value": [
+          0.105125,
+          0.0001037615,
+          5E-5,
+          0.95060463817554253,
+          0.46987264517914396,
+          70,
+          14,
+          0.2,
+          0.028048810878037296,
+          0.777767679171789,
+          533.065441461116,
+          142122.30337568672,
+          2000,
+          5,
+          2,
+          1.5,
+          0.5,
+          0.15
+        ],
+        "class": "double",
+        "size": [
+          18,
+          1
+        ]
+      }
+    ],
+    "backup": {
+      "version": 1,
+      "callback": "owned-source-placeholder",
+      "external_blocks": [
+        "owned/tap"
+      ],
+      "config": [
+        6.25E-8,
+        5E-5,
+        0.0001,
+        2.4375E-5,
+        1.1875E-6,
+        1.5E-6,
+        0,
+        0,
+        3E-6,
+        5E-6,
+        2E-6,
+        6E-5,
+        7.5E-5,
+        4.375E-7,
+        0.012,
+        0.6,
+        0.05,
+        0.05,
+        5,
+        2000,
+        0.105125,
+        0.0001037615,
+        4500,
+        2000,
+        1.008,
+        0.994,
+        1.002,
+        0.04,
+        -0.02,
+        0.005,
+        20,
+        12,
+        0,
+        0,
+        0.25
+      ]
+    },
+    "saved_file_unchanged": true,
+    "backup_equal": true,
+    "values_classes_dimensions_equal": true,
+    "complete_roundtrip": true
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "node": "N3R2",
+  "execution_version": "portable_staged_execution",
+  "campaign_type": "development_strict_staged_short",
+  "status": "stopped_execution_failure",
+  "R2_passed": false,
+  "jobs": [
+    {
+      "stage": "build",
+      "case_id": "r1_short_logging_check",
+      "status": "passed",
+      "exit_code": 0,
+      "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_staged_short_once\\build",
+      "attempts": [
+        {
+          "native_failure": false,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_staged_short_once\\build",
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_staged_short_once\\build_private_stderr.log",
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_staged_short_once\\build_private_stdout.log",
+          "exit_code": 0
+        }
+      ],
+      "started_at": "2026-10-18T10:07:52.2291716Z"
+    },
+    {
+      "stage": "execute",
+      "case_id": "r1_short_logging_check",
+      "status": "exited",
+      "exit_code": 1,
+      "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_staged_short_once\\r1_short_logging_check_attempt_1",
+      "attempts": [
+        {
+          "native_failure": false,
+          "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_staged_short_once\\r1_short_logging_check_attempt_1",
+          "logfile": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_staged_short_once\\execute_private_stderr.log",
+          "launcher_log": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_staged_short_once\\execute_private_stdout.log",
+          "exit_code": 1
+        }
+      ],
+      "started_at": "2026-10-18T10:08:23.2224448Z"
+    }
+  ]
+}

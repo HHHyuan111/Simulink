@@ -1,0 +1,40 @@
+{
+  "captured_at": "2026-10-18T18:25:38.994213+08:00",
+  "analysis_only": true,
+  "simulation_reexecuted_by_curator": false,
+  "component_continuous_normal_equals_inherited_normal": true,
+  "component_inherited_normal_equals_rapid": true,
+  "component_logs": 13,
+  "native_rows_each": 21601,
+  "both_compiled_bridge_rates_continuous": true,
+  "strict96_main_short_passed": false,
+  "R2_passed": false,
+  "native_root_cause_confirmed": false,
+  "main_qualification_published": true,
+  "last_durable_phase": "verify_actual_continuous_rate",
+  "simulation_starts_requested": 0,
+  "full_model_bridge_compiled_sample_time": null,
+  "main_status": "stopped_execution_failure",
+  "published": [
+    {
+      "path": "component/report.json",
+      "sha256": "8f459b4e284bfb7df2a5fc1976b7096547414dd19b4030cd6486706ab9d93b27"
+    },
+    {
+      "path": "component/launch.json",
+      "sha256": "08b030b3baca7c4bf5d96917f9ffff193f7c63b32b6398b223db749b81230d6d"
+    },
+    {
+      "path": "main/campaign.json",
+      "sha256": "107bc2e4e5980a02c1604b1459bede110d4814403ae139bfe4e702254edd3b8b"
+    },
+    {
+      "path": "main/execution_report.json",
+      "sha256": "11c9f9fd8231c82a4d82c1953a62c6dadc1b4e377f149a1e5c3cc879be20dc6a"
+    },
+    {
+      "path": "main/source_provenance.json",
+      "sha256": "e4f86d094135f17de9ef45b4a6049fe4d6ff30f5d02af9192ea139206a6dccb9"
+    }
+  ]
+}

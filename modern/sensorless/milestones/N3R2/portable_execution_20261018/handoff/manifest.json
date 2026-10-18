@@ -1,0 +1,22 @@
+{
+  "kind": "portable_owned_handoff",
+  "status": "completed_passed",
+  "simulation_starts": 0,
+  "R2_passed": false,
+  "jobs": [
+    {
+      "stage": "build",
+      "status": "passed",
+      "exit_code": 0,
+      "started_at": "2026-10-18T10:01:32.2390409Z",
+      "private_preferences": "D:\\simulink\\dev\\modern\\sensorless\\.build\\portable_handoff_preferences\\build"
+    },
+    {
+      "stage": "reopen",
+      "status": "passed",
+      "exit_code": 0,
+      "started_at": "2026-10-18T10:03:32.1241240Z",
+      "private_preferences": "D:\\simulink\\dev\\modern\\sensorless\\.build\\portable_handoff_preferences\\reopen"
+    }
+  ]
+}

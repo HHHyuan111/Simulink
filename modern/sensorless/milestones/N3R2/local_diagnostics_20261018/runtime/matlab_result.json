@@ -1,0 +1,16 @@
+{
+  "kind": "model_independent_matlab_control",
+  "phase": "completed",
+  "all_passed": true,
+  "process_id": 39860,
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "simulation_starts": 0,
+  "cycles": 427,
+  "native_retries": 0,
+  "private_preferences": "D:\\simulink\\dev\\modern\\sensorless\\.build\\runtime_matlab_first_preferences",
+  "oracle_sha256": "d1661688ce4c53a8b319d703bcbe8e130a4be36b7b0960622899f6f0114afe7f",
+  "source_sha256": "73720a125f5c1c96d677909ca4d1ba8e88cdc25e3e110d7a4828e75ca1660692",
+  "last_good_cycle": 427,
+  "elapsed_s": 60.0868998,
+  "actual_sha256": "d1661688ce4c53a8b319d703bcbe8e130a4be36b7b0960622899f6f0114afe7f"
+}

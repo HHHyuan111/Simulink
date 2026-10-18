@@ -1,0 +1,15 @@
+{
+  "kind": "independent_first_matlab_runtime_control",
+  "status": "completed_passed",
+  "started_at": "2026-10-18T09:43:51.266755+00:00",
+  "exit_code": 0,
+  "parent_launch_sha256": "a10bc08fcd06232e47c29c2e3f69d903ecba12d82ad7c7407d8117af53a94a4b",
+  "native_vector_sha256": "d1661688ce4c53a8b319d703bcbe8e130a4be36b7b0960622899f6f0114afe7f",
+  "oracle_sha256": "d1661688ce4c53a8b319d703bcbe8e130a4be36b7b0960622899f6f0114afe7f",
+  "simulation_starts": 0,
+  "native_retries": 0,
+  "parent_protocol_incomplete": true,
+  "R2_passed": false,
+  "launcher_pid": 6216,
+  "full_vector_sha256_equal": true
+}

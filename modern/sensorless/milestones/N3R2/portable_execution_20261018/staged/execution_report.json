@@ -1,0 +1,23 @@
+{
+  "kind": "portable_staged_execution",
+  "phase": "failed",
+  "all_passed": false,
+  "process_id": 13724,
+  "builder_process_id": 58472,
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "simulation_starts": 0,
+  "compile_requested": true,
+  "R2_passed": false,
+  "probe_sha256": "41de41bc235a7ee9879c619ceee8d4df0b7bc432e47f3022e44d010c8f64b70f",
+  "parent_model_file_source": true,
+  "child_model_file_source": true,
+  "parent_exact": true,
+  "child_exact": true,
+  "workspace_count": 86,
+  "callbacks_empty": true,
+  "backup_exact": true,
+  "backup_persistent": true,
+  "graph_passed": true,
+  "phase_at_error": "build_generated_target_once",
+  "error_identifier": "Simulink:tools:rapidAccelBuildFailed"
+}

@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "source_path": "robust/portable_execution/execute_sensorless_r2_staged.m",
+  "input_sha256": "0b44159ee70721929d53821e5f02b7053110c7622697c7ec8782595e0c2b81d2",
+  "output_sha256": "41de41bc235a7ee9879c619ceee8d4df0b7bc432e47f3022e44d010c8f64b70f",
+  "builder_record_sha256": "af4c738db12fbe4029e9be18ac30f1ceeee4b8ec7bce290c986ccee86feff7eb",
+  "retained_campaign_sha256": "0cfbf11b8c94b421224714d5acc6af51b265c8053f38dd29a795f979cea80234",
+  "contract_path": "contracts/nonideal_r2_staged_preload_repair.json",
+  "contract_sha256": "b3a002a04bec3024f68d9f12451f86ca5cae2272dee355e3eb9d59fd7d7af40f",
+  "transformations": [
+    "Create each metadata target's parent directory before copying.",
+    "Bind and archive only the corrected executor, repair contract and derivation before any load.",
+    "Retain builder restoration evidence separately; reset executor completion flags before work.",
+    "All model load, compile, sim, archive, comparison and restoration statements unchanged."
+  ],
+  "physical_code_unchanged": true
+}

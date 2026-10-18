@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "inputs_from_archived_builder": {
+    "build_sensorless_r2_continuous.m": "7753423e063ffcb3dab3158c2d688c77051970e2cbd88998f325cc80afae47e7",
+    "execute_sensorless_r2_continuous.m": "4f36b908b22ac0c3fe763ab372bc8e517d92ba85ffec6ade7e76569bc5f37830"
+  },
+  "outputs_sha256": {
+    "build_sensorless_r2_single_instance.m": "f8719b5b89cc93445a9c39107635441c1df6ae76d1622128ddda13aa68e6721a",
+    "execute_sensorless_r2_single_instance.m": "8a0685f2e8233cb9cfc0393aa53f8483a67989b82c20f253ac94b6bbcf45a7d0"
+  },
+  "contract": "contracts/nonideal_r2_single_instance_codegen_adaptation.json",
+  "changes": [
+    "New names, paths, source map and version binding.",
+    "Declare and persist Single, assert actual one reference; assert persisted metadata before compile.",
+    "No change to simulation, physical parameters/functions, sampling, solver, logging, restoration or comparison."
+  ]
+}
