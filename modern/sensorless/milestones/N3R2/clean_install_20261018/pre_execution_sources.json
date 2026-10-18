@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "registered_at": "2026-10-18T12:59:05.032549+00:00",
+  "purpose": "Freeze control sources before runtime preflight or diagnostic model execution",
+  "installer_already_started": true,
+  "simulation_started": false,
+  "frozen862_manifest_sha256": "2ea53bab650cc4ffc8cfb20a82d23ea22a50172af78f2ea8d904a1a36da8999b",
+  "files": [
+    {
+      "path": "contracts/nonideal_r2_clean_install_control.json",
+      "sha256": "19fafd7108cce5c39eec6d23efe488326678d15e09e8f8309b4ece074ae8b7fc"
+    },
+    {
+      "path": "robust/diagnostics/install_sensorless_r2_clean_matlab.ps1",
+      "sha256": "9894db111a64d7b8f3108e66ac969a3e950669a438a199622ad6ad8b40a1c029"
+    },
+    {
+      "path": "robust/diagnostics/preflight_sensorless_r2_clean_matlab.m",
+      "sha256": "ffe1de44b9bd776ddc0927065451207cf5b35ea592eabaff741e4c86f7e4a7c5"
+    },
+    {
+      "path": "robust/diagnostics/run_sensorless_r2_clean_install_control.ps1",
+      "sha256": "dfad4fae46b224815b3d58fc9013f4980cce6e83f5fab9a021a85741706f0599"
+    }
+  ]
+}
