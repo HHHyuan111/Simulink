@@ -1,0 +1,46 @@
+{
+  "analysis_only": true,
+  "actual_pid": 5244,
+  "exit_hex": "0xc0000005",
+  "phase": "build_child_sim_target_once",
+  "simulation_starts": 0,
+  "record_sha256": "846cb94a25617e9abace28b2ffb88e7fb079f1c757a88bdc708c1c474eccccec",
+  "dump_sha256": "8f8fd1eb1cd67e31bfeec813f80f10450c990e797c38d894ab94e0484c129fe2",
+  "dump_bytes": 20116,
+  "dump_minus_record_s": 25.041141510009766,
+  "frames": [
+    {
+      "module": "m_lxe.dll",
+      "symbol": "delete"
+    },
+    {
+      "module": "m_lxe.dll",
+      "symbol": "delete"
+    },
+    {
+      "module": "m_lxe.dll",
+      "symbol": "MathWorks::lxe::FakeLxeDispatcherProxyForIrGen::SetStaticImportsForMatlabFunction"
+    },
+    {
+      "module": "m_lxe.dll",
+      "symbol": "MathWorks::lxe::FakeLxeDispatcherProxyForIrGen::SetStaticImportsForMatlabFunction"
+    },
+    {
+      "module": "m_lxe.dll",
+      "symbol": "MathWorks::lxe::FakeLxeDispatcherProxyForIrGen::SetStaticImportsForMatlabFunction"
+    },
+    {
+      "module": "m_lxe.dll",
+      "symbol": "MathWorks::lxe::FakeLxeDispatcherProxyForIrGen::SetStaticImportsForMatlabFunction"
+    },
+    {
+      "module": "m_lxe.dll",
+      "symbol": "RunSection::CorrectedFileInfo::getRemovedSections"
+    },
+    {
+      "module": "m_lxe.dll",
+      "symbol": "MathWorks::lxe::ErrorStack::WillSuppressErrorsInCpp"
+    }
+  ],
+  "native_root_cause_confirmed": false
+}

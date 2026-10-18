@@ -1,0 +1,15 @@
+{
+  "kind": "standalone_child_only_build",
+  "phase": "build_child_target_once",
+  "all_passed": false,
+  "process_id": 28368,
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "simulation_starts": 0,
+  "target_builds": 1,
+  "parent_ever_loaded": false,
+  "R2_passed": false,
+  "manifest_sha256": "b754d79ca1f21583ab4586976f1b35f0b2cf8432caf8f9967149022c186c10fc",
+  "workspace_count": 86,
+  "configuration_exact": false,
+  "configuration_values_exact": true
+}

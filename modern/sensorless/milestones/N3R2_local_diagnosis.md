@@ -2,6 +2,8 @@
 
 2026-10-18 下午。用户暂无另一台电脑或另一套 MATLAB，继续在本机定位。原正式矩阵保持 **1/14、失败停止、零重试**，不重新启动旧候选或已失败短检。
 
+当前结论：**R2 未通过，无仿真或矩阵在后台运行。** 本轮已得到同一观测子模型不加载父模型、零仿真仍会原生退出的独立复现；根因尚未确认。最新[独立复查结果](N3R2/child_only_build_20261018/summary.json)及文末说明是本轮停止位置。
+
 本轮按实际进程号及文件时间，整理 34 条既有失败，其中 23 份存在可匹配的崩溃文本。首帧模块分布于数组管理、语言解释器、Simulink 模块、仿真时钟等 9 个库；最新生成短检的私有文本首帧位于 `m_lxe.dll`。正式第二项的 Windows 事件进程号 `0x33bc` 与实际 PID 13244 匹配，模块为安装目录中的 `icuin74.dll`。这些是定位线索；导出符号可能只是最近的公开名称，不能据此认定具体函数或根因。[脱敏堆栈与原始指纹](N3R2/crash_context_20261018/summary.json)。原始崩溃文本可能含会话/许可信息，仅留本机。
 
 针对 11 个相关 DLL 的只读检查显示：本机既有 GUI 观察到的加载路径均在当前 R2026a 安装目录，签名均有效；对应 13 份组件文件清单未发现缺失路径。清单没有预期内容散列，因此这不是完整安装一致性或依赖兼容性证明，未维修/重装 MATLAB，未更新 BIOS 或改系统设置。[安装观察](N3R2/crash_context_20261018/installation_observation.json)、[清单观察](N3R2/crash_context_20261018/manifest_observation.json)。
@@ -37,6 +39,22 @@
 
 按[单实例日志组件标准](../contracts/nonideal_r2_single_reference_logging_probe.json)独立验证已通过：父模型和零输出引用子模型的全部三路日志 Normal/Rapid 时间、数据、类型、维度严格一致；原生 320001 拍、JEOS 400 次完整。[组件记录](N3R2/single_instance_codegen_20261018/single_reference_component/report.json)。使用 `ModelReferenceNumInstancesAllowed=Single` 是对子模型实际实例数的显式限制，不关闭日志或降级报错。[官方实例声明规则](https://www.mathworks.com/help/simulink/gui/totalnumberofinstancesallowedpertopmodel.html)与[多实例限制](https://www.mathworks.com/help/rtw/ug/configure-multiinstance-code-generation.html)。
 
-接着前瞻登记[单实例主模型适配](../contracts/nonideal_r2_single_instance_codegen_adaptation.json)。构建 PID 33104 保存及实际恢复通过；执行 PID 67176 重开后 86 值/图/备份/桥元数据/单实例声明通过。主模型显式 compile/term 实测续流采样为连续 `[0,0]`；Rapid 目标 DLL 已构建，首次 20 ms 仿真正在执行。尚未取得原始归档和 96 路对照结果，不能计为资格通过；未启动长矩阵。执行入口与限制见 [接口说明](../robust/single_instance_codegen/INTERFACE.md)。
+接着前瞻登记[单实例主模型适配](../contracts/nonideal_r2_single_instance_codegen_adaptation.json)。构建 PID 33104 保存及实际恢复通过；执行 PID 67176 重开后 86 值/图/备份/桥元数据/单实例声明通过。主模型显式 compile/term 实测续流采样为连续 `[0,0]`；Rapid 目标 DLL 已构建，首次 20 ms 物理运行完整结束，原生计数 320001、96 路原始日志、工作区保持、原图/桥/固定参考恢复及短检事件指标通过。随后原 81 路日志严格比较失败，进程退出 1，整个资格检查保持失败。**物理执行和恢复通过不等于完整资格通过。** 未启动长矩阵。[主模型实际结果](N3R2/single_instance_codegen_20261018/summary.json)，[执行入口与限制](../robust/single_instance_codegen/INTERFACE.md)。
+
+只读归档分析未加载或仿真模型，核对原始/规范化散列后比较全部 96 路：所有 Time、类型、维度完全相同；83 路 Data 完全相同。13 路 Data 差异全部属于原 52 路控制日志，新增 44 路观察日志 Data 全部相同。不同项为 `log_Tcm`、`log_Tcm_requested`、`log_v_alpha`、`log_v_beta`、`obs_aw_d/q`、`obs_mod`、`obs_pi_d/q/speed`、`obs_vd/vq`、`obs_voltage`；最大绝对差为电压日志约 1.38601e-10。即使差值很小，也不改判严格比较，不放宽阈值。完整逐路差异见[归档分析](N3R2/single_instance_codegen_20261018/archive_attribution/report.json)。
+
+另发现未执行到的旧验证器还要求新入口未提供的 `execution.initialized_once` 元数据字段；这是独立的报告适配缺项，不能伪造字段或借它解释掉已发现的 13 路真实 Data 差异。物理源/模型、旧失败以及原始归档全部不修改。
+
+据差异分布推断，整父模型代码生成改变了原控制浮点计算结果；尚未证明具体运算符或编译优化是原因。后续先按[新的独立组件标准](../contracts/nonideal_r2_accelerated_reference_logging_probe.json)，把代码生成仅用于子模型，父模型保持 Normal，对照已归档组件基准完整三路日志。该项不加载主电机模型；通过后仍需另行登记主模型生成边界适配与完整 96 路短检。
+
+## 独立子模型构建也复现原生异常
+
+上述三路 Normal 父模型/Accelerator 子模型组件对照通过后，前瞻登记[实际观测器生成边界](../contracts/nonideal_r2_observer_codegen_boundary.json)。构建 PID 56152 通过；独立执行 PID 5244 加载后，86 值、图、备份核对通过，在首次 `slbuild(child,'ModelReferenceSimTarget')` 中原生 `0xc0000005`。物理启动次数 0，候选失败即停。[阶段结果](N3R2/observer_codegen_20261018/summary.json)。匹配 PID/时间的私有崩溃文本 20116 字节，脱敏首帧位于 `m_lxe.dll`；导出符号只能作线索，不据此确定源码函数。[指纹与白名单帧](N3R2/observer_codegen_20261018/native_crash.json)。
+
+为区分父模型上下文与子模型构建，前瞻登记[独立构建标准](../contracts/nonideal_r2_child_only_build_probe.json)，复制同字节子模型 `sr2_0f5b7518.slx`、176 个绑定运行源码及必要元数据，排除父模型文件、私有日志和原始崩溃文本。在新偏好/生成目录的 PID 28368 中，仅加载该子模型，核对 Model File 86 值、9 个 double 输入、零输出、Single、空回调、无嵌套引用；明确将 CurrentSystem 指向子模型。首次且唯一目标构建仍退出 `0xc0000005`，全程零 sim、未加载父模型。Windows Application Error 的 PID `0x6ed0` 匹配，故障模块为 unknown；没有找到匹配的 MATLAB 崩溃文本。原源码/模型指纹完整。JSON 配置向量的行列比较字段 false 仅因 JSON 解码列向量；模型文件字节相同、值比较 true，未改值或方向。
+
+这把触发范围缩到**独立观测子模型生成构建及本机执行环境**；排除了“必须先运行主电机或加载父模型才会触发”的必要条件，仍不能区分软件缺陷、安装依赖、执行环境或硬件原因。[结果与包指纹](N3R2/child_only_build_20261018/summary.json)。独立复现包位于本地 `runs/N3R2_child_only_build_repro.zip`，183 项、332360 字节，包含精确清单和 build-only 入口，没有对外发送。原复查入口禁止本机重试。
+
+下一节点应基于这个独立包继续缩减实际 11 图观测器的生成依赖/组合触发条件，并保留每项前瞻标准；不能把编译开关或再次启动同一模型当作根因修复。新的严格 96 路资格检查及正式 14 项仍有缺口，不启动长工况/R3，不接管反馈，不作实板/WCET结论。本轮节点是得到独立复现和可审查证据，**不是完成 R2**。
 
 MathWorks 关于某些 Intel 13/14 代桌面处理器的崩溃说明要求同时核对受影响型号及独立机器对照等条件；本机是移动 i9-14900HX，且没有独立主机对照，不符合据此认定该问题的证据条件。没有按桌面处理器文章修改 BIOS、频率或电压。[官方适用条件](https://www.mathworks.com/matlabcentral/answers/2174514-why-does-matlab-sporadically-crash-on-my-13th-or-14th-generation-intel-processor)。

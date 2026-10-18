@@ -1,5 +1,5 @@
 {
-  "captured_at": "2026-10-18T18:29:59.358861+08:00",
+  "captured_at": "2026-10-18T18:39:21.486032+08:00",
   "analysis_only": true,
   "simulation_reexecuted_by_curator": false,
   "component_continuous_normal_equals_inherited_normal": true,
@@ -10,8 +10,15 @@
   "strict96_main_short_passed": false,
   "R2_passed": false,
   "native_root_cause_confirmed": false,
-  "main_qualification_published": false,
+  "main_qualification_published": true,
   "single_reference_component_exact3_logs_passed": true,
+  "last_durable_phase": "completed",
+  "simulation_starts_requested": 1,
+  "full_model_bridge_compiled_sample_time": [
+    0,
+    0
+  ],
+  "main_status": "stopped_execution_failure",
   "published": [
     {
       "path": "component/report.json",
@@ -28,6 +35,18 @@
     {
       "path": "single_reference_component/launch.json",
       "sha256": "6e5fb44205713f9d19c5844ed76351b37fb733d83e73a360c5f0281e2db1c0de"
+    },
+    {
+      "path": "main/campaign.json",
+      "sha256": "4fe598f3b55b739fab9d7d2abd980ec934f93b84a99bd3a611dd302ae74043a2"
+    },
+    {
+      "path": "main/execution_report.json",
+      "sha256": "6b214b98fc9ff2c063432a43e36f5cae83a8fa1126e5a282fb76219f6984bc20"
+    },
+    {
+      "path": "main/source_provenance.json",
+      "sha256": "5c1ec5f147e76faad3f302f0ec94ef9a1e4d9a8e34ebc4fe39013cbd7260f078"
     }
   ]
 }

@@ -1,0 +1,12 @@
+{
+  "kind": "standalone_child_only_build",
+  "status": "stopped_execution_failure",
+  "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_child_only_build_once",
+  "package": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_child_only_build_bundle",
+  "simulation_starts": 0,
+  "native_retries": 0,
+  "exit_code": -1073741819,
+  "manifest_sha256": "b754d79ca1f21583ab4586976f1b35f0b2cf8432caf8f9967149022c186c10fc",
+  "started_at": "2026-10-18T10:49:23.5911103Z",
+  "R2_passed": false
+}

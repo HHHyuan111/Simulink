@@ -1,0 +1,22 @@
+{
+  "kind": "normal_parent_accelerated_observer",
+  "phase": "build_child_sim_target_once",
+  "all_passed": false,
+  "process_id": 5244,
+  "builder_process_id": 56152,
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "simulation_starts": 0,
+  "compile_requested": true,
+  "R2_passed": false,
+  "probe_sha256": "8ae0462088cb9baa9ab97d0a8dc9b2a3536f092b4067138531b0e6403e8c4d06",
+  "parent_model_file_source": true,
+  "child_model_file_source": true,
+  "parent_exact": true,
+  "child_exact": true,
+  "workspace_count": 86,
+  "callbacks_empty": true,
+  "backup_exact": true,
+  "backup_persistent": true,
+  "graph_passed": true,
+  "child_target_builds": 1
+}

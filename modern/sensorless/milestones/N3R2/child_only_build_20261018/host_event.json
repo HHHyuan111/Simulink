@@ -1,0 +1,18 @@
+{
+  "analysis_only": true,
+  "matched_actual_pid": 28368,
+  "read_only": true,
+  "events": [
+    {
+      "TimeCreated": "2026-10-18T18:50:22.8375914+08:00",
+      "Fields": {
+        "AppPath": "D:\\DevTools\\MATLAB\\R2026a\\bin\\win64\\MATLAB.exe",
+        "AppName": "MATLAB.exe",
+        "ProcessId": "0x6ed0",
+        "ExceptionCode": "c0000005",
+        "ModuleName": "unknown",
+        "ModulePath": "unknown"
+      }
+    }
+  ]
+}

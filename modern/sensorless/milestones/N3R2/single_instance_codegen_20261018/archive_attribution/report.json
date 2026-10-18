@@ -1,0 +1,7344 @@
+{
+  "kind": "analysis_only_codegen_archive_differences",
+  "analysis_only": true,
+  "simulation_reexecuted": false,
+  "models_loaded": false,
+  "R2_passed": false,
+  "original_qualification_remains_failed": true,
+  "process_id": 63140,
+  "source_folder": "D:/simulink/dev/modern/sensorless/runs/N3R2_single_instance_codegen_short_once/r1_short_logging_check_attempt_1",
+  "source_record_sha256": "b4266403cce3f4d04be1504d5f589435da00b5024799308bc74c86626b912f72",
+  "raw_sha256": "579d7cfd916c643d024b152c187e69895852b97ce64c2aaffd4dd110da996721",
+  "canonical_sha256": "de5db5d6737b6c135d467ef3eb03c9d09c0d0ef31f3b3e2ff22d3ff6fe43098f",
+  "reference_sha256": "cbdae7422ebe90fec7f7cc6a09ae9c5a5bc3793efd7362e490139e8a34451160",
+  "legacy_verifier_requires_missing_initialized_once_field": true,
+  "analysis_source_sha256": "30940d579d5e50e5677e5d19a51222585f09b2c285da94f95c8cda0816694cb4",
+  "logs": {
+    "log_SW": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          6
+        ],
+        "actual_dimensions": [
+          400,
+          6
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          6
+        ],
+        "actual_dimensions": [
+          400,
+          6
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "log_TL": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "log_Tcm": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": false,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          1,
+          3,
+          400
+        ],
+        "actual_dimensions": [
+          1,
+          3,
+          400
+        ],
+        "different_elements": 130,
+        "max_abs_delta": 2.1394019368570216E-16,
+        "first_linear_index": 351,
+        "expected_first": 1.4071579431799135E-5,
+        "actual_first": 1.4071579431799136E-5
+      },
+      "canonical_Data": {
+        "exact": false,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          1,
+          3,
+          400
+        ],
+        "actual_dimensions": [
+          1,
+          3,
+          400
+        ],
+        "different_elements": 130,
+        "max_abs_delta": 2.1394019368570216E-16,
+        "first_linear_index": 351,
+        "expected_first": 1.4071579431799135E-5,
+        "actual_first": 1.4071579431799136E-5
+      },
+      "normalization_Data_unchanged": true
+    },
+    "log_Tcm_applied": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          3
+        ],
+        "actual_dimensions": [
+          400,
+          3
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          3
+        ],
+        "actual_dimensions": [
+          400,
+          3
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "log_Tcm_requested": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": false,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          1,
+          3,
+          400
+        ],
+        "actual_dimensions": [
+          1,
+          3,
+          400
+        ],
+        "different_elements": 130,
+        "max_abs_delta": 2.1394019368570216E-16,
+        "first_linear_index": 351,
+        "expected_first": 1.4071579431799135E-5,
+        "actual_first": 1.4071579431799136E-5
+      },
+      "canonical_Data": {
+        "exact": false,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          1,
+          3,
+          400
+        ],
+        "actual_dimensions": [
+          1,
+          3,
+          400
+        ],
+        "different_elements": 130,
+        "max_abs_delta": 2.1394019368570216E-16,
+        "first_linear_index": 351,
+        "expected_first": 1.4071579431799135E-5,
+        "actual_first": 1.4071579431799136E-5
+      },
+      "normalization_Data_unchanged": true
+    },
+    "log_Te": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "log_UDC": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "log_iabc_adc": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          3,
+          1,
+          400
+        ],
+        "actual_dimensions": [
+          3,
+          1,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          3,
+          1,
+          400
+        ],
+        "actual_dimensions": [
+          3,
+          1,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "log_iabc_filter": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          3,
+          1,
+          400
+        ],
+        "actual_dimensions": [
+          3,
+          1,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          3,
+          1,
+          400
+        ],
+        "actual_dimensions": [
+          3,
+          1,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "log_iabc_meas": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          3,
+          1,
+          400
+        ],
+        "actual_dimensions": [
+          3,
+          1,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          3,
+          1,
+          400
+        ],
+        "actual_dimensions": [
+          3,
+          1,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "log_iabc_noise": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          3
+        ],
+        "actual_dimensions": [
+          400,
+          3
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          3
+        ],
+        "actual_dimensions": [
+          400,
+          3
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "log_iabc_true": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          3
+        ],
+        "actual_dimensions": [
+          400,
+          3
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          3
+        ],
+        "actual_dimensions": [
+          400,
+          3
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "log_id": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "log_iq": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "log_iq_ref": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "log_nref": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "log_speed": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "log_theta_error": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "log_theta_meas": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "log_theta_true": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "log_v_alpha": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": false,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 70,
+        "max_abs_delta": 1.3692225131478608E-10,
+        "first_linear_index": 1,
+        "expected_first": -0.00915993991150213,
+        "actual_first": -0.0091599399115021279
+      },
+      "canonical_Data": {
+        "exact": false,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 70,
+        "max_abs_delta": 1.3692225131478608E-10,
+        "first_linear_index": 1,
+        "expected_first": -0.00915993991150213,
+        "actual_first": -0.0091599399115021279
+      },
+      "normalization_Data_unchanged": true
+    },
+    "log_v_beta": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": false,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 79,
+        "max_abs_delta": 1.152264950121662E-10,
+        "first_linear_index": 9,
+        "expected_first": 0.12309942691641625,
+        "actual_first": 0.12309942691641614
+      },
+      "canonical_Data": {
+        "exact": false,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 79,
+        "max_abs_delta": 1.152264950121662E-10,
+        "first_linear_index": 9,
+        "expected_first": 0.12309942691641625,
+        "actual_first": 0.12309942691641614
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_adc_codes": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          1,
+          3,
+          400
+        ],
+        "actual_dimensions": [
+          1,
+          3,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          1,
+          3,
+          400
+        ],
+        "actual_dimensions": [
+          1,
+          3,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_adc_timing": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          320001,
+          1
+        ],
+        "actual_dimensions": [
+          320001,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          320001,
+          1
+        ],
+        "actual_dimensions": [
+          320001,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          1,
+          15,
+          320001
+        ],
+        "actual_dimensions": [
+          1,
+          15,
+          320001
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          1,
+          15,
+          320001
+        ],
+        "actual_dimensions": [
+          1,
+          15,
+          320001
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_analog_current": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          3
+        ],
+        "actual_dimensions": [
+          400,
+          3
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          3
+        ],
+        "actual_dimensions": [
+          400,
+          3
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_aw_d": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": false,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          2
+        ],
+        "actual_dimensions": [
+          400,
+          2
+        ],
+        "different_elements": 407,
+        "max_abs_delta": 1.2286894891446634E-16,
+        "first_linear_index": 1,
+        "expected_first": 0,
+        "actual_first": 3.4694469519536142E-18
+      },
+      "canonical_Data": {
+        "exact": false,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          2
+        ],
+        "actual_dimensions": [
+          400,
+          2
+        ],
+        "different_elements": 407,
+        "max_abs_delta": 1.2286894891446634E-16,
+        "first_linear_index": 1,
+        "expected_first": 0,
+        "actual_first": 3.4694469519536142E-18
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_aw_q": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": false,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          2
+        ],
+        "actual_dimensions": [
+          400,
+          2
+        ],
+        "different_elements": 424,
+        "max_abs_delta": 4.4408920985006262E-16,
+        "first_linear_index": 7,
+        "expected_first": 2.2204460492503131E-16,
+        "actual_first": 0
+      },
+      "canonical_Data": {
+        "exact": false,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          2
+        ],
+        "actual_dimensions": [
+          400,
+          2
+        ],
+        "different_elements": 424,
+        "max_abs_delta": 4.4408920985006262E-16,
+        "first_linear_index": 7,
+        "expected_first": 2.2204460492503131E-16,
+        "actual_first": 0
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_carrier_fast": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          20001,
+          1
+        ],
+        "actual_dimensions": [
+          20001,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          20001,
+          1
+        ],
+        "actual_dimensions": [
+          20001,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          20001,
+          1
+        ],
+        "actual_dimensions": [
+          20001,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          20001,
+          1
+        ],
+        "actual_dimensions": [
+          20001,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_current_fast": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          20001,
+          1
+        ],
+        "actual_dimensions": [
+          20001,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          20001,
+          1
+        ],
+        "actual_dimensions": [
+          20001,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          20001,
+          3
+        ],
+        "actual_dimensions": [
+          20001,
+          3
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          20001,
+          3
+        ],
+        "actual_dimensions": [
+          20001,
+          3
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_dead_bridge": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          20001,
+          1
+        ],
+        "actual_dimensions": [
+          20001,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          20001,
+          1
+        ],
+        "actual_dimensions": [
+          20001,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          1,
+          9,
+          20001
+        ],
+        "actual_dimensions": [
+          1,
+          9,
+          20001
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          1,
+          9,
+          20001
+        ],
+        "actual_dimensions": [
+          1,
+          9,
+          20001
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_dead_comp": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          1,
+          8,
+          400
+        ],
+        "actual_dimensions": [
+          1,
+          8,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          1,
+          8,
+          400
+        ],
+        "actual_dimensions": [
+          1,
+          8,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_dead_gates": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          4000,
+          1
+        ],
+        "actual_dimensions": [
+          4000,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          4000,
+          1
+        ],
+        "actual_dimensions": [
+          4000,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          4000,
+          6
+        ],
+        "actual_dimensions": [
+          4000,
+          6
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          4000,
+          6
+        ],
+        "actual_dimensions": [
+          4000,
+          6
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_dead_requested": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          4000,
+          1
+        ],
+        "actual_dimensions": [
+          4000,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          4000,
+          1
+        ],
+        "actual_dimensions": [
+          4000,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          4000,
+          6
+        ],
+        "actual_dimensions": [
+          4000,
+          6
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          4000,
+          6
+        ],
+        "actual_dimensions": [
+          4000,
+          6
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_gates_fast": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          20001,
+          1
+        ],
+        "actual_dimensions": [
+          20001,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          20001,
+          1
+        ],
+        "actual_dimensions": [
+          20001,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          20001,
+          6
+        ],
+        "actual_dimensions": [
+          20001,
+          6
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          20001,
+          6
+        ],
+        "actual_dimensions": [
+          20001,
+          6
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_id_ref": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_mod": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": false,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          1,
+          8,
+          400
+        ],
+        "actual_dimensions": [
+          1,
+          8,
+          400
+        ],
+        "different_elements": 294,
+        "max_abs_delta": 8.5575990738107066E-12,
+        "first_linear_index": 2,
+        "expected_first": 2.1468609167583116E-8,
+        "actual_first": 2.1468609167583109E-8
+      },
+      "canonical_Data": {
+        "exact": false,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          1,
+          8,
+          400
+        ],
+        "actual_dimensions": [
+          1,
+          8,
+          400
+        ],
+        "different_elements": 294,
+        "max_abs_delta": 8.5575990738107066E-12,
+        "first_linear_index": 2,
+        "expected_first": 2.1468609167583116E-8,
+        "actual_first": 2.1468609167583109E-8
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_phase_actual": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          20001,
+          1
+        ],
+        "actual_dimensions": [
+          20001,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          20001,
+          1
+        ],
+        "actual_dimensions": [
+          20001,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          20001,
+          3
+        ],
+        "actual_dimensions": [
+          20001,
+          3
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          20001,
+          3
+        ],
+        "actual_dimensions": [
+          20001,
+          3
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_phase_ideal": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          20001,
+          1
+        ],
+        "actual_dimensions": [
+          20001,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          20001,
+          1
+        ],
+        "actual_dimensions": [
+          20001,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          20001,
+          3
+        ],
+        "actual_dimensions": [
+          20001,
+          3
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          20001,
+          3
+        ],
+        "actual_dimensions": [
+          20001,
+          3
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_pi_d": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": false,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          4
+        ],
+        "actual_dimensions": [
+          400,
+          4
+        ],
+        "different_elements": 243,
+        "max_abs_delta": 4.163336342344337E-17,
+        "first_linear_index": 617,
+        "expected_first": -0.042941038517060555,
+        "actual_first": -0.042941038517060562
+      },
+      "canonical_Data": {
+        "exact": false,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          4
+        ],
+        "actual_dimensions": [
+          400,
+          4
+        ],
+        "different_elements": 243,
+        "max_abs_delta": 4.163336342344337E-17,
+        "first_linear_index": 617,
+        "expected_first": -0.042941038517060555,
+        "actual_first": -0.042941038517060562
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_pi_q": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": false,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          4
+        ],
+        "actual_dimensions": [
+          400,
+          4
+        ],
+        "different_elements": 16,
+        "max_abs_delta": 6.6613381477509392E-16,
+        "first_linear_index": 806,
+        "expected_first": 3.38598994226221,
+        "actual_first": 3.3859899422622104
+      },
+      "canonical_Data": {
+        "exact": false,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          4
+        ],
+        "actual_dimensions": [
+          400,
+          4
+        ],
+        "different_elements": 16,
+        "max_abs_delta": 6.6613381477509392E-16,
+        "first_linear_index": 806,
+        "expected_first": 3.38598994226221,
+        "actual_first": 3.3859899422622104
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_pi_speed": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": false,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          4
+        ],
+        "actual_dimensions": [
+          400,
+          4
+        ],
+        "different_elements": 104,
+        "max_abs_delta": 1.0258771609983341E-10,
+        "first_linear_index": 404,
+        "expected_first": 0.013045584162847047,
+        "actual_first": 0.01304558416284724
+      },
+      "canonical_Data": {
+        "exact": false,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          4
+        ],
+        "actual_dimensions": [
+          400,
+          4
+        ],
+        "different_elements": 104,
+        "max_abs_delta": 1.0258771609983341E-10,
+        "first_linear_index": 404,
+        "expected_first": 0.013045584162847047,
+        "actual_first": 0.01304558416284724
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_power_drop": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          3
+        ],
+        "actual_dimensions": [
+          400,
+          3
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          3
+        ],
+        "actual_dimensions": [
+          400,
+          3
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_pwm_timing": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          320001,
+          1
+        ],
+        "actual_dimensions": [
+          320001,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          320001,
+          1
+        ],
+        "actual_dimensions": [
+          320001,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          1,
+          12,
+          320001
+        ],
+        "actual_dimensions": [
+          1,
+          12,
+          320001
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          1,
+          12,
+          320001
+        ],
+        "actual_dimensions": [
+          1,
+          12,
+          320001
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sector": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_r2_actual_publications": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          13,
+          1,
+          400
+        ],
+        "actual_dimensions": [
+          13,
+          1,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          13,
+          1,
+          400
+        ],
+        "actual_dimensions": [
+          13,
+          1,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_r2_anchor_valid": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_r2_fault_queue": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          8,
+          1,
+          400
+        ],
+        "actual_dimensions": [
+          8,
+          1,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          8,
+          1,
+          400
+        ],
+        "actual_dimensions": [
+          8,
+          1,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_r2_fault_reference_s": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_r2_interference_s": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_r2_native_counters": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          401,
+          1
+        ],
+        "actual_dimensions": [
+          401,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          401,
+          1
+        ],
+        "actual_dimensions": [
+          401,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          12,
+          1,
+          401
+        ],
+        "actual_dimensions": [
+          12,
+          1,
+          401
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          12,
+          1,
+          401
+        ],
+        "actual_dimensions": [
+          12,
+          1,
+          401
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_r2_native_events": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          803,
+          1
+        ],
+        "actual_dimensions": [
+          803,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          803,
+          1
+        ],
+        "actual_dimensions": [
+          803,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          16,
+          1,
+          803
+        ],
+        "actual_dimensions": [
+          16,
+          1,
+          803
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          16,
+          1,
+          803
+        ],
+        "actual_dimensions": [
+          16,
+          1,
+          803
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_r2_phase_guard": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          8,
+          1,
+          400
+        ],
+        "actual_dimensions": [
+          8,
+          1,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          8,
+          1,
+          400
+        ],
+        "actual_dimensions": [
+          8,
+          1,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_r2_release_jitter_s": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_v2_adc_valid": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_v2_applied_sequence": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          1,
+          1,
+          400
+        ],
+        "actual_dimensions": [
+          1,
+          1,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          1,
+          1,
+          400
+        ],
+        "actual_dimensions": [
+          1,
+          1,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_v2_control_permit": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_v2_control_time": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_v2_current_ABC": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          3,
+          1,
+          400
+        ],
+        "actual_dimensions": [
+          3,
+          1,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          3,
+          1,
+          400
+        ],
+        "actual_dimensions": [
+          3,
+          1,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_v2_deny_reason": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_v2_emf": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          2,
+          1,
+          400
+        ],
+        "actual_dimensions": [
+          2,
+          1,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          2,
+          1,
+          400
+        ],
+        "actual_dimensions": [
+          2,
+          1,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_v2_emf_magnitude": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_v2_front_phase": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_v2_history": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          3,
+          1,
+          400
+        ],
+        "actual_dimensions": [
+          3,
+          1,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          3,
+          1,
+          400
+        ],
+        "actual_dimensions": [
+          3,
+          1,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_v2_i_hat": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          2,
+          1,
+          400
+        ],
+        "actual_dimensions": [
+          2,
+          1,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          2,
+          1,
+          400
+        ],
+        "actual_dimensions": [
+          2,
+          1,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_v2_i_residual": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          2,
+          1,
+          400
+        ],
+        "actual_dimensions": [
+          2,
+          1,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          2,
+          1,
+          400
+        ],
+        "actual_dimensions": [
+          2,
+          1,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_v2_injection": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          2,
+          1,
+          400
+        ],
+        "actual_dimensions": [
+          2,
+          1,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          2,
+          1,
+          400
+        ],
+        "actual_dimensions": [
+          2,
+          1,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_v2_input_i": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          2,
+          1,
+          400
+        ],
+        "actual_dimensions": [
+          2,
+          1,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          2,
+          1,
+          400
+        ],
+        "actual_dimensions": [
+          2,
+          1,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_v2_input_v": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          2,
+          1,
+          400
+        ],
+        "actual_dimensions": [
+          2,
+          1,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          2,
+          1,
+          400
+        ],
+        "actual_dimensions": [
+          2,
+          1,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_v2_measurement": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          12,
+          1,
+          400
+        ],
+        "actual_dimensions": [
+          12,
+          1,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          12,
+          1,
+          400
+        ],
+        "actual_dimensions": [
+          12,
+          1,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_v2_omega_e": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_v2_phase_correction": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_v2_pll_error": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_v2_pll_integral": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_v2_pll_saturated": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_v2_publication": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          13,
+          1,
+          400
+        ],
+        "actual_dimensions": [
+          13,
+          1,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          13,
+          1,
+          400
+        ],
+        "actual_dimensions": [
+          13,
+          1,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_v2_reset": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_v2_sample_valid": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_v2_speed": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_v2_state": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_v2_theta": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_v2_theta_raw": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_v2_timing_valid": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_v2_truth_speed": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_v2_truth_theta": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_v2_valid": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_v2_voltage_interval": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          2,
+          1,
+          400
+        ],
+        "actual_dimensions": [
+          2,
+          1,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          2,
+          1,
+          400
+        ],
+        "actual_dimensions": [
+          2,
+          1,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_v2_voltage_native": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          36,
+          1,
+          400
+        ],
+        "actual_dimensions": [
+          36,
+          1,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          36,
+          1,
+          400
+        ],
+        "actual_dimensions": [
+          36,
+          1,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_sless_v2_voltage_uncertainty": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          2,
+          1,
+          400
+        ],
+        "actual_dimensions": [
+          2,
+          1,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          2,
+          1,
+          400
+        ],
+        "actual_dimensions": [
+          2,
+          1,
+          400
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_state": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          4
+        ],
+        "actual_dimensions": [
+          400,
+          4
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          4
+        ],
+        "actual_dimensions": [
+          400,
+          4
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_torque_fast": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          20001,
+          1
+        ],
+        "actual_dimensions": [
+          20001,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          20001,
+          1
+        ],
+        "actual_dimensions": [
+          20001,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          20001,
+          1
+        ],
+        "actual_dimensions": [
+          20001,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          20001,
+          1
+        ],
+        "actual_dimensions": [
+          20001,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_vd": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": false,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 76,
+        "max_abs_delta": 1.3860090852801932E-10,
+        "first_linear_index": 1,
+        "expected_first": -0.00915993991150213,
+        "actual_first": -0.0091599399115021279
+      },
+      "canonical_Data": {
+        "exact": false,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 76,
+        "max_abs_delta": 1.3860090852801932E-10,
+        "first_linear_index": 1,
+        "expected_first": -0.00915993991150213,
+        "actual_first": -0.0091599399115021279
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_vd_actual": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_vdq_fast": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          20001,
+          1
+        ],
+        "actual_dimensions": [
+          20001,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          20001,
+          1
+        ],
+        "actual_dimensions": [
+          20001,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          20001,
+          2
+        ],
+        "actual_dimensions": [
+          20001,
+          2
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          20001,
+          2
+        ],
+        "actual_dimensions": [
+          20001,
+          2
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_voltage": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": false,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          8
+        ],
+        "actual_dimensions": [
+          400,
+          8
+        ],
+        "different_elements": 415,
+        "max_abs_delta": 1.3860090852801932E-10,
+        "first_linear_index": 1,
+        "expected_first": -0.00915993991150213,
+        "actual_first": -0.0091599399115021313
+      },
+      "canonical_Data": {
+        "exact": false,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          8
+        ],
+        "actual_dimensions": [
+          400,
+          8
+        ],
+        "different_elements": 415,
+        "max_abs_delta": 1.3860090852801932E-10,
+        "first_linear_index": 1,
+        "expected_first": -0.00915993991150213,
+        "actual_first": -0.0091599399115021313
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_vq": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": false,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 53,
+        "max_abs_delta": 1.0841594288990564E-10,
+        "first_linear_index": 9,
+        "expected_first": 0.12308677042923688,
+        "actual_first": 0.12308677042923677
+      },
+      "canonical_Data": {
+        "exact": false,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 53,
+        "max_abs_delta": 1.0841594288990564E-10,
+        "first_linear_index": 9,
+        "expected_first": 0.12308677042923688,
+        "actual_first": 0.12308677042923677
+      },
+      "normalization_Data_unchanged": true
+    },
+    "obs_vq_actual": {
+      "raw_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Time": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "raw_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "canonical_Data": {
+        "exact": true,
+        "class_equal": true,
+        "dimensions_equal": true,
+        "expected_dimensions": [
+          400,
+          1
+        ],
+        "actual_dimensions": [
+          400,
+          1
+        ],
+        "different_elements": 0,
+        "max_abs_delta": 0,
+        "first_linear_index": [],
+        "expected_first": [],
+        "actual_first": []
+      },
+      "normalization_Data_unchanged": true
+    }
+  },
+  "log_count": 96,
+  "raw_Data_equal_logs": 83,
+  "canonical_Data_equal_logs": 83,
+  "canonical_Time_equal_logs": 96,
+  "all_canonical_Time_Data_equal": false,
+  "raw_archive_unchanged": true
+}

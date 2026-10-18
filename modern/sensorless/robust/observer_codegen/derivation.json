@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "input_sha256": {
+    "runs/N3R2_staged_short_once/build/source/robust/portable_execution/build_sensorless_r2_staged.m": "c6ab33528c5aa66b5cec99795e260983c5de18cbd02eeaa6339192b1bd38ae12",
+    "runs/N3R2_staged_short_once/build/source/robust/portable_execution/execute_sensorless_r2_staged.m": "0b44159ee70721929d53821e5f02b7053110c7622697c7ec8782595e0c2b81d2",
+    "robust/generated_backend/check_sensorless_r2_generated_graph.m": "d033351dee544d48ff9aa6b0cef0731ef4382ccf24e0dca557c9bea9c65fba6a",
+    "robust/execution_v8/normalize_sensorless_r2_v8_archive.m": "da7bfbb0d707afce7cee3ec206ec64eb0ff6e431cf53e1efd8fb5c6778eb4d05"
+  },
+  "outputs_sha256": {
+    "build_sensorless_r2_observer_codegen.m": "364b68257b7dcbf52d68f9fd63ed04da540b7b6b6bdc119d45531e90514b8691",
+    "execute_sensorless_r2_observer_codegen.m": "8ae0462088cb9baa9ab97d0a8dc9b2a3536f092b4067138531b0e6403e8c4d06",
+    "check_sensorless_r2_observer_codegen_graph.m": "c7549aa41cf162c676b942de393b497433abbd5eea0aa2b9f134e4a5dd128564",
+    "normalize_sensorless_r2_observer_codegen_archive.m": "4548dc01a9c5137ded4b96714cb6f1da86096ff5c658bba5e1147270be41d302"
+  },
+  "contract": "contracts/nonideal_r2_observer_codegen_boundary.json",
+  "unchanged": "Original case formulas/parameters, native period/solver, observer math, raw archive, endpoint/metrics and actual restore; timestamp conversion bytes unchanged.",
+  "changes": "Only observer acceleration/Single boundary, source/provenance fixes, child target build/inventory, actual continuous parent verification and new equivalent exact verifier call."
+}

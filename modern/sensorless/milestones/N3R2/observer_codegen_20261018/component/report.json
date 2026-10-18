@@ -1,0 +1,51 @@
+{
+  "kind": "accelerated_reference_logging",
+  "phase": "completed",
+  "all_passed": true,
+  "process_id": 39028,
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "normal_parent_starts": 1,
+  "child_target_builds": 1,
+  "R2_passed": false,
+  "main_model_loaded": false,
+  "probe_sha256": "0f3e0acabce4d062ba4d5ab364ffcd074141105930391074b32d08ee828ef9fb",
+  "contract_sha256": "1e3721c953d5281be92ab5076beb34b75703bf950b022fb9dd3c50abcfef6ed7",
+  "parent_adapted_sha256": "c563ed1d5d1385b32ed686bf0fef93634a107cc9d659211afa87f190caa0377c",
+  "child_unchanged_sha256": "c0171bf5a201d48a669557ef07a53604536ea69b7edff5a3600d1dc33af02645",
+  "actual_references": 1,
+  "allowed_references": "Single",
+  "child_mode": "Accelerator",
+  "generated_targets": {
+    "file": "D:\\simulink\\dev\\modern\\sensorless\\.build\\accelerated_reference_logging\\d5352d26-0fb6-4e49-8b07-f33cd31b21e5\\c\\r2_single_log_child_msf.mexw64",
+    "sha256": "ed3c93a7ea92128c445a1686088ce2b80cc19de176bdeeefa4aa40c4a20a407f"
+  },
+  "raw_sha256": "d9999bcee0f71bf89c0bfda401ab1603e7b93965837384d6cb6689f769d99c37",
+  "comparison": {
+    "child_jeos": {
+      "Time_equal": true,
+      "Data_equal": true,
+      "class_equal": true,
+      "dimensions_equal": true,
+      "finite": true
+    },
+    "child_native": {
+      "Time_equal": true,
+      "Data_equal": true,
+      "class_equal": true,
+      "dimensions_equal": true,
+      "finite": true
+    },
+    "parent_integral": {
+      "Time_equal": true,
+      "Data_equal": true,
+      "class_equal": true,
+      "dimensions_equal": true,
+      "finite": true
+    }
+  },
+  "native_rows": 320001,
+  "JEOS_rows": 400,
+  "native_and_JEOS_ticks": true,
+  "source_files_unchanged": true,
+  "owned_files_unchanged_by_execution": true
+}

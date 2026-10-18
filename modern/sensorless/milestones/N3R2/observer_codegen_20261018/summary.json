@@ -1,0 +1,42 @@
+{
+  "captured_at": "2026-10-18T18:58:06.057842+08:00",
+  "analysis_only": true,
+  "simulation_reexecuted_by_curator": false,
+  "parent_normal_child_accelerated_component_passed": true,
+  "main_status": "stopped_execution_failure",
+  "strict96_short_passed": false,
+  "R2_passed": false,
+  "native_root_cause_confirmed": false,
+  "formal_previous_still_closed_at": "1/14",
+  "last_durable_phase": "build_child_sim_target_once",
+  "exit_code": -1073741819,
+  "exit_hex": "0xc0000005",
+  "native_failure_observed": true,
+  "exit_code_authoritative_over_legacy_attempt_native_failure_annotation": true,
+  "published": [
+    {
+      "path": "component/report.json",
+      "sha256": "9ac1c9e2fe04652f211ac1f76206a41664aeed7667912b759c5d1cc302fec7b1"
+    },
+    {
+      "path": "component/launch.json",
+      "sha256": "ed44d4f7a80b3fd63a4aff7e23e2bece1bf69202d88a6be6e39e79991d1462f7"
+    },
+    {
+      "path": "main/campaign.json",
+      "sha256": "418f2fb89f22f4806a9f2d537c1400bcde611ce27f69dd598bfd6ad8893b240f"
+    },
+    {
+      "path": "main/execution_report.json",
+      "sha256": "8513e13a46ba84f922b0d7be43ce441ae46d4dde1c92887f04c8019585d58410"
+    },
+    {
+      "path": "main/graph.json",
+      "sha256": "0c200c43a16c445acdf13263b6d43e2545b91cf822ee7fc056a34b9f4a0e3bd6"
+    },
+    {
+      "path": "source_provenance.json",
+      "sha256": "7e5adeb3d2ea63bef9c809fd710874299b67e7ca405fb75b64180a66f6377b9d"
+    }
+  ]
+}
