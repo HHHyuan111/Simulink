@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "registered_before_first_matlab_control": "2026-10-18; native control already exited11, MATLAB job count0",
+  "parent": "contracts/nonideal_r2_runtime_oracle_probe.json",
+  "retained_outcome": "Native completed100000 cycles in59844ms, all per-cycle FNVs correct and final full vector SHA256 independently matches d1661688ce4c53a8b319d703bcbe8e130a4be36b7b0960622899f6f0114afe7f. It hit the iteration cap156ms before the60s duration criterion. Original launch remains stopped_failure, native_result all_passed remainsfalse; no rerun or post-hoc pass classification.",
+  "measurement_issue": "The watchdog iteration cap was too close to the wall-duration target for this native implementation. This is a diagnostic-duration shortfall, not an observed wrong byte or native exception. It is not evidence of a healthy or faulty CPU.",
+  "new_scope": "Permit only the yet-unstarted MATLAB control as a separately recorded first process, using the unchanged MATLAB probe, exact existing oracle and original60s/min4/max100000 constraints. No native compilation/run, no main-model case or formal stage may restart. This is an explicit prospective amendment to stage gating, not repair of the parent outcome.",
+  "implementation": "Independent new launcher writes matlab_first_launch.json, fresh project-local preferences and private logs. Assert original launch contains only compile/native jobs and no MATLAB job/output; bind the unchanged original oracle and native vector bytes/hashes before launch. Verify old820 files before/after. The original Python runner, native C source and native records stay untouched.",
+  "policy": "One first MATLAB start, zero retry on any failure or numeric inequality. Archive result and final vector hash. Report parent protocol incomplete separately from any MATLAB result, no combined all_passed label or R2 qualification."
+}
