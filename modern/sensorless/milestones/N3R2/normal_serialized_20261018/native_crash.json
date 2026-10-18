@@ -1,0 +1,42 @@
+{
+  "actual_pid": 27864,
+  "exit_hex": "0xc0000005",
+  "dump_present": true,
+  "private_dump_sha256": "1ddadd911d45116374bb0dc5ebe61a5f5858f56ea762833614cb535812bc3a62",
+  "private_dump_bytes": 7800,
+  "dump_minus_record_s": 0.534693717956543,
+  "whitelisted_frames_only": [
+    {
+      "module": "m_lxe.dll",
+      "symbol": "MathWorks::lxe::LXEConstants::InitializeOverloadedFunction_9"
+    },
+    {
+      "module": "m_lxe.dll",
+      "symbol": "MathWorks::lxe::LXEConstants::InitializeOverloadedFunction_9"
+    },
+    {
+      "module": "ucrtbase.dll",
+      "symbol": "malloc_base"
+    },
+    {
+      "module": "m_lxe.dll",
+      "symbol": "MathWorks::lxe::LXEConstants::InitializeOverloadedFunction_9"
+    },
+    {
+      "module": "m_lxe.dll",
+      "symbol": "MathWorks::lxe::LXEConstants::InitializeOverloadedFunction_9"
+    },
+    {
+      "module": "m_lxe.dll",
+      "symbol": "MathWorks::lxe::LXEConstants::InitializeOverloadedFunction_9"
+    },
+    {
+      "module": "m_lxe.dll",
+      "symbol": "MathWorks::lxe::LXEConstants::InitializeOverloadedFunction_9"
+    },
+    {
+      "module": "m_lxe.dll",
+      "symbol": "MathWorks::lxe::LXEConstants::InitializeOverloadedFunction_9"
+    }
+  ]
+}

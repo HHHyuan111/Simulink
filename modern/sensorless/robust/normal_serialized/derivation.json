@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "archived_input_sha256": {
+    "build_sensorless_r2_observer_codegen.m": "364b68257b7dcbf52d68f9fd63ed04da540b7b6b6bdc119d45531e90514b8691",
+    "execute_sensorless_r2_observer_codegen.m": "8ae0462088cb9baa9ab97d0a8dc9b2a3536f092b4067138531b0e6403e8c4d06",
+    "check_sensorless_r2_observer_codegen_graph.m": "c7549aa41cf162c676b942de393b497433abbd5eea0aa2b9f134e4a5dd128564",
+    "normalize_sensorless_r2_observer_codegen_archive.m": "4548dc01a9c5137ded4b96714cb6f1da86096ff5c658bba5e1147270be41d302",
+    "verify_sensorless_r2_observer_codegen_short.m": "d187543bac9986dce595479c78daca13a76cd7365b61ada25c8f33d83097b42d"
+  },
+  "outputs_sha256": {
+    "build_sensorless_r2_normal_serialized.m": "ee1dd74c599df6bd00cd659a17d313744d25989e43e0f5f0fb3a14452f9311f5",
+    "execute_sensorless_r2_normal_serialized.m": "dcb796b285dd15296185de355eefea7de9690a0bcabf9cbdceec795756be3874",
+    "check_sensorless_r2_normal_serialized_graph.m": "225c6ecaa9a2f2614f5021fea5085173507b98ea286500ad6de8c048547e3b10",
+    "normalize_sensorless_r2_normal_serialized_archive.m": "b793f9b128583beee61f689eded6272f42119e833f20a7e419eea988f9d90d6a",
+    "verify_sensorless_r2_normal_serialized_short.m": "728a33894426f47e6c8d4301d0a0b864cc1d334a884a879ee1cb418a826e4de0"
+  },
+  "contract": "contracts/nonideal_r2_normal_serialized_acceptance.json",
+  "changes": [
+    "New Normal serialized source/path/version binding.",
+    "Both parent and child Normal; childSingle and original continuous bridge preserved.",
+    "Remove explicit slbuild/target inventory/compiler setup; retain explicit Normal compile/term and one sim.",
+    "Retain all physical cases/math/configs, raw/native checks, actual restoration and strict81/96 comparison; Time encoder unchanged."
+  ]
+}

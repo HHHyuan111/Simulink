@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "node": "N3R2",
+  "execution_version": "normal_serialized_parent_and_observer",
+  "campaign_type": "two_independent_normal_serialized_shorts",
+  "status": "stopped_execution_failure",
+  "R2_passed": false,
+  "retries": 0,
+  "source_manifest_sha256": "2ea53bab650cc4ffc8cfb20a82d23ea22a50172af78f2ea8d904a1a36da8999b",
+  "jobs": [
+    {
+      "stage": "build",
+      "case_id": "r1_short_logging_check",
+      "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_normal_serialized_short_once\\build",
+      "status": "passed",
+      "exit_code": 0,
+      "exit_hex": "0x00000000",
+      "native_failure": false,
+      "started_at": "2026-10-18T11:57:34.3504097Z",
+      "finished_at": "2026-10-18T11:58:12.4046527Z"
+    },
+    {
+      "stage": "short_1",
+      "case_id": "r1_short_logging_check",
+      "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_normal_serialized_short_once\\short_1",
+      "status": "exited",
+      "exit_code": -1073741819,
+      "exit_hex": "0xc0000005",
+      "native_failure": true,
+      "started_at": "2026-10-18T11:58:12.6081047Z",
+      "finished_at": "2026-10-18T11:58:49.9320477Z"
+    },
+    {
+      "stage": "short_2",
+      "case_id": "r1_short_logging_check",
+      "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_normal_serialized_short_once\\short_2",
+      "status": "pending",
+      "exit_code": null,
+      "exit_hex": null,
+      "native_failure": null,
+      "started_at": null,
+      "finished_at": null
+    },
+    {
+      "stage": "compare",
+      "case_id": "r1_short_logging_check",
+      "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_normal_serialized_short_once\\compare",
+      "status": "pending",
+      "exit_code": null,
+      "exit_hex": null,
+      "native_failure": null,
+      "started_at": null,
+      "finished_at": null
+    }
+  ]
+}

@@ -1,0 +1,3458 @@
+{
+  "schema": 1,
+  "execution_version": "normal_serialized_parent_and_observer",
+  "registered_at": "2026-10-18T11:57:11.588848+00:00",
+  "old820_preserved": true,
+  "two_short_artifact_source_binding_only": true,
+  "R2_passed": false,
+  "files": [
+    {
+      "path": "modern/PMSM_FOC_R2026a.slx",
+      "sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d"
+    },
+    {
+      "path": "modern/README.md",
+      "sha256": "280bdf0f1ff4357ffd428ad3073b1936cf5033c0f36073682a7925ce505e3e01"
+    },
+    {
+      "path": "modern/README_\u8fd0\u884c\u4e0e\u66ff\u6362\u8bf4\u660e.md",
+      "sha256": "8312acf272d81e19ffccf066f69125fccaf0a5e433a5fcd5e12042cddba6c615"
+    },
+    {
+      "path": "modern/VERSION_2026-10-16.md",
+      "sha256": "dab37a6a9a55ee01ad3f6c9f9478dc394aa371b26f91ba1c33357b94ad5e0d78"
+    },
+    {
+      "path": "modern/build_pmsm_r2026a.m",
+      "sha256": "780bc5c294341e20b1ba10bc3c6ae62f2f885f4e34b8e2a6d45b1261a249a443"
+    },
+    {
+      "path": "modern/control/README_\u7b97\u6cd5\u57fa\u7840\u7b2c\u4e8c\u6b65.md",
+      "sha256": "ef2ec7f3f85a4de751980839203e95999842a592838da20a34b174d5693f81a1"
+    },
+    {
+      "path": "modern/control/README_\u901f\u5ea6\u73af\u7b2c\u4e00\u6b65.md",
+      "sha256": "42f61e987894140deef2ee96ac621d6e27d54c9eee2a8061af86ef4762dac943"
+    },
+    {
+      "path": "modern/control/algorithm_stage2_results.json",
+      "sha256": "f5c0029e2e1d882ab36e4f20358f9f4cdeaab4496b186821e0ff2c20f6214e31"
+    },
+    {
+      "path": "modern/control/build_algorithm_stage2.m",
+      "sha256": "434acf83463f70e3fb2aad93c7e26e582bc70a964e175a5b818a8df11c6c8f36"
+    },
+    {
+      "path": "modern/control/finalize_algorithm_stage2.m",
+      "sha256": "906f993bd2e03c54fda1ef4fd9b618ed918efce73b2db887173527dac56ca2bc"
+    },
+    {
+      "path": "modern/control/refresh_algorithm_gui.m",
+      "sha256": "cf4879022984fc965e457000b01a804437082f48e1cd787b1b5cc740dc258778"
+    },
+    {
+      "path": "modern/control/release_algorithm_gui.m",
+      "sha256": "b1830221e03942cf60c721bea84ae2e02ae954d9394dd7591504cdad2b9a6662"
+    },
+    {
+      "path": "modern/control/repair_speed_loop_stage1.m",
+      "sha256": "38ca05d77f3c94d2d5ae07b9b8ae27e1c1d753c5dfffdde35cae4b8c576d67d7"
+    },
+    {
+      "path": "modern/control/speed_loop_stage1_reload_check.json",
+      "sha256": "d3a02806f773aa2418035b8d090f1bc091a910f2acc9fe36df29ef292ca888b3"
+    },
+    {
+      "path": "modern/control/speed_loop_stage1_results.json",
+      "sha256": "9f3eb3407f854cc302d2d8139f1dc85f15c146e06890274ed3bbe151437536ad"
+    },
+    {
+      "path": "modern/control/svpwm_checked.m",
+      "sha256": "607685173087aa8b3bfd2a14e62c1341b0fe1ef94f08262ef1cc0c018085f4ca"
+    },
+    {
+      "path": "modern/control/validate_algorithm_stage2.m",
+      "sha256": "4babe8b77dc209399a7345c9087915622e96d8d7905b6f6945120958cc7accbd"
+    },
+    {
+      "path": "modern/control/validate_speed_loop_stage1.m",
+      "sha256": "2f51a702ac8f4a2961034f2551049a73ae22a9fa30443adec59d37f614661656"
+    },
+    {
+      "path": "modern/control/verify_saved_speed_loop_stage1.m",
+      "sha256": "e61604f537e1133fccb7cc49a18b02d4fe11f5a1c3f25e377589f6eee2ef2922"
+    },
+    {
+      "path": "modern/deadtime/README_\u6b7b\u533a\u4e0e\u8865\u507f.md",
+      "sha256": "3225ee58d923d756b37bfcd1d3da5694baa3af63e9e99d1d0b6feacad8eb97fb"
+    },
+    {
+      "path": "modern/deadtime/README_\u8865\u507f\u903b\u8f91\u5c55\u5f00.md",
+      "sha256": "ea79ba3d91cd5b9e36c4972e951f8f433af0c70cca64e7147a22d708d09171dc"
+    },
+    {
+      "path": "modern/deadtime/README_\u8fc7\u96f6\u8bca\u65ad\u4e0e\u8865\u507f\u5bf9\u7167.md",
+      "sha256": "ae33a5495a63d792c6bc4e72fe49dbdb89ba4ab8fcb034d96c4b588e9f4c7b33"
+    },
+    {
+      "path": "modern/deadtime/bound_deadtime_logs.m",
+      "sha256": "758205b8d76a8fa7b7c21d4688e151fbe8b772c642f89a327c8d4d8d109b3a8c"
+    },
+    {
+      "path": "modern/deadtime/bridge_freewheel.m",
+      "sha256": "b42eaf2a701d10124cb07c540de6628ce7671b550413b6c425dac25930236503"
+    },
+    {
+      "path": "modern/deadtime/build_deadtime_stage4.m",
+      "sha256": "4d25f7e9663ca02a503115393c847969743b600d8de538f8bcfd80e92da6b309"
+    },
+    {
+      "path": "modern/deadtime/build_readable_compensation.m",
+      "sha256": "dece7eb0b4bbd1cb276523f51bb0ec8a3f3e1e6d674675de0a19f5430a273ba3"
+    },
+    {
+      "path": "modern/deadtime/build_teaching_reports.m",
+      "sha256": "80687fdde827cf8937b59f270c4e1823496c54144b687bf097e72b49e0b9aca8"
+    },
+    {
+      "path": "modern/deadtime/check_low_deadtime_reference.m",
+      "sha256": "d12d21804bc176e2a1e605c15a7e6017bbe64e24ee1d52742291d5a99522bee0"
+    },
+    {
+      "path": "modern/deadtime/compare_deadtime_amplitude.m",
+      "sha256": "17975f0b4a9439ac1bd83daf3b11818597cdbfec6b6669d90f3c0d835551109b"
+    },
+    {
+      "path": "modern/deadtime/compare_deadtime_hysteresis.m",
+      "sha256": "93ff0ae72a494d1835376b321cdd9b185790a50f30a84591e57585024a7d2f7f"
+    },
+    {
+      "path": "modern/deadtime/deadtime_comp.m",
+      "sha256": "96c8b1c32fa159425a88218adb044c510a81a0592a528b9eafa80adeceaba3f7"
+    },
+    {
+      "path": "modern/deadtime/deadtime_metrics.m",
+      "sha256": "3077b5d1d759d7bac5859e91da507d568361081a2cee33351b26bdb1571260bd"
+    },
+    {
+      "path": "modern/deadtime/deadtime_model_init.m",
+      "sha256": "d3f24a848ceb4dc709bfcffd838fba708fc5e326e5db8f25ff3502dcc8ec59bf"
+    },
+    {
+      "path": "modern/deadtime/deadtime_stage4_results.json",
+      "sha256": "57daf0860697fbc5832f145510f67916961fe8fa6f2f677f163b0c9d4598bb7e"
+    },
+    {
+      "path": "modern/deadtime/diagnose_deadtime_zero.m",
+      "sha256": "ffddc69f40afbb28055b1a3104d67acedc9777d04a7b76fee4a78679ce4c64b4"
+    },
+    {
+      "path": "modern/deadtime/finalize_deadtime_stage4.m",
+      "sha256": "021873bb03e82a9771282c433edff21daa3607640d32bf6d85f2c776f080f555"
+    },
+    {
+      "path": "modern/deadtime/finalize_teaching_reports.m",
+      "sha256": "a6835a6fe9172a8d4daf64e7b1a38be645983ad0f1154e5f8d94a3a7f7ecaf20"
+    },
+    {
+      "path": "modern/deadtime/gate_deadtime.m",
+      "sha256": "d42bba99ada3e367f4320a620f5e4638edc84bbeba185578a0c5239524c08b7f"
+    },
+    {
+      "path": "modern/deadtime/inspect_deadtime_source.m",
+      "sha256": "4c31fe16f6f4e14e9feae457239bf0b621556ee4037b8b2f8c6514f592e8b96b"
+    },
+    {
+      "path": "modern/deadtime/parameter_probe_validation.json",
+      "sha256": "1475e5dbdfc9e3cbd776356f79934eeb325ec7d44f87b23ff09a8b2ad93a5c9e"
+    },
+    {
+      "path": "modern/deadtime/plot_deadtime_report.m",
+      "sha256": "0b49a6bbd564bfa117ac7e365b33b6eade6f14498725d5a40cb6562a8537c293"
+    },
+    {
+      "path": "modern/deadtime/plot_three_phase_lesson.m",
+      "sha256": "e048e206e7e31b77b617f671d9fd9c2737c0614b0c87b8af7d4f511ebfbf0561"
+    },
+    {
+      "path": "modern/deadtime/publish_deadtime_stage4.m",
+      "sha256": "78582717de3d3f640bccb8f0eb38b779939c3b5ea710ad4dc66acd43cc272e7e"
+    },
+    {
+      "path": "modern/deadtime/publish_readable_compensation.m",
+      "sha256": "b4a754c3b3d1414818b0cb885114d57df5f16dd41b3aa4b2e2d2d5929c0d97f0"
+    },
+    {
+      "path": "modern/deadtime/readable_compensation_results.json",
+      "sha256": "afe2b86cb9ecbc2d02a86f0827644627e462252a80e0461ab442a312b96c70b6"
+    },
+    {
+      "path": "modern/deadtime/report_amplitude/results.json",
+      "sha256": "1753b96fa47a3b335f0334713d8b3d0ac2cc8954289adbc053f4a913f17b16b4"
+    },
+    {
+      "path": "modern/deadtime/report_deadtime/metrics.json",
+      "sha256": "8c9a48ee9c9aba294c98c98e9d930fc1b1eaae7f3954c07ad791da96f056c7be"
+    },
+    {
+      "path": "modern/deadtime/report_demo/metrics.json",
+      "sha256": "93eb8eea55e8585b35c9a82bf5f810b36a04ef90c29fadf4111a08d2204e5e0e"
+    },
+    {
+      "path": "modern/deadtime/report_demo/record.json",
+      "sha256": "643b0a669842da48780eca4bc910db2d5424691df436ca65600b7402bd8061c3"
+    },
+    {
+      "path": "modern/deadtime/report_hysteresis/results.json",
+      "sha256": "bd8f85ca8d65ccf26d3ba48fda84926917738d28aaeecb08fc0dc78edb61e94a"
+    },
+    {
+      "path": "modern/deadtime/report_low_speed/metrics.json",
+      "sha256": "93eb8eea55e8585b35c9a82bf5f810b36a04ef90c29fadf4111a08d2204e5e0e"
+    },
+    {
+      "path": "modern/deadtime/report_low_speed/record.json",
+      "sha256": "8411f17b95e5fa62870ea4b1a6fa0469794719db63985c0660b8b9df5c200ea2"
+    },
+    {
+      "path": "modern/deadtime/report_probe_validation/metrics.json",
+      "sha256": "93eb8eea55e8585b35c9a82bf5f810b36a04ef90c29fadf4111a08d2204e5e0e"
+    },
+    {
+      "path": "modern/deadtime/report_teaching/metrics.json",
+      "sha256": "e0556cf1c7aabc8dd89c62eb0ddbd2d4fa5336b171e45bc960f03a17e3cdacb8"
+    },
+    {
+      "path": "modern/deadtime/report_teaching/record.json",
+      "sha256": "fad44d9c2d277850f9e032c1a1c168db6a4450cc482545c65a69a6f5d33124e1"
+    },
+    {
+      "path": "modern/deadtime/report_zero_diagnosis/results.json",
+      "sha256": "84e31d722bccd350ed37ff85afae3677d0649866b2e93bbb84824df243c90b88"
+    },
+    {
+      "path": "modern/deadtime/run_deadtime_case.m",
+      "sha256": "27340b05d48c53fb196ab6c7587fb08f7c9c05734a648654bcbdf682f0745bc2"
+    },
+    {
+      "path": "modern/deadtime/run_deadtime_demo.m",
+      "sha256": "2e7d3c2d226e629caedf4e078c9fb9ad05427b577b177d876adb72ee188210f4"
+    },
+    {
+      "path": "modern/deadtime/teaching_reports_results.json",
+      "sha256": "423cccab7e045e5b7b6acea0bfdc806e6591caf48ae1f6bfe49d5b54d85c88e0"
+    },
+    {
+      "path": "modern/deadtime/test_deadtime_components.m",
+      "sha256": "37f77c6c8414864052cb012df091b9985892d6564601fd5d8da7a259bae4f918"
+    },
+    {
+      "path": "modern/deadtime/validate_deadtime_probes.m",
+      "sha256": "1135f1381cf36098a0fbd98d27a0772ab59eb6ef4cc4562334ba4775bcd13e78"
+    },
+    {
+      "path": "modern/deadtime/validate_deadtime_stage4.m",
+      "sha256": "74c524ee0eaca07043fdc8ab457eef54a0b4c9983e99d09d26f8638dd82a764d"
+    },
+    {
+      "path": "modern/framework/README.md",
+      "sha256": "9f23e4dc6f7c8fe0c2b363239fc85a57cc752fa608098e213f8acce472f0762b"
+    },
+    {
+      "path": "modern/framework/analyse_pmsm_power_integration.m",
+      "sha256": "ae30b88acd020acea550c5c5e273cea6feee02396de29cbb7ae106a3f5d5c7e7"
+    },
+    {
+      "path": "modern/framework/examples/analysis.json",
+      "sha256": "01cb779ae7a93ef33f4ce408ab81f1531bb0853cd080e7c3f930ab5f0db0d43f"
+    },
+    {
+      "path": "modern/framework/examples/source.json",
+      "sha256": "24cb0f549e9b1e38e4f5928ab8795a1b1ab929b4083eb9c34cb14d9f13238f06"
+    },
+    {
+      "path": "modern/framework/legacy_regression.json",
+      "sha256": "ce51b30ee037dd5d5e622bae153492e0ee5859c45f6b4c6cfba32f100a80eded"
+    },
+    {
+      "path": "modern/framework/open_pmsm_framework.m",
+      "sha256": "c41a163c8088def6a2eea851a513b8eb0a07fb6e2950c5273a7e443a6ab24080"
+    },
+    {
+      "path": "modern/framework/pmsm_system_analysis.m",
+      "sha256": "d30fc0efb567f0000932a774d2e469fa59f0d90d3d799c364b7c79e0e2012f53"
+    },
+    {
+      "path": "modern/framework/pmsm_system_inputs.m",
+      "sha256": "71e4dc61b0f253a4f1ce1568daae76e563456cdc821933d3186e5935c277b506"
+    },
+    {
+      "path": "modern/framework/pmsm_system_plan.m",
+      "sha256": "ce25ba9bb662d0aaeb1504d6677b6587f7827156bf42b8f89d92d35821c454b3"
+    },
+    {
+      "path": "modern/framework/power_integration_validation.json",
+      "sha256": "8c47cf32f2c5eabe857b12b9fcf3829fca8911124e6c937263e3d6d37f2b66e1"
+    },
+    {
+      "path": "modern/framework/rebuild_pmsm_system_report.m",
+      "sha256": "6a17c9a06c7c9defbeed4c9605e3e345e9c4cf95ff3ee19716467b2c015087a4"
+    },
+    {
+      "path": "modern/framework/render_pmsm_system_baseline.m",
+      "sha256": "0e1c0d942395bb21e5ae5a15bdf27fdb0d5ed587b8c2abb4218225758d45d3b9"
+    },
+    {
+      "path": "modern/framework/repeat_pmsm_system_baseline.m",
+      "sha256": "ff240ddd36c51668dc05559746e1b05295ce43e78a791d0454769d58d5baad90"
+    },
+    {
+      "path": "modern/framework/run_pmsm_power_integration.m",
+      "sha256": "83e814c16723064331a05ff176233658258eebcdfdd79134991332c5a9964263"
+    },
+    {
+      "path": "modern/framework/run_pmsm_system_baseline.m",
+      "sha256": "673c3bbe418145139edee33dd7f4b249c8ec9bf8293049d141ccdc94f474f031"
+    },
+    {
+      "path": "modern/framework/system_baseline_validation.json",
+      "sha256": "7d24d12e2d6592ccafb68b5ab781738516fc4e7b2c6e872b458bb17dcdfcdd6d"
+    },
+    {
+      "path": "modern/framework/system_reproducibility.json",
+      "sha256": "4a9055b86819c26438cff6ccf92b38409dfd5d119ce08202bbf3f7bfda831e3a"
+    },
+    {
+      "path": "modern/framework/validate_pmsm_power_integration.m",
+      "sha256": "ecf681d31d91c9c29f759934ec4f3f0eda67cc34f63213f2b7833446acbe18d5"
+    },
+    {
+      "path": "modern/framework/validate_pmsm_system_baseline.m",
+      "sha256": "e98efd39701fea444cb9c04e9754690456468f020eaaff55831eecb81543cb9d"
+    },
+    {
+      "path": "modern/framework/verify_pmsm_system_baseline.m",
+      "sha256": "bcbf7d02ee3bd2707ed9f23dcdbff1c659a3dad118c98517a735a7d34e69e6f6"
+    },
+    {
+      "path": "modern/framework/\u4f53\u9a8c\u6e05\u5355.md",
+      "sha256": "613da88d4cca97e7e352c6fbae767071d2fed274f5c9c4b29cd0cc4d26fc0283"
+    },
+    {
+      "path": "modern/framework/\u6559\u5b66\u4eff\u771f\u4f18\u5316\u65b9\u6848_20261014.md",
+      "sha256": "86929a49d6c58e8aa81da535044848b1018796190f73a8166f6de76787e0114f"
+    },
+    {
+      "path": "modern/framework/\u6574\u673a\u529f\u7387\u7ec4\u5408\u9a8c\u8bc1.md",
+      "sha256": "cb371831580ac48abd69d63fba9297738f1026b365b4ac0aeccef9a7ae5bcbf1"
+    },
+    {
+      "path": "modern/hardware/README_\u6c89\u6c99\u7535\u673a\u53c2\u6570.md",
+      "sha256": "bcae2764d61d6fb53cd15faf3409675b4f6c155aed71a3c1f63e5e6f8b55b8f1"
+    },
+    {
+      "path": "modern/hardware/apply_chensha_profile.m",
+      "sha256": "ed171a25ffea4d16aa0c5e88b30442e74ff33a9ffa183e0f12e806c0b1be331a"
+    },
+    {
+      "path": "modern/hardware/axdr_v13_parameters.m",
+      "sha256": "4a78d6c4c54acb200d550dfcfc6636631ff493ff3278d76e7d865ac2bafffd15"
+    },
+    {
+      "path": "modern/hardware/chensha_model_parameters.m",
+      "sha256": "dcb9b8647ddf3f236e958f2545cadb509fbecd977562bc1ff209d5981df0d68d"
+    },
+    {
+      "path": "modern/hardware/chensha_validation.json",
+      "sha256": "895ec82ba65e51042581aa4b60a93dd41f64a2b262e5d7fbb20a598ffd20a452"
+    },
+    {
+      "path": "modern/hardware/refresh_chensha_gui.m",
+      "sha256": "4bfb68038f6fe35cc5f6f5831b0c34ca70716d5471445c7a0bb0644e4edf0205"
+    },
+    {
+      "path": "modern/layout/README_\u5e73\u94fa\u6574\u7406.md",
+      "sha256": "021c8c7fed8bc7ff171d24f3fe6a0d77035f4df31b1439669091b0c47f335c14"
+    },
+    {
+      "path": "modern/layout/appearance/PWM\u4e0e\u91c7\u6837Scope.md",
+      "sha256": "9dd1e20255044be825a9a5a39edb3c3ba4018733e74e5a1100056cc636323603"
+    },
+    {
+      "path": "modern/layout/appearance/README.md",
+      "sha256": "d8063f8263ef7581df8fbbc733d8d1e2a7342d23a6186a163199be0f35399ddb"
+    },
+    {
+      "path": "modern/layout/appearance/current_sampling_preview_source.json",
+      "sha256": "1e9f1ccaa6acb984a607d791026c9d556ce059b07fbbffbb9178136087d62af4"
+    },
+    {
+      "path": "modern/layout/appearance/current_sampling_scope_validation.json",
+      "sha256": "4939bfbc3a60d28c2ee7d33b18309868ee7db7b9f53027708b25dd77429dac20"
+    },
+    {
+      "path": "modern/layout/appearance/deadtime_comp_scope_validation.json",
+      "sha256": "b1a5c64a264e72348af19e9088e42ff00f7e9983ac40b7d76ec64ff112e2a4b8"
+    },
+    {
+      "path": "modern/layout/appearance/deadtime_effects_scope_validation.json",
+      "sha256": "f955ebe6cecaedd515f57cbcccd9f0f382fc5ae0184ed0c8a604e37935debfaf"
+    },
+    {
+      "path": "modern/layout/appearance/deadtime_scope_validation.json",
+      "sha256": "857baf9429223cc4cbb782026d45fb36d7838dacb36b15d3bad397d3f5222494"
+    },
+    {
+      "path": "modern/layout/appearance/electrical_scope_validation.json",
+      "sha256": "7dcd3e42bd50bb5c493ad3e5327df8d1615617f134ffde8c618130bae99fd531"
+    },
+    {
+      "path": "modern/layout/appearance/lifecycle_validation.json",
+      "sha256": "3e18b9980d17204b3b5505fd37c08c03b3658d5cc05f49b4efa7c08581294740"
+    },
+    {
+      "path": "modern/layout/appearance/model_shortcuts_validation.json",
+      "sha256": "d5dacd94caeee36587acb040a9887c4ed1da859557373d60e3019179f64d12fc"
+    },
+    {
+      "path": "modern/layout/appearance/native_control_scope_source.json",
+      "sha256": "c90ebbdf5ada8114e05062e45ffc0b6079f983040d12ce2cee9b28b9fc402539"
+    },
+    {
+      "path": "modern/layout/appearance/native_control_scope_white_source.json",
+      "sha256": "5796bdd79170fc41ca5321781a0e11cee27571293214c4a08286908a43050f28"
+    },
+    {
+      "path": "modern/layout/appearance/native_electrical_scope_source.json",
+      "sha256": "89d9a2e0b3765e487596e80054f0e2edd1c984b6dfb775f6467d83b6d711b53f"
+    },
+    {
+      "path": "modern/layout/appearance/native_pwm_scope_source.json",
+      "sha256": "9256ef9fb19626983515cd0193e4202cdffcfceadf8eaf818776ec16f0ef5c59"
+    },
+    {
+      "path": "modern/layout/appearance/native_scope_blue_red_previews.json",
+      "sha256": "b212273b4ebd40744a281a878517efd3747f56789156852f9997c4419a45ead0"
+    },
+    {
+      "path": "modern/layout/appearance/native_scope_live_restore.json",
+      "sha256": "2dee5ffb87ff2a628a5f9f1421397e1384fa43218d06f173ef768a432813a055"
+    },
+    {
+      "path": "modern/layout/appearance/native_scope_style_validation.json",
+      "sha256": "13f0883fcdb67f6e96f62490fccb7c90cd8ea5b4c16d8f1734b27db2be0c0a2b"
+    },
+    {
+      "path": "modern/layout/appearance/native_scope_validation.json",
+      "sha256": "a9bf1f0478246e378c2680d32a9964b946c11a7710beda64a2836b7f744849b3"
+    },
+    {
+      "path": "modern/layout/appearance/numeric_checks.json",
+      "sha256": "7d06925c4788e5854d32e36ff79dfdfb166ec2bf2ba2b3898b2a3aab5e480963"
+    },
+    {
+      "path": "modern/layout/appearance/observation_desktop_validation.json",
+      "sha256": "01ecf878569212b98ad614ba7d5a7c6292503f7d161f276e38a9f2501a1f5703"
+    },
+    {
+      "path": "modern/layout/appearance/observation_navigation_validation.json",
+      "sha256": "cc3de089d072b0d1c88d6bc684e115cb02a2a6d5fc3cdfa300a168951cf6137c"
+    },
+    {
+      "path": "modern/layout/appearance/observation_parent_defaults.json",
+      "sha256": "79b7cb7757bc3b660088d550043d95ce1589bf756d539b726efb321fa4e3a7b4"
+    },
+    {
+      "path": "modern/layout/appearance/observation_rebuild_validation.json",
+      "sha256": "110f2e2fcd865d381c40b3e47478a9d4111e85b5f25868431eee66cc7e70db2f"
+    },
+    {
+      "path": "modern/layout/appearance/observation_source_callbacks.json",
+      "sha256": "69a51c672631d6bcc19266397c297bab83d42bd7f91c6606b22b8533f07cd8a5"
+    },
+    {
+      "path": "modern/layout/appearance/observation_view_validation.json",
+      "sha256": "776e619fbfa8c51d3d2116e18852a9229ea601ea5f361f63e97369a44048f005"
+    },
+    {
+      "path": "modern/layout/appearance/open_pmsm_controls.m",
+      "sha256": "f8b732fc1aa9f27dafbed606da558a68139afd752befa7455d308ac22a8dc872"
+    },
+    {
+      "path": "modern/layout/appearance/pmsm_current_sampling_fit.m",
+      "sha256": "d0297ec07c09885eb28b530fb9f4fa5219ef8e6b6d69a0519238434439000246"
+    },
+    {
+      "path": "modern/layout/appearance/pmsm_current_sampling_scope.m",
+      "sha256": "4efc1c95db193202d262be1bb48fbaaa1313ca631e6b9522257cb6d4085114fb"
+    },
+    {
+      "path": "modern/layout/appearance/pmsm_deadtime_scope.m",
+      "sha256": "3eb966d6c39710d786aecf34f489b02c35b58127d38c6a2a7cc4c6a60fc37282"
+    },
+    {
+      "path": "modern/layout/appearance/pmsm_electrical_scope.m",
+      "sha256": "98eb8f33363f0322d9b3b3155007c471f9247df1102e51a127daf2a2fbe232f7"
+    },
+    {
+      "path": "modern/layout/appearance/pmsm_native_scope.m",
+      "sha256": "6502bc9cd741912109102a31e0409fbc91e5bd3f60e3060f62139516b1bd57c9"
+    },
+    {
+      "path": "modern/layout/appearance/pmsm_observation_view.m",
+      "sha256": "734ccf41781305b24296c7fe95b978004bfffe8b60b17c08b0ecabd74882bcbc"
+    },
+    {
+      "path": "modern/layout/appearance/pmsm_presentation.m",
+      "sha256": "0b140ce50be168648ac49b04af0f6b4665d168a98f4528a8f8e71848a5e1d05a"
+    },
+    {
+      "path": "modern/layout/appearance/pmsm_presented_call.m",
+      "sha256": "b5fb34656068079fe434f19d03c5eeaae29d43f881c45da22411fd12b5e7fa95"
+    },
+    {
+      "path": "modern/layout/appearance/pmsm_pwm_scope.m",
+      "sha256": "c97b831d0bb9b389930639f524dc61fd198810ed1e58719494d76414b77085d4"
+    },
+    {
+      "path": "modern/layout/appearance/pmsm_sampling_labels.m",
+      "sha256": "97071f7e4310a1098e80b4fa9538e544503acb348ed4c5b9b27c617a06949ac7"
+    },
+    {
+      "path": "modern/layout/appearance/pmsm_scope_open.m",
+      "sha256": "cb1b771ffb4f61a0f1258b17af12ce406085d0a3268669c8afc2b2114d3dece9"
+    },
+    {
+      "path": "modern/layout/appearance/pmsm_scope_style.m",
+      "sha256": "a65c32b37afabd903899dae43ace07b26f0abc502ef1d5b7dc4f08eec63750ff"
+    },
+    {
+      "path": "modern/layout/appearance/pmsm_scope_theme.m",
+      "sha256": "e2e8285cf09ca6983e11ea984ce615bc48a3ef6e6f1a4373bafaaccf1d2e7d4b"
+    },
+    {
+      "path": "modern/layout/appearance/pmsm_show_report.m",
+      "sha256": "84e856477178d18eab7f150a66202cc9f2146fdce6376cf17e68056f58264dfd"
+    },
+    {
+      "path": "modern/layout/appearance/pmsm_signal_chain_view.m",
+      "sha256": "b68b06095137182de8ef78b50e94acee310f93716830c8a95467d6b70bd3b3f0"
+    },
+    {
+      "path": "modern/layout/appearance/positions.json",
+      "sha256": "5d8e6dc7401cb285dbba836daabaa4adb712a1dfa50968bcef328e1c2b37431d"
+    },
+    {
+      "path": "modern/layout/appearance/pwm_scope_validation.json",
+      "sha256": "e59af1cc69b90cbcbe44eb58bc96b548d5dc4b62cd01b05f859aa5de77469146"
+    },
+    {
+      "path": "modern/layout/appearance/rebuild_pmsm_observations.m",
+      "sha256": "d8081659138ec2fcea26a3fe410eb0425ec295b9222bf058fc7cb9e22ed73679"
+    },
+    {
+      "path": "modern/layout/appearance/refresh_pmsm_observation_shortcuts.m",
+      "sha256": "e11f4fa461ed97c71d92608886529b950bceb96d8170c232b7fefff4e48b1189"
+    },
+    {
+      "path": "modern/layout/appearance/ui_validation.json",
+      "sha256": "220b9482637e12aaa3156314e894bfbdff128915df50f79ca73201edc708ac28"
+    },
+    {
+      "path": "modern/layout/appearance/validate_pmsm_current_sampling_scope.m",
+      "sha256": "f9484464ff0c49a3079b483b879c3a6fbc208440be60914a17742700f29108f8"
+    },
+    {
+      "path": "modern/layout/appearance/validate_pmsm_deadtime_comp_scope.m",
+      "sha256": "5b85e7ac6381b42ae6a63c2f2f72d83302ec70e1b912275805a98457d9cad95f"
+    },
+    {
+      "path": "modern/layout/appearance/validate_pmsm_deadtime_effects_scope.m",
+      "sha256": "ddc2ff5e9a733e7337d29893518f5c71f94fad86a4662102e01ba744b7c4deff"
+    },
+    {
+      "path": "modern/layout/appearance/validate_pmsm_deadtime_scope.m",
+      "sha256": "131cc82325df7557f17f5d21d2ab78a5183865635c6010db62615ce9060052f0"
+    },
+    {
+      "path": "modern/layout/appearance/validate_pmsm_electrical_scope.m",
+      "sha256": "b4623aabb6b8ae8bd599b6ea3f32c3a749317d456391ee2a6a7a20e5b0643cee"
+    },
+    {
+      "path": "modern/layout/appearance/validate_pmsm_native_scope.m",
+      "sha256": "25069c3cfa54e0e2dc504176d1c41728ada4fbc5c468896cfa28445aef276b07"
+    },
+    {
+      "path": "modern/layout/appearance/validate_pmsm_presentation.m",
+      "sha256": "3ef46fcca4a0c2b8c0253ff22e0a1f6459dc0fbad96214cae86b293a9eaeea0a"
+    },
+    {
+      "path": "modern/layout/appearance/validate_pmsm_presentation_ui.m",
+      "sha256": "490d5b0e81caedaa57ad6ea3ac20739cba51ed188c57c0a80d5db81bbf3d2a50"
+    },
+    {
+      "path": "modern/layout/appearance/validate_pmsm_pwm_scope.m",
+      "sha256": "c05d68f78eebbc6d88e0ec0303690a220ce0dee20c47383a345b4afa254543fd"
+    },
+    {
+      "path": "modern/layout/appearance/validation.json",
+      "sha256": "a46a85d3d3ef6931e7940fdc6e82b667952d84f83b1007229d9c3fa9830032a6"
+    },
+    {
+      "path": "modern/layout/appearance/\u539f\u751fScope\u4f7f\u7528\u8bf4\u660e.md",
+      "sha256": "8767a9c909934b82d96c9e0958becad0bf1241c22b8ad742cba5143bfd33ab3d"
+    },
+    {
+      "path": "modern/layout/appearance/\u7535\u6d41\u4e0e\u7535\u538bScope.md",
+      "sha256": "5354409892e92ecf3c372a5371f5ac0d380a8146a7f67f73664d503528f8c2cb"
+    },
+    {
+      "path": "modern/layout/appearance/\u7535\u6d41\u4e0e\u91c7\u6837Scope.md",
+      "sha256": "9485cf16ec450241445d1a5233f41e36c9d90bea5307412e0123cdde68184cb5"
+    },
+    {
+      "path": "modern/layout/appearance/\u89c2\u6d4b\u5165\u53e3\u4f7f\u7528\u8bf4\u660e.md",
+      "sha256": "181e82b0bfb12a4b07e8fab20443889aa86ab841104d7b7f5462cf6c076cb3aa"
+    },
+    {
+      "path": "modern/layout/appearance/\u89c2\u6d4b\u7edf\u4e00\u4e0e\u5206\u6790\u5165\u53e3.md",
+      "sha256": "5ad4aad4c0d93ce882ec63067953866cdf1ff624a6c474702b70f20762b4bbdf"
+    },
+    {
+      "path": "modern/layout/flat_tidy_positions.json",
+      "sha256": "1ea06de80d970f3e45aa08bda2acd806e05dab1ea8b908f761cccd222d4024e1"
+    },
+    {
+      "path": "modern/layout/flat_tidy_verification.json",
+      "sha256": "f21f09a89ee5b78c9b7da3fbb5f7357fbadef2990b8dce203514bb77755c18f5"
+    },
+    {
+      "path": "modern/layout/inspect_layout_source.m",
+      "sha256": "d0c126623cbc331668f22e0436c7979a8afdb693d147d164e47aba831e3d3ee6"
+    },
+    {
+      "path": "modern/layout/layout_positions.json",
+      "sha256": "adb055a3cec9f906323338c480f1c3cd01c3cd2a0e45469994f9e8c095235df0"
+    },
+    {
+      "path": "modern/layout/layout_verification.json",
+      "sha256": "9022d8ee480d84a3eeedd6908bb2cb5426fc83f032aa9b77ab4a2d43d10281f7"
+    },
+    {
+      "path": "modern/layout/open_current_model.m",
+      "sha256": "d1c99c6dce19420f4cf2c71d253f39b494fe3e9aaf93804e53076f99e66db67a"
+    },
+    {
+      "path": "modern/layout/organize_original_layout.m",
+      "sha256": "1c85006deb483c2ea976ebf844a55a32d3c7485c325503724a9447556deaafee"
+    },
+    {
+      "path": "modern/layout/source_inventory.json",
+      "sha256": "42c9afea1afa4f3a16a5079a608b481ca521a21bc48daf1a21f6c9d019841d7b"
+    },
+    {
+      "path": "modern/layout/source_xml_inventory.json",
+      "sha256": "86acecf735e2834b720e333da890c7da7b9cf65b24f926584a161c30f465b871"
+    },
+    {
+      "path": "modern/layout/tidy_flat_layout.m",
+      "sha256": "212bc3f483ddce6b38c22d47e7fa34470d8c2e6563222eb6f3e77bdf9b1aa40a"
+    },
+    {
+      "path": "modern/layout/\u8bb8\u53ef\u6062\u590d\u4e0e\u5e03\u5c40\u8bb0\u5f55.md",
+      "sha256": "2155afb66de794db1d0eb0d1d0cf471ddf4a0332fcf671a21c447650f3516a46"
+    },
+    {
+      "path": "modern/open_pmsm_model.m",
+      "sha256": "a0e58b376431d893ee16d02b2fd886a5a1f390420d7b61e9dac3f2a35fdb4a3c"
+    },
+    {
+      "path": "modern/sensorless/analyse_sensorless_n2.m",
+      "sha256": "02fd41aee60edea2ccfbbee2c4294b37a4143506f4e04e964b2c4fd3425baaeb"
+    },
+    {
+      "path": "modern/sensorless/analyse_sensorless_n3_case.m",
+      "sha256": "5f43a679eed4b53105cc04fa450c73dc4812296bce93457ba5e68d0dfe6fe482"
+    },
+    {
+      "path": "modern/sensorless/archive_sensorless_n2.m",
+      "sha256": "4289edeece780f8468cce5890abde6adf25217b9d58eb4142ccb7bfd239cb2c6"
+    },
+    {
+      "path": "modern/sensorless/audit_sensorless_n3_archives.m",
+      "sha256": "6614adfadfbd452639fec9812bcb772b4a52129c4ae6636415f39aa696a400fd"
+    },
+    {
+      "path": "modern/sensorless/baseline/log_schema.json",
+      "sha256": "d0afb56fa1e947ef28c376b92722771958aa5c6dafc0d398362bfac2d5a12c6d"
+    },
+    {
+      "path": "modern/sensorless/baseline/n0_inventory.json",
+      "sha256": "293c268e825dcf4d008ad1a979c7f8c7ff7a62835df6c6dc24881972d106e99e"
+    },
+    {
+      "path": "modern/sensorless/baseline/source_manifest.json",
+      "sha256": "f432cf712c4324fc2f94cf86d9ef07f4638e042b3c884e707f6597c52d73f731"
+    },
+    {
+      "path": "modern/sensorless/blocks/sless_emf_block.m",
+      "sha256": "da0cfa47ea36fae7e4a8558d7695899457ef448bff93744a7d2f2ea25b019191"
+    },
+    {
+      "path": "modern/sensorless/blocks/sless_input_block.m",
+      "sha256": "de89b993dc6fb166399b418132d124b8ecbb39487a3fa7d3a9ea43342ab1ca4e"
+    },
+    {
+      "path": "modern/sensorless/blocks/sless_pll_block.m",
+      "sha256": "5ca50f6a0ac7173c5f5ad830f85e8b7b1d21e2eae46c33c8417745f01c079be8"
+    },
+    {
+      "path": "modern/sensorless/blocks/sless_reset_block.m",
+      "sha256": "38ad054da7b15aee31599590da01ceb9342620009fb39203a2ab326381388776"
+    },
+    {
+      "path": "modern/sensorless/blocks/sless_smo_block.m",
+      "sha256": "613827816e25143c7b4bf6b1939d3cf76254f6d071d8d19d3438cc80bc257041"
+    },
+    {
+      "path": "modern/sensorless/blocks/sless_validity_block.m",
+      "sha256": "124b851359dde22064d21a56d050652fae9067cbac902eaf9b86ab3ee45711ba"
+    },
+    {
+      "path": "modern/sensorless/blocks/sless_voltage_block.m",
+      "sha256": "36b1056912066ed4d838b6a79b6a8b42b4117ca75ca29d3e74b477f2e8445bfc"
+    },
+    {
+      "path": "modern/sensorless/check_sensorless_graph.m",
+      "sha256": "099bad4b83a39e612c73315a88fed33bc055646abf37cd6bdeafb5faec0af3b8"
+    },
+    {
+      "path": "modern/sensorless/close_pmsm_sensorless.m",
+      "sha256": "486fb9431ae5626ed8e520c1bd4b56a44a67cf8a566513c15239963e6868905f"
+    },
+    {
+      "path": "modern/sensorless/compare_sensorless_n3_raw.m",
+      "sha256": "ecc45f6a4f4cb323430f21b7ede461b084d5c46e76651a30b2d7bcc441adf0a9"
+    },
+    {
+      "path": "modern/sensorless/contracts/acceptance_v1.json",
+      "sha256": "dc9951b4920f5e24c1da42933e737c168b97410e510c302ddc94798896364ad4"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r1_test_plan.json",
+      "sha256": "b6becb95eb6f9cb60bbebb08ba8126a34833c164e91f113711e0cddc7dcf47a8"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r1_window_addendum.json",
+      "sha256": "c480f7ed67453e38070c9e24382e93f252e52ecb5b24d30f3a8e4e972673e336"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_accelerated_reference_logging_probe.json",
+      "sha256": "1e3721c953d5281be92ab5076beb34b75703bf950b022fb9dd3c50abcfef6ed7"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_basic_scenarios_design.json",
+      "sha256": "d6fa83937e922947b27d75bbe38f6416a88245b77cc6b1aae7049af87b18829c"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_block_reduction_diagnostic.json",
+      "sha256": "eb4e7afbf449a777802b7082f8aba75c942b1666d4512f9501bfd1b765c6d17c"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_child_only_build_probe.json",
+      "sha256": "43fa60ed11211b9ac66aaa0a6b79476945f4e47af9a7954345932229e5f2bd78"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_constructor_geometry_design.json",
+      "sha256": "e374149205ac2161d090b317d281893a3aff1409bf4796fbb17f738bd282cc41"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_constructor_reference_addendum.json",
+      "sha256": "090021afb1629f067109134ff0e80d0c476c678c465aa12be4b94a5b6a31aed7"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_continuous_codegen_adaptation.json",
+      "sha256": "343b6b79c5331d255273e3ec2898cc513f9825954bdd291638b768ff206abc3f"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_core_replay_diagnostic.json",
+      "sha256": "1ead284eba45aa7a082ff1353d4bb35ceec96db841f8874c8ae3d9c8f33a893b"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_fault_adapter_design.json",
+      "sha256": "b51d6e8fde1bcce358328fd0f8bca6f43b9fa9640687d56d4c6055056a70ccb9"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_final_matrix.json",
+      "sha256": "afc028d20b5b1bfcb468792280f4ce811035d685c6b53ce2d09be22e71f010e2"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_freewheel_inheritance_probe.json",
+      "sha256": "72ef7340393a9a91ac1ccd66c53e93c67382b59dc24eee29be5222e6851a3256"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_generated_backend_design.json",
+      "sha256": "e38f5188eeefb30ec40ebd2d95ea057e66ec42be96ba79eafdc9fc74be47062d"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_load_only_probe.json",
+      "sha256": "f4b67cea579c973aea67d98d6f1b9dd41d18ba579bc77f884ff0a43aeeda667b"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_model_reference_design.json",
+      "sha256": "195bbc64485fa6ae364df617ad6c06d641ff2ea7cb7bc46df1ea83a6496ce83e"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_model_reference_toy.json",
+      "sha256": "81e60077364c16296663e3450f8dcba589987914d6e335dc3c76fdcc7cc17ad2"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_native_logger_diagnostic.json",
+      "sha256": "a54ddd61892f12c9c725351a05b8f8eabbc35566537e273427f282ca244a8ca4"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_native_queue_diagnostic.json",
+      "sha256": "9870dd5dd2a1b008685f2f65c93324ab2682008227f839a984bedfda9d6c1fa3"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_native_voltage_diagnostic.json",
+      "sha256": "9c9a24181ae46fb97ed0cab45f565a6fcb4f359862f8c2ac3eef9a048347850e"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_normal_serialized_acceptance.json",
+      "sha256": "3673248e94ea5eed3c7d8d59f45fc968f7ae3d27d48a673b01895b3b1323f2bd"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_observer_codegen_boundary.json",
+      "sha256": "e6325d2f92578f87aabf965fc5b05f4c605d8562a6d688b6957a03d5dedc9bdd"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_observer_graph_context_addendum.json",
+      "sha256": "26a140b2c3cc3220d4a20e9d05634dd6db1eec81e89691ccff1a56b883e80c1b"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_observer_graph_diagnostic.json",
+      "sha256": "b2417b08e4a5e2a2272f12ead1451ff45bac1f8aae8cb8e9d9f04d25c5703269"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_original_only_diagnostic.json",
+      "sha256": "5480581cf510ff11051b77b73dc23a2372c28a02fa492173836bbd259096b8db"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_phase_guard_design.json",
+      "sha256": "de6ba03d34c6772dcc81e4a59c7a78c21c3c0f77890638a7acea282f0962d0e3"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_plant_adapter_design.json",
+      "sha256": "1de6f52af8152eecda9e184faa39b96e3f26f826aa5a78b185d36b0a40d800b4"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_plant_literal_addendum.json",
+      "sha256": "1e798b7f5f19c5ea3379f554c07e9c76fa78ae3a6c3dbc4fc86a968e3ac6d3fa"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_port_geometry.json",
+      "sha256": "2301389e2213e8cf05fd7c0b6b02e0380e0194a6815b6dd4ebe18a8f5d587c86"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_portable_execution_design.json",
+      "sha256": "cb4042d9d573e3dee3fbb327d19d86e7eaa51e7e3b0bf081359d52bf31e22802"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_portable_model_design.json",
+      "sha256": "f45bedfa75d33d6c17ad2784cd8a9e0ac84c5d37a4d6cd8a68383fe8e4884f9b"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_rapid_compiler_addendum.json",
+      "sha256": "bcd1fb150994aaa22f2a650e8df1a6feecc93bbbc42d295bce0e2ad014add9e8"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_rapid_feasibility.json",
+      "sha256": "c696d4b3e1c86c4e6b2441cc7bfcb8ccfb3377505411ff359fbed7354fd2c871"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_rapid_process_probe.json",
+      "sha256": "5c66d791b2de5e0aad638b689290acfc5c51a850e6ff400efe5065f538e158c6"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_reduced_graph_diagnostic.json",
+      "sha256": "c74ed9f8403848388f653de24163adfb5b741f1c50fe9c5a45464e62e88ae6ce"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_reduced_graph_save_name_repair.json",
+      "sha256": "9cabeef8caea6c06a2e8201225d11708ee58b5566ba5db8dae83939adcdf96cc"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_runtime_matlab_first_addendum.json",
+      "sha256": "adb40746244b3f349b4c9be63b6c88c2ddf218e009622ff215c65d13ee023497"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_runtime_oracle_probe.json",
+      "sha256": "0830616b6e96ed3fcc01f4238952232b4ce868dbd495661a72b6368746076405"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_single_initialization_design.json",
+      "sha256": "3eafe5a48d2ea677cd297cfa6ba1fd1bc80e3fc1cc76dee7564035dada706213"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_single_instance_codegen_adaptation.json",
+      "sha256": "9bb0c0524a57008c0803359dfb47fd94656aacb86576245ad795599ecaf83cc9"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_single_reference_logging_probe.json",
+      "sha256": "8496d253dbb97276e66c5974f067c80c74c5a299b5a817625d9ef4f294bc41ad"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_staged_preload_repair.json",
+      "sha256": "b3a002a04bec3024f68d9f12451f86ca5cae2272dee355e3eb9d59fd7d7af40f"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_stopped_bootstrap_probe.json",
+      "sha256": "3e1a67f5b4f2c35fc6d2d51d7ec657a065abdc9c78a611612538e2cdacf43ccc"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_stopped_lifecycle_stress.json",
+      "sha256": "1cd1976183b76de260b8da1ea9dfaeebea40530e15ede1b8373c8c85852dbc65"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_test_plan.json",
+      "sha256": "6cedde9bcf37926542541d286d6d4167d2c596969998c5a20893a5063d60c439"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_v8_endpoint_addendum.json",
+      "sha256": "66facc40e301977426eaf8401de80353ba15b931033bd38bb434da34b4b165d5"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_v8_short_cache_addendum.json",
+      "sha256": "24228db102a4648d1e3e9ca55dcf3be470a01d5ee4a9fa8798828995bcdbb336"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_v8_uniform_log_format.json",
+      "sha256": "131d92c0098fe4ea8908f67618c22935536706019acaa9a513bb93a308c027a6"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_r2_workspace_persistence_probe.json",
+      "sha256": "211a2905e2fbb09d71ece95e6f4d96a3cc14d52a489a33459dcbe0b06959925f"
+    },
+    {
+      "path": "modern/sensorless/contracts/nonideal_v2.json",
+      "sha256": "39e098c166484e029936585cff24ed90d5dddcb60deae30c325b01a79d9930ab"
+    },
+    {
+      "path": "modern/sensorless/contracts/parameters_v1.json",
+      "sha256": "1e6d012ee2790264b724dbd4da7a75eae5f459c38d1f7d8200e03e640af4ce4f"
+    },
+    {
+      "path": "modern/sensorless/contracts/signals_v1.json",
+      "sha256": "b9fb53de07d724514e3ff8277a8313c0f18ee9914769612200deacf3dda1ef2c"
+    },
+    {
+      "path": "modern/sensorless/contracts/test_plan_v1.json",
+      "sha256": "717598811b3e2225c4606483dd205c76b2a50865d79af3fdba63531703373296"
+    },
+    {
+      "path": "modern/sensorless/correct_sensorless_n3_reports.m",
+      "sha256": "340aee075ef2fee7296844aa0d9461c2234cbc41b911d0c1a79c87b20c3001a3"
+    },
+    {
+      "path": "modern/sensorless/export_sensorless_n2_review.m",
+      "sha256": "b40203c25f997224097aa649f747a188fedb34b2183b8732c7f0d574ba6c86e2"
+    },
+    {
+      "path": "modern/sensorless/export_sensorless_n3.m",
+      "sha256": "b76e8593df9b4f38535f2aa59717d28fdd477735f41e952d3d75d098a46f502c"
+    },
+    {
+      "path": "modern/sensorless/export_sensorless_robust_r0.m",
+      "sha256": "7952e241cad86b86e60d4c3b019b63693b13bafb5a900baa1c51fc29d07588b8"
+    },
+    {
+      "path": "modern/sensorless/milestones/N3R1/frozen_candidate.json",
+      "sha256": "d3841d7c0936bf4a03c0ee9ed83454eca6f07de093164364a3e86ebaea414623"
+    },
+    {
+      "path": "modern/sensorless/open_pmsm_sensorless.m",
+      "sha256": "5be4911b729927157f459c14ae75d7f249447af5780c02aac29ea0f32692c0b0"
+    },
+    {
+      "path": "modern/sensorless/pmsm_sensorless_init.m",
+      "sha256": "6f1b0aa5e09fdd2a2ccd12311e383c697d7938a0f32ec771a7da789e271aa18a"
+    },
+    {
+      "path": "modern/sensorless/pmsm_sensorless_init_n3.m",
+      "sha256": "8f616fd82aa1d6e0c85315f35907d319a8c249bf5692f0574bec3831e123ca0b"
+    },
+    {
+      "path": "modern/sensorless/pmsm_sensorless_model.m",
+      "sha256": "171eba2375d8524f1a57c7702c4366bb43915a9b6228332b46518aa1f3188e4c"
+    },
+    {
+      "path": "modern/sensorless/pmsm_sensorless_scope.m",
+      "sha256": "e1b58fb1c02d62ba98823877aa8e11056e71d074e675f412eee62182edee82bf"
+    },
+    {
+      "path": "modern/sensorless/render_sensorless_n1.m",
+      "sha256": "393018c510da20f6f638dbf9f869a3fcf66fa1ca6ee8b2262955ce776c15d126"
+    },
+    {
+      "path": "modern/sensorless/render_sensorless_n2.m",
+      "sha256": "520acd46f171bdfffdc6815417930405d4a5e700d64612ce956dac95e8d9b86e"
+    },
+    {
+      "path": "modern/sensorless/repeat_sensorless_n1.m",
+      "sha256": "ef374b30007dd7ff54e3f5c37f24115be917bf540d7ba2bfb02b5d2ab1845216"
+    },
+    {
+      "path": "modern/sensorless/repeat_sensorless_n2.m",
+      "sha256": "5e25d3a4cbbe7f6f8dc9c00dae290da66b3f86ab9f357300e3fbb70a758fd49f"
+    },
+    {
+      "path": "modern/sensorless/robust/constructor/pmsm_reference_geometry.m",
+      "sha256": "40801e08c10ec236af50ef983ebe0ad459f37ff7343c55be612567fa32f39196"
+    },
+    {
+      "path": "modern/sensorless/robust/constructor/pmsm_sensorless_geometry_model.m",
+      "sha256": "25e67df925d9f4f2a8bc2dcaa672b5c21c94c0da9e3c58897f234a3856ef33ee"
+    },
+    {
+      "path": "modern/sensorless/robust/constructor/pmsm_sensorless_v2_geometry_model.m",
+      "sha256": "0492b1986f73e984056e5673bed6719ef2bffcd788f420766d5f61bc9cc0d5bc"
+    },
+    {
+      "path": "modern/sensorless/robust/constructor/sensorless_r2_constructor_geometry.m",
+      "sha256": "19dfaffd612732ed0302fb1d6dab2676550895ac16d7d8f20ed9658586aa51ee"
+    },
+    {
+      "path": "modern/sensorless/robust/constructor/sensorless_r2_constructor_snapshot.m",
+      "sha256": "9572077a02021651e8e7db07d380068db475946029a30a73b215c87958f55f3b"
+    },
+    {
+      "path": "modern/sensorless/robust/constructor/sensorless_r2_verify_constructor.m",
+      "sha256": "a50966aac32747ffb1801c071bcaf2a9bdd4c3b3935a1ef3ed38619293e0e686"
+    },
+    {
+      "path": "modern/sensorless/robust/constructor/validate_sensorless_r2_constructor_case.m",
+      "sha256": "5819f19c2ef67cc54dd5901d0597f91494bbd782d54c90a34ed71bf4eefd05d8"
+    },
+    {
+      "path": "modern/sensorless/robust/diagnostics/derive_sensorless_r2_normal_serialized.py",
+      "sha256": "a507c969a28d1e84ea678289710aaf87fe304113151cae3a0feec3138f16d613"
+    },
+    {
+      "path": "modern/sensorless/robust/diagnostics/run_sensorless_r2_normal_serialized_short.ps1",
+      "sha256": "3edff1581d2491d7334fb1ada4ac349bb3c0e036d5dd19a04f24f5187d54f94d"
+    },
+    {
+      "path": "modern/sensorless/robust/execution_v3/probe_sensorless_r2_stopped_init.m",
+      "sha256": "a5915f4904f1ed0cd2d071ff119176164ed7801283886d80434987c778e2a09d"
+    },
+    {
+      "path": "modern/sensorless/robust/execution_v3/sensorless_r2_initialize_stopped.m",
+      "sha256": "f91f033c1b0e1377e9d3c5a4d5414e68c43d2bf4f4ebcd19d7a2e2e464c7f881"
+    },
+    {
+      "path": "modern/sensorless/robust/execution_v3/sensorless_r2_v3_snapshot.m",
+      "sha256": "b20f29fed6c6c343a0cdc58dd6ab2e8a86abce703de023adfcd95b587d7a64d8"
+    },
+    {
+      "path": "modern/sensorless/robust/execution_v3/validate_sensorless_r2_v3_case.m",
+      "sha256": "bc0646982e10e4105d9e2215f4045dd3fe9f3b19ed506599af12cf28a64a49b6"
+    },
+    {
+      "path": "modern/sensorless/robust/execution_v8/audit_sensorless_r2_v8_short_archive.m",
+      "sha256": "4996b28de6514dd9bd01eec8b66a6713504a578cd741daaad1196cd8b0e1f871"
+    },
+    {
+      "path": "modern/sensorless/robust/execution_v8/normalize_sensorless_r2_v8_archive.m",
+      "sha256": "da7bfbb0d707afce7cee3ec206ec64eb0ff6e431cf53e1efd8fb5c6778eb4d05"
+    },
+    {
+      "path": "modern/sensorless/robust/execution_v8/sensorless_r2_run_initialized.m",
+      "sha256": "9c8bb365ee35b376f1faad1c576f3ae8f24b6e7c83dfa5ffc32dadf2bb58ea8e"
+    },
+    {
+      "path": "modern/sensorless/robust/execution_v8/sensorless_r2_v8_snapshot.m",
+      "sha256": "57f15d629420ac71c165125e062df65097dc6380fca00814f4fe315509d5e769"
+    },
+    {
+      "path": "modern/sensorless/robust/execution_v8/validate_sensorless_r2_execution_toy.m",
+      "sha256": "acab3d5adf0a95861497403f6eb1db716251c01c4ae0d6bbbf6746e4e1189235"
+    },
+    {
+      "path": "modern/sensorless/robust/execution_v8/validate_sensorless_r2_v8_case.m",
+      "sha256": "f65ea013f31d65a18be5d22d743704b2d005beab5c08a7d19b8ee532394f2fc4"
+    },
+    {
+      "path": "modern/sensorless/robust/execution_v8/verify_sensorless_r2_v8_short.m",
+      "sha256": "82508ed3b89892bbbaaaa8bd637c528ffa4cfb9b4ed87fa5834c8e6aba63598d"
+    },
+    {
+      "path": "modern/sensorless/robust/faults/analyse_sensorless_r2_fault.m",
+      "sha256": "42dde1a6bb65c4f63a654b64e5725a57a8248f2557244b46bd335aeac01b6fe0"
+    },
+    {
+      "path": "modern/sensorless/robust/faults/blocks/sless_r2_ingress_block.m",
+      "sha256": "4aa012827d79cf8656e00a434d25eb2e7c2a225e24951af0a9c2eb1bc1350f19"
+    },
+    {
+      "path": "modern/sensorless/robust/faults/blocks/sless_r2_profile_block.m",
+      "sha256": "a14dab5fcbadb79820b4ff51576aab612e4d3dbcf483cff3799effc58962dc38"
+    },
+    {
+      "path": "modern/sensorless/robust/faults/blocks/sless_r2_pwm_block.m",
+      "sha256": "0996393bced578546fd220cce5a621ac5d23946224e7624265ba6baf8abf22c6"
+    },
+    {
+      "path": "modern/sensorless/robust/faults/blocks/sless_r2_queue_block.m",
+      "sha256": "7ed0a46182633f31955c3a755918581a00e0707537d5460ee2949baa8dcc75d2"
+    },
+    {
+      "path": "modern/sensorless/robust/faults/blocks/sless_r2_voltage_block.m",
+      "sha256": "ceb5a84b738f42ac70b2c953d09b862bbb8e092b8eaf1fb72ac371d871b0011c"
+    },
+    {
+      "path": "modern/sensorless/robust/faults/probe_sensorless_r2_fault_model.m",
+      "sha256": "1d1b38011cc90f063877e93fc1fbc0064e52bc93d665e4ec31d36ffd41b10855"
+    },
+    {
+      "path": "modern/sensorless/robust/faults/probe_sensorless_r2_pwm_restoration.m",
+      "sha256": "9c4172fefaf158c93386189515a66d10bec0299a9208a2afcd635a1fb5fb3ef6"
+    },
+    {
+      "path": "modern/sensorless/robust/faults/sensorless_r2_fault_model.m",
+      "sha256": "d157ba00d2cca8ff41ee8bec69a363613176c1922ce7a32916081025dd2fabdc"
+    },
+    {
+      "path": "modern/sensorless/robust/faults/sensorless_r2_fault_profile.m",
+      "sha256": "8d412c6449dcb5b6d733359195de7f882a463a6cabcfc87ebf2f04ccda9e3b15"
+    },
+    {
+      "path": "modern/sensorless/robust/faults/sensorless_r2_fault_program.m",
+      "sha256": "4d2a7de935fc3e2448ecbf81ae42ec289ae13e6d264ae35c9d37a7f8f818a7b0"
+    },
+    {
+      "path": "modern/sensorless/robust/faults/sensorless_r2_fault_pwm_model.m",
+      "sha256": "3765819a3bc60c36f7ba058ea353f65184873c65048b18a82254d69996070afb"
+    },
+    {
+      "path": "modern/sensorless/robust/faults/sensorless_r2_fault_queue_state.m",
+      "sha256": "f7f2dc46aee1e87c70cba2ddd8b23758df985fb3e6d642e28f0847cd111ef4b8"
+    },
+    {
+      "path": "modern/sensorless/robust/faults/sensorless_r2_fault_queue_step.m",
+      "sha256": "6e67681999bc2319e4c0ebe69ed4433c0eecef887e8d21e621c475d99c449e03"
+    },
+    {
+      "path": "modern/sensorless/robust/faults/sensorless_r2_fault_snapshot.m",
+      "sha256": "4d7b5f082b22aa4d7e6a30ea4d2396882f3df1b1c96fae0ef2a6615b966dbbf6"
+    },
+    {
+      "path": "modern/sensorless/robust/faults/sensorless_r2_ingress_step.m",
+      "sha256": "5669a7a7ca7cbf869acd3511d75b848666bb3a44369df9124937dfd65ae3ac7d"
+    },
+    {
+      "path": "modern/sensorless/robust/faults/sensorless_r2_pwm_event_logging.m",
+      "sha256": "2b189ff3e03116ee08c6c9efdfff356cf4e993136a95395cc8a198c7fd598452"
+    },
+    {
+      "path": "modern/sensorless/robust/faults/sensorless_r2_pwm_state.m",
+      "sha256": "a3480a3dbd434b1c86d3dda80d4226d7e108fc291d509a07c77f46f42beead77"
+    },
+    {
+      "path": "modern/sensorless/robust/faults/sensorless_r2_pwm_step.m",
+      "sha256": "83503136de798d3a4b8b9380ed9a5dcd18be0875dd4ebd6080af34fdc12f61e7"
+    },
+    {
+      "path": "modern/sensorless/robust/faults/sensorless_r2_restore_fault_pwm.m",
+      "sha256": "f2957012a2016a770e7b5dc3c5c7205c2f3c4930196123c44145126dc0bd6844"
+    },
+    {
+      "path": "modern/sensorless/robust/faults/sensorless_r2_voltage_step.m",
+      "sha256": "fe285c5e1d484e1941999998c5444e77c624849a58175d1446b17cfa25370a54"
+    },
+    {
+      "path": "modern/sensorless/robust/faults/validate_sensorless_r2_fault_case.m",
+      "sha256": "0e4dfc155e2a26542dbaa7b66b6331c0ebbc3f74220c8ca975a75d08335cdfda"
+    },
+    {
+      "path": "modern/sensorless/robust/faults/validate_sensorless_r2_fault_cores.m",
+      "sha256": "29618651d7a3085f0ba75101795b3d320d2803000d48fbfe15bd20c2e80c3f04"
+    },
+    {
+      "path": "modern/sensorless/robust/faults/verify_sensorless_r2_fault_nominal_probe.m",
+      "sha256": "9434d9f152e362ebacaf906fc3b0aa02c11ea8f82f85aa397e892126b11010a7"
+    },
+    {
+      "path": "modern/sensorless/robust/faults/verify_sensorless_r2_fault_probe_analysis.m",
+      "sha256": "598f138426b4bcbb0824fcb39e01e28dc0cca9dd655cea7b3cc4a1eb394ae8de"
+    },
+    {
+      "path": "modern/sensorless/robust/formal_r2/candidate.py",
+      "sha256": "00b52d5be1b8254bd014112e4b4bdc62997ddf9786348fd950bad21116c1bb58"
+    },
+    {
+      "path": "modern/sensorless/robust/generated_backend/check_sensorless_r2_generated_graph.m",
+      "sha256": "d033351dee544d48ff9aa6b0cef0731ef4382ccf24e0dca557c9bea9c65fba6a"
+    },
+    {
+      "path": "modern/sensorless/robust/generated_backend/sensorless_r2_generated_snapshot.m",
+      "sha256": "a9365bb3cb9b44944d6fc44c943616c7ba2c05c216a29e5c1069781b4d6a666e"
+    },
+    {
+      "path": "modern/sensorless/robust/generated_backend/validate_sensorless_r2_generated_case.m",
+      "sha256": "5d7a540eb1f1883e313d4057cbb1f24cfefd0e6f14fbf03e075cc18fafd4d910"
+    },
+    {
+      "path": "modern/sensorless/robust/integration/audit_sensorless_v2_case.m",
+      "sha256": "cff6d714ff08a7327f359da6141dc3c039c279f7bb60aaaa2c4521d4937a0bf9"
+    },
+    {
+      "path": "modern/sensorless/robust/integration/blocks/sless_v2_emf_block.m",
+      "sha256": "c8f8377066a8ea693d33073eec4c1e98aa168169b52be02efdbf0f90a234c4b7"
+    },
+    {
+      "path": "modern/sensorless/robust/integration/blocks/sless_v2_measure_block.m",
+      "sha256": "275ff468dc3703fe06a918d00917a2111d0a20e3327a3eb95b0c8a8205d22bc1"
+    },
+    {
+      "path": "modern/sensorless/robust/integration/blocks/sless_v2_queue_block.m",
+      "sha256": "cba6223c2dbee342ca45a37a17e7b192503048e2e94e83c9eabec47a31b24586"
+    },
+    {
+      "path": "modern/sensorless/robust/integration/blocks/sless_v2_voltage_block.m",
+      "sha256": "b17ade2bf80777b4d1d16dc9d97217a0e8baa315d83ec375530666ba3c330e7a"
+    },
+    {
+      "path": "modern/sensorless/robust/integration/check_sensorless_v2_graph.m",
+      "sha256": "c95b9709dcff60b00f8c2818fe8950be97de23236bd9a033ef688d201ed43401"
+    },
+    {
+      "path": "modern/sensorless/robust/integration/close_pmsm_sensorless_v2.m",
+      "sha256": "ffa94151b914e405cd3651056198a205958fadc982484b5708e79e99d29b31bb"
+    },
+    {
+      "path": "modern/sensorless/robust/integration/export_sensorless_v2_r1.m",
+      "sha256": "82cb307438b89f79d1ae791deeaac7d921500a4503229b047e521eec0867508b"
+    },
+    {
+      "path": "modern/sensorless/robust/integration/open_pmsm_sensorless_v2.m",
+      "sha256": "1e7c9d3c3dd780c969af9037d69aca7e61f2dd9b2d854d09f4462f0ce1f2df98"
+    },
+    {
+      "path": "modern/sensorless/robust/integration/pmsm_sensorless_v2_init.m",
+      "sha256": "a5b13001bad90ea8b5abcc976396f67b0f1ffb5439d8412cb62f4f1a9fafc5e1"
+    },
+    {
+      "path": "modern/sensorless/robust/integration/pmsm_sensorless_v2_model.m",
+      "sha256": "d4ad2c706bcdcc79b792315bebc195b95bbbb1834441e723a9414c7598cf2ac5"
+    },
+    {
+      "path": "modern/sensorless/robust/integration/render_sensorless_v2_r1.py",
+      "sha256": "337e1567fcc27ec02647f050074e6007fea9e86f3f752afb78c72504792dc7c9"
+    },
+    {
+      "path": "modern/sensorless/robust/integration/sensorless_v2_component_tests.m",
+      "sha256": "2c387cdf5fd77bbec6e82c9aee8df498253562b206d5653b41530df3c67cfdc8"
+    },
+    {
+      "path": "modern/sensorless/robust/integration/sensorless_v2_config_rt.m",
+      "sha256": "2191001a30f487abdc8a1efe431464c7c3c3063fa1e2b95916273bc02c5f58ec"
+    },
+    {
+      "path": "modern/sensorless/robust/integration/sensorless_v2_config_values.m",
+      "sha256": "201490e4d834b47ff3e0f6987db4c8924a74501349b00f93333d9487eea237a8"
+    },
+    {
+      "path": "modern/sensorless/robust/integration/sensorless_v2_front_phase.m",
+      "sha256": "43ff9c1f113f3f5e211ff13ff5d9a7cd5f83c6c30e656d73c73b8d7426b35bcc"
+    },
+    {
+      "path": "modern/sensorless/robust/integration/sensorless_v2_guard_sources.m",
+      "sha256": "7a81c511fac5ca144024533e2612b221fd54d91d31b08139c0a16db13fcb1c56"
+    },
+    {
+      "path": "modern/sensorless/robust/integration/sensorless_v2_measure_state.m",
+      "sha256": "b05472cc260b05bba99309f78272481b71410ea9080e64c4d4a2abbd5b268f31"
+    },
+    {
+      "path": "modern/sensorless/robust/integration/sensorless_v2_measure_step.m",
+      "sha256": "db423cdf4850a629ea4e3e9746b7700432f4c131d7d81a804eded99849616d8b"
+    },
+    {
+      "path": "modern/sensorless/robust/integration/sensorless_v2_queue_state.m",
+      "sha256": "a728ffd727d85ea12c0441d2862a07eae3ef25d6ed092bea55f3b7e455370b4d"
+    },
+    {
+      "path": "modern/sensorless/robust/integration/sensorless_v2_queue_step.m",
+      "sha256": "08423deb3c59e544ff60631202399cfe38ac9d28d2b7e05285659a3579927945"
+    },
+    {
+      "path": "modern/sensorless/robust/integration/sensorless_v2_snapshot_sources.m",
+      "sha256": "c4643a0d62be3bce3904b5674aa76bedc40df5b4086475daf47a4f4987b7dc45"
+    },
+    {
+      "path": "modern/sensorless/robust/integration/sensorless_v2_stimulus.m",
+      "sha256": "ebad25264060c732320817d1317747f70519d38adf4dbfdc22d5028cd1f765b1"
+    },
+    {
+      "path": "modern/sensorless/robust/integration/sensorless_v2_voltage_state.m",
+      "sha256": "e0d9c95d8e9c92c844feadf02c410cfd8e9828204b6af6d63a876c265cd6b98c"
+    },
+    {
+      "path": "modern/sensorless/robust/integration/sensorless_v2_voltage_step.m",
+      "sha256": "e9462127c644af0f9915d9e07651e41ea1465fecf4566ece5afd1d034e88a549"
+    },
+    {
+      "path": "modern/sensorless/robust/integration/validate_sensorless_v2_case.m",
+      "sha256": "572713ffbfa99c946be40faf330f2628d5523ffec31930c25ccefc8d86c1405f"
+    },
+    {
+      "path": "modern/sensorless/robust/integration/validate_sensorless_v2_components.m",
+      "sha256": "8f724880f6f858a11d61eec0a721934fd6bd2a27a1854df8b3a3e6cd71101045"
+    },
+    {
+      "path": "modern/sensorless/robust/integration/verify_sensorless_v2_campaign.m",
+      "sha256": "5701f941337bd0d069e715052dec37ba36d4f20fa5fe823b8d8d987934d9707e"
+    },
+    {
+      "path": "modern/sensorless/robust/literal_plant/probe_sensorless_r2_literal_binding.m",
+      "sha256": "98c5b3601a18a3d101f272e670d3b8696e8b05d97f2620e2e75fb67af2a51de7"
+    },
+    {
+      "path": "modern/sensorless/robust/literal_plant/sensorless_r2_literal_snapshot.m",
+      "sha256": "2c1dd8e2c15db7ce32c1d4a3363f1e589b89becf3016350a3853759bbf2c0fa6"
+    },
+    {
+      "path": "modern/sensorless/robust/literal_plant/sensorless_r2_plant_literals.m",
+      "sha256": "65c206744379a6a81d278f270aac6ccb448962efa89a898ad4886cdfb2203f80"
+    },
+    {
+      "path": "modern/sensorless/robust/literal_plant/sensorless_r2_restore_literals.m",
+      "sha256": "687766bca71af5819904fc26f71043e9e4f785bc57d6c016b584dc28de299519"
+    },
+    {
+      "path": "modern/sensorless/robust/literal_plant/validate_sensorless_r2_literal_case.m",
+      "sha256": "c0cf5f4dd37a956a5dfacb122b4eb1c3a8d2d4a3df0ea8f2e629b11728fcb843"
+    },
+    {
+      "path": "modern/sensorless/robust/model_reference/check_sensorless_r2_reference_graph.m",
+      "sha256": "4f4dd5a4a3fbe5325e6e11ceae65eb7532f7fcd30b224293cf9dedfeb8cfd633"
+    },
+    {
+      "path": "modern/sensorless/robust/model_reference/sensorless_r2_reference_model.m",
+      "sha256": "054eb5a69946caa560da5184ebecb5ae56ffd9359ddf480d809ac265c94e08e9"
+    },
+    {
+      "path": "modern/sensorless/robust/model_reference/sensorless_r2_reference_snapshot.m",
+      "sha256": "c493040e6ef034c21e7bc4907d1354e9175c8af08e7faccd440dd45f1036e76e"
+    },
+    {
+      "path": "modern/sensorless/robust/model_reference/validate_sensorless_r2_reference_case.m",
+      "sha256": "4bad0048583678cb4d3377ac1f5b24936088186a9ed97a800ac1a50a3b847535"
+    },
+    {
+      "path": "modern/sensorless/robust/normal_serialized/build_sensorless_r2_normal_serialized.m",
+      "sha256": "ee1dd74c599df6bd00cd659a17d313744d25989e43e0f5f0fb3a14452f9311f5"
+    },
+    {
+      "path": "modern/sensorless/robust/normal_serialized/check_sensorless_r2_normal_serialized_graph.m",
+      "sha256": "225c6ecaa9a2f2614f5021fea5085173507b98ea286500ad6de8c048547e3b10"
+    },
+    {
+      "path": "modern/sensorless/robust/normal_serialized/compare_sensorless_r2_normal_serialized_shorts.m",
+      "sha256": "827a95a387add7e53697d0a308e2c47134a1b4eddee4961e5004248f35f8c9b7"
+    },
+    {
+      "path": "modern/sensorless/robust/normal_serialized/derivation.json",
+      "sha256": "937cf7baf0be7bdee58a02df516168cd502d39bd23c9ab48da4824559b390d81"
+    },
+    {
+      "path": "modern/sensorless/robust/normal_serialized/execute_sensorless_r2_normal_serialized.m",
+      "sha256": "dcb796b285dd15296185de355eefea7de9690a0bcabf9cbdceec795756be3874"
+    },
+    {
+      "path": "modern/sensorless/robust/normal_serialized/normalize_sensorless_r2_normal_serialized_archive.m",
+      "sha256": "b793f9b128583beee61f689eded6272f42119e833f20a7e419eea988f9d90d6a"
+    },
+    {
+      "path": "modern/sensorless/robust/normal_serialized/qualification_sources.py",
+      "sha256": "b4a9b92c3650f957ab9af17f5c68324c9e610bd3dea9b0131e266ebdfd72cb26"
+    },
+    {
+      "path": "modern/sensorless/robust/normal_serialized/sensorless_r2_normal_serialized_snapshot.m",
+      "sha256": "095119f72468d3e8a958f98155a78ce8479d9f77df4192d5d42bf198d67e4216"
+    },
+    {
+      "path": "modern/sensorless/robust/normal_serialized/verify_sensorless_r2_normal_serialized_short.m",
+      "sha256": "728a33894426f47e6c8d4301d0a0b864cc1d334a884a879ee1cb418a826e4de0"
+    },
+    {
+      "path": "modern/sensorless/robust/performance/analyse_sensorless_r2_case.m",
+      "sha256": "4e3e98cab19d4c198c2afb808070e7ee10fe75ef129faaee1d53970b879056d4"
+    },
+    {
+      "path": "modern/sensorless/robust/performance/blocks/sless_r2_monitor_block.m",
+      "sha256": "c8b151e99f247d920951236f2e7f6ff6318c5f3d5b7db2200e7288ace05e0488"
+    },
+    {
+      "path": "modern/sensorless/robust/performance/sensorless_r2_event_audit.m",
+      "sha256": "b2b45f240ffc8d4fe3ca3ced573d9ede26102df82bfa1f426682ce40c9bf34c6"
+    },
+    {
+      "path": "modern/sensorless/robust/performance/sensorless_r2_logging.m",
+      "sha256": "7020c94fecff48f7280d51ad79122d4692b8abbbd62142ef4518a6e9f5b77e8f"
+    },
+    {
+      "path": "modern/sensorless/robust/performance/sensorless_r2_monitor_state.m",
+      "sha256": "a4b84f412f724e99af98864be80a676ce8d9410e729a5d08b42f87fada90110e"
+    },
+    {
+      "path": "modern/sensorless/robust/performance/sensorless_r2_monitor_step.m",
+      "sha256": "8da9b890980215e81b1be5169f5a79d609759c2a1d9750d1f4819bec12c824a1"
+    },
+    {
+      "path": "modern/sensorless/robust/performance/sensorless_r2_prepare_compile.m",
+      "sha256": "d0b405a70733f1686878f577d27eb25f08ee2125722010d1304ec091aa665949"
+    },
+    {
+      "path": "modern/sensorless/robust/performance/sensorless_r2_snapshot_sources.m",
+      "sha256": "a39d99a1b34301015d2bcb75969c40e3fdd7c468acd5be79a5b0dba0bc987fe4"
+    },
+    {
+      "path": "modern/sensorless/robust/performance/validate_sensorless_r2_case.m",
+      "sha256": "71661aeba17affb8722baf78c2aebd3822440d9f4ff295acf92901dc55a7e2d5"
+    },
+    {
+      "path": "modern/sensorless/robust/performance/validate_sensorless_r2_monitor.m",
+      "sha256": "08c5c88403c1051200682c3c6d016fb7b824e08090b6caf6ca550c9268c30656"
+    },
+    {
+      "path": "modern/sensorless/robust/performance/verify_sensorless_r2_logging.m",
+      "sha256": "fa3a7f991ab64e457cf0cb6e375ef5e06cdf171fb627e86055d33bdc69b70e9a"
+    },
+    {
+      "path": "modern/sensorless/robust/phase_guard/blocks/sless_r2_phase_guard_block.m",
+      "sha256": "8e748e382ca87547e2ba67e043f9a75bf404c50b2690581fcf64d428e17a4767"
+    },
+    {
+      "path": "modern/sensorless/robust/phase_guard/sensorless_r2_guard_snapshot.m",
+      "sha256": "7be3158d66627581157d632b0d417a1f74b348f2588e4b4b638af0f6653363b2"
+    },
+    {
+      "path": "modern/sensorless/robust/phase_guard/sensorless_r2_phase_guard.m",
+      "sha256": "dd78d4b64a9cf7b80c3e3f0b82a4d95f86b2cebcee1a0ddb282407a2bd7f8e5b"
+    },
+    {
+      "path": "modern/sensorless/robust/phase_guard/sensorless_r2_phase_guard_model.m",
+      "sha256": "ff0c73a00cc7538759354339219d48104f59bdbfb7387477d44a76733abeb986"
+    },
+    {
+      "path": "modern/sensorless/robust/phase_guard/validate_sensorless_r2_guard_case.m",
+      "sha256": "c536696e80f3b619906fcc5edb0971a9711c4560fb92b52c5d12ae432a6e0c4b"
+    },
+    {
+      "path": "modern/sensorless/robust/phase_guard/validate_sensorless_r2_phase_guard.m",
+      "sha256": "e994d82bf8d5d13d4c777db848a318b73243cc169d0131992c6787518006ce7a"
+    },
+    {
+      "path": "modern/sensorless/robust/portable_execution/build_sensorless_r2_staged.m",
+      "sha256": "c6ab33528c5aa66b5cec99795e260983c5de18cbd02eeaa6339192b1bd38ae12"
+    },
+    {
+      "path": "modern/sensorless/robust/portable_execution/execute_sensorless_r2_staged.m",
+      "sha256": "41de41bc235a7ee9879c619ceee8d4df0b7bc432e47f3022e44d010c8f64b70f"
+    },
+    {
+      "path": "modern/sensorless/robust/portable_execution/sensorless_r2_staged_snapshot.m",
+      "sha256": "7885932b2926a700580dda4283112ad000bc6954154c368608aff38f16d8517f"
+    },
+    {
+      "path": "modern/sensorless/robust/portable_model/build_sensorless_r2_portable.m",
+      "sha256": "f75f97c56042f7c6718f2ec4d458498a8cd663a17e4f749c9ac5d57f8e3ad266"
+    },
+    {
+      "path": "modern/sensorless/robust/portable_model/sensorless_r2_portable_snapshot.m",
+      "sha256": "7491b96fa6272df2e47696ff25a4a17f30764baea22e5c055684b729416c3afc"
+    },
+    {
+      "path": "modern/sensorless/robust/portable_model/sensorless_r2_portable_storage.m",
+      "sha256": "f8a7632c967e5cfd010e638fee79e99f08370dd5a93518185dc4fe941c493b1f"
+    },
+    {
+      "path": "modern/sensorless/robust/portable_model/verify_sensorless_r2_portable.m",
+      "sha256": "ca3366aa0149b3575eadd73d630fac759e50dddffd18b78ab38640216e4043d5"
+    },
+    {
+      "path": "modern/sensorless/robust/scenarios/analyse_sensorless_r2_scenario.m",
+      "sha256": "5ce2e622827adb3bcb27495ce00377dc7e884f5e9a819466c127cf7d3fc8c1f0"
+    },
+    {
+      "path": "modern/sensorless/robust/scenarios/sensorless_r2_plant_parameters.m",
+      "sha256": "ee84ddcba34b4aabc0f4c6cfac8584ad98b207a47978acea08d197d44213ee5b"
+    },
+    {
+      "path": "modern/sensorless/robust/scenarios/sensorless_r2_restore_plant.m",
+      "sha256": "c773a159ba2c6ec8d2f0e96628d3ba1df0071597db8f4ae347dac4b9d4357a1d"
+    },
+    {
+      "path": "modern/sensorless/robust/scenarios/sensorless_r2_scenario_snapshot.m",
+      "sha256": "10d0ee58eb952e73affd908ac8bdcbf9c6bd6989a3f5ef385e8fc61aacca08a3"
+    },
+    {
+      "path": "modern/sensorless/robust/scenarios/validate_sensorless_r2_plant_separation.m",
+      "sha256": "2b4cabbfa8f01a0c46792e74a322809a38137503fa39fc5a4de400ee21b54cad"
+    },
+    {
+      "path": "modern/sensorless/robust/scenarios/validate_sensorless_r2_scenario.m",
+      "sha256": "d45db70466147f9ed359f735b89a7715feb0aedcc527988aec17fa9e877477e9"
+    },
+    {
+      "path": "modern/sensorless/robust/sensorless_bridge_estimate.m",
+      "sha256": "f20d998c94a6195c08e3207494aff90e26242c3bc9e518569dd6836add53eaf3"
+    },
+    {
+      "path": "modern/sensorless/robust/sensorless_deadtime_estimate_step.m",
+      "sha256": "8956b849540d67ae7709b1dfdebc1dc94f83089a1c5c5bef8da480e2b02fba59"
+    },
+    {
+      "path": "modern/sensorless/robust/sensorless_event_plan.m",
+      "sha256": "af7ecc4ade15b912dd0cb84774708ff890dc30b638d86f22fd3370201c88bd0f"
+    },
+    {
+      "path": "modern/sensorless/robust/sensorless_publish_step.m",
+      "sha256": "c67145ec5ff84b2ef54d5b1dc1cfb7a849ed50680a7e9d4e23acc3e6308c46a3"
+    },
+    {
+      "path": "modern/sensorless/robust/sensorless_robust_config.m",
+      "sha256": "403fab2c002e0c1f6ab38fa880daa1ab81a9ca8a18bcb3434600c105fca12799"
+    },
+    {
+      "path": "modern/sensorless/robust/sensorless_robust_r0_tests.m",
+      "sha256": "416a7caa938a2d7b8876ed81292ca38dc67fca86bd725fb99ac56b4db6575005"
+    },
+    {
+      "path": "modern/sensorless/robust/sensorless_robust_state.m",
+      "sha256": "01a38ecd05d190c2d9306ed7d07310f18a41cfff0a4f1852506d5082e565276e"
+    },
+    {
+      "path": "modern/sensorless/robust/validate_sensorless_robust_r0.m",
+      "sha256": "5347e958576afbdaa3289773a9330777bd28330a8a201a233c0bb7280c2f0570"
+    },
+    {
+      "path": "modern/sensorless/robust/verify_sensorless_robust_r0.m",
+      "sha256": "277fcb63cfb2c0a78a53f42e8a654df5fceeac9fb7a84e2bf52e40e5d8d546b1"
+    },
+    {
+      "path": "modern/sensorless/run_sensorless_r2_final_matrix.ps1",
+      "sha256": "e36a0549955e75a3d0338b9ead1f49bf64ab5fea690fc0efee9dce24f9e7478d"
+    },
+    {
+      "path": "modern/sensorless/run_sensorless_r2_reference.ps1",
+      "sha256": "12854f0e9022ec0ebb68e35b513a7d454f56cf1d195b7e2c2a2b34afb3b7def0"
+    },
+    {
+      "path": "modern/sensorless/run_sensorless_v2_r1.ps1",
+      "sha256": "c41f8e756a042f5be415d3d056bd4ee55865d157ab38d0b60211462b0c222310"
+    },
+    {
+      "path": "modern/sensorless/sensorless_emf_step.m",
+      "sha256": "6be57dd81cd118962def67a7450d9513c8d0fa077d4839b552be452762ce4259"
+    },
+    {
+      "path": "modern/sensorless/sensorless_n0_inventory.m",
+      "sha256": "c1e59ca7b7aa66b9a5edd446b11a53070b08640181c725b2b25928249e8cfbbf"
+    },
+    {
+      "path": "modern/sensorless/sensorless_n1_pll_tests.m",
+      "sha256": "4e0ac9d86cb2ee479f57e174884984ed316268bf83296e9ba32acc1b861ea8f7"
+    },
+    {
+      "path": "modern/sensorless/sensorless_n2_isolated.m",
+      "sha256": "f6db6d9de42c3c6d85bd659e5f6c0ea899444efe68d5d11a0dfda6ea4a6b02a4"
+    },
+    {
+      "path": "modern/sensorless/sensorless_n3_faults.m",
+      "sha256": "5a47baee800afbce185baafd4cf2aad3564cea5bbe9f9f731973b9c295a66e65"
+    },
+    {
+      "path": "modern/sensorless/sensorless_n3_restore.m",
+      "sha256": "384d0b1a39f8afe0396908e20b1e1be9e636b32ddcb70ef4c379340cc4c4da39"
+    },
+    {
+      "path": "modern/sensorless/sensorless_n3_stimulus.m",
+      "sha256": "2f89b0415c78a8f92511226e3de02ef0d4d85f4d153a4cfc98386d0eeccc396f"
+    },
+    {
+      "path": "modern/sensorless/sensorless_observer_step.m",
+      "sha256": "d687b72aca52e53c0eeb8679978f68412a442f465e0d9710f69c36fc8af4418b"
+    },
+    {
+      "path": "modern/sensorless/sensorless_parameters.m",
+      "sha256": "bd164983ed74d3a3ce6d5c8ad0eace939e49f9399ee27ed846f465db9d7ef51e"
+    },
+    {
+      "path": "modern/sensorless/sensorless_pll_step.m",
+      "sha256": "1d16dc17b1b50f157dbe25e14a91ec06bf5073d393b1d816645f80a036d5c328"
+    },
+    {
+      "path": "modern/sensorless/sensorless_rt_config.m",
+      "sha256": "d548b123f03f7483aaa3175f4be6dc4aeaab843cd74d71c79e70160075524a6f"
+    },
+    {
+      "path": "modern/sensorless/sensorless_smo_step.m",
+      "sha256": "19e2d581dabddcac1dab014baa4b082c6465afd01fac01eaf1f8ad962052f033"
+    },
+    {
+      "path": "modern/sensorless/sensorless_state.m",
+      "sha256": "193d39a8cff13b51637ff783d1bf42b7a4753e23db22fa45b1afc09723e72206"
+    },
+    {
+      "path": "modern/sensorless/sensorless_validity_step.m",
+      "sha256": "5772a44ca9911b3618279feeaf225177ea2fd74160b9716ddcb60a00a8d50272"
+    },
+    {
+      "path": "modern/sensorless/sensorless_voltage_step.m",
+      "sha256": "4815b5ddefbb61ef5300fa7813a28544d4734b0bfe1629186e741503b1c30e9b"
+    },
+    {
+      "path": "modern/sensorless/validate_sensorless_n1.m",
+      "sha256": "902467d0d6feb2d5b6d4ea106b5266c7d8dfe95a0873690c3f35a0f70786ca75"
+    },
+    {
+      "path": "modern/sensorless/validate_sensorless_n2.m",
+      "sha256": "31e3849cbe40bae1226c4e7f1c4bf4cdf29f16a1cd130da6fff28f8977208df5"
+    },
+    {
+      "path": "modern/sensorless/validate_sensorless_n2_case.m",
+      "sha256": "215b9390be013e1a2daee594a1a7c77a5e7e500b4f3b3daace2631185e7fb2c7"
+    },
+    {
+      "path": "modern/sensorless/validate_sensorless_n3_case.m",
+      "sha256": "3d8ac41c6d8525ca562775229c573d15e6faf90edfa052356ffcf1d02ab9a627"
+    },
+    {
+      "path": "modern/sensorless/validate_sensorless_n3_comparison.m",
+      "sha256": "22f19fa0d50e3107b46140b95e1e9426cac26e07e68c9cc3788e5891a2dc22f0"
+    },
+    {
+      "path": "modern/sensorless/verify_n0.py",
+      "sha256": "d17ce5d047d0e6500130d93e0a9236a37f7fe6248925c43af098890c957b8df6"
+    },
+    {
+      "path": "modern/sensorless/verify_sensorless_n2_archives.m",
+      "sha256": "0ed571a788734d6cafad553ba3782d9a7d45ad0922d65ba54d53013590c5a592"
+    },
+    {
+      "path": "modern/sensorless/verify_sensorless_n3_replay.m",
+      "sha256": "59d03af9a6f27dde2332d8dba5176bdba3f289978ea4c792d4eae6aeff7f3e95"
+    },
+    {
+      "path": "modern/signal_chain/README.md",
+      "sha256": "f03c8acb04c1feaafb9df22a6fa3ce66df43a8ecb3848d6622d8f59eb01fda62"
+    },
+    {
+      "path": "modern/signal_chain/delivery.json",
+      "sha256": "a8bc2cfcc7436a6f946412a7d1512ed443da8e186117ab1452343609b2a558c1"
+    },
+    {
+      "path": "modern/signal_chain/feedback_effects/README.md",
+      "sha256": "2aeb6e81dce78623781205b0be704c2199be2e9b820dec626607786927b198bf"
+    },
+    {
+      "path": "modern/signal_chain/feedback_effects/delivery.json",
+      "sha256": "ceb053a433acffc3dc4cf166eb7c572f93cb8daa34edf234e3c90f67dcc976d5"
+    },
+    {
+      "path": "modern/signal_chain/feedback_effects/validation.json",
+      "sha256": "f834c6fc1a2cade15d445bf0e579509bb06af277224af3b775cb735ce1f86786"
+    },
+    {
+      "path": "modern/signal_chain/feedback_effects_replay.json",
+      "sha256": "d2d987bb4b2d13adfd37b69cb07538d1dd1cb114ae72ba0ed7aed12fce93fa11"
+    },
+    {
+      "path": "modern/signal_chain/finalize_timing_filter_baseline.m",
+      "sha256": "45fe6c1c8d3d981e91690d08f2c0360010e8528060b6bdc4ac764550addef6c2"
+    },
+    {
+      "path": "modern/signal_chain/inspect_signal_chain.m",
+      "sha256": "c8dc5c70cbbadcdb05f367883a887842b3f8c81cd17b778dd816048b1c5b1e19"
+    },
+    {
+      "path": "modern/signal_chain/preview_signal_chain_view.m",
+      "sha256": "c558fc422efcec2f8f08194f387c7557362639abecd4213aa9a69a9d168b4113"
+    },
+    {
+      "path": "modern/signal_chain/render_signal_chain_results.m",
+      "sha256": "bdc758471cfb98171537c8904e95ff3ec9c8cd3febffd13ba121c2cb266d94b1"
+    },
+    {
+      "path": "modern/signal_chain/replay_timing_feedback.m",
+      "sha256": "405b3593e889c26bfee1fc31b9a261cacc6abdf54c6247e8cfd6a3fcacae566b"
+    },
+    {
+      "path": "modern/signal_chain/results/source.json",
+      "sha256": "9fae91a56f0fdf31b75af065668c15921c78f45b3648d1ce7dd314a7809c1440"
+    },
+    {
+      "path": "modern/signal_chain/run_feedback_effects.m",
+      "sha256": "ac279dbd68d06c82f70bdd28b7d66715c507f2e8eae603e591ae0837512f1b25"
+    },
+    {
+      "path": "modern/signal_chain/run_timing_feedback.m",
+      "sha256": "fde56be868fcfa4d2ac532990122dcb0a74a86eb9062d1184143f433cf6b8d3c"
+    },
+    {
+      "path": "modern/signal_chain/run_timing_filter_baseline.m",
+      "sha256": "af40daebae3a65a1d8c2f49a31c8e3aef1ae0eae1c2629f28e38a1f7d32645a0"
+    },
+    {
+      "path": "modern/signal_chain/switch_baseline/README.md",
+      "sha256": "e68d4d69d6f0a8bd34557aa4f8c7023cb26d322af4a80f47c85afadbaf9566a9"
+    },
+    {
+      "path": "modern/signal_chain/switch_baseline/delivery.json",
+      "sha256": "c89338d695589f0f434b40b34f88b0db7f0af9b7e5e156f001999e08debd21bf"
+    },
+    {
+      "path": "modern/signal_chain/switch_baseline/validation.json",
+      "sha256": "ae8e6be68046762f28e8245920bd267dcb4113b09ab37625773281cae0e65ec7"
+    },
+    {
+      "path": "modern/signal_chain/teaching_chain/README.md",
+      "sha256": "9ec4b01fe8203a2937068b02d4e6ff3317607b6d49c733b472324be8475414c8"
+    },
+    {
+      "path": "modern/signal_chain/teaching_chain/delivery.json",
+      "sha256": "1434127b2eb15a6012bc32d459717c8b06e51c39c9b9eb5f8ba0f35e24e3a9a6"
+    },
+    {
+      "path": "modern/signal_chain/teaching_chain/navigation_validation.json",
+      "sha256": "ba02b5744925db2f99b7ba5a6619cd3a5634160736d332cf2b1adf7d9d53e804"
+    },
+    {
+      "path": "modern/signal_chain/timing_feedback/README.md",
+      "sha256": "65e4616e92cc920c9d8a6b44e8c4a561e4e49dac45d625d52065eb4c2d8a887d"
+    },
+    {
+      "path": "modern/signal_chain/timing_feedback/delivery.json",
+      "sha256": "a9ab8878a2ea829a889127637899a566082f5b485e8754f9e8b2b5430d3215e5"
+    },
+    {
+      "path": "modern/signal_chain/timing_feedback/prefix_validation.json",
+      "sha256": "760c67a5007d214ec93b38207c31716752a4ba48cd8fd908e35f9c3976e9495a"
+    },
+    {
+      "path": "modern/signal_chain/timing_feedback/validation.json",
+      "sha256": "5de886033a93447982b8c997e540e48325bc3affd33cf7b64e262bf17adb57a5"
+    },
+    {
+      "path": "modern/signal_chain/timing_filter/README.md",
+      "sha256": "af8baeb7a0ad61f2a65f789515eb5760faf44e05984f656c73954efcdc0380e8"
+    },
+    {
+      "path": "modern/signal_chain/timing_filter/appearance_delivery.json",
+      "sha256": "13f70aa92f6393f6a4ead2cdb54e6f7cc085a5829ceb21ef03f53864e5ca71f2"
+    },
+    {
+      "path": "modern/signal_chain/timing_filter/delivery.json",
+      "sha256": "474367414b5104b464a0d5d1ec03e713d25f148a55b3f1eacdff6bf9dd20e33e"
+    },
+    {
+      "path": "modern/signal_chain/timing_filter/validation.json",
+      "sha256": "38b97bce82146597fa7ba34888da26afe8d578b87c9cc409a1b6a18f9cc6e7f1"
+    },
+    {
+      "path": "modern/signal_chain/timing_filter_data.m",
+      "sha256": "1f5405c2e57786addac6a5a85c57634c3cc5e492114923ea7a8a913d5bdd3e49"
+    },
+    {
+      "path": "modern/signal_chain/ui_validation.json",
+      "sha256": "b71408dbc14aaa84ec25bb3fc6e29011b4e5e38099aeefc0e115a3800eb2907d"
+    },
+    {
+      "path": "modern/signal_chain/user_runs/README.md",
+      "sha256": "3a21d5c179c56b68cd67aaacef7ebfc2d8d39b4296bd0cf59366bff3c66615be"
+    },
+    {
+      "path": "modern/signal_chain/user_runs/delivery.json",
+      "sha256": "58725b98c26afc5587f141125a4a4bfce1ad1380c9e41897a60f272db9d844e6"
+    },
+    {
+      "path": "modern/signal_chain/user_runs/validation.json",
+      "sha256": "d8bc700c6307066ca67bb343988f00580d5d0ad3a66428802edb55decdac5668"
+    },
+    {
+      "path": "modern/signal_chain/validate_feedback_effects_replay.m",
+      "sha256": "ecd6738ec8c0095e57815dd610b35837d9425cb6782b6ddd3c0995a1fa7f2b3d"
+    },
+    {
+      "path": "modern/signal_chain/validate_feedback_effects_view.m",
+      "sha256": "5b213553544a091d710332ca70b2605d711f558695ce656499c94a4e72eb104d"
+    },
+    {
+      "path": "modern/signal_chain/validate_signal_chain.m",
+      "sha256": "2773d6fac6876bebdb87779cead568d918aa6415903ec5112f6bb0db6575e840"
+    },
+    {
+      "path": "modern/signal_chain/validate_signal_chain_ui.m",
+      "sha256": "a13692fff8f112cc826bc58f61a49bfb53c7b49224d7dda6dc4915ceef0c5a46"
+    },
+    {
+      "path": "modern/signal_chain/validate_signal_chain_view_regression.m",
+      "sha256": "0a5eddc22bfb09d49d2841e8e9d6b53f11a852df77a9385a475a2eccd669e3da"
+    },
+    {
+      "path": "modern/signal_chain/validate_switch_baseline.m",
+      "sha256": "5b0e251f48c91bd33c40f9337f218e7012adc6ff40e6997c5840fcdfd615fe1f"
+    },
+    {
+      "path": "modern/signal_chain/validate_teaching_chain_navigation.m",
+      "sha256": "7562eb0311539ef18870f57ff122a59e90735f706bbf3e10ac9c6ad742e9719f"
+    },
+    {
+      "path": "modern/signal_chain/validate_timing_feedback.m",
+      "sha256": "7952a5e755c3b05f2153e60f282262d60fe9cd254ac1715c4b062689c2cd49ad"
+    },
+    {
+      "path": "modern/signal_chain/validate_timing_feedback_prefix.m",
+      "sha256": "cabd54462917a0d2e4d586582bf587603b8627b76a4c7830756b914c9eaa72ba"
+    },
+    {
+      "path": "modern/signal_chain/validate_timing_filter.m",
+      "sha256": "88e4a76bf33fdfd62338d19a4ccbc349dc51060d8d812799d06fe7d688963b72"
+    },
+    {
+      "path": "modern/signal_chain/validate_user_run_workflow.m",
+      "sha256": "c7249a05cb41b131cf37e30b839bae2fa3c686f3ddb1d1f54a3e4c242578c93c"
+    },
+    {
+      "path": "modern/signal_chain/validation.json",
+      "sha256": "710818abc1380160bca60402d16ef1718b8f6ed724de7bb4d950f4c344a301d2"
+    },
+    {
+      "path": "modern/signal_chain/view_regression.json",
+      "sha256": "ef728c4d5883e9ebf4496975ba4d86b91625aade5deef7d415252b8e4cb54d2a"
+    },
+    {
+      "path": "modern/startup/README.md",
+      "sha256": "2dbb23bd400c5f242208ec78e758b073a03ad59b39029c2f7ba1711cdc10c5bd"
+    },
+    {
+      "path": "modern/startup/analyse_pmsm_startup.m",
+      "sha256": "892e810760e6bceafd7a89a2e02ab5d4057ad730efd5e4414cde1a60a3ffe573"
+    },
+    {
+      "path": "modern/startup/bypass_validation.json",
+      "sha256": "c5ef0d0a98abffb33640746e021088337cf1630df63a3f8a852915f3515f04ad"
+    },
+    {
+      "path": "modern/startup/close_pmsm_startup.m",
+      "sha256": "1e69019a8554822a9390d2a850d0caa1e4a995149ceb5bffd0c3fed31cd864cd"
+    },
+    {
+      "path": "modern/startup/component_validation.json",
+      "sha256": "b09c0b0a2aeafdf662821f0001309a2fee06ba6bb6d836574d0e9320c2319b8d"
+    },
+    {
+      "path": "modern/startup/delivery_validation.json",
+      "sha256": "33759423bdb26764f12e9f6abcca13cc40f953bb889f5f0b754a46a253d2157d"
+    },
+    {
+      "path": "modern/startup/legacy_validation.json",
+      "sha256": "b120c6c8398b1ac374ce0a20ff611bf8c64c4074f91a688ce0d78f3056fc8cb2"
+    },
+    {
+      "path": "modern/startup/open_pmsm_startup.m",
+      "sha256": "1447811167d5f67025b437a6c2ed0ac8e6cd307ee7458ba99159d041f9f23d9f"
+    },
+    {
+      "path": "modern/startup/pmsm_startup_mode.m",
+      "sha256": "6ff99552577cba6cf0d07b8ae56acf0ebb545103b8d15abbd79dbc291d7687b1"
+    },
+    {
+      "path": "modern/startup/pmsm_startup_model.m",
+      "sha256": "aef15d40c309bdd3e4714d82058ff8194dc205ee132d0f0bf2722ac419877432"
+    },
+    {
+      "path": "modern/startup/pmsm_startup_scope_style.m",
+      "sha256": "d154dd7c107c7075120f3503afb0e85682f27c3769f1eaa185e5e6fc4e458898"
+    },
+    {
+      "path": "modern/startup/priority_validation.json",
+      "sha256": "62ddfd1a9e3c1041b4c1ffc6aca7bfd97a690394027daf1255ffbf34960e7708"
+    },
+    {
+      "path": "modern/startup/run_pmsm_startup.m",
+      "sha256": "0380e1186dadd1fd97115270f2e58e5f9af7ba891153413c58e33107d22efad9"
+    },
+    {
+      "path": "modern/startup/startup_gate.m",
+      "sha256": "7e541244581088e45635e560d8709e041a5e8ef1c886c82115bf6a62cb828bde"
+    },
+    {
+      "path": "modern/startup/startup_pwm.m",
+      "sha256": "cbfd75063ab3da27a01c2459f4cf7114434bf6e09060398171e21091f802a586"
+    },
+    {
+      "path": "modern/startup/startup_step.m",
+      "sha256": "ed92b3eab10d3b1250f4e2ed34d1846c251e38d5d094e25b62d4086908546183"
+    },
+    {
+      "path": "modern/startup/startup_validation.json",
+      "sha256": "346896746a86228062413fd2189f1390a2e77f0f3b348300448e68dfe5300413"
+    },
+    {
+      "path": "modern/startup/ui_validation.json",
+      "sha256": "9298641dc75bf4275f75499c7288be4e6f61ff2066488b6fa74398a203de1a21"
+    },
+    {
+      "path": "modern/startup/validate_pmsm_startup.m",
+      "sha256": "23c3f33b2bc0d6a8909623523810bd75b5c25375845241e57cb0871da842559e"
+    },
+    {
+      "path": "modern/startup/validate_startup_components.m",
+      "sha256": "149d2e47a5bbcc8b2ecaed11e9bf6d6ca4fbeee6fa49a27e6509f575cbcb0065"
+    },
+    {
+      "path": "modern/startup/validate_startup_legacy.m",
+      "sha256": "2fe14ad961fb3ce85b8c3ed47908f466d373cc50fd697196603ef1293b146fdb"
+    },
+    {
+      "path": "modern/startup/window_validation.json",
+      "sha256": "92b835f42f0e8865901801aed89b5f35876af7e3b0dd751b52f48351d39b6d6e"
+    },
+    {
+      "path": "modern/teaching/README_CCR\u66f4\u65b0\u8fb9\u754c.md",
+      "sha256": "4eb8ef6e59fd3c2db092dfa2092cda6a1dfa267b158e170353c3e6b14ad81516"
+    },
+    {
+      "path": "modern/teaching/README_\u4f4e\u4fa7\u91c7\u6837\u7a97\u53e3.md",
+      "sha256": "bb24971349776f98f672fe7eeafb819e68b39f6117865984a29accb028e77c2c"
+    },
+    {
+      "path": "modern/teaching/README_\u4f4e\u901f\u6b7b\u533a\u4e0e\u8865\u507f.md",
+      "sha256": "8eef27e03513c9acf1343dca1678b8c5a9615e3abc50e6134c18d61af0d1cae6"
+    },
+    {
+      "path": "modern/teaching/README_\u53c2\u6570\u8bbe\u7f6e\u4e0e\u5b9e\u6d4b.md",
+      "sha256": "2add1e9072a6b3f8514755dde99f55e84a97ffe6f8cc698c90859756310119ed"
+    },
+    {
+      "path": "modern/teaching/README_\u542f\u52a8\u4e0e\u63a5\u7ba1\u65b9\u6848.md",
+      "sha256": "d91e450bdb7bb9c7558e8d26de78ca37e1f53386204483f62af161638d392725"
+    },
+    {
+      "path": "modern/teaching/README_\u566a\u58f0\u4e0e\u6ee4\u6ce2.md",
+      "sha256": "db4e26a8215a18bca4034826969eb5a1deda6defc9fba9324b10fbed79775830"
+    },
+    {
+      "path": "modern/teaching/README_\u56fa\u5b9a\u5355\u56e0\u7d20\u5b9e\u9a8c.md",
+      "sha256": "c428f3783173a77a95bc806bd2ec28439d0709af61962b1fe32e561f3975339a"
+    },
+    {
+      "path": "modern/teaching/README_\u56fa\u5b9a\u53c2\u8003\u4e0e\u5f00\u5173.md",
+      "sha256": "4496bf4e47aca1d1c3385f80b6dbed49ba2fe4310976be3f0b6ac4c99aaa75cd"
+    },
+    {
+      "path": "modern/teaching/README_\u56fa\u5b9a\u5b9e\u9a8c\u7b2c\u4e8c\u6279.md",
+      "sha256": "94228115c7e3adf3793a05d4e0a6d9b1daab81935fc99cbd1b5d5bb66674c65d"
+    },
+    {
+      "path": "modern/teaching/README_\u5b9e\u9a8c\u590d\u73b0\u4e0e\u5c55\u793a.md",
+      "sha256": "e26243c8f4281aa93cb0f16a60113c6b4c9517a692acf5a7b3665fbea1cc5333"
+    },
+    {
+      "path": "modern/teaching/README_\u6559\u5b66\u5f00\u5173\u7b2c\u4e00\u6279.md",
+      "sha256": "f43af0791444c7ebc38ed411d9d400e7dabff2c57a76a21e8f177433d087a496"
+    },
+    {
+      "path": "modern/teaching/README_\u6846\u67b6\u4e0e\u5f00\u53d1\u57fa\u7ebf.md",
+      "sha256": "74ce2ec3d01c157e931d907a61b8578eab84c701d94783f399af7a7af19dd9b0"
+    },
+    {
+      "path": "modern/teaching/README_\u6b7b\u533a\u914d\u5bf9\u5b9e\u9a8c.md",
+      "sha256": "f617884bdcf9d906f3537a332315cec7c2ff5060ab090b8fbd0e0ff98dcce30b"
+    },
+    {
+      "path": "modern/teaching/README_\u6d4b\u901f\u53cd\u9988.md",
+      "sha256": "e9fe5265f06b0ca8dbdcd019b4ad2a7db99425c01803c9191b7502d0940ce9a8"
+    },
+    {
+      "path": "modern/teaching/README_\u6d4b\u91cf\u94fe\u4e09\u9879\u5e26\u8bfb.md",
+      "sha256": "f962a8aba9a331095fe6b6c144b5984ef4057e5d229559211b93870ae9f0cf44"
+    },
+    {
+      "path": "modern/teaching/README_\u7535\u6d41\u91c7\u6837\u6559\u5b66.md",
+      "sha256": "dbb258cb243fd6ee8ee4ca0263ea470df397c7d48d1184c2fea57e69af8a130c"
+    },
+    {
+      "path": "modern/teaching/README_\u770b\u61c2\u6b7b\u533a.md",
+      "sha256": "a71da06ca54bc5a9327158e4de1a41f4d9e468d17ca9d0dee542a650221315ff"
+    },
+    {
+      "path": "modern/teaching/README_\u771f\u5b9e\u65f6\u5e8f\u5b9e\u9a8c.md",
+      "sha256": "0cc20ebd498ba03b35912ef2fec8d1c55af93c5a5288df5348e8e6c9f6a58cef"
+    },
+    {
+      "path": "modern/teaching/README_\u7f16\u7801\u5668\u89d2\u5ea6.md",
+      "sha256": "4006508112074fa0ad7f705b89dd0f1616b18866a35f8bd1ef6f4f26194b4b02"
+    },
+    {
+      "path": "modern/teaching/README_\u89c2\u6d4b\u4e0e\u5b9e\u7269\u7b2c\u4e8c\u6279.md",
+      "sha256": "a4416d628bb6d9d945d27840c2098a59f508179d0a5dfd41291f29c53ea3bcb6"
+    },
+    {
+      "path": "modern/teaching/README_\u8ba1\u6570\u6d4b\u901f.md",
+      "sha256": "2bbb60f2fceb3c3b15dae5d60a701bd84ae0991565efd03398421fc17e2c8f47"
+    },
+    {
+      "path": "modern/teaching/README_\u901f\u5ea6\u63a7\u5236\u6559\u5b66.md",
+      "sha256": "27ac42ca3434a31c1291e0adb4d80d1703e83f8130cb4127d5b1965584cde329"
+    },
+    {
+      "path": "modern/teaching/README_\u901f\u5ea6\u6ee4\u6ce2.md",
+      "sha256": "c42ff59f2497d0d4af79451137ca3c90b28b87fbf8abf0efdcc4d8797da695cb"
+    },
+    {
+      "path": "modern/teaching/add_teaching_controls.m",
+      "sha256": "89641da68f73dd6144f573def31f0ff486198b4341bcd44a4248347048e69ed5"
+    },
+    {
+      "path": "modern/teaching/audit_pmsm_startup_interfaces.m",
+      "sha256": "31dbf2969636b3c091c979ac21bd05b73a2f95d9c4c1a2b0a9e6f35d0be1d317"
+    },
+    {
+      "path": "modern/teaching/core_teaching_navigation_validation.json",
+      "sha256": "b4ac7a1abfc7ceac75284bbd15f73bbc196fcb0c16464b30cf059e6434373760"
+    },
+    {
+      "path": "modern/teaching/core_teaching_stage_validation.json",
+      "sha256": "c272083cf393f7ac536cb863863e57968deee09ca8cd2a9094d08eb285a70c5a"
+    },
+    {
+      "path": "modern/teaching/current_analysis_validation.json",
+      "sha256": "86bafba4ffc1912494089b2df564253c0a675127e940f02e5ae941a5273e9c43"
+    },
+    {
+      "path": "modern/teaching/current_sampling_metrics_validation.json",
+      "sha256": "a194de56bb306b802551e08fb9dc2304d3c9e38fbf56483c5cc763c454069634"
+    },
+    {
+      "path": "modern/teaching/deadtime_lesson/comparison_validation.json",
+      "sha256": "5c4a3605770f48d24b6297f9cb47057b381520952360bdef77f39e61dd21a6a3"
+    },
+    {
+      "path": "modern/teaching/demo_angle.json",
+      "sha256": "c0a41ef9febc7fb27880719cfb982705b5a93f1593a0abec37bfad0da99b53bb"
+    },
+    {
+      "path": "modern/teaching/demo_noise_filter.json",
+      "sha256": "57820c913c5bd27206f3c7534c2c34ab1e4fbf833edccd231f90cb627def0fbc"
+    },
+    {
+      "path": "modern/teaching/demo_offset.json",
+      "sha256": "3e022a1158c10395d1b98959e61e83a79c1af2e427249d6d83a9fbc95a4c76de"
+    },
+    {
+      "path": "modern/teaching/demo_timing.json",
+      "sha256": "dfd0e5b231eaedd1e711d5f85a918d3f92f95eded9d8252ad20916dad36223cc"
+    },
+    {
+      "path": "modern/teaching/diagnose_observation_rates.m",
+      "sha256": "126c152285f55e9b92188786f977101693832befe4d609a2594852aecc310a50"
+    },
+    {
+      "path": "modern/teaching/experiment_encoder_speed_validation.json",
+      "sha256": "84bac6fbdb18d30ac9bd18809e72e7d62b9aed0c73dfed6266bb959517027617"
+    },
+    {
+      "path": "modern/teaching/experiment_encoder_validation.json",
+      "sha256": "535448a85dd721e2b10f799b0413fa257bdbe52549ed0855379c0147a9be2ca5"
+    },
+    {
+      "path": "modern/teaching/experiment_gallery_validation.json",
+      "sha256": "6d0d72259282c22e25ebae5d180f47392e290a82f19e2ce92f140e4b7b650bed"
+    },
+    {
+      "path": "modern/teaching/experiment_low_speed_comp_validation.json",
+      "sha256": "1a94dbb0dd26f014c6902da3ea8ddbc46b2b6cb0b58aea426e8ed5fc6e610942"
+    },
+    {
+      "path": "modern/teaching/experiment_noise_filter_validation.json",
+      "sha256": "3ab92970c17398d59910dce50bab5d54a21936ce1472d4213c7432b643061601"
+    },
+    {
+      "path": "modern/teaching/experiment_paired_deadtime_validation.json",
+      "sha256": "32fd54dfd7245da5a7fc61b2169350aa56aca4ec382219f7c19ab823b6ed4faf"
+    },
+    {
+      "path": "modern/teaching/experiment_reproducibility_validation.json",
+      "sha256": "98473ec409eb7d464a8f507c26ab66902a989cbae15b5bb261b00cd3818522fe"
+    },
+    {
+      "path": "modern/teaching/experiment_sampling_window_validation.json",
+      "sha256": "05052de50f892df9f34222d7f989f6b38be2d52996f78d9601d306e1326475e1"
+    },
+    {
+      "path": "modern/teaching/experiment_speed_feedback_validation.json",
+      "sha256": "848be96d803fd394b05568fba2d1c561ee8a4cb7d1edf2d34768bb1067fbbabb"
+    },
+    {
+      "path": "modern/teaching/experiment_speed_filter_validation.json",
+      "sha256": "3fa639cda8176a46c07dfdf0b52e535cc95ca4d6493b981e661bb9fb5c96e547"
+    },
+    {
+      "path": "modern/teaching/experiment_stage2_render_validation.json",
+      "sha256": "92cfa2c8dc6c98211209705b239dc227cb160005812b132f88a5f1430d9eb49d"
+    },
+    {
+      "path": "modern/teaching/experiment_stage2_validation.json",
+      "sha256": "eb17bf624d98e69f111e3d51a428a1fa570b3cdb0ddfb5b552182c9e8943461c"
+    },
+    {
+      "path": "modern/teaching/experiment_timing_deadline_validation.json",
+      "sha256": "8033e6b6b39cfe222515f483e5d568291000c77c57c21233ff5f2b4f6dc22118"
+    },
+    {
+      "path": "modern/teaching/experiment_timing_events_validation.json",
+      "sha256": "051ade9238f34f51756c4488688a0a08cd090abd0d04e252ad13957dbad26835"
+    },
+    {
+      "path": "modern/teaching/experiment_validation.json",
+      "sha256": "f497c5ea4dea37e3556a14cbbb26c39c4618e38d1f28ac106b17a1580f96a397"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/angle_bias/notes.md",
+      "sha256": "e122b97144df19ad7e0c24c108fcb67ae2ccc1796e579195cae2f2a59d8be286"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/angle_bias/summary.json",
+      "sha256": "ce955e1849b4692279011f137f8a22d947f4d93144e1ca410d0b30ead074c233"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/current_bias/notes.md",
+      "sha256": "0d342f2b8771df293a26115c79a04bb33099e753ad68c5dce68e3ae88e6a27e4"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/current_bias/summary.json",
+      "sha256": "90c740a2c863f22b97ea7341ce5c8b1714e25014bad9111e3641defa95fee431"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/current_noise/notes.md",
+      "sha256": "3f378518b9896455509eac53b42623cdbaaff6b4e9caf86edd887399d595eb30"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/current_noise/summary.json",
+      "sha256": "a67e8afbda5865551ba942bdd29a8b96af97151f8edbc075ebb612299804417e"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/digital_filter/notes.md",
+      "sha256": "60e90382d4823a8e0002792bb93dad5c7b97aca4ea911953bdd1646ab450889c"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/digital_filter/summary.json",
+      "sha256": "951ba438f9ff02f679c31cc2627d7bc238e7509969916e5b45fb56e9a86f7d63"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/encoder_angle/encoder.json",
+      "sha256": "0ea4818758f855bc0413c1a066e34ef718e4ef0ac05918961e5ae64a75c5d73c"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/encoder_angle/notes.md",
+      "sha256": "982a48bbb60caacc23f9d704291c146e2dccbbe1b7968c816a4ce2cb1a17addf"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/encoder_angle/summary.json",
+      "sha256": "5eddecb01973c91af30b2e9bd6163864b134f462cdb5d294c18dd464ae1c8f21"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/encoder_speed/notes.md",
+      "sha256": "f67ff0e26da72db94f68d1ee3f2fa344c96cfdd013508a3c61aed894d1445f0f"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/encoder_speed/speed.json",
+      "sha256": "db85e32be7a17e4d7043853cd19a55e4670330a91ecba2263ef43d2928150534"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/encoder_speed/summary.json",
+      "sha256": "6125f32369a6d3692671f99d6648a4da7471d5767b2d195a4d7a97625b22c45c"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/gate_deadtime/notes.md",
+      "sha256": "bf64848424f1ffc1489a572795d971df6a0211c05d3ec71990d4e9d12613fbba"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/gate_deadtime/phase_diagnosis.json",
+      "sha256": "3a91f14bf9bb40cbb8aa4cc8d9f59141bb935ceadc827fd8e3e6a2da31cdf41f"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/gate_deadtime/summary.json",
+      "sha256": "6e804d3d5a292100d380cc481eeed384c8a8515a9d32714e00a615d38bb8305e"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/gate_deadtime_pair/alignment.json",
+      "sha256": "7df4517aee131fae30979af4e4b71dc725db3467720f7cc4b64e779db2a68268"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/gate_deadtime_pair/notes.md",
+      "sha256": "930ef6aa3470a2fee1de82cec135632f5785bc343430b9eda148dd237e20bf86"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/gate_deadtime_pair/summary.json",
+      "sha256": "463a1411ae960c0463c5dd3270bc3566158372638946513220132543d430d521"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/low_speed_compensation/alignment.json",
+      "sha256": "87c70f73c6a02a6776b986804428338d3ee574a900dffd205e92e4f05da7c0f6"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/low_speed_compensation/notes.md",
+      "sha256": "2196f21c75f2d690463733c367cb6a48f7ab426be614080a660379ced5a52c7c"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/low_speed_compensation/summary.json",
+      "sha256": "e79b0ff1e356f755582608edba7fcddb11291231431dbc504d3a137217f2eee0"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/measurement_lesson/provenance.json",
+      "sha256": "119bb6b0581bba8fbb7561a153543f8ef533ad9796a96be697a620581f0610dc"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/noise_filter/analysis.json",
+      "sha256": "4bfc8c87c5627756f911e151b0a2843d33c2ca21c45cae0538750986c3d6ff53"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/noise_filter/notes.md",
+      "sha256": "1b8b27d423536b28cd1b8f5fd1909e7f8235d862886be395381ecf1d4eee27e0"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/noise_filter/summary.json",
+      "sha256": "4fbbb38f6a2c62bff6e7541ceff22c8dd6e3ab513015951269c6e09cc6e282fd"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/sample_delay/notes.md",
+      "sha256": "efc3ca5e833c368ce485f24a03ab952d5b33df72bab218472dcdc418a1bfda39"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/sample_delay/summary.json",
+      "sha256": "4ca151d40af90adbdf7eebfa8dd03ecc3bcee580cc9efb0cd394d047c1dd6104"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/sampling_window/notes.md",
+      "sha256": "a97015cab19bd65538aafa8134f3c794e673f085ca54ace5e9bd19eabebe5015"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/sampling_window/summary.json",
+      "sha256": "095130e532ba6599c0d64e5111be8debb01a1d7683b6c6f83c19135ac28742f1"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/sampling_window/window.json",
+      "sha256": "a89dfe72e24f826c4ab9dd08fa861f5907f1a147e396ecc46b9f390dfac1a31f"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/speed_feedback/extended_feedback.json",
+      "sha256": "18fc61a7e912532f41c037464268fc75212812fb1e24752557d2f618a02d29ab"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/speed_feedback/feedback.json",
+      "sha256": "f785b9092485a7dbf1dde772ed35d6fed962d7e35cbdb64d8903dce1164a5a9a"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/speed_feedback/notes.md",
+      "sha256": "013f9212a6f61a54098e543547b3f4db5eaeeb0916b28cfdca43ef7470da8e4f"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/speed_feedback/summary.json",
+      "sha256": "ff2d6e5a7199ec6bbdf8569729ac4e2f332aae4768b83a68786316a574a363d3"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/speed_filter/notes.md",
+      "sha256": "fa7353cf6a172d6a7f272a1df8448ff41862efdc94fc83532ba10e8ef2758250"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/speed_filter/speed_filter.json",
+      "sha256": "e1fcdf1244df27656516d23ad0a2489af3ce739ff31f2b3d0706415f5bbe0466"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/speed_filter/summary.json",
+      "sha256": "18915ae657336d74912597cad8f09dd85d9799e7cdab6e242f27fc7bb5e7ce81"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/timing_deadline/deadline.json",
+      "sha256": "5f9349d19182cdbd8225930911725df069ffbfefb9be853840b47ea81000ca7d"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/timing_deadline/notes.md",
+      "sha256": "4677944de7eff39265667c117a06c7014d8b88b9d7fed785a2d544c35c2a6f68"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/timing_deadline/summary.json",
+      "sha256": "b5fd8d09203a72ae3a04e98c644ad4057bc6d42b39193b1449c30d7be4d64ce1"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/timing_events/notes.md",
+      "sha256": "4f3e86317c265ebe6222c3d7ff835775f38b3b0fb0cd79e0a92eeedfc1197e01"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/timing_events/summary.json",
+      "sha256": "745ccd6267727e67d730dc36cbb494f4493033da99af2b3e62a68f2718375612"
+    },
+    {
+      "path": "modern/teaching/experiments/examples/timing_events/timing.json",
+      "sha256": "9c67aef4c5f94e833594935710db797d9a94326fd1b675591bbdeb58e6ff581d"
+    },
+    {
+      "path": "modern/teaching/export_pmsm_deadtime_spectrum.m",
+      "sha256": "eac7ecea2830006fd6d681e9e92f2ede2ada939b33d921a0874ed00021568382"
+    },
+    {
+      "path": "modern/teaching/export_pmsm_experiment_examples.m",
+      "sha256": "cd5884b429fc9c5cd14e7318c7aefafdfdee31c3d2be3a4f90fbf90cd93a7967"
+    },
+    {
+      "path": "modern/teaching/export_pmsm_experiment_examples_stage2.m",
+      "sha256": "90ad8063a1283f989092c05f7bd9029000cf56c8bfb52114fcb5f55587de898a"
+    },
+    {
+      "path": "modern/teaching/export_pmsm_noise_spectrum.m",
+      "sha256": "74b01e808101c10e5b229e4878b5e67021ef10891fdf0cfb6b6bb56094f12490"
+    },
+    {
+      "path": "modern/teaching/extend_observation_model.m",
+      "sha256": "639757893697ff487338798cc97a41efc914bdd8850c56d6dee16fcaafaf9092"
+    },
+    {
+      "path": "modern/teaching/finalize_observation_record.m",
+      "sha256": "29359976a97837d109a75d1dc1a087bf6012f595c8c255c6b374f70ca6b1e1e8"
+    },
+    {
+      "path": "modern/teaching/frequency/README.md",
+      "sha256": "fcaa27198916a963ff5ef1df5c967a0a1e57a84a058b786ea468dfafad3aa9a4"
+    },
+    {
+      "path": "modern/teaching/frequency/current_loop/README.md",
+      "sha256": "6c77edf9b874fb77d27f92a89b024ba6a8ad8114f7f0b0c70ae5cfd63d26c295"
+    },
+    {
+      "path": "modern/teaching/frequency/current_loop/delivery_validation.json",
+      "sha256": "e5d70b8756855430ac62b480dc2cbe24c3fa2137e44accd1f0d1cad550a84a4e"
+    },
+    {
+      "path": "modern/teaching/frequency/current_loop/example/summary.json",
+      "sha256": "89a843149689e121f7c64234e1503d107c80171ae161214c7322fb6b5783becb"
+    },
+    {
+      "path": "modern/teaching/frequency/current_loop/example/time/manifest.json",
+      "sha256": "1d20b5db4225f3fe204fef536af7002eb5dd86aaafaa5b24ce1920fd18f22e5f"
+    },
+    {
+      "path": "modern/teaching/frequency/current_loop/math_validation.json",
+      "sha256": "b42e431672613860b6a15460312462b384c3697e3a382332b7568d7a759b4962"
+    },
+    {
+      "path": "modern/teaching/frequency/current_loop/time_view_validation.json",
+      "sha256": "a3854de68d5435beb0ba960e5f8992d23edaa685e2e6184d64b0de2b8ff79407"
+    },
+    {
+      "path": "modern/teaching/frequency/current_loop/\u65f6\u57df\u5bf9\u7167\u5e26\u8bfb.md",
+      "sha256": "060f2a6da5b9609f7e2a4a83b86724e4e2b6747e7691c88578389943eb0ee78b"
+    },
+    {
+      "path": "modern/teaching/frequency/deadtime_v1/manifest.json",
+      "sha256": "6d701f05c322bc30838041c9a1dd5d493b3d17c06295d96b5d6b5b3b1839c166"
+    },
+    {
+      "path": "modern/teaching/frequency/display_refresh_validation.json",
+      "sha256": "52b2496c0c6f5980ddd4459a876fdd076ae42b3976e19074c78a39edc2e63e55"
+    },
+    {
+      "path": "modern/teaching/frequency/noise_spectrum_validation.json",
+      "sha256": "91cfa3c2c21746a03bf9e486aba266e68735ebf71fe24b354eef71da66aafee3"
+    },
+    {
+      "path": "modern/teaching/frequency/noise_v1/manifest.json",
+      "sha256": "f71e64f6d752999a6ac7d971359d16fc2cf668b6f2e9a8c5ad9c0c4a5efeb788"
+    },
+    {
+      "path": "modern/teaching/frequency/q_loop/README.md",
+      "sha256": "bdb36e44a40a85966ee2c45802cb7066b520bf670df16a474c7ed4695df0dcb9"
+    },
+    {
+      "path": "modern/teaching/frequency/q_loop/delivery_validation.json",
+      "sha256": "f3264fb8c941ec14a50d31cf25bed2bf21d7742ae88326cd6ae5fef2d1b9e51b"
+    },
+    {
+      "path": "modern/teaching/frequency/q_loop/example/manifest.json",
+      "sha256": "861a6b377412910eaf6785d81ad3dd4ab2c7ccbd1041cceb6d9f382af34aca0b"
+    },
+    {
+      "path": "modern/teaching/frequency/q_loop/example/summary.json",
+      "sha256": "e2bc9c7ecfbdce6f486c05d58c3665620cf1811cc2caedc29ee374419aa1d255"
+    },
+    {
+      "path": "modern/teaching/frequency/spectrum_validation.json",
+      "sha256": "ae60fa0d6f35d78e99782552296ece7047f8c5d35f7c2603b470fa467408867c"
+    },
+    {
+      "path": "modern/teaching/frequency/speed_loop/README.md",
+      "sha256": "ec149c67aabc17315267e16d3b15fbf4dd63dfb774a95c36162205688681b463"
+    },
+    {
+      "path": "modern/teaching/frequency/speed_loop/delivery_validation.json",
+      "sha256": "21e3004cc1e137af3fd4e0a8b603c90c2be95f3ac287e43deceed0fa7cb6bfc7"
+    },
+    {
+      "path": "modern/teaching/frequency/speed_loop/example/record.json",
+      "sha256": "d48498c98856b50022fec9a05f7e79ba743643c6345f86f60973b65d8067f467"
+    },
+    {
+      "path": "modern/teaching/frequency/speed_probe/README.md",
+      "sha256": "115442e99cddefda9bd61e1e971315cd389af227ba5faf5d0d3326344fadc008"
+    },
+    {
+      "path": "modern/teaching/frequency/speed_probe/delivery_validation.json",
+      "sha256": "2d7e6c7321a4d618a38202cfc069a56a78ef3af354afea48d55c7c7f2c9a6643"
+    },
+    {
+      "path": "modern/teaching/frequency/speed_probe/example/manifest.json",
+      "sha256": "04f41536a99de1c97b5580ef345fa46273794bd6566f2bf6994062091d2fd74a"
+    },
+    {
+      "path": "modern/teaching/frequency/speed_probe/example/record.json",
+      "sha256": "2203105d02d0b2b46115acb30e78f3fa46ec8206b543f1b7dc169ae28978781e"
+    },
+    {
+      "path": "modern/teaching/frequency/speed_probe/\u8bd5\u6d4b\u7ed3\u679c.md",
+      "sha256": "87233c36129ff485479644072ec0741f037c509e2ae81e5013d4951c104bc31f"
+    },
+    {
+      "path": "modern/teaching/frequency/\u566a\u58f0\u4e0e\u6ee4\u6ce2.md",
+      "sha256": "19dbad5bf53037d8880ec17ccfb20ac5a86bf02e97687a65f7d87bcafd59965b"
+    },
+    {
+      "path": "modern/teaching/frequency/\u901f\u5ea6\u73af\u5b9e\u9a8c\u65b9\u6848.md",
+      "sha256": "b53232221554a53737d41636e7f6bea9fc2bde6934f424c11c9aaed92584d6bf"
+    },
+    {
+      "path": "modern/teaching/inspect_observation_stage.m",
+      "sha256": "a44ffa90ba0a493bee0020b3b807ff7ced1de3fd109b55066649b03651e41520"
+    },
+    {
+      "path": "modern/teaching/observation_reload_check.json",
+      "sha256": "e2492a4156133e64540700fc5a93d342ecdaa48911170d7d32a7f6c6aa6bc238"
+    },
+    {
+      "path": "modern/teaching/observation_timing.m",
+      "sha256": "7ced660731e9bb223b1a991b2144b3e0e2c4e7fa142c89e7f4858e5794eec7f3"
+    },
+    {
+      "path": "modern/teaching/observation_validation.json",
+      "sha256": "2d00fcef36525b94e6f5aca5b32ccb65d1876397a949c92d2b27c14b98633727"
+    },
+    {
+      "path": "modern/teaching/open_pmsm_control_scope.m",
+      "sha256": "108554f84ed1fb2dd1bf4cb5fafc0517845996e2b9a5e92e49041bc3bed38f09"
+    },
+    {
+      "path": "modern/teaching/open_pmsm_current_analysis.m",
+      "sha256": "76fbd68a4681bf9025c2d3bc67d947b7d98dc8371845d57749dfd4184a1ec7b5"
+    },
+    {
+      "path": "modern/teaching/open_pmsm_current_frequency.m",
+      "sha256": "5fc3789ec7202c6c413bc75625bd4c3570da338c434621a1eba8aded2a4a6a8c"
+    },
+    {
+      "path": "modern/teaching/open_pmsm_current_frequency_time.m",
+      "sha256": "2251a64a6efdc086719ce93d025363c29abbe035315e19709d56f26b2437bebe"
+    },
+    {
+      "path": "modern/teaching/open_pmsm_current_sampling_scope.m",
+      "sha256": "f595f05afd3f2d7f020fa1b95dcced22a6bd430490037ad900fcaa567bb7499a"
+    },
+    {
+      "path": "modern/teaching/open_pmsm_deadtime_comparison.m",
+      "sha256": "1796e903ff1e8672e282f8b55a36c49a7ed8f9390430a73a5825b55b3af72ebd"
+    },
+    {
+      "path": "modern/teaching/open_pmsm_deadtime_lesson.m",
+      "sha256": "22945891feba231d0bd3fb3d848e93528f68a3718ffa081e598aaa1e6e1c473a"
+    },
+    {
+      "path": "modern/teaching/open_pmsm_electrical_scope.m",
+      "sha256": "d80e56f2ca08d885e7bc5a13bdd0de05360880730aacd6d479dfc03f1311b975"
+    },
+    {
+      "path": "modern/teaching/open_pmsm_experiments.m",
+      "sha256": "21c6b9aaabbe0c93b92f27eed2a3731bb6c3c82b6e352ee02a6854df1f5cda81"
+    },
+    {
+      "path": "modern/teaching/open_pmsm_feedback_effects.m",
+      "sha256": "53dc8f9dcb92897515b202ba4e57af5bf54a4a78510bfd2dc874828cf5edfb7d"
+    },
+    {
+      "path": "modern/teaching/open_pmsm_noise_spectrum.m",
+      "sha256": "025adba737fcd5e9eb6171e8dcda11433e504ff38aad218c416793737b99ca8f"
+    },
+    {
+      "path": "modern/teaching/open_pmsm_observations.m",
+      "sha256": "6572f6027287595c20d6b903320edc63a471ac60374ecd112ab8b79d30434c18"
+    },
+    {
+      "path": "modern/teaching/open_pmsm_pwm_scope.m",
+      "sha256": "2adea786508fe14c8b5fe8243689e9560060732b4ff267d5a9672c8760ab3d16"
+    },
+    {
+      "path": "modern/teaching/open_pmsm_q_frequency.m",
+      "sha256": "d5238fd07363e8f4489c40050f8000fe231964d68a5190fbebb3205c02ed651b"
+    },
+    {
+      "path": "modern/teaching/open_pmsm_q_frequency_time.m",
+      "sha256": "e1cd389cf6fed9a40e23d6cfcb3279433915bbb67e84c02ac28ea9fb08fba854"
+    },
+    {
+      "path": "modern/teaching/open_pmsm_sampling_comparison.m",
+      "sha256": "4fec9fdb012c8ec7e7ca70083dfcc8a7cb87f752a00defb49f590177cb2243aa"
+    },
+    {
+      "path": "modern/teaching/open_pmsm_sampling_lesson.m",
+      "sha256": "4d7b90dc3ad3f604eb2e7373b08540a8d5c15b9dac3c001b0c577a0c915a3d61"
+    },
+    {
+      "path": "modern/teaching/open_pmsm_sampling_metrics.m",
+      "sha256": "ee69686ba996d221186b74352a3b831127318b04df9da783f7e26574a252e91a"
+    },
+    {
+      "path": "modern/teaching/open_pmsm_settings.m",
+      "sha256": "6259cce175d1103754a636010e1971ba6498bd9ea13260b88a1e0c18b343f300"
+    },
+    {
+      "path": "modern/teaching/open_pmsm_spectrum.m",
+      "sha256": "a063690014138e315ec6069fc8d10db31e3df459b76d73a6ca687c84bde8a0b4"
+    },
+    {
+      "path": "modern/teaching/open_pmsm_speed_lesson.m",
+      "sha256": "fe547e31085a775724c8e73ad9faeb8bb1af10ec6ec348c548dc0076f7aefc38"
+    },
+    {
+      "path": "modern/teaching/open_pmsm_speed_probe.m",
+      "sha256": "160a0afb3ac9842c4b12a850e44f57e350d5bca11f2312639e080824919394f0"
+    },
+    {
+      "path": "modern/teaching/open_pmsm_speed_probe_time.m",
+      "sha256": "e7e3f61b043d5e19ca176de5a4c6e02e0051c919568e3f32e952e43caae8813b"
+    },
+    {
+      "path": "modern/teaching/open_pmsm_speed_step.m",
+      "sha256": "f2b2f3f3ba2f67e1ffb3673819d35f6950e77b12f5ddbc63d9351eb053a97431"
+    },
+    {
+      "path": "modern/teaching/open_pmsm_teaching.m",
+      "sha256": "929d90c80207d80f4b93e65f2ea80e08dec10afcc0c8edf4526956c53c2cc5b2"
+    },
+    {
+      "path": "modern/teaching/open_pmsm_timing_feedback.m",
+      "sha256": "bd37d43f6986e82f842d6c09a88983460ab37ee42a5f4ba9e11d6b5f2c71871c"
+    },
+    {
+      "path": "modern/teaching/open_pmsm_timing_filter.m",
+      "sha256": "45821d10842e45192e739f6afca8a8af4a6624a8ae13956688098264473a3f9e"
+    },
+    {
+      "path": "modern/teaching/open_pmsm_vector_lesson.m",
+      "sha256": "680c24d5100d7e5c4e029e6262f17f3ced8f018d67d7399a01c94e2a650f56c0"
+    },
+    {
+      "path": "modern/teaching/parameter_reference.json",
+      "sha256": "9d5fd6875e05b83f23bbcd4fd49fa315d56a9004b8013ad73c4f37437208c2b5"
+    },
+    {
+      "path": "modern/teaching/parameter_settings_results.json",
+      "sha256": "8ef06e14c9c74f0b31373db8fd31e1ebebe9473c2bab2f158e2efcd393cc0b15"
+    },
+    {
+      "path": "modern/teaching/plot_observation_report.m",
+      "sha256": "7158cb0e090cc8b99664a0f564c869b5fde3a8e2c1268181c17c158c2cd61f73"
+    },
+    {
+      "path": "modern/teaching/plot_pmsm_current_frequency.m",
+      "sha256": "d177ab0e2a470e26957d20ea2fbd70d2cf3f73b81e32f5b09608791e4836b7b8"
+    },
+    {
+      "path": "modern/teaching/plot_pmsm_deadtime_pair.m",
+      "sha256": "ecb5cba0c68654c83c83ac36a88cb144871ca88c98857f77cd851c1703ec5618"
+    },
+    {
+      "path": "modern/teaching/plot_pmsm_encoder.m",
+      "sha256": "890806b74bc28efed0e64d4ef033dcfe69ebfe057f80fc9f77df8138227d4f35"
+    },
+    {
+      "path": "modern/teaching/plot_pmsm_encoder_speed.m",
+      "sha256": "1882e83d11f0a057055e28a88bbef0a8f53e7f662e481652e7e6c8d055e235b7"
+    },
+    {
+      "path": "modern/teaching/plot_pmsm_experiment.m",
+      "sha256": "3934519949c0177736895e2d45b956671e304dde3d08bb0cb09c81d00db03abb"
+    },
+    {
+      "path": "modern/teaching/plot_pmsm_low_speed_comp.m",
+      "sha256": "178a58d362321b402e1c85642bda39c7cb67423fd5cddc741b4dd0fb5bc7e591"
+    },
+    {
+      "path": "modern/teaching/plot_pmsm_measurement_lesson.m",
+      "sha256": "a1c71217b9770f4c286430a5b28eb9c3e64250901fd03528d8f6c70c0b327d90"
+    },
+    {
+      "path": "modern/teaching/plot_pmsm_mechanism.m",
+      "sha256": "e8cb752637a98ced50c040f48905c970650cc45af8fdd3820c94a5db6ea323a9"
+    },
+    {
+      "path": "modern/teaching/plot_pmsm_noise_filter.m",
+      "sha256": "ca97f345a6e53f80ebe019b1c006107c2b84f2e5cd59905b41e1e91cfc3d3ffb"
+    },
+    {
+      "path": "modern/teaching/plot_pmsm_noise_spectrum.m",
+      "sha256": "a89bedf757ca0f5006faac693a0aee5555ca4d4ff1f876cfd612fba8849499f5"
+    },
+    {
+      "path": "modern/teaching/plot_pmsm_q_frequency.m",
+      "sha256": "f78e9cfd9c55f755264b711e52737027632587244f7843f273eece5180a4103b"
+    },
+    {
+      "path": "modern/teaching/plot_pmsm_sampling_window.m",
+      "sha256": "7a196db952b45f605182b2be32c4699cbf2c59a766ae0bdf8f8684c7450c2755"
+    },
+    {
+      "path": "modern/teaching/plot_pmsm_spectrum.m",
+      "sha256": "526bf521bcd25245633fd0b99c7779f11fb5ccd49c06286422afd2a22b94c7c8"
+    },
+    {
+      "path": "modern/teaching/plot_pmsm_speed_feedback.m",
+      "sha256": "ec30c08819596756309f33c0743c32efb4f3356342ddf4ff2e907c659e4a6e3f"
+    },
+    {
+      "path": "modern/teaching/plot_pmsm_speed_filter.m",
+      "sha256": "03a53e2cde283ab6d1f861aaad28248e1df1a79a36c2a94e65101e8ab9e30938"
+    },
+    {
+      "path": "modern/teaching/plot_pmsm_speed_probe.m",
+      "sha256": "e10d7aafe4878a1806011a61ae9e6502a46a9a588871a15ab599f51c65c6e0aa"
+    },
+    {
+      "path": "modern/teaching/plot_pmsm_speed_step.m",
+      "sha256": "6665d2bdbf9bc2a115934265351427e2bd862df57c953bf1c24252800d709f82"
+    },
+    {
+      "path": "modern/teaching/plot_pmsm_timing_deadline.m",
+      "sha256": "1e594b9974cc8dc323257d508678c062f2018ce17297a6edb9df70ef553def1a"
+    },
+    {
+      "path": "modern/teaching/plot_pmsm_timing_events.m",
+      "sha256": "81bbf0d8464c945b270393932e0158735b00788646decae7540761548cafbdac"
+    },
+    {
+      "path": "modern/teaching/pmsm_check_switches.m",
+      "sha256": "f250045abfc9b760bfc001988b47c08cc01f7c2c1733d9892c415d1cd6196bed"
+    },
+    {
+      "path": "modern/teaching/pmsm_config.m",
+      "sha256": "c019b5322ce22ae5b663b025fc4edab8da881cdfe526750f65bf458a52124427"
+    },
+    {
+      "path": "modern/teaching/pmsm_current_frequency_folder.m",
+      "sha256": "3ff320f559f856f6da4390e86c3635cd2f4d66f1cbaebef6c9e87a7ddc719e4b"
+    },
+    {
+      "path": "modern/teaching/pmsm_current_frequency_plan.m",
+      "sha256": "980734ce7e219c23c1029f636cd3df010f40e6ad26c2e1ba0d46879552324d94"
+    },
+    {
+      "path": "modern/teaching/pmsm_current_frequency_time_data.m",
+      "sha256": "6e8dc3df84f27ce836c95e1ea2a59a3f66b9773a11c8bac080d19d99d6a23019"
+    },
+    {
+      "path": "modern/teaching/pmsm_current_sampling_metrics.m",
+      "sha256": "f8fb1b737ea1a2e97668e8b67a536cc6ba6bf371f0dd6647472f4d0b1348a844"
+    },
+    {
+      "path": "modern/teaching/pmsm_current_spectrum.m",
+      "sha256": "890fdd1f0b4ce0d50a2a7f762e688a4334c0a22fad39e2b7fd083129be91a027"
+    },
+    {
+      "path": "modern/teaching/pmsm_deadtime_pair_alignment.m",
+      "sha256": "7fd141413d92268f83be6fb72a22e362762c48758872d1818873c48799f94e0a"
+    },
+    {
+      "path": "modern/teaching/pmsm_encoder_analysis.m",
+      "sha256": "13eb1faf74e71b6ea022cf383548976d8fd1cdcb67320f0ff6e82a8bd39491ed"
+    },
+    {
+      "path": "modern/teaching/pmsm_encoder_model.m",
+      "sha256": "d47ae238b06f56579136d2b1b147b5d12c43e2103fcc179fbf5369769f84dfd5"
+    },
+    {
+      "path": "modern/teaching/pmsm_encoder_speed_analysis.m",
+      "sha256": "6a16b6f24e0d070c03812bbc5789aff7c4d2f5f5ce85cbeaaa9f5a42a6c3b8dd"
+    },
+    {
+      "path": "modern/teaching/pmsm_encoder_speed_model.m",
+      "sha256": "8042c7e337d3ca80c36471bd2f7a5456c147b04c48a412fb08bbb3594cb9cad7"
+    },
+    {
+      "path": "modern/teaching/pmsm_encoder_speed_view.m",
+      "sha256": "89854263b946c23c3c3ced394357a296114f38d6c09be5987aa08d8004eb37f8"
+    },
+    {
+      "path": "modern/teaching/pmsm_encoder_view.m",
+      "sha256": "9a43fea9504c5081ebe31ffbf5273e53f8218fd42355c7a17bdee32dba9dd3bc"
+    },
+    {
+      "path": "modern/teaching/pmsm_experiment_catalog.m",
+      "sha256": "e66e4c24d10cea8cad78f59305f263f09e5a84a3e6dd144f43a172a27c5ed463"
+    },
+    {
+      "path": "modern/teaching/pmsm_experiment_plan.m",
+      "sha256": "13b330a4df48ab29c7864b2f8bd46a8522e4fdfcf5ed225ff23ca84a95911052"
+    },
+    {
+      "path": "modern/teaching/pmsm_experiment_verify.m",
+      "sha256": "20c4f0910dd2ffceb31a92c2f00043eda8f2e434520170a7f827008861265629"
+    },
+    {
+      "path": "modern/teaching/pmsm_frequency_metrics.m",
+      "sha256": "0a817d5ac3b8a583c2b4cf971ffbea2c14c999de2e22fe8bb2ac0d65801d6ba3"
+    },
+    {
+      "path": "modern/teaching/pmsm_frequency_time_view.m",
+      "sha256": "038328a56de3e1bb746cc2c909a6e274ea200ed29e23c72ccedd586b20277942"
+    },
+    {
+      "path": "modern/teaching/pmsm_noise_filter_analysis.m",
+      "sha256": "8e559064e8e046ff91afa146fbcbdd9c58e0617cd97bbda4b0601bec454c63c9"
+    },
+    {
+      "path": "modern/teaching/pmsm_noise_psd.m",
+      "sha256": "e67670cad15d10cd076512bcc9d380008335942f33f88349c012d252f6a92934"
+    },
+    {
+      "path": "modern/teaching/pmsm_observation_launch.m",
+      "sha256": "7f199f6fbef4be985339b9437ade1d53d9c95a21df3711bac0d850d73afb40c7"
+    },
+    {
+      "path": "modern/teaching/pmsm_parameter_info.m",
+      "sha256": "e19694ec5f47fb5cb1917c537a2314b2fcb8fa393674af5fe1d107ae04d96088"
+    },
+    {
+      "path": "modern/teaching/pmsm_plot_style.m",
+      "sha256": "60619d54cc27fa1b9e495816877cec3ed6a12f024bf9f35da6dba5652d58ccfc"
+    },
+    {
+      "path": "modern/teaching/pmsm_q_frequency_folder.m",
+      "sha256": "c864e3eae6edc9a64c4a9c3e0ccc9eff851313048236d771ff9dedbb90b1f4e5"
+    },
+    {
+      "path": "modern/teaching/pmsm_q_frequency_plan.m",
+      "sha256": "29da658d6a573e62677c6f6044aea14e660bf06f7d197b1089dd1b28832a304d"
+    },
+    {
+      "path": "modern/teaching/pmsm_q_frequency_time_data.m",
+      "sha256": "5dc9679602e1f734aa0de50e6cb828135f96540c82235aa7411a83559485fe0f"
+    },
+    {
+      "path": "modern/teaching/pmsm_reference.m",
+      "sha256": "f2bd66d3eb7fa0c999957412cf33e5f1d6fa680a288e58bb54071f939175e2fd"
+    },
+    {
+      "path": "modern/teaching/pmsm_render_encoder_run.m",
+      "sha256": "1e2f90080e1fa4754f31592a84fc095db0ef7592c593efed135fdf1a8ebc87ec"
+    },
+    {
+      "path": "modern/teaching/pmsm_render_encoder_speed_run.m",
+      "sha256": "99fad19d9ddda2271c1f61265217a16caa17af3b7d49c01c22bff107ea1072f1"
+    },
+    {
+      "path": "modern/teaching/pmsm_render_noise_filter_run.m",
+      "sha256": "9dbdb6a26930a91c2b5736617799f5a0ea645b9e37516c30aa7971b59d6dabc6"
+    },
+    {
+      "path": "modern/teaching/pmsm_render_sampling_window_run.m",
+      "sha256": "ddb4122f42b4d21aedcc7c840d600adb21ae80c9c25304195b39abb0b681ba9b"
+    },
+    {
+      "path": "modern/teaching/pmsm_render_speed_feedback_run.m",
+      "sha256": "e4c17a8686b3bedf09fa058b79435c165129ad4467e9bdd39bffd279ac468a23"
+    },
+    {
+      "path": "modern/teaching/pmsm_render_speed_filter_run.m",
+      "sha256": "87e4c2ce80013b0519b6295aa88e2975b28066f3cfd3c216e98153ac8aa3788f"
+    },
+    {
+      "path": "modern/teaching/pmsm_render_timing_deadline_run.m",
+      "sha256": "b151f5a7c1ff7147b054ebc6804fcbc2729f87436ae1327a81df139bbe89e43e"
+    },
+    {
+      "path": "modern/teaching/pmsm_render_timing_events_run.m",
+      "sha256": "551a6d2652d75cad985020dcc316211d1e582e23a948ec0b2b5595b13c881780"
+    },
+    {
+      "path": "modern/teaching/pmsm_sampling_comparison_menu.m",
+      "sha256": "738d1428f9901dc789d3f0a84386fc4d313e6fd279cea04345fe9d119b923a71"
+    },
+    {
+      "path": "modern/teaching/pmsm_sampling_window_analysis.m",
+      "sha256": "d54c4b8186eaa4a4bc6fce9bfeaf1937ff3e969fde9d1a631293600446e0b8c6"
+    },
+    {
+      "path": "modern/teaching/pmsm_sine_response.m",
+      "sha256": "8f42dea97c8f9939c4828b17eeb25f6499b0118ebe060f083bcbe3f1a407090b"
+    },
+    {
+      "path": "modern/teaching/pmsm_speed_feedback_analysis.m",
+      "sha256": "89e3ae84fb9a5746d4bba54707cf79e77944fa081ccf554ca1f770c985a203cd"
+    },
+    {
+      "path": "modern/teaching/pmsm_speed_feedback_model.m",
+      "sha256": "ed508a884e86741aef2cf296276a91c8da4ef5a05159bc62c001b1082aacdded"
+    },
+    {
+      "path": "modern/teaching/pmsm_speed_feedback_view.m",
+      "sha256": "af49254650d9f9f73763b3419ee78f5aadb8aacd0af67e2ef21a3848694ee517"
+    },
+    {
+      "path": "modern/teaching/pmsm_speed_filter_analysis.m",
+      "sha256": "bdab01efaf331b034b244f6359e4a7e280cde1db2dc59655d886a4325cdd9877"
+    },
+    {
+      "path": "modern/teaching/pmsm_speed_filter_model.m",
+      "sha256": "bebb595989da44db22be36b383a8eff386c67c7a3a6abc3328975b270b125f95"
+    },
+    {
+      "path": "modern/teaching/pmsm_speed_filter_view.m",
+      "sha256": "627ab7b352829364c807cc8817a5115a3949c3e0edb1fb38aeb59cd9b6c87e4e"
+    },
+    {
+      "path": "modern/teaching/pmsm_speed_probe_folder.m",
+      "sha256": "ab8841ef5a3a507f96eece02426ab364f900b65a7cbdc1f7f69fc510ec415e4b"
+    },
+    {
+      "path": "modern/teaching/pmsm_speed_probe_plan.m",
+      "sha256": "06666d2a5a77bfbe0119f2629ff2ac60bc531a6df7cc19324920b608d6f18c69"
+    },
+    {
+      "path": "modern/teaching/pmsm_speed_step_folder.m",
+      "sha256": "01a37ebe3a33330b1e097bfba7deb297a125ee3ad9f590ca72808432ceb7821a"
+    },
+    {
+      "path": "modern/teaching/pmsm_speed_step_metrics.m",
+      "sha256": "96e6976a182e07bb08d5dea117f25874bb5bbb5c6a7ba8f69fc3ce6bb571fa4d"
+    },
+    {
+      "path": "modern/teaching/pmsm_switch_catalog.m",
+      "sha256": "fc829609bdfaeab089a8698010ad3e73a278283aa53a319c8e1e4ab5073f4cbe"
+    },
+    {
+      "path": "modern/teaching/pmsm_timing_deadline_analysis.m",
+      "sha256": "67ce76116e7d3fb82ad32121034d848d96b385a2f898cfe3e89dc38d6b0653dd"
+    },
+    {
+      "path": "modern/teaching/pmsm_timing_events_analysis.m",
+      "sha256": "f5617baeef752f8cc84a9981f1975da2be429aebff34cf555a6054f328c4c701"
+    },
+    {
+      "path": "modern/teaching/pmsm_user_run_buttons.m",
+      "sha256": "d39570b198c648ee9d44b2673e5b5878b1ae17c3cc65b5ffeec954ab3f710f3a"
+    },
+    {
+      "path": "modern/teaching/pmsm_user_run_signals.m",
+      "sha256": "b3898ff10eebc3a7efd31de2ccabeb59724e1585b420f5838d8b2977224472b3"
+    },
+    {
+      "path": "modern/teaching/pmsm_user_runs.m",
+      "sha256": "78c77d0c56d6b00d75a89af2e80fee620b38070d5b61b55ae7ef94d6dbbbedc4"
+    },
+    {
+      "path": "modern/teaching/preview_pmsm_current_sampling.m",
+      "sha256": "d70ed815f8aebd86821aff4ec55bd7c7c5624fe1a5f717973e6cdd03928089b1"
+    },
+    {
+      "path": "modern/teaching/profile_board.json",
+      "sha256": "cf5e0007350ec828b0a39f4f07663177ffeb2b14798af17b7db4a2030658d08a"
+    },
+    {
+      "path": "modern/teaching/profile_reference.json",
+      "sha256": "ca6b6814c5e827afa4a4f254a37557e18594548cf087791d5af53f397a87f495"
+    },
+    {
+      "path": "modern/teaching/profile_teaching.json",
+      "sha256": "b06c15c8e6d91e2dd0df92a5e7052d2f5c7d402244436bfbc5b46543191c0f1a"
+    },
+    {
+      "path": "modern/teaching/reference_v1/configuration.json",
+      "sha256": "3f048e78dcbb15121a444fd271359f09a04a830c704dbcfcd845277f8b172bf2"
+    },
+    {
+      "path": "modern/teaching/reference_v1/manifest.json",
+      "sha256": "f977cfaa62d8722221573d9a648f28d8d7bc91f0f6a462c1e09e4488a70ef353"
+    },
+    {
+      "path": "modern/teaching/reference_v1/state.json",
+      "sha256": "e3619ee8a372116f4b99016c7e3fdfbd11c63304df2217a95954a5d132e3d6d3"
+    },
+    {
+      "path": "modern/teaching/reference_v1/switches.json",
+      "sha256": "bf0e723b64e21668ee40d057a1457df3192a0aab11868ffc3ace64b6ad0598dd"
+    },
+    {
+      "path": "modern/teaching/reference_validation.json",
+      "sha256": "4775ce4ba360c6d3777a751ac7fd9e8d08d571b3b2f6a6ddbaf2f765e138091b"
+    },
+    {
+      "path": "modern/teaching/refresh_observation_gui.m",
+      "sha256": "65a2d0ab21de64ed2d9304dfcfd88eb445711a9821c31f38d290d90f4e35ccff"
+    },
+    {
+      "path": "modern/teaching/repeat_pmsm_current_frequency.m",
+      "sha256": "18f92c77a66de61af2b34684f1ff41759baadc3c34e9087d954a125f61741589"
+    },
+    {
+      "path": "modern/teaching/repeat_pmsm_experiment.m",
+      "sha256": "e6093547a726b354861d14e78fe0d347e1c411b6ec29d1e3fc7ac7d7d32758a6"
+    },
+    {
+      "path": "modern/teaching/repeat_pmsm_q_frequency.m",
+      "sha256": "e22097b962dc2980852a5e1ee85e0e894e3ddf91b9000dd836063d1e1491dd67"
+    },
+    {
+      "path": "modern/teaching/repeat_pmsm_speed_probe.m",
+      "sha256": "683366d622f1f00fdf46affb2e8a73d33ae95d74faecc12abec374fdbb394a24"
+    },
+    {
+      "path": "modern/teaching/repeat_pmsm_speed_step.m",
+      "sha256": "5fad84aaf0becf15f23fafbd73403bce0b33e33d8df8e8158ebc26ed61964391"
+    },
+    {
+      "path": "modern/teaching/report_firmware_io/record.json",
+      "sha256": "a8bdebd677bcd09de28c698b3a6e01fce08c8d529093e51c52d4981e575e2390"
+    },
+    {
+      "path": "modern/teaching/run_observation_demo.m",
+      "sha256": "e80b7ab2a2ed5a6981e7bc2c43d9ec0d118b9b9dbd0f88198f41ba60296f1741"
+    },
+    {
+      "path": "modern/teaching/run_pmsm_current_frequency.m",
+      "sha256": "ad11122bbf65315fea47daff8b3cd9105741ab5d5f7645675c84585a4badaecc"
+    },
+    {
+      "path": "modern/teaching/run_pmsm_experiment.m",
+      "sha256": "ebab26ae55bfb4d9a55e492b534cccba3d6731dbfb46b04894e637adeff6b6d3"
+    },
+    {
+      "path": "modern/teaching/run_pmsm_q_frequency.m",
+      "sha256": "94ecd4e5b7177ec9a75f6aa8e58243cc6fe8412b95af274c039a733739dd6800"
+    },
+    {
+      "path": "modern/teaching/run_pmsm_speed_probe.m",
+      "sha256": "09bbce31822d64fb81f95978447914c6293d2bf673934f3db2c23311fc5ec329"
+    },
+    {
+      "path": "modern/teaching/run_pmsm_speed_step.m",
+      "sha256": "6faa5b0ae4e6f8aca8bce83ca949885172820eeff6a9be6eb20c9bfbf873e60b"
+    },
+    {
+      "path": "modern/teaching/run_teaching_demo.m",
+      "sha256": "29486e27b307b1e0eada294dfcaf09bb2fac8aa7434122aaa9d5257d5e32914a"
+    },
+    {
+      "path": "modern/teaching/sampling_lesson/validation.json",
+      "sha256": "818e522d0045824d0f785921ad2c45ee73f0573904a1fe381d9ecc9eae1a200f"
+    },
+    {
+      "path": "modern/teaching/sampling_metrics_desktop_validation.json",
+      "sha256": "6de4c90e472e059d2a049934fbc1a1a7cde830d082b746e81fe668c05ae5f2dc"
+    },
+    {
+      "path": "modern/teaching/speed_lesson/validation.json",
+      "sha256": "d54cebad5b91b6888f344db26e148e3d8349020e3e1f206564cb6f6893bee92c"
+    },
+    {
+      "path": "modern/teaching/startup_interface_audit.json",
+      "sha256": "68501e90d2930d0a7b34b1620416290692481e29d3d79f43cbba49010d6da884"
+    },
+    {
+      "path": "modern/teaching/teach_hash.m",
+      "sha256": "5896fb748f5833b59c438c079f0922f321882587bea343dcaf76299aca30b666"
+    },
+    {
+      "path": "modern/teaching/teach_settings.m",
+      "sha256": "c6fddf33bf1c1d1b1a011e3d3597a976863b46c1bf3452a349b8b47be83d4cc7"
+    },
+    {
+      "path": "modern/teaching/teach_snapshot.m",
+      "sha256": "adfec0bdb37762e6f42710d55d8c16dbc1c5381d4d683a29a32d93ad3e894a9e"
+    },
+    {
+      "path": "modern/teaching/teach_values.m",
+      "sha256": "1bf38186e90d1cd49e8cee71a3168674490ffd8aed8a1192b6f58a2399deb6f1"
+    },
+    {
+      "path": "modern/teaching/teach_writejson.m",
+      "sha256": "9e61b1f3f47c599a5b676b6a27884aa7bb65273bb708ae4b684778cadf489951"
+    },
+    {
+      "path": "modern/teaching/teaching_demo_check.json",
+      "sha256": "6c39ee1fbac6e96926d5768b860bf7ff407f183060d2ca1e4757bf13811e5fd7"
+    },
+    {
+      "path": "modern/teaching/teaching_model_init.m",
+      "sha256": "97a1f949b8aaa18ca7b859692d8cb692236b236ee9ea436654d64fdf6a7d3cc3"
+    },
+    {
+      "path": "modern/teaching/teaching_reload_check.json",
+      "sha256": "548d5295928e7cf55df1d8f0ddd6c73aa931e7f57ec37513bafe4ddac55fc615"
+    },
+    {
+      "path": "modern/teaching/teaching_validation.json",
+      "sha256": "ceaa3dc8be694f2235653b354897c627a2bb20b9efbb3e2498a9b04bd586e6c5"
+    },
+    {
+      "path": "modern/teaching/validate_observation_model.m",
+      "sha256": "9788364b702a7d292b28f415d4ce6c771a6cda69ffd9dcea0a99e0d53875d04a"
+    },
+    {
+      "path": "modern/teaching/validate_parameter_settings.m",
+      "sha256": "20f76c99b80a498cc817c434298c5df69a271fe8975a05e148e37f72cb720c16"
+    },
+    {
+      "path": "modern/teaching/validate_pmsm_core_navigation.m",
+      "sha256": "1b8b4af3fc118edf8d7ba42a501622c742d28d1857ef328547addac51c11528a"
+    },
+    {
+      "path": "modern/teaching/validate_pmsm_current_sampling_metrics.m",
+      "sha256": "e5997fffbeec2c506e7e6d9fa24d2ebbc503a0ea7934d0699d289f600e5e3dd6"
+    },
+    {
+      "path": "modern/teaching/validate_pmsm_deadtime_comparison.m",
+      "sha256": "950d1eb02c0361f5f624e50b1d5a8cd2bd1fdbf20f245636276575a567bce3b5"
+    },
+    {
+      "path": "modern/teaching/validate_pmsm_deadtime_pair.m",
+      "sha256": "0f6c53ec230f5907ee731cabccbe1b02a2129decf336dcc62cedd2b853fea9f4"
+    },
+    {
+      "path": "modern/teaching/validate_pmsm_encoder.m",
+      "sha256": "9ef8713cd3a1e4258a43e0aaff4195f696da581fdfbda360654963fe52106289"
+    },
+    {
+      "path": "modern/teaching/validate_pmsm_encoder_speed.m",
+      "sha256": "85fb0c006a83bf6d72082e9c4d91371c59542ef5f23e96c2f53912887d852e6a"
+    },
+    {
+      "path": "modern/teaching/validate_pmsm_experiment_reproducibility.m",
+      "sha256": "2953d2ddd80b587b0ecae68c52c6ad6788ce3d1c4bfa4f55bc277a51e96b5ec7"
+    },
+    {
+      "path": "modern/teaching/validate_pmsm_experiments.m",
+      "sha256": "d991a8c763de33f009eb013ed61d1083ca3cd31795f5228c9b1c1bd9300cd4c1"
+    },
+    {
+      "path": "modern/teaching/validate_pmsm_experiments_stage2.m",
+      "sha256": "c8ab881ff266f589dfe0808b631b72ed7d851b07af0f89d77c494fcadaf7eb93"
+    },
+    {
+      "path": "modern/teaching/validate_pmsm_low_speed_comp.m",
+      "sha256": "0098db6ed34ddc47b95cf2b765abece1fe10111e6678dcdcaa30ffc7bf49d40f"
+    },
+    {
+      "path": "modern/teaching/validate_pmsm_noise_filter.m",
+      "sha256": "1f1ec8b836c8c90b16e260dc443e3ebef713005eb52cd8710fb06a9f5d0ed6ac"
+    },
+    {
+      "path": "modern/teaching/validate_pmsm_noise_spectrum.m",
+      "sha256": "499296cec4989a3a6df644af99982c48b1847d43306f5b230a1c312a6373c0fd"
+    },
+    {
+      "path": "modern/teaching/validate_pmsm_reference.m",
+      "sha256": "db6e8a2a6cd3826709c318d02b34f4746aa199c2db56500f7e21e5d4e4c1910b"
+    },
+    {
+      "path": "modern/teaching/validate_pmsm_sampling_lesson.m",
+      "sha256": "15791addbc3bf2d37e164ce1ca911500ae73bc0f018d35585a9cdd2531960f56"
+    },
+    {
+      "path": "modern/teaching/validate_pmsm_sampling_window.m",
+      "sha256": "7cf3279bc4419cf374011a574fd6984baf2a41672b3e4b926772cfd99053341f"
+    },
+    {
+      "path": "modern/teaching/validate_pmsm_spectrum.m",
+      "sha256": "c231f7069f6724cca10f4ddb1ffb40385de993c60705888d41555d5588e0afae"
+    },
+    {
+      "path": "modern/teaching/validate_pmsm_speed_feedback.m",
+      "sha256": "c8c0ab0e367fc287f8420c800c93d0cabc330dece1069891c9576e485031420b"
+    },
+    {
+      "path": "modern/teaching/validate_pmsm_speed_filter.m",
+      "sha256": "ae08599a6e1e8f06929d968fe8cff10c434f2dd3129bb94b443b002a2a2e9182"
+    },
+    {
+      "path": "modern/teaching/validate_pmsm_speed_lesson.m",
+      "sha256": "8c66041c2b631e8bb4f987200e36e9c5929e2db833e2cda4738895142a2797da"
+    },
+    {
+      "path": "modern/teaching/validate_pmsm_timing_deadline.m",
+      "sha256": "197a62961193586d53d37d7e45d5c3c81ccca00e7fffec02c8d6627ed41db5bd"
+    },
+    {
+      "path": "modern/teaching/validate_pmsm_timing_events.m",
+      "sha256": "5e8357bb455682bcee99d60ab2e7b6cb6b73c5c8465f8de1554a1449f38c0c85"
+    },
+    {
+      "path": "modern/teaching/validate_teaching_controls.m",
+      "sha256": "48dad442ae09da95f983ea514b713b9a4969adaef2f4dec55044218f8dd0a048"
+    },
+    {
+      "path": "modern/teaching/vector_lesson/README.md",
+      "sha256": "d250f39597ef5dfd79c2d856411d58c40dd8e00221c9950e5cde117fd8afb4e9"
+    },
+    {
+      "path": "modern/teaching/vector_lesson/export_pmsm_vector_lesson.m",
+      "sha256": "3746bf9ee04af9394a377df96002fb20bcc83d54502d1eccff1eae13f7d2cb92"
+    },
+    {
+      "path": "modern/teaching/vector_lesson/pmsm_vector_frame.m",
+      "sha256": "c6ba2bfce1656821c246ca9e0ed5f2bdeae01760e3287d4020d1c1981b37c06e"
+    },
+    {
+      "path": "modern/teaching/vector_lesson/pmsm_vector_load.m",
+      "sha256": "f0dc52a918a0db50ef1ce00f67cbff747051cbed7518a4dd3d29a7bb38273188"
+    },
+    {
+      "path": "modern/teaching/vector_lesson/pmsm_vector_plot.m",
+      "sha256": "26c00ca5e6df4c767703a82278fe37aaccb28598436bb5c29b50483c0d0347fe"
+    },
+    {
+      "path": "modern/teaching/vector_lesson/pmsm_vector_transform.m",
+      "sha256": "fcaa5a6f9853095f8f875bc93080dc44953fc520c8482e004f06f5a90989e697"
+    },
+    {
+      "path": "modern/teaching/vector_lesson/validate_pmsm_vector_lesson.m",
+      "sha256": "160a2037a590ce4a4e48e42a99193b5cc74cfca23b074131276366b9634beedd"
+    },
+    {
+      "path": "modern/teaching/vector_lesson/validation.json",
+      "sha256": "4b741f91f73e2f6997f82b061ef231282ae2d743615ad5534a4eb47a61ca76fb"
+    },
+    {
+      "path": "modern/teaching/vector_lesson/verify_pmsm_vector_export.m",
+      "sha256": "6cfa5dc68a127f6c74d06df58eac978f967e6a68e8a93c42c349208350c8d539"
+    },
+    {
+      "path": "modern/teaching/vector_lesson/\u5e26\u8bfb\u8bf4\u660e.md",
+      "sha256": "a73e793d0ad7f01d2b48fe2986d4ff848de3e20f415320bad40edcb4c417b7ca"
+    },
+    {
+      "path": "modern/teaching/verify_observation_saved.m",
+      "sha256": "3770b9e25ff3aa4f985825c46b8a4e068a01922fce1834462f9e7605a5125232"
+    },
+    {
+      "path": "modern/teaching/verify_pmsm_current_frequency.m",
+      "sha256": "89189d87091a3e0659d40dc05888ee67c22e8c20241754d43ea16466981f9ff8"
+    },
+    {
+      "path": "modern/teaching/verify_pmsm_q_frequency.m",
+      "sha256": "739719896f28d859acd26c3b50a44af150d9e92b7299c42649d304b7bf3beac9"
+    },
+    {
+      "path": "modern/teaching/verify_pmsm_speed_probe.m",
+      "sha256": "fc0b921a4d06871d718e258c63997c05ddb2f2753bc06db43a8e1e6db6311d4f"
+    },
+    {
+      "path": "modern/teaching/verify_pmsm_speed_step.m",
+      "sha256": "1c850dee72fe7b4327757b9224f63fe3230776f637c11dc53b5d1019ae626409"
+    },
+    {
+      "path": "modern/teaching/verify_saved_teaching_controls.m",
+      "sha256": "aeb8deab41c90741b5ead2d4661668543b46cbae1340c9c7e534f16975b2a188"
+    },
+    {
+      "path": "modern/teaching/\u540e\u7eed\u5f00\u53d1\u8ba1\u5212.md",
+      "sha256": "9847649964d4c5c6c43d74d84617b194efa17e47328c4aa52c377451e88f81ab"
+    },
+    {
+      "path": "modern/teaching/\u56fe\u8868\u4e0e\u8bb2\u89e3\u89c4\u8303.md",
+      "sha256": "789de89217116943170a9d793d3f75027aa6304bb8507d839a2f83004efa643c"
+    },
+    {
+      "path": "modern/teaching/\u6574\u4f53\u8fdb\u5ea6\u4e0e\u4e3b\u7ebf.md",
+      "sha256": "51dc3e654990dbe5edc359c0bd29339268e09609467671f8148bc428baf9935f"
+    },
+    {
+      "path": "modern/teaching/\u6838\u5fc3\u6559\u5b66\u89c2\u6d4b\u57fa\u7ebf_\u4f53\u9a8c\u6e05\u5355.md",
+      "sha256": "e6114bc15f8c51d4a243bd6c36f1217fe6de2f4a26dec73b4fa79ad74adaed7f"
+    },
+    {
+      "path": "modern/teaching/\u6838\u5fc3\u6559\u5b66\u89c2\u6d4b\u57fa\u7ebf_\u9636\u6bb5\u62a5\u544a.md",
+      "sha256": "74dc5d7572eb2a9f66aeacd8ca1a4339024cd9039076709f1096a6eef8c7ba52"
+    },
+    {
+      "path": "modern/teaching/\u6b7b\u533a\u6559\u5b66\u4e13\u9898\u8bbe\u8ba1\u7a3f.md",
+      "sha256": "d594a6f7b678e43953ec2d19924381de09324a3356b64e4e5600a2608ffbc302"
+    },
+    {
+      "path": "modern/teaching/\u91c7\u6837\u7edf\u8ba1\u8bf4\u660e.md",
+      "sha256": "8fcfbf9bf3e1a6e8b1967084df32e3b48ed6250513f0b815bad069107e1d12fe"
+    },
+    {
+      "path": "modern/timing/README_\u771f\u5b9e\u65f6\u5e8f\u4e0e\u91c7\u6837\u7a97\u53e3.md",
+      "sha256": "02c80239ca335690da4bbc317664d34df409b54899ea19e3a4cb6363e0254da7"
+    },
+    {
+      "path": "modern/timing/build_timing_stage3.m",
+      "sha256": "cbbf06fa7280dcd20c92ff4499701b84581380936d0a82454fd6ed80a918d610"
+    },
+    {
+      "path": "modern/timing/diagnose_timing.m",
+      "sha256": "772604fe775e1d7f23464abc5a22df18e981e4f269fe9a7fa798f774cd2b4fdf"
+    },
+    {
+      "path": "modern/timing/finalize_timing_stage3.m",
+      "sha256": "2f99107b7381e55cfc99eef06a932b82e12d83a2e47ea99a999cda888fafe031"
+    },
+    {
+      "path": "modern/timing/inspect_timing_source.m",
+      "sha256": "fefbf438a8162be9e0da03ade518ea34d23bd9d74b16e30ece5e0f3d7a360658"
+    },
+    {
+      "path": "modern/timing/plot_timing_report.m",
+      "sha256": "4ddff5aa102d39ed4384de55005cc70480d031d270885035a25abfd974671c7b"
+    },
+    {
+      "path": "modern/timing/publish_timing_stage3.m",
+      "sha256": "35b47a5b57126c387247a6d9d912b5588da7da0054c7085ccbfe50a02b0050d1"
+    },
+    {
+      "path": "modern/timing/refresh_timing_gui.m",
+      "sha256": "585bd503c64b514a692f78e816b06dd0d7449a3cde8ecb4ab9c9dce686b198e8"
+    },
+    {
+      "path": "modern/timing/release_timing_gui.m",
+      "sha256": "4cc5003bc6848d29fc26e972e802442f32b445db948e0a0a785dd869ac605e87"
+    },
+    {
+      "path": "modern/timing/timing_adc.m",
+      "sha256": "33dfe477ba07c979db92d5700b61d8ddb6661b6553b22dbc6fc25215549fd5a4"
+    },
+    {
+      "path": "modern/timing/timing_model_init.m",
+      "sha256": "68339d6f3e1212ec7c8ae7587814299da36a1f0b6749733a23b6803eb18bef9f"
+    },
+    {
+      "path": "modern/timing/timing_pwm.m",
+      "sha256": "27ce06a6e3091ad512bf4c8a25554d850cc2869d46f3a1c76597348d25d7d031"
+    },
+    {
+      "path": "modern/timing/timing_stage3_results.json",
+      "sha256": "466ab176d0031057af02f5613dc2114685e4b38c764ce17fb04a02ce19de5994"
+    },
+    {
+      "path": "modern/timing/validate_timing_stage3.m",
+      "sha256": "e582dfbc537203180719032e0b57ab78f37d4ed1dd31268df2954fb422c4c6b1"
+    },
+    {
+      "path": "modern/validate_pmsm_r2026a.m",
+      "sha256": "baf4bac8f490fddd35a7bf99a5338e23d77c32e972130d3161b97664566f3455"
+    },
+    {
+      "path": "modern/validation_results.json",
+      "sha256": "b8d94538e6e5b5846805cad4df5f062e9dd165edd086e6c237ff4e96b65c6064"
+    },
+    {
+      "path": "modern/verification_summary.json",
+      "sha256": "47eb223d6bc413d9d59d0103a707996dfeb4b167b33d9357ed0dec06a712a5d4"
+    },
+    {
+      "path": "review/algorithm_migration/Chensha_FOC_SMOPLL_Final_chart_13.m",
+      "sha256": "a94b8ba290264e77e017e723bb44fb8ac100273d5fc362716df7a18ca98c4f48"
+    },
+    {
+      "path": "review/algorithm_migration/Chensha_FOC_SMOPLL_Final_chart_23.m",
+      "sha256": "5621a6cb81861c5abe9e784c78dff61eea5e2cc8ab5147ab8baa7a6bdda8a57b"
+    },
+    {
+      "path": "review/algorithm_migration/Chensha_FOC_SMOPLL_Final_chart_33.m",
+      "sha256": "ae18f582128f20c97930886582118e0260defd9a404dea11b15927a106269a87"
+    },
+    {
+      "path": "review/algorithm_migration/Chensha_FOC_SMOPLL_Final_chart_43.m",
+      "sha256": "cd47acc6da2692f69a143378e4e593fc626316930645e94be5c537383f0732d5"
+    },
+    {
+      "path": "review/algorithm_migration/Chensha_FOC_SMOPLL_Final_chart_55.m",
+      "sha256": "98954786705c675fb51bbf96784ee97217691fa142a5d3e7d1445b157d326c18"
+    },
+    {
+      "path": "review/algorithm_migration/Chensha_FOC_SMOPLL_Final_chart_62.m",
+      "sha256": "98954786705c675fb51bbf96784ee97217691fa142a5d3e7d1445b157d326c18"
+    },
+    {
+      "path": "review/algorithm_migration/Chensha_FOC_SMOPLL_Final_chart_69.m",
+      "sha256": "999fe59d622157b7b3715e221f24596b15f0b043013772f6ae18290abf91e702"
+    },
+    {
+      "path": "review/algorithm_migration/Chensha_FOC_SMOPLL_Final_chart_77.m",
+      "sha256": "98954786705c675fb51bbf96784ee97217691fa142a5d3e7d1445b157d326c18"
+    },
+    {
+      "path": "review/algorithm_migration/Chensha_FOC_SMOPLL_Final_chart_84.m",
+      "sha256": "98954786705c675fb51bbf96784ee97217691fa142a5d3e7d1445b157d326c18"
+    },
+    {
+      "path": "review/algorithm_migration/Chensha_FOC_SMOPLL_Final_chart_91.m",
+      "sha256": "98954786705c675fb51bbf96784ee97217691fa142a5d3e7d1445b157d326c18"
+    },
+    {
+      "path": "review/algorithm_migration/Chensha_FOC_SMOPLL_Final_chart_98.m",
+      "sha256": "c9eb4bcb9385ee3d82e2fe2bb9a4b527e742fb48b5593ff27ccc3fb324796ab3"
+    },
+    {
+      "path": "review/algorithm_migration/MFPCC_ESO_DPCC_2022b_chart_115.m",
+      "sha256": "6b765f5523fb2899f2220f0150cfd135816bb8ffbc456e57a5de48b70e68a0e7"
+    },
+    {
+      "path": "review/algorithm_migration/MFPCC_ESO_DPCC_2022b_chart_139.m",
+      "sha256": "ccdd2a557217b607f061177ad72ffe89382da3079480f8483a38f01e75954def"
+    },
+    {
+      "path": "review/algorithm_migration/MFPCC_ESO_DPCC_2022b_chart_150.m",
+      "sha256": "8f7b49fc6a372283859ab9b702e3cf653018afab6e79fe76cd7f555124e1f524"
+    },
+    {
+      "path": "review/algorithm_migration/MFPCC_ESO_DPCC_2022b_chart_160.m",
+      "sha256": "62bb0fbc0989a269613300772bbfcf4f54dd6e6c397b6330afcf345a66172e80"
+    },
+    {
+      "path": "review/algorithm_migration/MFPCC_ESO_DPCC_2022b_chart_169.m",
+      "sha256": "1705f13cfd0983ebca1fead8ef92e22ae7367089ddcd94b1d0b6808cbb2ab94a"
+    },
+    {
+      "path": "review/algorithm_migration/MFPCC_ESO_DPCC_2022b_chart_178.m",
+      "sha256": "cd64e01301390b3294ff62d2260026b5931a9252b64d48026ebeda7f903c45d7"
+    },
+    {
+      "path": "review/algorithm_migration/MFPCC_ESO_DPCC_2022b_chart_188.m",
+      "sha256": "ccdd2a557217b607f061177ad72ffe89382da3079480f8483a38f01e75954def"
+    },
+    {
+      "path": "review/algorithm_migration/MFPCC_ESO_DPCC_2022b_chart_199.m",
+      "sha256": "8f7b49fc6a372283859ab9b702e3cf653018afab6e79fe76cd7f555124e1f524"
+    },
+    {
+      "path": "review/algorithm_migration/MFPCC_ESO_DPCC_2022b_chart_209.m",
+      "sha256": "62bb0fbc0989a269613300772bbfcf4f54dd6e6c397b6330afcf345a66172e80"
+    },
+    {
+      "path": "review/algorithm_migration/MFPCC_ESO_DPCC_2022b_chart_218.m",
+      "sha256": "1705f13cfd0983ebca1fead8ef92e22ae7367089ddcd94b1d0b6808cbb2ab94a"
+    },
+    {
+      "path": "review/algorithm_migration/MFPCC_ESO_DPCC_2022b_chart_227.m",
+      "sha256": "cd64e01301390b3294ff62d2260026b5931a9252b64d48026ebeda7f903c45d7"
+    },
+    {
+      "path": "review/algorithm_migration/MFPCC_ESO_DPCC_2022b_chart_95.m",
+      "sha256": "8f36662b9cd70c83c587fff89577e11c1c82d161d63cb7d8a7cf604d2e255666"
+    },
+    {
+      "path": "review/algorithm_migration/SMO_PLL\u5b9e\u65bd\u8282\u70b9\u4e0e\u9a8c\u6536\u5951\u7ea6_\u5f85\u786e\u8ba4.md",
+      "sha256": "a08bdc9c4fb2360d26ee415a1b3bc8c2525e39483a8a7bb07495802989c621bf"
+    },
+    {
+      "path": "review/algorithm_migration/SMO_PLL\u79d1\u5b66\u5b9e\u65bd\u65b9\u6848_\u5f85\u786e\u8ba4.md",
+      "sha256": "c43f4e6f764255f8ffbec6a4313e63adf158881626abc393fd27d90267e73bad"
+    },
+    {
+      "path": "review/algorithm_migration/SmallSPMSM_PI_DPCC_2022b_chart_111.m",
+      "sha256": "6e6b2bca9a45554339ad9b24486f585ddd66f9c332177790f23d4e13dfebe0b4"
+    },
+    {
+      "path": "review/algorithm_migration/SmallSPMSM_PI_DPCC_2022b_chart_131.m",
+      "sha256": "ccdd2a557217b607f061177ad72ffe89382da3079480f8483a38f01e75954def"
+    },
+    {
+      "path": "review/algorithm_migration/SmallSPMSM_PI_DPCC_2022b_chart_142.m",
+      "sha256": "8f7b49fc6a372283859ab9b702e3cf653018afab6e79fe76cd7f555124e1f524"
+    },
+    {
+      "path": "review/algorithm_migration/SmallSPMSM_PI_DPCC_2022b_chart_152.m",
+      "sha256": "62bb0fbc0989a269613300772bbfcf4f54dd6e6c397b6330afcf345a66172e80"
+    },
+    {
+      "path": "review/algorithm_migration/SmallSPMSM_PI_DPCC_2022b_chart_161.m",
+      "sha256": "1705f13cfd0983ebca1fead8ef92e22ae7367089ddcd94b1d0b6808cbb2ab94a"
+    },
+    {
+      "path": "review/algorithm_migration/SmallSPMSM_PI_DPCC_2022b_chart_170.m",
+      "sha256": "cd64e01301390b3294ff62d2260026b5931a9252b64d48026ebeda7f903c45d7"
+    },
+    {
+      "path": "review/algorithm_migration/SmallSPMSM_PI_DPCC_2022b_chart_180.m",
+      "sha256": "ccdd2a557217b607f061177ad72ffe89382da3079480f8483a38f01e75954def"
+    },
+    {
+      "path": "review/algorithm_migration/SmallSPMSM_PI_DPCC_2022b_chart_191.m",
+      "sha256": "8f7b49fc6a372283859ab9b702e3cf653018afab6e79fe76cd7f555124e1f524"
+    },
+    {
+      "path": "review/algorithm_migration/SmallSPMSM_PI_DPCC_2022b_chart_201.m",
+      "sha256": "62bb0fbc0989a269613300772bbfcf4f54dd6e6c397b6330afcf345a66172e80"
+    },
+    {
+      "path": "review/algorithm_migration/SmallSPMSM_PI_DPCC_2022b_chart_210.m",
+      "sha256": "1705f13cfd0983ebca1fead8ef92e22ae7367089ddcd94b1d0b6808cbb2ab94a"
+    },
+    {
+      "path": "review/algorithm_migration/SmallSPMSM_PI_DPCC_2022b_chart_219.m",
+      "sha256": "cd64e01301390b3294ff62d2260026b5931a9252b64d48026ebeda7f903c45d7"
+    },
+    {
+      "path": "review/algorithm_migration/SmallSPMSM_PI_DPCC_2022b_chart_91.m",
+      "sha256": "8f36662b9cd70c83c587fff89577e11c1c82d161d63cb7d8a7cf604d2e255666"
+    },
+    {
+      "path": "review/algorithm_migration/SmallSPMSM_iDPCC_2022b_chart_111.m",
+      "sha256": "ccdd2a557217b607f061177ad72ffe89382da3079480f8483a38f01e75954def"
+    },
+    {
+      "path": "review/algorithm_migration/SmallSPMSM_iDPCC_2022b_chart_122.m",
+      "sha256": "8f7b49fc6a372283859ab9b702e3cf653018afab6e79fe76cd7f555124e1f524"
+    },
+    {
+      "path": "review/algorithm_migration/SmallSPMSM_iDPCC_2022b_chart_132.m",
+      "sha256": "62bb0fbc0989a269613300772bbfcf4f54dd6e6c397b6330afcf345a66172e80"
+    },
+    {
+      "path": "review/algorithm_migration/SmallSPMSM_iDPCC_2022b_chart_141.m",
+      "sha256": "1705f13cfd0983ebca1fead8ef92e22ae7367089ddcd94b1d0b6808cbb2ab94a"
+    },
+    {
+      "path": "review/algorithm_migration/SmallSPMSM_iDPCC_2022b_chart_150.m",
+      "sha256": "cd64e01301390b3294ff62d2260026b5931a9252b64d48026ebeda7f903c45d7"
+    },
+    {
+      "path": "review/algorithm_migration/SmallSPMSM_iDPCC_2022b_chart_91.m",
+      "sha256": "0e7b3f4ed486d2cfb1a6240241080e34ca79f5deed59ad0a0e8502e85b205aba"
+    },
+    {
+      "path": "review/algorithm_migration/inspection_manifest.json",
+      "sha256": "69c1055075011069ed9e517bbefead9a75c83c9f0e7283e66d95b61c4dd1d3bd"
+    },
+    {
+      "path": "review/algorithm_migration/reference_inventory.json",
+      "sha256": "495fe34687b840eaf7647a22406026d3030fc44f63b22a403c8c562fe2d29fa2"
+    },
+    {
+      "path": "review/algorithm_migration/\u7b97\u6cd5\u8fc1\u79fb\u65b9\u6848_20261016.md",
+      "sha256": "463da01bad9d4624ef3e8cbccc275bc4b4271715cffd85f8577275ed13d32ef5"
+    }
+  ]
+}

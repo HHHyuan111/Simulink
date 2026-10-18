@@ -1,0 +1,48 @@
+{
+  "captured_at": "2026-10-18T20:09:40.899335+08:00",
+  "analysis_only": true,
+  "simulation_reexecuted": false,
+  "execution_version": "normal_serialized_parent_and_observer",
+  "status": "stopped_execution_failure",
+  "builder_passed": true,
+  "preload86_exact_and_graph_backup_passed": true,
+  "normal_compile_term_passed": true,
+  "bridge_continuous_rate": [
+    0,
+    0
+  ],
+  "explicit_generated_target_builds": 0,
+  "compiler_setup_performed": false,
+  "sim_calls_requested": 1,
+  "physical_time_progress_known": false,
+  "complete_raw_archive_exists": false,
+  "executor_restoration_executed": false,
+  "strict96_completed_shorts": 0,
+  "planned_shorts": 2,
+  "second_short_started": false,
+  "cross_process_comparison_started": false,
+  "new_formal_matrix_started": false,
+  "old_formal_status_preserved": "1/14 stopped_execution_failure",
+  "native_root_cause_confirmed": false,
+  "hardware_failure_confirmed": false,
+  "R2_passed": false,
+  "source_files_verified": 862,
+  "published": [
+    {
+      "path": "campaign.json",
+      "sha256": "e91db1fd3108a05fd44b0b780c090a8db207ae2b523629ef569fbf0e8b4dc24e"
+    },
+    {
+      "path": "first_short_report.json",
+      "sha256": "6ff9caa5216cf572d6d4eb2ae2f726512e1d241e7b810a3d6df465c90f3e1a98"
+    },
+    {
+      "path": "first_short_graph.json",
+      "sha256": "13e5d8ebbedc0af5c19d3e7fa795c8180a11df60cde2d2fb88fe3307bfd63b0d"
+    },
+    {
+      "path": "build_graph.json",
+      "sha256": "13e5d8ebbedc0af5c19d3e7fa795c8180a11df60cde2d2fb88fe3307bfd63b0d"
+    }
+  ]
+}
