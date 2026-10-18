@@ -7,7 +7,7 @@
   "duration_s": 0.8,
   "expected_native_evaluations": 12800001,
   "fixture": "Independent integer800-tick triangular carrier, balanced sinusoidal thresholds held per50us period,24V bus,2A balanced current,6V rotating estimated vector,3000rpm-equivalent electrical speed and source-bound35-value engineering config. Current anchors unavailable at five JEOS references beginning0.300028875s and one at0.600028875s. These are synthetic inputs, not a physical motor response.",
-  "source_binding": "Nine production wrapper/core dependencies checked against the completed constructor short record and copied with SHA256; all probe/fixture/audit sources copied before execution and checked unchanged afterward.",
+  "source_binding": "Eight production wrapper/core dependencies checked against the completed constructor short record and copied with SHA256; all probe/fixture/audit sources copied before execution and checked unchanged afterward.",
   "criteria": [
     "Every native call asserts consecutive integer tick, finite43-value outputs, no complementary gate overlap, nonnegative voltage uncertainty, exact interval-ready and JEOS-boundary flags and50us ready intervals",
     "Exactly12800001 native evaluations,16000 JEOS boundaries,6 rejected current anchors,16001 counter rows and verified0.8s endpoint",
