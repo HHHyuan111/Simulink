@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "kind": "reduced_native_voltage_predictor",
+  "registered_before_execution": "2026-10-18; after independent native queue completed",
+  "purpose": "Isolate original native voltage wrapper/reconstruction and deadtime/device/filter/RL predictor without the electric plant, ADC frontend, SMO/PLL or publication queue. No R2 whole-model case status changes.",
+  "fixed_step_s": 0.0000000625,
+  "duration_s": 0.8,
+  "expected_native_evaluations": 12800001,
+  "fixture": "Independent integer800-tick triangular carrier, balanced sinusoidal thresholds held per50us period,24V bus,2A balanced current,6V rotating estimated vector,3000rpm-equivalent electrical speed and source-bound35-value engineering config. Current anchors unavailable at five JEOS references beginning0.300028875s and one at0.600028875s. These are synthetic inputs, not a physical motor response.",
+  "source_binding": "Nine production wrapper/core dependencies checked against the completed constructor short record and copied with SHA256; all probe/fixture/audit sources copied before execution and checked unchanged afterward.",
+  "criteria": [
+    "Every native call asserts consecutive integer tick, finite43-value outputs, no complementary gate overlap, nonnegative voltage uncertainty, exact interval-ready and JEOS-boundary flags and50us ready intervals",
+    "Exactly12800001 native evaluations,16000 JEOS boundaries,6 rejected current anchors,16001 counter rows and verified0.8s endpoint",
+    "Archive every native output for first2401 ticks and every50us thereafter. Independently advance the original pure voltage core from fresh state for those2401 ticks using the fixture at the recorded native time",
+    "Pure/compiled prefix shape and schedule/gate/boolean/sequence fields exact; each other finite numeric value differs by at most64*eps(max(1,abs(reference))). Report exact-equality fraction, max absolute error and first failure; do not alter tolerance after execution",
+    "Original SLX and frozen R1 sources unchanged. No MCU WCET, predictor accuracy or whole-model fault recovery inferred from a successful synthetic execution"
+  ],
+  "policy": "One execution only, no numerical retries or label changes. Retain all source/exit/errors. An execution-before-sampling construction error may only be repaired with an explicitly recorded addendum and a separate folder; an executed result stays final. Do not run concurrently with full-model simulation."
+}
