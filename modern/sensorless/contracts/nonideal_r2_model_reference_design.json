@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "registered_before_implementation": "2026-10-18; source and standalone complete observer graphs tested; normal reference toy passed",
+  "execution_version": "normal_model_reference_adapter",
+  "evidence_and_hypothesis": "Original plant-only0.8s and complete591-block observer-only0.8s each completed. Direct combined missing_five still interrupted before injection despite compile-free construction; reset combined completed. Test a real compiled model boundary for observer/main integration. No root cause or stability fix is assumed.",
+  "adaptation": "Construct the actual local R2 observer using the unchanged geometry constructors, phase/fault/monitor helpers and trusted stopped initialization. Clone the complete observer root into a dedicated generated child model, with its own exact86-value workspace and fixed native step/single-task schedule. Replace only its9 external From sources by named Inports feeding scoped Gotos. No waveform, predictor history, observer equation or qualification change.",
+  "parent": "Retain the original main model and two actual applied-CCR/raw-ADC taps. Replace the large direct observer hierarchy with a small wrapper containing9 From blocks and one Normal-mode Model block. Zero output ports; all44 original observer timeseries remain in the child and are returned alongside52 original main logs. No new feedback connection or extra logged signal.",
+  "inputs": [
+    {"tag":"SLessAppliedThreshold","dimensions":"1D3","role":"actual applied CCR thresholds"},
+    {"tag":"ObsCarrier","dimensions":"scalar","role":"actual PWM carrier"},
+    {"tag":"UDC","dimensions":"scalar","role":"configured/measured DC bus"},
+    {"tag":"Iabc_meas","dimensions":"3x1","role":"filtered measured current"},
+    {"tag":"SLessV2ADC","dimensions":"3x1","role":"actual ADC current before digital filter"},
+    {"tag":"ObsADCTiming","dimensions":"1x15","role":"configured ADC timing flags"},
+    {"tag":"ObsPWMTiming","dimensions":"1x12","role":"actual PWM timing flags"},
+    {"tag":"theta_e","dimensions":"scalar","role":"evaluation only; original From targets must remain below观测"},
+    {"tag":"speed","dimensions":"scalar","role":"evaluation only; original From targets must remain below观测"}
+  ],
+  "parameter_contract": "Main motor/PI unchanged; nominal SMO/PLL and35-value engineering frontend config copied exactly after the trusted callback. Child has no compile-time initialization callback or parent-workspace lookup. Generated child mask fields are read-only; rebuild through the adapter for motor/configuration changes. Child workspace/source/model hashes and interface dimensions recorded per attempt.",
+  "restoration": "Preserve original direct-adapter backup before replacing its root. On removal delete only owned wrapper/taps, restore the original79-value configured workspace, original callbacks and main snapshot; worker then restores stimulus, any literal plant R/L expressions, source InitFcn and reference. Never save the original SLX. Keep generated child model and raw/source archives for review.",
+  "qualification": "First20ms test must preserve all96 canonical Time/Data streams exactly against the registered v7 reference, including R1-common81/original52, with only the predeclared two-gate timestamp encoding adaptation. Verify child/parent workspaces unchanged during compile/execution, exact0.02s native endpoint and original model restoration. Missing_five long execution prohibited unless this exact source precheck passes.",
+  "development_execution_policy": "Only short precheck and still-unarchived missing_five may run in development. At most2 starts per case/version across labels; second only for explicit0xc0000005/0xc000001d. No retry after completed numeric outcome; no repeated completed physical cases. Full formal14 matrix is separate, must freeze the entire final source/parameter/execution candidate before any formal run, and cannot combine prior development versions.",
+  "unchanged_acceptance": "contracts/nonideal_r2_test_plan.json SHA2566cedde9bcf37926542541d286d6d4167d2c596969998c5a20893a5063d60c439; originalSLX and R1 frozen90 preserved. A child boundary is not evidence of hardware WCET, resolved CPU faults or a passed R2 node. R2 user gate before R3; no feedback takeover."
+}
