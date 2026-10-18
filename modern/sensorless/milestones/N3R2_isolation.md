@@ -58,3 +58,9 @@
 另一次只读 Windows 查询发现 2026-10-17 12:49:57 的 WHEA19：处理器核心报告 Corrected Machine Check / Translation Lookaside Buffer Error。该事件前后两分钟未查到 Application1000 记录。本机型号为 i9-14900HX；**这不是 CPU 损坏或 MATLAB 崩溃因果关系的结论**，只增加一个应保留的主机稳定性线索，未修改系统设置。[本机记录](N3R2/isolation_20261017/host_observation_20261018.json)；WHEA 的事件记录含义见 [Microsoft 官方说明](https://learn.microsoft.com/en-us/windows-hardware/drivers/whea/whea-hardware-error-events)。
 
 [指纹与全部成功/失败记录](N3R2/isolation_20261017/summary.json)。原始 MAT、生成的缩减 SLX、私有环境和控制台留在本地 runs；Git 保存标准、代码、脱敏报告和图片。原 SLX、R1 冻结 90 文件保持。
+
+## 2026-10-18 后续执行检查
+
+随后冻结候选的正式缺帧首次通过，但正式第二项初始化 `0xc0000409` 后停止，结果 1/14、无重试。用户确认没有手动降压或超频，同意项目内隔离准备编译器。实际 PID 小模型证明 Rapid 目标在独立进程执行，三路 Time/Data 完全一致；但新后端主模型短检在 `load` 阶段 `0xc0000005`，未取得资格通过。
+
+原 SLX 与同字节副本的两次纯加载分别通过；匹配完整辅助路径与隔离编译器偏好的停止态启动检查也通过，实际根模型正确，固定参考恢复/快照/参数捕获无异常，没有构造观测层或仿真。因此未得到稳定的最小崩溃复现，未确认根因，也未重新放行短检或正式矩阵。[本轮结果、原状态及继续条件](N3R2_execution_environment.md)。
