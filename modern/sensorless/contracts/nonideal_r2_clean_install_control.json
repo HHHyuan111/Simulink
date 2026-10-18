@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "registered_at": "2026-10-18T12:48:38.869824+00:00",
+  "user_authorized": true,
+  "authorization": "User explicitly agreed to project-isolated official installation in this conversation",
+  "type": "environment_diagnostic_only",
+  "R2_passed": false,
+  "installation": {
+    "tool_source": "https://www.mathworks.com/mpm/win64/mpm",
+    "signature_required": "Valid MathWorks",
+    "release": "R2026aU5",
+    "exact_runtime_required": "26.1.0.3346908 (R2026a) Update 5",
+    "products": [
+      "MATLAB",
+      "Simulink",
+      "Stateflow"
+    ],
+    "target": "D:/simulink/dev/modern/sensorless/.build/matlab_clean/R2026a_U5",
+    "target_must_be_new": true,
+    "preserve_existing_installation": true,
+    "existing_installation": "D:/DevTools/MATLAB/R2026a",
+    "windows_mpm_requires_admin": true,
+    "initial_process_is_admin": false,
+    "escalation": "Standard Windows UAC only, no policy changes or bypass; user installation authorization applies",
+    "installation_retry_policy": "Record every installer attempt; download/permission failures are setup failures, never physical simulations"
+  },
+  "source_binding": {
+    "manifest": "milestones/N3R2/normal_serialized_20261018/prequalification_sources.json",
+    "sha256": "2ea53bab650cc4ffc8cfb20a82d23ea22a50172af78f2ea8d904a1a36da8999b",
+    "files": 862
+  },
+  "artifacts": {
+    "build_folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_normal_serialized_short_once\\build",
+    "handoff_sha256": "58426b2237d0b74a2d2c8c577bb86e91c9eff4b6fa17b4deca924fe6d534e434",
+    "parent_file": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_normal_serialized_short_once\\build\\parent\\PMSM_FOC_R2026a.slx",
+    "parent_sha256": "06591a3d738fe0de76faed7c7e23b97d5a3e7b44d6f989f7faff8be4d44d9887",
+    "child_file": "D:/simulink/dev/modern/sensorless/runs/N3R2_normal_serialized_short_once/build/model/sr2_f1b69fe7.slx",
+    "child_sha256": "b544278537ff25c2fbd50e5624bcc01824debefa7c6b7e25bd707f26b31ca198",
+    "reuse_same_bytes_no_rebuild": true
+  },
+  "preflight": [
+    "New executable exact runtime and release required; mismatch stops before sim",
+    "Signed core DLL file comparison with original installation; signatures and hashes only, no license material",
+    "Private preferences and cache; explicit executable; verify which sources",
+    "Model/source/handoff fingerprints must still match",
+    "One explicit Normal compile/term and original continuous bridge [0,0],86 workspace values, graph, backup, source guards unchanged"
+  ],
+  "physical_control": {
+    "maximum_sim_calls": 1,
+    "duration_s": 0.02,
+    "execution_function_unchanged": "execute_sensorless_r2_normal_serialized",
+    "normalizer_unchanged": "normalize_sensorless_r2_normal_serialized_archive",
+    "new_result_directory": "runs/N3R2_clean_install_control_once",
+    "retry_on_failure": false,
+    "strict_criteria": "Existing 96 Time/Data/class/dimension equality; existing common81/R1; native 320001 endpoint; archive and actual restoration; unchanged engineering parameters and timing",
+    "no_complete_archive": "Failed/incomplete, physical progress unknown unless separately durable; never claim 20ms",
+    "any_failure": "Stop diagnostic and retain artifacts, no second short or matrix"
+  },
+  "interpretation": {
+    "pass": "Only one successful execution in new installation; not root cause proof, not R2 qualification",
+    "same_core_bytes": "Disclose nondeterminism, do not label old installation corrupted",
+    "fail": "Preserve failure and reduce source/runtime trigger; no automatic replay",
+    "new_formal_campaign": "Requires existing two exact independent shorts and freeze; not authorized by this diagnostic",
+    "feedback_takeover": false,
+    "R3": false
+  },
+  "privacy": "Raw installation/MATLAB logs and dumps remain local; publish safe metadata and whitelisted frames only"
+}
