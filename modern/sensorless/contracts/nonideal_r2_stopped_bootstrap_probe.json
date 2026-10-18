@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "registered_before_implementation": "2026-10-18 after both read-only load cases passed",
+  "kind": "stopped_preamble_call_boundary_isolation",
+  "evidence": "Generated short last durable load phase contains copy, load_system, pmsm_reference_geometry restore, teach_snapshot, pmsm_reference capture and InitFcn read. Both pure load controls completed. This does not prove the later preamble or intermittent host is responsible.",
+  "fixture": "One byte-identical main copy in a new owned folder. Match failed short's full project helper paths, private MinGW8.1 compiler preferences, process environment and runtime flags. Do not add observer or execute compile/update/initialize/sim/step. Load once; record actual bdroot/gcs before fixed restore and require intended root. Then call unchanged geometry reference restore once, teach_snapshot once, reference capture once and InitFcn read, recording a durable phase immediately before/after each. Close copy without saving and verify original/copy hashes.",
+  "policy": "Exactly one diagnostic batch; zero retry on any failure, no physics or R2 case start. Do not edit any of820 frozen files, any existing generated/backend worker, prior failed records or acceptance threshold. If all steps pass, report no reproduction and unresolved cause; do not use this success to reopen the failed short or formal matrix. A confirmed context mismatch or specific stopped-call failure may guide an evidenced future fix, but is not itself a new candidate qualification.",
+  "artifacts": "Snapshot exact probe, contract, MATLAB/compiler versions and actual function paths, current model context, source hashes, original/owned file hashes, each phase and exit. Private raw logs remain local. No host CPU or user GUI changes."
+}
