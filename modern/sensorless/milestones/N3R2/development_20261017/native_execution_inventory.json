@@ -1,6 +1,6 @@
 {
   "analysis_only": true,
-  "captured_at": "2026-10-17T17:14:28.883927+08:00",
+  "captured_at": "2026-10-18T09:35:30.697457+08:00",
   "generator_sha256": "454417523d28882804c0aab8969501cdf5403d7be0ed036974438805b4252307",
   "native_root_cause_confirmed": false,
   "algorithm_verdict_from_native_exit": false,
@@ -121,6 +121,73 @@
       "completed_physics_archived": true,
       "original_record_sha256": "8ece86303351496f4d6f9028e722c8941501245875f98d653e19445da4b7eaef",
       "private_launcher_sha256": "dd0a0c4fb0f55990cb2c38138a99552febd92aaa90badd25c72a32803a24f07b",
+      "redacted_frames": []
+    },
+    {
+      "campaign": "N3R2_constructor_missing_five_20261018_092154_14fc3e7f-2c3f-4e9c-873a-6f92023f8a47",
+      "version": "geometry_bound_constructor",
+      "case_id": "missing_five",
+      "attempt": "missing_five_attempt_1",
+      "exit_code": -1073741819,
+      "exit_code_hex": "0xc0000005",
+      "recognized_windows_native_exception": true,
+      "retryable_native_code": true,
+      "driver_retryable_classification": true,
+      "last_persisted_phase": "advance_same_initialized_graph",
+      "last_recorded_next_major_time_s": 0.12,
+      "completed_physics_archived": false,
+      "original_record_sha256": "08ce6fab9d24eead565b459a93a1f494b429ef2cbd9d86a8da0689e2be7847d8",
+      "private_launcher_sha256": "4f6d6a47e059ae54140872e6034ea0fc15ec616d682d7ea5e6d24c32191f0093",
+      "redacted_frames": [
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::clock::DiscreteBaseTimer::advance"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::clock::DiscreteTimer::advance"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::service::ExternalTimerService::timer"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::sim::ExternalTimerSet::serialize"
+        },
+        {
+          "module": "libmwslexec_runtime.dll",
+          "symbol": "slexec::runtime::engine::ExecutionEngine::step"
+        },
+        {
+          "module": "sl_sim.dll",
+          "symbol": "slsim::runtime::initializeExecutionEngine"
+        },
+        {
+          "module": "sl_sim.dll",
+          "symbol": "slsim::SimulationExecutionInterface::step"
+        },
+        {
+          "module": "sl_sim.dll",
+          "symbol": "slsim::SimulationSnapshotManager::snapshotInterval"
+        }
+      ]
+    },
+    {
+      "campaign": "N3R2_constructor_missing_five_20261018_092154_14fc3e7f-2c3f-4e9c-873a-6f92023f8a47",
+      "version": "geometry_bound_constructor",
+      "case_id": "missing_five",
+      "attempt": "missing_five_attempt_2",
+      "exit_code": -1073741795,
+      "exit_code_hex": "0xc000001d",
+      "recognized_windows_native_exception": true,
+      "retryable_native_code": true,
+      "driver_retryable_classification": true,
+      "last_persisted_phase": "advance_same_initialized_graph",
+      "last_recorded_next_major_time_s": 0.57,
+      "completed_physics_archived": false,
+      "original_record_sha256": "f6eb9c90bdda8eaa78ef062bc997966d6a83b6e2c50f7b251dc5090f4cc5087e",
+      "private_launcher_sha256": "d4a2db79fb5d4646c2eee8561e96a3940ba72064d61f85733f3d3b20f3e82a7d",
       "redacted_frames": []
     },
     {

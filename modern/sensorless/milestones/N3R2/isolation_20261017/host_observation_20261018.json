@@ -1,0 +1,24 @@
+{
+  "kind": "read_only_host_observation",
+  "captured_at": "2026-10-18T09:37:24.6729898+08:00",
+  "query_start": "2026-10-16T09:37:24.6729898+08:00",
+  "source": "Windows System WHEA-Logger and Application1000; Win32_Processor.Name",
+  "generator_sha256": "c573f3c270f9685502e598fb6ef33f7069189b71e56e9b44b87fa7e6c3bca3c6",
+  "cpu_names": [
+    "Intel(R) Core(TM) i9-14900HX"
+  ],
+  "whea_events": [
+    {
+      "time": "2026-10-17T12:49:57.3195039+08:00",
+      "event_id": 19,
+      "level": "警告",
+      "message": "出现已更正的硬件错误。\r\n\r\n由以下组件报告: 处理器核心\r\n错误源: Corrected Machine Check\r\n错误类型: Translation Lookaside Buffer Error\r\n处理器 APIC ID: 8\r\n\r\n该项的详细信息视图包含进一步的信息。"
+    }
+  ],
+  "application1000_within_two_minutes": [],
+  "native_failure_causality_confirmed": false,
+  "host_settings_changed": false,
+  "model_parameters_changed": false,
+  "interpretation": "A corrected processor event is an independent host-stability lead. It does not prove a defective CPU, associate a MATLAB crash with this event, or identify a model error. Empty nearby Application1000 results mean no matching logged event in this query window.",
+  "primary_explanation": "https://learn.microsoft.com/en-us/windows-hardware/drivers/whea/whea-hardware-error-events"
+}

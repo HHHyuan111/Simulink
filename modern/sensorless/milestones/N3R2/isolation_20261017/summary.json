@@ -1,5 +1,5 @@
 {
-  "captured_at": "2026-10-18T09:22:05.305112+08:00",
+  "captured_at": "2026-10-18T09:38:05.336237+08:00",
   "R2_all_passed": false,
   "R2_whole_model_case_status_changed": false,
   "native_root_cause_confirmed": false,
@@ -376,5 +376,10 @@
       "published": "N3R2_reduced_core_reset_one/exit.json",
       "sha256": "d30f6d89abe24a26224d2293bdf456ee1271674ce4158ecbcea6a0dddabaa878"
     }
-  ]
+  ],
+  "separate_host_observation": {
+    "path": "host_observation_20261018.json",
+    "sha256": "c3cf930c9df25e61d7c71f6f36df3a01949b66cbc9959f91a101e9150c0bc031",
+    "causality_confirmed": false
+  }
 }

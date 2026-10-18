@@ -2,7 +2,7 @@
   "node": "N3R2",
   "all_passed": false,
   "formal_final_matrix_passed": false,
-  "captured_at": "2026-10-18T09:25:27.544186+08:00",
+  "captured_at": "2026-10-18T09:35:34.735970+08:00",
   "scope": "Development progress only. Running/failed attempts retain their original statuses; probes do not establish long-case performance.",
   "r1_frozen_files_preserved": 90,
   "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
@@ -96,7 +96,7 @@
     {
       "folder": "N3R2_constructor_missing_five_20261018_092154_14fc3e7f-2c3f-4e9c-873a-6f92023f8a47",
       "version": "geometry_bound_constructor",
-      "status": "running",
+      "status": "native_attempts_exhausted",
       "attempts": [
         {
           "folder": "missing_five_attempt_1",
@@ -106,14 +106,34 @@
           "raw_sha256": null,
           "metrics_passed": false,
           "record_status_is_last_persisted_not_process_liveness": true,
-          "execution_finalized": false,
-          "exit_code": null,
-          "exit_code_hex": null,
-          "allowed_native_retry_classification": null
+          "execution_finalized": true,
+          "exit_code": -1073741819,
+          "exit_code_hex": "0xc0000005",
+          "allowed_native_retry_classification": true
         },
         {
           "folder": "missing_five_attempt_2",
           "case_id": "missing_five",
+          "status": "running",
+          "phase": "advance_same_initialized_graph",
+          "raw_sha256": null,
+          "metrics_passed": false,
+          "record_status_is_last_persisted_not_process_liveness": true,
+          "execution_finalized": true,
+          "exit_code": -1073741795,
+          "exit_code_hex": "0xc000001d",
+          "allowed_native_retry_classification": true
+        }
+      ]
+    },
+    {
+      "folder": "N3R2_constructor_reset_one_20261018_093152_cb5137d5-677c-4502-ba18-5a3d529f78f0",
+      "version": "geometry_bound_constructor",
+      "status": "running",
+      "attempts": [
+        {
+          "folder": "reset_one_attempt_1",
+          "case_id": "reset_one",
           "status": "running",
           "phase": "advance_same_initialized_graph",
           "raw_sha256": null,
@@ -657,7 +677,7 @@
     {
       "source": "runs/N3R2_constructor_missing_five_20261018_092154_14fc3e7f-2c3f-4e9c-873a-6f92023f8a47/campaign.json",
       "published": "N3R2_constructor_missing_five_20261018_092154_14fc3e7f-2c3f-4e9c-873a-6f92023f8a47/campaign.json",
-      "sha256": "17a24bfbd1d0f29ea4e97a546eec1bf7209eb51f03ea8a332a3f972c3c542f0b"
+      "sha256": "f52f7050581a01c175408eb4de7679f214c57dbc0784099d1a36f3ba5531cc0b"
     },
     {
       "source": "runs/N3R2_constructor_missing_five_20261018_092154_14fc3e7f-2c3f-4e9c-873a-6f92023f8a47/missing_five_attempt_1/record.json",
@@ -687,7 +707,27 @@
     {
       "source": "runs/N3R2_constructor_missing_five_20261018_092154_14fc3e7f-2c3f-4e9c-873a-6f92023f8a47/missing_five_attempt_2/execution_progress.json",
       "published": "N3R2_constructor_missing_five_20261018_092154_14fc3e7f-2c3f-4e9c-873a-6f92023f8a47/missing_five_attempt_2/execution_progress.json",
-      "sha256": "a196416a91974c483af0ebd403461706917f34796a4163504d5e63c1046db08c"
+      "sha256": "25e798083f5a125ae0d65b3bb475351820dcf13f8ba87b0a744e742a206caa96"
+    },
+    {
+      "source": "runs/N3R2_constructor_reset_one_20261018_093152_cb5137d5-677c-4502-ba18-5a3d529f78f0/campaign.json",
+      "published": "N3R2_constructor_reset_one_20261018_093152_cb5137d5-677c-4502-ba18-5a3d529f78f0/campaign.json",
+      "sha256": "bed03552de61eac848d7763a67510b05dd75f186860dade2df4750828bd6b842"
+    },
+    {
+      "source": "runs/N3R2_constructor_reset_one_20261018_093152_cb5137d5-677c-4502-ba18-5a3d529f78f0/reset_one_attempt_1/record.json",
+      "published": "N3R2_constructor_reset_one_20261018_093152_cb5137d5-677c-4502-ba18-5a3d529f78f0/reset_one_attempt_1/record.json",
+      "sha256": "9ebaf4eb54730285a2923f259cf7b7c185d82202ad70ae4d51330ff700fec9a1"
+    },
+    {
+      "source": "runs/N3R2_constructor_reset_one_20261018_093152_cb5137d5-677c-4502-ba18-5a3d529f78f0/reset_one_attempt_1/graph.json",
+      "published": "N3R2_constructor_reset_one_20261018_093152_cb5137d5-677c-4502-ba18-5a3d529f78f0/reset_one_attempt_1/graph.json",
+      "sha256": "f109e1f2fe9d5eaeddce88e84fbe88c041204f611aba70bcf580dadd3908d6b0"
+    },
+    {
+      "source": "runs/N3R2_constructor_reset_one_20261018_093152_cb5137d5-677c-4502-ba18-5a3d529f78f0/reset_one_attempt_1/execution_progress.json",
+      "published": "N3R2_constructor_reset_one_20261018_093152_cb5137d5-677c-4502-ba18-5a3d529f78f0/reset_one_attempt_1/execution_progress.json",
+      "sha256": "6169e38b7954dd283ed16b2487f4bb0d6f0d93829aefd49d21fc7b5e964e717c"
     },
     {
       "source": "runs/N3R2_constructor_short_20261018_091939_61018e3f-c571-4ab4-9337-60370a02e273/campaign.json",

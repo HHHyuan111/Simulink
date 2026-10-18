@@ -1,9 +1,9 @@
 {
   "initialized_once": true,
-  "step_chunks": 10,
-  "requested_major_steps": 1.6E+6,
+  "step_chunks": 57,
+  "requested_major_steps": 9.12E+6,
   "expected_major_steps": 1.2800001E+7,
   "last_step": false,
   "status": "running",
-  "next_major_time_s": 0.099999999999999992
+  "next_major_time_s": 0.57
 }

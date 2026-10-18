@@ -10,4 +10,8 @@
 
 已完成的核心/缩减图不得换标签再运行。两个 PowerShell 入口按全部既有目录检查已完成或原生失败状态；重复调用会在启动 MATLAB 前拒绝。构建期错误保留原目录，只有明确的执行前脚本/配置修正可用新目录完成首次有效计算。不得重跑已完成的数值失败。
 
+`probe_sensorless_r2_native_queue` 另用原发布队列包装器运行 12800001 个原生节拍，按独立整数时刻检查 15995 次发布、五帧丢失、一次复位、1 μs 抖动和逐拍输出约束。其资格状态是明确的合成输入，不代表真实 SMO/PLL 的 599 个健康机会。`run_sensorless_r2_queue_probe.ps1` 仅允许执行一次，并在整模型任务运行时拒绝启动。三个新增 MATLAB 文件的静态检查无诊断项。
+
+`record_sensorless_r2_host_observation.ps1` 只读取 Windows 已记录的硬件事件和邻近应用崩溃事件，不改电源、频率、驱动或 BIOS。已更正的处理器事件可作为独立线索，不足以确认当前 MATLAB 异常的原因。
+
 `render_sensorless_r2_core_isolation.py` 读取核心 MAT 生成恢复图，`curate_sensorless_r2_isolation.py` 核对原模型/R1 冻结文件及运行时源码指纹，只发布报告、指纹和图片。私有环境路径、控制台、转储和大数据不入 Git。核心诊断没有前端/电压预测器反馈、原生发布队列或 CCR 时序，所有 R2 整模型状态保持不变。

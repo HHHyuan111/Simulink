@@ -25,7 +25,7 @@ def main():
         assert sha(BASE / entry['path']) == entry['sha256']
     patterns = ('N3R2_core_isolation_once', 'N3R2_reduced_core_*',
                 'N3R2_native_logger_isolation_once', 'N3R2_original_only_isolation_*',
-                'N3R2_port_geometry*')
+                'N3R2_port_geometry*', 'N3R2_native_queue_isolation_once')
     folders = sorted({p for pattern in patterns for p in (BASE / 'runs').glob(pattern) if p.is_dir()})
     records, published = [], []
 
@@ -46,6 +46,8 @@ def main():
             assert sha(folder / 'audit_source.m.txt') == record['audit_sha256']
         for entry in record.get('sources', []):
             assert sha(folder / 'source' / entry['path']) == entry['sha256']
+        for entry in record.get('diagnostic_sources', []):
+            assert sha(folder / Path(entry['path']).name) == entry['sha256']
         if (folder / 'contract.json').exists():
             assert sha(folder / 'contract.json') == record['contract_sha256']
         if record.get('raw_sha256'):
@@ -90,6 +92,13 @@ def main():
                'model_sha256': frozen['model_sha256'],
                'scope': 'Isolation probes only. All pre-execution scripting/configuration errors are retained. Reduced and synthetic probes cannot close full-model fault gaps. Private environment, raw logs and dumps are excluded.',
                'records': records, 'published': published}
+    host_report = DEST / 'host_observation_20261018.json'
+    if host_report.exists():
+        host = read(host_report)
+        assert host['generator_sha256'] == sha(BASE / 'robust/diagnostics/record_sensorless_r2_host_observation.ps1')
+        assert not host['host_settings_changed'] and not host['native_failure_causality_confirmed']
+        summary['separate_host_observation'] = {'path': host_report.name, 'sha256': sha(host_report),
+                                               'causality_confirmed': False}
     DEST.mkdir(parents=True, exist_ok=True)
     (DEST / 'summary.json').write_bytes((json.dumps(summary, ensure_ascii=False, indent=2) + '\n').encode('utf-8'))
     print(json.dumps({'records': len(records), 'files': len(published), 'integrity_passed': True, 'R2_all_passed': False}))
