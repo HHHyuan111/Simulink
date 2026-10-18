@@ -1,0 +1,48 @@
+{
+  "kind": "normal_model_reference_logging_feasibility",
+  "all_passed": true,
+  "phase": "completed",
+  "plant_reexecuted": false,
+  "whole_model_fault_acceptance": false,
+  "R2_case_status_changed": false,
+  "process_id": 47296,
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "probe_sha256": "3ac0c8634e8d4a3d584cce25fd8a408733411331eda5be030be1ea6140107d03",
+  "contract_sha256": "81e60077364c16296663e3450f8dcba589987914d6e335dc3c76fdcc7cc17ad2",
+  "child_model_sha256": "b6a542c81988cc743eac4d02dddb10853e7ac16e5bf28ccf11145996368605bf",
+  "parent_model_sha256": "5f5db3c0d137e7a5caf659ccc9edd0659ea13a4efa5a8936052f845f4c1d1f7b",
+  "input_ports": 1,
+  "output_ports": 0,
+  "execution": {
+    "initialized_once": true,
+    "step_chunks": 3,
+    "requested_major_steps": 320001,
+    "expected_major_steps": 320001,
+    "last_step": true,
+    "status": "completed",
+    "next_major_time_s": null,
+    "status_before_stop": "inactive",
+    "api_time_finite_at_completion": false,
+    "elapsed_s": 0.798473,
+    "status_after_stop": "inactive"
+  },
+  "output_variables": [
+    "ref_completion",
+    "ref_jeos",
+    "ref_native"
+  ],
+  "checks": {
+    "native_rows": true,
+    "native_ticks": true,
+    "native_data_ticks": true,
+    "JEOS_ticks": true,
+    "completion_ticks": true,
+    "workspace_scope": true,
+    "zero_output_model_executed": true,
+    "normal_mode": true
+  },
+  "native_rows": 320001,
+  "JEOS_rows": 400,
+  "completion_rows": 400,
+  "raw_sha256": "36fc19c2ce6f5929b2a8991c27fbcf74a9dbfbf1c23fd901e1535b24b15e26c9"
+}

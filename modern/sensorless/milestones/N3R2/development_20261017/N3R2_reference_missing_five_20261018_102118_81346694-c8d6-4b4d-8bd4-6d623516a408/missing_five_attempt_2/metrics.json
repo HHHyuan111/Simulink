@@ -1,0 +1,39 @@
+{
+  "id": "missing_five",
+  "node": "N3R2",
+  "event_audit": {
+    "events": 32000,
+    "false_valid_longest_s": 0,
+    "false_valid_total_s": 0,
+    "permit_total_s": 0.687015125,
+    "native_counters_equal_event_oracle": true,
+    "event_error_formula_equal": true,
+    "all_passed": true
+  },
+  "accepted_packets": 15995,
+  "false_valid_longest_s": 0,
+  "max_permitted_angle_deg": 4.8459442281430034,
+  "max_permitted_speed_relative": 0.010770071132476038,
+  "checks": {
+    "event_counter_audit": true,
+    "no_permission_violation": true,
+    "zero_forbidden_control_values": true,
+    "native_false_valid": true,
+    "packet_reference_and_completion": true,
+    "physical_duration": true,
+    "exactly_five_dropped": true,
+    "missing_flags": true,
+    "first_native_veto": true,
+    "pre_fault_permission": true,
+    "no_early_repermission": true,
+    "recovered": true,
+    "native_recovery_hold": true
+  },
+  "all_passed": true,
+  "fault_onset_s": 0.600028875,
+  "first_healthy_reference_s": 0.600278875,
+  "recovery_reference_s": 0.630178875,
+  "recovery_completion_s": 0.630181875,
+  "recovery_delay_s": 0.029900000000000038,
+  "failed_checks": []
+}

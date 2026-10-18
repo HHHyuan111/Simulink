@@ -1,0 +1,10 @@
+{
+ "schema":1,
+ "registered_before_serialization_adapter":"2026-10-17; analyze existing20ms v8r1 archive, do not resimulate",
+ "observation":"All94 other Time/Data arrays are byte-identical to v7; both bounded gate logs have exactly4000 samples and byte-identical Data. Their native tick indices are identical. Only Time representation differs: direct sim uses uniform TimeInfo.Increment=62.5ns, Simulation object uses dense times; maximum difference3.4694469519536142e-18s. The formula below exactly reconstructs both original reference Time arrays without reading reference values.",
+ "scope":["obs_dead_gates","obs_dead_requested"],
+ "format":"For these original uniformly sampled bounded logs only, encode Time as round(rawTime(1)/h)*h+(0:N-1)'*h using recorded configured h. Require the original snapshot MaxDataPoints=4000, samples=4000, strictly increasing native ticks separated by1, identical canonical/raw tick indices and max time difference<=4*eps(max(abs(rawTime))). Data, class, dimensions, sample count and every other Time/Data array remain unchanged.",
+ "retention":"Do not trim, interpolate, resample, choose favorable values or rewrite the raw API archive/record/campaign. Copy it to a derived log_format archive and change only the two Time encodings. Preserve raw/canonical hashes, source and contract hashes, actual max deltas and original failed comparison.",
+ "precheck":"Derived canonical archive must match all96 v7 Time/Data arrays and all81 R1 common logs including original52 with strict isequaln. Require original320001 native ticks and successful restoration. Analysis-only recovery qualifies the unchanged physical execution, not a new successful original pipeline; original campaign remains failed_execution.",
+ "long_runs":"Use unchanged v8r1 DUT/lifecycle and retain raw API output for every run. Capture this adapter/contract separately in the campaign and normalization report before/after execution. No complete-physics rerun or threshold/gain change. Guard prior precheck DUT sources and adapter SHA before each long run."
+}

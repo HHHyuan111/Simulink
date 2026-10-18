@@ -1,5 +1,5 @@
 {
-  "captured_at": "2026-10-18T09:49:38.490522+08:00",
+  "captured_at": "2026-10-18T10:20:31.983804+08:00",
   "R2_all_passed": false,
   "R2_whole_model_case_status_changed": false,
   "native_root_cause_confirmed": false,
@@ -23,6 +23,21 @@
         "reset_one_core.mat": "d28841b4647aac8ff6594d08a416a7c505d7ae59b085ba94c744c0be50c074db"
       },
       "report_sha256": "c51f1405e6f679c0850022a38004a99a6c30f5b40e3d702da2d327284773652b",
+      "explicit_compilation_count_from_call_chain": null
+    },
+    {
+      "folder": "N3R2_model_reference_toy_isolation_once",
+      "kind": "normal_model_reference_logging_feasibility",
+      "phase": "completed",
+      "phase_at_error": null,
+      "probe_all_passed": true,
+      "exit_code": 0,
+      "exit_finalized": true,
+      "case_id": null,
+      "archive_hashes_at_curation": {
+        "signals.mat": "36fc19c2ce6f5929b2a8991c27fbcf74a9dbfbf1c23fd901e1535b24b15e26c9"
+      },
+      "report_sha256": "dddd0d31e115ea595cd23c48b4829e709cb0477ec3a2f900db71859afd582281",
       "explicit_compilation_count_from_call_chain": null
     },
     {
@@ -68,6 +83,35 @@
         "signals.mat": "de139aa5a31e7f53f5be405470098280b565d19f8ce4f496f0237584a9cdc917"
       },
       "report_sha256": "5bc2d3e0f666e058f47e53f4f7fca1821e8552c6fce99661b6dc25535edf6d0a",
+      "explicit_compilation_count_from_call_chain": null
+    },
+    {
+      "folder": "N3R2_observer_graph_context_fixed_once",
+      "kind": "standalone_complete_observer_graph",
+      "phase": "completed",
+      "phase_at_error": null,
+      "probe_all_passed": true,
+      "exit_code": 0,
+      "exit_finalized": true,
+      "case_id": null,
+      "archive_hashes_at_curation": {
+        "signals.mat": "0b49ab4331b43f7f2b8d1efc4d4094bc25e6fa2cca605cff81e6634626cf6300",
+        "source_restoration.mat": "e86891fc07b87029b5805e86cc8789ff4198e74e1ffb7375cda880aa7f6260f0"
+      },
+      "report_sha256": "7d9912b911e7a9b6f15be368629bf1055a3572fcb2e62de31ecf514742d06516",
+      "explicit_compilation_count_from_call_chain": null
+    },
+    {
+      "folder": "N3R2_observer_graph_isolation_once",
+      "kind": "standalone_complete_observer_graph",
+      "phase": "diagnostic_error",
+      "phase_at_error": "restore_source_before_reduced_execution",
+      "probe_all_passed": false,
+      "exit_code": 1,
+      "exit_finalized": true,
+      "case_id": null,
+      "archive_hashes_at_curation": {},
+      "report_sha256": "eb73a2371961e458cbb5ec9c4e2c5beee3506d87397f38f85d7d77a24f21819f",
       "explicit_compilation_count_from_call_chain": null
     },
     {
@@ -237,6 +281,26 @@
       "sha256": "ee5728287d384273ba5c3bb9d996f9efd26b8c720aabf5be47d720806d93ba8e"
     },
     {
+      "source": "runs/N3R2_model_reference_toy_isolation_once/report.json",
+      "published": "N3R2_model_reference_toy_isolation_once/report.json",
+      "sha256": "dddd0d31e115ea595cd23c48b4829e709cb0477ec3a2f900db71859afd582281"
+    },
+    {
+      "source": "runs/N3R2_model_reference_toy_isolation_once/contract.json",
+      "published": "N3R2_model_reference_toy_isolation_once/contract.json",
+      "sha256": "81e60077364c16296663e3450f8dcba589987914d6e335dc3c76fdcc7cc17ad2"
+    },
+    {
+      "source": "runs/N3R2_model_reference_toy_isolation_once/execution_progress.json",
+      "published": "N3R2_model_reference_toy_isolation_once/execution_progress.json",
+      "sha256": "d08c4b20152019eeccaf8a95fe9b921b186a17698a3394cd146b3c6a913b69b4"
+    },
+    {
+      "source": "runs/N3R2_model_reference_toy_isolation_once_exit.json",
+      "published": "N3R2_model_reference_toy_isolation_once/exit.json",
+      "sha256": "7569d813e81bbbf3b2c70ebcbdb7fdf090c76243d55e33daa06c273a46e3d5e3"
+    },
+    {
       "source": "runs/N3R2_native_logger_isolation_once/report.json",
       "published": "N3R2_native_logger_isolation_once/report.json",
       "sha256": "211b496b14d26b43f894660678265debe3c0d39974e281c2d83743bdf449f1d0"
@@ -280,6 +344,46 @@
       "source": "runs/N3R2_native_voltage_isolation_once_exit.json",
       "published": "N3R2_native_voltage_isolation_once/exit.json",
       "sha256": "55e8aa892383729513d6c6e41f46fe7c3c804fb48400c2baea3d338500b3ec00"
+    },
+    {
+      "source": "runs/N3R2_observer_graph_context_fixed_once/report.json",
+      "published": "N3R2_observer_graph_context_fixed_once/report.json",
+      "sha256": "7d9912b911e7a9b6f15be368629bf1055a3572fcb2e62de31ecf514742d06516"
+    },
+    {
+      "source": "runs/N3R2_observer_graph_context_fixed_once/contract.json",
+      "published": "N3R2_observer_graph_context_fixed_once/contract.json",
+      "sha256": "b2417b08e4a5e2a2272f12ead1451ff45bac1f8aae8cb8e9d9f04d25c5703269"
+    },
+    {
+      "source": "runs/N3R2_observer_graph_context_fixed_once/execution_progress.json",
+      "published": "N3R2_observer_graph_context_fixed_once/execution_progress.json",
+      "sha256": "c1e940f4e9074bcac18197e3856dd607c7bcb142ca2ee557a4aaad1db838ec21"
+    },
+    {
+      "source": "runs/N3R2_observer_graph_context_fixed_once/context_addendum.json",
+      "published": "N3R2_observer_graph_context_fixed_once/context_addendum.json",
+      "sha256": "26a140b2c3cc3220d4a20e9d05634dd6db1eec81e89691ccff1a56b883e80c1b"
+    },
+    {
+      "source": "runs/N3R2_observer_graph_context_fixed_once_exit.json",
+      "published": "N3R2_observer_graph_context_fixed_once/exit.json",
+      "sha256": "a03a4b23cbdaa6af6ed8d1ceeb41ce6a1438893382f3ac504073580fafecabdc"
+    },
+    {
+      "source": "runs/N3R2_observer_graph_isolation_once/report.json",
+      "published": "N3R2_observer_graph_isolation_once/report.json",
+      "sha256": "eb73a2371961e458cbb5ec9c4e2c5beee3506d87397f38f85d7d77a24f21819f"
+    },
+    {
+      "source": "runs/N3R2_observer_graph_isolation_once/contract.json",
+      "published": "N3R2_observer_graph_isolation_once/contract.json",
+      "sha256": "b2417b08e4a5e2a2272f12ead1451ff45bac1f8aae8cb8e9d9f04d25c5703269"
+    },
+    {
+      "source": "runs/N3R2_observer_graph_isolation_once_exit.json",
+      "published": "N3R2_observer_graph_isolation_once/exit.json",
+      "sha256": "5579cc7e1ac2371a181dfbe061c77fca5323d52e9686fd36ab07526f9dd2c6e1"
     },
     {
       "source": "runs/N3R2_original_only_isolation_namevalue_fixed/report.json",

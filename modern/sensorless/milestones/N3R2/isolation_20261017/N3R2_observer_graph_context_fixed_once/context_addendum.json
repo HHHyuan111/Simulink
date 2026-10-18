@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "registered_before_repaired_execution": "2026-10-18",
+  "failed_folder": "runs/N3R2_observer_graph_isolation_once",
+  "failed_phase": "restore_source_before_reduced_execution",
+  "sampling_started": false,
+  "cause": "The protected local pmsm_config/addRow resolves T_load1 expressions through bdroot even when a model argument is supplied. Creating the standalone model changed CurrentSystem; reference capture then attempted to resolve0.3*Tn in the standalone context. No simulation initialization, native step or signal archive occurred.",
+  "repair": "Explicitly set Simulink CurrentSystem to the source model before its restoration/reference capture and assert bdroot. Restore/close that source, then explicitly set CurrentSystem to the standalone diagnostic model before initialization. Preserve original helpers unchanged.",
+  "documentation": "https://www.mathworks.com/help/simulink/slref/gcs.html",
+  "permitted_folder": "runs/N3R2_observer_graph_context_fixed_once",
+  "policy": "Driver verifies the retained original error phase and absence of execution_progress/signals before allowing this separate folder. One execution only; all parent source/clone/fault/timing/finite/endpoint criteria unchanged. No original-model compilation, physical-case rerun, numeric tuning or R2 acceptance reclassification."
+}

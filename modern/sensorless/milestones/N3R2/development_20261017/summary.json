@@ -2,7 +2,7 @@
   "node": "N3R2",
   "all_passed": false,
   "formal_final_matrix_passed": false,
-  "captured_at": "2026-10-18T09:49:37.541306+08:00",
+  "captured_at": "2026-10-18T10:51:38.754418+08:00",
   "scope": "Development progress only. Running/failed attempts retain their original statuses; probes do not establish long-case performance.",
   "r1_frozen_files_preserved": 90,
   "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
@@ -23,11 +23,11 @@
     "diagnostic_combined_3000",
     "hot_R1p2_L0p8",
     "low_speed_stop",
+    "missing_five",
     "reset_one"
   ],
   "development_not_end_to_end_passed_case_ids": [
-    "combined_dynamic",
-    "missing_five"
+    "combined_dynamic"
   ],
   "native_root_cause_confirmed": false,
   "hardware_validated": false,
@@ -190,6 +190,59 @@
           "status": "passed",
           "phase": "completed",
           "raw_sha256": "cbdae7422ebe90fec7f7cc6a09ae9c5a5bc3793efd7362e490139e8a34451160",
+          "metrics_passed": true,
+          "record_status_is_last_persisted_not_process_liveness": true,
+          "execution_finalized": true,
+          "exit_code": 0,
+          "exit_code_hex": "0x00000000",
+          "allowed_native_retry_classification": false
+        }
+      ]
+    },
+    {
+      "folder": "N3R2_reference_missing_five_20261018_102118_81346694-c8d6-4b4d-8bd4-6d623516a408",
+      "version": "normal_model_reference_adapter",
+      "status": "completed_passed",
+      "attempts": [
+        {
+          "folder": "missing_five_attempt_1",
+          "case_id": "missing_five",
+          "status": "running",
+          "phase": "advance_same_reference_graph",
+          "raw_sha256": null,
+          "metrics_passed": false,
+          "record_status_is_last_persisted_not_process_liveness": true,
+          "execution_finalized": true,
+          "exit_code": -1073741819,
+          "exit_code_hex": "0xc0000005",
+          "allowed_native_retry_classification": true
+        },
+        {
+          "folder": "missing_five_attempt_2",
+          "case_id": "missing_five",
+          "status": "passed",
+          "phase": "completed",
+          "raw_sha256": "ae13e3a8f4953d0bc11765f7bce709e58c1d79b97488217cd077558cfda1b3ff",
+          "metrics_passed": true,
+          "record_status_is_last_persisted_not_process_liveness": true,
+          "execution_finalized": true,
+          "exit_code": 0,
+          "exit_code_hex": "0x00000000",
+          "allowed_native_retry_classification": false
+        }
+      ]
+    },
+    {
+      "folder": "N3R2_reference_short_20261018_101932_b3d22d61-b537-4024-9fef-165d60999703",
+      "version": "normal_model_reference_adapter",
+      "status": "completed_passed",
+      "attempts": [
+        {
+          "folder": "r1_short_logging_check_attempt_1",
+          "case_id": "r1_short_logging_check",
+          "status": "passed",
+          "phase": "completed",
+          "raw_sha256": "c8e1d04f6c5b9f4a170cc689c56e335842b15319472de96a08c8300ffcb78645",
           "metrics_passed": true,
           "record_status_is_last_persisted_not_process_liveness": true,
           "execution_finalized": true,
@@ -828,6 +881,101 @@
       "source": "runs/N3R2_fault_final_short_precheck_20261017_141116_c027734c-49b8-4ecd-8e60-81a403609cfc/r1_short_logging_check_attempt_2/logging_validation.json",
       "published": "N3R2_fault_final_short_precheck_20261017_141116_c027734c-49b8-4ecd-8e60-81a403609cfc/r1_short_logging_check_attempt_2/logging_validation.json",
       "sha256": "db1ae155cda5441cab86e98eaceafc64e50aaea5d5753fc187c6057c211e4bcf"
+    },
+    {
+      "source": "runs/N3R2_reference_missing_five_20261018_102118_81346694-c8d6-4b4d-8bd4-6d623516a408/campaign.json",
+      "published": "N3R2_reference_missing_five_20261018_102118_81346694-c8d6-4b4d-8bd4-6d623516a408/campaign.json",
+      "sha256": "960aea13e7a845f138ba5b77c60a52b3add217c8ad6c83c227533f38010ea153"
+    },
+    {
+      "source": "runs/N3R2_reference_missing_five_20261018_102118_81346694-c8d6-4b4d-8bd4-6d623516a408/missing_five_attempt_1/record.json",
+      "published": "N3R2_reference_missing_five_20261018_102118_81346694-c8d6-4b4d-8bd4-6d623516a408/missing_five_attempt_1/record.json",
+      "sha256": "311a364907d52c0240e8c618504fd9433cb06c5f3d49506eb2c51221fdaf600d"
+    },
+    {
+      "source": "runs/N3R2_reference_missing_five_20261018_102118_81346694-c8d6-4b4d-8bd4-6d623516a408/missing_five_attempt_1/graph.json",
+      "published": "N3R2_reference_missing_five_20261018_102118_81346694-c8d6-4b4d-8bd4-6d623516a408/missing_five_attempt_1/graph.json",
+      "sha256": "093a643771d52ead68bb3fca41770bc86c4886f2b3c0181b1123d59c8f69ac20"
+    },
+    {
+      "source": "runs/N3R2_reference_missing_five_20261018_102118_81346694-c8d6-4b4d-8bd4-6d623516a408/missing_five_attempt_1/execution_progress.json",
+      "published": "N3R2_reference_missing_five_20261018_102118_81346694-c8d6-4b4d-8bd4-6d623516a408/missing_five_attempt_1/execution_progress.json",
+      "sha256": "23aa21ae2261126be77945507df7537f195b1206d5799f8ed17eb2d2f500468a"
+    },
+    {
+      "source": "runs/N3R2_reference_missing_five_20261018_102118_81346694-c8d6-4b4d-8bd4-6d623516a408/missing_five_attempt_2/record.json",
+      "published": "N3R2_reference_missing_five_20261018_102118_81346694-c8d6-4b4d-8bd4-6d623516a408/missing_five_attempt_2/record.json",
+      "sha256": "93fd284fb83f569298a4b7f70d20dfab0cdde854fb7d63ddff3aa6d11e394f2c"
+    },
+    {
+      "source": "runs/N3R2_reference_missing_five_20261018_102118_81346694-c8d6-4b4d-8bd4-6d623516a408/missing_five_attempt_2/metrics.json",
+      "published": "N3R2_reference_missing_five_20261018_102118_81346694-c8d6-4b4d-8bd4-6d623516a408/missing_five_attempt_2/metrics.json",
+      "sha256": "7a434de442387d8c44dfc3c6a3d76a83697abf110d6ad427ec666a97904e4ba2"
+    },
+    {
+      "source": "runs/N3R2_reference_missing_five_20261018_102118_81346694-c8d6-4b4d-8bd4-6d623516a408/missing_five_attempt_2/graph.json",
+      "published": "N3R2_reference_missing_five_20261018_102118_81346694-c8d6-4b4d-8bd4-6d623516a408/missing_five_attempt_2/graph.json",
+      "sha256": "093a643771d52ead68bb3fca41770bc86c4886f2b3c0181b1123d59c8f69ac20"
+    },
+    {
+      "source": "runs/N3R2_reference_missing_five_20261018_102118_81346694-c8d6-4b4d-8bd4-6d623516a408/missing_five_attempt_2/execution_progress.json",
+      "published": "N3R2_reference_missing_five_20261018_102118_81346694-c8d6-4b4d-8bd4-6d623516a408/missing_five_attempt_2/execution_progress.json",
+      "sha256": "f4d5fb76c702783dba0af1d5f66f897bfdee020cdc3aad93c2999c9800e29a3f"
+    },
+    {
+      "source": "runs/N3R2_reference_missing_five_20261018_102118_81346694-c8d6-4b4d-8bd4-6d623516a408/missing_five_attempt_2/log_format_recovery.json",
+      "published": "N3R2_reference_missing_five_20261018_102118_81346694-c8d6-4b4d-8bd4-6d623516a408/missing_five_attempt_2/log_format_recovery.json",
+      "sha256": "ffc5bd666c2fcb9639a423698f61086a86af6a1eb6dcd88e3c34274bf2dba874"
+    },
+    {
+      "source": "runs/N3R2_reference_missing_five_20261018_102118_81346694-c8d6-4b4d-8bd4-6d623516a408/missing_five_attempt_2/log_format/format_contract.json",
+      "published": "N3R2_reference_missing_five_20261018_102118_81346694-c8d6-4b4d-8bd4-6d623516a408/missing_five_attempt_2/log_format/format_contract.json",
+      "sha256": "131d92c0098fe4ea8908f67618c22935536706019acaa9a513bb93a308c027a6"
+    },
+    {
+      "source": "runs/N3R2_reference_short_20261018_101932_b3d22d61-b537-4024-9fef-165d60999703/campaign.json",
+      "published": "N3R2_reference_short_20261018_101932_b3d22d61-b537-4024-9fef-165d60999703/campaign.json",
+      "sha256": "16660394d47b4f7387d3165566d8d8fd24006c277e23c241b47ef07472b20beb"
+    },
+    {
+      "source": "runs/N3R2_reference_short_20261018_101932_b3d22d61-b537-4024-9fef-165d60999703/r1_short_logging_check_attempt_1/record.json",
+      "published": "N3R2_reference_short_20261018_101932_b3d22d61-b537-4024-9fef-165d60999703/r1_short_logging_check_attempt_1/record.json",
+      "sha256": "6644ca7d1e1ec00f8b3cad9742cdf8dcc9b3dca87305969eb8da68e9765b6d78"
+    },
+    {
+      "source": "runs/N3R2_reference_short_20261018_101932_b3d22d61-b537-4024-9fef-165d60999703/r1_short_logging_check_attempt_1/metrics.json",
+      "published": "N3R2_reference_short_20261018_101932_b3d22d61-b537-4024-9fef-165d60999703/r1_short_logging_check_attempt_1/metrics.json",
+      "sha256": "35d1d1c76d25a8989844f9594e5865f0eb0a8b2a3172dc09545839f0668f6630"
+    },
+    {
+      "source": "runs/N3R2_reference_short_20261018_101932_b3d22d61-b537-4024-9fef-165d60999703/r1_short_logging_check_attempt_1/graph.json",
+      "published": "N3R2_reference_short_20261018_101932_b3d22d61-b537-4024-9fef-165d60999703/r1_short_logging_check_attempt_1/graph.json",
+      "sha256": "093a643771d52ead68bb3fca41770bc86c4886f2b3c0181b1123d59c8f69ac20"
+    },
+    {
+      "source": "runs/N3R2_reference_short_20261018_101932_b3d22d61-b537-4024-9fef-165d60999703/r1_short_logging_check_attempt_1/execution_progress.json",
+      "published": "N3R2_reference_short_20261018_101932_b3d22d61-b537-4024-9fef-165d60999703/r1_short_logging_check_attempt_1/execution_progress.json",
+      "sha256": "3623e2d59a86d529d89129d0fa271a6fec0b2f2f20e75b1956ac3d2c0c5213be"
+    },
+    {
+      "source": "runs/N3R2_reference_short_20261018_101932_b3d22d61-b537-4024-9fef-165d60999703/r1_short_logging_check_attempt_1/log_format_recovery.json",
+      "published": "N3R2_reference_short_20261018_101932_b3d22d61-b537-4024-9fef-165d60999703/r1_short_logging_check_attempt_1/log_format_recovery.json",
+      "sha256": "18f6efcaafdbff039dd3612ca20005def35d32e74b9cb0816ce22147ce1cfe69"
+    },
+    {
+      "source": "runs/N3R2_reference_short_20261018_101932_b3d22d61-b537-4024-9fef-165d60999703/r1_short_logging_check_attempt_1/log_format/logging_validation.json",
+      "published": "N3R2_reference_short_20261018_101932_b3d22d61-b537-4024-9fef-165d60999703/r1_short_logging_check_attempt_1/log_format/logging_validation.json",
+      "sha256": "6334093dc98ea0aba4558e4e60331389c83d2949fc111b94558b975e93ea559c"
+    },
+    {
+      "source": "runs/N3R2_reference_short_20261018_101932_b3d22d61-b537-4024-9fef-165d60999703/r1_short_logging_check_attempt_1/log_format/v7_complete_log_comparison.json",
+      "published": "N3R2_reference_short_20261018_101932_b3d22d61-b537-4024-9fef-165d60999703/r1_short_logging_check_attempt_1/log_format/v7_complete_log_comparison.json",
+      "sha256": "6a4539b09469da25907ea71ed24a8120e1d3c413a82cfa52321f9c2f5f3757b1"
+    },
+    {
+      "source": "runs/N3R2_reference_short_20261018_101932_b3d22d61-b537-4024-9fef-165d60999703/r1_short_logging_check_attempt_1/log_format/format_contract.json",
+      "published": "N3R2_reference_short_20261018_101932_b3d22d61-b537-4024-9fef-165d60999703/r1_short_logging_check_attempt_1/log_format/format_contract.json",
+      "sha256": "131d92c0098fe4ea8908f67618c22935536706019acaa9a513bb93a308c027a6"
     },
     {
       "source": "runs/N3R2_serial_followup_deadline_jitter_20261017_151111_4b14e27a-0cba-4db4-8b7b-a5ebc39d694e/campaign.json",

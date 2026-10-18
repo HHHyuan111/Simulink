@@ -26,7 +26,8 @@ def main():
     patterns = ('N3R2_core_isolation_once', 'N3R2_reduced_core_*',
                 'N3R2_native_logger_isolation_once', 'N3R2_original_only_isolation_*',
                 'N3R2_port_geometry*', 'N3R2_native_queue_isolation_once',
-                'N3R2_native_voltage_isolation_once')
+                'N3R2_native_voltage_isolation_once', 'N3R2_observer_graph_*_once',
+                'N3R2_model_reference_toy_isolation_once')
     folders = sorted({p for pattern in patterns for p in (BASE / 'runs').glob(pattern) if p.is_dir()})
     records, published = [], []
 
@@ -51,6 +52,12 @@ def main():
             assert sha(folder / Path(entry['path']).name) == entry['sha256']
         if (folder / 'contract.json').exists():
             assert sha(folder / 'contract.json') == record['contract_sha256']
+        if record.get('context_addendum_sha256'):
+            assert sha(folder / 'context_addendum.json') == record['context_addendum_sha256']
+        if record.get('snapshot_record_sha256'):
+            assert sha(folder / 'record.json') == record['snapshot_record_sha256']
+            for entry in read(folder / 'record.json').get('contracts', []):
+                assert sha(folder / entry['path']) == entry['sha256']
         if record.get('raw_sha256'):
             assert sha(folder / 'signals.mat') == record['raw_sha256']
         if record.get('fixture_sha256'):
@@ -59,11 +66,15 @@ def main():
             assert sha(folder / 'private_environment.json') == record['private_environment_sha256']
         models = list(folder.glob('*.slx'))
         if models:
-            assert len(models) == 1
-            assert sha(models[0]) == record.get('reduced_model_sha256', record.get('model_sha256'))
+            if record.get('child_model_sha256'):
+                assert len(models) == 2
+                assert {sha(model) for model in models} == {record['child_model_sha256'], record['parent_model_sha256']}
+            else:
+                assert len(models) == 1
+                assert sha(models[0]) == record.get('reduced_model_sha256', record.get('model_sha256'))
         exit_path = folder.with_name(folder.name + '_exit.json')
         exit_record = read(exit_path) if exit_path.exists() else {}
-        for name in ('report.json', 'contract.json', 'execution_progress.json'):
+        for name in ('report.json', 'contract.json', 'execution_progress.json', 'context_addendum.json'):
             if (folder / name).exists():
                 publish(folder / name, folder.name + '/' + name)
         if exit_path.exists():

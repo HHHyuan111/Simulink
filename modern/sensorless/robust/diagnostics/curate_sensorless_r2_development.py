@@ -9,7 +9,8 @@ BASE = Path(__file__).resolve().parents[2]
 DEST = BASE / 'milestones/N3R2/development_20261017'
 VERSIONS = {'basic_scenarios_v5', 'literal_binding_v6', 'fault_ingress_schedule_v7',
             'single_initialization_v8', 'single_init_short_cache_v8r1',
-            'block_reduction_off_v9', 'geometry_bound_constructor'}
+            'block_reduction_off_v9', 'geometry_bound_constructor',
+            'normal_model_reference_adapter'}
 
 
 def read(path):
@@ -63,6 +64,9 @@ def main():
                 assert sha(attempt_folder / entry['path']) == entry['sha256']
             if record.get('raw_sha256'):
                 assert sha(attempt_folder / 'signals.mat') == record['raw_sha256']
+            if record.get('reference_adapter'):
+                child = record['reference_adapter']
+                assert sha(Path(child['child_file'])) == child['child_model_sha256']
             name = prefix + '/' + attempt_folder.name
             for file in ('record.json', 'metrics.json', 'graph.json', 'logging_validation.json'):
                 if (attempt_folder / file).exists():
