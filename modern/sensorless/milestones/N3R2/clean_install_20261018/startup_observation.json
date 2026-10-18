@@ -1,0 +1,17 @@
+{
+  "raw_logs_published": false,
+  "logs": [
+    {
+      "name": "runtime_preflight_private_stderr.log",
+      "private_bytes": 540,
+      "private_sha256": "3f286f2b75a23af63a53b81075def668ea6c09d3c8ba133544b88225f112ea74",
+      "unable_to_find_license_message_present": true
+    },
+    {
+      "name": "runtime_preflight_private_stdout.log",
+      "private_bytes": 0,
+      "private_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unable_to_find_license_message_present": false
+    }
+  ]
+}

@@ -1,6 +1,8 @@
 # Sensorless 开发
 
-2026-10-18 最新：已按事先标准实施父/子均 Normal 的保存模型适配。停止态构建、独立重开、86 参数及一次编译检查通过；首次短检在 sim 调用中原生退出 0xc0000005，没有完整轨迹，第二次短检和新 14 项均未启动。R2 仍未通过，无后台测试。[本次结果](milestones/N3R2_normal_serialized.md)。已准备[同机同版本独立安装对照方案](milestones/N3R2_clean_install_review.md)，尚待用户确认，尚未下载或安装另一套 MATLAB。
+最新：用户授权的同版本独立安装已完成，版本 XML 一致、11 个核对 DLL 签名有效且与原安装字节相同。首次运行前启动因未找到许可证退出 1，检查脚本与模型尚未运行；已启动官方激活客户端，等待用户激活，当前无后台测试，R2 不改判。[安装与许可停止记录](milestones/N3R2_clean_install.md)。
+
+前轮 Normal 主线：已按事先标准实施父/子均 Normal 的保存模型适配。停止态构建、独立重开、86 参数及一次编译检查通过；首次短检在 sim 调用中原生退出 0xc0000005，没有完整轨迹，第二次短检和新 14 项均未启动。R2 仍未通过，无后台测试。[本次结果](milestones/N3R2_normal_serialized.md)。已准备[同机同版本独立安装对照方案](milestones/N3R2_clean_install_review.md)，当时尚待确认；该授权及安装现已完成，见上方最新状态。
 
 基于远端 `main` 的 `8676342ad23f2d980bd4ff9fff0aeb5641a2f540`，开发分支 `dev`，工作树 `D:/simulink/dev`。
 

@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "type": "same_host_same_version_installation_diagnostic",
+  "status": "stopped_execution_failure",
+  "R2_passed": false,
+  "retries": 0,
+  "maximum_sim_calls": 1,
+  "simulation_job_launched": false,
+  "protocol_sha256": "19fafd7108cce5c39eec6d23efe488326678d15e09e8f8309b4ece074ae8b7fc",
+  "diagnostic_sources_sha256": "ff7951a5e1b158eef7dc41fcad040a223a7c87e503f46672164ce09427beba50",
+  "jobs": [
+    {
+      "stage": "runtime_preflight",
+      "status": "exited",
+      "pid": 52840,
+      "exit_code": 1,
+      "exit_hex": "0x00000001",
+      "started_at": "2026-10-18T15:28:30.9885623Z",
+      "finished_at": "2026-10-18T15:28:32.5107066Z"
+    }
+  ]
+}
