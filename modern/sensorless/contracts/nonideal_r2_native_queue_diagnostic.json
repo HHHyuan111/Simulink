@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "kind": "reduced_native_publication_queue",
+  "registered_before_execution": "2026-10-18",
+  "purpose": "Isolate the unchanged native-rate publication wrapper and queue without the motor, voltage predictor or SMO/PLL graph. No full-model performance case can be closed by this probe.",
+  "source_binding": "Original wrapper and all existing sensorless MATLAB sources copied with SHA256 before execution; verify unchanged afterward. No production equation or parameter edits.",
+  "fixed_step_s": 0.0000000625,
+  "duration_s": 0.8,
+  "expected_native_evaluations": 12800001,
+  "fixture": {
+    "speed_rpm": 3000,
+    "pole_pairs": 5,
+    "first_capture_s": 0.000028875,
+    "capture_period_s": 0.00005,
+    "observer_work_s": 0.000003,
+    "missing_interval_s": [0.300028875, 0.300278875],
+    "reset_interval_s": [0.600028875, 0.600078875],
+    "quality": "Synthetic false before50ms and until30ms after each fault's healthy reference. This is a fixture, not the real599-sample SMO/PLL qualification.",
+    "release_jitter": "1us for captures whose reference is at or after0.7s"
+  },
+  "checks": [
+    "Exactly12800001 audit calls and15995 publications; exact independent integer capture/completion ticks and sequence numbers, including reset publication and excluding exactly5 missing captures",
+    "Every native call checks finite outputs, epoch0/1/2, no forbidden control values while denied, and permitted present-time angle prediction against the independent fixture angle within1e-10rad",
+    "The first native call at each fault onset must revoke permission and carry the registered missing/reset reason bit; permit exists before faults and returns after fixture qualification",
+    "Archive every publication, PWM heartbeat and fault onset with all output values; bounded counter log includes final endpoint; original model and frozen R1 files unchanged"
+  ],
+  "execution_policy": "One execution only. Retain failure/source/exit report; no changing labels to repeat. Do not start while a full-model simulation is active.",
+  "boundary": "Synthetic queue scheduling/execution isolation only; no physical estimator, voltage reconstruction, ADC frontend, real599-sample lock recovery, MCU WCET or R2 performance claim. No feedback takeover and no original SLX save."
+}
