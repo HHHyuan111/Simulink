@@ -1,5 +1,5 @@
 {
-  "captured_at": "2026-10-18T09:38:05.336237+08:00",
+  "captured_at": "2026-10-18T09:49:38.490522+08:00",
   "R2_all_passed": false,
   "R2_whole_model_case_status_changed": false,
   "native_root_cause_confirmed": false,
@@ -38,6 +38,36 @@
         "signals.mat": "a81408ded33bb613a3da376c929e7dc4aebc14e1c4022c08f2fe61b4413bc62f"
       },
       "report_sha256": "211b496b14d26b43f894660678265debe3c0d39974e281c2d83743bdf449f1d0",
+      "explicit_compilation_count_from_call_chain": null
+    },
+    {
+      "folder": "N3R2_native_queue_isolation_once",
+      "kind": "reduced_native_publication_queue",
+      "phase": "completed",
+      "phase_at_error": null,
+      "probe_all_passed": true,
+      "exit_code": 0,
+      "exit_finalized": true,
+      "case_id": null,
+      "archive_hashes_at_curation": {
+        "signals.mat": "30840d573bdbc9e81eb7650e037714e9553a1cf27b3f9628cadc26bae26ea388"
+      },
+      "report_sha256": "4d1cccef4052c9b9e981d9a1b8c654f4457d0ccda9bcce8efcddcfe5026eeb2c",
+      "explicit_compilation_count_from_call_chain": null
+    },
+    {
+      "folder": "N3R2_native_voltage_isolation_once",
+      "kind": "reduced_native_voltage_predictor",
+      "phase": "completed",
+      "phase_at_error": null,
+      "probe_all_passed": true,
+      "exit_code": 0,
+      "exit_finalized": true,
+      "case_id": null,
+      "archive_hashes_at_curation": {
+        "signals.mat": "de139aa5a31e7f53f5be405470098280b565d19f8ce4f496f0237584a9cdc917"
+      },
+      "report_sha256": "5bc2d3e0f666e058f47e53f4f7fca1821e8552c6fce99661b6dc25535edf6d0a",
       "explicit_compilation_count_from_call_chain": null
     },
     {
@@ -220,6 +250,36 @@
       "source": "runs/N3R2_native_logger_isolation_once_exit.json",
       "published": "N3R2_native_logger_isolation_once/exit.json",
       "sha256": "8fcb47960ab4381efeb154ca6cf8d4039a1c2de909a129db3a16d86dc531d53a"
+    },
+    {
+      "source": "runs/N3R2_native_queue_isolation_once/report.json",
+      "published": "N3R2_native_queue_isolation_once/report.json",
+      "sha256": "4d1cccef4052c9b9e981d9a1b8c654f4457d0ccda9bcce8efcddcfe5026eeb2c"
+    },
+    {
+      "source": "runs/N3R2_native_queue_isolation_once/contract.json",
+      "published": "N3R2_native_queue_isolation_once/contract.json",
+      "sha256": "9870dd5dd2a1b008685f2f65c93324ab2682008227f839a984bedfda9d6c1fa3"
+    },
+    {
+      "source": "runs/N3R2_native_queue_isolation_once_exit.json",
+      "published": "N3R2_native_queue_isolation_once/exit.json",
+      "sha256": "76e8caec7d7c122f949ccc42ff62e8a4aec56966fb4c406cbf23888270ee4c8c"
+    },
+    {
+      "source": "runs/N3R2_native_voltage_isolation_once/report.json",
+      "published": "N3R2_native_voltage_isolation_once/report.json",
+      "sha256": "5bc2d3e0f666e058f47e53f4f7fca1821e8552c6fce99661b6dc25535edf6d0a"
+    },
+    {
+      "source": "runs/N3R2_native_voltage_isolation_once/contract.json",
+      "published": "N3R2_native_voltage_isolation_once/contract.json",
+      "sha256": "9c9a24181ae46fb97ed0cab45f565a6fcb4f359862f8c2ac3eef9a048347850e"
+    },
+    {
+      "source": "runs/N3R2_native_voltage_isolation_once_exit.json",
+      "published": "N3R2_native_voltage_isolation_once/exit.json",
+      "sha256": "55e8aa892383729513d6c6e41f46fe7c3c804fb48400c2baea3d338500b3ec00"
     },
     {
       "source": "runs/N3R2_original_only_isolation_namevalue_fixed/report.json",

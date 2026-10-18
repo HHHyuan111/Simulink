@@ -1,0 +1,19 @@
+{
+  "analysis_only": true,
+  "simulation_reexecuted": false,
+  "raw_source_sha256": "b5a7cb1b8a3136c14d45c9ccce857c55ee8d808f94c6224cee2cc2e1db639180",
+  "metrics_sha256": "a324ba6b525c4c5145f16185652ddac5d0d6c1eff0d95fce1d5e732d85ad3eb1",
+  "renderer_sha256": "efbb751450379eeda9c5b23fe10df3da532df385add0ba52cfb205021bb6260f",
+  "csv_sha256": {
+    "control": "d6222483637eb86c8017cbab3e9fccb73bb0a51e2695dce17638e22bbb7e1d62",
+    "events": "181fc32c79f07329520870f595f73f742fbeaf85ac36e258b320a734ffbfeab9",
+    "counters": "f0cc21d8a8c1eb6cb2f073aed56e10f96c6c3abac5249f91991bc81e5b0e31f0"
+  },
+  "native_false_valid_longest_s": 0.0,
+  "recovery_delay_s": 0.06710000000000005,
+  "raw_transient_angle_peak_deg": 179.99095691990422,
+  "raw_transient_speed_min_rpm": -1140.32094239427,
+  "raw_transient_speed_max_rpm": 3740.10943570304,
+  "plot_scope": "All JEOS points in the displayed transient; native permit step uses every recorded transition. No smoothing, interpolation, clipping or data deletion.",
+  "figure_sha256": "b032ba0e0d975f34b560fad0831765332af15fbd217ee5b3d5b407fae52a7676"
+}

@@ -2,8 +2,8 @@
   "schema": 1,
   "node": "N3R2",
   "folder": "D:/simulink/dev/modern/sensorless/runs/N3R2_constructor_reset_one_20261018_093152_cb5137d5-677c-4502-ba18-5a3d529f78f0/reset_one_attempt_1",
-  "status": "running",
-  "phase": "advance_same_initialized_graph",
+  "status": "passed",
+  "phase": "completed",
   "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
   "process_id": 67660,
   "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
@@ -741,7 +741,7 @@
   "block_reduction": {
     "original": "on",
     "effective": "on",
-    "restored": false,
+    "restored": true,
     "root_cause_claimed": false
   },
   "original_initialization": {
@@ -1118,5 +1118,27 @@
     }
   ],
   "initialization_s": 17.0150239,
-  "workspace_unchanged_by_compile": true
+  "workspace_unchanged_by_compile": true,
+  "execution": {
+    "initialized_once": true,
+    "step_chunks": 81,
+    "requested_major_steps": 1.2800001E+7,
+    "expected_major_steps": 1.2800001E+7,
+    "last_step": true,
+    "status": "completed",
+    "next_major_time_s": null,
+    "status_before_stop": "inactive",
+    "api_time_finite_at_completion": false,
+    "elapsed_s": 473.1383391,
+    "status_after_stop": "inactive"
+  },
+  "elapsed_s": 473.1383391,
+  "native_endpoint_verified": true,
+  "workspace_unchanged_by_simulation": true,
+  "raw_sha256": "b5a7cb1b8a3136c14d45c9ccce857c55ee8d808f94c6224cee2cc2e1db639180",
+  "log_count": 96,
+  "layer_restored": true,
+  "callback_restored": true,
+  "reference_restored": true,
+  "metrics_passed": true
 }

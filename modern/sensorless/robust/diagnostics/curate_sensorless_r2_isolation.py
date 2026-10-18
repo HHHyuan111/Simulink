@@ -25,7 +25,8 @@ def main():
         assert sha(BASE / entry['path']) == entry['sha256']
     patterns = ('N3R2_core_isolation_once', 'N3R2_reduced_core_*',
                 'N3R2_native_logger_isolation_once', 'N3R2_original_only_isolation_*',
-                'N3R2_port_geometry*', 'N3R2_native_queue_isolation_once')
+                'N3R2_port_geometry*', 'N3R2_native_queue_isolation_once',
+                'N3R2_native_voltage_isolation_once')
     folders = sorted({p for pattern in patterns for p in (BASE / 'runs').glob(pattern) if p.is_dir()})
     records, published = [], []
 

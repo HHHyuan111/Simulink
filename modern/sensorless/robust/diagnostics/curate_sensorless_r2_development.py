@@ -90,6 +90,16 @@ def main():
                 assert sha(BASE / 'robust/diagnostics/render_sensorless_r2_low_speed.py') == review['renderer_sha256']
                 publish(low_review, name + '/review/low_speed_diagnosis.json')
                 publish(attempt_folder / 'review/low_speed_diagnosis.png', name + '/review/low_speed_diagnosis.png')
+            reset_review = attempt_folder / 'review/reset_diagnosis.json'
+            if reset_review.exists():
+                review = read(reset_review)
+                assert review['analysis_only'] and not review['simulation_reexecuted']
+                assert review['raw_source_sha256'] == record['raw_sha256']
+                assert review['metrics_sha256'] == sha(attempt_folder / 'metrics.json')
+                assert review['renderer_sha256'] == sha(BASE / 'robust/diagnostics/render_sensorless_r2_reset_review.py')
+                assert review['figure_sha256'] == sha(attempt_folder / 'review/reset_diagnosis.png')
+                publish(reset_review, name + '/review/reset_diagnosis.json')
+                publish(attempt_folder / 'review/reset_diagnosis.png', name + '/review/reset_diagnosis.png')
             metrics_path = attempt_folder / 'metrics.json'
             if record['status'] == 'passed' and record['case_id'] != 'r1_short_logging_check':
                 assert metrics_path.exists() and read(metrics_path)['all_passed']

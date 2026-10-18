@@ -1,0 +1,81 @@
+{
+  "kind": "reduced_native_publication_queue",
+  "all_passed": true,
+  "phase": "completed",
+  "plant_reexecuted": false,
+  "whole_model_fault_acceptance": false,
+  "R2_case_status_changed": false,
+  "process_id": 62644,
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "probe_sha256": "dc8cca8dd7da8071cb13d0570a525745ff62fafb269a59d3e304a2b97d08ba87",
+  "contract_sha256": "9870dd5dd2a1b008685f2f65c93324ab2682008227f839a984bedfda9d6c1fa3",
+  "reference_record_sha256": "4f312dca3443f7517aeafd996c81e0d19300b33af34e25612dd595a99aeac1f1",
+  "sources": [
+    {
+      "path": "robust/faults/blocks/sless_r2_queue_block.m",
+      "sha256": "7ed0a46182633f31955c3a755918581a00e0707537d5460ee2949baa8dcc75d2"
+    },
+    {
+      "path": "robust/faults/sensorless_r2_fault_queue_step.m",
+      "sha256": "6e67681999bc2319e4c0ebe69ed4433c0eecef887e8d21e621c475d99c449e03"
+    },
+    {
+      "path": "robust/faults/sensorless_r2_fault_queue_state.m",
+      "sha256": "f7f2dc46aee1e87c70cba2ddd8b23758df985fb3e6d642e28f0847cd111ef4b8"
+    },
+    {
+      "path": "robust/integration/sensorless_v2_config_rt.m",
+      "sha256": "2191001a30f487abdc8a1efe431464c7c3c3063fa1e2b95916273bc02c5f58ec"
+    },
+    {
+      "path": "robust/integration/sensorless_v2_queue_step.m",
+      "sha256": "08423deb3c59e544ff60631202399cfe38ac9d28d2b7e05285659a3579927945"
+    },
+    {
+      "path": "robust/integration/sensorless_v2_queue_state.m",
+      "sha256": "a728ffd727d85ea12c0441d2862a07eae3ef25d6ed092bea55f3b7e455370b4d"
+    },
+    {
+      "path": "robust/sensorless_robust_state.m",
+      "sha256": "01a38ecd05d190c2d9306ed7d07310f18a41cfff0a4f1852506d5082e565276e"
+    },
+    {
+      "path": "robust/sensorless_publish_step.m",
+      "sha256": "c67145ec5ff84b2ef54d5b1dc1cfb7a849ed50680a7e9d4e23acc3e6308c46a3"
+    },
+    {
+      "path": "robust/sensorless_event_plan.m",
+      "sha256": "af7ecc4ade15b912dd0cb84774708ff890dc30b638d86f22fd3370201c88bd0f"
+    }
+  ],
+  "diagnostic_sources": [
+    {
+      "path": "robust/diagnostics/sless_r2_queue_fixture_block.m",
+      "sha256": "8ac8aa084bfbb8893e25d57a5892c1b6ca9b768103ad48f27f9062595e17f8d3"
+    },
+    {
+      "path": "robust/diagnostics/sless_r2_queue_audit_block.m",
+      "sha256": "8c24ef44e262325c9b761e09e74557dcd32c9788caf198b6a775c39ddd860959"
+    }
+  ],
+  "model_sha256": "843e0a9f82a90e4beb8dd61e6e6fefd26099045a1b7db0f3bcfc28d3c6942acd",
+  "elapsed_s": 20.2344765,
+  "checks": {
+    "native_endpoint": true,
+    "counter_samples": true,
+    "publication_count": true,
+    "completion_ticks_exact": true,
+    "sequence_exact": true,
+    "reference_ticks_exact": true,
+    "event_ticks_exact": true,
+    "first_native_vetoes": true,
+    "epochs": true,
+    "permitted_prediction": true,
+    "permission_before_and_after_faults": true
+  },
+  "native_evaluations": 1.2800001E+7,
+  "publications": 15995,
+  "events": 31998,
+  "synthetic_qualification_not_599_sample_core": true,
+  "raw_sha256": "30840d573bdbc9e81eb7650e037714e9553a1cf27b3f9628cadc26bae26ea388"
+}

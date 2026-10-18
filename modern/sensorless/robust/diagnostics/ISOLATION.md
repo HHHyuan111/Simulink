@@ -12,6 +12,8 @@
 
 `probe_sensorless_r2_native_queue` 另用原发布队列包装器运行 12800001 个原生节拍，按独立整数时刻检查 15995 次发布、五帧丢失、一次复位、1 μs 抖动和逐拍输出约束。其资格状态是明确的合成输入，不代表真实 SMO/PLL 的 599 个健康机会。`run_sensorless_r2_queue_probe.ps1` 仅允许执行一次，并在整模型任务运行时拒绝启动。三个新增 MATLAB 文件的静态检查无诊断项。
 
+`probe_sensorless_r2_native_voltage` 用原电压包装器、原重建函数和合成 PWM/电流/旋转向量，独立检查 0.8 s 的每个原生调用。前 2401 拍由原纯函数从零状态重新推进并比较 43 路输出；数值容差先登记为每点 64 ULP，实际全部 103243 个数值完全相同。此处锚点拒绝仅测试电压路径，没有真实 ADC、观测器反馈或电机响应。该入口同样只允许执行一次。
+
 `record_sensorless_r2_host_observation.ps1` 只读取 Windows 已记录的硬件事件和邻近应用崩溃事件，不改电源、频率、驱动或 BIOS。已更正的处理器事件可作为独立线索，不足以确认当前 MATLAB 异常的原因。
 
 `render_sensorless_r2_core_isolation.py` 读取核心 MAT 生成恢复图，`curate_sensorless_r2_isolation.py` 核对原模型/R1 冻结文件及运行时源码指纹，只发布报告、指纹和图片。私有环境路径、控制台、转储和大数据不入 Git。核心诊断没有前端/电压预测器反馈、原生发布队列或 CCR 时序，所有 R2 整模型状态保持不变。

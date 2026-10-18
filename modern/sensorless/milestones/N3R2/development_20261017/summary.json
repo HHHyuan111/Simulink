@@ -2,7 +2,7 @@
   "node": "N3R2",
   "all_passed": false,
   "formal_final_matrix_passed": false,
-  "captured_at": "2026-10-18T09:35:34.735970+08:00",
+  "captured_at": "2026-10-18T09:49:37.541306+08:00",
   "scope": "Development progress only. Running/failed attempts retain their original statuses; probes do not establish long-case performance.",
   "r1_frozen_files_preserved": 90,
   "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
@@ -22,12 +22,12 @@
     "deadtime_2us",
     "diagnostic_combined_3000",
     "hot_R1p2_L0p8",
-    "low_speed_stop"
+    "low_speed_stop",
+    "reset_one"
   ],
   "development_not_end_to_end_passed_case_ids": [
     "combined_dynamic",
-    "missing_five",
-    "reset_one"
+    "missing_five"
   ],
   "native_root_cause_confirmed": false,
   "hardware_validated": false,
@@ -129,20 +129,20 @@
     {
       "folder": "N3R2_constructor_reset_one_20261018_093152_cb5137d5-677c-4502-ba18-5a3d529f78f0",
       "version": "geometry_bound_constructor",
-      "status": "running",
+      "status": "completed_passed",
       "attempts": [
         {
           "folder": "reset_one_attempt_1",
           "case_id": "reset_one",
-          "status": "running",
-          "phase": "advance_same_initialized_graph",
-          "raw_sha256": null,
-          "metrics_passed": false,
+          "status": "passed",
+          "phase": "completed",
+          "raw_sha256": "b5a7cb1b8a3136c14d45c9ccce857c55ee8d808f94c6224cee2cc2e1db639180",
+          "metrics_passed": true,
           "record_status_is_last_persisted_not_process_liveness": true,
-          "execution_finalized": false,
-          "exit_code": null,
-          "exit_code_hex": null,
-          "allowed_native_retry_classification": null
+          "execution_finalized": true,
+          "exit_code": 0,
+          "exit_code_hex": "0x00000000",
+          "allowed_native_retry_classification": false
         }
       ]
     },
@@ -712,12 +712,17 @@
     {
       "source": "runs/N3R2_constructor_reset_one_20261018_093152_cb5137d5-677c-4502-ba18-5a3d529f78f0/campaign.json",
       "published": "N3R2_constructor_reset_one_20261018_093152_cb5137d5-677c-4502-ba18-5a3d529f78f0/campaign.json",
-      "sha256": "bed03552de61eac848d7763a67510b05dd75f186860dade2df4750828bd6b842"
+      "sha256": "31dadd34647d31094a446086bdb89d3216f2e75cc2e3cd8c72691389138b5e60"
     },
     {
       "source": "runs/N3R2_constructor_reset_one_20261018_093152_cb5137d5-677c-4502-ba18-5a3d529f78f0/reset_one_attempt_1/record.json",
       "published": "N3R2_constructor_reset_one_20261018_093152_cb5137d5-677c-4502-ba18-5a3d529f78f0/reset_one_attempt_1/record.json",
-      "sha256": "9ebaf4eb54730285a2923f259cf7b7c185d82202ad70ae4d51330ff700fec9a1"
+      "sha256": "1b824ef85265936a5570b9cbde3b3c52ea72d6b7d528162be589d812fb2cd700"
+    },
+    {
+      "source": "runs/N3R2_constructor_reset_one_20261018_093152_cb5137d5-677c-4502-ba18-5a3d529f78f0/reset_one_attempt_1/metrics.json",
+      "published": "N3R2_constructor_reset_one_20261018_093152_cb5137d5-677c-4502-ba18-5a3d529f78f0/reset_one_attempt_1/metrics.json",
+      "sha256": "a324ba6b525c4c5145f16185652ddac5d0d6c1eff0d95fce1d5e732d85ad3eb1"
     },
     {
       "source": "runs/N3R2_constructor_reset_one_20261018_093152_cb5137d5-677c-4502-ba18-5a3d529f78f0/reset_one_attempt_1/graph.json",
@@ -727,7 +732,27 @@
     {
       "source": "runs/N3R2_constructor_reset_one_20261018_093152_cb5137d5-677c-4502-ba18-5a3d529f78f0/reset_one_attempt_1/execution_progress.json",
       "published": "N3R2_constructor_reset_one_20261018_093152_cb5137d5-677c-4502-ba18-5a3d529f78f0/reset_one_attempt_1/execution_progress.json",
-      "sha256": "6169e38b7954dd283ed16b2487f4bb0d6f0d93829aefd49d21fc7b5e964e717c"
+      "sha256": "5e2a990afb22907f58f90b94022b2a7e25f9b1592a0265cbc55eb7a5faf13bde"
+    },
+    {
+      "source": "runs/N3R2_constructor_reset_one_20261018_093152_cb5137d5-677c-4502-ba18-5a3d529f78f0/reset_one_attempt_1/log_format_recovery.json",
+      "published": "N3R2_constructor_reset_one_20261018_093152_cb5137d5-677c-4502-ba18-5a3d529f78f0/reset_one_attempt_1/log_format_recovery.json",
+      "sha256": "7d9fd7f37b0c1d49d73fb61b60a7615114ac1bc75f31d41070a85f38d0d43e08"
+    },
+    {
+      "source": "runs/N3R2_constructor_reset_one_20261018_093152_cb5137d5-677c-4502-ba18-5a3d529f78f0/reset_one_attempt_1/log_format/format_contract.json",
+      "published": "N3R2_constructor_reset_one_20261018_093152_cb5137d5-677c-4502-ba18-5a3d529f78f0/reset_one_attempt_1/log_format/format_contract.json",
+      "sha256": "131d92c0098fe4ea8908f67618c22935536706019acaa9a513bb93a308c027a6"
+    },
+    {
+      "source": "runs/N3R2_constructor_reset_one_20261018_093152_cb5137d5-677c-4502-ba18-5a3d529f78f0/reset_one_attempt_1/review/reset_diagnosis.json",
+      "published": "N3R2_constructor_reset_one_20261018_093152_cb5137d5-677c-4502-ba18-5a3d529f78f0/reset_one_attempt_1/review/reset_diagnosis.json",
+      "sha256": "205dc52ab389a7a59a365887206c1e45fcc0291737ec845b2ee303a65d20ae46"
+    },
+    {
+      "source": "runs/N3R2_constructor_reset_one_20261018_093152_cb5137d5-677c-4502-ba18-5a3d529f78f0/reset_one_attempt_1/review/reset_diagnosis.png",
+      "published": "N3R2_constructor_reset_one_20261018_093152_cb5137d5-677c-4502-ba18-5a3d529f78f0/reset_one_attempt_1/review/reset_diagnosis.png",
+      "sha256": "b032ba0e0d975f34b560fad0831765332af15fbd217ee5b3d5b407fae52a7676"
     },
     {
       "source": "runs/N3R2_constructor_short_20261018_091939_61018e3f-c571-4ab4-9337-60370a02e273/campaign.json",

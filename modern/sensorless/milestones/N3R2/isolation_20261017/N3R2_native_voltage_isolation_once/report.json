@@ -1,0 +1,80 @@
+{
+  "kind": "reduced_native_voltage_predictor",
+  "all_passed": true,
+  "phase": "completed",
+  "plant_reexecuted": false,
+  "whole_model_fault_acceptance": false,
+  "R2_case_status_changed": false,
+  "process_id": 49788,
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "probe_sha256": "6c0fbbaaf7525819bbb811e7207a5a25d2b30acf1ecd0cdec55cf485873eaa77",
+  "contract_sha256": "9c9a24181ae46fb97ed0cab45f565a6fcb4f359862f8c2ac3eef9a048347850e",
+  "reference_record_sha256": "4f312dca3443f7517aeafd996c81e0d19300b33af34e25612dd595a99aeac1f1",
+  "sources": [
+    {
+      "path": "robust/faults/blocks/sless_r2_voltage_block.m",
+      "sha256": "ceb5a84b738f42ac70b2c953d09b862bbb8e092b8eaf1fb72ac371d871b0011c"
+    },
+    {
+      "path": "robust/faults/sensorless_r2_voltage_step.m",
+      "sha256": "fe285c5e1d484e1941999998c5444e77c624849a58175d1446b17cfa25370a54"
+    },
+    {
+      "path": "robust/integration/sensorless_v2_config_rt.m",
+      "sha256": "2191001a30f487abdc8a1efe431464c7c3c3063fa1e2b95916273bc02c5f58ec"
+    },
+    {
+      "path": "robust/integration/sensorless_v2_voltage_state.m",
+      "sha256": "e0d9c95d8e9c92c844feadf02c410cfd8e9828204b6af6d63a876c265cd6b98c"
+    },
+    {
+      "path": "robust/integration/sensorless_v2_front_phase.m",
+      "sha256": "43ff9c1f113f3f5e211ff13ff5d9a7cd5f83c6c30e656d73c73b8d7426b35bcc"
+    },
+    {
+      "path": "robust/sensorless_deadtime_estimate_step.m",
+      "sha256": "8956b849540d67ae7709b1dfdebc1dc94f83089a1c5c5bef8da480e2b02fba59"
+    },
+    {
+      "path": "robust/sensorless_bridge_estimate.m",
+      "sha256": "f20d998c94a6195c08e3207494aff90e26242c3bc9e518569dd6836add53eaf3"
+    },
+    {
+      "path": "robust/sensorless_robust_state.m",
+      "sha256": "01a38ecd05d190c2d9306ed7d07310f18a41cfff0a4f1852506d5082e565276e"
+    }
+  ],
+  "diagnostic_sources": [
+    {
+      "path": "robust/diagnostics/sless_r2_voltage_fixture_block.m",
+      "sha256": "6c8cccdfaff2c4d5d44198791667e07072c0f10f26b13a6701878fc984e10ee9"
+    },
+    {
+      "path": "robust/diagnostics/sless_r2_voltage_audit_block.m",
+      "sha256": "ea1bdb1caadffbe383240b50e618b412322273cef49fe04ead58ef12f6f25bae"
+    }
+  ],
+  "model_sha256": "136c96008bb2049ef938bed394a16d70844ed3098ab5a71c6369015e60292662",
+  "elapsed_s": 27.0095942,
+  "prefix_comparison": {
+    "samples": 2401,
+    "numeric_elements": 103243,
+    "max_abs_difference": 0,
+    "exact_fraction": 1,
+    "first_failing_sample": 0,
+    "all_passed": true
+  },
+  "checks": {
+    "native_endpoint": true,
+    "native_boundaries": true,
+    "rejected_anchors": true,
+    "counter_count": true,
+    "control_count": true,
+    "final_ready": true,
+    "pure_prefix": true
+  },
+  "native_evaluations": 1.2800001E+7,
+  "boundaries": 16000,
+  "rejected_anchors": 6,
+  "raw_sha256": "de139aa5a31e7f53f5be405470098280b565d19f8ce4f496f0237584a9cdc917"
+}

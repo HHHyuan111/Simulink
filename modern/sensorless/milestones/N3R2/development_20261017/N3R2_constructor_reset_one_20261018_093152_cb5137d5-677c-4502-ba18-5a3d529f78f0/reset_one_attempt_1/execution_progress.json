@@ -1,9 +1,13 @@
 {
   "initialized_once": true,
-  "step_chunks": 32,
-  "requested_major_steps": 5.12E+6,
+  "step_chunks": 81,
+  "requested_major_steps": 1.2800001E+7,
   "expected_major_steps": 1.2800001E+7,
-  "last_step": false,
-  "status": "running",
-  "next_major_time_s": 0.32
+  "last_step": true,
+  "status": "completed",
+  "next_major_time_s": null,
+  "status_before_stop": "inactive",
+  "api_time_finite_at_completion": false,
+  "elapsed_s": 473.1383391,
+  "status_after_stop": "inactive"
 }
