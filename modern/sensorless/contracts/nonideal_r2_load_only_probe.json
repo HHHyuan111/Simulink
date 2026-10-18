@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "registered_before_implementation": "2026-10-18, after generated backend short native0xc0000005 with last durable phase load; no target build or physical stepping observed",
+  "kind": "minimal_model_deserialization_isolation",
+  "scope": "Do not rerun any physics, precheck or formal case. No observer construction, configuration callback eval, compile/update/initialize/start/step/sim, model saving or parameter write.",
+  "cases": [
+    {"id":"original_path","source":"Original modern/PMSM_FOC_R2026a.slx; read-only load"},
+    {"id":"identical_copy","source":"A new byte-identical copy in this probe output folder; same basename"}
+  ],
+  "controls": "Each one owned hidden MATLAB batch with fresh private project preferences, default MATLAB search path plus diagnostic entry point only; no compiler setup, no CPU setting changes, no use of user GUI. Report which('load_system'), which('sim') and runtime version before loading. Bind originalSLX SHAa0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d. All source bytes unchanged.",
+  "checks": "Load returns successfully, stopped SimulationStatus, loaded FileName equals intended absolute path, exact disk SHA unchanged, block count and workspace variable inventory readable. Close without saving, model not left loaded, original and copied disk hashes unchanged. Verify prior820 files before/after the whole probe.",
+  "execution_policy": "One load per case, zero retry; serial, stop after any nonzero exit or failed check. Retain last durable phase and output/source hashes. Success of a load is not proof of stable simulation, absence of intermittent failure, R2 qualification or a resolved root cause.",
+  "artifact": "Minimal script and source/input pointers plus sanitized report suitable for user review; no external upload/message or raw private dump publication. R2 remains not passed."
+}
