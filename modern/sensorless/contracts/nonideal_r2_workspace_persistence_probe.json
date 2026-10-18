@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "registered_before_implementation": "2026-10-18; source audit of save_system plus MATLAB Code model workspaces identified a potential independent handoff gap",
+  "kind": "saved_model_parameter_and_restoration_metadata_roundtrip",
+  "scope": "Two new tiny owned Simulink models only, no original main loading, no observer construction, no update/compile/simulation, no original file or user GUI changes. One save/close/reopen roundtrip per declared fixture, no retries.",
+  "negative_control": "Model workspace DataSource MATLAB Code, embedded code sets base=1. After reload assign base=2 plus exact frozen18-value observer column and35-value frontend row under new names; attach known struct backup to a subsystem with default UserDataPersistent off. Save/close/reopen. Record whether code-derived base resets, added runtime configs are absent, and transient backup is absent. Require this observed loss to confirm the audited persistence hypothesis; do not infer it from documentation alone.",
+  "positive_control": "A separate new model uses DataSource Model File, assigns the same intended base=2 and exact config arrays, sets only its owned subsystem UserDataPersistent on with the same known backup. Save/close/reopen and require exact numeric values, classes, dimensions, vector orientation and backup struct equality. Model/contract/source SHA and workspace inventories before/after retained.",
+  "classification": "All expected negative/positive observations passing validates this model-file handoff method. It does not explain prior native crashes, pass a96-stream precheck, authorize a new physical/formal run or establish stable runtime. If negative loss is not observed, report hypothesis unconfirmed; do not fabricate a defect. If any check/native error occurs stop with original artifacts intact, no relabel/retry.",
+  "next": "Only confirmed persistence findings may motivate a separately preregistered builder/executor handoff with exact86-value workspace and serialized restoration metadata; existing worker files and failed attempts remain unchanged. Original820 files verified before/after."
+}
