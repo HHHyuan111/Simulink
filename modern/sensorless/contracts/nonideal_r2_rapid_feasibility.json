@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "registered_before_implementation": "2026-10-18, after frozen candidate d1c33609 formal case2 initialization exit0xc0000409; original campaign stopped without retry",
+  "kind": "separate_address_space_execution_feasibility_only",
+  "hypothesis": "A real standalone generated simulation target uses a different execution mechanism from the Normal-mode block engine. Check feasibility without asserting that it fixes an unconfirmed native failure cause.",
+  "frozen_candidate_preserved": "All820 files bound by milestones/N3R2/final_candidate.json remain byte-identical. Original formal campaign stays stopped and R2 not passed. No same-candidate formal restart or relabel.",
+  "preflight": "Read-only report of selected and installed MATLAB C/C++ compiler configurations; do not change compiler selection, install software or modify host settings.",
+  "fixture": "A new owned small model only, no original plant or observer resimulation. Native62.5ns clock; JEOS50us offset28.875us; boolean completion enables at31.875us plus50us*k. Model-workspace scalar offset and constant input; log native pair, JEOS and completion as Timeseries. Run0.02s once in Normal mode then once in Rapid Accelerator using the identical saved graph and scalar values. Store generated executable and source hashes.",
+  "success": {
+    "native_rows": 320001,
+    "JEOS_rows": 400,
+    "completion_rows": 400,
+    "native_ticks": "0:320000 at62.5ns",
+    "JEOS_ticks": "462+800*k",
+    "completion_ticks": "510+800*k",
+    "outputs": "Exactly3 expected Timeseries logs; finite; unchanged names/classes/dimensions. Both modes separately satisfy exact integer tick oracle, workspace-scoped input+offset values, and exact Time/Data equality for all3 streams.",
+    "implementation": "MATLAB version/compiler, fixture scripts/SLX, configs, raw outputs, generated standalone target path/SHA, phase and exit code retained. Original617/R1 files and frozen820 verify unchanged."
+  },
+  "execution_policy": "One Normal start and one Rapid start for this fixture; zero native retries, zero numerical retries. Build/preflight failure is retained and stops this diagnostic. No original main model case or formal matrix starts under this contract. Ordinary source errors before a simulation start may be corrected only with a recorded addendum; prior evidence remains unchanged.",
+  "next_gate": "Only a passing toy permits drafting a separate full-main temporary adapter design and exact96-stream20ms precheck. A failed or unsupported fixture is not grounds for nominal execution flag churn, relaxed tolerances, changed equations or a new formal candidate.",
+  "primary_sources": [
+    "https://www.mathworks.com/help/simulink/ug/choosing-a-simulation-mode.html",
+    "https://www.mathworks.com/help/simulink/slref/toworkspace.html",
+    "https://www.mathworks.com/help/simulink/ug/designing-your-model-for-effective-acceleration.html"
+  ],
+  "hardware_validated": false,
+  "feedback_takeover": false,
+  "R2_passed": false
+}
