@@ -1,7 +1,10 @@
 param([string]$MatlabExe='D:\DevTools\MATLAB\R2026a\bin\matlab.exe')
 $ErrorActionPreference='Stop'
 $runs=Join-Path $PSScriptRoot 'runs'
-$folder=Join-Path $runs 'N3R2_observer_graph_isolation_once'
+$priorFolder=Join-Path $runs 'N3R2_observer_graph_isolation_once'
+$retained=Get-Content -LiteralPath (Join-Path $priorFolder 'report.json') -Raw | ConvertFrom-Json
+if($retained.phase -ne 'diagnostic_error' -or $retained.phase_at_error -ne 'restore_source_before_reduced_execution' -or (Test-Path (Join-Path $priorFolder 'signals.mat')) -or (Test-Path (Join-Path $priorFolder 'execution_progress.json'))){throw 'Original pre-execution failure evidence invalid. No process started.'}
+$folder=Join-Path $runs 'N3R2_observer_graph_context_fixed_once'
 if(Test-Path -LiteralPath $folder){throw 'Native complete observer graph probe already started. No repeated execution allowed.'}
 foreach($prior in Get-ChildItem -LiteralPath $runs -Directory -Filter 'N3R2_*') {
  $manifest=Join-Path $prior.FullName 'campaign.json'

@@ -14,6 +14,7 @@ report=struct('kind','standalone_complete_observer_graph','all_passed',false,'ph
 report.snapshot_record_sha256=teach_hash(fullfile(folder,'record.json'));
 copyfile([mfilename('fullpath') '.m'],fullfile(folder,'probe_source.m.txt'));report.probe_sha256=teach_hash([mfilename('fullpath') '.m']);
 contract=fullfile(base,'contracts/nonideal_r2_observer_graph_diagnostic.json');copyfile(contract,fullfile(folder,'contract.json'));report.contract_sha256=teach_hash(contract);
+addendum=fullfile(base,'contracts/nonideal_r2_observer_graph_context_addendum.json');copyfile(addendum,fullfile(folder,'context_addendum.json'));report.context_addendum_sha256=teach_hash(addendum);
 report.diagnostic_sources=struct('path',{},'sha256',{});
 for fixtureFile={'sless_r2_observer_fixture_block.m','sless_r2_voltage_fixture_block.m'}
  copyfile(fullfile(here,fixtureFile{1}),fullfile(folder,fixtureFile{1}));
@@ -55,10 +56,11 @@ try
  report.clone_block_catalog_exact=isequaln(sourceCatalog,catalog(root));report.clone_chart_scripts_exact=isequaln(sourceCharts,charts(root));
  report.clone_workspace_exact=isequaln(before,workspace_values(ws));report.clone_block_count=numel(sourceCatalog);report.clone_chart_count=numel(sourceCharts);
  assert(report.clone_block_catalog_exact&&report.clone_chart_scripts_exact&&report.clone_workspace_exact);
- stage('restore_source_before_reduced_execution');pmsm_sensorless_v2_geometry_model('remove',sourceModel);set_param(sourceModel,'InitFcn',originalInit);sensorless_n3_restore(sourceModel,backup);
+ stage('restore_source_before_reduced_execution');set_param(0,'CurrentSystem',sourceModel);assert(strcmp(bdroot,sourceModel));
+ pmsm_sensorless_v2_geometry_model('remove',sourceModel);set_param(sourceModel,'InitFcn',originalInit);sensorless_n3_restore(sourceModel,backup);
  afterModel=teach_snapshot(sourceModel);afterFixed=pmsm_reference('capture');report.original_restored=isequaln(original,afterModel)&&isequaln(fixed,afterFixed);assert(report.original_restored);
  sensorless_v2_guard_sources(snapshot);sensorless_r2_verify_constructor;close_system(sourceModel,0);report.original_closed_before_execution=~bdIsLoaded(sourceModel);
- stage('install_nine_synthetic_external_sources');
+ stage('install_nine_synthetic_external_sources');set_param(0,'CurrentSystem',mdl);assert(strcmp(bdroot,mdl));
  add_block('simulink/Sources/Digital Clock',[mdl '/Fixture_clock'],'SampleTime','timing_h');
  add_block('simulink/User-Defined Functions/MATLAB Function',[mdl '/Fixture']);rt=sfroot;ch=rt.find('-isa','Stateflow.EMChart','Path',[mdl '/Fixture']);ch.Script=fileread(fullfile(here,'sless_r2_observer_fixture_block.m'));
  ch.ChartUpdate='DISCRETE';ch.SampleTime='timing_h';ch.VectorOutputs1D=false;
