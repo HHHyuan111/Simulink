@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "registered_before_isolated_setup": "2026-10-18",
+  "parent": "contracts/nonideal_r2_rapid_feasibility.json",
+  "retained_preflight": "runs/N3R2_rapid_toy_once/report.json reports selected/installed C/C++ all empty. Normal starts0, Rapid starts0. Driver exited1. No simulation, compiler installation, compiler selection or host setting change occurred.",
+  "scope": "Prepare the missing build dependency under ignored project .build only, then perform the original fixture's first Normal and first Rapid simulation. This addendum does not permit a physical main-model case, retry of a started simulation, formal matrix restart or threshold change.",
+  "package": {
+    "distribution": "MathWorks-hosted MinGW8.1 package linked by MathWorks Supported Compilers Team for manual configuration in R2026a and later",
+    "source_page": "https://www.mathworks.com/matlabcentral/fileexchange/52848-matlab-support-for-mingw-w64-c-c-fortran-compiler/",
+    "url": "https://ssd.mathworks.com/supportfiles/downloads/SupportPackageThirdParty/R2023b/mingw_w64/win64/mingw81.zip",
+    "expected_bytes_from_HEAD": 140343786,
+    "destination": ".build/tools/mingw81",
+    "verification": "Record archive SHA256 and byte count, verify every archive member resolves beneath the new extraction folder, record gcc/g++ version and executable hashes; never run an installer or require administrator rights."
+  },
+  "process_isolation": "Start one owned hidden MATLAB batch with MATLAB_PREFDIR set to a fresh project-local folder, assert prefdir resolves there. Set MW_MINGW64_LOC only in that owned process and select C/C++ compiler only in its isolated preferences. Preserve source/default user preference compiler XML hashes before/after; no system/user environment registry writes, no startup.m edits, no changes to existing GUI sessions. Restore launcher process environment after start.",
+  "fixture": "Use unchanged probe_sensorless_r2_rapid_toy.m whose SHA is ed6542a535fbf44eae8f60e872aa5240822faae164e7dc06adcab5f10a1d2407; retain original preflight report. New output folder N3R2_rapid_toy_compiler_once. One Normal and one Rapid start, no retry; all exact oracle and cross-mode equality checks from parent remain.",
+  "success_additional": "Generated executable must exist under owned generation folder and its SHA be archived. Verify all820 prior frozen files before and after diagnostic. Dependency availability alone is not a passing fixture or R2 result.",
+  "failure_policy": "Download/config/build/runtime or numeric failure is retained; no new nominal version or same-graph retry after simulation starts. Diagnose saved evidence only. No compiler-backed main-model work before fixture passes."
+}
