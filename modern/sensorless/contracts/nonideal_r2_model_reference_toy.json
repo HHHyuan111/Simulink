@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "kind": "normal_model_reference_logging_feasibility",
+  "registered_before_execution": "2026-10-18; complete591-block observer graph passed separately",
+  "purpose": "Check an actual normal-mode Model block boundary and unmodified timeseries logging before developing the complete observer adapter. No electric plant or completed R2 physical case is run.",
+  "architecture": "New child model with one scalar native-rate Inport and no Outport, child-owned workspace offset, native clock log, JEOS clock log and enabled completion log. New parent model supplies a constant and contains the Model block in Normal mode. Parent and child contain different values of the same workspace variable to test scope isolation.",
+  "execution": {"duration_s":0.02,"native_step_s":0.0000000625,"initialize_once":true,"parent_simulation_mode":"normal","child_simulation_mode":"normal"},
+  "checks": [
+    "Parent SimulationOutput exposes all child timeseries with exact expected classes/dimensions; no logs silently missing or nested under unidentified instances",
+    "Native320001 points, JEOS400 points at462+800k ticks, completion400 points at510+800k ticks, exact integer times and preserved original values",
+    "Child offset1.234 is used together with parent input9.876 despite parent having offset100; child and parent workspaces unchanged after compile and simulation",
+    "No output ports is supported and the child sink/logging path still executes; all source, generated model and archive hashes retained"
+  ],
+  "policy": "One execution only, no numerical retries or labels. Retain pre-execution construction errors; any repair requires its own addendum before a separate first-valid-execution folder. No user original SLX save, feedback takeover, R2 performance verdict or final candidate freeze.",
+  "documentation": ["https://www.mathworks.com/help/simulink/slref/model.html","https://www.mathworks.com/help/simulink/slref/toworkspace.html"]
+}
