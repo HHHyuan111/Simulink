@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "kind": "standalone_complete_observer_graph",
+  "registered_before_execution": "2026-10-18; native queue and voltage isolation both passed",
+  "purpose": "Retain the actual locally constructed observer hierarchy, charts, scoped Gotos, feedback histories, supervision and all observer logs; replace only the motor-side external inputs by an explicit synthetic fixture. Separate full observer multirate integration from the original electric plant and control graph. No physical acceptance claim.",
+  "construction": "Use the source-bound geometry constructors to build the original observer while the original model stays stopped and uncompiled. Clone the completed observer subsystem and all86 numeric workspace values into a dedicated diagnostic model; compare every chart script and all relative block paths/types, restore and close the original model before initialization. Never save or simulate the original SLX.",
+  "fixture": "Independent800-tick PWM, carrier and threshold scaled to25us peak,24V bus, balanced2A synthetic measured/ADC currents, all-good ADC window flags, synthetic3000rpm evaluation angle/speed. Original ADC/analog filtering and actual motor response are absent. The observer's own SMO/EMF/PLL/voltage-predictor histories remain connected internally; no fixture estimated vector enters the observer.",
+  "fault": "Use the unchanged original missing_five profile at[0.600028875,0.600278875)s; exactly5 JEOS captures absent. This is a scheduling/integration diagnostic, not the missing_five physical case.",
+  "execution": {"duration_s":0.8,"native_step_s":0.0000000625,"initialize_once":true,"original52_absent":true,"same_observer_logging":true},
+  "checks": [
+    "All production source/geometry/parent plan hashes preserved; source model graph, workspace, callback and reference restored before executing the reduced model",
+    "Actual external From tags exactly match the9 declared synthetic sources; clone chart scripts and relative block paths/types match before first compile; internal Goto namespaces preserved",
+    "12800001 native evaluations,16000 JEOS samples,15995 actual publications, exactly5 missing flags and rejected current anchors, first-native missing reason/veto at registered onset",
+    "All saved numerical values finite, independent native event/counter audit passes, complete0.8s endpoint and all observer log variables retained",
+    "Do not judge synthetic angle/speed error, permission fraction or recovery as physical estimator performance; archive those raw values without hiding or tuning"
+  ],
+  "policy": "One execution only. No labels or numerical retries. Retain all sources, construction errors and exits. A construction error before sampling requires an explicit repair addendum and separate folder. No concurrent full-model simulation; no R2 case status changes, feedback takeover or MCU WCET claim."
+}
