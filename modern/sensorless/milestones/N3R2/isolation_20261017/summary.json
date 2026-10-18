@@ -1,0 +1,380 @@
+{
+  "captured_at": "2026-10-18T09:22:05.305112+08:00",
+  "R2_all_passed": false,
+  "R2_whole_model_case_status_changed": false,
+  "native_root_cause_confirmed": false,
+  "source_and_model_integrity_passed": true,
+  "r1_frozen_files_preserved": 90,
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "scope": "Isolation probes only. All pre-execution scripting/configuration errors are retained. Reduced and synthetic probes cannot close full-model fault gaps. Private environment, raw logs and dumps are excluded.",
+  "records": [
+    {
+      "folder": "N3R2_core_isolation_once",
+      "kind": "offline_core_isolation",
+      "phase": "completed",
+      "phase_at_error": null,
+      "probe_all_passed": true,
+      "exit_code": 0,
+      "exit_finalized": true,
+      "case_id": null,
+      "archive_hashes_at_curation": {
+        "baseline.mat": "bf1d2c8d15c5c527d6f282eff5a79af0018418d3abae67f6ca2de4f44b543ff6",
+        "missing_five_core.mat": "12c1a79a327efc086705fa254e74bf6a652541ec9278cec3f0e02062dacae258",
+        "reset_one_core.mat": "d28841b4647aac8ff6594d08a416a7c505d7ae59b085ba94c744c0be50c074db"
+      },
+      "report_sha256": "c51f1405e6f679c0850022a38004a99a6c30f5b40e3d702da2d327284773652b",
+      "explicit_compilation_count_from_call_chain": null
+    },
+    {
+      "folder": "N3R2_native_logger_isolation_once",
+      "kind": "reduced_native_monitor_logger",
+      "phase": "completed",
+      "phase_at_error": null,
+      "probe_all_passed": true,
+      "exit_code": 0,
+      "exit_finalized": true,
+      "case_id": null,
+      "archive_hashes_at_curation": {
+        "signals.mat": "a81408ded33bb613a3da376c929e7dc4aebc14e1c4022c08f2fe61b4413bc62f"
+      },
+      "report_sha256": "211b496b14d26b43f894660678265debe3c0d39974e281c2d83743bdf449f1d0",
+      "explicit_compilation_count_from_call_chain": null
+    },
+    {
+      "folder": "N3R2_original_only_isolation_namevalue_fixed",
+      "kind": "original_only_differential_control",
+      "phase": "completed",
+      "phase_at_error": null,
+      "probe_all_passed": true,
+      "exit_code": 0,
+      "exit_finalized": true,
+      "case_id": null,
+      "archive_hashes_at_curation": {
+        "restoration.mat": "393420c6019086be0c9b390a0f396cbe459ae956747148383228225464ce4957",
+        "signals.mat": "6b5494ced4356d0c3d24dfbf55259537fdc7c63253ee5ab67fe9b73dc946f2d4"
+      },
+      "report_sha256": "643be8f94087aae2e4db278d2afd82af11885635bd0dee3152134c26fa2cd0dc",
+      "explicit_compilation_count_from_call_chain": null
+    },
+    {
+      "folder": "N3R2_original_only_isolation_once",
+      "kind": "original_only_differential_control",
+      "phase": "diagnostic_error",
+      "phase_at_error": "initialize_original_once",
+      "probe_all_passed": false,
+      "exit_code": 1,
+      "exit_finalized": true,
+      "case_id": null,
+      "archive_hashes_at_curation": {},
+      "report_sha256": "605e97d3ba2532444be8a11313c5f3987859b6c4b2c3444532347ac45a497cef",
+      "explicit_compilation_count_from_call_chain": null
+    },
+    {
+      "folder": "N3R2_port_geometry_no_reference_update",
+      "kind": "compile_only_port_geometry",
+      "phase": "completed",
+      "phase_at_error": null,
+      "probe_all_passed": true,
+      "exit_code": 0,
+      "exit_finalized": true,
+      "case_id": null,
+      "archive_hashes_at_curation": {},
+      "report_sha256": "2301389e2213e8cf05fd7c0b6b02e0380e0194a6815b6dd4ebe18a8f5d587c86",
+      "explicit_compilation_count_from_call_chain": 1
+    },
+    {
+      "folder": "N3R2_port_geometry_once",
+      "kind": "compile_only_port_geometry",
+      "phase": "completed",
+      "phase_at_error": null,
+      "probe_all_passed": true,
+      "exit_code": 0,
+      "exit_finalized": true,
+      "case_id": null,
+      "archive_hashes_at_curation": {},
+      "report_sha256": "f19caabd42e2d6c27976cef71cebbb7e774ece5e4e36ecf2ae41142738d49b4b",
+      "explicit_compilation_count_from_call_chain": 2
+    },
+    {
+      "folder": "N3R2_reduced_core_baseline",
+      "kind": "reduced_control_rate_core_graph",
+      "phase": "diagnostic_error",
+      "phase_at_error": "compile_and_run_reduced_graph",
+      "probe_all_passed": false,
+      "exit_code": 1,
+      "exit_finalized": true,
+      "case_id": "baseline",
+      "archive_hashes_at_curation": {},
+      "report_sha256": "11f098c516002e9adbe7300c234e6076861f7a3f6ab2b0ff8ee1b3b6c49f9054",
+      "explicit_compilation_count_from_call_chain": null
+    },
+    {
+      "folder": "N3R2_reduced_core_baseline_input_fixed",
+      "kind": "reduced_control_rate_core_graph",
+      "phase": "diagnostic_error",
+      "phase_at_error": "compile_and_run_reduced_graph",
+      "probe_all_passed": false,
+      "exit_code": 1,
+      "exit_finalized": true,
+      "case_id": "baseline",
+      "archive_hashes_at_curation": {},
+      "report_sha256": "d7450d1d6dae720af942ba3c5d487a544de05a38aad36c4abc5da1e0d7efad69",
+      "explicit_compilation_count_from_call_chain": null
+    },
+    {
+      "folder": "N3R2_reduced_core_baseline_name_fixed",
+      "kind": "reduced_control_rate_core_graph",
+      "phase": "diagnostic_error",
+      "phase_at_error": "compile_and_run_reduced_graph",
+      "probe_all_passed": false,
+      "exit_code": 1,
+      "exit_finalized": true,
+      "case_id": "baseline",
+      "archive_hashes_at_curation": {},
+      "report_sha256": "6992bb4837d3af4e3dcb6bbe3d2e395b98fe2e1671e2f864bb88ee94bb783de1",
+      "explicit_compilation_count_from_call_chain": null
+    },
+    {
+      "folder": "N3R2_reduced_core_baseline_time_field_fixed",
+      "kind": "reduced_control_rate_core_graph",
+      "phase": "completed",
+      "phase_at_error": null,
+      "probe_all_passed": true,
+      "exit_code": 0,
+      "exit_finalized": true,
+      "case_id": "baseline",
+      "archive_hashes_at_curation": {
+        "comparison.mat": "d349cdb4a136686cdb0f178a547f3cc7f8ffb6c5360e0335bbda8b1e669543ad"
+      },
+      "report_sha256": "10786afe2371270c5d9909e1f6316f81c08d4a8925724664174f9d3929019680",
+      "explicit_compilation_count_from_call_chain": null
+    },
+    {
+      "folder": "N3R2_reduced_core_missing_five",
+      "kind": "reduced_control_rate_core_graph",
+      "phase": "completed",
+      "phase_at_error": null,
+      "probe_all_passed": true,
+      "exit_code": 0,
+      "exit_finalized": true,
+      "case_id": "missing_five",
+      "archive_hashes_at_curation": {
+        "comparison.mat": "4fb715912f90f371304afa4cc4779fc14b255d51deeb266a71312e7d366bb0bb"
+      },
+      "report_sha256": "2ee7eed575e7bfad191e73b4dd82d5b50ea4fb61e16e29782916d2a5fd1a57dc",
+      "explicit_compilation_count_from_call_chain": null
+    },
+    {
+      "folder": "N3R2_reduced_core_reset_one",
+      "kind": "reduced_control_rate_core_graph",
+      "phase": "completed",
+      "phase_at_error": null,
+      "probe_all_passed": true,
+      "exit_code": 0,
+      "exit_finalized": true,
+      "case_id": "reset_one",
+      "archive_hashes_at_curation": {
+        "comparison.mat": "702fd28150815a751b0ff8e684ee8c36b2d628ae3cfda4b70ade3c545eedc0fd"
+      },
+      "report_sha256": "37da4342f7557f1063d380e8563c3899fbdc47c3097ed32c8e2890dbdeedb97b",
+      "explicit_compilation_count_from_call_chain": null
+    }
+  ],
+  "published": [
+    {
+      "source": "runs/N3R2_core_isolation_once/report.json",
+      "published": "N3R2_core_isolation_once/report.json",
+      "sha256": "c51f1405e6f679c0850022a38004a99a6c30f5b40e3d702da2d327284773652b"
+    },
+    {
+      "source": "runs/N3R2_core_isolation_once/contract.json",
+      "published": "N3R2_core_isolation_once/contract.json",
+      "sha256": "1ead284eba45aa7a082ff1353d4bb35ceec96db841f8874c8ae3d9c8f33a893b"
+    },
+    {
+      "source": "runs/N3R2_core_isolation_once_exit.json",
+      "published": "N3R2_core_isolation_once/exit.json",
+      "sha256": "523ae01bfb39fd9409055f2f2a9efbca402db6140732045dac616bdf829dbe9d"
+    },
+    {
+      "source": "runs/N3R2_core_isolation_once/review/core_fault_diagnosis.json",
+      "published": "N3R2_core_isolation_once/review/core_fault_diagnosis.json",
+      "sha256": "47bb667d9c3a0dd30f0f235f876908a77930d512c3c96390a36c7a580e9a9359"
+    },
+    {
+      "source": "runs/N3R2_core_isolation_once/review/core_fault_diagnosis.png",
+      "published": "N3R2_core_isolation_once/review/core_fault_diagnosis.png",
+      "sha256": "ee5728287d384273ba5c3bb9d996f9efd26b8c720aabf5be47d720806d93ba8e"
+    },
+    {
+      "source": "runs/N3R2_native_logger_isolation_once/report.json",
+      "published": "N3R2_native_logger_isolation_once/report.json",
+      "sha256": "211b496b14d26b43f894660678265debe3c0d39974e281c2d83743bdf449f1d0"
+    },
+    {
+      "source": "runs/N3R2_native_logger_isolation_once/contract.json",
+      "published": "N3R2_native_logger_isolation_once/contract.json",
+      "sha256": "a54ddd61892f12c9c725351a05b8f8eabbc35566537e273427f282ca244a8ca4"
+    },
+    {
+      "source": "runs/N3R2_native_logger_isolation_once_exit.json",
+      "published": "N3R2_native_logger_isolation_once/exit.json",
+      "sha256": "8fcb47960ab4381efeb154ca6cf8d4039a1c2de909a129db3a16d86dc531d53a"
+    },
+    {
+      "source": "runs/N3R2_original_only_isolation_namevalue_fixed/report.json",
+      "published": "N3R2_original_only_isolation_namevalue_fixed/report.json",
+      "sha256": "643be8f94087aae2e4db278d2afd82af11885635bd0dee3152134c26fa2cd0dc"
+    },
+    {
+      "source": "runs/N3R2_original_only_isolation_namevalue_fixed/contract.json",
+      "published": "N3R2_original_only_isolation_namevalue_fixed/contract.json",
+      "sha256": "5480581cf510ff11051b77b73dc23a2372c28a02fa492173836bbd259096b8db"
+    },
+    {
+      "source": "runs/N3R2_original_only_isolation_namevalue_fixed/execution_progress.json",
+      "published": "N3R2_original_only_isolation_namevalue_fixed/execution_progress.json",
+      "sha256": "f2db936e7fd02ce9d34c5e1d0779e6cf40f92c37cf78693e8c6d39aff4eb1fe3"
+    },
+    {
+      "source": "runs/N3R2_original_only_isolation_namevalue_fixed_exit.json",
+      "published": "N3R2_original_only_isolation_namevalue_fixed/exit.json",
+      "sha256": "dbc227a62a0589159857a58e202eaed3734e869b21f35710fc21442cd948df6a"
+    },
+    {
+      "source": "runs/N3R2_original_only_isolation_once/report.json",
+      "published": "N3R2_original_only_isolation_once/report.json",
+      "sha256": "605e97d3ba2532444be8a11313c5f3987859b6c4b2c3444532347ac45a497cef"
+    },
+    {
+      "source": "runs/N3R2_original_only_isolation_once/contract.json",
+      "published": "N3R2_original_only_isolation_once/contract.json",
+      "sha256": "0a82d5d2703272bcf0b1425a12c8acdb9a4069dbe3d9e9bc4301105d46bbcad6"
+    },
+    {
+      "source": "runs/N3R2_original_only_isolation_once_exit.json",
+      "published": "N3R2_original_only_isolation_once/exit.json",
+      "sha256": "f23c77a23be43bd7b9d6c45c577af4d4405e2d7d037bcd94e21cd8ac37355f71"
+    },
+    {
+      "source": "runs/N3R2_port_geometry_no_reference_update/report.json",
+      "published": "N3R2_port_geometry_no_reference_update/report.json",
+      "sha256": "2301389e2213e8cf05fd7c0b6b02e0380e0194a6815b6dd4ebe18a8f5d587c86"
+    },
+    {
+      "source": "runs/N3R2_port_geometry_no_reference_update/contract.json",
+      "published": "N3R2_port_geometry_no_reference_update/contract.json",
+      "sha256": "e374149205ac2161d090b317d281893a3aff1409bf4796fbb17f738bd282cc41"
+    },
+    {
+      "source": "runs/N3R2_port_geometry_no_reference_update_exit.json",
+      "published": "N3R2_port_geometry_no_reference_update/exit.json",
+      "sha256": "0c9e8c0bc1ce46fc06fa208e7df6736afec96b6b9396cdf3802b051af42f61a4"
+    },
+    {
+      "source": "runs/N3R2_port_geometry_once/report.json",
+      "published": "N3R2_port_geometry_once/report.json",
+      "sha256": "f19caabd42e2d6c27976cef71cebbb7e774ece5e4e36ecf2ae41142738d49b4b"
+    },
+    {
+      "source": "runs/N3R2_port_geometry_once/contract.json",
+      "published": "N3R2_port_geometry_once/contract.json",
+      "sha256": "e374149205ac2161d090b317d281893a3aff1409bf4796fbb17f738bd282cc41"
+    },
+    {
+      "source": "runs/N3R2_port_geometry_once_exit.json",
+      "published": "N3R2_port_geometry_once/exit.json",
+      "sha256": "4a5369dd48fd2ad3c38b2777c936fcb7490704fdc203ae900140ce382f25ea09"
+    },
+    {
+      "source": "runs/N3R2_reduced_core_baseline/report.json",
+      "published": "N3R2_reduced_core_baseline/report.json",
+      "sha256": "11f098c516002e9adbe7300c234e6076861f7a3f6ab2b0ff8ee1b3b6c49f9054"
+    },
+    {
+      "source": "runs/N3R2_reduced_core_baseline/contract.json",
+      "published": "N3R2_reduced_core_baseline/contract.json",
+      "sha256": "c74ed9f8403848388f653de24163adfb5b741f1c50fe9c5a45464e62e88ae6ce"
+    },
+    {
+      "source": "runs/N3R2_reduced_core_baseline_exit.json",
+      "published": "N3R2_reduced_core_baseline/exit.json",
+      "sha256": "b59ed17c44783aa93de2df4e62de390c35d6cf1c4e70ce4730bbbd29fe1f667f"
+    },
+    {
+      "source": "runs/N3R2_reduced_core_baseline_input_fixed/report.json",
+      "published": "N3R2_reduced_core_baseline_input_fixed/report.json",
+      "sha256": "d7450d1d6dae720af942ba3c5d487a544de05a38aad36c4abc5da1e0d7efad69"
+    },
+    {
+      "source": "runs/N3R2_reduced_core_baseline_input_fixed/contract.json",
+      "published": "N3R2_reduced_core_baseline_input_fixed/contract.json",
+      "sha256": "c74ed9f8403848388f653de24163adfb5b741f1c50fe9c5a45464e62e88ae6ce"
+    },
+    {
+      "source": "runs/N3R2_reduced_core_baseline_input_fixed_exit.json",
+      "published": "N3R2_reduced_core_baseline_input_fixed/exit.json",
+      "sha256": "9d572b99ca899656f7dbc6e948cf43b04e482c65f4cda77793667ebc9ab01987"
+    },
+    {
+      "source": "runs/N3R2_reduced_core_baseline_name_fixed/report.json",
+      "published": "N3R2_reduced_core_baseline_name_fixed/report.json",
+      "sha256": "6992bb4837d3af4e3dcb6bbe3d2e395b98fe2e1671e2f864bb88ee94bb783de1"
+    },
+    {
+      "source": "runs/N3R2_reduced_core_baseline_name_fixed/contract.json",
+      "published": "N3R2_reduced_core_baseline_name_fixed/contract.json",
+      "sha256": "c74ed9f8403848388f653de24163adfb5b741f1c50fe9c5a45464e62e88ae6ce"
+    },
+    {
+      "source": "runs/N3R2_reduced_core_baseline_name_fixed_exit.json",
+      "published": "N3R2_reduced_core_baseline_name_fixed/exit.json",
+      "sha256": "38d9f4c0f19d9a31b3ce1715cc93fe6b8c7c897ad6316f9e80eaace755f73592"
+    },
+    {
+      "source": "runs/N3R2_reduced_core_baseline_time_field_fixed/report.json",
+      "published": "N3R2_reduced_core_baseline_time_field_fixed/report.json",
+      "sha256": "10786afe2371270c5d9909e1f6316f81c08d4a8925724664174f9d3929019680"
+    },
+    {
+      "source": "runs/N3R2_reduced_core_baseline_time_field_fixed/contract.json",
+      "published": "N3R2_reduced_core_baseline_time_field_fixed/contract.json",
+      "sha256": "c74ed9f8403848388f653de24163adfb5b741f1c50fe9c5a45464e62e88ae6ce"
+    },
+    {
+      "source": "runs/N3R2_reduced_core_baseline_time_field_fixed_exit.json",
+      "published": "N3R2_reduced_core_baseline_time_field_fixed/exit.json",
+      "sha256": "c5f1a60c0971f39a989cd99efa6ce1f32cfb82b5bd1f2cebffd378ca0e207155"
+    },
+    {
+      "source": "runs/N3R2_reduced_core_missing_five/report.json",
+      "published": "N3R2_reduced_core_missing_five/report.json",
+      "sha256": "2ee7eed575e7bfad191e73b4dd82d5b50ea4fb61e16e29782916d2a5fd1a57dc"
+    },
+    {
+      "source": "runs/N3R2_reduced_core_missing_five/contract.json",
+      "published": "N3R2_reduced_core_missing_five/contract.json",
+      "sha256": "c74ed9f8403848388f653de24163adfb5b741f1c50fe9c5a45464e62e88ae6ce"
+    },
+    {
+      "source": "runs/N3R2_reduced_core_missing_five_exit.json",
+      "published": "N3R2_reduced_core_missing_five/exit.json",
+      "sha256": "d0246c3a79dc6721d65085d7f06153b8d3d28e3529261eaa0ba3175fec913dfe"
+    },
+    {
+      "source": "runs/N3R2_reduced_core_reset_one/report.json",
+      "published": "N3R2_reduced_core_reset_one/report.json",
+      "sha256": "37da4342f7557f1063d380e8563c3899fbdc47c3097ed32c8e2890dbdeedb97b"
+    },
+    {
+      "source": "runs/N3R2_reduced_core_reset_one/contract.json",
+      "published": "N3R2_reduced_core_reset_one/contract.json",
+      "sha256": "c74ed9f8403848388f653de24163adfb5b741f1c50fe9c5a45464e62e88ae6ce"
+    },
+    {
+      "source": "runs/N3R2_reduced_core_reset_one_exit.json",
+      "published": "N3R2_reduced_core_reset_one/exit.json",
+      "sha256": "d30f6d89abe24a26224d2293bdf456ee1271674ce4158ecbcea6a0dddabaa878"
+    }
+  ]
+}

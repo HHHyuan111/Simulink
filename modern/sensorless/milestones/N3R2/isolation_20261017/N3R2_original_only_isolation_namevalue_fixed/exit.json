@@ -1,0 +1,5 @@
+{
+  "exit_code": 0,
+  "automatic_retry": false,
+  "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/diagnostics');probe_sensorless_r2_original_only('D:/simulink/dev/modern/sensorless/runs/N3R2_original_only_isolation_namevalue_fixed');"
+}

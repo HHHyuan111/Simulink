@@ -1,0 +1,67 @@
+{
+  "kind": "reduced_native_monitor_logger",
+  "all_passed": true,
+  "phase": "completed",
+  "plant_reexecuted": false,
+  "synthetic_negative_control": true,
+  "R2_case_status_changed": false,
+  "process_id": 2588,
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "probe_sha256": "d90da8bcfceaf1e7318aa4519740090f258acfdddd1e5f4591ad18a185c9e75b",
+  "contract_sha256": "a54ddd61892f12c9c725351a05b8f8eabbc35566537e273427f282ca244a8ca4",
+  "sources": [
+    {
+      "path": "robust/performance/sensorless_r2_logging.m",
+      "sha256": "7020c94fecff48f7280d51ad79122d4692b8abbbd62142ef4518a6e9f5b77e8f"
+    },
+    {
+      "path": "robust/performance/blocks/sless_r2_monitor_block.m",
+      "sha256": "c8b151e99f247d920951236f2e7f6ff6318c5f3d5b7db2200e7288ace05e0488"
+    },
+    {
+      "path": "robust/performance/sensorless_r2_monitor_step.m",
+      "sha256": "8da9b890980215e81b1be5169f5a79d609759c2a1d9750d1f4819bec12c824a1"
+    },
+    {
+      "path": "robust/performance/sensorless_r2_monitor_state.m",
+      "sha256": "a4b84f412f724e99af98864be80a676ce8d9410e729a5d08b42f87fada90110e"
+    },
+    {
+      "path": "robust/performance/sensorless_r2_event_audit.m",
+      "sha256": "b2b45f240ffc8d4fe3ca3ced573d9ede26102df82bfa1f426682ce40c9bf34c6"
+    }
+  ],
+  "fixture_sha256": "5ffc064a7b5ab67f61b92845a5598c2a1d9c3ed07313c5a699c623b286009fc3",
+  "logging": {
+    "original_logs_changed": false,
+    "scopes_commented": [],
+    "changes": []
+  },
+  "model_sha256": "54908278a3aa0459d29452a7020930fe4fb5705d84e0f28ae9885b8effbac698",
+  "elapsed_s": 12.3217984,
+  "audit": {
+    "events": 32004,
+    "false_valid_longest_s": 0.0020000625,
+    "false_valid_total_s": 0.0020000625,
+    "permit_total_s": 0.74969999999999992,
+    "native_counters_equal_event_oracle": true,
+    "event_error_formula_equal": true,
+    "all_passed": true
+  },
+  "checks": {
+    "native_endpoint": true,
+    "counter_count": true,
+    "event_ticks_exact": true,
+    "false_valid_longest_ticks": true,
+    "false_valid_total_ticks": true,
+    "permit_total_ticks": true,
+    "permission_violations_zero": true,
+    "event_counter_audit": true
+  },
+  "native_evaluations": 1.2800001E+7,
+  "events": 32004,
+  "counter_samples": 16001,
+  "deliberate_false_valid_longest_s": 0.0020000625,
+  "permission_duration_s": 0.74969999999999992,
+  "raw_sha256": "a81408ded33bb613a3da376c929e7dc4aebc14e1c4022c08f2fe61b4413bc62f"
+}

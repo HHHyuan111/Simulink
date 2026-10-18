@@ -1,0 +1,30 @@
+{
+  "analysis_only": true,
+  "component_only": true,
+  "R2_case_status_changed": false,
+  "whole_model_fault_acceptance": false,
+  "native_permission_tested": false,
+  "original_report_sha256": "c51f1405e6f679c0850022a38004a99a6c30f5b40e3d702da2d327284773652b",
+  "renderer_sha256": "a07bd35aa6d5a53dcddb427bb185bccafca3f2438b12d37f7672b755525f3855",
+  "cases": {
+    "missing_five": {
+      "source_mat_sha256": "12c1a79a327efc086705fa254e74bf6a652541ec9278cec3f0e02062dacae258",
+      "first_packet_requalified_reference_s": 0.630178875,
+      "first_20ms_good_start_reference_s": 0.630178875,
+      "core_recovery_delay_s": 0.029900000000000038,
+      "qualification_is_not_native_control_permission": true,
+      "qualified_JEOS_error_exceeds_reference_count": 0,
+      "native_20ms_hold_tested": false
+    },
+    "reset_one": {
+      "source_mat_sha256": "d28841b4647aac8ff6594d08a416a7c505d7ae59b085ba94c744c0be50c074db",
+      "first_packet_requalified_reference_s": 0.6671788750000001,
+      "first_20ms_good_start_reference_s": 0.6671788750000001,
+      "core_recovery_delay_s": 0.06710000000000005,
+      "qualification_is_not_native_control_permission": true,
+      "qualified_JEOS_error_exceeds_reference_count": 0,
+      "native_20ms_hold_tested": false
+    }
+  },
+  "figure_sha256": "ee5728287d384273ba5c3bb9d996f9efd26b8c720aabf5be47d720806d93ba8e"
+}

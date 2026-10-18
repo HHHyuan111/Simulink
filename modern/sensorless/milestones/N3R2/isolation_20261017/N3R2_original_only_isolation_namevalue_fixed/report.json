@@ -1,0 +1,759 @@
+{
+  "kind": "original_only_differential_control",
+  "phase": "completed",
+  "all_passed": true,
+  "observer_installed": false,
+  "R2_case_status_changed": false,
+  "formal_R3": false,
+  "process_id": 3940,
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "probe_sha256": "f3a95f22543dda174da27fd73d8874eafe08d6eaf4943b7ae4eb5c14be828126",
+  "contract_sha256": "5480581cf510ff11051b77b73dc23a2372c28a02fa492173836bbd259096b8db",
+  "sources": [
+    {
+      "path": "robust/integration/sensorless_v2_stimulus.m",
+      "sha256": "ebad25264060c732320817d1317747f70519d38adf4dbfdc22d5028cd1f765b1"
+    },
+    {
+      "path": "sensorless_n3_stimulus.m",
+      "sha256": "2f89b0415c78a8f92511226e3de02ef0d4d85f4d153a4cfc98386d0eeccc396f"
+    },
+    {
+      "path": "sensorless_n3_restore.m",
+      "sha256": "384d0b1a39f8afe0396908e20b1e1be9e636b32ddcb70ef4c379340cc4c4da39"
+    },
+    {
+      "path": "robust/execution_v3/sensorless_r2_initialize_stopped.m",
+      "sha256": "f91f033c1b0e1377e9d3c5a4d5414e68c43d2bf4f4ebcd19d7a2e2e464c7f881"
+    },
+    {
+      "path": "robust/execution_v8/sensorless_r2_run_initialized.m",
+      "sha256": "9c8bb365ee35b376f1faad1c576f3ae8f24b6e7c83dfa5ffc32dadf2bb58ea8e"
+    }
+  ],
+  "model_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "block_reduction": "on",
+  "initialization": {
+    "exact_callback": "% Embedded verbatim in the model InitFcn; no helper file is needed to run SLX.\nteach_model = bdroot;\nteach_workspace = get_param(teach_model,'ModelWorkspace');\nteach_cfg_path = [teach_model '/时序设置'];\nteach_divider = str2double(get_param(teach_cfg_path,'speed_divider'));\nteach_cycles = str2double(get_param(teach_cfg_path,'pwm_cycles'));\nvalidateattributes(teach_divider,{'double'},{'scalar','real','finite','integer','>=',1,'<=',1000});\nvalidateattributes(teach_cycles,{'double'},{'scalar','real','finite','integer','>=',1,'<=',20});\nteach_dt = getVariable(teach_workspace,'dt');\nteach_period = getVariable(teach_workspace,'Ts_speed');\nif strcmp(get_param(teach_cfg_path,'speed_on'),'on')\n    teach_period = teach_dt*teach_divider;\nend\nassert(teach_period >= teach_dt && abs(teach_period/teach_dt-round(teach_period/teach_dt))<1e-9, ...\n    '速度环周期必须为电流控制周期的正整数倍。');\nteach_names = {'teaching_Ts_speed','teach_pwm_on','teach_pwm_cycles'};\nteach_values_to_set = {teach_period,double(strcmp(get_param(teach_cfg_path,'pwm_on'),'on')),teach_cycles};\nfor teach_index = 1:numel(teach_names)\n    if ~isequaln(getVariable(teach_workspace,teach_names{teach_index}),teach_values_to_set{teach_index})\n        assignin(teach_workspace,teach_names{teach_index},teach_values_to_set{teach_index});\n    end\nend\n\n\nassignin(get_param(bdroot,'ModelWorkspace'),'decoupling_enabled',double(strcmp(get_param([bdroot '/解耦'],'enabled'),'on')));\n% Embedded in InitFcn after the pre-existing teaching initialization.\ntim_m=bdroot;tim_ws=get_param(tim_m,'ModelWorkspace');tim_path=[tim_m '/时序设置'];\ntim_on=double(strcmp(get_param(tim_path,'real_on'),'on'));\ntim_period=getVariable(tim_ws,'dt');tim_speed=getVariable(tim_ws,'teaching_Ts_speed');\ntim_trigger=str2double(get_param(tim_path,'trigger_us'))*1e-6;\ntim_sync=str2double(get_param(tim_path,'sync_us'))*1e-6;\ntim_compute=str2double(get_param(tim_path,'compute_us'))*1e-6;\ntim_guard=str2double(get_param(tim_path,'settle_us'))*1e-6;\ntim_window=double(strcmp(get_param(tim_path,'window_on'),'on'));\ntim_hold=double(strcmp(get_param(tim_path,'invalid_hold_on'),'on'));\ntim_mode=double(strcmp(get_param(tim_path,'update_mode'),'仅谷底（对照）'));\ntim_h=1e-6;tim_control=tim_period;tim_speed_sample=tim_speed;\ntim_static=-1;\ntim_carrier=[0 tim_period/2 0];\nvalidateattributes([tim_trigger tim_sync tim_compute tim_guard],{'double'},{'real','finite','nonnegative'});\nif tim_on\n assert(strcmp(get_param(tim_path,'pwm_on'),'off'),'真实时序与旧整周期输出延迟不可同时启用。');\n assert(strcmp(get_param([tim_m '/采样设置'],'delay_on'),'off'),'真实时序与旧整周期采样延迟不可同时启用。');\n tim_h=62.5e-9;\n tim_grid_divider=str2double(get_param(tim_path,'grid_divider'));\n validateattributes(tim_grid_divider,{'double'},{'scalar','integer','>=',1,'<=',2});\n % Optional finer grid for convergence checks, still configured explicitly.\n tim_h=tim_h/tim_grid_divider;\n validateattributes(tim_h,{'double'},{'scalar','finite','positive'});\n tim_jeos=tim_trigger+tim_sync+4.5e-6;\n assert(tim_compute>=tim_h,'计算耗时至少为一个事件网格，避免写入读取同拍未完成指令。');\n assert(tim_jeos+tim_compute<tim_period,'本版要求整组转换及计算在同一PWM周期内完成。');\n assert(tim_jeos>0 && tim_jeos<tim_period);\n timing_grid_values=[tim_trigger tim_sync tim_compute tim_guard 1.1875e-6 1.5e-6 tim_period tim_speed];\n assert(all(abs(timing_grid_values/tim_h-round(timing_grid_values/tim_h))<1e-7),'事件时间必须落在62.5ns（或更细）网格上。');\n tim_control=[tim_period tim_jeos];\n tim_static=0;\n tim_speed_sample=[tim_speed tim_jeos+tim_speed-tim_period];\n % Existing comparator is carrier>=threshold; inverted carrier implements PWM1.\n tim_carrier=[tim_period/2 0 tim_period/2];\nelse\n assert(~tim_window && ~tim_hold,'有效窗口及无效值保持需要先开启真实时序。');\nend\nassert(~tim_hold || tim_window,'无效值保持需要同时开启低侧采样窗口。');\ntim_adc_cfg=[tim_on tim_window tim_hold tim_h tim_period tim_trigger 1.1875e-6 1.5e-6 tim_sync tim_guard tim_speed/tim_period];\ntim_pwm_cfg=[tim_on tim_h tim_period tim_trigger 1.1875e-6 1.5e-6 tim_sync tim_compute tim_mode 4000];\ntim_names={'timing_on','timing_h','timing_control_sample','timing_speed_sample','timing_carrier_y','timing_adc_cfg','timing_pwm_cfg','timing_static_math'};\ntim_vals={tim_on,tim_h,tim_control,tim_speed_sample,tim_carrier,tim_adc_cfg,tim_pwm_cfg,tim_static};\nfor tim_k=1:numel(tim_names),assignin(tim_ws,tim_names{tim_k},tim_vals{tim_k});end\nset_param(tim_m,'FixedStep','timing_h');\n\n% Append after existing timing InitFcn. Defaults preserve the timing baseline.\ndead_m=bdroot;dead_ws=get_param(dead_m,'ModelWorkspace');dead_path=[dead_m '/功率设置'];\ndead_gate=double(strcmp(get_param(dead_path,'gate_on'),'on'));\ndead_comp=double(strcmp(get_param(dead_path,'comp_on'),'on'));\ndead_dt=str2double(get_param(dead_path,'gate_us'))*1e-6;\ndead_ct=str2double(get_param(dead_path,'comp_us'))*1e-6;\ndead_band=str2double(get_param(dead_path,'hysteresis_A'));\ndead_zero=str2double(get_param(dead_path,'zero_A'));\nvalidateattributes([dead_dt dead_ct dead_band dead_zero],{'double'},{'real','finite','nonnegative'});\nassert(~dead_comp||dead_gate,'先启用门极死区，再启用补偿，避免给理想桥额外施加电压误差。');\nassert(~dead_gate||strcmp(get_param(dead_path,'dead_on'),'off'),'真实门极死区与旧平均死区压降互斥，避免重复计算。');\ndead_step=getVariable(dead_ws,'timing_h');\nif dead_gate\n assert(abs(getVariable(dead_ws,'Ld')-getVariable(dead_ws,'Lq'))<1e-12,'本轮近零续流模型适用于当前Ld=Lq的PMSM。');\n dead_step=min(dead_step,62.5e-9);\n assert(dead_dt<getVariable(dead_ws,'Ts')/4,'死区应小于PWM周期的四分之一。');\n assert(abs(dead_dt/dead_step-round(dead_dt/dead_step))<1e-7,'门极死区必须落在事件网格上。');\n assignin(dead_ws,'timing_h',dead_step);\nend\ndead_drop=double(strcmp(get_param(dead_path,'drop_on'),'on'));\nassignin(dead_ws,'dead_gate_on',dead_gate);assignin(dead_ws,'dead_h',dead_step);\nassignin(dead_ws,'dead_gate_cfg',[dead_gate dead_step dead_dt]);\nassignin(dead_ws,'dead_comp_cfg',[dead_comp dead_ct getVariable(dead_ws,'Ts') dead_band]);\nassignin(dead_ws,'dead_bridge_cfg',[getVariable(dead_ws,'p') getVariable(dead_ws,'phis') dead_zero dead_drop ...\n str2double(get_param(dead_path,'ron')) str2double(get_param(dead_path,'vf'))]);\nset_param(dead_m,'FixedStep','timing_h');\n",
+    "initialization_outside_compile": true,
+    "idempotent_workspace": true,
+    "variables": 79
+  },
+  "configuration": [
+    {
+      "block": "时序设置",
+      "parameters": [
+        {
+          "name": "speed_on",
+          "value": "off"
+        },
+        {
+          "name": "speed_divider",
+          "value": "20"
+        },
+        {
+          "name": "pwm_on",
+          "value": "off"
+        },
+        {
+          "name": "pwm_cycles",
+          "value": "1"
+        },
+        {
+          "name": "real_on",
+          "value": "on"
+        },
+        {
+          "name": "window_on",
+          "value": "off"
+        },
+        {
+          "name": "invalid_hold_on",
+          "value": "off"
+        },
+        {
+          "name": "trigger_us",
+          "value": "24.375"
+        },
+        {
+          "name": "sync_us",
+          "value": "0"
+        },
+        {
+          "name": "compute_us",
+          "value": "8"
+        },
+        {
+          "name": "settle_us",
+          "value": "0.5"
+        },
+        {
+          "name": "update_mode",
+          "value": "峰谷双更新（RCR=0）"
+        },
+        {
+          "name": "grid_divider",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "block": "采样设置",
+      "parameters": [
+        {
+          "name": "bias_on",
+          "value": "on"
+        },
+        {
+          "name": "bias_A",
+          "value": "[0.050000000000000003;-0.029999999999999999;0]"
+        },
+        {
+          "name": "gain_on",
+          "value": "on"
+        },
+        {
+          "name": "phase_gain",
+          "value": "[1.01;0.98999999999999999;1]"
+        },
+        {
+          "name": "noise_on",
+          "value": "on"
+        },
+        {
+          "name": "noise_rms",
+          "value": "0.02"
+        },
+        {
+          "name": "noise_seed",
+          "value": "20261016"
+        },
+        {
+          "name": "adc_on",
+          "value": "on"
+        },
+        {
+          "name": "adc_bits",
+          "value": "12"
+        },
+        {
+          "name": "adc_span",
+          "value": "20"
+        },
+        {
+          "name": "filter_on",
+          "value": "on"
+        },
+        {
+          "name": "filter_hz",
+          "value": "2000"
+        },
+        {
+          "name": "delay_on",
+          "value": "off"
+        },
+        {
+          "name": "delay_cycles",
+          "value": "1"
+        },
+        {
+          "name": "control_period",
+          "value": "dt"
+        },
+        {
+          "name": "analog_on",
+          "value": "on"
+        },
+        {
+          "name": "analog_hz",
+          "value": "5000"
+        },
+        {
+          "name": "numerical_step",
+          "value": "T"
+        },
+        {
+          "name": "real_mode",
+          "value": "strcmp(get_param([bdroot '/时序设置'],'real_on'),'on')"
+        }
+      ]
+    },
+    {
+      "block": "角度设置",
+      "parameters": [
+        {
+          "name": "bias_on",
+          "value": "off"
+        },
+        {
+          "name": "bias_deg",
+          "value": "2"
+        },
+        {
+          "name": "quant_on",
+          "value": "off"
+        },
+        {
+          "name": "step_deg",
+          "value": "0.18"
+        },
+        {
+          "name": "delay_on",
+          "value": "off"
+        },
+        {
+          "name": "delay_cycles",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "block": "功率设置",
+      "parameters": [
+        {
+          "name": "dead_on",
+          "value": "off"
+        },
+        {
+          "name": "dead_us",
+          "value": "0.5"
+        },
+        {
+          "name": "drop_on",
+          "value": "on"
+        },
+        {
+          "name": "ron",
+          "value": "0.01"
+        },
+        {
+          "name": "vf",
+          "value": "0.69999999999999996"
+        },
+        {
+          "name": "blend_A",
+          "value": "0.1"
+        },
+        {
+          "name": "pwm_period",
+          "value": "Ts"
+        },
+        {
+          "name": "gate_on",
+          "value": "on"
+        },
+        {
+          "name": "comp_on",
+          "value": "off"
+        },
+        {
+          "name": "gate_us",
+          "value": "0.5"
+        },
+        {
+          "name": "comp_us",
+          "value": "0.5"
+        },
+        {
+          "name": "hysteresis_A",
+          "value": "0.05"
+        },
+        {
+          "name": "zero_A",
+          "value": "0.01"
+        }
+      ]
+    }
+  ],
+  "native_h_s": 6.25E-8,
+  "execution": {
+    "initialized_once": true,
+    "step_chunks": 81,
+    "requested_major_steps": 1.2800001E+7,
+    "expected_major_steps": 1.2800001E+7,
+    "last_step": true,
+    "status": "completed",
+    "next_major_time_s": null,
+    "status_before_stop": "inactive",
+    "api_time_finite_at_completion": false,
+    "elapsed_s": 405.484913,
+    "status_after_stop": "inactive"
+  },
+  "endpoint_verified": true,
+  "raw_sha256": "6b5494ced4356d0c3d24dfbf55259537fdc7c63253ee5ab67fe9b73dc946f2d4",
+  "restoration": true,
+  "workspace_unchanged": true,
+  "comparisons": [
+    {
+      "name": "log_SW",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "log_TL",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "log_Tcm",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "log_Tcm_applied",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "log_Tcm_requested",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "log_Te",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "log_UDC",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "log_iabc_adc",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "log_iabc_filter",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "log_iabc_meas",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "log_iabc_noise",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "log_iabc_true",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "log_id",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "log_iq",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "log_iq_ref",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "log_nref",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "log_speed",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "log_theta_error",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "log_theta_meas",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "log_theta_true",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "log_v_alpha",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "log_v_beta",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "obs_adc_codes",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "obs_adc_timing",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "obs_analog_current",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "obs_aw_d",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "obs_aw_q",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "obs_carrier_fast",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "obs_current_fast",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "obs_dead_bridge",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "obs_dead_comp",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "obs_dead_gates",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": false,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": true,
+      "max_time_delta_s": 1.1102230246251565E-16
+    },
+    {
+      "name": "obs_dead_requested",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": false,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": true,
+      "max_time_delta_s": 1.1102230246251565E-16
+    },
+    {
+      "name": "obs_gates_fast",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "obs_id_ref",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "obs_mod",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "obs_phase_actual",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "obs_phase_ideal",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "obs_pi_d",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "obs_pi_q",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "obs_pi_speed",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "obs_power_drop",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "obs_pwm_timing",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "obs_sector",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "obs_state",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "obs_torque_fast",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "obs_vd",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "obs_vd_actual",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "obs_vdq_fast",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "obs_voltage",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "obs_vq",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    },
+    {
+      "name": "obs_vq_actual",
+      "data_exact": true,
+      "class_exact": true,
+      "time_exact": true,
+      "native_ticks_exact": true,
+      "time_encoding_allowed": false,
+      "max_time_delta_s": 0
+    }
+  ],
+  "all52_data_exact": true,
+  "all52_time_ticks_exact": true,
+  "all52_time_encoding_accepted": true
+}

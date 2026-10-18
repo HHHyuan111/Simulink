@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "kind": "reduced_native_monitor_logger_diagnostic",
+  "registered_before_implementation": "2026-10-17; pure and reduced Simulink core baseline/missing/reset all exact",
+  "purpose": "Isolate the unchanged native evaluation and enabled To Workspace logger from plant, SMO/PLL, voltage predictor and publication queue. This is a synthetic negative-control diagnostic, not R2 algorithm performance or a new main-model execution version.",
+  "implementation": "Build a new private model with62.5ns fixed discrete step for0.8s. Feed a deterministic integer-tick fixture into the original sensorless_r2_logging installer/monitor wrapper/state/step/event audit. Record counters every50us and every enabled native event. No original SLX edit, GUI action, parameter tuning or main-model execution.",
+  "fixture": "3000rpm truth and matching packet angle/speed, first reference tick462, completion+48ticks,800ticks/period. Permission from0.05s except ADC fault[0.3,0.30025)s and reset[0.600028875,0.600078875)s. Reasons1 before permission,2 during ADC fault,1024 during reset. A deliberate angle error8deg+1e-9rad exists on ticks[3200000,3232001), i.e.2ms+one native tick; control fields zero whenever denied.",
+  "independent_oracle": "Require12800001 native evaluations,16001 counter samples, all event ticks exactly union(0:800:12800000,510:800:12800000,3232001,9600462,9601262) =32004 events. False-valid longest/total must be32001ticks, permission duration11995200ticks(0.7497s), permission/low-speed/forbidden-control violations0. Existing independent event audit must agree. Do not classify the deliberate error as an algorithm failure or hide it.",
+  "execution_limit": "One fresh process, no automatic native retry. Persist phases and source hashes; retain failures. Only a pre-execution scripting/configuration defect may be repaired transparently; never repeat a completed numeric outcome to select success.",
+  "scope_limit": "No estimator/frontend feedback, PWM deadlines or real-fault recovery is tested. Passing does not prove whole-model stability or root cause; failing may narrow the reproducer. R2 two full-model gaps and all prior attempt caps remain unchanged."
+}

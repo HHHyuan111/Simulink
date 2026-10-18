@@ -1,0 +1,6 @@
+{
+  "plant_reexecuted": false,
+  "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/diagnostics');probe_sensorless_r2_core_replay('D:/simulink/dev/modern/sensorless/runs/N3R2_core_isolation_once');",
+  "automatic_retry": false,
+  "exit_code": 0
+}

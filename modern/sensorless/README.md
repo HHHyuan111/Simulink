@@ -27,6 +27,7 @@
 - `milestones/N3R2_development.md`：后续动态归档复核、R/L绑定隔离、故障接口及串行长时测试进展；完整R2矩阵仍未通过。
 - `milestones/N3R2_execution_followup.md`：新增边界工况、两项原生执行缺口、一次初始化入口与原日志时间格式适配；R2仍未通过。
 - `milestones/N3R2_status.md`：14 项长工况的统一开发状态表，区分完整执行通过、仅归档指标复核通过和执行缺口。
+- `milestones/N3R2_isolation.md`：纯函数、缩减 Simulink 核心、原生日志及无观测层主模型的分层隔离；诊断不改判整模型验收。
 - `contracts/nonideal_r2_test_plan.json`：实施前冻结的长时精度、动态、原生误有效及故障标准。
 - `robust/performance/INTERFACE.md`：R2仅评价信号、单位、原生计数/事件区间及执行器支持范围。
 - `robust/integration/INTERFACE.md`：三相标定/对齐、滤波匹配、延后发布、47个作用域Goto及v2日志单位。

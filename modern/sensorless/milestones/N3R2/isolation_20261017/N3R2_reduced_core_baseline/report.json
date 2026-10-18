@@ -1,0 +1,45 @@
+{
+  "kind": "reduced_control_rate_core_graph",
+  "case_id": "baseline",
+  "all_passed": false,
+  "phase": "diagnostic_error",
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "process_id": 63544,
+  "plant_reexecuted": false,
+  "native_supervision_tested": false,
+  "whole_model_fault_acceptance": false,
+  "contract_sha256": "c74ed9f8403848388f653de24163adfb5b741f1c50fe9c5a45464e62e88ae6ce",
+  "pure_report_sha256": "c51f1405e6f679c0850022a38004a99a6c30f5b40e3d702da2d327284773652b",
+  "probe_sha256": "2663b975faf46f2bde91e47ed2eeafa1b69c8a05b78951f1c77bafe44bfc4d24",
+  "samples": 16000,
+  "physical_reference_start_s": 2.8874999999999997E-5,
+  "clock_mapping": "physical reference =28.875us + ordinal*50us",
+  "sources": [
+    {
+      "path": "blocks/sless_smo_block.m",
+      "sha256": "613827816e25143c7b4bf6b1939d3cf76254f6d071d8d19d3438cc80bc257041"
+    },
+    {
+      "path": "robust/integration/blocks/sless_v2_emf_block.m",
+      "sha256": "c8f8377066a8ea693d33073eec4c1e98aa168169b52be02efdbf0f90a234c4b7"
+    },
+    {
+      "path": "blocks/sless_pll_block.m",
+      "sha256": "5ca50f6a0ac7173c5f5ad830f85e8b7b1d21e2eae46c33c8417745f01c079be8"
+    },
+    {
+      "path": "blocks/sless_validity_block.m",
+      "sha256": "124b851359dde22064d21a56d050652fae9067cbac902eaf9b86ab3ee45711ba"
+    },
+    {
+      "path": "robust/phase_guard/blocks/sless_r2_phase_guard_block.m",
+      "sha256": "8e748e382ca87547e2ba67e043f9a75bf404c50b2690581fcf64d428e17a4767"
+    }
+  ],
+  "scoped_goto_count": 29,
+  "solver": "FixedStepDiscrete",
+  "fixed_step_s": 5E-5,
+  "reduced_model_sha256": "3ce37265e20de8539cadad86e79c54c2e0877bf05c2806e425ed76c002baf79e",
+  "phase_at_error": "compile_and_run_reduced_graph",
+  "error": "错误使用 probe_sensorless_r2_reduced_graph (第 70 行)\n模型 'sless_core_baseline' 不存在。"
+}

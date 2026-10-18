@@ -1,0 +1,26 @@
+{
+  "kind": "exact_graph_constructor_derivation",
+  "algorithm_equations_changed": false,
+  "resource_paths": "original trusted directories, computed relative to adapter location",
+  "explicit_preinstall_compile_removed": true,
+  "files": [
+    {
+      "original": "pmsm_sensorless_model.m",
+      "original_sha256": "171eba2375d8524f1a57c7702c4366bb43915a9b6228332b46518aa1f3188e4c",
+      "generated": "pmsm_sensorless_geometry_model.m",
+      "generated_sha256": "25e67df925d9f4f2a8bc2dcaa672b5c21c94c0da9e3c58897f234a3856ef33ee"
+    },
+    {
+      "original": "robust/integration/pmsm_sensorless_v2_model.m",
+      "original_sha256": "d4ad2c706bcdcc79b792315bebc195b95bbbb1834441e723a9414c7598cf2ac5",
+      "generated": "pmsm_sensorless_v2_geometry_model.m",
+      "generated_sha256": "0492b1986f73e984056e5673bed6719ef2bffcd788f420766d5f61bc9cc0d5bc"
+    },
+    {
+      "original": "../teaching/pmsm_reference.m",
+      "original_sha256": "f2bd66d3eb7fa0c999957412cf33e5f1d6fa680a288e58bb54071f939175e2fd",
+      "generated": "pmsm_reference_geometry.m",
+      "generated_sha256": "40801e08c10ec236af50ef983ebe0ad459f37ff7343c55be612567fa32f39196"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "exit_code": 0,
+  "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/diagnostics');audit_sensorless_r2_port_geometry('D:/simulink/dev/modern/sensorless/runs/N3R2_port_geometry_once');",
+  "automatic_retry": false
+}

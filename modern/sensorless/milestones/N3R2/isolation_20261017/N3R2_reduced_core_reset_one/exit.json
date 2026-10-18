@@ -1,0 +1,6 @@
+{
+  "expression": "addpath('D:/simulink/dev/modern/sensorless/robust/diagnostics');probe_sensorless_r2_reduced_graph('reset_one','D:/simulink/dev/modern/sensorless/runs/N3R2_reduced_core_reset_one');",
+  "exit_code": 0,
+  "plant_reexecuted": false,
+  "automatic_retry": false
+}

@@ -9,7 +9,7 @@ BASE = Path(__file__).resolve().parents[2]
 DEST = BASE / 'milestones/N3R2/development_20261017'
 VERSIONS = {'basic_scenarios_v5', 'literal_binding_v6', 'fault_ingress_schedule_v7',
             'single_initialization_v8', 'single_init_short_cache_v8r1',
-            'block_reduction_off_v9'}
+            'block_reduction_off_v9', 'geometry_bound_constructor'}
 
 
 def read(path):

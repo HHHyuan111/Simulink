@@ -1,0 +1,195 @@
+{
+  "kind": "offline_core_isolation",
+  "all_passed": true,
+  "phase": "completed",
+  "plant_reexecuted": false,
+  "whole_model_fault_acceptance": false,
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "process_id": 63840,
+  "contract_sha256": "1ead284eba45aa7a082ff1353d4bb35ceec96db841f8874c8ae3d9c8f33a893b",
+  "reference_raw_sha256": "6ee976231b6cd7aeb866bb5d863126b2f818b381bb1f93b01af209a447a00b4a",
+  "reference_record_sha256": "72968d8faf08401eb372337ad7778ed2470289f1d2f6ea42d5b74cb1a77e3eeb",
+  "sources": [
+    {
+      "path": "sensorless_smo_step.m",
+      "sha256": "19e2d581dabddcac1dab014baa4b082c6465afd01fac01eaf1f8ad962052f033"
+    },
+    {
+      "path": "sensorless_emf_step.m",
+      "sha256": "6be57dd81cd118962def67a7450d9513c8d0fa077d4839b552be452762ce4259"
+    },
+    {
+      "path": "sensorless_pll_step.m",
+      "sha256": "1d16dc17b1b50f157dbe25e14a91ec06bf5073d393b1d816645f80a036d5c328"
+    },
+    {
+      "path": "sensorless_validity_step.m",
+      "sha256": "5772a44ca9911b3618279feeaf225177ea2fd74160b9716ddcb60a00a8d50272"
+    },
+    {
+      "path": "sensorless_state.m",
+      "sha256": "193d39a8cff13b51637ff783d1bf42b7a4753e23db22fa45b1afc09723e72206"
+    },
+    {
+      "path": "sensorless_rt_config.m",
+      "sha256": "d548b123f03f7483aaa3175f4be6dc4aeaab843cd74d71c79e70160075524a6f"
+    },
+    {
+      "path": "robust/integration/sensorless_v2_front_phase.m",
+      "sha256": "43ff9c1f113f3f5e211ff13ff5d9a7cd5f83c6c30e656d73c73b8d7426b35bcc"
+    },
+    {
+      "path": "robust/integration/sensorless_v2_config_rt.m",
+      "sha256": "2191001a30f487abdc8a1efe431464c7c3c3063fa1e2b95916273bc02c5f58ec"
+    },
+    {
+      "path": "robust/phase_guard/sensorless_r2_phase_guard.m",
+      "sha256": "dd78d4b64a9cf7b80c3e3f0b82a4d95f86b2cebcee1a0ddb282407a2bd7f8e5b"
+    }
+  ],
+  "probe_sha256": "ef2115215905bd676cb55491732543b9122e839aac9a510581e70f2cf33ec494",
+  "private_environment_sha256": "d930a366d01b1e9496a4e1d62ddd062c636bd4792656609a7a96a9516265f7d6",
+  "startup_script_found": false,
+  "source_resolution_checked": true,
+  "elapsed_s": 0.5665486,
+  "samples": 16000,
+  "comparisons": [
+    {
+      "field": "i_hat",
+      "exact": true,
+      "max_abs": 0,
+      "first_differing_sample": 0
+    },
+    {
+      "field": "i_residual",
+      "exact": true,
+      "max_abs": 0,
+      "first_differing_sample": 0
+    },
+    {
+      "field": "injection",
+      "exact": true,
+      "max_abs": 0,
+      "first_differing_sample": 0
+    },
+    {
+      "field": "emf",
+      "exact": true,
+      "max_abs": 0,
+      "first_differing_sample": 0
+    },
+    {
+      "field": "emf_magnitude",
+      "exact": true,
+      "max_abs": 0,
+      "first_differing_sample": 0
+    },
+    {
+      "field": "theta_raw",
+      "exact": true,
+      "max_abs": 0,
+      "first_differing_sample": 0
+    },
+    {
+      "field": "phase_correction",
+      "exact": true,
+      "max_abs": 0,
+      "first_differing_sample": 0
+    },
+    {
+      "field": "front_phase",
+      "exact": true,
+      "max_abs": 0,
+      "first_differing_sample": 0
+    },
+    {
+      "field": "theta",
+      "exact": true,
+      "max_abs": 0,
+      "first_differing_sample": 0
+    },
+    {
+      "field": "omega_e",
+      "exact": true,
+      "max_abs": 0,
+      "first_differing_sample": 0
+    },
+    {
+      "field": "speed",
+      "exact": true,
+      "max_abs": 0,
+      "first_differing_sample": 0
+    },
+    {
+      "field": "pll_error",
+      "exact": true,
+      "max_abs": 0,
+      "first_differing_sample": 0
+    },
+    {
+      "field": "pll_integral",
+      "exact": true,
+      "max_abs": 0,
+      "first_differing_sample": 0
+    },
+    {
+      "field": "pll_saturated",
+      "exact": true,
+      "max_abs": 0,
+      "first_differing_sample": 0
+    },
+    {
+      "field": "valid",
+      "exact": true,
+      "max_abs": 0,
+      "first_differing_sample": 0
+    },
+    {
+      "field": "state",
+      "exact": true,
+      "max_abs": 0,
+      "first_differing_sample": 0
+    },
+    {
+      "field": "history",
+      "exact": true,
+      "max_abs": 0,
+      "first_differing_sample": 0
+    },
+    {
+      "field": "phase_guard",
+      "exact": true,
+      "max_abs": 0,
+      "first_differing_sample": 0
+    }
+  ],
+  "baseline_exact": true,
+  "numeric_elements": 496000,
+  "core_faults": {
+    "missing_five": {
+      "id": "missing_five",
+      "component_only": true,
+      "affected_samples": 5,
+      "fault_reference_s": 0.600028875,
+      "healthy_reference_s": 0.600278875,
+      "first_requalified_reference_s": 0.630178875,
+      "no_packet_qualification_during_fault": true,
+      "qualification_not_before_599_opportunities": true,
+      "requalified_by_150ms": true,
+      "no_measurement_correction": true
+    },
+    "reset_one": {
+      "id": "reset_one",
+      "component_only": true,
+      "affected_samples": 1,
+      "fault_reference_s": 0.600028875,
+      "healthy_reference_s": 0.600078875,
+      "first_requalified_reference_s": 0.66717887500000006,
+      "no_packet_qualification_during_fault": true,
+      "qualification_not_before_599_opportunities": true,
+      "requalified_by_150ms": true,
+      "reset_states_zero": true
+    }
+  },
+  "R2_case_status_changed": false
+}
