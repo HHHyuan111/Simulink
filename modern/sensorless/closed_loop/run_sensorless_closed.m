@@ -6,7 +6,7 @@ file=fullfile(base,'models','closed_loop',[mdl '.slx']);build=jsondecode(filerea
 report=struct('phase','load','passed',false,'process_id',matlabProcessID,'simulation_starts',0,'model_sha256',teach_hash(file),'label',label);
 copyfile(file,fullfile(folder,[mdl '.slx']));copyfile(fullfile(base,'closed_loop','acceptance.json'),fullfile(folder,'acceptance.json'));
 cache=fullfile(base,'.build',['closed_' label]);Simulink.fileGenControl('set','CacheFolder',fullfile(cache,'c'),'CodeGenFolder',fullfile(cache,'g'),'createDir',true);
-load_system(file);if show,open_system(mdl);open_system([mdl '/闭环结果观测/闭环全过程']);end
+load_system(file);if show,open_system(mdl);open_sensorless_closed_scopes(mdl);end
 try
  report.phase='simulate';report.simulation_starts=1;write_report;started=tic;
  out=sim(mdl,'SimulationMode','normal','StopTime','.5','ReturnWorkspaceOutputs','on');report.elapsed_s=toc(started);assert(isempty(out.ErrorMessage));
@@ -17,7 +17,7 @@ try
  c=jsondecode(fileread(fullfile(base,'closed_loop','acceptance.json')));metrics=analyse_sensorless_closed(signals,c);
  teach_writejson(fullfile(folder,'metrics.json'),metrics);report.metrics_passed=metrics.passed;
  report.passed=metrics.passed&&strcmp(report.model_sha256,build.model_sha256);report.phase='completed';write_report;
- if show,open_system([mdl '/闭环结果观测/闭环全过程']);end
+ if show,open_sensorless_closed_scopes(mdl);end
 catch err
  report.failed_phase=report.phase;report.phase='failed';report.error_identifier=err.identifier;write_report;rethrow(err);
 end
