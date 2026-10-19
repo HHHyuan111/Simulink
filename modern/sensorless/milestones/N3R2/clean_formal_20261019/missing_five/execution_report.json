@@ -1,0 +1,28 @@
+{
+  "kind": "normal_serialized_parent_and_observer",
+  "phase": "execute_normal_parent_normal_child_once",
+  "all_passed": false,
+  "process_id": 33000,
+  "builder_process_id": 59776,
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "simulation_starts": 1,
+  "compile_requested": true,
+  "explicit_generated_target_builds": 0,
+  "compiler_setup_performed": false,
+  "R2_passed": false,
+  "probe_sha256": "dcb796b285dd15296185de355eefea7de9690a0bcabf9cbdceec795756be3874",
+  "parent_model_file_source": true,
+  "child_model_file_source": true,
+  "parent_exact": true,
+  "child_exact": true,
+  "workspace_count": 86,
+  "callbacks_empty": true,
+  "backup_exact": true,
+  "backup_persistent": true,
+  "graph_passed": true,
+  "parent_compile_pairs_requested": 1,
+  "bridge_compiled_sample_time": [
+    0,
+    0
+  ]
+}

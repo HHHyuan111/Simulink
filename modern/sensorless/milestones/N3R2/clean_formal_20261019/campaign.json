@@ -1,0 +1,147 @@
+{
+  "schema": 1,
+  "node": "N3R2",
+  "campaign_type": "formal_frozen_candidate_matrix_clean_runtime",
+  "execution_version": "normal_serialized_parent_and_observer",
+  "environment": "new_official_activated_installation",
+  "candidate_sha256": "ee59860c192d5ff157cb8c7bd4505c07c6fafb3ea9832c17054d423dd51a4c47",
+  "status": "stopped_execution_failure",
+  "formal_retries": 0,
+  "R2_passed": false,
+  "R3_started": false,
+  "jobs": [
+    {
+      "case_id": "missing_five",
+      "status": "failed_execution",
+      "stages": [
+        {
+          "stage": "build",
+          "status": "passed",
+          "pid": 62212,
+          "exit_code": 0,
+          "exit_hex": "0x00000000",
+          "started_at": "2026-10-19T00:49:03.8260167Z",
+          "finished_at": "2026-10-19T00:49:40.6886856Z"
+        },
+        {
+          "stage": "execution",
+          "status": "exited",
+          "pid": 14368,
+          "exit_code": -1073741819,
+          "exit_hex": "0xc0000005",
+          "started_at": "2026-10-19T00:49:41.3042927Z",
+          "finished_at": "2026-10-19T00:51:03.1135860Z"
+        }
+      ],
+      "completed_folder": "",
+      "formal_provenance": ""
+    },
+    {
+      "case_id": "diagnostic_combined_3000",
+      "status": "pending",
+      "stages": [],
+      "completed_folder": "",
+      "formal_provenance": ""
+    },
+    {
+      "case_id": "combined_1000",
+      "status": "pending",
+      "stages": [],
+      "completed_folder": "",
+      "formal_provenance": ""
+    },
+    {
+      "case_id": "combined_2000",
+      "status": "pending",
+      "stages": [],
+      "completed_folder": "",
+      "formal_provenance": ""
+    },
+    {
+      "case_id": "combined_reverse_1000",
+      "status": "pending",
+      "stages": [],
+      "completed_folder": "",
+      "formal_provenance": ""
+    },
+    {
+      "case_id": "combined_reverse_3000",
+      "status": "pending",
+      "stages": [],
+      "completed_folder": "",
+      "formal_provenance": ""
+    },
+    {
+      "case_id": "combined_dynamic",
+      "status": "pending",
+      "stages": [],
+      "completed_folder": "",
+      "formal_provenance": ""
+    },
+    {
+      "case_id": "hot_R1p2_L0p8",
+      "status": "pending",
+      "stages": [],
+      "completed_folder": "",
+      "formal_provenance": ""
+    },
+    {
+      "case_id": "cold_R0p8_L1p2",
+      "status": "pending",
+      "stages": [],
+      "completed_folder": "",
+      "formal_provenance": ""
+    },
+    {
+      "case_id": "deadtime_2us",
+      "status": "pending",
+      "stages": [],
+      "completed_folder": "",
+      "formal_provenance": ""
+    },
+    {
+      "case_id": "adc_clipping",
+      "status": "pending",
+      "stages": [],
+      "completed_folder": "",
+      "formal_provenance": ""
+    },
+    {
+      "case_id": "reset_one",
+      "status": "pending",
+      "stages": [],
+      "completed_folder": "",
+      "formal_provenance": ""
+    },
+    {
+      "case_id": "low_speed_stop",
+      "status": "pending",
+      "stages": [],
+      "completed_folder": "",
+      "formal_provenance": ""
+    },
+    {
+      "case_id": "deadline_jitter",
+      "status": "pending",
+      "stages": [],
+      "completed_folder": "",
+      "formal_provenance": ""
+    }
+  ],
+  "remaining_cases": [
+    "missing_five",
+    "diagnostic_combined_3000",
+    "combined_1000",
+    "combined_2000",
+    "combined_reverse_1000",
+    "combined_reverse_3000",
+    "combined_dynamic",
+    "hot_R1p2_L0p8",
+    "cold_R0p8_L1p2",
+    "deadtime_2us",
+    "adc_clipping",
+    "reset_one",
+    "low_speed_stop",
+    "deadline_jitter"
+  ]
+}

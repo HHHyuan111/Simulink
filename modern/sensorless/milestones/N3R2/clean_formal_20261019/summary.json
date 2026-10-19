@@ -1,0 +1,125 @@
+{
+  "captured_at": "2026-10-19T00:52:27.735534+00:00",
+  "analysis_only": true,
+  "simulation_reexecuted": false,
+  "status": "stopped_execution_failure",
+  "R2_passed": false,
+  "passed_cases": 0,
+  "total_cases": 14,
+  "remaining_cases": [
+    "missing_five",
+    "diagnostic_combined_3000",
+    "combined_1000",
+    "combined_2000",
+    "combined_reverse_1000",
+    "combined_reverse_3000",
+    "combined_dynamic",
+    "hot_R1p2_L0p8",
+    "cold_R0p8_L1p2",
+    "deadtime_2us",
+    "adc_clipping",
+    "reset_one",
+    "low_speed_stop",
+    "deadline_jitter"
+  ],
+  "candidate_sha256": "ee59860c192d5ff157cb8c7bd4505c07c6fafb3ea9832c17054d423dd51a4c47",
+  "frozen_files_verified": 871,
+  "formal_retries": 0,
+  "results": [
+    {
+      "case_id": "missing_five",
+      "status": "failed_execution",
+      "formal_retries": 0,
+      "build": {
+        "process_id": 59776,
+        "status": "passed",
+        "phase": "completed",
+        "simulation_starts": 0,
+        "native_endpoint_verified": null,
+        "reference_restored": true,
+        "main_bridge_preserved": true
+      },
+      "execution": {
+        "process_id": 33000,
+        "status": "running",
+        "phase": "execute_normal_parent_normal_child_once",
+        "simulation_starts": 1,
+        "native_endpoint_verified": false,
+        "reference_restored": false,
+        "main_bridge_preserved": false
+      }
+    },
+    {
+      "case_id": "diagnostic_combined_3000",
+      "status": "pending",
+      "formal_retries": 0
+    },
+    {
+      "case_id": "combined_1000",
+      "status": "pending",
+      "formal_retries": 0
+    },
+    {
+      "case_id": "combined_2000",
+      "status": "pending",
+      "formal_retries": 0
+    },
+    {
+      "case_id": "combined_reverse_1000",
+      "status": "pending",
+      "formal_retries": 0
+    },
+    {
+      "case_id": "combined_reverse_3000",
+      "status": "pending",
+      "formal_retries": 0
+    },
+    {
+      "case_id": "combined_dynamic",
+      "status": "pending",
+      "formal_retries": 0
+    },
+    {
+      "case_id": "hot_R1p2_L0p8",
+      "status": "pending",
+      "formal_retries": 0
+    },
+    {
+      "case_id": "cold_R0p8_L1p2",
+      "status": "pending",
+      "formal_retries": 0
+    },
+    {
+      "case_id": "deadtime_2us",
+      "status": "pending",
+      "formal_retries": 0
+    },
+    {
+      "case_id": "adc_clipping",
+      "status": "pending",
+      "formal_retries": 0
+    },
+    {
+      "case_id": "reset_one",
+      "status": "pending",
+      "formal_retries": 0
+    },
+    {
+      "case_id": "low_speed_stop",
+      "status": "pending",
+      "formal_retries": 0
+    },
+    {
+      "case_id": "deadline_jitter",
+      "status": "pending",
+      "formal_retries": 0
+    }
+  ],
+  "old_formal1of14_closed_preserved": true,
+  "old_Normal_short_failure_preserved": true,
+  "native_root_cause_confirmed": false,
+  "hardware_or_WCET_validated": false,
+  "R3_started": false,
+  "feedback_takeover": false,
+  "curator_sha256": "70d14eac2e9dfb42f013674d6c26d7b4a65d9490e52f62ee0f51abf501993140"
+}

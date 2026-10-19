@@ -1,0 +1,15 @@
+{
+  "analysis_only": true,
+  "simulation_reexecuted": false,
+  "files": 883,
+  "zip_entries": 884,
+  "zip_bytes": 3470693,
+  "zip_sha256": "5a3151329a5e5273a4fce45383ff0946e51dcf53e0c3213a229d044bf0363a78",
+  "manifest_sha256": "87635d7b9b42f0e1f501e5661f7ada1d41a3e1c5df8e6d8feea365da1b1e6e28",
+  "relative_zip": "runs/N3R2_clean_failure_evidence.zip",
+  "source_files_verified": 871,
+  "portable_execution_validated": false,
+  "external_upload_performed": false,
+  "raw_logs_or_process_captures_included": false,
+  "R2_passed": false
+}
