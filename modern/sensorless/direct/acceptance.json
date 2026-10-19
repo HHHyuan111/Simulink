@@ -1,0 +1,20 @@
+{
+  "scope": "Direct local-model SMO normal convergence, with existing engineering nonidealities",
+  "speed_rpm": 3000,
+  "duration_s": 0.25,
+  "steady_window_s": [0.162, 0.25],
+  "minimum_electrical_cycles": 20,
+  "angle_rms_deg_max": 3,
+  "angle_peak_deg_max": 8,
+  "speed_mean_relative_max": 0.01,
+  "speed_rms_relative_max": 0.02,
+  "plant_target_relative_max": 0.01,
+  "plant_slope_rpm_s_max": 50,
+  "completed_permit_fraction_min": 0.99,
+  "observer_samples": 5000,
+  "publication_delay_s": 0.000003,
+  "independent_successful_executions_required": 2,
+  "retry_failed_execution": false,
+  "deliverable": "Saved local model, parameters, raw results, convergence plot and independent repeat comparison",
+  "feedback_takeover": false
+}
