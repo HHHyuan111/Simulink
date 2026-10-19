@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "model_sha256": "8d04920daa86ecbe4616bd49b3b4295c8937786e4972eb2f25e8c9c9ae899f22",
+  "smo_native_blocks": 69,
+  "smo_block_types": {
+    "Signum": 1,
+    "Abs": 1,
+    "Switch": 7,
+    "From": 26,
+    "Gain": 5,
+    "Goto": 11,
+    "RelationalOperator": 1,
+    "Sum": 5,
+    "Constant": 7,
+    "Product": 2,
+    "UnitDelay": 2,
+    "Saturate": 1
+  },
+  "smo_block_rectangle_overlaps": [],
+  "smo_new_subsystems": 0,
+  "smo_masks": 0,
+  "original_nine_foc_region_positions_unchanged": true,
+  "all_original_blocks_preserved": true,
+  "original_equations_parameters_states_and_resolved_inputs_equal": true,
+  "core_three_outputs_exact": true,
+  "physical_simulation_repeated": false,
+  "closed_loop_evidence": "SMO_native/closed_report.json",
+  "closed_loop_evidence_model_sha256": "7c2d416f94266497bd796868a0fa92a7bd8573bf9435e79eafdd544aa3a629a8"
+}

@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "equations_states_parameters_scripts_and_resolved_inputs_equal": true,
+  "added_routing_and_zero_sources": [
+    "PMSM_SMO_ClosedLoop/无感观测/滑模观测/注入用残差",
+    "PMSM_SMO_ClosedLoop/无感观测/滑模观测/预测用历史注入",
+    "PMSM_SMO_ClosedLoop/无感观测/滑模观测/残差无效清零",
+    "PMSM_SMO_ClosedLoop/无感观测/滑模观测/残差复位清零",
+    "PMSM_SMO_ClosedLoop/无感观测/滑模观测/注入复位清零",
+    "PMSM_SMO_ClosedLoop/无感转速目标"
+  ],
+  "new_subsystems": 0,
+  "new_masks": 0,
+  "physical_simulation_repeated": false
+}

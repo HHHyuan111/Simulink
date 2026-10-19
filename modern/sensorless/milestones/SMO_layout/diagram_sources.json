@@ -1,0 +1,18 @@
+{
+  "source": "Native Simulink print -s; no image editing",
+  "model_sha256": "8d04920daa86ecbe4616bd49b3b4295c8937786e4972eb2f25e8c9c9ae899f22",
+  "images": [
+    {
+      "file": "native_smo.png",
+      "sha256": "ea87b3f534befa2f4ae59a196f6d25c960ca21b57652ff80ba3e7673b9a2301a"
+    },
+    {
+      "file": "native_observer.png",
+      "sha256": "96cf3e0f087deda355c08f0264008093839fd2404d1ec0808a4f192fa2918afe"
+    },
+    {
+      "file": "native_model.png",
+      "sha256": "fd88701e8336666b41ad610f1e0a988e0056c387ae093c36d1ed46b187b06914"
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 # 仅将滑模计算展开为原生块
 
+本页为 `25b9c83` 当时的实现及验收记录。其图形排版已由 [SMO_layout 节点](SMO_layout.md) 修复，当前模型和原生结构图见该节点；以下指纹及结果保留为历史证据。
+
 按用户纠正的范围，撤回 `7eaa60e` 中的全模型布局、反电势与 PLL 展开，回到 `9ca4d2b` 的已验收闭环模型。此次只改 `无感观测/滑模观测` 内部，直接使用原生 Gain、Sum、Unit Delay、Abs、Sign、Relational Operator、Switch、Divide、Saturation、Constant、Goto/From，不新增自定义子系统或掩码。
 
 实施前的标准在 `closed_loop/native_smo_acceptance.json`。本页以外的模块、位置、参数、掩码、连接、脚本及模型求解配置需与原版一致；核心逐样本核对实际 10000 个采样点及复位、无效样本分支；完整闭环复用原 0.50 s 工况和验收门槛，并比较全部 100 路日志。

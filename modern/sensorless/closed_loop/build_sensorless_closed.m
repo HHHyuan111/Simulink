@@ -73,10 +73,12 @@ scopes=find_system(mdl,'LookUnderMasks','all','BlockType','Scope');
 for k=1:numel(scopes),callback=get_param(scopes{k},'OpenFcn');if contains(callback,old),set_param(scopes{k},'OpenFcn',strrep(callback,old,mdl));end,end
 add_native_closed_scopes(mdl);
 nativeSmo=build_native_smo(mdl);
+presentation=tidy_native_smo(mdl);
 save_system(mdl,file);
 report=struct('passed',true,'simulation_started',false,'model',mdl,'model_sha256',teach_hash(file),...
  'direct_source_sha256',teach_hash(source),'config',cfg,'control_truth_inputs',false,'feedback_paths',{{'Park: CL_theta_sample','Inverse Park: CL_theta_pwm','Decoupling: CL_omega','Speed PI: published SMO rpm'}});
 report.native_smo=nativeSmo;
+report.presentation=presentation;
 teach_writejson(fullfile(folder,'build.json'),report);
 end
 function close_private(a,b)
