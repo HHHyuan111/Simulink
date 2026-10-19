@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "type": "same_host_same_version_after_user_activation_diagnostic",
+  "status": "diagnostic_passed_not_R2_qualified",
+  "R2_passed": false,
+  "retries": 0,
+  "maximum_sim_calls": 1,
+  "simulation_job_launched": true,
+  "protocol_sha256": "19fafd7108cce5c39eec6d23efe488326678d15e09e8f8309b4ece074ae8b7fc",
+  "activation_continuation_protocol_sha256": "2d877474f8b02fdd75a3c1ced95fc13bfb42acbe0a278524401905fd13bfa661",
+  "diagnostic_sources_sha256": "d22d1efcd7e051b02fc3ace5cdee4ab76e39cf4535f0f8139e0aa5f8f4df7591",
+  "jobs": [
+    {
+      "stage": "runtime_preflight",
+      "status": "passed",
+      "pid": 27536,
+      "exit_code": 0,
+      "exit_hex": "0x00000000",
+      "started_at": "2026-10-19T00:39:16.3246463Z",
+      "finished_at": "2026-10-19T00:40:06.1119235Z"
+    },
+    {
+      "stage": "short_once",
+      "status": "passed",
+      "pid": 49536,
+      "exit_code": 0,
+      "exit_hex": "0x00000000",
+      "started_at": "2026-10-19T00:40:06.1317053Z",
+      "finished_at": "2026-10-19T00:41:59.4678319Z"
+    }
+  ]
+}

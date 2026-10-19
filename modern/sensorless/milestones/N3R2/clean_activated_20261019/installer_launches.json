@@ -1,0 +1,17 @@
+[
+  {
+    "requested_at": "2026-10-18T12:50:23.8164887Z",
+    "script_sha256": "9894db111a64d7b8f3108e66ac969a3e950669a438a199622ad6ad8b40a1c029",
+    "mpm_sha256": "10a7265efd1660d39ee27c24629fd7826aea6eeb7f6ad721f5e00ff7f0037939",
+    "status": "elevated_installer_launched",
+    "pid": 67820
+  },
+  {
+    "requested_at": "2026-10-18T12:51:45.5969628Z",
+    "host": "C:\\Users\\lenovo\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe",
+    "reason": "First Windows PowerShell host exited before installer status was created; use configured PowerShell 7 RemoteSigned host, no policy changes",
+    "script_sha256": "9894db111a64d7b8f3108e66ac969a3e950669a438a199622ad6ad8b40a1c029",
+    "status": "elevated_installer_launched",
+    "pid": 36104
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "all_passed": true,
+  "logs": 96,
+  "numeric_elements": 10203729.0,
+  "failures": [],
+  "reference": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_fault_final_short_precheck_20261017_141116_c027734c-49b8-4ecd-8e60-81a403609cfc\\r1_short_logging_check_attempt_2",
+  "current": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_clean_install_activated_control_once\\short_once\\log_format",
+  "all_Time_Data_equal": true,
+  "native_endpoint_included": true,
+  "single_physical_sim_call": true,
+  "legacy_init_flag_fabricated": false
+}

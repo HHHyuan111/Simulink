@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "simulation_starts": 0,
+  "model_loads": 0,
+  "process_id": 56852,
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "release": "2026a",
+  "matlabroot": "D:\\simulink\\dev\\modern\\sensorless\\.build\\matlab_clean\\R2026a_U5",
+  "prefdir": "D:\\simulink\\dev\\modern\\sensorless\\.build\\matlab_clean\\activated_preferences\\runtime_preflight",
+  "all_passed": true,
+  "product_names": [
+    "MATLAB",
+    "Simulink",
+    "Stateflow"
+  ],
+  "license_test": {
+    "MATLAB": true,
+    "Simulink": true,
+    "Stateflow": true
+  },
+  "functions": [
+    {
+      "name": "sim",
+      "path": "built-in (D:\\simulink\\dev\\modern\\sensorless\\.build\\matlab_clean\\R2026a_U5\\toolbox\\simulink\\engine\\mi\\sim)"
+    },
+    {
+      "name": "load_system",
+      "path": "D:\\simulink\\dev\\modern\\sensorless\\.build\\matlab_clean\\R2026a_U5\\toolbox\\simulink\\slx\\m\\load_system.m"
+    },
+    {
+      "name": "sfroot",
+      "path": "D:\\simulink\\dev\\modern\\sensorless\\.build\\matlab_clean\\R2026a_U5\\toolbox\\stateflow\\stateflow\\sfroot.m"
+    },
+    {
+      "name": "Simulink.fileGenControl",
+      "path": "D:\\simulink\\dev\\modern\\sensorless\\.build\\matlab_clean\\R2026a_U5\\toolbox\\coder\\simulinkcoder_core\\+Simulink\\fileGenControl.p"
+    }
+  ]
+}

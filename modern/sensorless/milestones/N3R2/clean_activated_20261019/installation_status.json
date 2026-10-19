@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "status": "installed_pending_runtime_preflight",
+  "started_at": "2026-10-18T12:51:46.8650883Z",
+  "finished_at": "2026-10-18T13:51:09.0523949Z",
+  "release": "R2026aU5",
+  "products": [
+    "MATLAB",
+    "Simulink",
+    "Stateflow"
+  ],
+  "target": "D:\\simulink\\dev\\modern\\sensorless\\.build\\matlab_clean\\R2026a_U5",
+  "mpm_sha256": "10a7265efd1660d39ee27c24629fd7826aea6eeb7f6ad721f5e00ff7f0037939",
+  "installer_pid": 36104,
+  "exit_code": 0,
+  "simulation_started": false,
+  "existing_installation_modified_by_script": false
+}

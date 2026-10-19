@@ -1,0 +1,79 @@
+[
+  {
+    "name": "m_lxe.dll",
+    "fresh_signature": "Valid",
+    "fresh_sha256": "07d94e886239685d9532f083edfedd71c912f0f7dbc7882dabc5664a578297d7",
+    "old_sha256": "07d94e886239685d9532f083edfedd71c912f0f7dbc7882dabc5664a578297d7",
+    "bytes_equal": true
+  },
+  {
+    "name": "libmx.dll",
+    "fresh_signature": "Valid",
+    "fresh_sha256": "8f1fc8d6988c15f7f3389e2b39fcdacf3e056aa320d2b9307f6bb0a4ea3cd3fa",
+    "old_sha256": "8f1fc8d6988c15f7f3389e2b39fcdacf3e056aa320d2b9307f6bb0a4ea3cd3fa",
+    "bytes_equal": true
+  },
+  {
+    "name": "SimulinkBlock.dll",
+    "fresh_signature": "Valid",
+    "fresh_sha256": "1768a8632393c074375f0cc9e523100da69f2f853c98d78a2b1a13d66d971b7c",
+    "old_sha256": "1768a8632393c074375f0cc9e523100da69f2f853c98d78a2b1a13d66d971b7c",
+    "bytes_equal": true
+  },
+  {
+    "name": "libmwslexec_runtime.dll",
+    "fresh_signature": "Valid",
+    "fresh_sha256": "c78f6722f65a3e103189f49c861679852c389722f1a7b89f3d56f01186828985",
+    "old_sha256": "c78f6722f65a3e103189f49c861679852c389722f1a7b89f3d56f01186828985",
+    "bytes_equal": true
+  },
+  {
+    "name": "MSVCP140.dll",
+    "fresh_signature": "Valid",
+    "fresh_sha256": "846bffc3f668519a530749cf3dd90c24452e60bf455848bbd77c3b4ef492429d",
+    "old_sha256": "846bffc3f668519a530749cf3dd90c24452e60bf455848bbd77c3b4ef492429d",
+    "bytes_equal": true
+  },
+  {
+    "name": "libmwir.dll",
+    "fresh_signature": "Valid",
+    "fresh_sha256": "ec15fb51c0769a32671ccdd22b95844049b754e1a24f84e8d5075565a4ccb657",
+    "old_sha256": "ec15fb51c0769a32671ccdd22b95844049b754e1a24f84e8d5075565a4ccb657",
+    "bytes_equal": true
+  },
+  {
+    "name": "libmwfl.dll",
+    "fresh_signature": "Valid",
+    "fresh_sha256": "d74010a06ac707e12cade03afd4075da052076d0a7fdcb91875553f5ea8cb904",
+    "old_sha256": "d74010a06ac707e12cade03afd4075da052076d0a7fdcb91875553f5ea8cb904",
+    "bytes_equal": true
+  },
+  {
+    "name": "mcos_impl.dll",
+    "fresh_signature": "Valid",
+    "fresh_sha256": "7dfa650ddf4aa7100f16d04b85b2f08a4018e1ddf1700fe651d7475428b78d89",
+    "old_sha256": "7dfa650ddf4aa7100f16d04b85b2f08a4018e1ddf1700fe651d7475428b78d89",
+    "bytes_equal": true
+  },
+  {
+    "name": "libmwsl_elem_blocks.dll",
+    "fresh_signature": "Valid",
+    "fresh_sha256": "fe5fd6d23435e43838bb3f62f7002948181f1595f06e90df9322334a3e296166",
+    "old_sha256": "fe5fd6d23435e43838bb3f62f7002948181f1595f06e90df9322334a3e296166",
+    "bytes_equal": true
+  },
+  {
+    "name": "icuin74.dll",
+    "fresh_signature": "Valid",
+    "fresh_sha256": "32e57b3c7e5c933849dcc36e3414440b69069febf0f253e782124bc0f308a5b3",
+    "old_sha256": "32e57b3c7e5c933849dcc36e3414440b69069febf0f253e782124bc0f308a5b3",
+    "bytes_equal": true
+  },
+  {
+    "name": "libmwfixedpointcore.dll",
+    "fresh_signature": "Valid",
+    "fresh_sha256": "6f2dfac095a7bb97fc022f571cff89e0e7bbccadc8935eee7f81f115ec0ba2b3",
+    "old_sha256": "6f2dfac095a7bb97fc022f571cff89e0e7bbccadc8935eee7f81f115ec0ba2b3",
+    "bytes_equal": true
+  }
+]
