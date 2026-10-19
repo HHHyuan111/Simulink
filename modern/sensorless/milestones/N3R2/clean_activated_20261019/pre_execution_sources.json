@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "registered_at": "2026-10-19T00:37:09.675613+00:00",
+  "physical_simulation_started": false,
+  "original862_manifest_sha256": "2ea53bab650cc4ffc8cfb20a82d23ea22a50172af78f2ea8d904a1a36da8999b",
+  "files": [
+    {
+      "path": "contracts/nonideal_r2_clean_activated_control.json",
+      "sha256": "2d877474f8b02fdd75a3c1ced95fc13bfb42acbe0a278524401905fd13bfa661"
+    },
+    {
+      "path": "contracts/nonideal_r2_clean_install_control.json",
+      "sha256": "19fafd7108cce5c39eec6d23efe488326678d15e09e8f8309b4ece074ae8b7fc"
+    },
+    {
+      "path": "robust/diagnostics/preflight_sensorless_r2_clean_matlab.m",
+      "sha256": "ffe1de44b9bd776ddc0927065451207cf5b35ea592eabaff741e4c86f7e4a7c5"
+    },
+    {
+      "path": "robust/diagnostics/run_sensorless_r2_clean_activated_control.ps1",
+      "sha256": "ffabecc560d45c40d8b6ef355c82584747ab94a4afdc18328d3d4ddda7538e1d"
+    }
+  ]
+}
