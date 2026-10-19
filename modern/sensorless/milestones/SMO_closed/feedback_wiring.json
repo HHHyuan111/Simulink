@@ -1,0 +1,238 @@
+{
+  "From6": {
+    "tag": "speed",
+    "destinations": [
+      {
+        "block": "Scope9",
+        "type": "Scope",
+        "tag": null
+      }
+    ]
+  },
+  "From14": {
+    "tag": "speed",
+    "destinations": [
+      {
+        "block": "Scope1",
+        "type": "Scope",
+        "tag": null
+      }
+    ]
+  },
+  "From28": {
+    "tag": "speed",
+    "destinations": [
+      {
+        "block": "Scope12",
+        "type": "Scope",
+        "tag": null
+      },
+      {
+        "block": "Sum5",
+        "type": "Sum",
+        "tag": null
+      },
+      {
+        "block": "Mux3",
+        "type": "Mux",
+        "tag": null
+      }
+    ]
+  },
+  "Sum5": {
+    "tag": null,
+    "destinations": [
+      {
+        "block": "Abs",
+        "type": "Abs",
+        "tag": null
+      }
+    ]
+  },
+  "Mux3": {
+    "tag": null,
+    "destinations": [
+      {
+        "block": "Scope10",
+        "type": "Scope",
+        "tag": null
+      }
+    ]
+  },
+  "From1": {
+    "tag": "CL_theta_sample",
+    "destinations": [
+      {
+        "block": "Zero-Order\nHold3",
+        "type": "ZeroOrderHold",
+        "tag": null
+      }
+    ]
+  },
+  "From11": {
+    "tag": "CL_theta_pwm",
+    "destinations": [
+      {
+        "block": "Zero-Order\nHold4",
+        "type": "ZeroOrderHold",
+        "tag": null
+      }
+    ]
+  },
+  "From3": {
+    "tag": "CL_omega",
+    "destinations": [
+      {
+        "block": "Zero-Order\nHold5",
+        "type": "ZeroOrderHold",
+        "tag": null
+      }
+    ]
+  },
+  "From": {
+    "tag": "CL_speed",
+    "destinations": [
+      {
+        "block": "Zero-Order\nHold2",
+        "type": "ZeroOrderHold",
+        "tag": null
+      }
+    ]
+  },
+  "id_ref": {
+    "tag": "CL_id_ref",
+    "destinations": [
+      {
+        "block": "Sum",
+        "type": "Sum",
+        "tag": null
+      },
+      {
+        "block": "标签_obs_id_ref",
+        "type": "Goto",
+        "tag": "ObsIdRef"
+      }
+    ]
+  },
+  "无感q电流给定": {
+    "tag": "CL_iq_ref",
+    "destinations": [
+      {
+        "block": "无感转矩换算",
+        "type": "Gain",
+        "tag": null
+      }
+    ]
+  },
+  "startup_inports": [
+    "观测数据",
+    "观测许可",
+    "转速目标"
+  ],
+  "startup_from_tags": [],
+  "remaining_rotor_truth_reads": [
+    {
+      "path": "PMSM_SMO_ClosedLoop/From14",
+      "tag": "speed"
+    },
+    {
+      "path": "PMSM_SMO_ClosedLoop/From28",
+      "tag": "speed"
+    },
+    {
+      "path": "PMSM_SMO_ClosedLoop/From6",
+      "tag": "speed"
+    },
+    {
+      "path": "PMSM_SMO_ClosedLoop/Validation logging/Log speed",
+      "tag": "speed"
+    },
+    {
+      "path": "PMSM_SMO_ClosedLoop/无感观测/观测/真实角度",
+      "tag": "theta_e"
+    },
+    {
+      "path": "PMSM_SMO_ClosedLoop/无感观测/观测/真实转速",
+      "tag": "speed"
+    },
+    {
+      "path": "PMSM_SMO_ClosedLoop/测量观测/电角度_1",
+      "tag": "theta_e"
+    },
+    {
+      "path": "PMSM_SMO_ClosedLoop/测量观测/电角度_2",
+      "tag": "theta_meas"
+    },
+    {
+      "path": "PMSM_SMO_ClosedLoop/测量观测/角度误差_正",
+      "tag": "theta_meas"
+    },
+    {
+      "path": "PMSM_SMO_ClosedLoop/测量观测/角度误差_负",
+      "tag": "theta_e"
+    },
+    {
+      "path": "PMSM_SMO_ClosedLoop/角度设置/真实角度",
+      "tag": "theta_e"
+    },
+    {
+      "path": "PMSM_SMO_ClosedLoop/跟踪观测/转速_2",
+      "tag": "speed"
+    },
+    {
+      "path": "PMSM_SMO_ClosedLoop/跟踪观测/转速误差_负",
+      "tag": "speed"
+    },
+    {
+      "path": "PMSM_SMO_ClosedLoop/闭环结果观测/显示1_1_来源1",
+      "tag": "speed"
+    },
+    {
+      "path": "PMSM_SMO_ClosedLoop/闭环结果观测/显示1_3_真实角度",
+      "tag": "theta_e"
+    },
+    {
+      "path": "PMSM_SMO_ClosedLoop/闭环结果观测/显示2_1_来源1",
+      "tag": "speed"
+    },
+    {
+      "path": "PMSM_SMO_ClosedLoop/闭环结果观测/显示2_3_真实角度",
+      "tag": "theta_e"
+    }
+  ],
+  "compensation_angle_tag": "CL_theta_sample",
+  "compensation_enabled": "off",
+  "model_sha256": "2672fa64eaf986d1f81f0f8f478e3a7c2b6705a50c985fddb786fd4f9f31eba1",
+  "root_truth_speed_reachable": [
+    {
+      "block": "Scope12",
+      "type": "Scope",
+      "tag": null
+    },
+    {
+      "block": "Sum5",
+      "type": "Sum",
+      "tag": null
+    },
+    {
+      "block": "Mux3",
+      "type": "Mux",
+      "tag": null
+    },
+    {
+      "block": "Abs",
+      "type": "Abs",
+      "tag": null
+    },
+    {
+      "block": "Scope10",
+      "type": "Scope",
+      "tag": null
+    },
+    {
+      "block": "Divide1",
+      "type": "Product",
+      "tag": null
+    }
+  ]
+}

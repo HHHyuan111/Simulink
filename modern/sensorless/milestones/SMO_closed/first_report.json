@@ -1,11 +1,11 @@
 {
   "phase": "completed",
   "passed": true,
-  "process_id": 22940,
+  "process_id": 23516,
   "simulation_starts": 1,
-  "model_sha256": "6c742e715830c833ca087b5d76cce503fb4b992bce8de7362c50680329d07806",
-  "label": "adapted",
-  "elapsed_s": 417.1754019,
-  "raw_sha256": "10f2656703fc04cd43a82aaa9a7ab729d10ceced8d98f7f9e6e305c99e11a88d",
+  "model_sha256": "2672fa64eaf986d1f81f0f8f478e3a7c2b6705a50c985fddb786fd4f9f31eba1",
+  "label": "final_a",
+  "elapsed_s": 427.4590497,
+  "raw_sha256": "f9e342a1f4abcd0e2e6e096b25efd3a5a67158ab35ad8514e3ffbba0b625464b",
   "metrics_passed": true
 }

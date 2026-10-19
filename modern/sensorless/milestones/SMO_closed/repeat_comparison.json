@@ -1,0 +1,12 @@
+{
+  "first_label": "final_a",
+  "second_label": "final_b",
+  "independent_processes": true,
+  "same_model": true,
+  "both_metrics_passed": true,
+  "same_log_names": true,
+  "log_count": 100,
+  "different_logs": [],
+  "exact_time_and_data": true,
+  "passed": true
+}

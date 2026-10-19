@@ -1,8 +1,8 @@
 {
-  "source_run_label": "adapted",
-  "process_id": 22940,
-  "model_sha256": "6c742e715830c833ca087b5d76cce503fb4b992bce8de7362c50680329d07806",
-  "capture_utc": "2026-10-19T04:20:03.682Z",
+  "source_run_label": "final_a",
+  "process_id": 23516,
+  "model_sha256": "2672fa64eaf986d1f81f0f8f478e3a7c2b6705a50c985fddb786fd4f9f31eba1",
+  "capture_utc": "2026-10-19T04:46:59.742Z",
   "images": [
     {
       "file": "native_overview.png",
@@ -10,17 +10,20 @@
       "display_interval_s": [
         0,
         0.5
-      ]
+      ],
+      "sha256": "b202ca1dcef78fbad6e901480f73a52f24409f6958e7e7fdf4a7866ff484e0ef"
     },
     {
       "file": "native_steady.png",
       "window_title": "闭环稳态",
       "display_interval_s": [
-        0.44,
-        0.5
-      ]
+        0.411978875,
+        0.499978875
+      ],
+      "time_axis_offset_s": 0.411978875,
+      "sha256": "de4c1445bcdcb6377469dfcef61d7284f380ff9ef12ff609b3f2fa40d03ae16f"
     }
   ],
-  "source": "Actual completed native Simulink Scope buffers; screenshots unchanged; no PDF or separately drawn curves; metrics use the preregistered 0.412–0.50 s window.",
+  "source": "Actual completed native Simulink Scope buffers. Screenshots unchanged; no PDF, separately drawn curves, or replay injection. Metrics use the preregistered 0.412–0.50 s window.",
   "scope_session_closed_after_capture": true
 }

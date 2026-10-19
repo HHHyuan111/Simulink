@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "model_sha256": "2672fa64eaf986d1f81f0f8f478e3a7c2b6705a50c985fddb786fd4f9f31eba1",
+  "acceptance_sha256": "b6ff1581cbe5e9ba73b6f207f687e9d8a32fd9d9a9fbe7780a8c198ff74085ed",
+  "acceptance_registered_commit": "5376602",
+  "candidate_source_commit": "dbfd344",
+  "independent_successful_runs": 2,
+  "processes": [
+    23516,
+    22004
+  ],
+  "log_count": 100,
+  "all_time_and_data_exact": true,
+  "original_main_sha256": "a0f7cbae9e7c334c25aa9dcf6e7e88d65fd89bd1888a0fa2ec0cd04f6cce262d",
+  "direct_baseline_sha256": "a2be0dd30351c67a73efb2bdb6917fdd3c94d673418801072a15d169a14ddd12",
+  "original_main_unchanged": true,
+  "direct_baseline_unchanged": true,
+  "model_reference_blocks": 0,
+  "native_capture_run": "final_a",
+  "demonstration": "Native Simulink Scope screenshots",
+  "raw_data": "Local runs/SMO_closed_final_a and runs/SMO_closed_final_b; raw files not committed"
+}
