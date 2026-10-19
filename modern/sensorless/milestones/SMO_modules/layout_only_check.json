@@ -1,9 +1,0 @@
-{
-  "passed": true,
-  "block_count": 1917,
-  "blocks_parameters_connections_masks_equal": true,
-  "scripts_equal": true,
-  "solver_config_equal": true,
-  "simulation_model_sha256": "31444f16cf208bbeb9b0cd31aec7a76c3f63cf3f843b6338abbcb63bf0e26ec6",
-  "delivery_model_sha256": "248ea5067d52b26569120e04512df1830375f0591c41e38e225a493ec25a2af5"
-}

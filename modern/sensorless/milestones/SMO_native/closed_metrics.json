@@ -6,10 +6,10 @@
   ],
   "speed_target_mean_relative": 2.3070541785104171E-5,
   "speed_target_rms_relative": 0.00017841948985873932,
-  "observer_speed_rms_relative": 0.0016714744182519373,
-  "observer_angle_rms_deg": 0.10216786382823337,
+  "observer_speed_rms_relative": 0.0016714744182519427,
+  "observer_angle_rms_deg": 0.10216786382823348,
   "observer_angle_peak_deg": 0.20872606806823416,
-  "control_angle_rms_deg": 0.10216786382823388,
+  "control_angle_rms_deg": 0.10216786382823397,
   "control_angle_peak_deg": 0.20872606806823416,
   "phase_current_peak_A": 7.295424478243695,
   "speed_peak_rpm": 3080.8115772910064,
@@ -24,7 +24,7 @@
     5
   ],
   "handover_max_angle_step_deg": 1.9366974566657902,
-  "handover_max_stator_reference_step_A": 0.18848780774185253,
+  "handover_max_stator_reference_step_A": 0.18848780774185231,
   "checks": {
     "finite": true,
     "observations": true,

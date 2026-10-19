@@ -1,0 +1,8 @@
+{
+  "image": "native_smo.png",
+  "source": "Native Simulink system diagram print; no image editing",
+  "system": "PMSM_SMO_ClosedLoop/无感观测/滑模观测",
+  "command": "print('-sPMSM_SMO_ClosedLoop/无感观测/滑模观测','-dpng','-r140',destination)",
+  "model_sha256": "7c2d416f94266497bd796868a0fa92a7bd8573bf9435e79eafdd544aa3a629a8",
+  "image_sha256": "da5390ec4035c9bde24b3fcaf5268ee7bb26c15ba36bd9add82723f59d7ba028"
+}

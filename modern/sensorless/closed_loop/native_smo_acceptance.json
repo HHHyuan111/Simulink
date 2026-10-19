@@ -1,0 +1,19 @@
+{
+  "scope": "Only the contents of 无感观测/滑模观测",
+  "baseline_commit": "9ca4d2b",
+  "baseline_model_sha256": "2672fa64eaf986d1f81f0f8f478e3a7c2b6705a50c985fddb786fd4f9f31eba1",
+  "no_new_subsystems_or_masks_in_smo": true,
+  "outside_smo_blocks_positions_parameters_connections_scripts_unchanged": true,
+  "core_absolute_tolerance": 1e-10,
+  "core_relative_tolerance": 1e-12,
+  "check_reset_and_invalid_samples": true,
+  "closed_loop_duration_s": 0.5,
+  "use_original_closed_loop_acceptance": true,
+  "log_count": 100,
+  "log_names_dimensions_times_equal": true,
+  "discrete_state_and_boolean_values_equal": true,
+  "numeric_absolute_tolerance": 1e-8,
+  "numeric_relative_tolerance": 1e-4,
+  "native_smo_diagram_required": true,
+  "code_generation": false
+}

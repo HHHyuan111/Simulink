@@ -1,0 +1,23 @@
+{
+  "scope": "Sensorless FOC from standstill: alignment, I/F start, bumpless observer takeover, speed regulation",
+  "duration_s": 0.50,
+  "target_rpm": 3000,
+  "load_Nm": 0.207,
+  "load_step_s": 0.34,
+  "steady_window_s": [0.412, 0.50],
+  "takeover_complete_by_s": 0.30,
+  "steady_speed_target_mean_relative_max": 0.01,
+  "steady_speed_target_rms_relative_max": 0.02,
+  "steady_observer_angle_rms_deg_max": 3,
+  "steady_observer_angle_peak_deg_max": 8,
+  "steady_control_angle_rms_deg_max": 3,
+  "steady_control_angle_peak_deg_max": 8,
+  "steady_observer_speed_rms_relative_max": 0.02,
+  "steady_permit_fraction_min": 0.99,
+  "minimum_electrical_cycles": 20,
+  "phase_current_peak_A_max": 10,
+  "speed_overshoot_relative_max": 0.10,
+  "independent_successful_runs": 2,
+  "feedback_structure": "No actual rotor angle or speed in start, handover, speed PI or decoupling. Actual state enters observation only.",
+  "demonstration": "Screenshots of native Simulink Scope windows from the actual closed-loop run; no PDF or separately drawn result plots"
+}

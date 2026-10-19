@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "scope": "Only existing SMO contents",
+  "model_sha256": "7c2d416f94266497bd796868a0fa92a7bd8573bf9435e79eafdd544aa3a629a8",
+  "block_count": 64,
+  "block_types": {
+    "Abs": 1,
+    "Constant": 4,
+    "From": 24,
+    "Gain": 5,
+    "Goto": 11,
+    "Product": 2,
+    "RelationalOperator": 1,
+    "Saturate": 1,
+    "Signum": 1,
+    "Sum": 5,
+    "Switch": 7,
+    "UnitDelay": 2
+  },
+  "forbidden_types": {},
+  "masks_in_smo_contents": 0,
+  "state_delays": [
+    {
+      "name": "注入状态",
+      "sample_time": "timing_control_sample",
+      "initial_condition": "[0;0]"
+    },
+    {
+      "name": "电流状态",
+      "sample_time": "timing_control_sample",
+      "initial_condition": "[0;0]"
+    }
+  ],
+  "model_references_in_whole_model": 0
+}

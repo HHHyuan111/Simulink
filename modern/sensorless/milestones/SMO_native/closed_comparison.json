@@ -1,811 +1,707 @@
 {
-  "baseline": "final_a",
-  "candidate": "modules_b",
+  "passed": true,
   "same_log_names": true,
   "log_count": 100,
-  "candidate_acceptance_passed": true,
   "logs": {
     "log_SW": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "exact discrete state"
+      "passed": true
     },
     "log_TL": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "passed": true
     },
     "log_Tcm": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 1.178856410275278E-15,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "log_Tcm_applied": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "passed": true
     },
     "log_Tcm_requested": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 1.178856410275278E-15,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "log_Te": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "passed": true
     },
     "log_UDC": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "passed": true
     },
     "log_iabc_adc": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "current [A]"
+      "passed": true
     },
     "log_iabc_filter": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "current [A]"
+      "passed": true
     },
     "log_iabc_meas": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "current [A]"
+      "passed": true
     },
     "log_iabc_noise": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "current [A]"
+      "passed": true
     },
     "log_iabc_true": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "current [A]"
+      "passed": true
     },
     "log_id": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 6.2172489379008766E-15,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "log_iq": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 1.0436096431476471E-14,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "log_iq_ref": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 1.092459456231154E-13,
-      "passed": true,
-      "criterion": "current [A]"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "log_nref": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "passed": true
     },
     "log_speed": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "mechanical speed [rpm]"
+      "passed": true
     },
     "log_theta_error": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "wrapped electrical angle [rad]"
+      "passed": true
     },
     "log_theta_meas": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "wrapped electrical angle [rad]"
+      "passed": true
     },
     "log_theta_true": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "wrapped electrical angle [rad]"
+      "passed": true
     },
     "log_v_alpha": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 7.6798301051894668E-10,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "log_v_beta": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 7.7885964344659442E-10,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "obs_adc_codes": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "passed": true
     },
     "obs_adc_timing": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "passed": true
     },
     "obs_analog_current": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "passed": true
     },
     "obs_aw_d": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 4.4408920985006262E-16,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "obs_aw_q": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 1.7763568394002505E-15,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "obs_carrier_fast": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "passed": true
     },
     "obs_closed_age": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "passed": true
     },
     "obs_closed_blend": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "passed": true
     },
     "obs_closed_id_ref": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 2.6645352591003757E-15,
-      "passed": true,
-      "criterion": "current [A]"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "obs_closed_iq_ref": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 1.092459456231154E-13,
-      "passed": true,
-      "criterion": "current [A]"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "obs_closed_omega": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 3.637978807091713E-12,
-      "passed": true,
-      "criterion": "electrical speed [rad/s]"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "obs_closed_pi": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 4.9960036108132044E-15,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "obs_closed_reference": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "passed": true
     },
     "obs_closed_speed": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 6.3664629124104977E-12,
-      "passed": true,
-      "criterion": "mechanical speed [rpm]"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "obs_closed_stage": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "exact discrete state"
+      "passed": true
     },
     "obs_closed_theta_pwm": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 1.7763568394002505E-15,
-      "passed": true,
-      "criterion": "wrapped electrical angle [rad]"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "obs_closed_theta_sample": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 1.7763568394002505E-15,
-      "passed": true,
-      "criterion": "wrapped electrical angle [rad]"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "obs_current_fast": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "passed": true
     },
     "obs_dead_bridge": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "passed": true
     },
     "obs_dead_comp": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "passed": true
     },
     "obs_dead_gates": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "passed": true
     },
     "obs_dead_requested": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "passed": true
     },
     "obs_gates_fast": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "exact discrete state"
+      "passed": true
     },
     "obs_id_ref": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 2.6645352591003757E-15,
-      "passed": true,
-      "criterion": "current [A]"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "obs_mod": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 4.7154280480299349E-11,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "obs_phase_actual": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "passed": true
     },
     "obs_phase_ideal": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "passed": true
     },
     "obs_pi_d": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 2.3869795029440866E-14,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "obs_pi_q": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 3.560041150763027E-12,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "obs_pi_speed": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 4.9960036108132044E-15,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "obs_power_drop": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "passed": true
     },
     "obs_pwm_timing": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "passed": true
     },
     "obs_sector": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "passed": true
     },
     "obs_sless_direct_completed": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 7.9580786405131221E-12,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "obs_sless_r2_phase_guard": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 3.5527136788005009E-15,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "obs_sless_v2_adc_valid": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "exact discrete state"
+      "passed": true
     },
     "obs_sless_v2_applied_sequence": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "passed": true
     },
     "obs_sless_v2_control_permit": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "exact discrete state"
+      "passed": true
     },
     "obs_sless_v2_control_time": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "passed": true
     },
     "obs_sless_v2_current_ABC": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "current [A]"
+      "passed": true
     },
     "obs_sless_v2_deny_reason": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "exact discrete state"
+      "passed": true
     },
     "obs_sless_v2_emf": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 2.6645352591003757E-15,
-      "passed": true,
-      "criterion": "voltage [V]"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "obs_sless_v2_emf_magnitude": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 2.6645352591003757E-15,
-      "passed": true,
-      "criterion": "voltage [V]"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "obs_sless_v2_front_phase": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 3.7470027081099033E-16,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "obs_sless_v2_history": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "passed": true
     },
     "obs_sless_v2_i_hat": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 2.2204460492503131E-16,
-      "passed": true,
-      "criterion": "current [A]"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "obs_sless_v2_i_residual": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 5.5511151231257827E-17,
-      "passed": true,
-      "criterion": "current [A]"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "obs_sless_v2_injection": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 3.5527136788005009E-15,
-      "passed": true,
-      "criterion": "voltage [V]"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "obs_sless_v2_input_i": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "current [A]"
+      "passed": true
     },
     "obs_sless_v2_input_v": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 2.6645352591003757E-15,
-      "passed": true,
-      "criterion": "voltage [V]"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "obs_sless_v2_measurement": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "passed": true
     },
     "obs_sless_v2_omega_e": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 4.0927261579781771E-12,
-      "passed": true,
-      "criterion": "electrical speed [rad/s]"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "obs_sless_v2_phase_correction": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 1.2212453270876722E-15,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "obs_sless_v2_pll_error": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 2.9976021664879227E-15,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "obs_sless_v2_pll_integral": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 1.9326762412674725E-12,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "obs_sless_v2_pll_saturated": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "exact discrete state"
+      "passed": true
     },
     "obs_sless_v2_publication": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 7.9580786405131221E-12,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "obs_sless_v2_reset": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "exact discrete state"
+      "passed": true
     },
     "obs_sless_v2_sample_valid": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "exact discrete state"
+      "passed": true
     },
     "obs_sless_v2_speed": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 7.9580786405131221E-12,
-      "passed": true,
-      "criterion": "mechanical speed [rpm]"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "obs_sless_v2_state": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "exact discrete state"
+      "passed": true
     },
     "obs_sless_v2_theta": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 1.7763568394002505E-15,
-      "passed": true,
-      "criterion": "wrapped electrical angle [rad]"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "obs_sless_v2_theta_raw": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 4.4408920985006262E-16,
-      "passed": true,
-      "criterion": "wrapped electrical angle [rad]"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "obs_sless_v2_timing_valid": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "exact discrete state"
+      "passed": true
     },
     "obs_sless_v2_truth_speed": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "mechanical speed [rpm]"
+      "passed": true
     },
     "obs_sless_v2_truth_theta": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "wrapped electrical angle [rad]"
+      "passed": true
     },
     "obs_sless_v2_valid": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "exact discrete state"
+      "passed": true
     },
     "obs_sless_v2_voltage_interval": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "passed": true
     },
     "obs_sless_v2_voltage_native": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 1.021405182655144E-14,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "obs_sless_v2_voltage_uncertainty": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 1.1102230246251565E-16,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "obs_state": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "exact discrete state"
+      "passed": true
     },
     "obs_torque_fast": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "passed": true
     },
     "obs_vd": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 7.7352346750103607E-10,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "obs_vd_actual": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "passed": true
     },
     "obs_vdq_fast": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "passed": true
     },
     "obs_voltage": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 7.7889872329706122E-10,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "obs_vq": {
       "time_equal": true,
       "dimensions_equal": true,
-      "exact": false,
-      "max_abs_difference": 7.7889872329706122E-10,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "exact": true,
+      "max_abs_difference": 0,
+      "passed": true
     },
     "obs_vq_actual": {
       "time_equal": true,
       "dimensions_equal": true,
       "exact": true,
       "max_abs_difference": 0,
-      "passed": true,
-      "criterion": "absolute + relative"
+      "passed": true
     }
-  },
-  "passed": true,
-  "handover_difference_s": 0
+  }
 }

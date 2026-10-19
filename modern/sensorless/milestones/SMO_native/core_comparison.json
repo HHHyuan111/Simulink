@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "nominal": {
+    "passed": true,
+    "sample_count": 10000,
+    "outputs": {
+      "output_1": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 0,
+        "exact": true,
+        "passed": true
+      },
+      "output_2": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 0,
+        "exact": true,
+        "passed": true
+      },
+      "output_3": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 0,
+        "exact": true,
+        "passed": true
+      }
+    }
+  },
+  "reset_invalid": {
+    "passed": true,
+    "sample_count": 1000,
+    "outputs": {
+      "output_1": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 0,
+        "exact": true,
+        "passed": true
+      },
+      "output_2": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 0,
+        "exact": true,
+        "passed": true
+      },
+      "output_3": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 0,
+        "exact": true,
+        "passed": true
+      }
+    },
+    "reset_samples": 3,
+    "invalid_samples": 165
+  }
+}

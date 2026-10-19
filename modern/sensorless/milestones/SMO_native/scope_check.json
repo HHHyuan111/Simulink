@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "outside_smo_blocks_positions_masks_parameters_connections_equal": true,
+  "outside_scripts_equal": true,
+  "model_config_equal": true
+}

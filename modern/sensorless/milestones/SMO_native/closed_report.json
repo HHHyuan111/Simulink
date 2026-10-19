@@ -1,0 +1,11 @@
+{
+  "phase": "completed",
+  "passed": true,
+  "process_id": 71996,
+  "simulation_starts": 1,
+  "model_sha256": "7c2d416f94266497bd796868a0fa92a7bd8573bf9435e79eafdd544aa3a629a8",
+  "label": "native_smo_a",
+  "elapsed_s": 757.5000893,
+  "raw_sha256": "bf710295b6898c3b6a264c26b28466b3176f707c1acb228ada59708e92288383",
+  "metrics_passed": true
+}

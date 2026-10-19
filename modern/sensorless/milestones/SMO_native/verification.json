@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "baseline_commit": "9ca4d2b",
+  "run": "SMO_closed_native_smo_a",
+  "model_sha256": "7c2d416f94266497bd796868a0fa92a7bd8573bf9435e79eafdd544aa3a629a8",
+  "simulated_file_equals_delivered_file": true,
+  "original_main_unchanged": true,
+  "direct_baseline_unchanged": true,
+  "outside_smo_unchanged": true,
+  "native_smo_block_count": 64,
+  "native_smo_new_subsystems": 0,
+  "native_smo_masks": 0,
+  "core_outputs_exact": true,
+  "closed_loop_accepted": true,
+  "closed_log_count": 100,
+  "closed_all_logs_time_shape_and_values_exact": true,
+  "simulation_starts": 1,
+  "wall_time_s": 757.5000893
+}
