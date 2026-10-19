@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "scope": "user-authorized short nominal convergence",
+  "duration_s": 0.25,
+  "steady_window_s": [
+    0.162,
+    0.25
+  ],
+  "current_run_passed": false,
+  "status": "stopped_native_execution_failure",
+  "runtime_pid": 59320,
+  "physical_starts": 1,
+  "retries": 0,
+  "exit_hex": "0xc0000005",
+  "complete_raw_exists": false,
+  "performance_metrics_available": false,
+  "physical_progress_known": false,
+  "post_sim_restore_executed": false,
+  "background_simulation_active": false,
+  "R2_passed": false,
+  "R3_started": false,
+  "feedback_takeover": false,
+  "source_files_verified": 881,
+  "source_manifest_sha256": "f92dc407714c56c2ca35e2b086e1351024db1c9f917abede67b6c54434847462",
+  "historical_results_for_duration_design_only": [
+    {
+      "id": "diagnostic_combined_3000",
+      "target_rpm": 3000,
+      "historical_data_only": true,
+      "window": {
+        "window_s": [
+          0.162,
+          0.25
+        ],
+        "electrical_cycles": 21.987303960468584,
+        "angle_rms_deg": 0.07694370077586207,
+        "angle_peak_deg": 0.10694537626659038,
+        "speed_mean_relative": 5.109876346159753e-06,
+        "speed_rms_relative": 0.0004372390426082203,
+        "plant_mean_relative": 5.469179468339765e-06,
+        "plant_slope_rpm_s": 0.7691894120777747,
+        "permit_fraction": 1,
+        "all_passed": true
+      }
+    },
+    {
+      "id": "combined_2000",
+      "target_rpm": 2000,
+      "historical_data_only": true,
+      "window": {
+        "window_s": [
+          0.118,
+          0.25
+        ],
+        "electrical_cycles": 21.99124049568942,
+        "angle_rms_deg": 0.05194876940654435,
+        "angle_peak_deg": 0.09779539184428851,
+        "speed_mean_relative": 6.897060810745679e-06,
+        "speed_rms_relative": 0.0008315005481322585,
+        "plant_mean_relative": 1.3656547309778943e-05,
+        "plant_slope_rpm_s": 1.3177639748191967,
+        "permit_fraction": 1,
+        "all_passed": true
+      }
+    },
+    {
+      "id": "combined_1000",
+      "target_rpm": 1000,
+      "historical_data_only": true,
+      "window": {
+        "window_s": [
+          0.08599999999999997,
+          0.35
+        ],
+        "electrical_cycles": 21.995490433771998,
+        "angle_rms_deg": 0.09123251882925244,
+        "angle_peak_deg": 0.24034420642822418,
+        "speed_mean_relative": 1.2324914166011242e-05,
+        "speed_rms_relative": 0.006423559188607695,
+        "plant_mean_relative": 7.649770893067398e-06,
+        "plant_slope_rpm_s": 0.056713856766115435,
+        "permit_fraction": 1,
+        "all_passed": true
+      }
+    }
+  ]
+}

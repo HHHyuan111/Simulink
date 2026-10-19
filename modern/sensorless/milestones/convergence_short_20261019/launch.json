@@ -1,0 +1,12 @@
+{
+  "scope": "short_nominal_convergence",
+  "status": "failed_execution",
+  "source_manifest_sha256": "f92dc407714c56c2ca35e2b086e1351024db1c9f917abede67b6c54434847462",
+  "started_at": "2026-10-19T01:40:38.1251381Z",
+  "pid": 17372,
+  "exit_code": -1073741819,
+  "exit_hex": "0xc0000005",
+  "retries": 0,
+  "full_R2_passed": false,
+  "finished_at": "2026-10-19T01:45:01.5725446Z"
+}

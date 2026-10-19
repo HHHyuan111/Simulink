@@ -1,0 +1,19 @@
+{
+  "analysis_only": true,
+  "simulation_started": false,
+  "historical_data_only": true,
+  "new_short_test_passed": false,
+  "source_record_sha256": "72968d8faf08401eb372337ad7778ed2470289f1d2f6ea42d5b74cb1a77e3eeb",
+  "raw_sha256": "6ee976231b6cd7aeb866bb5d863126b2f818b381bb1f93b01af209a447a00b4a",
+  "prefix_s": [
+    0,
+    0.25
+  ],
+  "fixed_window_s": [
+    0.162,
+    0.25
+  ],
+  "png_sha256": "de2362d8db643fb984897055d52e058c241247b6a1bcee4337da12d356fb8f55",
+  "csv_sha256": "28a5ea2655da1f3762db8afb646259b9c842497b988f4757a315ff92d5c24f3a",
+  "renderer_sha256": "8dd55c4817c2abc979d837d34abf459a84e9c2036224a962cdb792b425b98dd1"
+}

@@ -1,0 +1,306 @@
+{
+  "analysis_only": true,
+  "simulation_started": false,
+  "not_new_acceptance": true,
+  "source_sha256": "e2572d2822b32763ccfac8cad45be2b5a1177c3df75b93a661614ef9493f778a",
+  "pole_pairs": 5,
+  "cases": [
+    {
+      "id": "diagnostic_combined_3000",
+      "target_rpm": 3000,
+      "raw_sha256": "6ee976231b6cd7aeb866bb5d863126b2f818b381bb1f93b01af209a447a00b4a",
+      "record_sha256": "72968d8faf08401eb372337ad7778ed2470289f1d2f6ea42d5b74cb1a77e3eeb",
+      "earliest_assessed_passing_end_s": 0.25,
+      "windows": [
+        {
+          "window_s": [
+            0.062,
+            0.15
+          ],
+          "electrical_cycles": 21.892133950902544,
+          "angle_rms_deg": 3.9632858872101489,
+          "angle_peak_deg": 8.2765495342900959,
+          "speed_mean_relative": 0.0010829454557172774,
+          "speed_rms_relative": 0.0031102535026039046,
+          "plant_mean_relative": 0.0043854353494360418,
+          "plant_slope_rpm_s": 2162.2975999066512,
+          "permit_fraction": 0.76363636363636367,
+          "all_passed": false
+        },
+        {
+          "window_s": [
+            0.11200000000000002,
+            0.2
+          ],
+          "electrical_cycles": 22.00055640102757,
+          "angle_rms_deg": 0.14287602353505005,
+          "angle_peak_deg": 0.5510960946457496,
+          "speed_mean_relative": 8.73880857884911E-5,
+          "speed_rms_relative": 0.0004665116765940923,
+          "plant_mean_relative": 0.00059891900768161582,
+          "plant_slope_rpm_s": -105.95647732796405,
+          "permit_fraction": 1,
+          "all_passed": false
+        },
+        {
+          "window_s": [
+            0.162,
+            0.25
+          ],
+          "electrical_cycles": 21.987303960468584,
+          "angle_rms_deg": 0.076943700775862073,
+          "angle_peak_deg": 0.10694537626659038,
+          "speed_mean_relative": 5.1098763461597533E-6,
+          "speed_rms_relative": 0.0004372390426082203,
+          "plant_mean_relative": 5.469179468339765E-6,
+          "plant_slope_rpm_s": 0.76918941207777469,
+          "permit_fraction": 1,
+          "all_passed": true
+        },
+        {
+          "window_s": [
+            0.212,
+            0.3
+          ],
+          "electrical_cycles": 21.987398920771032,
+          "angle_rms_deg": 0.076632040693290687,
+          "angle_peak_deg": 0.11591022952302714,
+          "speed_mean_relative": 4.0512900952562044E-6,
+          "speed_rms_relative": 0.00043740591355299441,
+          "plant_mean_relative": 1.1483893184352685E-6,
+          "plant_slope_rpm_s": -0.50240791406186958,
+          "permit_fraction": 1,
+          "all_passed": true
+        },
+        {
+          "window_s": [
+            0.262,
+            0.35
+          ],
+          "electrical_cycles": 21.987318259523565,
+          "angle_rms_deg": 0.075626754955633049,
+          "angle_peak_deg": 0.12045767827068278,
+          "speed_mean_relative": 2.3848037974676288E-6,
+          "speed_rms_relative": 0.00045174057294875588,
+          "plant_mean_relative": 4.8370201357101909E-6,
+          "plant_slope_rpm_s": 0.17312952281384306,
+          "permit_fraction": 1,
+          "all_passed": true
+        },
+        {
+          "window_s": [
+            0.31200000000000006,
+            0.4
+          ],
+          "electrical_cycles": 21.987511667647734,
+          "angle_rms_deg": 0.075822482589258944,
+          "angle_peak_deg": 0.12045767827068278,
+          "speed_mean_relative": 2.850278226156716E-6,
+          "speed_rms_relative": 0.00043409975700084864,
+          "plant_mean_relative": 4.0026295558467E-6,
+          "plant_slope_rpm_s": 0.51889888345032387,
+          "permit_fraction": 1,
+          "all_passed": true
+        },
+        {
+          "window_s": [
+            0.362,
+            0.45
+          ],
+          "electrical_cycles": 21.987485960362235,
+          "angle_rms_deg": 0.075901071830331027,
+          "angle_peak_deg": 0.11619385056217933,
+          "speed_mean_relative": 4.2181391396613058E-6,
+          "speed_rms_relative": 0.00043596550801465711,
+          "plant_mean_relative": 2.8028929944715251E-6,
+          "plant_slope_rpm_s": -0.9054692718544366,
+          "permit_fraction": 1,
+          "all_passed": true
+        }
+      ]
+    },
+    {
+      "id": "combined_2000",
+      "target_rpm": 2000,
+      "raw_sha256": "774f5bc3c3baa521075d461a4b2cf95b00a520e9a8ca2fb9e1f59b0c501fe8c0",
+      "record_sha256": "11469636af5e4de9797d5d46a58fda37db7738d5eb0d746b9419a191a2339f10",
+      "earliest_assessed_passing_end_s": 0.25,
+      "windows": [
+        {
+          "window_s": [
+            0.017999999999999988,
+            0.15
+          ],
+          "electrical_cycles": 20.464832198455095,
+          "angle_rms_deg": 4.1205780392279943,
+          "angle_peak_deg": 8.9260464262267369,
+          "speed_mean_relative": 0.0002991543765018232,
+          "speed_rms_relative": 0.012405411024704351,
+          "plant_mean_relative": 0.069518581872927254,
+          "plant_slope_rpm_s": 5862.8365801590589,
+          "permit_fraction": 0.68825757575757573,
+          "all_passed": false
+        },
+        {
+          "window_s": [
+            0.068,
+            0.2
+          ],
+          "electrical_cycles": 22.08915760644879,
+          "angle_rms_deg": 0.39952718127682307,
+          "angle_peak_deg": 1.2977882702213719,
+          "speed_mean_relative": 0.0001547456355197851,
+          "speed_rms_relative": 0.00096878876816777748,
+          "plant_mean_relative": 0.0044468664477398077,
+          "plant_slope_rpm_s": -347.6415770094589,
+          "permit_fraction": 1,
+          "all_passed": false
+        },
+        {
+          "window_s": [
+            0.118,
+            0.25
+          ],
+          "electrical_cycles": 21.991240495689421,
+          "angle_rms_deg": 0.051948769406544353,
+          "angle_peak_deg": 0.09779539184428851,
+          "speed_mean_relative": 6.897060810745679E-6,
+          "speed_rms_relative": 0.00083150054813225854,
+          "plant_mean_relative": 1.3656547309778943E-5,
+          "plant_slope_rpm_s": 1.3177639748191967,
+          "permit_fraction": 1,
+          "all_passed": true
+        },
+        {
+          "window_s": [
+            0.16799999999999998,
+            0.3
+          ],
+          "electrical_cycles": 21.991446677317121,
+          "angle_rms_deg": 0.052402483048999325,
+          "angle_peak_deg": 0.097141178168985765,
+          "speed_mean_relative": 8.2365037610844376E-6,
+          "speed_rms_relative": 0.00084360413538080354,
+          "plant_mean_relative": 4.4037101324647668E-6,
+          "plant_slope_rpm_s": -0.25068530928544019,
+          "permit_fraction": 1,
+          "all_passed": true
+        },
+        {
+          "window_s": [
+            0.21799999999999997,
+            0.35
+          ],
+          "electrical_cycles": 21.991544821037412,
+          "angle_rms_deg": 0.052279115183075313,
+          "angle_peak_deg": 0.097141178168985765,
+          "speed_mean_relative": 6.1931714486250528E-6,
+          "speed_rms_relative": 0.00084785948757848417,
+          "plant_mean_relative": 2.4702661107767197E-7,
+          "plant_slope_rpm_s": 0.03055065879900443,
+          "permit_fraction": 1,
+          "all_passed": true
+        },
+        {
+          "window_s": [
+            0.268,
+            0.4
+          ],
+          "electrical_cycles": 21.991560377230613,
+          "angle_rms_deg": 0.053244624755529518,
+          "angle_peak_deg": 0.093890768857397847,
+          "speed_mean_relative": 6.7684972890240035E-6,
+          "speed_rms_relative": 0.00084130688229638862,
+          "plant_mean_relative": 8.8942768195465764E-7,
+          "plant_slope_rpm_s": 0.36347233403693285,
+          "permit_fraction": 1,
+          "all_passed": true
+        },
+        {
+          "window_s": [
+            0.318,
+            0.45
+          ],
+          "electrical_cycles": 21.991513737392189,
+          "angle_rms_deg": 0.053280986093554895,
+          "angle_peak_deg": 0.0964723354012341,
+          "speed_mean_relative": 6.1521134741941843E-6,
+          "speed_rms_relative": 0.00084507541518678787,
+          "plant_mean_relative": 1.3540376603486948E-6,
+          "plant_slope_rpm_s": -0.37609178645260871,
+          "permit_fraction": 1,
+          "all_passed": true
+        }
+      ]
+    },
+    {
+      "id": "combined_1000",
+      "target_rpm": 1000,
+      "raw_sha256": "7ba4502c5eb465f7e9592ccb5105cfb39adb58d3fc0b52cce5312d53c40db5cd",
+      "record_sha256": "72454ad6672a543979709b2eb517ddfb8b39a76ac5c21e55b68d71fd1f839a92",
+      "earliest_assessed_passing_end_s": 0.35,
+      "windows": [
+        {
+          "window_s": [
+            0.035999999999999976,
+            0.3
+          ],
+          "electrical_cycles": 22.158270729902956,
+          "angle_rms_deg": 0.32977116131798129,
+          "angle_peak_deg": 1.466374398083947,
+          "speed_mean_relative": 0.0001180234437175078,
+          "speed_rms_relative": 0.0067194860046957865,
+          "plant_mean_relative": 0.0074039210228224878,
+          "plant_slope_rpm_s": -155.04702991970282,
+          "permit_fraction": 0.9615530303030303,
+          "all_passed": false
+        },
+        {
+          "window_s": [
+            0.085999999999999965,
+            0.35
+          ],
+          "electrical_cycles": 21.995490433771998,
+          "angle_rms_deg": 0.091232518829252443,
+          "angle_peak_deg": 0.24034420642822418,
+          "speed_mean_relative": 1.2324914166011242E-5,
+          "speed_rms_relative": 0.0064235591886076951,
+          "plant_mean_relative": 7.6497708930673978E-6,
+          "plant_slope_rpm_s": 0.056713856766115435,
+          "permit_fraction": 1,
+          "all_passed": true
+        },
+        {
+          "window_s": [
+            0.136,
+            0.4
+          ],
+          "electrical_cycles": 21.995570964965538,
+          "angle_rms_deg": 0.09055582751783639,
+          "angle_peak_deg": 0.24034420642822418,
+          "speed_mean_relative": 8.9110207682446983E-6,
+          "speed_rms_relative": 0.006410338739590112,
+          "plant_mean_relative": 4.0551856502588634E-6,
+          "plant_slope_rpm_s": 0.2519270664539639,
+          "permit_fraction": 1,
+          "all_passed": true
+        },
+        {
+          "window_s": [
+            0.186,
+            0.45
+          ],
+          "electrical_cycles": 21.9955088944108,
+          "angle_rms_deg": 0.088878830397765993,
+          "angle_peak_deg": 0.24240067045523661,
+          "speed_mean_relative": 9.83621398428689E-6,
+          "speed_rms_relative": 0.0063768470173555646,
+          "plant_mean_relative": 7.0180142661229183E-6,
+          "plant_slope_rpm_s": 0.36300318506663432,
+          "permit_fraction": 1,
+          "all_passed": true
+        }
+      ]
+    }
+  ]
+}
