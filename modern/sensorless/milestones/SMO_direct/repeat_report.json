@@ -1,0 +1,24 @@
+{
+  "phase": "completed",
+  "passed": true,
+  "process_id": 67644,
+  "simulation_starts": 1,
+  "label": "repeat",
+  "model_sha256": "a2be0dd30351c67a73efb2bdb6917fdd3c94d673418801072a15d169a14ddd12",
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "first_postprocessing_review_sha256": "4a1732306a6bfc02ae11a258ffcb34bb38e48ef039c481c389ac902c77eff6c6",
+  "normal_function_check": {
+    "native_points": 32000,
+    "last_checked_tick": 31999,
+    "normal_outputs_exact": true,
+    "simulation_started": false
+  },
+  "elapsed_s": 175.7240382,
+  "raw_sha256": "560d180f57a9d874f0d32e3132e39e64b860f833ac67ab0c601d8da46ea6aa70",
+  "metrics_passed": true,
+  "log_count": 89,
+  "original_control_unchanged": true,
+  "original_control_comparison": "Confirmed through exact repeat of all logs, including original52",
+  "repeat_exact": true,
+  "model_file_unchanged": true
+}

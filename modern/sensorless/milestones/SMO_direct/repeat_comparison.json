@@ -1,0 +1,447 @@
+[
+  {
+    "name": "log_SW",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "log_TL",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "log_Tcm",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "log_Tcm_applied",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "log_Tcm_requested",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "log_Te",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "log_UDC",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "log_iabc_adc",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "log_iabc_filter",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "log_iabc_meas",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "log_iabc_noise",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "log_iabc_true",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "log_id",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "log_iq",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "log_iq_ref",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "log_nref",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "log_speed",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "log_theta_error",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "log_theta_meas",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "log_theta_true",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "log_v_alpha",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "log_v_beta",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_adc_codes",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_adc_timing",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_analog_current",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_aw_d",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_aw_q",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_carrier_fast",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_current_fast",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_dead_bridge",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_dead_comp",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_dead_gates",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_dead_requested",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_gates_fast",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_id_ref",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_mod",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_phase_actual",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_phase_ideal",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_pi_d",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_pi_q",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_pi_speed",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_power_drop",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_pwm_timing",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_sector",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_sless_direct_completed",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_sless_r2_phase_guard",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_sless_v2_adc_valid",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_sless_v2_applied_sequence",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_sless_v2_control_permit",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_sless_v2_control_time",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_sless_v2_current_ABC",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_sless_v2_deny_reason",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_sless_v2_emf",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_sless_v2_emf_magnitude",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_sless_v2_front_phase",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_sless_v2_history",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_sless_v2_i_hat",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_sless_v2_i_residual",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_sless_v2_injection",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_sless_v2_input_i",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_sless_v2_input_v",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_sless_v2_measurement",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_sless_v2_omega_e",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_sless_v2_phase_correction",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_sless_v2_pll_error",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_sless_v2_pll_integral",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_sless_v2_pll_saturated",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_sless_v2_publication",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_sless_v2_reset",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_sless_v2_sample_valid",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_sless_v2_speed",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_sless_v2_state",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_sless_v2_theta",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_sless_v2_theta_raw",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_sless_v2_timing_valid",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_sless_v2_truth_speed",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_sless_v2_truth_theta",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_sless_v2_valid",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_sless_v2_voltage_interval",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_sless_v2_voltage_native",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_sless_v2_voltage_uncertainty",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_state",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_torque_fast",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_vd",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_vd_actual",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_vdq_fast",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_voltage",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_vq",
+    "data_exact": true,
+    "time_accepted": true
+  },
+  {
+    "name": "obs_vq_actual",
+    "data_exact": true,
+    "time_accepted": true
+  }
+]

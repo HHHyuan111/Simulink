@@ -14,6 +14,8 @@ base=sensorless_direct_setup;
 open_system(fullfile(base,'models/direct/PMSM_FOC_R2026a.slx'));
 ```
 
-正常验证入口为 `run_sensorless_direct('first')`；成功后另启 MATLAB 执行 `run_sensorless_direct('repeat')`。标准在运行前写入 `acceptance.json`：3000 rpm、0.25 s、固定 0.162–0.25 s 窗口、至少 20 电周期，角度 RMS ≤3°/峰值 ≤8°，转速均值误差 ≤1%/RMS ≤2%，电机均值偏差 ≤1%/斜率 ≤50 rpm/s，实际完成事件许可占比 ≥99%。同时检查 5000 个样本、实际 3 μs 发布延迟、原 52 路控制日志及两次一致性。
+日常查看直接打开保存模型并运行即可。从 Git 获取代码后如需完整重做本节点验证，在各自独立的 MATLAB 会话中依次执行 `run_sensorless_direct_baseline`、`run_sensorless_direct('first')`、`run_sensorless_direct('repeat')`；它们生成同为 0.25 s 的原控制对照、首次 SMO 和独立复跑，不依赖本地旧归档。已有结果目录保留，不覆写。
+
+标准在运行前写入 `acceptance.json`：3000 rpm、0.25 s、固定 0.162–0.25 s 窗口、至少 20 电周期，角度 RMS ≤3°/峰值 ≤8°，转速均值误差 ≤1%/RMS ≤2%，电机均值偏差 ≤1%/斜率 ≤50 rpm/s，实际完成事件许可占比 ≥99%。同时检查 5000 个样本、实际 3 μs 发布延迟、原 52 路控制日志及两次一致性。
 
 此入口目前针对固定工程参数。电机或物理配置更改后需同步重新计算模型工作区与观测参数；不能只修改参数显示值后沿用旧验证结果。模型不使用观测角度接管 FOC。

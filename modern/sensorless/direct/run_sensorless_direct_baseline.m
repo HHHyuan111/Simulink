@@ -15,7 +15,7 @@ schema=jsondecode(fileread(fullfile(base,'baseline','log_schema.json')));signals
 for k=1:numel(schema),signals.(schema(k).name)=out.get(schema(k).name);end
 save(fullfile(folder,'signals.mat'),'-struct','signals','-v7.3');clear out;close_system(mdl,0);
 report.raw_sha256=teach_hash(fullfile(folder,'signals.mat'));report.phase='completed';report.passed=true;teach_writejson(fullfile(folder,'report.json'),report);
-review_sensorless_direct_first;
+if isfile(fullfile(base,'runs','SMO_direct_first','report.json')),review_sensorless_direct_first;end
 end
 function close_private(mdl)
 if bdIsLoaded(mdl),close_system(mdl,0);end

@@ -1,0 +1,12 @@
+{
+  "analysis_only": true,
+  "simulation_reexecuted": false,
+  "correction": "Old 0.8s gate logs retain only final4000 native points and have no overlap with new0.25s; use same0.25s baseline",
+  "original_first_report_sha256": "26646944710253fcdfdf54527f1609703ccb5ef144fb896655932caff930fcfe",
+  "first_raw_sha256": "ba3265fb103ce4e65f56d7d169fa520283a0a52b54aa46e1d7a5ea7737c2caa5",
+  "control_raw_sha256": "47d13c12d6d880057d82293450d1c14c2cb02f938cbe04222293aee3367887a7",
+  "model_sha256": "a2be0dd30351c67a73efb2bdb6917fdd3c94d673418801072a15d169a14ddd12",
+  "original_control_unchanged": true,
+  "metrics_passed": true,
+  "passed": true
+}

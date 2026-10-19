@@ -1,0 +1,8 @@
+{
+  "step": "build",
+  "status": "failed",
+  "started_at": "2026-10-19T02:05:59.1092681Z",
+  "launcher_pid": 39616,
+  "exit_code": -1073740940,
+  "finished_at": "2026-10-19T02:06:40.4802162Z"
+}

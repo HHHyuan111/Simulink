@@ -1,0 +1,36 @@
+{
+  "window_s": [
+    0.162,
+    0.25
+  ],
+  "angle_rms_deg": 0.076943700775862073,
+  "angle_peak_deg": 0.10694537626659038,
+  "speed_mean_relative": 5.1098763461597533E-6,
+  "speed_rms_relative": 0.0004372390426082203,
+  "plant_mean_rpm": 2999.983592461595,
+  "plant_slope_rpm_s": 0.76918941207777469,
+  "electrical_cycles": 21.987303960468584,
+  "completed_permit_fraction": 1,
+  "samples": 5000,
+  "completed_packets": 5000,
+  "checks": {
+    "finite": true,
+    "endpoint": true,
+    "sample_count": true,
+    "cycles": true,
+    "angle_rms": true,
+    "angle_peak": true,
+    "speed_mean": true,
+    "speed_rms": true,
+    "plant_mean": true,
+    "plant_slope": true,
+    "permit": true,
+    "publication_count": true,
+    "publication_sequence": true,
+    "publication_reference": true,
+    "publication_delay": true,
+    "publication_time": true,
+    "denied_zero": true
+  },
+  "passed": true
+}

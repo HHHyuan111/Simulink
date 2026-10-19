@@ -1,0 +1,41 @@
+{
+  "scope": "Direct local-model SMO normal nonideal convergence",
+  "passed": true,
+  "duration_s": 0.25,
+  "steady_window_s": [
+    0.162,
+    0.25
+  ],
+  "target_rpm": 3000,
+  "model_sha256": "a2be0dd30351c67a73efb2bdb6917fdd3c94d673418801072a15d169a14ddd12",
+  "successful_observer_simulations": 2,
+  "observer_runtime_pids": [
+    65848,
+    67644
+  ],
+  "control_only_baseline_simulations": 1,
+  "original_control_logs_compared": 52,
+  "repeat_logs_compared": 89,
+  "original52_unchanged": true,
+  "all89_repeat_equal": true,
+  "first_original_postprocessing_report_passed": false,
+  "first_equal_duration_review_passed": true,
+  "first_physical_simulation_reexecuted": false,
+  "metrics_identical": true,
+  "steady_angle_rms_deg": 0.07694370077586207,
+  "steady_angle_peak_deg": 0.10694537626659038,
+  "steady_speed_rms_relative": 0.0004372390426082203,
+  "steady_completed_permit_fraction": 1,
+  "observer_samples": 5000,
+  "completed_packets": 5000,
+  "electrical_cycles": 21.987303960468584,
+  "model_references": 0,
+  "native_truth_evaluators": 0,
+  "fault_stimuli": 0,
+  "hardware_parameters": "engineering assumptions",
+  "observer_mode": "bypass",
+  "legacy_fault_matrix_resumed": false,
+  "background_simulation_active": false,
+  "initial_clean_build_startup_failure_preserved": true,
+  "native_failure_root_cause_claimed_resolved": false
+}

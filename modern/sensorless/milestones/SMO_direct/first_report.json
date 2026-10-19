@@ -1,0 +1,22 @@
+{
+  "phase": "completed",
+  "passed": false,
+  "process_id": 65848,
+  "simulation_starts": 1,
+  "label": "first",
+  "model_sha256": "a2be0dd30351c67a73efb2bdb6917fdd3c94d673418801072a15d169a14ddd12",
+  "matlab_version": "26.1.0.3346908 (R2026a) Update 5",
+  "normal_function_check": {
+    "native_points": 32000,
+    "last_checked_tick": 31999,
+    "normal_outputs_exact": true,
+    "simulation_started": false
+  },
+  "elapsed_s": 185.7540099,
+  "raw_sha256": "ba3265fb103ce4e65f56d7d169fa520283a0a52b54aa46e1d7a5ea7737c2caa5",
+  "metrics_passed": true,
+  "log_count": 89,
+  "original_control_unchanged": false,
+  "repeat_exact": true,
+  "model_file_unchanged": true
+}
