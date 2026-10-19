@@ -4,7 +4,7 @@ root=[mdl '/闭环结果观测'];add_block('built-in/SubSystem',root,'Position',
 groups={{'speed','u(1)','电机实际';'CL_speed','u(1)','SMO反馈';'CL_reference','u(1)','速度给定'},'转速闭环','rpm';...
  {'CL_stage','u(1)','阶段';'CL_blend','u(1)','估计角权重'},'控制阶段（5=无感闭环）','';...
  {'CL_theta_sample','angle_error','控制角误差'},'控制电角度误差','°';...
- {'Iabc','u(1)','A相';'Iabc','u(2)','B相';'Iabc','u(3)','C相'},'电机相电流','A'};
+ {'Currentabc','phase1','A相';'Currentabc','phase2','B相';'Currentabc','phase3','C相'},'电机相电流','A'};
 for scopeIndex=1:2
  names={'闭环全过程','闭环稳态'};span={'.5','.088'};scope=[root '/' names{scopeIndex}];
  add_block('simulink/Sinks/Scope',scope,'NumInputPorts','4','SampleTime','timing_control_sample',...
@@ -29,6 +29,11 @@ for scopeIndex=1:2
     add_block('simulink/Signal Routing/Mux',[root '/' mux],'Inputs','2','Position',[400 y 405 y+65]);
     add_line(root,[truth '/1'],[truthHold '/1']);add_line(root,[holdName '/1'],[mux '/1']);add_line(root,[truthHold '/1'],[mux '/2']);
     expr='atan2(sin(u(1)-u(2)),cos(u(1)-u(2)))*180/pi';source=mux;
+   elseif startsWith(rows{k,2},'phase')
+    split=[prefix '分相' num2str(k)];add_block('simulink/Signal Routing/Demux',[root '/' split],'Outputs','3','Position',[420 y 425 y+60]);
+    add_line(root,[holdName '/1'],[split '/1']);
+    line=add_line(root,[split '/' rows{k,2}(end)],[prefix '合并/' num2str(k)],'autorouting','on');set_param(line,'Name',rows{k,3});
+    continue;
    else,expr=rows{k,2};source=holdName;
    end
    add_block('simulink/User-Defined Functions/Fcn',[root '/' pick],'Expr',expr,'Position',[450 y 640 y+30]);
