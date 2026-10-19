@@ -1,4 +1,4 @@
-param([ValidateSet('build','first','repeat','render')][string]$Step='build')
+param([ValidateSet('build','first','repeat','render','inspect','baseline')][string]$Step='build')
 $ErrorActionPreference='Stop'
 $base=(Resolve-Path (Join-Path $PSScriptRoot '..')).Path
 $runtime='D:\DevTools\MATLAB\R2026a\bin\matlab.exe'
@@ -7,8 +7,10 @@ $expression="fprintf('DIRECT_ENTRY\n');addpath('$backend');sensorless_direct_set
 switch($Step){
  'build' {$expression+='build_sensorless_direct;'}
  'first' {$expression+="run_sensorless_direct('first');"}
- 'repeat' {$expression+="run_sensorless_direct('repeat');"}
+ 'repeat' {$expression+="run_sensorless_direct('repeat');render_sensorless_direct;"}
  'render' {$expression+='render_sensorless_direct;'}
+ 'inspect' {$expression+='inspect_sensorless_direct_gates;render_sensorless_direct;'}
+ 'baseline' {$expression+='run_sensorless_direct_baseline;'}
 }
 $statusFile=Join-Path $base ('.build\direct_'+$Step+'_launch.json')
 $state=[ordered]@{step=$Step;status='running';started_at=[DateTime]::UtcNow.ToString('o');launcher_pid=$null;exit_code=$null}
