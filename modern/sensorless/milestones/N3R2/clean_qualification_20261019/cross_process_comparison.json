@@ -1,0 +1,18 @@
+{
+  "kind": "two_independent_normal_serialized_short_comparison",
+  "all_passed": true,
+  "logs": 96,
+  "numeric_elements": 10203729.0,
+  "all_Time_Data_class_dimensions_equal": true,
+  "failures": [],
+  "analysis_only": true,
+  "simulation_reexecuted": false,
+  "first_process_id": 63240,
+  "second_process_id": 27020,
+  "builder_process_id": 39504,
+  "first_record_sha256": "9af3bb9252aa445bad27cf17ff0de33580c922a6ef8b0bad9062991a8d438ee8",
+  "second_record_sha256": "5677ba5b3eedd60a36aed22b897e57e90c28944a52c6f76f61874be59ffe5efe",
+  "saved_parent_sha256": "06591a3d738fe0de76faed7c7e23b97d5a3e7b44d6f989f7faff8be4d44d9887",
+  "saved_child_sha256": "b544278537ff25c2fbd50e5624bcc01824debefa7c6b7e25bd707f26b31ca198",
+  "R2_passed": false
+}

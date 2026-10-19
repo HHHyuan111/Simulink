@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "node": "N3R2",
+  "execution_version": "normal_serialized_parent_and_observer",
+  "environment": "new_official_activated_installation",
+  "campaign_type": "two_independent_clean_normal_qualification_shorts",
+  "status": "completed_passed",
+  "R2_passed": false,
+  "retries": 0,
+  "source_manifest_sha256": "e2b1b2e8a852b4d41aca9476e596048c6555899884cf1f4fb250e7d814da63e1",
+  "jobs": [
+    {
+      "stage": "short_1",
+      "case_id": "r1_short_logging_check",
+      "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_clean_normal_qualification_once\\short_1",
+      "status": "passed",
+      "exit_code": 0,
+      "exit_hex": "0x00000000",
+      "native_failure": false,
+      "started_at": "2026-10-19T00:43:58.0226963Z",
+      "finished_at": "2026-10-19T00:45:03.4012324Z"
+    },
+    {
+      "stage": "short_2",
+      "case_id": "r1_short_logging_check",
+      "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_clean_normal_qualification_once\\short_2",
+      "status": "passed",
+      "exit_code": 0,
+      "exit_hex": "0x00000000",
+      "native_failure": false,
+      "started_at": "2026-10-19T00:45:03.6729088Z",
+      "finished_at": "2026-10-19T00:46:07.4168165Z"
+    },
+    {
+      "stage": "compare",
+      "case_id": "r1_short_logging_check",
+      "folder": "D:\\simulink\\dev\\modern\\sensorless\\runs\\N3R2_clean_normal_qualification_once\\compare",
+      "status": "passed",
+      "exit_code": 0,
+      "exit_hex": "0x00000000",
+      "native_failure": false,
+      "started_at": "2026-10-19T00:46:07.6668370Z",
+      "finished_at": "2026-10-19T00:46:19.4358637Z"
+    }
+  ]
+}
