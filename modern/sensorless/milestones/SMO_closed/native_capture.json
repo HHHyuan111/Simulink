@@ -1,0 +1,26 @@
+{
+  "source_run_label": "adapted",
+  "process_id": 22940,
+  "model_sha256": "6c742e715830c833ca087b5d76cce503fb4b992bce8de7362c50680329d07806",
+  "capture_utc": "2026-10-19T04:20:03.682Z",
+  "images": [
+    {
+      "file": "native_overview.png",
+      "window_title": "闭环全过程",
+      "display_interval_s": [
+        0,
+        0.5
+      ]
+    },
+    {
+      "file": "native_steady.png",
+      "window_title": "闭环稳态",
+      "display_interval_s": [
+        0.44,
+        0.5
+      ]
+    }
+  ],
+  "source": "Actual completed native Simulink Scope buffers; screenshots unchanged; no PDF or separately drawn curves; metrics use the preregistered 0.412–0.50 s window.",
+  "scope_session_closed_after_capture": true
+}

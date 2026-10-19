@@ -1,0 +1,46 @@
+{
+  "takeover_complete_s": 0.24007887500000002,
+  "steady_window_s": [
+    0.412,
+    0.5
+  ],
+  "speed_target_mean_relative": 2.3070541785104171E-5,
+  "speed_target_rms_relative": 0.00017841948985873932,
+  "observer_speed_rms_relative": 0.0016714744182519427,
+  "observer_angle_rms_deg": 0.10216786382823348,
+  "observer_angle_peak_deg": 0.20872606806823416,
+  "control_angle_rms_deg": 0.10216786382823397,
+  "control_angle_peak_deg": 0.20872606806823416,
+  "phase_current_peak_A": 7.295424478243695,
+  "speed_peak_rpm": 3080.8115772910064,
+  "electrical_cycles": 21.987933813308778,
+  "steady_feedback_fresh_fraction": 1,
+  "steady_stage": 5,
+  "stage_sequence": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "handover_max_angle_step_deg": 1.9366974566657902,
+  "handover_max_stator_reference_step_A": 0.18848780774185231,
+  "checks": {
+    "finite": true,
+    "observations": true,
+    "takeover": true,
+    "closed_retained": true,
+    "target_mean": true,
+    "target_rms": true,
+    "observer_speed": true,
+    "observer_angle_rms": true,
+    "observer_angle_peak": true,
+    "control_angle_rms": true,
+    "control_angle_peak": true,
+    "current_peak": true,
+    "overshoot": true,
+    "cycles": true,
+    "estimate_available": true
+  },
+  "passed": true
+}

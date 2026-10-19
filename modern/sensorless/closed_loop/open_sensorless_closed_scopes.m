@@ -11,7 +11,7 @@ for k=1:numel(names)
  path=[mdl '/闭环结果观测/' names{k}];open_system(path);drawnow;
  config=get_param(path,'ScopeConfiguration');config.Position=[80 60 1360 900];
  config.DataLoggingLimitDataPoints=false;config.DataLoggingDecimateData=false;
- config.TimeUnits='Seconds';config.TimeDisplayOffset='0';config.MaximizeAxes='Off';
+ config.TimeUnits='Seconds';config.TimeDisplayOffset='0';config.TimeSpanOverrunAction='Scroll';config.MaximizeAxes='Off';
  for a=1:4,config.ActiveDisplay=num2str(a);config.AxesScaling='Auto';config.ShowLegend=true;end
  config.ActiveDisplay='1';
  viewer=get_param(path,'BlockCOSI');client=viewer.ClientID;

@@ -1,0 +1,10 @@
+{
+  "phase": "failed",
+  "passed": false,
+  "process_id": 54304,
+  "simulation_starts": 1,
+  "model_sha256": "bad8376d85fb670057477d47beff662ebf3c9d1c1475b1286b41d7cfa677b731",
+  "label": "first",
+  "failed_phase": "simulate",
+  "error_identifier": "Simulink:Engine:DefaultDimsMightHaveCausedError"
+}

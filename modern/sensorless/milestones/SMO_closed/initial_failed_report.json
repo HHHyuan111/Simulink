@@ -1,0 +1,11 @@
+{
+  "phase": "completed",
+  "passed": false,
+  "process_id": 49916,
+  "simulation_starts": 1,
+  "model_sha256": "e212c220569406b462eadc3ebc112bd759e5563904343107e69a7e782d8bc46d",
+  "label": "nominal",
+  "elapsed_s": 747.4292262,
+  "raw_sha256": "2bc6347690236e0e02a7e16396a911352cc0266f7e40b0f1baa2150cc8372bd6",
+  "metrics_passed": false
+}
