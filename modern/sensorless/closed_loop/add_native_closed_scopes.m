@@ -1,7 +1,7 @@
 function add_native_closed_scopes(mdl)
 % Native control-rate Scope displays. Truth enters this observation area only.
 root=[mdl '/闭环结果观测'];add_block('built-in/SubSystem',root,'Position',[2280 1540 2480 1620],'BackgroundColor','[0.94 0.95 0.98]');
-groups={{'speed','u(1)','电机实际';'CL_speed','u(1)','SMO反馈';'CL_reference','u(1)','速度给定'},'转速闭环','rpm';...
+groups={{'speed','u(1)','电机实际';'CL_speed','u(1)','控制反馈';'CL_reference','u(1)','速度给定'},'转速闭环','rpm';...
  {'CL_stage','u(1)','阶段';'CL_blend','u(1)','估计角权重'},'控制阶段（5=无感闭环）','';...
  {'CL_theta_sample','angle_error','控制角误差'},'控制电角度误差','°';...
  {'Currentabc','phase1','A相';'Currentabc','phase2','B相';'Currentabc','phase3','C相'},'电机相电流','A'};
@@ -11,13 +11,17 @@ for scopeIndex=1:2
   'Position',[900 60+200*scopeIndex 1070 140+200*scopeIndex]);
  config=get_param(scope,'ScopeConfiguration');config.LayoutDimensions=[2 2];config.FrameBasedProcessing=false;
  config.OpenAtSimulationStart=false;config.DataLogging=false;config.ShowLegend=true;config.TimeSpan=span{scopeIndex};
+ config.TimeSpanOverrunAction='Scroll';config.DataLoggingLimitDataPoints=false;config.DataLoggingDecimateData=false;
  if isprop(config,'LimitDataPoints'),config.LimitDataPoints=false;end
  for g=1:4
-  config.ActiveDisplay=num2str(g);config.Title=groups{g,2};config.YLabel=groups{g,3};config.ShowGrid=true;
+  config.ActiveDisplay=num2str(g);config.Title=groups{g,2};config.YLabel=groups{g,3};config.ShowGrid=true;config.ShowLegend=true;
   rows=groups{g,1};prefix=['显示' num2str(scopeIndex) '_' num2str(g) '_'];
   bus=[root '/' prefix '合并'];add_block('simulink/Signal Routing/Bus Creator',bus,'Inputs',num2str(size(rows,1)),...
    'Position',[740 100+100*g+500*(scopeIndex-1) 745 145+100*g+500*(scopeIndex-1)]);
   for k=1:size(rows,1)
+   if g==4&&k>1
+    line=add_line(root,[prefix '分相1/' num2str(k)],[prefix '合并/' num2str(k)],'autorouting','on');set_param(line,'Name',rows{k,3});continue;
+   end
    y=60+60*k+300*g+1400*(scopeIndex-1);src=[prefix '来源' num2str(k)];pick=[prefix '信号' num2str(k)];holdName=[prefix '采样' num2str(k)];
    add_block('simulink/Signal Routing/From',[root '/' src],'GotoTag',rows{k,1},'Position',[20 y 210 y+25]);
    add_block('simulink/Discrete/Zero-Order Hold',[root '/' holdName],'SampleTime','timing_control_sample','Position',[250 y 340 y+25]);

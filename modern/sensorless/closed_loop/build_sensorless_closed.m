@@ -49,6 +49,9 @@ for k=1:numel(out)
 end
 set_param([mdl '/From1'],'GotoTag','CL_theta_sample');set_param([mdl '/From11'],'GotoTag','CL_theta_pwm');
 set_param([mdl '/From3'],'GotoTag','CL_omega');set_param([mdl '/From'],'GotoTag','CL_speed');
+% The original optional deadtime compensator is currently off. Its angle
+% input must nevertheless follow the controller frame when enabled later.
+set_param([mdl '/限压/补偿角度'],'GotoTag','CL_theta_sample');
 % Feed the existing q-current reference path with the new tracking speed PI.
 pi=[mdl '/PI Controller_w'];ports=get_param(pi,'PortHandles');line=get_param(ports.Outport,'Line');dest=get_param(line,'DstPortHandle');pos=get_param(pi,'Position');delete_line(line);
 delete_block(pi);add_block('simulink/Signal Routing/From',[mdl '/无感q电流给定'],'GotoTag','CL_iq_ref','Position',pos);

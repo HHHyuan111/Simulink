@@ -2,7 +2,7 @@
   "passed": true,
   "simulation_started": false,
   "model": "PMSM_SMO_ClosedLoop",
-  "model_sha256": "6c742e715830c833ca087b5d76cce503fb4b992bce8de7362c50680329d07806",
+  "model_sha256": "2672fa64eaf986d1f81f0f8f478e3a7c2b6705a50c985fddb786fd4f9f31eba1",
   "direct_source_sha256": "a2be0dd30351c67a73efb2bdb6917fdd3c94d673418801072a15d169a14ddd12",
   "config": [
     5E-5,
