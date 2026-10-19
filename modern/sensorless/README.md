@@ -1,6 +1,8 @@
 # Sensorless 开发
 
-当前开发入口为 **[本地 SMO 无感闭环](closed_loop/README.md)**，工作模型为 `models/closed_loop/PMSM_SMO_ClosedLoop.slx`。最终保存文件已完成两轮独立的 0.50 s 运行并通过预登记标准，100 路日志时间和数值完全一致：从零速对齐、I/F 起动、0.240 s 估计量接管，到 3000 rpm 带 0.207 N·m 负载后稳定运行。[本节点指标与原生 Simulink Scope 截图](milestones/SMO_closed.md)。
+当前开发入口为 **[本地 SMO 无感闭环](closed_loop/README.md)**，工作模型为 `models/closed_loop/PMSM_SMO_ClosedLoop.slx`。SMO、反电势处理及 PLL 已展开为基础模块，主页面和作用域信号按功能整理。0.50 s 闭环回归通过，100 路日志名称、尺寸和时间一致，数值差异均通过预先规定的门槛；实际运行后只有显示整理，数值定义逐项核对一致。[模块、指标与原生结构图](milestones/SMO_modules.md)。
+
+此前代码实现的闭环基线完成两轮独立 0.50 s 运行，100 路复跑时间和数据完全一致：从零速对齐、I/F 起动、0.240 s 估计量接管，到 3000 rpm 带 0.207 N·m 负载后稳定运行。[历史闭环指标与原生 Scope](milestones/SMO_closed.md)。
 
 当前闭环保留实际采样、ADC/滤波、死区/压降和模拟计算延迟，直接在主模型内接入规范子系统与作用域 Goto/From。展示使用实际运行的原生 Scope 截图。
 

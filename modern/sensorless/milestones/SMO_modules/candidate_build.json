@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "simulation_started": false,
+  "model": "PMSM_SMO_ClosedLoop",
+  "model_sha256": "248ea5067d52b26569120e04512df1830375f0591c41e38e225a493ec25a2af5",
+  "direct_source_sha256": "a2be0dd30351c67a73efb2bdb6917fdd3c94d673418801072a15d169a14ddd12",
+  "config": [
+    5E-5,
+    2.8875E-5,
+    5,
+    0.04,
+    0.06,
+    0.14,
+    1200,
+    6,
+    6,
+    0.18,
+    0.02,
+    0.04,
+    0.02,
+    0.08,
+    0.00069087230807625508,
+    0.04340878735241975,
+    0.98718608264211138,
+    0.33941125496954283,
+    0.042426406871192854,
+    2
+  ],
+  "control_truth_inputs": false,
+  "feedback_paths": [
+    "Park: CL_theta_sample",
+    "Inverse Park: CL_theta_pwm",
+    "Decoupling: CL_omega",
+    "Speed PI: published SMO rpm"
+  ],
+  "modules": {
+    "core_subsystems": 3,
+    "matlab_functions_in_core": 0,
+    "period": "timing_control_sample",
+    "parameters_changed": false
+  },
+  "presentation": {
+    "virtual_function_groups": 9,
+    "font": "Microsoft YaHei",
+    "scoped_signal_routing": true
+  }
+}

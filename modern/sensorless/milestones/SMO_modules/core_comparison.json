@@ -1,0 +1,342 @@
+{
+  "passed": true,
+  "source_run": "SMO_closed_final_a",
+  "nominal": {
+    "passed": true,
+    "sample_count": 10000,
+    "outputs": {
+      "smo_1": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 0,
+        "finite": true,
+        "passed": true
+      },
+      "smo_2": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 0,
+        "finite": true,
+        "passed": true
+      },
+      "smo_3": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 0,
+        "finite": true,
+        "passed": true
+      },
+      "emf_1": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 0,
+        "finite": true,
+        "passed": true
+      },
+      "emf_2": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 0,
+        "finite": true,
+        "passed": true
+      },
+      "emf_3": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 0,
+        "finite": true,
+        "passed": true
+      },
+      "emf_4": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 0,
+        "finite": true,
+        "passed": true
+      },
+      "emf_5": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 1.7763568394002505E-15,
+        "finite": true,
+        "passed": true
+      },
+      "emf_6": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 0,
+        "finite": true,
+        "passed": true
+      },
+      "pll_1": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 8.8817841970012523E-16,
+        "finite": true,
+        "passed": true
+      },
+      "pll_2": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 2.0463630789890885E-12,
+        "finite": true,
+        "passed": true
+      },
+      "pll_3": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 1.0547118733938987E-15,
+        "finite": true,
+        "passed": true
+      },
+      "pll_4": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 1.1368683772161603E-12,
+        "finite": true,
+        "passed": true
+      },
+      "pll_5": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 0,
+        "finite": true,
+        "passed": true
+      },
+      "pll_6": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 4.0927261579781771E-12,
+        "finite": true,
+        "passed": true
+      }
+    }
+  },
+  "reset_invalid_limit": {
+    "passed": true,
+    "sample_count": 1000,
+    "outputs": {
+      "smo_1": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 0,
+        "finite": true,
+        "passed": true
+      },
+      "smo_2": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 0,
+        "finite": true,
+        "passed": true
+      },
+      "smo_3": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 0,
+        "finite": true,
+        "passed": true
+      },
+      "emf_1": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 0,
+        "finite": true,
+        "passed": true
+      },
+      "emf_2": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 0,
+        "finite": true,
+        "passed": true
+      },
+      "emf_3": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 0,
+        "finite": true,
+        "passed": true
+      },
+      "emf_4": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 0,
+        "finite": true,
+        "passed": true
+      },
+      "emf_5": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 3.5527136788005009E-15,
+        "finite": true,
+        "passed": true
+      },
+      "emf_6": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 0,
+        "finite": true,
+        "passed": true
+      },
+      "pll_1": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 1.3877787807814457E-17,
+        "finite": true,
+        "passed": true
+      },
+      "pll_2": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 7.815970093361102E-14,
+        "finite": true,
+        "passed": true
+      },
+      "pll_3": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 3.3306690738754696E-16,
+        "finite": true,
+        "passed": true
+      },
+      "pll_4": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 2.6645352591003757E-15,
+        "finite": true,
+        "passed": true
+      },
+      "pll_5": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 0,
+        "finite": true,
+        "passed": true
+      },
+      "pll_6": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 1.4210854715202004E-13,
+        "finite": true,
+        "passed": true
+      }
+    },
+    "coverage": {
+      "reset_samples": 3,
+      "invalid_samples": 165,
+      "saturated_samples": 819
+    }
+  },
+  "disabled_direction_zero": {
+    "passed": true,
+    "sample_count": 1000,
+    "outputs": {
+      "smo_1": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 0,
+        "finite": true,
+        "passed": true
+      },
+      "smo_2": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 0,
+        "finite": true,
+        "passed": true
+      },
+      "smo_3": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 0,
+        "finite": true,
+        "passed": true
+      },
+      "emf_1": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 0,
+        "finite": true,
+        "passed": true
+      },
+      "emf_2": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 0,
+        "finite": true,
+        "passed": true
+      },
+      "emf_3": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 0,
+        "finite": true,
+        "passed": true
+      },
+      "emf_4": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 0,
+        "finite": true,
+        "passed": true
+      },
+      "emf_5": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 3.5527136788005009E-15,
+        "finite": true,
+        "passed": true
+      },
+      "emf_6": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 0,
+        "finite": true,
+        "passed": true
+      },
+      "pll_1": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 0,
+        "finite": true,
+        "passed": true
+      },
+      "pll_2": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 0,
+        "finite": true,
+        "passed": true
+      },
+      "pll_3": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 0,
+        "finite": true,
+        "passed": true
+      },
+      "pll_4": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 0,
+        "finite": true,
+        "passed": true
+      },
+      "pll_5": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 0,
+        "finite": true,
+        "passed": true
+      },
+      "pll_6": {
+        "time_equal": true,
+        "dimensions_equal": true,
+        "max_abs_difference": 0,
+        "finite": true,
+        "passed": true
+      }
+    }
+  }
+}

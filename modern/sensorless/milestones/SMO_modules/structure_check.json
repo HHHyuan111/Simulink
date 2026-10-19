@@ -1,0 +1,88 @@
+{
+  "passed": true,
+  "delivery_model_sha256": "248ea5067d52b26569120e04512df1830375f0591c41e38e225a493ec25a2af5",
+  "core_block_types": {
+    "滑模观测/隐式校正": {
+      "Inport": 24,
+      "UnitDelay": 2,
+      "Goto": 5,
+      "SubSystem": 4,
+      "Product": 9,
+      "Sum": 7,
+      "Switch": 7,
+      "Constant": 2,
+      "Outport": 14,
+      "Reshape": 1,
+      "Terminator": 13,
+      "Demux": 1,
+      "From": 7,
+      "Signum": 1,
+      "Abs": 1,
+      "RelationalOperator": 1,
+      "Saturate": 1
+    },
+    "反电动势/滤波校正": {
+      "Inport": 53,
+      "UnitDelay": 1,
+      "SubSystem": 14,
+      "Reshape": 7,
+      "Terminator": 42,
+      "Demux": 3,
+      "Outport": 34,
+      "Sum": 16,
+      "Constant": 12,
+      "Product": 29,
+      "Trigonometry": 15,
+      "Math": 2,
+      "MinMax": 5,
+      "Gain": 3,
+      "Goto": 11,
+      "Switch": 4,
+      "Abs": 2,
+      "Sqrt": 1,
+      "RelationalOperator": 1,
+      "Mux": 1,
+      "From": 12
+    },
+    "锁相环/归一化PLL": {
+      "Inport": 50,
+      "UnitDelay": 3,
+      "Goto": 6,
+      "SubSystem": 9,
+      "Product": 17,
+      "RelationalOperator": 8,
+      "Logic": 2,
+      "Switch": 12,
+      "Sum": 7,
+      "Constant": 10,
+      "Demux": 2,
+      "Abs": 4,
+      "MinMax": 3,
+      "Sqrt": 1,
+      "Outport": 31,
+      "Trigonometry": 2,
+      "Gain": 1,
+      "Reshape": 7,
+      "Terminator": 12,
+      "Math": 1,
+      "From": 7
+    }
+  },
+  "model_reference_count": 0,
+  "controller_from_tags": [
+    [
+      "PMSM_SMO_ClosedLoop/闭环控制/页面接收_Cmd_speed_rpm_3",
+      "Cmd_speed_rpm"
+    ],
+    [
+      "PMSM_SMO_ClosedLoop/闭环控制/页面接收_FB_smo_packet_1",
+      "FB_smo_packet"
+    ],
+    [
+      "PMSM_SMO_ClosedLoop/闭环控制/页面接收_FB_smo_permit_1",
+      "FB_smo_permit"
+    ]
+  ],
+  "original_main_unchanged": true,
+  "direct_baseline_unchanged": true
+}
