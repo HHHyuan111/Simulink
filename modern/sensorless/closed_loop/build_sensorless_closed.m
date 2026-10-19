@@ -6,8 +6,12 @@ if ~isfolder(folder),mkdir(folder);end
 file=fullfile(folder,[mdl '.slx']);
 source=fullfile(base,'models','direct',[old '.slx']);load_system(source);cleanup=onCleanup(@()close_private(old,mdl)); %#ok<NASGU>
 save_system(old,file);set_param(0,'CurrentSystem',mdl);
+% Dynamic tracking requirement for the local closed-loop adaptation.
+set_param([mdl '/无感观测'],'pll_fn_hz','150');pmsm_sensorless_v2_init(mdl);
+obsCfg=getVariable(get_param(mdl,'ModelWorkspace'),'sless_cfg');
+set_param([mdl '/无感观测'],'derived_kp',num2str(obsCfg(11),17),'derived_ki',num2str(obsCfg(12),17));
 ws=get_param(mdl,'ModelWorkspace');Ts=getVariable(ws,'dt');sample=getVariable(ws,'timing_control_sample');
-cfg=[Ts sample(2) getVariable(ws,'p') .04 .02 .14 1200 6 6 .18 .02 .04 .02 .08 ...
+cfg=[Ts sample(2) getVariable(ws,'p') .04 .06 .14 1200 6 6 .18 .02 .04 .02 .08 ...
  getVariable(ws,'kp_w') getVariable(ws,'ki_w') getVariable(ws,'ks_w') getVariable(ws,'uplimit_w') getVariable(ws,'Kt') 2];
 assignin(ws,'sless_closed_cfg',cfg);
 root=[mdl '/闭环控制'];add_block('built-in/SubSystem',root,'Position',[2280 1400 2480 1480],'BackgroundColor','[0.78 0.92 0.88]');

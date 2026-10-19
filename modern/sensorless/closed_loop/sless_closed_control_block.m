@@ -10,11 +10,15 @@ Ts=cfg(1);offset=cfg(2);pairs=cfg(3);align_end=cfg(4);rotate_s=cfg(5);ramp_end=c
 open_rpm=cfg(7);align_A=cfg(8);open_A=cfg(9);earliest=cfg(10);hold_s=cfg(11);blend_s=cfg(12);decay_s=cfg(13);
 speed_ramp_s=cfg(14);Kp=cfg(15);Ki=cfg(16);Ks=cfg(17);limit=cfg(18);Kt=cfg(19);divider=round(cfg(20));
 k=max(0,round((t-offset)/Ts));
-open_fraction=max(0,min(1,(t-align_end)/(ramp_end-align_end)));open_speed=open_rpm*open_fraction;
+open_fraction=max(0,min(1,(t-align_end)/(ramp_end-align_end)));
+open_fraction=open_fraction^3*(10-15*open_fraction+6*open_fraction^2);open_speed=open_rpm*open_fraction;
 open_omega=open_speed*(2*pi/60)*pairs;
 if t>align_end,theta_if=mod(theta_if+Ts*open_omega,2*pi);end
 if permit&&pub(1)>=0
  last_good=t;theta_good=pub(6);speed_good=pub(8);omega_good=speed_good*(2*pi/60)*pairs;
+end
+% Qualify the intended I/F direction and speed, using estimates only.
+if permit&&pub(8)>0&&abs(pub(8)-open_speed)<=max(100,.2*open_rpm)
  if good_since<0,good_since=t;end
 else,good_since=-1;
 end
@@ -30,8 +34,8 @@ if phase>=3&&phase<=5&&age>1e-3,phase=6;end
 if phase==1
  id_ref=align_A;
 elseif phase==2
- f=max(0,min(1,(t-align_end)/rotate_s));
- id_ref=align_A*(1-f);iq_ref=open_A*f;
+ f=max(0,min(1,(t-align_end)/rotate_s));f=f^3*(10-15*f+6*f^2);
+ phi=(pi/2)*f;id_ref=align_A*cos(phi);iq_ref=open_A*sin(phi);
 elseif phase==3
  beta=max(0,min(1,(t-switch_t)/blend_s));
  delta=atan2(sin(estimated-theta_if),cos(estimated-theta_if));
