@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "registered_at": "2026-10-19T01:38:49.603404+00:00",
+  "authorization": "User explicitly accepts shorter duration once stable/converged",
+  "scope": "Nominal SMO+PLL convergence with existing engineering nonideal frontend, bypass observation only; not full fault/R2 matrix acceptance",
+  "case": {
+    "id": "nominal_3000_short_convergence",
+    "kind": "short_convergence",
+    "duration_s": 0.25,
+    "speed_rpm": 3000,
+    "adc_span_A": 20,
+    "window_on": false,
+    "interference_s": 0
+  },
+  "steady_window_s": [
+    0.162,
+    0.25
+  ],
+  "criteria": {
+    "minimum_electrical_cycles": 20,
+    "angle_rms_deg_max": 3,
+    "angle_peak_deg_max": 8,
+    "speed_mean_relative_max": 0.01,
+    "speed_rms_relative_max": 0.02,
+    "permit_fraction_min": 0.99,
+    "plant_mean_target_relative_max": 0.01,
+    "plant_speed_slope_rpm_s_max": 50,
+    "false_valid_longest_s_max": 0.002
+  },
+  "design_basis": {
+    "historical_analysis_sha256": "c30d7703039db0970a108e6c961b51dbe3221eaa466521bbb69d9b9a9783dacf",
+    "not_prospective_result": true,
+    "3000_2000_supported_duration_s": 0.25,
+    "1000_supported_duration_s": 0.35
+  },
+  "artifact": "runs/N3R2_normal_serialized_short_once/build",
+  "adaptation": "Reuse exact nominal3000 saved parent/child/86values. Override only explicit execution duration and case/acceptance metadata. New executor derived from frozen Normal executor, keeping every model/archive/endpoint/workspace/restoration statement; append actual new sources/contract to source record. New analyser uses existing native event audit plus fixed short-window original thresholds. Do not alter SMO/PLL, motor/PI, frontend math, solver or times.",
+  "physical_starts": 1,
+  "retries": 0,
+  "failure": "Retain failure, no repeated shorter search for a passing run",
+  "recording": "Full96 finite logs, native4000001 endpoint,5000 observer frames, raw-before-analysis, actual original/bridge/reference restore, source/artifact hashes; startup errors retained, no removal of invalid samples from fixed window",
+  "prior_formal_results": "Old1/14 and new0/14 closed and unchanged",
+  "R3_started": false,
+  "feedback_takeover": false,
+  "long_run_reliability_proven": false
+}
