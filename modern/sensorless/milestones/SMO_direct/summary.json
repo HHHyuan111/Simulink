@@ -37,5 +37,7 @@
   "legacy_fault_matrix_resumed": false,
   "background_simulation_active": false,
   "initial_clean_build_startup_failure_preserved": true,
-  "native_failure_root_cause_claimed_resolved": false
+  "native_failure_root_cause_claimed_resolved": false,
+  "sensorless_closed_loop": false,
+  "FOC_angle_feedback": "true motor electrical angle"
 }
