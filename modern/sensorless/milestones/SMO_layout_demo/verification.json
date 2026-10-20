@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "date": "2026-10-20",
+  "run": "layout_demo_20261020_a",
+  "engine_pid": 31584,
+  "simulation_starts": 1,
+  "duration_s": 0.5,
+  "elapsed_s": 358.9096788,
+  "model_sha256": "8d04920daa86ecbe4616bd49b3b4295c8937786e4972eb2f25e8c9c9ae899f22",
+  "delivered_model_matches_run": true,
+  "raw_data_sha256": "af6f5ab85abbc7f990a111ac9dad0742e793ae589a4437b29a61b6e8d1ebc3c2",
+  "log_count": 100,
+  "all_log_values_shapes_times_exact_against_original_code_baseline": true,
+  "speed_rms_error_rpm": 0.5352584695762179,
+  "estimated_speed_rms_error_rpm": 5.014423254755828,
+  "if_cruise_control_error_rms_deg": 93.35902659060251,
+  "if_cruise_smo_error_rms_deg": 0.5367075265486488,
+  "steady_smo_angle_rms_deg": 0.10216786382823348
+}

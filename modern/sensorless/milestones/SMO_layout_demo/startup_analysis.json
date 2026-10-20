@@ -1,0 +1,69 @@
+{
+  "run": "SMO_closed_layout_demo_20261020_a",
+  "windows": {
+    "if_cruise": {
+      "samples": 800,
+      "first_s": 0.14002887500000002,
+      "last_s": 0.179978875,
+      "control_error_mean_deg": -93.3486370744422,
+      "control_error_rms_deg": 93.359026590602511,
+      "control_error_peak_deg": 95.022375908601276,
+      "smo_error_rms_deg": 0.53670752654864884,
+      "smo_error_peak_deg": 0.76347762542878794,
+      "smo_valid_fraction": 1,
+      "blend_min": 0,
+      "blend_max": 0,
+      "true_d_current_mean_A": 5.9744757851050778,
+      "true_q_current_mean_A": -0.1680939831237924,
+      "current_vector_relative_rotor_mean_deg": -1.6093292522067868
+    },
+    "blend": {
+      "samples": 801,
+      "first_s": 0.18002887500000003,
+      "last_s": 0.220028875,
+      "control_error_mean_deg": -46.728981677410154,
+      "control_error_rms_deg": 53.68542992691328,
+      "control_error_peak_deg": 93.65112023730731,
+      "smo_error_rms_deg": 0.56091259185536568,
+      "smo_error_peak_deg": 0.78443159881070545,
+      "smo_valid_fraction": 1,
+      "blend_min": 0,
+      "blend_max": 0.99999999999999944,
+      "true_d_current_mean_A": 5.8197466882376876,
+      "true_q_current_mean_A": -0.11970346446198966,
+      "current_vector_relative_rotor_mean_deg": -1.175286539514234
+    },
+    "smo_id_decay": {
+      "samples": 400,
+      "first_s": 0.22007887500000003,
+      "last_s": 0.24002887500000003,
+      "control_error_mean_deg": -0.5856824443269566,
+      "control_error_rms_deg": 0.70913831279031536,
+      "control_error_peak_deg": 1.3951129890518477,
+      "smo_error_rms_deg": 0.70913831279031536,
+      "smo_error_peak_deg": 1.3951129890518477,
+      "smo_valid_fraction": 1,
+      "blend_min": 1,
+      "blend_max": 1,
+      "true_d_current_mean_A": 2.99897790911068,
+      "true_q_current_mean_A": -0.13201241634471639,
+      "current_vector_relative_rotor_mean_deg": -4.7648690744220978
+    },
+    "steady": {
+      "samples": 1760,
+      "first_s": 0.412028875,
+      "last_s": 0.499978875,
+      "control_error_mean_deg": -0.085617798093292424,
+      "control_error_rms_deg": 0.10216786382823397,
+      "control_error_peak_deg": 0.20872606806823416,
+      "smo_error_rms_deg": 0.10216786382823348,
+      "smo_error_peak_deg": 0.20872606806823416,
+      "smo_valid_fraction": 1,
+      "blend_min": 1,
+      "blend_max": 1,
+      "true_d_current_mean_A": -0.67581784072851314,
+      "true_q_current_mean_A": 4.5528403529742416,
+      "current_vector_relative_rotor_mean_deg": 98.442792978281346
+    }
+  }
+}
